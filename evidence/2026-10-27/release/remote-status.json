@@ -58,7 +58,9 @@
   },
   "pages": {
     "enabled": false,
-    "workflowsRun": false
+    "workflowsRun": true,
+    "successfulDeployment": false,
+    "bootstrapRunsRemoved": true
   },
   "dns": {
     "configured": false,
@@ -68,6 +70,7 @@
     "The existing paobuorg/www repository was not modified.",
     "Repositories were created public with main as the default branch.",
     "Pages is intentionally not enabled before custom-domain DNS is available; no live site is claimed.",
-    "The site repositories' Actions were briefly disabled during the bootstrap push to avoid deploying before Pages/DNS, then re-enabled."
+    "Pages workflows triggered on the bootstrap push failed because Pages was not enabled; those runs were cancelled/deleted and Actions is paused until Pages/DNS is ready.",
+    "The core release was created through the API with the same three assets the core-release workflow would publish."
   ]
 }

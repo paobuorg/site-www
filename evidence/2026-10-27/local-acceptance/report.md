@@ -25,7 +25,7 @@ Route close-ups use EOX Sentinel-2 cloudless public tiles, a no-key CORS-enabled
 
 The six public repositories were created under `paobuorg` and the initial commits were pushed. The `core-v0.2.13` release is published with the tgz, sha256 and core.lock assets, and the `PAOBU_CORE_ARTIFACT_URL` / `PAOBU_CORE_SHA256` variables are set on both subsites. Remote details are in [remote-status.json](../release/remote-status.json).
 
-Pages has **not** been enabled, the Pages workflows have not run, and DNS/HTTPS/custom domains are not configured. This report therefore does not claim a live site.
+Pages has **not** been enabled and there is no successful deployment. Bootstrap Pages runs triggered by the final push failed because Pages was not enabled; those runs were cancelled/deleted and Actions is paused until Pages/DNS is ready. DNS, HTTPS and custom domains are not configured, so this report does not claim a live site.
 
 1. Enable GitHub Pages for the three site repositories when custom-domain DNS is ready.
 2. Run the three Pages workflows and verify the custom-domain HTTPS redirect and cross-site links.
