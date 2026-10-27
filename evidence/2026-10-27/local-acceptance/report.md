@@ -9,11 +9,11 @@ Local acceptance **passes** for the complete reviewed launch set. The six public
 
 - Content: 48 entities / 96 bilingual versions published (routes 16, knowledge 24, tools 8); 59 sources; 20 tool cases; 96 AI-assisted editorial approval records; `pnpm check:production` passes with route=16, knowledge=24, tool=8.
 - Knowledge: 23 articles plus a 17-term glossary, nine topics covered, five learning paths.
-- Production artifacts: static builds 42/78/22 pages; release manifests 39/75/19 hosted HTML pages; Pagefind 96/48/16 records; sitemaps 38/74/18 URLs; no `localhost` URLs in production HTML.
-- Release bundle: `9aab069d45615225fafdf18fd4a1cbbe20285efd59fdee01848e1cff425c67b3`; core `0.2.13` (`b3e5b077…`); content locks match.
+- Production artifacts: static builds 41/77/21 pages; release manifests 38/74/18 hosted HTML pages; Pagefind 96/48/16 records; sitemaps 38/74/18 URLs; no `localhost` URLs or `/zh-CN/` links in production HTML.
+- Release bundle: `80937e38db9311aced4945ae126a4e22f6f866b56b9211d239be96a5b42ea832`; core `0.2.14` (`1fcda15d…`); content locks match.
 - Local crawl: all 130 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
 - Browser matrix: Chromium/Firefox/WebKit each 48 screenshots; 0 axe violations, 0 console errors, 0 failed requests; keyboard 14/14 on four pages; search pagination fully expands to 25/25; no soft-keyboard overlap.
-- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.200s; desktop globe-ready worst 3.632s; simulated mobile worst 4.389s; about 60fps on the local Intel Arc.
+- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.388s; desktop globe-ready worst 3.847s; simulated mobile worst 4.896s; about 60fps on the local Intel Arc.
 - T06/T12/T17: cross-site 11/11 (production hrefs mapped to the three local preview servers), track timeout/cancel 11/11, PWA offline 18/18.
 - Handoff: 0 issues, 63 links; handoff tests 46/46; content locks verified.
 
@@ -23,7 +23,7 @@ Route close-ups use EOX Sentinel-2 cloudless public tiles, a no-key CORS-enabled
 
 ## Remote deployment status
 
-The six public repositories were pushed under `paobuorg`; `@paobu/core@0.2.13` is published as a Release, and both subsites have `PAOBU_CORE_ARTIFACT_URL` / `PAOBU_CORE_SHA256`. The three Pages workflows completed successfully. GitHub Pages is serving:
+The six public repositories were pushed under `paobuorg`; `@paobu/core@0.2.14` is published as a Release, and both subsites have `PAOBU_CORE_ARTIFACT_URL` / `PAOBU_CORE_SHA256`. The three Pages workflows completed successfully. Chinese routes use the root path and English routes use `/en/`; `/zh-CN/` is intentionally not redirected and returns the 404 page. GitHub Pages is serving:
 
 - `https://paobu.org/`
 - `https://learn.paobu.org/`
@@ -35,7 +35,7 @@ The old `paobuorg/www` repository was backed up to `reference/legacy/www-github-
 
 Remaining remote caveats:
 
-1. A real remote rollback drill has not been performed. The earlier local artifact drill covered 0.2.11 → 0.2.10 → 0.2.11 and has not been repeated for 0.2.13.
+1. A real remote rollback drill has not been performed. The earlier local artifact drill covered 0.2.11 → 0.2.10 → 0.2.11 and has not been repeated for 0.2.14.
 2. Real screen readers, physical phones, real Safari, third-party EOX tile SLA and formal high-resolution imagery remain outside this deployment verification.
 
 ## Known limits

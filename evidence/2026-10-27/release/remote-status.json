@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-27T22:55:00Z",
+  "generatedAt": "2026-10-27T23:30:00Z",
   "account": "paobuorg",
   "repositories": [
     {
       "name": "running-routes",
       "url": "https://github.com/paobuorg/running-routes",
-      "commit": "652b96061444c13e47a8a8635ba8abbf8fd30e54",
+      "commit": "573da09d13d02aafbfa126f94c71dc883964e14c",
       "visibility": "public"
     },
     {
@@ -37,24 +37,30 @@
     }
   ],
   "coreRelease": {
-    "tag": "core-v0.2.13",
-    "url": "https://github.com/paobuorg/site-www/releases/tag/core-v0.2.13",
+    "tag": "core-v0.2.14",
+    "url": "https://github.com/paobuorg/site-www/releases/tag/core-v0.2.14",
     "assets": [
-      "paobu-core-0.2.13.tgz",
-      "paobu-core-0.2.13.tgz.sha256",
+      "paobu-core-0.2.14.tgz",
+      "paobu-core-0.2.14.tgz.sha256",
       "core.lock.json"
     ],
-    "sha256": "b3e5b077614b661c0c553ef1b600386d9a946bef83a458afd0c0889f7a1efb03"
+    "sha256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89"
   },
   "variables": {
     "site-knowledge": {
-      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.13/paobu-core-0.2.13.tgz",
-      "PAOBU_CORE_SHA256": "b3e5b077614b661c0c553ef1b600386d9a946bef83a458afd0c0889f7a1efb03"
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.14/paobu-core-0.2.14.tgz",
+      "PAOBU_CORE_SHA256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89"
     },
     "site-tools": {
-      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.13/paobu-core-0.2.13.tgz",
-      "PAOBU_CORE_SHA256": "b3e5b077614b661c0c553ef1b600386d9a946bef83a458afd0c0889f7a1efb03"
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.14/paobu-core-0.2.14.tgz",
+      "PAOBU_CORE_SHA256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89"
     }
+  },
+  "routes": {
+    "chinese": "/",
+    "english": "/en/",
+    "legacyChinesePrefix": null,
+    "redirects": "none for /zh-CN/*; those URLs return the site's 404 page by design"
   },
   "pages": {
     "enabled": true,
@@ -65,21 +71,30 @@
         "url": "https://paobu.org/",
         "status": "success",
         "httpsEnforced": true,
-        "certificate": "approved"
+        "certificate": "approved",
+        "hostedHtmlPages": 38,
+        "searchRecords": 96,
+        "sitemapUrls": 38
       },
       {
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
         "httpsEnforced": true,
-        "certificate": "approved"
+        "certificate": "approved",
+        "hostedHtmlPages": 74,
+        "searchRecords": 48,
+        "sitemapUrls": 74
       },
       {
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
         "httpsEnforced": true,
-        "certificate": "approved"
+        "certificate": "approved",
+        "hostedHtmlPages": 18,
+        "searchRecords": 16,
+        "sitemapUrls": 18
       }
     ]
   },
@@ -94,16 +109,18 @@
     "reason": "Legacy static site that previously served paobu.org",
     "backup": "reference/legacy/www-github-backup-2026-10-27.tar.gz"
   },
+  "releaseBundleId": "80937e38db9311aced4945ae126a4e22f6f866b56b9211d239be96a5b42ea832",
   "workflows": {
     "site-www": "success",
     "site-knowledge": "success",
-    "site-tools": "success after test path fix",
+    "site-tools": "success",
     "bootstrapFailedRunsRemoved": true
   },
   "notes": [
+    "Chinese routes use the root path and English routes use /en/; no /zh-CN/ redirect is configured.",
     "The existing paobuorg/www repository was backed up locally, its legacy Pages site was removed, and the repository was deleted after the new sites were verified.",
     "All three custom domains redirect HTTP to HTTPS and serve the new RunMap builds.",
-    "Live smoke: home -> knowledge -> tools -> routes navigation, 25 search results, Boston route map ready, no console errors or failed requests.",
+    "Live smoke: paobu.org -> learn.paobu.org -> tools.paobu.org navigation, 25 search results, Boston route map ready, no console errors or failed requests.",
     "Formal high-resolution imagery, real devices/readers, third-party EOX SLA and independent professional review remain outside this deployment verification."
   ]
 }
