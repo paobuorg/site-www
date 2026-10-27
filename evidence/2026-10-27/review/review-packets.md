@@ -1,6 +1,6 @@
 # Review packets
 
-Generated: 2026-10-27T22:12:07.518Z
+Generated: 2026-10-27T23:58:39.326Z
 
 This packet is review material. Approval records live in `data/reviews` with matching `contentDigest` values; they are AI-assisted editorial approvals, not independent or professional review.
 
@@ -15,22 +15,22 @@ This packet is review material. Approval records live in `data/reviews` with mat
 
 | entityId | status | sources | reviews | missing gates | zh digest | en digest |
 |---|---|---:|---:|---|---|---|
-| route:beijing | published | 2 | 2 | none | `66989e6c322ffe6e…` | `6873ba9bcc235c69…` |
-| route:berlin | published | 2 | 2 | none | `19ebcd51a4593835…` | `a5fda7e29020d3de…` |
+| route:beijing | published | 2 | 2 | none | `d04156f6450b0ed3…` | `6c0a4c89216f2784…` |
+| route:berlin | published | 2 | 2 | none | `0f906142b6689e9a…` | `3a64cb075ff1e75f…` |
 | route:boston | published | 2 | 2 | none | `9a2e2d7461d20ae9…` | `a626590336a0520a…` |
-| route:cape-town | published | 2 | 2 | none | `3d76db4c424c54bf…` | `8b8402bf80c64f16…` |
-| route:chicago | published | 2 | 2 | none | `7aa371b7a058a5e4…` | `9748ba54761568d4…` |
-| route:diagonale-des-fous | published | 2 | 2 | none | `0d8deda230267824…` | `163d72dcd3a46afc…` |
-| route:hardrock | published | 2 | 2 | none | `db049acb17f76780…` | `e624f78dfc83fe3b…` |
-| route:hong-kong-100 | published | 2 | 2 | none | `69d9b839433af850…` | `327c989ffedb25fa…` |
-| route:london | published | 2 | 2 | none | `1f0d0d9c411b16d1…` | `40cbe1579dca2318…` |
-| route:new-york | published | 2 | 2 | none | `523d0988c89f7653…` | `790efaa5de9b0750…` |
-| route:shanghai | published | 2 | 2 | none | `203c58742b8d55cd…` | `9869225c0dd26eb3…` |
-| route:sydney | published | 2 | 2 | none | `fb4b06853635f161…` | `ffc557cbd4f5da24…` |
-| route:tokyo | published | 2 | 2 | none | `0c362548212bbd5c…` | `6255519e05c7954a…` |
-| route:tor-des-geants | published | 2 | 2 | none | `2380017fb85e27e2…` | `0d140d573cfdcbeb…` |
+| route:cape-town | published | 2 | 2 | none | `88cc9fa96460849b…` | `f5c0873e87c62619…` |
+| route:chicago | published | 2 | 2 | none | `fa70715cac048467…` | `64f72c885fafd7a2…` |
+| route:diagonale-des-fous | published | 2 | 2 | none | `5e3bfdceacfae9ba…` | `a4468383a4df12a8…` |
+| route:hardrock | published | 2 | 2 | none | `70617f8838d745ad…` | `053de1770a19684f…` |
+| route:hong-kong-100 | published | 2 | 2 | none | `2a4bc3b7289f67f0…` | `cd23f9835ea5ba05…` |
+| route:london | published | 2 | 2 | none | `de3c62873df56511…` | `c81587d6bec9fee0…` |
+| route:new-york | published | 2 | 2 | none | `68b2d20eca2a7ed7…` | `60be0affcc304b3c…` |
+| route:shanghai | published | 2 | 2 | none | `2f4e49fc60909282…` | `bf065f0eda0e6a4f…` |
+| route:sydney | published | 2 | 2 | none | `62768165225e5980…` | `88ee2b466026aa99…` |
+| route:tokyo | published | 2 | 2 | none | `5f30bb46643e407a…` | `d2d800c6d10d77f9…` |
+| route:tor-des-geants | published | 2 | 2 | none | `d13de185265701d5…` | `b412555f1c3fadeb…` |
 | route:utmb | published | 1 | 2 | none | `ba30933f9b0fee50…` | `807cc7b5de34f208…` |
-| route:western-states | published | 2 | 2 | none | `2fd28ce89740c385…` | `0d0ea6f3bb9fb593…` |
+| route:western-states | published | 2 | 2 | none | `06f0efba95d7488a…` | `576fb886be936277…` |
 | knowledge:cold-weather-running | published | 4 | 2 | none | `2b2d34c790fe31d1…` | `87597bdd9e5c87a9…` |
 | knowledge:core-terms | published | 7 | 2 | none | `1c74f44d9ee50296…` | `eb5dd9d777c5dc3f…` |
 | knowledge:daily-fueling | published | 6 | 2 | none | `03e101f30abc59e5…` | `336187c0769a676a…` |
