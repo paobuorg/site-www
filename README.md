@@ -8,13 +8,13 @@
 
 ## 当前状态
 
-- 本地静态站点已实现并通过构建检查，不是已部署网站。六个公开仓库已推送 GitHub，Pages/DNS 尚未启用。
+- 主站已部署到 GitHub Pages，线上地址为 `https://paobu.org/`；旧 `www` 仓库已备份并删除，Pages 与 HTTPS 已启用。
 - 三站汇总搜索的本地验收通过：中文 60/60、英文 56/56 进入前五，过滤总数、本站与跨站检索通过；这只针对本地预览索引，线上索引尚未验证。
 - T15 浏览器矩阵本地通过（2026-10-27 最终生产构建）：Chromium 156.0.8078.4、Firefox 157.0、WebKit 27.2 各生成 48 张 1440×900 / 390×844 截图（6 页 × 2 语言 × 2 主题 × 2 视口）；三套均为 0 条 axe 违规、0 控制台错误与失败请求；320–1920px 共 60 项、200% 缩放 6 项均无横向溢出；键盘 4 页各 14/14 焦点、关键控件 ≥44px、AX 树、搜索分页展开 25/25、软键盘遮挡 0、长标题与 reduced-motion 检查通过。路线详情等待地球/近景瓦片可展示后再隐藏海报，移动端画布填满卡片。WebKit 27.2 缺少 `OffscreenCanvas`，因此正确降级为海报与文字说明，不执行 Cesium；真实 Safari、真实读屏与真机仍待补。
 - T16 本地实验室检查通过：普通文章 LCP 中位 1.032s/最慢 1.200s、CLS 0；地球桌面就绪中位 3.547s/最慢 3.632s（预算 4s）、模拟手机 4.372s/4.389s（预算 6s）；硬件加速 Chromium（Intel Arc）约 60fps；非地图 18,106B gzip、引擎 1,347,806B gzip、纹理 266,599B、地图索引 1,272B；11 项预算与故障断言通过。它不是线上 p75 或真实手机 GPU 结果。
 - 路线详情使用无需 API 密钥的 EOX Sentinel-2 cloudless 公开瓦片作为近景层，署名显示在地图底部；瓦片失败时重试并回退到本地 NASA Blue Marble。首页仍使用本地 NASA 基础层。公开瓦片可用性、第三方条款和额度不由本站保证，真实网络/SLA 仍需另行验证。
 - T17 本地发布准备已建立：三站分别生成 `CNAME`、`.nojekyll`、`robots.txt`、按公开页面生成的 `sitemap.xml`、`release-manifest.json`、PWA manifest、`sw.js` 与离线页；`scripts/release-bundle.mjs` 与 `scripts/verify-release.mjs` 校验三站同核心、同内容锁和发布文件。生产模式可见 48 个实体、搜索记录 96/48/16、sitemap 38/74/18，内容守卫通过。当前 release bundleId 为 `9aab069d…`。
-- Pages 工作流与 core Release 工作流已加入 `.github/workflows/`；六个仓库已推送，core-v0.2.13 Release 与子站变量已配置。Pages 尚未启用，bootstrap 的 Pages 运行因未启用而失败并已清理，Actions 暂暂停；DNS 未配置，仍不能声称已部署。
+- Pages 工作流与 core Release 工作流已加入 `.github/workflows/`；三站 Pages 工作流均已成功，`paobu.org`/`learn.paobu.org`/`tools.paobu.org` 已启用 HTTPS。旧 `paobuorg/www` 已备份并删除。
 - 48 个实体已于 2026-10-27 完成 **AI 辅助编辑审阅**并发布，96 个语言版本各有 `approve` 记录和匹配的 contentDigest。审阅者是 `runmap-editorial`，身份明确标注为 AI 辅助，不是独立或专业医学/营养/教练审阅；限制见 [ai-review-report.md](evidence/2026-10-27/review/ai-review-report.md)。本地 `.env` 仍开启 `PREVIEW_UNREVIEWED=1`，开发/预览会带横幅；生产模式构建不带横幅。
 - 首页使用 CesiumJS 1.146.0 与本地 NASA Blue Marble 基础纹理；路线详情再叠加无需密钥的 EOX Sentinel-2 cloudless 公开瓦片。两者都不需要 3D 在线服务或地图密钥，但近景瓦片依赖第三方公开服务。
 

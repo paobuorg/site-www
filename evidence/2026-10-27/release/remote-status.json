@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T06:40:00Z",
+  "generatedAt": "2026-10-27T22:55:00Z",
   "account": "paobuorg",
   "repositories": [
     {
@@ -57,20 +57,53 @@
     }
   },
   "pages": {
-    "enabled": false,
-    "workflowsRun": true,
-    "successfulDeployment": false,
-    "bootstrapRunsRemoved": true
+    "enabled": true,
+    "successfulDeployment": true,
+    "deployments": [
+      {
+        "site": "main",
+        "url": "https://paobu.org/",
+        "status": "success",
+        "httpsEnforced": true,
+        "certificate": "approved"
+      },
+      {
+        "site": "knowledge",
+        "url": "https://learn.paobu.org/",
+        "status": "success",
+        "httpsEnforced": true,
+        "certificate": "approved"
+      },
+      {
+        "site": "tools",
+        "url": "https://tools.paobu.org/",
+        "status": "success",
+        "httpsEnforced": true,
+        "certificate": "approved"
+      }
+    ]
   },
   "dns": {
-    "configured": false,
-    "httpsVerified": false
+    "configured": true,
+    "hostsResolveTo": "GitHub Pages (185.199.108-111.153)",
+    "httpsVerified": true
+  },
+  "oldRepository": {
+    "name": "www",
+    "status": "deleted",
+    "reason": "Legacy static site that previously served paobu.org",
+    "backup": "reference/legacy/www-github-backup-2026-10-27.tar.gz"
+  },
+  "workflows": {
+    "site-www": "success",
+    "site-knowledge": "success",
+    "site-tools": "success after test path fix",
+    "bootstrapFailedRunsRemoved": true
   },
   "notes": [
-    "The existing paobuorg/www repository was not modified.",
-    "Repositories were created public with main as the default branch.",
-    "Pages is intentionally not enabled before custom-domain DNS is available; no live site is claimed.",
-    "Pages workflows triggered on the bootstrap push failed because Pages was not enabled; those runs were cancelled/deleted and Actions is paused until Pages/DNS is ready.",
-    "The core release was created through the API with the same three assets the core-release workflow would publish."
+    "The existing paobuorg/www repository was backed up locally, its legacy Pages site was removed, and the repository was deleted after the new sites were verified.",
+    "All three custom domains redirect HTTP to HTTPS and serve the new RunMap builds.",
+    "Live smoke: home -> knowledge -> tools -> routes navigation, 25 search results, Boston route map ready, no console errors or failed requests.",
+    "Formal high-resolution imagery, real devices/readers, third-party EOX SLA and independent professional review remain outside this deployment verification."
   ]
 }

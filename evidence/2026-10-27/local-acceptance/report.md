@@ -5,7 +5,7 @@ Scope: the three production builds under `repos/site-www/dist`, `repos/site-know
 
 ## Result
 
-Local acceptance **passes** for the complete reviewed launch set. The six public repositories and the core release were uploaded after this run; Pages, DNS and HTTPS remain unconfigured, so no live-site claim is made.
+Local acceptance **passes** for the complete reviewed launch set. The six public repositories, core release and three GitHub Pages sites are live on their custom domains with HTTPS; the old `www` repository has been backed up locally and deleted.
 
 - Content: 48 entities / 96 bilingual versions published (routes 16, knowledge 24, tools 8); 59 sources; 20 tool cases; 96 AI-assisted editorial approval records; `pnpm check:production` passes with route=16, knowledge=24, tool=8.
 - Knowledge: 23 articles plus a 17-term glossary, nine topics covered, five learning paths.
@@ -21,16 +21,22 @@ Local acceptance **passes** for the complete reviewed launch set. The six public
 
 Route close-ups use EOX Sentinel-2 cloudless public tiles, a no-key CORS-enabled service, with NASA/EOX/CC BY-NC-SA attribution, three retries and a local NASA Blue Marble fallback. A Boston route check received 66 tile responses with 0 failures and 0 console errors. One earlier Chromium matrix run saw 18 transient EOX connection resets on a single route shot; the final run after adding retries was clean, but the provider remains a third-party dependency. This does not prove the provider's terms, quotas, long-term availability or a formal high-resolution SLA; T08's formal high-resolution imagery remains outstanding.
 
-## Remote upload status
+## Remote deployment status
 
-The six public repositories were created under `paobuorg` and the initial commits were pushed. The `core-v0.2.13` release is published with the tgz, sha256 and core.lock assets, and the `PAOBU_CORE_ARTIFACT_URL` / `PAOBU_CORE_SHA256` variables are set on both subsites. Remote details are in [remote-status.json](../release/remote-status.json).
+The six public repositories were pushed under `paobuorg`; `@paobu/core@0.2.13` is published as a Release, and both subsites have `PAOBU_CORE_ARTIFACT_URL` / `PAOBU_CORE_SHA256`. The three Pages workflows completed successfully. GitHub Pages is serving:
 
-Pages has **not** been enabled and there is no successful deployment. Bootstrap Pages runs triggered by the final push failed because Pages was not enabled; those runs were cancelled/deleted and Actions is paused until Pages/DNS is ready. DNS, HTTPS and custom domains are not configured, so this report does not claim a live site.
+- `https://paobu.org/`
+- `https://learn.paobu.org/`
+- `https://tools.paobu.org/`
 
-1. Enable GitHub Pages for the three site repositories when custom-domain DNS is ready.
-2. Run the three Pages workflows and verify the custom-domain HTTPS redirect and cross-site links.
-3. Perform a real remote rollback drill; the earlier local artifact drill covered 0.2.11 → 0.2.10 → 0.2.11 and has not been repeated for 0.2.13.
-4. Keep the existing `paobuorg/www` repository untouched unless its ownership is explicitly clarified.
+All three custom domains have approved certificates and HTTP redirects to HTTPS. A live Chromium smoke test navigated paobu.org → learn → tools → paobu.org, loaded the Boston route map, and returned 25 search results with no console errors or failed requests.
+
+The old `paobuorg/www` repository was backed up to `reference/legacy/www-github-backup-2026-10-27.tar.gz`, its legacy Pages site was removed, and the repository was deleted after the new sites were verified.
+
+Remaining remote caveats:
+
+1. A real remote rollback drill has not been performed. The earlier local artifact drill covered 0.2.11 → 0.2.10 → 0.2.11 and has not been repeated for 0.2.13.
+2. Real screen readers, physical phones, real Safari, third-party EOX tile SLA and formal high-resolution imagery remain outside this deployment verification.
 
 ## Known limits
 
