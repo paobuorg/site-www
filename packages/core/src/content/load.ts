@@ -52,16 +52,23 @@ function contentHref(href: string): string {
     const url = new URL(href);
     const site = PRODUCTION_SITE[url.origin];
     if (!site) return href;
-    return `${getSiteOrigins()[site]}${url.pathname}${url.search}${url.hash}`;
+    const pathname = url.pathname.startsWith('/zh-CN/')
+      ? url.pathname.slice('/zh-CN'.length)
+      : url.pathname;
+    return `${getSiteOrigins()[site]}${pathname}${url.search}${url.hash}`;
   }
   if (!href.startsWith('/')) return href;
   const url = new URL(href, 'https://paobu.invalid');
-  const [locale, section, ...rest] = url.pathname.split('/').filter(Boolean);
-  if (!LOCALES.includes(locale as Locale)) return href;
+  const parts = url.pathname.split('/').filter(Boolean);
+  const locale = parts[0] === 'en' ? 'en' : 'zh-CN';
+  const pathParts = parts[0] === 'en' || parts[0] === 'zh-CN' ? parts.slice(1) : parts;
+  const [section, ...rest] = pathParts;
+  if (!section) return href;
   const normalizedSection = section === 'knowledge' ? 'articles' : section;
-  const site = normalizedSection ? SECTION_SITE[normalizedSection] : undefined;
+  const site = SECTION_SITE[normalizedSection];
   if (!site) return href;
-  const pathname = `/${locale}/${normalizedSection}/${rest.length > 0 ? `${rest.join('/')}/` : ''}`;
+  const prefix = locale === 'en' ? '/en' : '';
+  const pathname = `${prefix}/${normalizedSection}/${rest.length > 0 ? `${rest.join('/')}/` : ''}`;
   return `${getSiteOrigins()[site]}${pathname}${url.search}${url.hash}`;
 }
 

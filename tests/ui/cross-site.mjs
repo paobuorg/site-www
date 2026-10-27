@@ -33,7 +33,7 @@ async function mapProductionLinks(context) {
 }
 
 async function usesProductionLinks() {
-  const html = await (await fetch(`${previewRoutes}/zh-CN/`)).text();
+  const html = await (await fetch(`${previewRoutes}/`)).text();
   return html.includes('https://learn.paobu.org/');
 }
 
@@ -90,7 +90,7 @@ async function runMainFlow(browser, productionLinks) {
     if (message.type() === 'error') consoleErrors.push(`${page.url()} :: ${message.text()}`);
   });
   page.on('pageerror', (error) => pageErrors.push(`${page.url()} :: ${String(error)}`));
-  const startUrl = productionLinks ? `${origins.routes}/zh-CN/` : `${previewRoutes}/zh-CN/`;
+  const startUrl = productionLinks ? `${origins.routes}/` : `${previewRoutes}/`;
   await page.goto(startUrl, { waitUntil: 'domcontentloaded' });
   await waitReady(page);
   const start = await state(page);
@@ -100,7 +100,7 @@ async function runMainFlow(browser, productionLinks) {
   const themeCookie = (await context.cookies()).find((cookie) => cookie.name === 'paobu_theme')?.value ?? null;
 
   await page.locator('.primary-nav a').filter({ hasText: '知识' }).first().click();
-  await page.waitForURL(`${origins.knowledge}/zh-CN/`);
+  await page.waitForURL(`${origins.knowledge}/`);
   await waitReady(page);
   const knowledgeZh = await state(page);
 
@@ -158,7 +158,7 @@ async function runCookieBlockedFlow(browser, productionLinks) {
     });
   });
   const page = await context.newPage();
-  const startUrl = productionLinks ? `${origins.routes}/zh-CN/` : `${previewRoutes}/zh-CN/`;
+  const startUrl = productionLinks ? `${origins.routes}/` : `${previewRoutes}/`;
   await page.goto(startUrl, { waitUntil: 'domcontentloaded' });
   await waitReady(page);
   await page.locator('[data-theme-toggle]').click();
@@ -167,7 +167,7 @@ async function runCookieBlockedFlow(browser, productionLinks) {
   const link = page.locator('.primary-nav a').filter({ hasText: '知识' }).first();
   const hrefBeforeClick = await link.getAttribute('href');
   await link.click();
-  await page.waitForURL(`${origins.knowledge}/zh-CN/`);
+  await page.waitForURL(`${origins.knowledge}/`);
   await waitReady(page);
   const afterClick = await state(page);
   await context.close();

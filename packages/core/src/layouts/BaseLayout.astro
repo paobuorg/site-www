@@ -49,7 +49,7 @@ const altHref = alternateHref ?? alternateLocalePath(pathname, other);
 const canonical = new URL(pathname, Astro.site ?? Astro.url.origin).toString();
 const alternateCanonical = new URL(alternateLocalePath(pathname, other), Astro.site ?? Astro.url.origin).toString();
 const fullTitle = title.includes('RunMap') ? title : `${title} · 跑地图 RunMap`;
-const isHome = /^\/(zh-CN|en)\/$/.test(pathname);
+const isHome = pathname === '/' || pathname === '/en/';
 const xDefault = isHome ? new URL('/', Astro.site ?? Astro.url.origin).toString() : null;
 const otherLocale: Locale = other;
 const alternateLabel = isLocale(otherLocale) ? otherLocale : 'en';

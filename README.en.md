@@ -25,7 +25,7 @@ This repository also maintains the shared core in `packages/core` (`@paobu/core`
 - Cesium 1.146.0 is the only 3D engine. `vite-plugin-cesium` participates in the build only; `scripts/prepare-content.mjs` copies runtime assets into `public/cesium/`.
 - Pagefind 1.5.2 builds the aggregate three-site index after the static build; the indexes are loaded by page language.
 - Playwright 1.64.1 and axe-core 4.14.0 are pinned in devDependencies; browser checks use Playwright-managed Chromium, Firefox and WebKit rather than a hard-coded local browser path.
-- Core version 0.2.13, artifact SHA-256 `b3e5b077614b661c0c553ef1b600386d9a946bef83a458afd0c0889f7a1efb03`.
+- Core version 0.2.14, artifact SHA-256 `1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89`.
 
 ## Layout
 
@@ -58,7 +58,7 @@ pnpm build
 pnpm dev
 ```
 
-- Development: `http://localhost:4321`, with `/zh-CN/` and `/en/` entry points.
+- Development: `http://localhost:4321`, with `/` and `/en/` entry points.
 - Built preview: `pnpm preview`, `http://localhost:4421`. Cross-site links are baked from the `.env` that is actually loaded (currently the development ports 4322/4323), so following them locally also needs those sites running; a production build must explicitly override all three origins, otherwise the localhost values enter the HTML.
 - Build: `pnpm build` prepares Cesium assets, runs the Astro static build and then Pagefind. A missing texture or failed content validation stops the build.
 - Content validation: `pnpm test:content`.

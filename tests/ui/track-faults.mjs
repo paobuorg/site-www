@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 const repoRoot = path.resolve(fileURLToPath(new URL('../..', import.meta.url)));
 const date = new Date().toISOString().slice(0, 10);
 const outRoot = process.env.QA_TRACK_OUT ?? path.join(repoRoot, 'evidence', date, 'track');
-const toolUrl = 'http://localhost:4423/zh-CN/tools/track-convert/';
+const toolUrl = 'http://localhost:4423/tools/track-convert/';
 const enToolUrl = 'http://localhost:4423/en/tools/track-convert/';
 
 const gpx = `<?xml version="1.0" encoding="UTF-8"?>

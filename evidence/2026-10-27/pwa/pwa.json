@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T22:11:43.841Z",
+  "generatedAt": "2026-10-27T23:51:02.540Z",
   "browser": "Playwright Chromium 156.0.8078.4",
   "note": "Requires production builds (PREVIEW_UNREVIEWED=0); service workers are intentionally not registered on preview builds.",
   "results": [
@@ -7,12 +7,12 @@
       "site": "routes",
       "ready": {
         "supported": true,
-        "controller": false,
+        "controller": true,
         "scriptURL": "http://localhost:4421/sw.js"
       },
       "controlledAfterReload": true,
       "cachedBanner": true,
-      "cachedText": "离线副本 · 缓存于 2026-10-27 22:11:41 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n正在载入卫星地球…\n马拉松\n越野跑\n\n底图：NASA Blue Marble 卫星影像合成 · NASA",
+      "cachedText": "离线副本 · 缓存于 2026-10-27 23:51:00 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n正在载入卫星地球…\n马拉松\n越野跑\n\n底图：NASA Blue Marble 卫星影像合成 · NASA",
       "fallbackVisible": true,
       "fallbackText": "R\n当前离线\n\n当前页面没有可用的离线副本。恢复网络后可继续浏览；已访问过的页面可能仍可打开。\n\nYou are offline. This page has no cached copy. Reconnect to continue; previously visited pages may still be ava",
       "consoleErrors": [
@@ -31,7 +31,7 @@
       },
       "controlledAfterReload": true,
       "cachedBanner": true,
-      "cachedText": "离线副本 · 缓存于 2026-10-27 22:11:42 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n知识\n跑步知识\n\n更科学地跑，更长久地跑\n\n围绕训练、恢复、营养与安全的常青知识。每篇正文都保留来源、适",
+      "cachedText": "离线副本 · 缓存于 2026-10-27 23:51:01 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n知识\n跑步知识\n\n更科学地跑，更长久地跑\n\n围绕训练、恢复、营养与安全的常青知识。每篇正文都保留来源、适",
       "fallbackVisible": true,
       "fallbackText": "R\n当前离线\n\n当前页面没有可用的离线副本。恢复网络后可继续浏览；已访问过的页面可能仍可打开。\n\nYou are offline. This page has no cached copy. Reconnect to continue; previously visited pages may still be ava",
       "consoleErrors": [],
@@ -41,12 +41,12 @@
       "site": "tools",
       "ready": {
         "supported": true,
-        "controller": false,
+        "controller": true,
         "scriptURL": "http://localhost:4423/sw.js"
       },
       "controlledAfterReload": true,
       "cachedBanner": true,
-      "cachedText": "离线副本 · 缓存于 2026-10-27 22:11:43 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n工具\n跑步工具\n\n算清楚，再出发\n\n配速、分段和轨迹计算都在浏览器本地完成。公式、舍入和独立算例随每个工",
+      "cachedText": "离线副本 · 缓存于 2026-10-27 23:51:02 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n工具\n跑步工具\n\n算清楚，再出发\n\n配速、分段和轨迹计算都在浏览器本地完成。公式、舍入和独立算例随每个工",
       "fallbackVisible": true,
       "fallbackText": "R\n当前离线\n\n当前页面没有可用的离线副本。恢复网络后可继续浏览；已访问过的页面可能仍可打开。\n\nYou are offline. This page has no cached copy. Reconnect to continue; previously visited pages may still be ava",
       "consoleErrors": [],
@@ -59,7 +59,7 @@
       "pass": true,
       "detail": {
         "supported": true,
-        "controller": false,
+        "controller": true,
         "scriptURL": "http://localhost:4421/sw.js"
       }
     },
@@ -67,14 +67,14 @@
       "id": "routes-controller-after-reload",
       "pass": true,
       "detail": {
-        "before": false,
+        "before": true,
         "after": true
       }
     },
     {
       "id": "routes-cached-home-offline",
       "pass": true,
-      "detail": "离线副本 · 缓存于 2026-10-27 22:11:41 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n正在载入卫星地球…\n马拉松\n越野跑\n\n底图：NASA Blue Marble 卫星影像合成 · NASA"
+      "detail": "离线副本 · 缓存于 2026-10-27 23:51:00 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n正在载入卫星地球…\n马拉松\n越野跑\n\n底图：NASA Blue Marble 卫星影像合成 · NASA"
     },
     {
       "id": "routes-uncached-offline-fallback",
@@ -114,7 +114,7 @@
     {
       "id": "knowledge-cached-home-offline",
       "pass": true,
-      "detail": "离线副本 · 缓存于 2026-10-27 22:11:42 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n知识\n跑步知识\n\n更科学地跑，更长久地跑\n\n围绕训练、恢复、营养与安全的常青知识。每篇正文都保留来源、适"
+      "detail": "离线副本 · 缓存于 2026-10-27 23:51:01 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n知识\n跑步知识\n\n更科学地跑，更长久地跑\n\n围绕训练、恢复、营养与安全的常青知识。每篇正文都保留来源、适"
     },
     {
       "id": "knowledge-uncached-offline-fallback",
@@ -139,7 +139,7 @@
       "pass": true,
       "detail": {
         "supported": true,
-        "controller": false,
+        "controller": true,
         "scriptURL": "http://localhost:4423/sw.js"
       }
     },
@@ -147,14 +147,14 @@
       "id": "tools-controller-after-reload",
       "pass": true,
       "detail": {
-        "before": false,
+        "before": true,
         "after": true
       }
     },
     {
       "id": "tools-cached-home-offline",
       "pass": true,
-      "detail": "离线副本 · 缓存于 2026-10-27 22:11:43 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n工具\n跑步工具\n\n算清楚，再出发\n\n配速、分段和轨迹计算都在浏览器本地完成。公式、舍入和独立算例随每个工"
+      "detail": "离线副本 · 缓存于 2026-10-27 23:51:02 UTC\n跳到主要内容\n跑地图\nRUNMAP\n路线\n知识\n工具\n搜索\nEN\n工具\n跑步工具\n\n算清楚，再出发\n\n配速、分段和轨迹计算都在浏览器本地完成。公式、舍入和独立算例随每个工"
     },
     {
       "id": "tools-uncached-offline-fallback",

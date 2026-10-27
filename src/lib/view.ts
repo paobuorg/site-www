@@ -1,5 +1,6 @@
 import type { ContentEntity, RouteDetails } from '@paobu/core/content';
 import type { Locale } from '@paobu/core/lib/i18n';
+import { localePrefix } from '@paobu/core/lib/routing';
 import { siteOrigin } from '@paobu/core/lib/sites';
 
 export function routeDetails(entity: ContentEntity): RouteDetails {
@@ -23,8 +24,9 @@ export function routeTypeLabel(kind: 'road-marathon' | 'trail-ultra', locale: Lo
 }
 
 export function entityHref(entity: ContentEntity, locale: Locale): string {
-  if (entity.kind === 'route') return `/${locale}/routes/${entity.slug}/`;
-  if (entity.kind === 'tool') return `${siteOrigin('tools')}/${locale}/tools/${entity.slug}/`;
+  const prefix = localePrefix(locale);
+  if (entity.kind === 'route') return `${prefix}/routes/${entity.slug}/`;
+  if (entity.kind === 'tool') return `${siteOrigin('tools')}${prefix}/tools/${entity.slug}/`;
   const section = entity.details && 'contentType' in entity.details
     ? entity.details.contentType === 'glossary'
       ? 'glossary'
@@ -32,7 +34,7 @@ export function entityHref(entity: ContentEntity, locale: Locale): string {
         ? 'paths'
         : 'articles'
     : 'articles';
-  return `${siteOrigin('knowledge')}/${locale}/${section}/${entity.slug}/`;
+  return `${siteOrigin('knowledge')}${prefix}/${section}/${entity.slug}/`;
 }
 
 export function formatDate(value: string | null, locale: Locale): string {

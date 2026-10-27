@@ -2,6 +2,7 @@
 import Icon from './Icon.astro';
 import { t, type Locale, type SiteKind } from '../lib/i18n';
 import { getSiteOrigins } from '../lib/sites';
+import { localePrefix } from '../lib/routing';
 
 interface Props {
   locale: Locale;
@@ -9,6 +10,7 @@ interface Props {
 }
 const { locale, active } = Astro.props;
 const origins = getSiteOrigins();
+const prefix = localePrefix(locale);
 const items = [
   { kind: 'routes' as const, key: 'routes' as const, icon: 'route' as const },
   { kind: 'knowledge' as const, key: 'knowledge' as const, icon: 'book' as const },
@@ -18,7 +20,7 @@ const items = [
 <nav class="bottom-nav" aria-label={t(locale, 'menu')}>
   {items.map((item) => (
     <a
-      href={item.kind === active ? `/${locale}/` : `${origins[item.kind]}/${locale}/`}
+      href={item.kind === active ? `${prefix}/` : `${origins[item.kind]}${prefix}/`}
       aria-current={item.kind === active ? 'page' : undefined}
       data-cross-site={item.kind === active ? undefined : 'true'}
     >

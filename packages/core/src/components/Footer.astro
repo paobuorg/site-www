@@ -2,6 +2,7 @@
 import Logo from './Logo.astro';
 import { t, type Locale, type SiteKind } from '../lib/i18n';
 import { getSiteOrigins, githubUrl } from '../lib/sites';
+import { localePrefix, localizedPath } from '../lib/routing';
 
 interface Props {
   locale: Locale;
@@ -11,7 +12,9 @@ const { locale, active } = Astro.props;
 const origins = getSiteOrigins();
 const gh = githubUrl();
 const year = new Date().getFullYear();
-const brandHref = active === 'routes' ? `/${locale}/` : `${origins.routes}/${locale}/`;
+const prefix = localePrefix(locale);
+const brandHref = active === 'routes' ? `${prefix}/` : `${origins.routes}${prefix}/`;
+const aboutPath = localizedPath('routes', locale, 'about');
 ---
 <footer class="site-footer">
   <div class="footer-inner">
@@ -24,16 +27,16 @@ const brandHref = active === 'routes' ? `/${locale}/` : `${origins.routes}/${loc
     <div class="footer-group">
       <h2>{locale === 'zh-CN' ? '浏览' : 'Explore'}</h2>
       <ul>
-        <li><a href={`${origins.routes}/${locale}/routes/`} data-cross-site>{t(locale, 'routes')}</a></li>
-        <li><a href={`${origins.knowledge}/${locale}/`} data-cross-site>{t(locale, 'knowledge')}</a></li>
-        <li><a href={`${origins.tools}/${locale}/`} data-cross-site>{t(locale, 'tools')}</a></li>
+        <li><a href={`${origins.routes}${prefix}/routes/`} data-cross-site>{t(locale, 'routes')}</a></li>
+        <li><a href={`${origins.knowledge}${prefix}/`} data-cross-site>{t(locale, 'knowledge')}</a></li>
+        <li><a href={`${origins.tools}${prefix}/`} data-cross-site>{t(locale, 'tools')}</a></li>
       </ul>
     </div>
     <div class="footer-group">
       <h2>{locale === 'zh-CN' ? '项目' : 'Project'}</h2>
       <ul>
-        <li><a href={`${origins.routes}/${locale}/about/`} data-cross-site>{locale === 'zh-CN' ? '关于与方法' : 'About & method'}</a></li>
-        <li><a href={locale === 'zh-CN' ? `${origins.routes}/zh-CN/about/#licenses` : `${origins.routes}/en/about/#licenses`} data-cross-site>{locale === 'zh-CN' ? '许可与署名' : 'Licenses & attribution'}</a></li>
+        <li><a href={`${origins.routes}${aboutPath}`} data-cross-site>{locale === 'zh-CN' ? '关于与方法' : 'About & method'}</a></li>
+        <li><a href={`${origins.routes}${aboutPath}#licenses`} data-cross-site>{locale === 'zh-CN' ? '许可与署名' : 'Licenses & attribution'}</a></li>
         {gh && <li><a href={gh} rel="external noopener">GitHub</a></li>}
       </ul>
     </div>

@@ -11,8 +11,8 @@ const channel = process.env.QA_CHANNEL || undefined;
 const runsPerScenario = Number(process.env.PERF_RUNS ?? 3);
 
 const urls = {
-  article: 'http://localhost:4422/zh-CN/articles/easy-run/',
-  home: 'http://localhost:4421/zh-CN/',
+  article: 'http://localhost:4422/articles/easy-run/',
+  home: 'http://localhost:4421/',
 };
 
 const scenarios = {
@@ -291,7 +291,7 @@ async function gzipFile(filePath) {
 
 async function nonMapAssetSizes() {
   const siteRoot = path.resolve(repoRoot, '..', 'site-knowledge');
-  const htmlPath = path.join(siteRoot, 'dist', 'zh-CN', 'articles', 'easy-run', 'index.html');
+  const htmlPath = path.join(siteRoot, 'dist', 'articles', 'easy-run', 'index.html');
   const html = await readFile(htmlPath, 'utf8');
   const refs = [...html.matchAll(/(?:src|href)="(\/_astro\/[^"]+\.(?:js|css))"/g)].map((match) => match[1]);
   const unique = [...new Set(refs)];
@@ -317,7 +317,7 @@ async function nonMapAssetSizes() {
 
 async function homeSizes(homeRun) {
   const siteRoot = repoRoot;
-  const html = await readFile(path.join(siteRoot, 'dist', 'zh-CN', 'index.html'), 'utf8');
+  const html = await readFile(path.join(siteRoot, 'dist', 'index.html'), 'utf8');
   const engineFiles = new Map();
   for (const request of homeRun.network) {
     if (!request.url.startsWith('http://localhost:4421')) continue;

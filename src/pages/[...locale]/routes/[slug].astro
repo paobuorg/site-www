@@ -2,6 +2,7 @@
 import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
 import Icon from '@paobu/core/components/Icon.astro';
 import { t, otherLocale, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
 import { articleData, breadcrumbList } from '@paobu/core/lib/seo';
 import { siteContent } from '../../../lib/content';
 import {
@@ -17,13 +18,14 @@ export function getStaticPaths() {
   const content = siteContent();
   return LOCALES.flatMap((locale) =>
     content.visible('route').map((route) => ({
-      params: { locale, slug: route.slug },
-      props: { entityId: route.entityId },
+      params: { locale: localeStaticParam(locale), slug: route.slug },
+      props: { entityId: route.entityId, locale },
     })),
   );
 }
 
-const locale = Astro.params.locale as Locale;
+const locale = Astro.props.locale as Locale;
+const prefix = localePrefix(locale);
 const content = siteContent();
 const entity = content.byId(Astro.props.entityId);
 if (!entity) throw new Error(`Route ${Astro.props.entityId} is not visible`);
@@ -105,11 +107,11 @@ const officialHref = details.geometryAccess === 'official-link' && details.offic
   : official?.url ?? null;
 const officialLabel = details.geometryAccess === 'official-link' ? copy.officialTrack : copy.official;
 const pageOrigin = Astro.site ?? Astro.url.origin;
-const pageUrl = new URL(`/${locale}/routes/${entity.slug}/`, pageOrigin).toString();
+const pageUrl = new URL(`${prefix}/routes/${entity.slug}/`, pageOrigin).toString();
 const structuredData = [
   breadcrumbList([
-    { name: copy.home, url: new URL(`/${locale}/`, pageOrigin).toString() },
-    { name: copy.allRoutes, url: new URL(`/${locale}/routes/`, pageOrigin).toString() },
+    { name: copy.home, url: new URL(`${prefix}/`, pageOrigin).toString() },
+    { name: copy.allRoutes, url: new URL(`${prefix}/routes/`, pageOrigin).toString() },
     { name: translation.title, url: pageUrl },
   ]),
   articleData({
@@ -134,7 +136,7 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
   active="routes"
   preview={content.preview}
   ogType="article"
-  alternateHref={`/${other}/routes/${entity.slug}/`}
+  alternateHref={`${localePrefix(other)}/routes/${entity.slug}/`}
   structuredData={structuredData}
 >
   <Fragment slot="head">
@@ -145,8 +147,8 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
   <div class="page-shell">
     <div class="breadcrumbs">
       <ol>
-        <li><a href={`/${locale}/`}>{copy.home}</a></li>
-        <li><a href={`/${locale}/routes/`}>{copy.allRoutes}</a></li>
+        <li><a href={`${prefix}/`}>{copy.home}</a></li>
+        <li><a href={`${prefix}/routes/`}>{copy.allRoutes}</a></li>
         <li>{translation.title}</li>
       </ol>
     </div>

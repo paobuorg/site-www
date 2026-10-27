@@ -4,6 +4,7 @@ import Icon from './Icon.astro';
 import SearchField from './SearchField.astro';
 import { t, otherLocale, type Locale, type SiteKind } from '../lib/i18n';
 import { getSiteOrigins, githubUrl } from '../lib/sites';
+import { localePrefix } from '../lib/routing';
 
 interface Props {
   locale: Locale;
@@ -18,9 +19,10 @@ const nav = [
   { kind: 'knowledge' as const, key: 'knowledge' as const, icon: 'book' as const },
   { kind: 'tools' as const, key: 'tools' as const, icon: 'tools' as const },
 ];
-const brandHref = active === 'routes' ? `/${locale}/` : `${origins.routes}/${locale}/`;
+const prefix = localePrefix(locale);
+const brandHref = active === 'routes' ? `${prefix}/` : `${origins.routes}${prefix}/`;
 const gh = githubUrl();
-const searchAction = `/${locale}/search/`;
+const searchAction = `${prefix}/search/`;
 const languageLabel = alternate === 'en' ? 'EN' : '中文';
 ---
 <header class="site-header">
@@ -29,7 +31,7 @@ const languageLabel = alternate === 'en' ? 'EN' : '中文';
     <nav class="primary-nav" aria-label={t(locale, 'menu')}>
       {nav.map((item) => (
         <a
-          href={item.kind === active ? `/${locale}/` : `${origins[item.kind]}/${locale}/`}
+          href={item.kind === active ? `${prefix}/` : `${origins[item.kind]}${prefix}/`}
           aria-current={item.kind === active ? 'page' : undefined}
           data-cross-site={item.kind === active ? undefined : 'true'}
         >

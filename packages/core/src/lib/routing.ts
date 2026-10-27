@@ -10,14 +10,23 @@ export function sectionFor(entityId: string, kind: string): string {
   return 'articles';
 }
 
+export function localePrefix(locale: Locale): string {
+  return locale === 'zh-CN' ? '' : '/en';
+}
+
+export function localeStaticParam(locale: Locale): string | undefined {
+  return locale === 'zh-CN' ? undefined : locale;
+}
+
 export function localizedPath(
   _site: SiteKind,
   locale: Locale,
   section: 'home' | 'routes' | 'articles' | 'glossary' | 'paths' | 'topics' | 'tools' | 'search' | 'about' | 'collections',
   slug?: string,
 ): string {
-  if (section === 'home') return `/${locale}/`;
-  const base = `/${locale}/${section}/`;
+  const prefix = localePrefix(locale);
+  if (section === 'home') return `${prefix}/`;
+  const base = `${prefix}/${section}/`;
   return slug ? `${base}${slug}/` : base;
 }
 
@@ -28,12 +37,9 @@ export function canonicalUrl(site: SiteKind, pathname: string): string {
 
 export function alternateLocalePath(pathname: string, locale: Locale): string {
   const parts = pathname.split('/').filter(Boolean);
-  if (parts.length === 0) return `/${locale}/`;
-  if (parts[0] === 'zh-CN' || parts[0] === 'en') {
-    parts[0] = locale;
-    return `/${parts.join('/')}/`;
-  }
-  return `/${locale}${pathname.startsWith('/') ? pathname : `/${pathname}`}`;
+  const rest = parts[0] === 'en' || parts[0] === 'zh-CN' ? parts.slice(1) : parts;
+  const prefix = localePrefix(locale);
+  return rest.length > 0 ? `${prefix}/${rest.join('/')}/` : `${prefix}/`;
 }
 
 export function routeUrl(locale: Locale, slug: string): string {

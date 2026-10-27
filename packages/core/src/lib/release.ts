@@ -175,7 +175,7 @@ a.secondary { background: rgba(255,255,255,0.12); color: #eef7f5; }
 <h1>当前离线</h1>
 <p>当前页面没有可用的离线副本。恢复网络后可继续浏览；已访问过的页面可能仍可打开。</p>
 <p lang="en">You are offline. This page has no cached copy. Reconnect to continue; previously visited pages may still be available.</p>
-<a href="/zh-CN/">返回首页</a>
+<a href="/">返回首页</a>
 <a class="secondary" href="/en/" lang="en">English</a>
 </main>
 </body>

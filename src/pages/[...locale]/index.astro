@@ -3,14 +3,16 @@ import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
 import Icon from '@paobu/core/components/Icon.astro';
 import SearchField from '@paobu/core/components/SearchField.astro';
 import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
 import { siteContent } from '../../lib/content';
 import { routeDetails } from '../../lib/view';
 
 export function getStaticPaths() {
-  return LOCALES.map((locale) => ({ params: { locale } }));
+  return LOCALES.map((locale) => ({ params: { locale: localeStaticParam(locale) }, props: { locale } }));
 }
 
-const locale = Astro.params.locale as Locale;
+const locale = Astro.props.locale as Locale;
+const prefix = localePrefix(locale);
 const content = siteContent();
 const routes = content.visible('route');
 const copy = locale === 'zh-CN'
@@ -42,7 +44,7 @@ const globeRoutes = routes.map((route) => {
     kind: details.raceType,
     title: translation.title,
     place: details.placeName[locale],
-    url: `/${locale}/routes/${route.slug}/`,
+    url: `${prefix}/routes/${route.slug}/`,
     longitude: details.mapAnchor.longitude,
     latitude: details.mapAnchor.latitude,
   };
@@ -131,7 +133,7 @@ const description = locale === 'zh-CN'
       <span class="pill mint"><Icon name="globe" size={14} />{copy.eyebrow}</span>
       <h1 id="globe-title">{t(locale, 'routeHome')}</h1>
       <p class="globe-subtitle">{t(locale, 'routeSubtitle')}</p>
-      <SearchField locale={locale} action={`/${locale}/search/`} id="route-search-input" placeholder={t(locale, 'routeSearch')} />
+      <SearchField locale={locale} action={`${prefix}/search/`} id="route-search-input" placeholder={t(locale, 'routeSearch')} />
 
       <div class="filter-row" role="group" aria-label={locale === 'zh-CN' ? '按类型筛选' : 'Filter by type'}>
         <button class="filter-chip" type="button" data-route-filter="all" aria-pressed="true">{copy.all}</button>
@@ -150,7 +152,7 @@ const description = locale === 'zh-CN'
           return (
             <a
               class="route-list-item"
-              href={`/${locale}/routes/${route.slug}/`}
+              href={`${prefix}/routes/${route.slug}/`}
               data-route-card
               data-route-kind={details.raceType}
             >
@@ -167,7 +169,7 @@ const description = locale === 'zh-CN'
 
       <div class="globe-panel-footer">
         <span>{copy.count}</span>
-        <a href={`/${locale}/routes/`}>{t(locale, 'allRoutes')} →</a>
+        <a href={`${prefix}/routes/`}>{t(locale, 'allRoutes')} →</a>
       </div>
     </aside>
   </section>

@@ -1,6 +1,6 @@
 {
   "name": "@paobu/core",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "description": "Shared design, locale, routing and content contracts for RunMap sites.",
   "type": "module",
   "license": "MIT",

@@ -22,7 +22,7 @@ async function checkSite(browser, site) {
   });
   page.on('pageerror', (error) => pageErrors.push(String(error)));
   try {
-    await page.goto(`${site.origin}/zh-CN/`, { waitUntil: 'load' });
+    await page.goto(`${site.origin}/`, { waitUntil: 'load' });
     const ready = await page.evaluate(async () => {
       if (!('serviceWorker' in navigator)) return { supported: false, controller: null, scriptURL: null };
       const registration = await Promise.race([

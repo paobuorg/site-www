@@ -2,14 +2,16 @@
 import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
 import Icon from '@paobu/core/components/Icon.astro';
 import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
 import { siteContent } from '../../../lib/content';
 import { formatDistance, formatElevation, routeDetails } from '../../../lib/view';
 
 export function getStaticPaths() {
-  return LOCALES.map((locale) => ({ params: { locale } }));
+  return LOCALES.map((locale) => ({ params: { locale: localeStaticParam(locale) }, props: { locale } }));
 }
 
-const locale = Astro.params.locale as Locale;
+const locale = Astro.props.locale as Locale;
+const prefix = localePrefix(locale);
 const content = siteContent();
 const routes = content.visible('route');
 const copy = locale === 'zh-CN'
@@ -41,7 +43,7 @@ const description = locale === 'zh-CN'
   <div class="page-shell">
     <div class="breadcrumbs">
       <ol>
-        <li><a href={`/${locale}/`}>{t(locale, 'home')}</a></li>
+        <li><a href={`${prefix}/`}>{t(locale, 'home')}</a></li>
         <li>{copy.title}</li>
       </ol>
     </div>
@@ -83,7 +85,7 @@ const description = locale === 'zh-CN'
                     {details.geometryAccess === 'unavailable' && <span class="pill coral">{copy.noGeometry}</span>}
                   </div>
                   <div class="route-card-actions">
-                    <a class="button small primary" href={`/${locale}/routes/${route.slug}/`}>{t(locale, 'viewRoute')}</a>
+                    <a class="button small primary" href={`${prefix}/routes/${route.slug}/`}>{t(locale, 'viewRoute')}</a>
                     <span class="arrow">→</span>
                   </div>
                 </div>
@@ -114,7 +116,7 @@ const description = locale === 'zh-CN'
                     <span class="pill yellow">{t(locale, 'elevation')} {formatElevation(details.elevationGainMeters, locale)}</span>
                   </div>
                   <div class="route-card-actions">
-                    <a class="button small primary" href={`/${locale}/routes/${route.slug}/`}>{t(locale, 'viewRoute')}</a>
+                    <a class="button small primary" href={`${prefix}/routes/${route.slug}/`}>{t(locale, 'viewRoute')}</a>
                     <span class="arrow">→</span>
                   </div>
                 </div>

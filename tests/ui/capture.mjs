@@ -34,21 +34,22 @@ const viewports = {
 };
 
 const locales = ['zh-CN', 'en'];
+const localePath = (locale) => (locale === 'zh-CN' ? '' : '/en');
 const themes = ['light', 'dark'];
 
 const pages = [
-  { id: 'home', origin: 'routes', path: (locale) => `/${locale}/` },
-  { id: 'route', origin: 'routes', path: (locale) => `/${locale}/routes/boston/` },
-  { id: 'knowledge', origin: 'knowledge', path: (locale) => `/${locale}/` },
-  { id: 'article', origin: 'knowledge', path: (locale) => `/${locale}/articles/easy-run/` },
-  { id: 'tools', origin: 'tools', path: (locale) => `/${locale}/` },
-  { id: 'tool', origin: 'tools', path: (locale) => `/${locale}/tools/pace/` },
+  { id: 'home', origin: 'routes', path: (locale) => `${localePath(locale)}/` },
+  { id: 'route', origin: 'routes', path: (locale) => `${localePath(locale)}/routes/boston/` },
+  { id: 'knowledge', origin: 'knowledge', path: (locale) => `${localePath(locale)}/` },
+  { id: 'article', origin: 'knowledge', path: (locale) => `${localePath(locale)}/articles/easy-run/` },
+  { id: 'tools', origin: 'tools', path: (locale) => `${localePath(locale)}/` },
+  { id: 'tool', origin: 'tools', path: (locale) => `${localePath(locale)}/tools/pace/` },
 ];
 
 const searchPage = {
   id: 'search',
   origin: 'routes',
-  path: (locale) => `/${locale}/search/?q=${encodeURIComponent(locale === 'zh-CN' ? '马拉松' : 'marathon')}`,
+  path: (locale) => `${localePath(locale)}/search/?q=${encodeURIComponent(locale === 'zh-CN' ? '马拉松' : 'marathon')}`,
 };
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -238,7 +239,7 @@ async function systemThemeCheck(browser, colorScheme) {
     { name: 'paobu_theme', value: 'system', url: `http://localhost:${origins.tools}` },
   ]);
   const page = await context.newPage();
-  await page.goto(`http://localhost:${origins.routes}/zh-CN/`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`http://localhost:${origins.routes}/`, { waitUntil: 'domcontentloaded' });
   await waitForPage(page, 'home');
   const result = await page.evaluate(() => ({
     preference: document.documentElement.dataset.themePreference,
@@ -256,7 +257,7 @@ async function reducedMotionCheck(browser) {
   });
   await applyPreferences(context, 'light');
   const page = await context.newPage();
-  await page.goto(`http://localhost:${origins.routes}/zh-CN/`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`http://localhost:${origins.routes}/`, { waitUntil: 'domcontentloaded' });
   await waitForPage(page, 'home');
   const before = await page.evaluate(() => ({
     matches: matchMedia('(prefers-reduced-motion: reduce)').matches,

@@ -8,9 +8,9 @@ const date = new Date().toISOString().slice(0, 10);
 const outRoot = process.env.PERF_OUT ?? path.join(repoRoot, 'evidence', date, 'perf');
 const channel = process.env.QA_CHANNEL || undefined;
 
-const homeUrl = 'http://localhost:4421/zh-CN/';
-const routeUrl = 'http://localhost:4421/zh-CN/routes/boston/';
-const searchUrl = 'http://localhost:4421/zh-CN/search/?q=%E9%A9%AC%E6%8B%89%E6%9D%BE';
+const homeUrl = 'http://localhost:4421/';
+const routeUrl = 'http://localhost:4421/routes/boston/';
+const searchUrl = 'http://localhost:4421/search/?q=%E9%A9%AC%E6%8B%89%E6%9D%BE';
 
 const scenarios = [
   {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T22:11:58.997Z",
+  "generatedAt": "2026-10-27T23:51:18.302Z",
   "browser": "Playwright Chromium 156.0.8078.4",
   "note": [
     "The built pages carry https://paobu.org, https://learn.paobu.org and https://tools.paobu.org links. Each production host is mapped to its local 4421/4422/4423 preview server so the real production hrefs are exercised without DNS.",
@@ -7,9 +7,9 @@
   ],
   "main": {
     "start": {
-      "url": "https://paobu.org/zh-CN/",
+      "url": "https://paobu.org/",
       "host": "paobu.org:",
-      "path": "/zh-CN/",
+      "path": "/",
       "lang": "zh-CN",
       "theme": "light",
       "preference": "system",
@@ -18,9 +18,9 @@
       "active": "路线"
     },
     "afterToggle": {
-      "url": "https://paobu.org/zh-CN/",
+      "url": "https://paobu.org/",
       "host": "paobu.org:",
-      "path": "/zh-CN/",
+      "path": "/",
       "lang": "zh-CN",
       "theme": "dark",
       "preference": "dark",
@@ -30,9 +30,9 @@
     },
     "themeCookie": "dark",
     "knowledgeZh": {
-      "url": "https://learn.paobu.org/zh-CN/",
+      "url": "https://learn.paobu.org/",
       "host": "learn.paobu.org:",
-      "path": "/zh-CN/",
+      "path": "/",
       "lang": "zh-CN",
       "theme": "dark",
       "preference": "dark",
@@ -101,9 +101,9 @@
   },
   "cookieBlocked": {
     "beforeClick": {
-      "url": "https://paobu.org/zh-CN/",
+      "url": "https://paobu.org/",
       "host": "paobu.org:",
-      "path": "/zh-CN/",
+      "path": "/",
       "lang": "zh-CN",
       "theme": "dark",
       "preference": "dark",
@@ -111,11 +111,11 @@
       "h1": "探索经典跑步路线",
       "active": "路线"
     },
-    "hrefBeforeClick": "https://learn.paobu.org/zh-CN/",
+    "hrefBeforeClick": "https://learn.paobu.org/",
     "afterClick": {
-      "url": "https://learn.paobu.org/zh-CN/",
+      "url": "https://learn.paobu.org/",
       "host": "learn.paobu.org:",
-      "path": "/zh-CN/",
+      "path": "/",
       "lang": "zh-CN",
       "theme": "dark",
       "preference": "dark",
@@ -129,9 +129,9 @@
       "id": "theme-toggle-dark",
       "pass": true,
       "detail": {
-        "url": "https://paobu.org/zh-CN/",
+        "url": "https://paobu.org/",
         "host": "paobu.org:",
-        "path": "/zh-CN/",
+        "path": "/",
         "lang": "zh-CN",
         "theme": "dark",
         "preference": "dark",
@@ -149,9 +149,9 @@
       "id": "knowledge-keeps-zh-theme",
       "pass": true,
       "detail": {
-        "url": "https://learn.paobu.org/zh-CN/",
+        "url": "https://learn.paobu.org/",
         "host": "learn.paobu.org:",
-        "path": "/zh-CN/",
+        "path": "/",
         "lang": "zh-CN",
         "theme": "dark",
         "preference": "dark",
@@ -243,9 +243,9 @@
       "pass": true,
       "detail": {
         "beforeClick": {
-          "url": "https://paobu.org/zh-CN/",
+          "url": "https://paobu.org/",
           "host": "paobu.org:",
-          "path": "/zh-CN/",
+          "path": "/",
           "lang": "zh-CN",
           "theme": "dark",
           "preference": "dark",
@@ -253,11 +253,11 @@
           "h1": "探索经典跑步路线",
           "active": "路线"
         },
-        "hrefBeforeClick": "https://learn.paobu.org/zh-CN/",
+        "hrefBeforeClick": "https://learn.paobu.org/",
         "afterClick": {
-          "url": "https://learn.paobu.org/zh-CN/",
+          "url": "https://learn.paobu.org/",
           "host": "learn.paobu.org:",
-          "path": "/zh-CN/",
+          "path": "/",
           "lang": "zh-CN",
           "theme": "dark",
           "preference": "dark",
@@ -272,7 +272,7 @@
       "pass": true,
       "detail": {
         "productionLinks": true,
-        "href": "https://learn.paobu.org/zh-CN/"
+        "href": "https://learn.paobu.org/"
       }
     },
     {

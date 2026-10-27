@@ -25,7 +25,7 @@
 - Cesium 1.146.0 是唯一 3D 引擎；`vite-plugin-cesium` 只参与构建，运行时资源由 `scripts/prepare-content.mjs` 复制到 `public/cesium/`。
 - Pagefind 1.5.2 在构建后生成三站汇总索引，按页面语言分别加载。
 - Playwright 1.64.1 与 axe-core 4.14.0 固定在 devDependencies；浏览器验收使用 Playwright 管理的 Chromium、Firefox 与 WebKit，不写死本机浏览器路径。
-- 核心版本 0.2.13，制品 SHA-256 `b3e5b077614b661c0c553ef1b600386d9a946bef83a458afd0c0889f7a1efb03`。
+- 核心版本 0.2.14，制品 SHA-256 `1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89`。
 
 ## 目录
 
@@ -58,7 +58,7 @@ pnpm build
 pnpm dev
 ```
 
-- 开发：`http://localhost:4321`，语言入口 `/zh-CN/` 与 `/en/`。
+- 开发：`http://localhost:4321`，语言入口 `/` 与 `/en/`。
 - 预览构建：`pnpm preview`，`http://localhost:4421`。构建时跨站链接按实际加载的 `.env` 生成（当前指向开发端口 4322/4323），验证跳转需同时运行对应子站；生产构建必须显式覆盖三个来源，否则 `.env` 的 localhost 会进入 HTML。
 - 构建：`pnpm build` 先生成 Cesium 资源，再执行 Astro 静态构建和 Pagefind 后处理；缺少纹理或内容校验失败会中止。
 - 内容校验：`pnpm test:content`。

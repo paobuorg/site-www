@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T22:11:09.865Z",
+  "generatedAt": "2026-10-27T23:50:27.622Z",
   "browser": "Playwright Chromium 156.0.8078.4",
   "notes": [
     "low-memory-hint uses navigator.deviceMemory, not real memory pressure; a real low-memory device test is still required.",
@@ -9,7 +9,7 @@
   "results": [
     {
       "id": "webgl-disabled",
-      "url": "http://localhost:4421/zh-CN/",
+      "url": "http://localhost:4421/",
       "actions": null,
       "facts": {
         "fallbackVisible": true,
@@ -20,12 +20,12 @@
         "routeCardCount": 16,
         "routeCardVisible": 16,
         "routeLinks": [
-          "/zh-CN/routes/beijing/",
-          "/zh-CN/routes/berlin/",
-          "/zh-CN/routes/boston/",
-          "/zh-CN/routes/cape-town/",
-          "/zh-CN/routes/chicago/",
-          "/zh-CN/routes/diagonale-des-fous/"
+          "/routes/beijing/",
+          "/routes/berlin/",
+          "/routes/boston/",
+          "/routes/cape-town/",
+          "/routes/chicago/",
+          "/routes/diagonale-des-fous/"
         ],
         "searchPresent": true,
         "mainTextLength": 556,
@@ -40,7 +40,7 @@
     },
     {
       "id": "webgl-disabled-route",
-      "url": "http://localhost:4421/zh-CN/routes/boston/",
+      "url": "http://localhost:4421/routes/boston/",
       "actions": null,
       "facts": {
         "fallbackVisible": true,
@@ -52,8 +52,8 @@
         "routeCardVisible": 0,
         "routeLinks": [
           "/en/routes/boston/",
-          "/zh-CN/routes/",
-          "https://paobu.org/zh-CN/routes/"
+          "/routes/",
+          "https://paobu.org/routes/"
         ],
         "searchPresent": true,
         "mainTextLength": 2175,
@@ -68,7 +68,7 @@
     },
     {
       "id": "save-data",
-      "url": "http://localhost:4421/zh-CN/",
+      "url": "http://localhost:4421/",
       "actions": null,
       "facts": {
         "fallbackVisible": true,
@@ -79,12 +79,12 @@
         "routeCardCount": 16,
         "routeCardVisible": 16,
         "routeLinks": [
-          "/zh-CN/routes/beijing/",
-          "/zh-CN/routes/berlin/",
-          "/zh-CN/routes/boston/",
-          "/zh-CN/routes/cape-town/",
-          "/zh-CN/routes/chicago/",
-          "/zh-CN/routes/diagonale-des-fous/"
+          "/routes/beijing/",
+          "/routes/berlin/",
+          "/routes/boston/",
+          "/routes/cape-town/",
+          "/routes/chicago/",
+          "/routes/diagonale-des-fous/"
         ],
         "searchPresent": true,
         "mainTextLength": 556,
@@ -99,7 +99,7 @@
     },
     {
       "id": "low-memory-hint",
-      "url": "http://localhost:4421/zh-CN/",
+      "url": "http://localhost:4421/",
       "actions": null,
       "facts": {
         "fallbackVisible": true,
@@ -110,12 +110,12 @@
         "routeCardCount": 16,
         "routeCardVisible": 16,
         "routeLinks": [
-          "/zh-CN/routes/beijing/",
-          "/zh-CN/routes/berlin/",
-          "/zh-CN/routes/boston/",
-          "/zh-CN/routes/cape-town/",
-          "/zh-CN/routes/chicago/",
-          "/zh-CN/routes/diagonale-des-fous/"
+          "/routes/beijing/",
+          "/routes/berlin/",
+          "/routes/boston/",
+          "/routes/cape-town/",
+          "/routes/chicago/",
+          "/routes/diagonale-des-fous/"
         ],
         "searchPresent": true,
         "mainTextLength": 556,
@@ -130,7 +130,7 @@
     },
     {
       "id": "imagery-failure",
-      "url": "http://localhost:4421/zh-CN/",
+      "url": "http://localhost:4421/",
       "actions": null,
       "facts": {
         "fallbackVisible": true,
@@ -141,12 +141,12 @@
         "routeCardCount": 16,
         "routeCardVisible": 16,
         "routeLinks": [
-          "/zh-CN/routes/beijing/",
-          "/zh-CN/routes/berlin/",
-          "/zh-CN/routes/boston/",
-          "/zh-CN/routes/cape-town/",
-          "/zh-CN/routes/chicago/",
-          "/zh-CN/routes/diagonale-des-fous/"
+          "/routes/beijing/",
+          "/routes/berlin/",
+          "/routes/boston/",
+          "/routes/cape-town/",
+          "/routes/chicago/",
+          "/routes/diagonale-des-fous/"
         ],
         "searchPresent": true,
         "mainTextLength": 556,
@@ -167,7 +167,7 @@
     },
     {
       "id": "storage-restricted",
-      "url": "http://localhost:4421/zh-CN/",
+      "url": "http://localhost:4421/",
       "actions": {
         "themeAfterToggle": "dark"
       },
@@ -180,12 +180,12 @@
         "routeCardCount": 16,
         "routeCardVisible": 16,
         "routeLinks": [
-          "/zh-CN/routes/beijing/",
-          "/zh-CN/routes/berlin/",
-          "/zh-CN/routes/boston/",
-          "/zh-CN/routes/cape-town/",
-          "/zh-CN/routes/chicago/",
-          "/zh-CN/routes/diagonale-des-fous/"
+          "/routes/beijing/",
+          "/routes/berlin/",
+          "/routes/boston/",
+          "/routes/cape-town/",
+          "/routes/chicago/",
+          "/routes/diagonale-des-fous/"
         ],
         "searchPresent": true,
         "mainTextLength": 525,
@@ -200,11 +200,11 @@
     },
     {
       "id": "cookies-blocked",
-      "url": "http://localhost:4421/zh-CN/",
+      "url": "http://localhost:4421/",
       "actions": {
         "themeAfterToggle": "dark",
-        "crossSiteHrefBefore": "https://learn.paobu.org/zh-CN/",
-        "crossSiteHrefAfter": "https://learn.paobu.org/zh-CN/?uiTheme=dark"
+        "crossSiteHrefBefore": "https://learn.paobu.org/",
+        "crossSiteHrefAfter": "https://learn.paobu.org/?uiTheme=dark"
       },
       "facts": {
         "fallbackVisible": false,
@@ -215,12 +215,12 @@
         "routeCardCount": 16,
         "routeCardVisible": 16,
         "routeLinks": [
-          "/zh-CN/routes/beijing/",
-          "/zh-CN/routes/berlin/",
-          "/zh-CN/routes/boston/",
-          "/zh-CN/routes/cape-town/",
-          "/zh-CN/routes/chicago/",
-          "/zh-CN/routes/diagonale-des-fous/"
+          "/routes/beijing/",
+          "/routes/berlin/",
+          "/routes/boston/",
+          "/routes/cape-town/",
+          "/routes/chicago/",
+          "/routes/diagonale-des-fous/"
         ],
         "searchPresent": true,
         "mainTextLength": 525,
@@ -235,7 +235,7 @@
     },
     {
       "id": "storage-restricted-search",
-      "url": "http://localhost:4421/zh-CN/search/?q=%E9%A9%AC%E6%8B%89%E6%9D%BE",
+      "url": "http://localhost:4421/search/?q=%E9%A9%AC%E6%8B%89%E6%9D%BE",
       "facts": {
         "fallbackVisible": false,
         "loadingHidden": true,
@@ -245,12 +245,12 @@
         "routeCardCount": 0,
         "routeCardVisible": 0,
         "routeLinks": [
-          "https://paobu.org/zh-CN/routes/boston/",
-          "https://paobu.org/zh-CN/routes/london/",
-          "https://paobu.org/zh-CN/routes/beijing/",
-          "https://paobu.org/zh-CN/routes/tokyo/",
-          "/zh-CN/routes/",
-          "https://paobu.org/zh-CN/routes/"
+          "https://paobu.org/routes/boston/",
+          "https://paobu.org/routes/london/",
+          "https://paobu.org/routes/beijing/",
+          "https://paobu.org/routes/tokyo/",
+          "/routes/",
+          "https://paobu.org/routes/"
         ],
         "searchPresent": true,
         "mainTextLength": 836,

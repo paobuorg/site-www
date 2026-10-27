@@ -19,8 +19,8 @@ const easyRunHtml = content.translation(easyRun, 'zh-CN').html;
 const paceHtml = content.translation(pace, 'en').html;
 
 test('route body links resolve to the knowledge and tools origins', () => {
-  assert.match(bostonHtml, /href="https:\/\/learn\.test\/zh-CN\/articles\/marathon-distance\/"/);
-  assert.match(bostonHtml, /href="https:\/\/tools\.test\/zh-CN\/tools\/pace\/"/);
+  assert.match(bostonHtml, /href="https:\/\/learn\.test\/articles\/marathon-distance\/"/);
+  assert.match(bostonHtml, /href="https:\/\/tools\.test\/tools\/pace\/"/);
   assert.doesNotMatch(bostonHtml, /href="\/zh-CN\/(?:knowledge|tools)\//);
 });
 
@@ -30,7 +30,7 @@ test('cross-site content links do not open a new tab', () => {
 });
 
 test('knowledge body links resolve to the tools origin', () => {
-  assert.match(easyRunHtml, /href="https:\/\/tools\.test\/zh-CN\/tools\/pace\/"/);
+  assert.match(easyRunHtml, /href="https:\/\/tools\.test\/tools\/pace\/"/);
   assert.doesNotMatch(easyRunHtml, /href="\/zh-CN\/tools\//);
 });
 
