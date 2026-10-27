@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-10-27T06:40:00Z",
+  "account": "paobuorg",
+  "repositories": [
+    {
+      "name": "running-routes",
+      "url": "https://github.com/paobuorg/running-routes",
+      "commit": "652b96061444c13e47a8a8635ba8abbf8fd30e54",
+      "visibility": "public"
+    },
+    {
+      "name": "running-knowledge",
+      "url": "https://github.com/paobuorg/running-knowledge",
+      "commit": "b734d96256b9472b3deac93f27d56c10e545b125",
+      "visibility": "public"
+    },
+    {
+      "name": "running-tools",
+      "url": "https://github.com/paobuorg/running-tools",
+      "commit": "2d696fdadab7b671d0f7c9e6d0f8cfadf441942a",
+      "visibility": "public"
+    },
+    {
+      "name": "site-www",
+      "url": "https://github.com/paobuorg/site-www",
+      "visibility": "public"
+    },
+    {
+      "name": "site-knowledge",
+      "url": "https://github.com/paobuorg/site-knowledge",
+      "visibility": "public"
+    },
+    {
+      "name": "site-tools",
+      "url": "https://github.com/paobuorg/site-tools",
+      "visibility": "public"
+    }
+  ],
+  "coreRelease": {
+    "tag": "core-v0.2.13",
+    "url": "https://github.com/paobuorg/site-www/releases/tag/core-v0.2.13",
+    "assets": [
+      "paobu-core-0.2.13.tgz",
+      "paobu-core-0.2.13.tgz.sha256",
+      "core.lock.json"
+    ],
+    "sha256": "b3e5b077614b661c0c553ef1b600386d9a946bef83a458afd0c0889f7a1efb03"
+  },
+  "variables": {
+    "site-knowledge": {
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.13/paobu-core-0.2.13.tgz",
+      "PAOBU_CORE_SHA256": "b3e5b077614b661c0c553ef1b600386d9a946bef83a458afd0c0889f7a1efb03"
+    },
+    "site-tools": {
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.13/paobu-core-0.2.13.tgz",
+      "PAOBU_CORE_SHA256": "b3e5b077614b661c0c553ef1b600386d9a946bef83a458afd0c0889f7a1efb03"
+    }
+  },
+  "pages": {
+    "enabled": false,
+    "workflowsRun": false
+  },
+  "dns": {
+    "configured": false,
+    "httpsVerified": false
+  },
+  "notes": [
+    "The existing paobuorg/www repository was not modified.",
+    "Repositories were created public with main as the default branch.",
+    "Pages is intentionally not enabled before custom-domain DNS is available; no live site is claimed.",
+    "The site repositories' Actions were briefly disabled during the bootstrap push to avoid deploying before Pages/DNS, then re-enabled."
+  ]
+}
