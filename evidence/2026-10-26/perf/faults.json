@@ -1,0 +1,307 @@
+{
+  "generatedAt": "2026-10-27T08:22:23.906Z",
+  "browser": "Playwright Chromium 156.0.8078.4",
+  "notes": [
+    "low-memory-hint uses navigator.deviceMemory, not real memory pressure; a real low-memory device test is still required.",
+    "imagery-failure aborts the local base texture request; it does not validate a remote high-resolution imagery service.",
+    "storage-restricted and cookies-blocked simulate browser policy; they are not a substitute for a real privacy-mode device."
+  ],
+  "results": [
+    {
+      "id": "webgl-disabled",
+      "url": "http://localhost:4421/zh-CN/",
+      "actions": null,
+      "facts": {
+        "fallbackVisible": true,
+        "loadingHidden": true,
+        "canvasPresent": false,
+        "canvasDisplay": null,
+        "cesiumErrorPanels": 0,
+        "routeCardCount": 16,
+        "routeCardVisible": 16,
+        "routeLinks": [
+          "/zh-CN/routes/beijing/",
+          "/zh-CN/routes/berlin/",
+          "/zh-CN/routes/boston/",
+          "/zh-CN/routes/cape-town/",
+          "/zh-CN/routes/chicago/",
+          "/zh-CN/routes/diagonale-des-fous/"
+        ],
+        "searchPresent": true,
+        "mainTextLength": 556,
+        "theme": "light",
+        "themePreference": "light",
+        "searchResultCount": null
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "t16-webgl-disabled.png"
+    },
+    {
+      "id": "webgl-disabled-route",
+      "url": "http://localhost:4421/zh-CN/routes/boston/",
+      "actions": null,
+      "facts": {
+        "fallbackVisible": true,
+        "loadingHidden": true,
+        "canvasPresent": false,
+        "canvasDisplay": null,
+        "cesiumErrorPanels": 0,
+        "routeCardCount": 0,
+        "routeCardVisible": 0,
+        "routeLinks": [
+          "/en/routes/boston/",
+          "/zh-CN/routes/",
+          "https://paobu.org/zh-CN/routes/"
+        ],
+        "searchPresent": true,
+        "mainTextLength": 2135,
+        "theme": "light",
+        "themePreference": "light",
+        "searchResultCount": null
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "t16-webgl-disabled-route.png"
+    },
+    {
+      "id": "save-data",
+      "url": "http://localhost:4421/zh-CN/",
+      "actions": null,
+      "facts": {
+        "fallbackVisible": true,
+        "loadingHidden": true,
+        "canvasPresent": false,
+        "canvasDisplay": null,
+        "cesiumErrorPanels": 0,
+        "routeCardCount": 16,
+        "routeCardVisible": 16,
+        "routeLinks": [
+          "/zh-CN/routes/beijing/",
+          "/zh-CN/routes/berlin/",
+          "/zh-CN/routes/boston/",
+          "/zh-CN/routes/cape-town/",
+          "/zh-CN/routes/chicago/",
+          "/zh-CN/routes/diagonale-des-fous/"
+        ],
+        "searchPresent": true,
+        "mainTextLength": 556,
+        "theme": "light",
+        "themePreference": "light",
+        "searchResultCount": null
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "t16-save-data.png"
+    },
+    {
+      "id": "low-memory-hint",
+      "url": "http://localhost:4421/zh-CN/",
+      "actions": null,
+      "facts": {
+        "fallbackVisible": true,
+        "loadingHidden": true,
+        "canvasPresent": false,
+        "canvasDisplay": null,
+        "cesiumErrorPanels": 0,
+        "routeCardCount": 16,
+        "routeCardVisible": 16,
+        "routeLinks": [
+          "/zh-CN/routes/beijing/",
+          "/zh-CN/routes/berlin/",
+          "/zh-CN/routes/boston/",
+          "/zh-CN/routes/cape-town/",
+          "/zh-CN/routes/chicago/",
+          "/zh-CN/routes/diagonale-des-fous/"
+        ],
+        "searchPresent": true,
+        "mainTextLength": 556,
+        "theme": "light",
+        "themePreference": "light",
+        "searchResultCount": null
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "t16-low-memory-hint.png"
+    },
+    {
+      "id": "imagery-failure",
+      "url": "http://localhost:4421/zh-CN/",
+      "actions": null,
+      "facts": {
+        "fallbackVisible": true,
+        "loadingHidden": true,
+        "canvasPresent": true,
+        "canvasDisplay": "none",
+        "cesiumErrorPanels": 0,
+        "routeCardCount": 16,
+        "routeCardVisible": 16,
+        "routeLinks": [
+          "/zh-CN/routes/beijing/",
+          "/zh-CN/routes/berlin/",
+          "/zh-CN/routes/boston/",
+          "/zh-CN/routes/cape-town/",
+          "/zh-CN/routes/chicago/",
+          "/zh-CN/routes/diagonale-des-fous/"
+        ],
+        "searchPresent": true,
+        "mainTextLength": 556,
+        "theme": "light",
+        "themePreference": "light",
+        "searchResultCount": null
+      },
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "failedRequests": [
+        "http://localhost:4421/textures/earth-blue-marble-2048.jpg net::ERR_FAILED",
+        "http://localhost:4421/textures/earth-blue-marble-2048.jpg net::ERR_FAILED"
+      ],
+      "screenshot": "t16-imagery-failure.png"
+    },
+    {
+      "id": "storage-restricted",
+      "url": "http://localhost:4421/zh-CN/",
+      "actions": {
+        "themeAfterToggle": "dark"
+      },
+      "facts": {
+        "fallbackVisible": false,
+        "loadingHidden": true,
+        "canvasPresent": true,
+        "canvasDisplay": "block",
+        "cesiumErrorPanels": 0,
+        "routeCardCount": 16,
+        "routeCardVisible": 16,
+        "routeLinks": [
+          "/zh-CN/routes/beijing/",
+          "/zh-CN/routes/berlin/",
+          "/zh-CN/routes/boston/",
+          "/zh-CN/routes/cape-town/",
+          "/zh-CN/routes/chicago/",
+          "/zh-CN/routes/diagonale-des-fous/"
+        ],
+        "searchPresent": true,
+        "mainTextLength": 525,
+        "theme": "dark",
+        "themePreference": "dark",
+        "searchResultCount": null
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "t16-storage-restricted.png"
+    },
+    {
+      "id": "cookies-blocked",
+      "url": "http://localhost:4421/zh-CN/",
+      "actions": {
+        "themeAfterToggle": "dark",
+        "crossSiteHrefBefore": "https://learn.paobu.org/zh-CN/",
+        "crossSiteHrefAfter": "https://learn.paobu.org/zh-CN/?uiTheme=dark"
+      },
+      "facts": {
+        "fallbackVisible": false,
+        "loadingHidden": true,
+        "canvasPresent": true,
+        "canvasDisplay": "block",
+        "cesiumErrorPanels": 0,
+        "routeCardCount": 16,
+        "routeCardVisible": 16,
+        "routeLinks": [
+          "/zh-CN/routes/beijing/",
+          "/zh-CN/routes/berlin/",
+          "/zh-CN/routes/boston/",
+          "/zh-CN/routes/cape-town/",
+          "/zh-CN/routes/chicago/",
+          "/zh-CN/routes/diagonale-des-fous/"
+        ],
+        "searchPresent": true,
+        "mainTextLength": 525,
+        "theme": "dark",
+        "themePreference": "dark",
+        "searchResultCount": null
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "t16-cookies-blocked.png"
+    },
+    {
+      "id": "storage-restricted-search",
+      "url": "http://localhost:4421/zh-CN/search/?q=%E9%A9%AC%E6%8B%89%E6%9D%BE",
+      "facts": {
+        "fallbackVisible": false,
+        "loadingHidden": true,
+        "canvasPresent": false,
+        "canvasDisplay": null,
+        "cesiumErrorPanels": 0,
+        "routeCardCount": 0,
+        "routeCardVisible": 0,
+        "routeLinks": [
+          "https://paobu.org/zh-CN/routes/boston/",
+          "https://paobu.org/zh-CN/routes/beijing/",
+          "https://paobu.org/zh-CN/routes/london/",
+          "https://paobu.org/zh-CN/routes/tokyo/",
+          "/zh-CN/routes/",
+          "https://paobu.org/zh-CN/routes/"
+        ],
+        "searchPresent": true,
+        "mainTextLength": 836,
+        "theme": "light",
+        "themePreference": "light",
+        "searchResultCount": 8
+      },
+      "pageErrors": [],
+      "screenshot": "t16-storage-restricted-search.png"
+    }
+  ],
+  "assertions": [
+    {
+      "id": "webgl-disabled",
+      "pass": true,
+      "detail": "fallback shown, route cards and search remain usable"
+    },
+    {
+      "id": "webgl-disabled-route",
+      "pass": true,
+      "detail": "route page shows fallback and keeps its text content"
+    },
+    {
+      "id": "save-data",
+      "pass": true,
+      "detail": "Save-Data skips WebGL without breaking the route list"
+    },
+    {
+      "id": "low-memory-hint",
+      "pass": true,
+      "detail": "low deviceMemory hint skips WebGL without breaking the route list"
+    },
+    {
+      "id": "imagery-failure",
+      "pass": true,
+      "detail": "aborted texture request falls back while expected network errors are recorded"
+    },
+    {
+      "id": "storage-restricted",
+      "pass": true,
+      "detail": "theme toggle works when localStorage and sessionStorage throw"
+    },
+    {
+      "id": "cookies-blocked",
+      "pass": true,
+      "detail": "cross-site links carry theme through the query when cookies are blocked"
+    },
+    {
+      "id": "storage-restricted-search",
+      "pass": true,
+      "detail": "search still renders results when storage throws"
+    }
+  ]
+}

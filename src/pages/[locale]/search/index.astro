@@ -1,0 +1,422 @@
+---
+import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Icon from '@paobu/core/components/Icon.astro';
+import SearchField from '@paobu/core/components/SearchField.astro';
+import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { siteContent } from '../../../lib/content';
+
+export function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const content = siteContent();
+const copy = locale === 'zh-CN'
+  ? {
+      title: '全站搜索',
+      intro: '一次搜索路线、跑步知识与计算工具。索引由构建快照生成，不依赖第三方搜索服务。',
+      scope: '搜索范围',
+      scopeAggregate: '三站汇总 · 仅当前语言 · 不索引预览正文以外的页面',
+      language: '中文',
+      kinds: { all: '全部', route: '路线', knowledge: '知识', tool: '工具' },
+      sites: { routes: '路线站', knowledge: '知识站', tools: '工具站' },
+      kindLabels: { route: '路线', knowledge: '知识', tool: '工具' },
+      statusInitial: '输入关键词开始搜索。',
+      statusLoading: '正在搜索…',
+      statusResults: '找到 {count} 条结果',
+      statusEmpty: '没有找到匹配内容。试试赛事名、主题词、术语或工具名。',
+      statusUnavailable: '搜索索引尚未生成。请先运行正式构建；本地开发服务器不提供全站索引。',
+      statusError: '搜索暂时不可用，请稍后重试。正文页面仍可直接阅读。',
+      loadMore: '显示更多',
+      preview: '待审阅',
+      noResultsTitle: '没有匹配结果',
+      noResultsBody: '搜索词越具体，越容易定位。也可以先浏览全部路线。',
+      browseRoutes: '浏览全部路线',
+      hintTitle: '搜索提示',
+      hintBody: '可以输入中英文赛事名、地点、主题词或工具名。结果按相关度排序，筛选在分页之前生效。',
+      indexed: `${content.entities.length} 个可见条目`,
+    }
+  : {
+      title: 'Search all sites',
+      intro: 'Search routes, running knowledge and calculators in one place. The index is built from a fixed content snapshot, with no third-party search service.',
+      scope: 'Search scope',
+      scopeAggregate: 'All three sites · current language only · no extra indexable pages',
+      language: 'English',
+      kinds: { all: 'All', route: 'Routes', knowledge: 'Knowledge', tool: 'Tools' },
+      sites: { routes: 'Routes', knowledge: 'Learn', tools: 'Tools' },
+      kindLabels: { route: 'Route', knowledge: 'Knowledge', tool: 'Tool' },
+      statusInitial: 'Enter a keyword to search.',
+      statusLoading: 'Searching…',
+      statusResults: '{count} results',
+      statusEmpty: 'No matches. Try a race name, topic, term or tool name.',
+      statusUnavailable: 'The search index has not been built yet. Run a production build first; the local development server does not serve the aggregate index.',
+      statusError: 'Search is temporarily unavailable. Content pages remain readable.',
+      loadMore: 'Show more',
+      preview: 'In review',
+      noResultsTitle: 'No matching results',
+      noResultsBody: 'A more specific query is easier to match. You can also browse every route first.',
+      browseRoutes: 'Browse all routes',
+      hintTitle: 'Search tips',
+      hintBody: 'Try Chinese or English race names, places, topics or tool names. Results are ranked by relevance and filters apply before pagination.',
+      indexed: `${content.entities.length} visible entries`,
+    };
+const title = `${copy.title} · RunMap`;
+const description = locale === 'zh-CN'
+  ? '搜索跑地图的路线、知识与工具；索引范围与语言在页面中明确说明。'
+  : 'Search RunMap routes, knowledge and tools, with the index scope and language stated on the page.';
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={description}
+  active="routes"
+  preview={content.preview}
+  noindex
+>
+  <div
+    class="page-shell narrow"
+    id="search-app"
+    data-locale={locale}
+    data-strings={JSON.stringify(copy)}
+  >
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href={`/${locale}/`}>{t(locale, 'home')}</a></li>
+        <li>{copy.title}</li>
+      </ol>
+    </div>
+
+    <div class="page-intro search-intro">
+      <div>
+        <span class="pill mint"><Icon name="search" size={14} />{copy.scope}</span>
+        <h1>{copy.title}</h1>
+        <p>{copy.intro}</p>
+      </div>
+    </div>
+
+    <div class="search-page-form">
+      <SearchField locale={locale} action={`/${locale}/search/`} id="search-page-input" />
+    </div>
+
+    <div class="search-scope" aria-label={copy.scope}>
+      <span class="pill">{copy.language}</span>
+      <span class="pill lavender">{copy.scopeAggregate}</span>
+      <span class="pill">{copy.indexed}</span>
+    </div>
+
+    <div class="filter-row search-kind-filters" role="group" aria-label={copy.scope}>
+      <button class="filter-chip" type="button" data-search-kind="all" aria-pressed="true">{copy.kinds.all}</button>
+      <button class="filter-chip" type="button" data-search-kind="route" aria-pressed="false">
+        <Icon name="route" size={17} />{copy.kinds.route}
+      </button>
+      <button class="filter-chip" type="button" data-search-kind="knowledge" aria-pressed="false">
+        <Icon name="book" size={17} />{copy.kinds.knowledge}
+      </button>
+      <button class="filter-chip" type="button" data-search-kind="tool" aria-pressed="false">
+        <Icon name="tools" size={17} />{copy.kinds.tool}
+      </button>
+    </div>
+
+    <p class="search-status" role="status" aria-live="polite" data-search-status>{copy.statusInitial}</p>
+
+    <div class="search-results" data-search-results></div>
+    <div class="search-more">
+      <button class="button ghost" type="button" data-search-more hidden>{copy.loadMore}</button>
+    </div>
+
+    <div class="empty-state" data-search-empty hidden>
+      <Icon name="search" size={42} />
+      <h2>{copy.noResultsTitle}</h2>
+      <p>{copy.noResultsBody}</p>
+      <a class="button primary" href={`/${locale}/routes/`}>{copy.browseRoutes}</a>
+    </div>
+
+    <div class="notice tone-blue search-hint">
+      <Icon name="info" size={18} />
+      <div>
+        <strong>{copy.hintTitle}</strong>
+        <p>{copy.hintBody}</p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    const app = document.getElementById('search-app');
+    if (!app) return;
+    const strings = JSON.parse(app.dataset.strings || '{}');
+    const locale = app.dataset.locale || 'zh-CN';
+    const form = app.querySelector('.search-field');
+    const input = app.querySelector('input[name="q"]');
+    const status = app.querySelector('[data-search-status]');
+    const resultsRoot = app.querySelector('[data-search-results]');
+    const emptyRoot = app.querySelector('[data-search-empty]');
+    const moreButton = app.querySelector('[data-search-more]');
+    const kindButtons = Array.from(app.querySelectorAll('[data-search-kind]'));
+
+    let pagefind = null;
+    let pagefindError = null;
+    let activeKind = 'all';
+    let shown = 0;
+    let results = [];
+    let requestToken = 0;
+    let debounceTimer = 0;
+    const pageSize = 8;
+
+    function setStatus(message) {
+      if (status) status.textContent = message;
+    }
+
+    function setKindButtons() {
+      for (const button of kindButtons) {
+        button.setAttribute('aria-pressed', button.dataset.searchKind === activeKind ? 'true' : 'false');
+      }
+    }
+
+    async function getPagefind() {
+      if (pagefind) return pagefind;
+      if (pagefindError) throw pagefindError;
+      try {
+        pagefind = await import('/pagefind/pagefind.js');
+        await pagefind.init();
+        return pagefind;
+      } catch (error) {
+        pagefindError = error;
+        throw error;
+      }
+    }
+
+    function renderResults(reset) {
+      if (!resultsRoot) return;
+      if (reset) {
+        resultsRoot.textContent = '';
+        shown = 0;
+      }
+      const next = results.slice(shown, shown + pageSize);
+      for (const result of next) {
+        const meta = result.meta || {};
+        const article = document.createElement('article');
+        article.className = 'card search-result';
+
+        const metaRow = document.createElement('div');
+        metaRow.className = 'search-result-meta';
+        const kind = meta.kind || '';
+        const site = meta.site || '';
+        const kindPill = document.createElement('span');
+        kindPill.className = 'pill ' + (kind === 'route' ? 'blue' : kind === 'knowledge' ? 'mint' : 'yellow');
+        kindPill.textContent = strings.kindLabels?.[kind] || kind;
+        metaRow.appendChild(kindPill);
+        const sitePill = document.createElement('span');
+        sitePill.className = 'pill';
+        sitePill.textContent = strings.sites?.[site] || site;
+        metaRow.appendChild(sitePill);
+        if (meta.preview === '1') {
+          const previewPill = document.createElement('span');
+          previewPill.className = 'pill coral';
+          previewPill.textContent = strings.preview || 'Preview';
+          metaRow.appendChild(previewPill);
+        }
+
+        const heading = document.createElement('h2');
+        const link = document.createElement('a');
+        const href = result.url || '#';
+        try {
+          const parsed = new URL(href, location.origin);
+          link.href = ['http:', 'https:'].includes(parsed.protocol) ? parsed.toString() : '#';
+        } catch (error) {
+          link.href = '#';
+        }
+        if (link.href.startsWith(location.origin)) {
+          link.removeAttribute('target');
+        } else {
+          link.target = '_blank';
+          link.rel = 'external noopener';
+        }
+        link.textContent = meta.title || result.url || '';
+        heading.appendChild(link);
+
+        const summary = typeof meta.summary === 'string' ? meta.summary.trim() : '';
+
+        article.appendChild(metaRow);
+        article.appendChild(heading);
+        if (summary) {
+          const excerpt = document.createElement('p');
+          excerpt.className = 'search-result-excerpt';
+          excerpt.textContent = summary;
+          article.appendChild(excerpt);
+        }
+        resultsRoot.appendChild(article);
+      }
+      shown += next.length;
+      if (moreButton) moreButton.hidden = shown >= results.length;
+    }
+
+    function updateUrl(query) {
+      try {
+        const url = new URL(location.href);
+        if (query) url.searchParams.set('q', query);
+        else url.searchParams.delete('q');
+        history.replaceState(null, '', url.toString());
+      } catch (error) {}
+    }
+
+    async function runSearch(query) {
+      const token = ++requestToken;
+      const clean = query.trim();
+      updateUrl(clean);
+      if (!clean) {
+        results = [];
+        if (resultsRoot) resultsRoot.textContent = '';
+        if (emptyRoot) emptyRoot.hidden = true;
+        if (moreButton) moreButton.hidden = true;
+        setStatus(strings.statusInitial || '');
+        return;
+      }
+      setStatus(strings.statusLoading || 'Searching…');
+      if (emptyRoot) emptyRoot.hidden = true;
+      if (moreButton) moreButton.hidden = true;
+
+      let engine;
+      try {
+        engine = await getPagefind();
+      } catch (error) {
+        if (token !== requestToken) return;
+        if (resultsRoot) resultsRoot.textContent = '';
+        setStatus(strings.statusUnavailable || 'Search index unavailable.');
+        return;
+      }
+
+      try {
+        const filters = { locale: [locale] };
+        if (activeKind !== 'all') filters.kind = [activeKind];
+        const response = await engine.search(clean, { filters });
+        if (token !== requestToken) return;
+        const loaded = await Promise.all(response.results.map((item) => item.data()));
+        if (token !== requestToken) return;
+        results = loaded;
+        if (loaded.length === 0) {
+          setStatus(strings.statusEmpty || 'No matches.');
+          if (resultsRoot) resultsRoot.textContent = '';
+          if (emptyRoot) emptyRoot.hidden = false;
+          if (moreButton) moreButton.hidden = true;
+          return;
+        }
+        setStatus((strings.statusResults || '').replace('{count}', String(loaded.length)));
+        if (emptyRoot) emptyRoot.hidden = true;
+        renderResults(true);
+      } catch (error) {
+        if (token !== requestToken) return;
+        if (resultsRoot) resultsRoot.textContent = '';
+        setStatus(strings.statusError || 'Search failed.');
+      }
+    }
+
+    const initialQuery = new URLSearchParams(location.search).get('q') || '';
+    if (input) input.value = initialQuery;
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const value = input ? input.value : '';
+      runSearch(value);
+    });
+
+    input?.addEventListener('input', () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = window.setTimeout(() => runSearch(input.value), 260);
+    });
+
+    input?.addEventListener('focus', () => {
+      getPagefind().catch(() => {});
+    }, { once: true });
+
+    for (const button of kindButtons) {
+      button.addEventListener('click', () => {
+        activeKind = button.dataset.searchKind || 'all';
+        setKindButtons();
+        if (input && input.value.trim()) runSearch(input.value);
+      });
+    }
+
+    moreButton?.addEventListener('click', () => renderResults(false));
+
+    if (initialQuery) {
+      setStatus(strings.statusLoading || 'Searching…');
+      getPagefind().then(() => runSearch(initialQuery)).catch(() => {
+        setStatus(strings.statusUnavailable || 'Search index unavailable.');
+      });
+    }
+  })();
+</script>
+
+<style>
+  .search-intro {
+    margin-bottom: 18px;
+  }
+
+  .search-intro h1 {
+    margin-top: 14px;
+  }
+
+  .search-page-form {
+    max-width: 760px;
+    margin-bottom: 16px;
+  }
+
+  .search-kind-filters {
+    margin: 2px 0 22px;
+  }
+
+  .search-status {
+    min-height: 26px;
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 0.84rem;
+  }
+
+  .search-result-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .search-result-excerpt {
+    margin-top: 8px;
+    line-height: 1.64;
+  }
+
+  .empty-state[hidden] {
+    display: none;
+  }
+
+  .search-more {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+  }
+
+  .search-more .button[hidden] {
+    display: none;
+  }
+
+  .search-hint {
+    margin-top: 34px;
+  }
+
+  .search-hint strong {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .search-hint p {
+    margin: 0;
+  }
+
+  @media (max-width: 767px) {
+    .search-kind-filters .filter-chip {
+      flex: 1 1 auto;
+      padding: 0 11px;
+    }
+  }
+</style>

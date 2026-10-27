@@ -1,0 +1,19 @@
+{
+  "name": "跑地图 RunMap",
+  "short_name": "RunMap",
+  "description": "真实卫星地球上的经典跑步路线、可追溯的跑步知识与可解释的计算工具。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f8f7",
+  "theme_color": "#08b89d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

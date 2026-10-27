@@ -1,0 +1,103 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BottomNav from '../components/BottomNav.astro';
+import Icon from '../components/Icon.astro';
+import { t, isLocale, type Locale, type SiteKind } from '../lib/i18n';
+import { alternateLocalePath } from '../lib/routing';
+import { preferenceInitScript, themeToggleScript, localeSwitchScript, viewportAssistScript } from '../lib/preferences';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  active: SiteKind;
+  alternateHref?: string;
+  preview?: boolean;
+  noindex?: boolean;
+  bodyClass?: string;
+  ogType?: 'website' | 'article';
+  structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
+}
+const {
+  locale,
+  title,
+  description,
+  active,
+  alternateHref,
+  preview = false,
+  noindex = false,
+  bodyClass = '',
+  ogType = 'website',
+  structuredData,
+} = Astro.props;
+const structuredJson = structuredData
+  ? JSON.stringify(structuredData).replaceAll('<', '\\u003c')
+  : null;
+const serviceWorkerScript = String.raw`
+(function () {
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').catch(function () {});
+  });
+})();
+`;
+const pathname = Astro.url.pathname;
+const other = locale === 'zh-CN' ? 'en' : 'zh-CN';
+const altHref = alternateHref ?? alternateLocalePath(pathname, other);
+const canonical = new URL(pathname, Astro.site ?? Astro.url.origin).toString();
+const alternateCanonical = new URL(alternateLocalePath(pathname, other), Astro.site ?? Astro.url.origin).toString();
+const fullTitle = title.includes('RunMap') ? title : `${title} · 跑地图 RunMap`;
+const isHome = /^\/(zh-CN|en)\/$/.test(pathname);
+const xDefault = isHome ? new URL('/', Astro.site ?? Astro.url.origin).toString() : null;
+const otherLocale: Locale = other;
+const alternateLabel = isLocale(otherLocale) ? otherLocale : 'en';
+---
+<!doctype html>
+<html lang={locale === 'zh-CN' ? 'zh-CN' : 'en'} data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <script is:inline set:html={preferenceInitScript} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex || preview ? <meta name="robots" content="noindex, nofollow" /> : null}
+    <link rel="alternate" hreflang={locale} href={canonical} />
+    <link rel="alternate" hreflang={alternateLabel} href={alternateCanonical} />
+    {xDefault && <link rel="alternate" hreflang="x-default" href={xDefault} />}
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="RunMap" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {structuredJson && <script type="application/ld+json" is:inline set:html={structuredJson} />}
+    <meta name="theme-color" content="#08B89D" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <slot name="head" />
+  </head>
+  <body class={bodyClass}>
+    <a class="skip-link" href="#main-content">{t(locale, 'skip')}</a>
+    <Header locale={locale} active={active} alternateHref={altHref} />
+    {preview && (
+      <div class="preview-banner" role="note">
+        <Icon name="alert" size={16} />
+        <span>{t(locale, 'previewBanner')}</span>
+      </div>
+    )}
+    <main id="main-content" class="site-main">
+      <slot />
+    </main>
+    <Footer locale={locale} active={active} />
+    <BottomNav locale={locale} active={active} />
+    <script is:inline set:html={themeToggleScript(locale)} />
+    <script is:inline set:html={localeSwitchScript(other)} />
+    <script is:inline set:html={viewportAssistScript} />
+    {!preview && <script is:inline set:html={serviceWorkerScript} />}
+    <slot name="scripts" />
+  </body>
+</html>

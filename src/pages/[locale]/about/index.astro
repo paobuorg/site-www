@@ -1,0 +1,375 @@
+---
+import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Icon from '@paobu/core/components/Icon.astro';
+import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { githubUrl } from '@paobu/core/lib/sites';
+import { siteContent } from '../../../lib/content';
+
+export function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const content = siteContent();
+const gh = githubUrl();
+const copy = locale === 'zh-CN'
+  ? {
+      title: '关于与方法',
+      lead: '跑地图把三件事放在一起：可核验的经典赛道、可追溯的跑步知识、可解释的计算工具。我们不把“看起来专业”当作证据。',
+      principlesTitle: '三条底层原则',
+      principles: [
+        {
+          icon: 'route',
+          title: '固定版本，而不是浮动描述',
+          body: '每条赛道绑定一个明确的赛事版本，记录距离口径、方向、高程口径与轨迹权利。没有可靠数字时显示“未知”，不用估算填空。',
+        },
+        {
+          icon: 'book',
+          title: '来源先于结论',
+          body: '文章与工具的每条关键结论都要能回到公开来源或可复算的公式。来源记录支持的结论，而不是只放一个好看的外链。',
+        },
+        {
+          icon: 'shield',
+          title: '审阅完成才发布',
+          body: '中英文正文同时审阅。健康与训练建议保持保守边界，不替代医生、教练或赛事官方信息。预览中的内容会明确标记为待审阅。',
+        },
+      ],
+      methodTitle: '内容如何生产',
+      methodSteps: [
+        '确定实体、版本与读者任务，先写清楚哪些问题不回答。',
+        '查证官方赛事、公共机构或同行评议来源，记录可支持的结论。',
+        '独立写作中英文正文，不使用旧版正文批量导入或机器扩写。',
+        '运行结构、引用与双语校验；编辑审阅后绑定内容摘要哈希。',
+        '发布后在复审到期或事实变化时重新核验，必要时撤回。',
+      ],
+      routesTitle: '路线与地图',
+      routesBody: '地球只用于定位和空间语境。轨迹公开可见不等于允许再分发：只有许可明确的几何才可能进入本站；否则只显示锚点并链接官方资料，不绘制模拟轨迹。地图锚点不是起点或终点的精度声明。',
+      knowledgeTitle: '知识与健康边界',
+      knowledgeBody: '知识文章面向一般跑步人群，说明适用条件与不确定性。涉及疼痛、疾病、用药或极端环境时，我们只提供就医与求助方向，不给个体诊断。训练与营养建议不构成医疗建议。',
+      toolsTitle: '工具与计算口径',
+      toolsBody: '所有工具在浏览器本地计算，文件不上传。公式、输入范围、舍入规则和独立算例随工具一起公开。经验模型会标明适用距离与条件，不把预测写成保证，也不生成没有依据的安全排名。',
+      licensesTitle: '许可与署名',
+      licenses: [
+        { label: '本站正文', value: 'CC BY 4.0，署名“跑地图 RunMap”并链接原文。' },
+        { label: '本站代码', value: 'MIT；各仓库的许可证文件为最终依据。' },
+        { label: '赛道资料', value: '按各来源许可处理；本站不重新许可第三方轨迹、照片或赛事标识。' },
+        { label: '卫星底图', value: 'NASA Earth Observatory Blue Marble Next Generation 影像合成，署名 NASA；按 NASA 媒体使用指南使用。' },
+        { label: '第三方依赖', value: 'Astro、CesiumJS、Pagefind 等按各自开源许可证使用。' },
+      ],
+      attributionTitle: '影像署名',
+      attributionBody: '首页与路线页的卫星底图来自 NASA Earth Observatory 的 Blue Marble Next Generation 合成影像。它不是赛道几何，也不代表赛事官方地图。',
+      statusTitle: '当前状态',
+      statusBody: '这是一个仍在建设中的站点快照。示例赛道、知识与工具内容处于编辑审阅阶段；预览构建会显示这些内容并加上提示，正式发布构建只纳入完成两种语言审阅的条目。当前没有配置公开代码托管地址，因此页脚不会显示 GitHub 链接。',
+      correctionsTitle: '纠错与参与',
+      correctionsBody: '发现事实、来源或计算问题时，请保留具体页面、版本与依据。公开仓库配置后，我们会在此提供可追踪的 Issue 入口，并记录实质性更正。',
+      correctionsFallback: '公开仓库尚未配置。上线前会补充可联系的仓库地址，不使用虚构邮箱或表单。',
+      githubCta: '前往 GitHub 仓库',
+      backRoutes: '浏览路线',
+      lastUpdated: '本页随构建更新',
+    }
+  : {
+      title: 'About & method',
+      lead: 'RunMap brings three things together: verifiable classic courses, traceable running knowledge and explainable calculators. Looking professional is not evidence.',
+      principlesTitle: 'Three ground rules',
+      principles: [
+        {
+          icon: 'route',
+          title: 'A fixed version, not a moving description',
+          body: 'Each course is tied to a specific event version and records its distance method, direction, elevation method and track rights. When a number is not reliable, we show “Unknown” instead of filling the gap with an estimate.',
+        },
+        {
+          icon: 'book',
+          title: 'Sources before conclusions',
+          body: 'Every key claim in an article or tool must lead back to a public source or a reproducible formula. A source record names the claims it supports; a decorative link is not enough.',
+        },
+        {
+          icon: 'shield',
+          title: 'Publish only after review',
+          body: 'Chinese and English text are reviewed together. Health and training guidance keeps conservative boundaries and never replaces a clinician, coach or official race information. Preview content is labelled as unreviewed.',
+        },
+      ],
+      methodTitle: 'How content is made',
+      methodSteps: [
+        'Define the entity, version and reader task, including the questions we will not answer.',
+        'Verify official race, public-agency or peer-reviewed sources and record the claims they support.',
+        'Write both language versions independently, without bulk-importing legacy text or padding with generated words.',
+        'Run structural, citation and bilingual validation; bind an approved review to a content digest.',
+        'Re-check at the review due date or when facts change, and withdraw content when it can no longer be supported.',
+      ],
+      routesTitle: 'Courses and maps',
+      routesBody: 'The globe provides location and spatial context, nothing more. A publicly visible track is not automatically redistributable: only geometry with clear permission can enter this site. Otherwise we show an anchor and link the official material, drawing no simulated route. A map anchor is not a precision claim about a start or finish line.',
+      knowledgeTitle: 'Knowledge and health boundaries',
+      knowledgeBody: 'Knowledge articles serve general runners and state their conditions and uncertainties. For pain, illness, medication or extreme environments we point toward clinical care and official guidance rather than offering a diagnosis. Training and nutrition material is not medical advice.',
+      toolsTitle: 'Tools and calculation methods',
+      toolsBody: 'Every tool calculates locally in the browser and uploads no files. Formulas, input ranges, rounding rules and independent worked examples are published with the tool. Empirical models state their distance and conditions; predictions are not guarantees, and we do not invent safety rankings.',
+      licensesTitle: 'Licences and attribution',
+      licenses: [
+        { label: 'Site text', value: 'CC BY 4.0. Credit “RunMap 跑地图” and link to the original page.' },
+        { label: 'Site code', value: 'MIT; the licence file in each repository is authoritative.' },
+        { label: 'Course material', value: 'Handled under each source’s licence. We do not relicense third-party tracks, photographs or race marks.' },
+        { label: 'Satellite basemap', value: 'NASA Earth Observatory Blue Marble Next Generation composite, credited to NASA and used under NASA media guidelines.' },
+        { label: 'Third-party software', value: 'Astro, CesiumJS, Pagefind and other dependencies remain under their own open-source licences.' },
+      ],
+      attributionTitle: 'Imagery credit',
+      attributionBody: 'The satellite basemap on the home and route pages is a NASA Earth Observatory Blue Marble Next Generation composite. It is not course geometry and is not an official race map.',
+      statusTitle: 'Current state',
+      statusBody: 'This is a site snapshot still under construction. The sample courses, knowledge and tools are in editorial review. A preview build shows them with a notice; a production build contains only entries whose two language versions have completed review. No public code host is configured yet, so the footer shows no GitHub link.',
+      correctionsTitle: 'Corrections and participation',
+      correctionsBody: 'If a fact, source or calculation is wrong, include the specific page, version and evidence. Once the public repositories are configured, we will add a traceable Issue entry point here and record substantive corrections.',
+      correctionsFallback: 'No public repository is configured yet. A real, contactable repository address will be added before launch; we do not invent an email or form.',
+      githubCta: 'Open the GitHub repository',
+      backRoutes: 'Browse routes',
+      lastUpdated: 'Updated with each build',
+    };
+const title = `${copy.title} · RunMap`;
+const description = locale === 'zh-CN'
+  ? '跑地图的来源、审阅、许可、地图与健康边界说明。'
+  : 'RunMap’s method for sources, review, licences, maps and health boundaries.';
+---
+
+<BaseLayout locale={locale} title={title} description={description} active="routes" preview={content.preview}>
+  <div class="page-shell narrow">
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href={`/${locale}/`}>{t(locale, 'home')}</a></li>
+        <li>{copy.title}</li>
+      </ol>
+    </div>
+
+    <div class="page-intro about-intro">
+      <div>
+        <span class="pill mint"><Icon name="compass" size={14} />{locale === 'zh-CN' ? '项目说明' : 'Project note'}</span>
+        <h1>{copy.title}</h1>
+        <p>{copy.lead}</p>
+      </div>
+    </div>
+
+    <div class="section-heading"><h2>{copy.principlesTitle}</h2></div>
+    <div class="grid three about-principles">
+      {copy.principles.map((principle) => (
+        <article class="card pad">
+          <span class="about-icon"><Icon name={principle.icon} size={24} /></span>
+          <h3>{principle.title}</h3>
+          <p>{principle.body}</p>
+        </article>
+      ))}
+    </div>
+
+    <section class="about-section" aria-labelledby="method-title">
+      <div class="section-heading"><h2 id="method-title">{copy.methodTitle}</h2></div>
+      <ol class="about-steps">
+        {copy.methodSteps.map((step) => <li>{step}</li>)}
+      </ol>
+    </section>
+
+    <div class="grid two about-sections">
+      <section class="card pad about-block">
+        <span class="pill blue"><Icon name="globe" size={14} />{copy.routesTitle}</span>
+        <p>{copy.routesBody}</p>
+      </section>
+      <section class="card pad about-block">
+        <span class="pill lavender"><Icon name="book" size={14} />{copy.knowledgeTitle}</span>
+        <p>{copy.knowledgeBody}</p>
+      </section>
+      <section class="card pad about-block">
+        <span class="pill yellow"><Icon name="tools" size={14} />{copy.toolsTitle}</span>
+        <p>{copy.toolsBody}</p>
+      </section>
+      <section class="card pad about-block">
+        <span class="pill coral"><Icon name="shield" size={14} />{copy.statusTitle}</span>
+        <p>{copy.statusBody}</p>
+      </section>
+    </div>
+
+    <section class="about-section" id="licenses" aria-labelledby="licenses-title">
+      <div class="section-heading"><h2 id="licenses-title">{copy.licensesTitle}</h2></div>
+      <dl class="license-list">
+        {copy.licenses.map((item) => (
+          <div>
+            <dt>{item.label}</dt>
+            <dd>{item.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    <section class="about-section" id="attribution" aria-labelledby="attribution-title">
+      <div class="section-heading"><h2 id="attribution-title">{copy.attributionTitle}</h2></div>
+      <div class="notice tone-blue">
+        <Icon name="globe" size={19} />
+        <div>
+          <p>{copy.attributionBody}</p>
+          <a href="https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/" rel="external noopener">
+            NASA Earth Observatory · Blue Marble Next Generation <Icon name="external" size={14} />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="corrections" aria-labelledby="corrections-title">
+      <div class="section-heading"><h2 id="corrections-title">{copy.correctionsTitle}</h2></div>
+      <p>{copy.correctionsBody}</p>
+      {gh ? (
+        <a class="button primary" href={gh} rel="external noopener">
+          <Icon name="github" size={17} />{copy.githubCta}
+        </a>
+      ) : (
+        <div class="notice">
+          <Icon name="info" size={18} />
+          <p>{copy.correctionsFallback}</p>
+        </div>
+      )}
+    </section>
+
+    <div class="about-footer-actions">
+      <a class="button primary" href={`/${locale}/routes/`}><Icon name="route" size={17} />{copy.backRoutes}</a>
+      <span class="field-hint">{copy.lastUpdated} · {new Date().getUTCFullYear()}</span>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-intro {
+    margin-bottom: 8px;
+  }
+
+  .about-intro h1 {
+    margin-top: 14px;
+  }
+
+  .about-principles {
+    align-items: stretch;
+  }
+
+  .about-principles .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-principles h3 {
+    margin: 2px 0 0;
+    font-size: 1.12rem;
+  }
+
+  .about-principles p,
+  .about-block p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .about-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: var(--primary-soft);
+    color: var(--primary-text);
+  }
+
+  .about-section {
+    margin-top: 48px;
+  }
+
+  .about-sections {
+    margin-top: 18px;
+  }
+
+  .about-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .about-block .pill {
+    align-self: flex-start;
+  }
+
+  .about-steps {
+    display: grid;
+    gap: 10px;
+    max-width: 820px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: about-step;
+  }
+
+  .about-steps li {
+    display: flex;
+    gap: 14px;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-input);
+    background: var(--surface);
+    color: var(--muted-strong);
+    font-size: 0.92rem;
+    counter-increment: about-step;
+  }
+
+  .about-steps li::before {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--primary-soft);
+    color: var(--primary-text);
+    content: counter(about-step);
+    font-size: 0.72rem;
+    font-weight: 800;
+  }
+
+  .license-list {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .license-list div {
+    display: grid;
+    grid-template-columns: minmax(130px, 0.3fr) minmax(0, 1fr);
+    gap: 18px;
+    padding: 16px 2px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .license-list dt {
+    color: var(--text);
+    font-weight: 750;
+    font-size: 0.9rem;
+  }
+
+  .license-list dd {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .about-footer-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 46px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .field-hint {
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+
+  @media (max-width: 767px) {
+    .license-list div {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  }
+</style>

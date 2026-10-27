@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-10-27T08:23:02.608Z",
+  "browser": "Playwright Chromium 156.0.8078.4",
+  "note": [
+    "A hanging Worker and shortened 10s/30s timers simulate slow processing; no large real file is uploaded.",
+    "This verifies the UI timeout/cancel states, not worker CPU performance on a physical device."
+  ],
+  "scenarios": [
+    {
+      "locale": "zh-CN",
+      "url": "http://localhost:4423/zh-CN/tools/track-convert/",
+      "slowHint": "文件仍在本地处理。你可以取消后尝试更小的文件。",
+      "slowHintShown": true,
+      "timeoutStatus": "处理超时，请尝试更小的文件。",
+      "timeoutError": "处理超时，请尝试更小的文件。",
+      "timeoutErrorVisible": true,
+      "timedOut": true,
+      "runEnabledAfterTimeout": true,
+      "cancelHiddenAfterTimeout": true,
+      "progressHiddenAfterTimeout": true,
+      "screenshot": "track-timeout-zh-CN.png",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "locale": "en",
+      "url": "http://localhost:4423/en/tools/track-convert/",
+      "slowHint": "The file is still being processed locally. You can cancel and try a smaller file.",
+      "slowHintShown": true,
+      "timeoutStatus": "Processing took too long. Try a smaller file.",
+      "timeoutError": "Processing took too long. Try a smaller file.",
+      "timeoutErrorVisible": true,
+      "timedOut": true,
+      "runEnabledAfterTimeout": true,
+      "cancelHiddenAfterTimeout": true,
+      "progressHiddenAfterTimeout": true,
+      "screenshot": "track-timeout-en.png",
+      "consoleErrors": [],
+      "pageErrors": []
+    }
+  ],
+  "cancel": {
+    "cancelled": true,
+    "status": "已取消。",
+    "errorVisible": false,
+    "runEnabled": true
+  },
+  "checks": [
+    {
+      "id": "zh-CN-slow-hint",
+      "pass": true,
+      "detail": "文件仍在本地处理。你可以取消后尝试更小的文件。"
+    },
+    {
+      "id": "zh-CN-timeout-text",
+      "pass": true,
+      "detail": "处理超时，请尝试更小的文件。"
+    },
+    {
+      "id": "zh-CN-timeout-visible",
+      "pass": true,
+      "detail": "处理超时，请尝试更小的文件。"
+    },
+    {
+      "id": "zh-CN-timeout-reset",
+      "pass": true,
+      "detail": "{\"runEnabled\":true,\"cancelHidden\":true,\"progressHidden\":true}"
+    },
+    {
+      "id": "zh-CN-no-page-errors",
+      "pass": true,
+      "detail": "{\"pageErrors\":[],\"consoleErrors\":[]}"
+    },
+    {
+      "id": "en-slow-hint",
+      "pass": true,
+      "detail": "The file is still being processed locally. You can cancel and try a smaller file."
+    },
+    {
+      "id": "en-timeout-text",
+      "pass": true,
+      "detail": "Processing took too long. Try a smaller file."
+    },
+    {
+      "id": "en-timeout-visible",
+      "pass": true,
+      "detail": "Processing took too long. Try a smaller file."
+    },
+    {
+      "id": "en-timeout-reset",
+      "pass": true,
+      "detail": "{\"runEnabled\":true,\"cancelHidden\":true,\"progressHidden\":true}"
+    },
+    {
+      "id": "en-no-page-errors",
+      "pass": true,
+      "detail": "{\"pageErrors\":[],\"consoleErrors\":[]}"
+    },
+    {
+      "id": "cancel-path",
+      "pass": true,
+      "detail": "{\"cancelled\":true,\"status\":\"已取消。\",\"errorVisible\":false,\"runEnabled\":true}"
+    }
+  ]
+}

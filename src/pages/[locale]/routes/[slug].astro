@@ -1,0 +1,370 @@
+---
+import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Icon from '@paobu/core/components/Icon.astro';
+import { t, otherLocale, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { articleData, breadcrumbList } from '@paobu/core/lib/seo';
+import { siteContent } from '../../../lib/content';
+import {
+  entityHref,
+  formatDate,
+  formatDistance,
+  formatElevation,
+  routeDetails,
+  routeTypeLabel,
+} from '../../../lib/view';
+
+export function getStaticPaths() {
+  const content = siteContent();
+  return LOCALES.flatMap((locale) =>
+    content.visible('route').map((route) => ({
+      params: { locale, slug: route.slug },
+      props: { entityId: route.entityId },
+    })),
+  );
+}
+
+const locale = Astro.params.locale as Locale;
+const content = siteContent();
+const entity = content.byId(Astro.props.entityId);
+if (!entity) throw new Error(`Route ${Astro.props.entityId} is not visible`);
+const details = routeDetails(entity);
+const translation = content.translation(entity, locale);
+const sources = content.sourcesFor(entity);
+const related = content.related(entity, locale);
+const reviewers = content.reviews.filter(
+  (review) => review.entityId === entity.entityId && review.locale === locale,
+);
+const authors = [
+  ...new Set(
+    entity.translations
+      .flatMap((item) => item.authors)
+      .map((id) => content.contributors.find((person) => person.contributorId === id)?.displayName ?? id),
+  ),
+];
+const official = sources.find((source) => source.url) ?? sources[0];
+const other = otherLocale(locale);
+const copy = locale === 'zh-CN'
+  ? {
+      home: '首页',
+      allRoutes: '全部路线',
+      anchorOverview: '地图概览位置',
+      anchorStart: '起点位置',
+      geometry: '轨迹权利',
+      geometryUnavailable: '本站没有可再分发的该赛道轨迹文件。地图只显示锚点，不显示模拟轨迹。',
+      geometryOfficial: '轨迹请前往官方来源查看；本站不复制该文件。',
+      geometryRedistributable: '本站可提供经许可的简化轨迹。',
+      official: '查看官方资料',
+      officialTrack: '查看官方轨迹',
+      reviewNote: '本页仍在编辑审阅中，尚未完成发布所需的专业审阅。数字与表述可能调整。',
+      unknown: '未知',
+      access: '查阅',
+      claims: '支持的结论',
+      relatedKnowledge: '关联知识',
+      relatedTools: '关联工具',
+      relatedRoutes: '关联路线',
+      versionTitle: '版本与口径',
+      distanceMethod: '距离口径',
+      elevationMethod: '高程口径',
+      mapAnchor: '锚点来源',
+      authors: '撰写',
+      noReview: '尚无审阅记录',
+      actual: '实际状态',
+      previewStatus: '编辑审阅中',
+    }
+  : {
+      home: 'Home',
+      allRoutes: 'All routes',
+      anchorOverview: 'Map overview anchor',
+      anchorStart: 'Start anchor',
+      geometry: 'Track rights',
+      geometryUnavailable: 'No redistributable track file is available on this site. The map shows an anchor only and draws no simulated route.',
+      geometryOfficial: 'Follow the official source for the track; this site does not copy the file.',
+      geometryRedistributable: 'A licensed, simplified track is available on this site.',
+      official: 'View official material',
+      officialTrack: 'View official track',
+      reviewNote: 'This page is still in editorial review and has not completed the specialist review required for publication. Figures and wording may change.',
+      unknown: 'Unknown',
+      access: 'Accessed',
+      claims: 'Claims supported',
+      relatedKnowledge: 'Related knowledge',
+      relatedTools: 'Related tools',
+      relatedRoutes: 'Related routes',
+      versionTitle: 'Version and method',
+      distanceMethod: 'Distance method',
+      elevationMethod: 'Elevation method',
+      mapAnchor: 'Anchor source',
+      authors: 'Written by',
+      noReview: 'No review record yet',
+      actual: 'Actual state',
+      previewStatus: 'In editorial review',
+    };
+const title = `${translation.title} · RunMap`;
+const description = translation.summary;
+const officialHref = details.geometryAccess === 'official-link' && details.officialGeometryUrl
+  ? details.officialGeometryUrl
+  : official?.url ?? null;
+const officialLabel = details.geometryAccess === 'official-link' ? copy.officialTrack : copy.official;
+const pageOrigin = Astro.site ?? Astro.url.origin;
+const pageUrl = new URL(`/${locale}/routes/${entity.slug}/`, pageOrigin).toString();
+const structuredData = [
+  breadcrumbList([
+    { name: copy.home, url: new URL(`/${locale}/`, pageOrigin).toString() },
+    { name: copy.allRoutes, url: new URL(`/${locale}/routes/`, pageOrigin).toString() },
+    { name: translation.title, url: pageUrl },
+  ]),
+  articleData({
+    headline: translation.title,
+    description,
+    url: pageUrl,
+    locale,
+    dateModified: entity.updatedAt,
+    authors,
+  }),
+];
+const anchorLabel = details.mapAnchor.kind === 'start' ? copy.anchorStart : copy.anchorOverview;
+const relatedKnowledge = related.filter((item) => item.kind === 'knowledge');
+const relatedTools = related.filter((item) => item.kind === 'tool');
+const relatedRoutes = related.filter((item) => item.kind === 'route');
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={description}
+  active="routes"
+  preview={content.preview}
+  ogType="article"
+  alternateHref={`/${other}/routes/${entity.slug}/`}
+  structuredData={structuredData}
+>
+  <Fragment slot="head">
+    <link rel="stylesheet" href="/cesium/Widgets/widgets.css" />
+    <link rel="preload" as="image" href="/textures/earth-blue-marble-2048.jpg" />
+  </Fragment>
+
+  <div class="page-shell">
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href={`/${locale}/`}>{copy.home}</a></li>
+        <li><a href={`/${locale}/routes/`}>{copy.allRoutes}</a></li>
+        <li>{translation.title}</li>
+      </ol>
+    </div>
+
+    <div class="route-detail-layout">
+      <div class="route-map-card">
+        <div
+          class="globe-stage"
+          data-route-globe
+          data-longitude={details.mapAnchor.longitude}
+          data-latitude={details.mapAnchor.latitude}
+          data-title={translation.title}
+          data-kind={details.raceType}
+        >
+          <div class="globe-poster" aria-hidden="true">
+            <div class="poster-sphere route-poster-sphere"></div>
+          </div>
+          <div class="globe-loading">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="sr-only">{t(locale, 'noGlobeLoading')}</span>
+          </div>
+          <div class="route-map-fallback" hidden>
+            <div>
+              <Icon name="globe" size={44} />
+              <p>
+                {locale === 'zh-CN'
+                  ? '当前设备或网络设置无法显示交互地图，赛道信息与来源仍可在下方阅读。'
+                  : 'Interactive map is unavailable on this device or data setting. Route facts and sources remain readable below.'}
+              </p>
+            </div>
+          </div>
+          <div class="globe-controls">
+            <button class="icon-button" type="button" data-globe-zoom-in aria-label={t(locale, 'zoomIn')}>
+              <Icon name="plus" size={20} />
+            </button>
+            <button class="icon-button" type="button" data-globe-zoom-out aria-label={t(locale, 'zoomOut')}>
+              <Icon name="minus" size={20} />
+            </button>
+            <button class="icon-button" type="button" data-globe-reset aria-label={t(locale, 'resetView')}>
+              <Icon name="globe" size={20} />
+            </button>
+          </div>
+          <p class="globe-data-credit">
+            {locale === 'zh-CN'
+              ? '底图：NASA Blue Marble 卫星影像合成；近景（可用时）：EOX Sentinel-2 cloudless 公开瓦片'
+              : 'Base imagery: NASA Blue Marble composite; close-up when available: EOX Sentinel-2 cloudless public tiles'} ·{' '}
+            <a href="https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/" rel="external noopener">NASA</a>
+            {' · '}
+            <a href="https://s2maps.eu" rel="external noopener">Sentinel-2 cloudless</a>
+            {' · '}
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external noopener license">CC BY-NC-SA 4.0</a>
+          </p>
+        </div>
+      </div>
+
+      <aside class="card route-info-card" aria-labelledby="route-title">
+        <div class="route-type">
+          <span class:list={['pill', details.raceType === 'trail-ultra' ? 'yellow' : 'blue']}>
+            <Icon name={details.raceType === 'trail-ultra' ? 'mountain' : 'route'} size={14} />
+            {routeTypeLabel(details.raceType, locale)}
+          </span>
+          <span class="pill lavender">{anchorLabel}</span>
+          {entity.status !== 'published' && <span class="pill coral">{copy.previewStatus}</span>}
+        </div>
+        <h1 id="route-title">{translation.title}</h1>
+        <p class="route-place">{details.placeName[locale]}</p>
+
+        <dl class="stat-grid">
+          <div class="stat">
+            <dt>{t(locale, 'distance')}</dt>
+            <dd>{formatDistance(details.distanceMeters, locale)}</dd>
+          </div>
+          <div class="stat">
+            <dt>{t(locale, 'elevation')}</dt>
+            <dd>{formatElevation(details.elevationGainMeters, locale)}</dd>
+          </div>
+        </dl>
+
+        <dl class="route-facts">
+          <div>
+            <dt>{t(locale, 'courseVersion')}</dt>
+            <dd>{details.courseVersion}</dd>
+          </div>
+          <div>
+            <dt>{t(locale, 'direction')}</dt>
+            <dd>{details.direction}</dd>
+          </div>
+          <div>
+            <dt>{t(locale, 'country')}</dt>
+            <dd>{details.countryCodes.join(' · ')}</dd>
+          </div>
+          <div>
+            <dt>{copy.mapAnchor}</dt>
+            <dd>{sources.find((source) => source.sourceId === details.mapAnchor.sourceRef)?.publisher ?? details.mapAnchor.sourceRef}</dd>
+          </div>
+          <div>
+            <dt>{t(locale, 'updatedOn')}</dt>
+            <dd>{formatDate(entity.updatedAt, locale)}</dd>
+          </div>
+        </dl>
+
+        <p class="field-hint">{details.geometryAccess === 'unavailable'
+          ? copy.geometryUnavailable
+          : details.geometryAccess === 'official-link'
+            ? copy.geometryOfficial
+            : copy.geometryRedistributable}</p>
+        {officialHref && (
+          <a class="button primary wide" href={officialHref} rel="external noopener">
+            <Icon name="external" size={17} />{officialLabel}
+          </a>
+        )}
+      </aside>
+    </div>
+
+    <div class="route-narrative">
+      {entity.status !== 'published' && (
+        <div class="notice tone-yellow">
+          <Icon name="alert" size={18} />
+          <div>
+            <strong>{copy.previewStatus}</strong>
+            <p>{copy.reviewNote}</p>
+          </div>
+        </div>
+      )}
+
+      <h2>{t(locale, 'sections')}</h2>
+      <div class="prose" set:html={translation.html} />
+
+      <div class="route-version-box">
+        <strong>{copy.versionTitle}</strong>
+        <span>{t(locale, 'courseVersion')}: {details.courseVersion}</span>
+        <span>{copy.distanceMethod}: {details.distanceMethod}</span>
+        <span>{copy.elevationMethod}: {details.elevationMethod ?? copy.unknown}</span>
+        <span>{copy.authors}: {authors.join(', ')}</span>
+        <span>{t(locale, 'reviewedOn')}: {formatDate(entity.reviewedAt, locale)} · {reviewers.length ? `${reviewers.length} ${locale === 'zh-CN' ? '条审阅记录' : 'review record(s)'}` : copy.noReview}</span>
+      </div>
+
+      <div class="route-footer-grid">
+        <div class="route-sources">
+          <h2>{t(locale, 'sourcesHeading')}</h2>
+          <div class="source-list">
+            {sources.map((source) => (
+              <div class="source-item">
+                <a href={source.url} rel="external noopener">{source.title} <Icon name="external" size={14} /></a>
+                <p>{source.claims.join(' ')}</p>
+                <p class="source-meta">
+                  {source.publisher}
+                  {source.publishedAt ? ` · ${formatDate(source.publishedAt, locale)}` : ''}
+                  {' · '}{copy.access} {formatDate(source.accessedAt, locale)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="route-related">
+          <h2>{t(locale, 'related')}</h2>
+          {relatedKnowledge.length > 0 && (
+            <>
+              <p class="field-hint">{copy.relatedKnowledge}</p>
+              <div class="related-row">
+                {relatedKnowledge.map((item) => (
+                  <a class="related-link" href={entityHref(item, locale)} data-cross-site>
+                    <Icon name="book" size={17} />
+                    <span>{content.translation(item, locale).title}</span>
+                  </a>
+                ))}
+              </div>
+            </>
+          )}
+          {relatedTools.length > 0 && (
+            <>
+              <p class="field-hint">{copy.relatedTools}</p>
+              <div class="related-row">
+                {relatedTools.map((item) => (
+                  <a class="related-link" href={entityHref(item, locale)} data-cross-site>
+                    <Icon name="tools" size={17} />
+                    <span>{content.translation(item, locale).title}</span>
+                  </a>
+                ))}
+              </div>
+            </>
+          )}
+          {relatedRoutes.length > 0 && (
+            <>
+              <p class="field-hint">{copy.relatedRoutes}</p>
+              <div class="related-row">
+                {relatedRoutes.map((item) => (
+                  <a class="related-link" href={entityHref(item, locale)}>
+                    <Icon name="route" size={17} />
+                    <span>{content.translation(item, locale).title}</span>
+                  </a>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { initRouteGlobe } from '../../../client/globe';
+  initRouteGlobe();
+</script>
+
+<style>
+  .route-poster-sphere {
+    top: 54%;
+    left: 56%;
+    width: min(74%, 70vh);
+    background-position: 32% 44%;
+  }
+
+  @media (max-width: 900px) {
+    .route-poster-sphere {
+      width: min(82%, 56vh);
+    }
+  }
+</style>

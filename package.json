@@ -1,0 +1,44 @@
+{
+  "name": "site-www",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.18.3",
+  "engines": {
+    "node": ">=22.23.4 <25"
+  },
+  "scripts": {
+    "dev": "node scripts/prepare-content.mjs && astro dev --port 4321",
+    "build": "node scripts/prepare-content.mjs && astro build && tsx scripts/postbuild.mjs",
+    "preview": "astro preview --port 4421",
+    "check": "astro check",
+    "test": "tsx --test tests/*.test.ts",
+    "test:content": "tsx scripts/validate-content.mjs",
+    "prepare-content": "node scripts/prepare-content.mjs",
+    "core:pack": "node scripts/pack-core.mjs",
+    "qa:ui": "node tests/ui/capture.mjs",
+    "qa:perf": "node tests/perf/measure.mjs",
+    "qa:faults": "node tests/perf/faults.mjs",
+    "qa:track": "node tests/ui/track-faults.mjs",
+    "qa:cross-site": "node tests/ui/cross-site.mjs",
+    "check:production": "tsx scripts/check-production-content.mjs",
+    "qa:pwa": "node tests/ui/pwa.mjs",
+    "review:packet": "tsx scripts/review-packet.mjs",
+    "qa:crawl": "node tests/release/local-crawl.mjs"
+  },
+  "dependencies": {
+    "@paobu/core": "workspace:*",
+    "astro": "7.4.2",
+    "cesium": "1.146.0",
+    "pagefind": "1.5.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@types/node": "24.19.2",
+    "axe-core": "4.14.0",
+    "playwright": "1.64.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite-plugin-cesium": "1.2.23"
+  }
+}

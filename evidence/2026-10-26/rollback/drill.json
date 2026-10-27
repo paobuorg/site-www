@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-10-27T00:54:13.334Z",
+  "note": "Local artifact rollback drill only; no GitHub Release or Pages artifact was rolled back.",
+  "rollback": {
+    "version": "0.2.10",
+    "sha256": "e3b2e90a64609d07254ba4f689e8491e5b035d813fd4ca2d483c16604d1c1a60",
+    "sites": [
+      {
+        "site": "site-knowledge",
+        "installed": "0.2.10",
+        "build": "passed",
+        "pages": 36,
+        "searchRecords": 8
+      },
+      {
+        "site": "site-tools",
+        "installed": "0.2.10",
+        "build": "passed",
+        "pages": 22,
+        "searchRecords": 16
+      }
+    ]
+  },
+  "restored": {
+    "version": "0.2.11",
+    "sha256": "5acb2bd6d9be24f720868c68b75eb0beb17899b0a41bfadc71698ae3b23d269b",
+    "sites": [
+      {
+        "site": "site-knowledge",
+        "installed": "0.2.11",
+        "build": "passed",
+        "pages": 36,
+        "searchRecords": 8
+      },
+      {
+        "site": "site-tools",
+        "installed": "0.2.11",
+        "build": "passed",
+        "pages": 22,
+        "searchRecords": 16
+      }
+    ]
+  },
+  "checks": {
+    "subsitesInstalledRollback": true,
+    "subsitesBuiltRollback": true,
+    "subsitesRestored": true,
+    "remoteRollback": "not-executed"
+  }
+}

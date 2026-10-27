@@ -1,0 +1,29 @@
+---
+import Icon from './Icon.astro';
+import { t, type Locale, type SiteKind } from '../lib/i18n';
+import { getSiteOrigins } from '../lib/sites';
+
+interface Props {
+  locale: Locale;
+  active: SiteKind;
+}
+const { locale, active } = Astro.props;
+const origins = getSiteOrigins();
+const items = [
+  { kind: 'routes' as const, key: 'routes' as const, icon: 'route' as const },
+  { kind: 'knowledge' as const, key: 'knowledge' as const, icon: 'book' as const },
+  { kind: 'tools' as const, key: 'tools' as const, icon: 'tools' as const },
+];
+---
+<nav class="bottom-nav" aria-label={t(locale, 'menu')}>
+  {items.map((item) => (
+    <a
+      href={item.kind === active ? `/${locale}/` : `${origins[item.kind]}/${locale}/`}
+      aria-current={item.kind === active ? 'page' : undefined}
+      data-cross-site={item.kind === active ? undefined : 'true'}
+    >
+      <Icon name={item.icon} size={21} />
+      <span>{t(locale, item.key)}</span>
+    </a>
+  ))}
+</nav>

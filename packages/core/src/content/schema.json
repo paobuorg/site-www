@@ -1,0 +1,961 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paobu.org/schemas/content-bundle-v1.json",
+  "title": "RunMap normalized content bundle v1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "testOnly": {
+      "type": "boolean"
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entity"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/person"
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/review"
+      }
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "entities",
+    "sources",
+    "contributors",
+    "reviews",
+    "cases"
+  ],
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityId": {
+          "type": "string",
+          "pattern": "^(route|knowledge|tool):[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "kind": {
+          "enum": [
+            "route",
+            "knowledge",
+            "tool"
+          ]
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "in-review",
+            "published",
+            "withdrawn"
+          ]
+        },
+        "riskLevel": {
+          "enum": [
+            "general",
+            "guidance",
+            "high"
+          ]
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "relatedRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "license": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "reviewedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reviewDueAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "translations": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/translation"
+          }
+        },
+        "details": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "entityId",
+        "slug",
+        "kind",
+        "status",
+        "riskLevel",
+        "sourceRefs",
+        "relatedRefs",
+        "license",
+        "createdAt",
+        "updatedAt",
+        "reviewedAt",
+        "reviewDueAt",
+        "translations",
+        "details"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "knowledge"
+              }
+            },
+            "required": [
+              "kind"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "properties": {
+              "details": {
+                "$ref": "#/$defs/knowledge"
+              }
+            },
+            "type": "object"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "route"
+              }
+            },
+            "required": [
+              "kind"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "properties": {
+              "details": {
+                "$ref": "#/$defs/route"
+              }
+            },
+            "type": "object"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "tool"
+              }
+            },
+            "required": [
+              "kind"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "properties": {
+              "details": {
+                "$ref": "#/$defs/tool"
+              }
+            },
+            "type": "object"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "published"
+              }
+            },
+            "required": [
+              "status"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "properties": {
+              "license": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceRefs": {
+                "minItems": 1,
+                "type": "array"
+              },
+              "reviewedAt": {
+                "type": "string",
+                "format": "date"
+              },
+              "reviewDueAt": {
+                "type": "string",
+                "format": "date"
+              },
+              "translations": {
+                "minItems": 2,
+                "allOf": [
+                  {
+                    "contains": {
+                      "properties": {
+                        "locale": {
+                          "const": "zh-CN"
+                        }
+                      },
+                      "required": [
+                        "locale"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  {
+                    "contains": {
+                      "properties": {
+                        "locale": {
+                          "const": "en"
+                        }
+                      },
+                      "required": [
+                        "locale"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  }
+                ],
+                "items": {
+                  "properties": {
+                    "authors": {
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "reviewers": {
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "translationStatus": {
+                      "const": "reviewed"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          }
+        }
+      ]
+    },
+    "translation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "locale": {
+          "enum": [
+            "zh-CN",
+            "en"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "reviewers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "translationStatus": {
+          "enum": [
+            "draft",
+            "in-review",
+            "reviewed"
+          ]
+        }
+      },
+      "required": [
+        "locale",
+        "title",
+        "summary",
+        "body",
+        "authors",
+        "reviewers",
+        "translationStatus"
+      ]
+    },
+    "knowledge": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primaryTopic": {
+          "enum": [
+            "training",
+            "technique",
+            "recovery",
+            "nutrition",
+            "gear",
+            "health",
+            "safety",
+            "habits",
+            "culture"
+          ]
+        },
+        "secondaryTopics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "contentType": {
+          "enum": [
+            "concept",
+            "guide",
+            "answer",
+            "plan",
+            "checklist",
+            "glossary",
+            "learning-path"
+          ]
+        },
+        "audiences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "primaryTopic",
+        "secondaryTopics",
+        "contentType",
+        "audiences",
+        "scenarios"
+      ]
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "raceType": {
+          "enum": [
+            "road-marathon",
+            "trail-ultra"
+          ]
+        },
+        "countryCodes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          }
+        },
+        "placeName": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "zh-CN": {
+              "type": "string",
+              "minLength": 1
+            },
+            "en": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "zh-CN",
+            "en"
+          ]
+        },
+        "mapAnchor": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "longitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            "latitude": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "kind": {
+              "enum": [
+                "start",
+                "overview"
+              ]
+            },
+            "sourceRef": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "longitude",
+            "latitude",
+            "kind",
+            "sourceRef"
+          ]
+        },
+        "courseVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distanceMeters": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "distanceMethod": {
+          "type": "string",
+          "minLength": 1
+        },
+        "elevationGainMeters": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "elevationMethod": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geometryAccess": {
+          "enum": [
+            "redistributable",
+            "official-link",
+            "unavailable"
+          ]
+        },
+        "geometryRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geometrySourceUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geometryLicense": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "officialGeometryUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attribution": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "raceType",
+        "countryCodes",
+        "placeName",
+        "mapAnchor",
+        "courseVersion",
+        "direction",
+        "distanceMeters",
+        "distanceMethod",
+        "elevationGainMeters",
+        "elevationMethod",
+        "geometryAccess",
+        "geometryRef",
+        "geometrySourceUrl",
+        "geometryLicense",
+        "officialGeometryUrl",
+        "attribution"
+      ]
+    },
+    "tool": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "toolId": {
+          "type": "string",
+          "pattern": "^tool:[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "specVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "inputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "number",
+                  "string",
+                  "boolean",
+                  "enum",
+                  "file",
+                  "object",
+                  "array"
+                ]
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              },
+              "enumValues": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "labels": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "zh-CN": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "zh-CN",
+                  "en"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "type",
+              "unit",
+              "required"
+            ]
+          }
+        },
+        "outputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "number",
+                  "string",
+                  "boolean",
+                  "enum",
+                  "file",
+                  "object",
+                  "array"
+                ]
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              },
+              "enumValues": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "labels": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "zh-CN": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "zh-CN",
+                  "en"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "type",
+              "unit",
+              "required"
+            ]
+          }
+        },
+        "formulaDescription": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "rounding": {
+          "type": "string",
+          "minLength": 1
+        },
+        "caseRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "toolId",
+        "specVersion",
+        "inputs",
+        "outputs",
+        "formulaDescription",
+        "assumptions",
+        "rounding",
+        "caseRefs"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publishedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "claims": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "license": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "sourceId",
+        "title",
+        "url",
+        "publisher",
+        "publishedAt",
+        "accessedAt",
+        "claims",
+        "license"
+      ]
+    },
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "contributorId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "roles": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "author",
+              "editor",
+              "expert"
+            ]
+          }
+        },
+        "qualification": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "contributorId",
+        "displayName",
+        "roles",
+        "qualification"
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "enum": [
+            "zh-CN",
+            "en"
+          ]
+        },
+        "reviewerId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "decision": {
+          "enum": [
+            "approve",
+            "changes-requested"
+          ]
+        },
+        "contentDigest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "entityId",
+        "locale",
+        "reviewerId",
+        "reviewedAt",
+        "decision",
+        "contentDigest"
+      ]
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "caseId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "toolId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "input": {
+          "type": "object"
+        },
+        "expected": {
+          "type": "object"
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "caseId",
+        "toolId",
+        "input",
+        "expected",
+        "basis"
+      ]
+    }
+  }
+}

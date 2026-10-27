@@ -1,0 +1,128 @@
+---
+import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Icon from '@paobu/core/components/Icon.astro';
+import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { siteContent } from '../../../lib/content';
+import { formatDistance, formatElevation, routeDetails } from '../../../lib/view';
+
+export function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const content = siteContent();
+const routes = content.visible('route');
+const copy = locale === 'zh-CN'
+  ? {
+      title: '全部路线',
+      intro: '每条赛道固定一个可核验版本，并明确标注距离、爬升口径与轨迹权利。没有可信数据时，我们宁可留空，也不编造数字。',
+      roadmap: '公路马拉松',
+      trail: '越野超马',
+      version: '版本',
+      noGeometry: '无本站轨迹',
+      empty: '目前没有可显示的路线。',
+    }
+  : {
+      title: 'All routes',
+      intro: 'Each course pins a verifiable version and states its distance, elevation method and track rights. When data is not trustworthy, we leave it blank rather than invent a number.',
+      roadmap: 'Road marathons',
+      trail: 'Trail ultras',
+      version: 'Version',
+      noGeometry: 'No bundled track',
+      empty: 'No routes are available to show.',
+    };
+const title = `${copy.title} · RunMap`;
+const description = locale === 'zh-CN'
+  ? '浏览跑地图收录的马拉松与越野赛道档案，查看固定版本、来源与轨迹权利状态。'
+  : 'Browse the marathon and trail course archive on RunMap, with fixed versions, sources and track-rights status.';
+---
+
+<BaseLayout locale={locale} title={title} description={description} active="routes" preview={content.preview}>
+  <div class="page-shell">
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href={`/${locale}/`}>{t(locale, 'home')}</a></li>
+        <li>{copy.title}</li>
+      </ol>
+    </div>
+    <div class="page-intro">
+      <div>
+        <span class="pill blue"><Icon name="route" size={14} />{t(locale, 'routeSubtitle')}</span>
+        <h1>{copy.title}</h1>
+        <p>{copy.intro}</p>
+      </div>
+    </div>
+
+    {routes.length === 0 ? (
+      <div class="empty-state">
+        <Icon name="route" size={44} />
+        <h2>{copy.empty}</h2>
+      </div>
+    ) : (
+      <>
+        <div class="section-heading"><h2>{copy.roadmap}</h2></div>
+        <div class="grid two">
+          {routes.filter((route) => routeDetails(route).raceType === 'road-marathon').map((route) => {
+            const details = routeDetails(route);
+            const translation = content.translation(route, locale);
+            return (
+              <article class="card route-card hoverable">
+                <div class="route-card-media">
+                  <div class="route-flag">
+                    <span class="pill mint">{copy.roadmap}</span>
+                    <span class="distance-badge">{formatDistance(details.distanceMeters, locale)}</span>
+                  </div>
+                  <Icon name="route" size={42} class="route-glyph" />
+                </div>
+                <div class="route-card-body">
+                  <h3>{translation.title}</h3>
+                  <p class="route-subtitle">{details.placeName[locale]}</p>
+                  <div class="route-card-meta">
+                    <span class="pill">{details.countryCodes.join(' · ')}</span>
+                    <span class="pill lavender">{copy.version} {details.courseVersion}</span>
+                    {details.geometryAccess === 'unavailable' && <span class="pill coral">{copy.noGeometry}</span>}
+                  </div>
+                  <div class="route-card-actions">
+                    <a class="button small primary" href={`/${locale}/routes/${route.slug}/`}>{t(locale, 'viewRoute')}</a>
+                    <span class="arrow">→</span>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        <div class="section-heading"><h2>{copy.trail}</h2></div>
+        <div class="grid two">
+          {routes.filter((route) => routeDetails(route).raceType === 'trail-ultra').map((route) => {
+            const details = routeDetails(route);
+            const translation = content.translation(route, locale);
+            return (
+              <article class="card route-card trail hoverable">
+                <div class="route-card-media">
+                  <div class="route-flag">
+                    <span class="pill yellow">{copy.trail}</span>
+                    <span class="distance-badge">{formatDistance(details.distanceMeters, locale)}</span>
+                  </div>
+                  <Icon name="mountain" size={42} class="route-glyph" />
+                </div>
+                <div class="route-card-body">
+                  <h3>{translation.title}</h3>
+                  <p class="route-subtitle">{details.placeName[locale]}</p>
+                  <div class="route-card-meta">
+                    <span class="pill">{details.countryCodes.join(' · ')}</span>
+                    <span class="pill yellow">{t(locale, 'elevation')} {formatElevation(details.elevationGainMeters, locale)}</span>
+                  </div>
+                  <div class="route-card-actions">
+                    <a class="button small primary" href={`/${locale}/routes/${route.slug}/`}>{t(locale, 'viewRoute')}</a>
+                    <span class="arrow">→</span>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </>
+    )}
+  </div>
+</BaseLayout>

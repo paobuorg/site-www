@@ -1,0 +1,287 @@
+{
+  "generatedAt": "2026-10-27T22:11:58.997Z",
+  "browser": "Playwright Chromium 156.0.8078.4",
+  "note": [
+    "The built pages carry https://paobu.org, https://learn.paobu.org and https://tools.paobu.org links. Each production host is mapped to its local 4421/4422/4423 preview server so the real production hrefs are exercised without DNS.",
+    "themeAtLoad is measured at DOMContentLoaded; it does not prove there is no single-frame paint before hydration."
+  ],
+  "main": {
+    "start": {
+      "url": "https://paobu.org/zh-CN/",
+      "host": "paobu.org:",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "light",
+      "preference": "system",
+      "themeAtLoad": "light",
+      "h1": "探索经典跑步路线",
+      "active": "路线"
+    },
+    "afterToggle": {
+      "url": "https://paobu.org/zh-CN/",
+      "host": "paobu.org:",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "light",
+      "h1": "探索经典跑步路线",
+      "active": "路线"
+    },
+    "themeCookie": "dark",
+    "knowledgeZh": {
+      "url": "https://learn.paobu.org/zh-CN/",
+      "host": "learn.paobu.org:",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "跑步知识",
+      "active": "知识"
+    },
+    "knowledgeEn": {
+      "url": "https://learn.paobu.org/en/",
+      "host": "learn.paobu.org:",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Running knowledge",
+      "active": "Learn"
+    },
+    "localeCookie": "en",
+    "toolsEn": {
+      "url": "https://tools.paobu.org/en/",
+      "host": "tools.paobu.org:",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Running tools",
+      "active": "Tools"
+    },
+    "backToRoutes": {
+      "url": "https://paobu.org/en/",
+      "host": "paobu.org:",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Explore classic running routes",
+      "active": "Routes"
+    },
+    "afterReload": {
+      "url": "https://paobu.org/en/",
+      "host": "paobu.org:",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Explore classic running routes",
+      "active": "Routes"
+    },
+    "afterBack": {
+      "url": "https://tools.paobu.org/en/",
+      "host": "tools.paobu.org:",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Running tools",
+      "active": "Tools"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "cookieBlocked": {
+    "beforeClick": {
+      "url": "https://paobu.org/zh-CN/",
+      "host": "paobu.org:",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "light",
+      "h1": "探索经典跑步路线",
+      "active": "路线"
+    },
+    "hrefBeforeClick": "https://learn.paobu.org/zh-CN/",
+    "afterClick": {
+      "url": "https://learn.paobu.org/zh-CN/",
+      "host": "learn.paobu.org:",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "跑步知识",
+      "active": "知识"
+    }
+  },
+  "checks": [
+    {
+      "id": "theme-toggle-dark",
+      "pass": true,
+      "detail": {
+        "url": "https://paobu.org/zh-CN/",
+        "host": "paobu.org:",
+        "path": "/zh-CN/",
+        "lang": "zh-CN",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "light",
+        "h1": "探索经典跑步路线",
+        "active": "路线"
+      }
+    },
+    {
+      "id": "theme-cookie-shared",
+      "pass": true,
+      "detail": "dark"
+    },
+    {
+      "id": "knowledge-keeps-zh-theme",
+      "pass": true,
+      "detail": {
+        "url": "https://learn.paobu.org/zh-CN/",
+        "host": "learn.paobu.org:",
+        "path": "/zh-CN/",
+        "lang": "zh-CN",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "跑步知识",
+        "active": "知识"
+      }
+    },
+    {
+      "id": "language-switch-en",
+      "pass": true,
+      "detail": {
+        "page": {
+          "url": "https://learn.paobu.org/en/",
+          "host": "learn.paobu.org:",
+          "path": "/en/",
+          "lang": "en",
+          "theme": "dark",
+          "preference": "dark",
+          "themeAtLoad": "dark",
+          "h1": "Running knowledge",
+          "active": "Learn"
+        },
+        "localeCookie": "en"
+      }
+    },
+    {
+      "id": "tools-keeps-en-theme",
+      "pass": true,
+      "detail": {
+        "url": "https://tools.paobu.org/en/",
+        "host": "tools.paobu.org:",
+        "path": "/en/",
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "Running tools",
+        "active": "Tools"
+      }
+    },
+    {
+      "id": "routes-return-keeps-en-theme",
+      "pass": true,
+      "detail": {
+        "url": "https://paobu.org/en/",
+        "host": "paobu.org:",
+        "path": "/en/",
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "Explore classic running routes",
+        "active": "Routes"
+      }
+    },
+    {
+      "id": "reload-keeps-state",
+      "pass": true,
+      "detail": {
+        "url": "https://paobu.org/en/",
+        "host": "paobu.org:",
+        "path": "/en/",
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "Explore classic running routes",
+        "active": "Routes"
+      }
+    },
+    {
+      "id": "history-back-keeps-state",
+      "pass": true,
+      "detail": {
+        "url": "https://tools.paobu.org/en/",
+        "host": "tools.paobu.org:",
+        "path": "/en/",
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "Running tools",
+        "active": "Tools"
+      }
+    },
+    {
+      "id": "cookie-blocked-theme-query",
+      "pass": true,
+      "detail": {
+        "beforeClick": {
+          "url": "https://paobu.org/zh-CN/",
+          "host": "paobu.org:",
+          "path": "/zh-CN/",
+          "lang": "zh-CN",
+          "theme": "dark",
+          "preference": "dark",
+          "themeAtLoad": "light",
+          "h1": "探索经典跑步路线",
+          "active": "路线"
+        },
+        "hrefBeforeClick": "https://learn.paobu.org/zh-CN/",
+        "afterClick": {
+          "url": "https://learn.paobu.org/zh-CN/",
+          "host": "learn.paobu.org:",
+          "path": "/zh-CN/",
+          "lang": "zh-CN",
+          "theme": "dark",
+          "preference": "dark",
+          "themeAtLoad": "dark",
+          "h1": "跑步知识",
+          "active": "知识"
+        }
+      }
+    },
+    {
+      "id": "cross-site-href-uses-production-origin",
+      "pass": true,
+      "detail": {
+        "productionLinks": true,
+        "href": "https://learn.paobu.org/zh-CN/"
+      }
+    },
+    {
+      "id": "no-page-or-console-errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    }
+  ]
+}

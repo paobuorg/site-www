@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-10-27T08:24:41.039Z",
+  "bundleId": "10a36fca8cc2e2681e3f6209cafce067defcf3bf8e8475c41aa8b84d87062d61",
+  "preview": false,
+  "status": "passed",
+  "results": [
+    {
+      "site": "routes",
+      "origin": "https://paobu.org",
+      "urls": 38,
+      "pages": 39,
+      "searchRecords": 78,
+      "robots": "allow",
+      "cname": "paobu.org",
+      "nojekyll": 0,
+      "serviceWorker": 2806,
+      "offlinePage": 1515,
+      "pwaScope": "/",
+      "localhostPages": 0
+    },
+    {
+      "site": "knowledge",
+      "origin": "https://learn.paobu.org",
+      "urls": 54,
+      "pages": 55,
+      "searchRecords": 30,
+      "robots": "allow",
+      "cname": "learn.paobu.org",
+      "nojekyll": 0,
+      "serviceWorker": 2812,
+      "offlinePage": 1515,
+      "pwaScope": "/",
+      "localhostPages": 0
+    },
+    {
+      "site": "tools",
+      "origin": "https://tools.paobu.org",
+      "urls": 18,
+      "pages": 19,
+      "searchRecords": 16,
+      "robots": "allow",
+      "cname": "tools.paobu.org",
+      "nojekyll": 0,
+      "serviceWorker": 2812,
+      "offlinePage": 1515,
+      "pwaScope": "/",
+      "localhostPages": 0
+    }
+  ],
+  "failures": []
+}

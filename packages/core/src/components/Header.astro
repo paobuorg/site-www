@@ -1,0 +1,65 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import SearchField from './SearchField.astro';
+import { t, otherLocale, type Locale, type SiteKind } from '../lib/i18n';
+import { getSiteOrigins, githubUrl } from '../lib/sites';
+
+interface Props {
+  locale: Locale;
+  active: SiteKind;
+  alternateHref: string;
+}
+const { locale, active, alternateHref } = Astro.props;
+const origins = getSiteOrigins();
+const alternate = otherLocale(locale);
+const nav = [
+  { kind: 'routes' as const, key: 'routes' as const, icon: 'route' as const },
+  { kind: 'knowledge' as const, key: 'knowledge' as const, icon: 'book' as const },
+  { kind: 'tools' as const, key: 'tools' as const, icon: 'tools' as const },
+];
+const brandHref = active === 'routes' ? `/${locale}/` : `${origins.routes}/${locale}/`;
+const gh = githubUrl();
+const searchAction = `/${locale}/search/`;
+const languageLabel = alternate === 'en' ? 'EN' : '中文';
+---
+<header class="site-header">
+  <div class="header-inner">
+    <Logo href={brandHref} />
+    <nav class="primary-nav" aria-label={t(locale, 'menu')}>
+      {nav.map((item) => (
+        <a
+          href={item.kind === active ? `/${locale}/` : `${origins[item.kind]}/${locale}/`}
+          aria-current={item.kind === active ? 'page' : undefined}
+          data-cross-site={item.kind === active ? undefined : 'true'}
+        >
+          {t(locale, item.key)}
+        </a>
+      ))}
+    </nav>
+    <div class="header-search">
+      <SearchField locale={locale} action={searchAction} />
+    </div>
+    <div class="header-actions">
+      <a
+        class="language-switch"
+        href={alternateHref}
+        hreflang={alternate}
+        lang={alternate}
+        data-language-switch
+        aria-label={`${languageLabel} — ${t(locale, 'toggleLanguage')}`}
+      >
+        {languageLabel}
+      </a>
+      <button class="icon-button" type="button" data-theme-toggle aria-label={t(locale, 'toggleTheme')} aria-pressed="false">
+        <span class="theme-icon-light"><Icon name="sun" size={21} /></span>
+        <span class="theme-icon-dark"><Icon name="moon" size={21} /></span>
+      </button>
+      {gh && (
+        <a class="icon-button" href={gh} aria-label={t(locale, 'github')} rel="external noopener">
+          <Icon name="github" size={21} />
+        </a>
+      )}
+    </div>
+  </div>
+</header>

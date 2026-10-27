@@ -1,0 +1,279 @@
+{
+  "generatedAt": "2026-10-27T08:23:40.734Z",
+  "browser": "Playwright Chromium 156.0.8078.4",
+  "note": [
+    "Cross-site navigation uses the local dev origins from .env (4321/4322/4323), while the starting page is the 4421 preview.",
+    "themeAtLoad is measured at DOMContentLoaded; it does not prove there is no single-frame paint before hydration."
+  ],
+  "main": {
+    "start": {
+      "url": "http://localhost:4321/zh-CN/",
+      "host": "localhost:4321",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "light",
+      "preference": "system",
+      "themeAtLoad": "light",
+      "h1": "探索经典跑步路线",
+      "active": "路线"
+    },
+    "afterToggle": {
+      "url": "http://localhost:4321/zh-CN/",
+      "host": "localhost:4321",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "light",
+      "h1": "探索经典跑步路线",
+      "active": "路线"
+    },
+    "themeCookie": "dark",
+    "knowledgeZh": {
+      "url": "http://localhost:4322/zh-CN/",
+      "host": "localhost:4322",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "跑步知识",
+      "active": "知识"
+    },
+    "knowledgeEn": {
+      "url": "http://localhost:4322/en/",
+      "host": "localhost:4322",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Running knowledge",
+      "active": "Learn"
+    },
+    "localeCookie": "en",
+    "toolsEn": {
+      "url": "http://localhost:4323/en/",
+      "host": "localhost:4323",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Running tools",
+      "active": "Tools"
+    },
+    "backToRoutes": {
+      "url": "http://localhost:4321/en/",
+      "host": "localhost:4321",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Explore classic running routes",
+      "active": "Routes"
+    },
+    "afterReload": {
+      "url": "http://localhost:4321/en/",
+      "host": "localhost:4321",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Explore classic running routes",
+      "active": "Routes"
+    },
+    "afterBack": {
+      "url": "http://localhost:4323/en/",
+      "host": "localhost:4323",
+      "path": "/en/",
+      "lang": "en",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "Running tools",
+      "active": "Tools"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "cookieBlocked": {
+    "beforeClick": {
+      "url": "http://localhost:4321/zh-CN/",
+      "host": "localhost:4321",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "light",
+      "h1": "探索经典跑步路线",
+      "active": "路线"
+    },
+    "hrefBeforeClick": "http://localhost:4322/zh-CN/",
+    "afterClick": {
+      "url": "http://localhost:4322/zh-CN/",
+      "host": "localhost:4322",
+      "path": "/zh-CN/",
+      "lang": "zh-CN",
+      "theme": "dark",
+      "preference": "dark",
+      "themeAtLoad": "dark",
+      "h1": "跑步知识",
+      "active": "知识"
+    }
+  },
+  "checks": [
+    {
+      "id": "theme-toggle-dark",
+      "pass": true,
+      "detail": {
+        "url": "http://localhost:4321/zh-CN/",
+        "host": "localhost:4321",
+        "path": "/zh-CN/",
+        "lang": "zh-CN",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "light",
+        "h1": "探索经典跑步路线",
+        "active": "路线"
+      }
+    },
+    {
+      "id": "theme-cookie-shared",
+      "pass": true,
+      "detail": "dark"
+    },
+    {
+      "id": "knowledge-keeps-zh-theme",
+      "pass": true,
+      "detail": {
+        "url": "http://localhost:4322/zh-CN/",
+        "host": "localhost:4322",
+        "path": "/zh-CN/",
+        "lang": "zh-CN",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "跑步知识",
+        "active": "知识"
+      }
+    },
+    {
+      "id": "language-switch-en",
+      "pass": true,
+      "detail": {
+        "page": {
+          "url": "http://localhost:4322/en/",
+          "host": "localhost:4322",
+          "path": "/en/",
+          "lang": "en",
+          "theme": "dark",
+          "preference": "dark",
+          "themeAtLoad": "dark",
+          "h1": "Running knowledge",
+          "active": "Learn"
+        },
+        "localeCookie": "en"
+      }
+    },
+    {
+      "id": "tools-keeps-en-theme",
+      "pass": true,
+      "detail": {
+        "url": "http://localhost:4323/en/",
+        "host": "localhost:4323",
+        "path": "/en/",
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "Running tools",
+        "active": "Tools"
+      }
+    },
+    {
+      "id": "routes-return-keeps-en-theme",
+      "pass": true,
+      "detail": {
+        "url": "http://localhost:4321/en/",
+        "host": "localhost:4321",
+        "path": "/en/",
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "Explore classic running routes",
+        "active": "Routes"
+      }
+    },
+    {
+      "id": "reload-keeps-state",
+      "pass": true,
+      "detail": {
+        "url": "http://localhost:4321/en/",
+        "host": "localhost:4321",
+        "path": "/en/",
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "Explore classic running routes",
+        "active": "Routes"
+      }
+    },
+    {
+      "id": "history-back-keeps-state",
+      "pass": true,
+      "detail": {
+        "url": "http://localhost:4323/en/",
+        "host": "localhost:4323",
+        "path": "/en/",
+        "lang": "en",
+        "theme": "dark",
+        "preference": "dark",
+        "themeAtLoad": "dark",
+        "h1": "Running tools",
+        "active": "Tools"
+      }
+    },
+    {
+      "id": "cookie-blocked-theme-query",
+      "pass": true,
+      "detail": {
+        "beforeClick": {
+          "url": "http://localhost:4321/zh-CN/",
+          "host": "localhost:4321",
+          "path": "/zh-CN/",
+          "lang": "zh-CN",
+          "theme": "dark",
+          "preference": "dark",
+          "themeAtLoad": "light",
+          "h1": "探索经典跑步路线",
+          "active": "路线"
+        },
+        "hrefBeforeClick": "http://localhost:4322/zh-CN/",
+        "afterClick": {
+          "url": "http://localhost:4322/zh-CN/",
+          "host": "localhost:4322",
+          "path": "/zh-CN/",
+          "lang": "zh-CN",
+          "theme": "dark",
+          "preference": "dark",
+          "themeAtLoad": "dark",
+          "h1": "跑步知识",
+          "active": "知识"
+        }
+      }
+    },
+    {
+      "id": "no-page-or-console-errors",
+      "pass": true,
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    }
+  ]
+}

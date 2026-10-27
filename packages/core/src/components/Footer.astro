@@ -1,0 +1,45 @@
+---
+import Logo from './Logo.astro';
+import { t, type Locale, type SiteKind } from '../lib/i18n';
+import { getSiteOrigins, githubUrl } from '../lib/sites';
+
+interface Props {
+  locale: Locale;
+  active: SiteKind;
+}
+const { locale, active } = Astro.props;
+const origins = getSiteOrigins();
+const gh = githubUrl();
+const year = new Date().getFullYear();
+const brandHref = active === 'routes' ? `/${locale}/` : `${origins.routes}/${locale}/`;
+---
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <Logo href={brandHref} />
+      <p>{locale === 'zh-CN'
+        ? '跑地图整理经核验的经典跑线、可追溯的跑步知识与可解释的计算工具。'
+        : 'RunMap curates verified classic courses, traceable running knowledge and explainable calculators.'}</p>
+    </div>
+    <div class="footer-group">
+      <h2>{locale === 'zh-CN' ? '浏览' : 'Explore'}</h2>
+      <ul>
+        <li><a href={`${origins.routes}/${locale}/routes/`} data-cross-site>{t(locale, 'routes')}</a></li>
+        <li><a href={`${origins.knowledge}/${locale}/`} data-cross-site>{t(locale, 'knowledge')}</a></li>
+        <li><a href={`${origins.tools}/${locale}/`} data-cross-site>{t(locale, 'tools')}</a></li>
+      </ul>
+    </div>
+    <div class="footer-group">
+      <h2>{locale === 'zh-CN' ? '项目' : 'Project'}</h2>
+      <ul>
+        <li><a href={`${origins.routes}/${locale}/about/`} data-cross-site>{locale === 'zh-CN' ? '关于与方法' : 'About & method'}</a></li>
+        <li><a href={locale === 'zh-CN' ? `${origins.routes}/zh-CN/about/#licenses` : `${origins.routes}/en/about/#licenses`} data-cross-site>{locale === 'zh-CN' ? '许可与署名' : 'Licenses & attribution'}</a></li>
+        {gh && <li><a href={gh} rel="external noopener">GitHub</a></li>}
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {year} 跑地图 RunMap</span>
+    <span>{locale === 'zh-CN' ? '正文 CC BY 4.0 · 代码 MIT · 第三方素材按来源许可' : 'Text CC BY 4.0 · Code MIT · Third-party assets under their own licences'}</span>
+  </div>
+</footer>

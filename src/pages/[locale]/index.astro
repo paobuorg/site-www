@@ -1,0 +1,216 @@
+---
+import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Icon from '@paobu/core/components/Icon.astro';
+import SearchField from '@paobu/core/components/SearchField.astro';
+import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { siteContent } from '../../lib/content';
+import { routeDetails } from '../../lib/view';
+
+export function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const content = siteContent();
+const routes = content.visible('route');
+const copy = locale === 'zh-CN'
+  ? {
+      eyebrow: '真实卫星地球 · 核验赛道',
+      all: '全部',
+      count: `${routes.length} 条已收录路线`,
+      selected: '已选择',
+      open: '打开路线',
+      imagery: '底图：NASA Blue Marble 卫星影像合成',
+      rotate: '自动旋转',
+      rotateHint: '点击开始或暂停旋转',
+    }
+  : {
+      eyebrow: 'Real satellite Earth · verified courses',
+      all: 'All',
+      count: `${routes.length} catalogued routes`,
+      selected: 'Selected',
+      open: 'Open route',
+      imagery: 'Base imagery: NASA Blue Marble composite',
+      rotate: 'Auto rotate',
+      rotateHint: 'Start or pause rotation',
+    };
+const globeRoutes = routes.map((route) => {
+  const details = routeDetails(route);
+  const translation = content.translation(route, locale);
+  return {
+    id: route.entityId,
+    kind: details.raceType,
+    title: translation.title,
+    place: details.placeName[locale],
+    url: `/${locale}/routes/${route.slug}/`,
+    longitude: details.mapAnchor.longitude,
+    latitude: details.mapAnchor.latitude,
+  };
+});
+const title = locale === 'zh-CN' ? '跑地图 RunMap · 经典赛道与卫星地球' : 'RunMap · Classic courses and a satellite Earth';
+const description = locale === 'zh-CN'
+  ? '在真实卫星地球上探索经核验的马拉松与越野赛道，阅读来源透明的跑步知识与可解释的计算工具。'
+  : 'Explore verified marathon and trail courses on a real satellite Earth, with traceable running knowledge and explainable calculators.';
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={description}
+  active="routes"
+  preview={content.preview}
+  bodyClass="page-globe"
+>
+  <Fragment slot="head">
+    <link rel="stylesheet" href="/cesium/Widgets/widgets.css" />
+    <link rel="preload" as="image" href="/textures/earth-blue-marble-2048.jpg" />
+  </Fragment>
+
+  <section class="globe-home" aria-labelledby="globe-title">
+    <div class="globe-stage" data-globe-stage>
+      <div class="globe-poster" aria-hidden="true">
+        <div class="poster-sphere"></div>
+      </div>
+      <div class="globe-loading">
+        <span class="spinner" aria-hidden="true"></span>
+        <span class="sr-only">{t(locale, 'noGlobeLoading')}</span>
+      </div>
+      <div class="globe-fallback" hidden>
+        <div>
+          <Icon name="globe" size={44} />
+          <p>{t(locale, 'noGlobe')}</p>
+        </div>
+      </div>
+
+      <div class="globe-controls">
+        <button
+          class="icon-button"
+          type="button"
+          data-globe-rotate
+          aria-pressed="false"
+          aria-label={copy.rotate}
+          title={copy.rotateHint}
+        >
+          <Icon name="refresh" size={20} />
+        </button>
+        <button class="icon-button" type="button" data-globe-zoom-in aria-label={t(locale, 'zoomIn')}>
+          <Icon name="plus" size={20} />
+        </button>
+        <button class="icon-button" type="button" data-globe-zoom-out aria-label={t(locale, 'zoomOut')}>
+          <Icon name="minus" size={20} />
+        </button>
+        <button class="icon-button" type="button" data-globe-reset aria-label={t(locale, 'resetView')}>
+          <Icon name="globe" size={20} />
+        </button>
+      </div>
+
+      <div class="globe-legend" aria-hidden="true">
+        <span><i class="legend-dot"></i>{t(locale, 'road')}</span>
+        <span><i class="legend-dot trail"></i>{t(locale, 'trail')}</span>
+      </div>
+
+      <div class="globe-selected" data-globe-selected hidden>
+        <Icon name="pin" size={22} />
+        <div class="globe-selected-text">
+          <strong data-selected-title></strong>
+          <span data-selected-meta></span>
+        </div>
+        <a class="button small primary" href="#" data-selected-link>{copy.open}</a>
+        <button class="icon-button" type="button" data-globe-close aria-label={t(locale, 'close')}>
+          <Icon name="close" size={18} />
+        </button>
+      </div>
+
+      <p class="globe-data-credit">
+        {copy.imagery} · <a href="https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/" rel="external noopener">NASA</a>
+      </p>
+    </div>
+
+    <aside class="globe-panel" aria-labelledby="globe-title">
+      <button class="globe-mobile-handle" type="button" aria-label={t(locale, 'openSheet')} data-sheet-toggle></button>
+      <span class="pill mint"><Icon name="globe" size={14} />{copy.eyebrow}</span>
+      <h1 id="globe-title">{t(locale, 'routeHome')}</h1>
+      <p class="globe-subtitle">{t(locale, 'routeSubtitle')}</p>
+      <SearchField locale={locale} action={`/${locale}/search/`} id="route-search-input" placeholder={t(locale, 'routeSearch')} />
+
+      <div class="filter-row" role="group" aria-label={locale === 'zh-CN' ? '按类型筛选' : 'Filter by type'}>
+        <button class="filter-chip" type="button" data-route-filter="all" aria-pressed="true">{copy.all}</button>
+        <button class="filter-chip road" type="button" data-route-filter="road-marathon" aria-pressed="false">
+          <span class="legend-dot"></span>{t(locale, 'road')}
+        </button>
+        <button class="filter-chip trail" type="button" data-route-filter="trail-ultra" aria-pressed="false">
+          <span class="legend-dot trail"></span>{t(locale, 'trail')}
+        </button>
+      </div>
+
+      <div class="route-list" data-globe-routes={JSON.stringify(globeRoutes)}>
+        {routes.map((route) => {
+          const details = routeDetails(route);
+          const translation = content.translation(route, locale);
+          return (
+            <a
+              class="route-list-item"
+              href={`/${locale}/routes/${route.slug}/`}
+              data-route-card
+              data-route-kind={details.raceType}
+            >
+              <span class:list={['route-list-thumb', details.raceType === 'trail-ultra' && 'trail']} aria-hidden="true"></span>
+              <span class="route-list-content">
+                <strong>{translation.title}</strong>
+                <span>{details.placeName[locale]}</span>
+              </span>
+              <span class="route-list-arrow"><Icon name="chevron-right" size={17} /></span>
+            </a>
+          );
+        })}
+      </div>
+
+      <div class="globe-panel-footer">
+        <span>{copy.count}</span>
+        <a href={`/${locale}/routes/`}>{t(locale, 'allRoutes')} →</a>
+      </div>
+    </aside>
+  </section>
+</BaseLayout>
+
+<script>
+  import { initHomeGlobe } from '../../client/globe';
+  const startGlobe = () => window.setTimeout(() => initHomeGlobe(), 300);
+  if (document.readyState === 'complete') startGlobe();
+  else window.addEventListener('load', startGlobe, { once: true });
+
+  const panel = document.querySelector('.globe-panel');
+  document.querySelector('[data-sheet-toggle]')?.addEventListener('click', () => {
+    const expanded = panel?.classList.toggle('is-expanded') ?? false;
+    document.querySelector('[data-sheet-toggle]')?.setAttribute(
+      'aria-label',
+      expanded ? '收起列表' : '展开路线列表',
+    );
+  });
+</script>
+
+<style>
+  .poster-sphere {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    width: min(78vh, 68vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: url('/textures/earth-blue-marble-2048.jpg');
+    background-size: 200% 100%;
+    background-position: 30% 46%;
+    box-shadow:
+      inset -50px -30px 110px rgba(2, 8, 20, 0.9),
+      inset 18px 10px 70px rgba(120, 210, 255, 0.14),
+      0 0 110px rgba(50, 180, 210, 0.16);
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 767px) {
+    .poster-sphere {
+      left: 58%;
+      width: min(44dvh, 92vw);
+    }
+  }
+</style>

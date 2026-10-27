@@ -1,0 +1,22 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@paobu/core/content": ["packages/core/src/content/index.ts"],
+      "@paobu/core/geo": ["packages/core/src/geo/index.ts"],
+      "@paobu/core/components/*": ["packages/core/src/components/*"],
+      "@paobu/core/layouts/*": ["packages/core/src/layouts/*"],
+      "@paobu/core/lib/*": ["packages/core/src/lib/*"],
+      "@paobu/core/styles/*": ["packages/core/src/styles/*"]
+    }
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", "node_modules", ".content"]
+}
