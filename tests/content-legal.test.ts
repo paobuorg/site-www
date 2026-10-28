@@ -10,6 +10,8 @@ const content = loadContent({ roots, allowUnreviewed: true });
 
 const forbidden = [
   /RunMap 编辑台/,
+  /\bRunMap\b/,
+  /跑地图/,
   /editorial desk/i,
   /AI-assisted/i,
   /AI 辅助/,
@@ -63,4 +65,106 @@ test('shared footer and legal page link to the licence page', () => {
   assert.match(legalPage, /CC BY 4\.0/);
   assert.match(legalPage, /MIT/);
   assert.match(legalPage, /免责|disclaimer|liability|责任/i);
+});
+
+test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
+  const logo = fs.readFileSync(
+    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'Logo.astro'),
+    'utf8',
+  );
+  assert.match(logo, /跑起来/);
+  assert.match(logo, /RUNUP/);
+  assert.match(logo, /Bean/);
+  assert.doesNotMatch(logo, /跑地图|RunMap/);
+
+  const bean = fs.readFileSync(
+    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'Bean.astro'),
+    'utf8',
+  );
+  for (const expression of [
+    'neutral',
+    'run',
+    'cheer',
+    'tired',
+    'hydrate',
+    'pr',
+    'lost',
+    'wave',
+    'map',
+    'book',
+    'tool',
+    'search',
+    'sleep',
+  ]) {
+    assert.match(bean, new RegExp(`expression === '${expression}'`), expression);
+  }
+
+  const favicon = fs.readFileSync(path.join(siteRoot, 'public', 'favicon.svg'), 'utf8');
+  assert.match(favicon, /aria-label="跑起来 RUNUP"/);
+
+  const manifest = JSON.parse(
+    fs.readFileSync(path.join(siteRoot, 'public', 'manifest.webmanifest'), 'utf8'),
+  ) as { name: string; icons: Array<{ src: string; sizes: string; purpose: string }> };
+  assert.equal(manifest.name, '跑起来 RUNUP');
+  assert.ok(manifest.icons.some((icon) => icon.src === '/icon-192.png' && icon.sizes === '192x192'));
+  assert.ok(manifest.icons.some((icon) => icon.src === '/icon-512.png' && icon.sizes === '512x512'));
+  assert.ok(manifest.icons.some((icon) => icon.purpose === 'maskable'));
+  for (const icon of ['icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png']) {
+    assert.ok(fs.statSync(path.join(siteRoot, 'public', icon)).size > 0, icon);
+  }
+
+  const footer = fs.readFileSync(
+    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'Footer.astro'),
+    'utf8',
+  );
+  assert.match(footer, /跑起来 RUNUP/);
+
+  const layout = fs.readFileSync(
+    path.join(siteRoot, 'packages', 'core', 'src', 'layouts', 'BaseLayout.astro'),
+    'utf8',
+  );
+  assert.match(layout, /og:site_name" content="RUNUP"/);
+  assert.match(layout, /apple-touch-icon/);
+});
+
+test('AdSense is optional, production-only and limited to content detail pages', () => {
+  const layout = fs.readFileSync(
+    path.join(siteRoot, 'packages', 'core', 'src', 'layouts', 'BaseLayout.astro'),
+    'utf8',
+  );
+  assert.match(layout, /PUBLIC_ADSENSE_CLIENT/);
+  assert.match(layout, /google-adsense-account/);
+  assert.match(layout, /footerAd/);
+  assert.match(layout, /!preview/);
+
+  const footerAd = fs.readFileSync(
+    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'FooterAd.astro'),
+    'utf8',
+  );
+  assert.match(footerAd, /PUBLIC_ADSENSE_SLOT/);
+  assert.match(footerAd, /data-ad-slot/);
+  assert.match(footerAd, /IntersectionObserver/);
+
+  const detailPages = [
+    path.join(siteRoot, 'src', 'pages', '[...locale]', 'routes', '[slug].astro'),
+    path.join(siteRoot, '..', 'site-knowledge', 'src', 'pages', '[...locale]', 'articles', '[slug].astro'),
+    path.join(siteRoot, '..', 'site-knowledge', 'src', 'pages', '[...locale]', 'glossary', '[slug].astro'),
+    path.join(siteRoot, '..', 'site-tools', 'src', 'pages', '[...locale]', 'tools', '[slug].astro'),
+  ];
+  for (const page of detailPages) {
+    assert.match(fs.readFileSync(page, 'utf8'), /footerAd/, page);
+  }
+
+  const release = fs.readFileSync(
+    path.join(siteRoot, 'packages', 'core', 'src', 'lib', 'release.ts'),
+    'utf8',
+  );
+  assert.match(release, /ads\.txt/);
+  assert.match(release, /google\.com, \$\{publisherId\}/);
+
+  const legal = fs.readFileSync(
+    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'LegalPage.astro'),
+    'utf8',
+  );
+  assert.match(legal, /adsenseEnabled/);
 });
