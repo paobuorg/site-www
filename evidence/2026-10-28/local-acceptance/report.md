@@ -9,7 +9,7 @@ Local acceptance **passes** for the 56-entity launch set. The three public sites
 
 - Content: 56 entities / 112 bilingual versions published (routes 16, knowledge 28, tools 12); 62 sources; 26 tool cases; 112 AI-assisted editorial approval records; `check:production` passes with route=16, knowledge=28, tool=12.
 - Knowledge: 27 articles plus a 17-term glossary, nine topics covered, five learning paths.
-- Production artifacts: static builds 42/86/30 pages; release manifests 38/82/26 hosted HTML pages; Pagefind 112/56/24 records; sitemaps 38/82/26 URLs; no `localhost` URLs in production HTML.
+- Production artifacts: static builds 42/86/30 HTML files; release manifests 38/82/26 hosted HTML pages; Pagefind 112/56/24 records; sitemaps 38/82/26 URLs; no `localhost` URLs in production HTML.
 - Release bundle: `a00bee5d23041407255cfb36380e95d0e18f6dd7c09115fa9445553d1ac616f7`; core `0.2.14` (`1fcda15d…`); content locks match.
 - Local crawl: all 146 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
 - Browser matrix: Chromium/Firefox/WebKit each 48 screenshots; 0 axe violations, 0 console errors, 0 failed requests; keyboard 14/14 on four pages; search pagination fully expands to 25/25; no soft-keyboard overlap. The eight new K1/T1 pages have 0 axe violations in light and dark themes and no mobile overflow.

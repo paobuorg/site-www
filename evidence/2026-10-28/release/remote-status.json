@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T01:20:00Z",
+  "generatedAt": "2026-10-28T01:24:00Z",
   "account": "paobuorg",
   "repositories": [
     {
@@ -26,19 +26,19 @@
     {
       "name": "site-www",
       "url": "https://github.com/paobuorg/site-www",
-      "commit": "6ee40ddf689f5d560523fea57ec2e2a0d830db1a",
+      "commit": "997f4e3737b338fdc21a3573018a43286a719f5c",
       "visibility": "public"
     },
     {
       "name": "site-knowledge",
       "url": "https://github.com/paobuorg/site-knowledge",
-      "commit": "eb7ce824b0eb7fd43e093c7ddd47ab55e4831e7a",
+      "commit": "8fec0d15bbe5a3479f6e7bd337bd12c17fdf4ac6",
       "visibility": "public"
     },
     {
       "name": "site-tools",
       "url": "https://github.com/paobuorg/site-tools",
-      "commit": "d0b59ab9ec39f4c95d1ff0764d9d30e465c2a8fd",
+      "commit": "d8cdd0b3b5cc963df773b57198b71cfb8e7f29aa",
       "visibility": "public"
     }
   ],
@@ -80,7 +80,7 @@
         "site": "main",
         "url": "https://paobu.org/",
         "status": "success",
-        "codeCommit": "6ee40ddf689f5d560523fea57ec2e2a0d830db1a",
+        "codeCommit": "997f4e3737b338fdc21a3573018a43286a719f5c",
         "coreSha256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89",
         "siteBundleId": "388cbeb0b3664ec4422fc14c69f115b7851988176dfd96f89e98ce14414313f6",
         "build": {
@@ -88,7 +88,7 @@
           "searchRecords": 112,
           "sitemapUrls": 38
         },
-        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40614107339",
+        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40614625464",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -96,7 +96,7 @@
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
-        "codeCommit": "eb7ce824b0eb7fd43e093c7ddd47ab55e4831e7a",
+        "codeCommit": "8fec0d15bbe5a3479f6e7bd337bd12c17fdf4ac6",
         "coreSha256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89",
         "siteBundleId": "1c65fd193da58b720c60bb431e375fd651f5615ff27c978c4f4812f538354a56",
         "build": {
@@ -104,7 +104,7 @@
           "searchRecords": 56,
           "sitemapUrls": 82
         },
-        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40613861595",
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40614631261",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -112,7 +112,7 @@
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
-        "codeCommit": "d0b59ab9ec39f4c95d1ff0764d9d30e465c2a8fd",
+        "codeCommit": "d8cdd0b3b5cc963df773b57198b71cfb8e7f29aa",
         "coreSha256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89",
         "siteBundleId": "b271663ddee02bbf33285007d5ad6302f8637d30b63caaef12bd070ecf98aa99",
         "build": {
@@ -120,14 +120,14 @@
           "searchRecords": 24,
           "sitemapUrls": 26
         },
-        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40613866307",
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40614635401",
         "httpsEnforced": true,
         "certificate": "approved"
       }
     ]
   },
   "liveVerification": {
-    "checkedAt": "2026-10-28T01:20:00Z",
+    "checkedAt": "2026-10-28T01:24:00Z",
     "bundleConsistency": "All three live release manifests match the local release bundle siteBundleIds and the published core 0.2.14 hash.",
     "legacyPrefix": "https://paobu.org/zh-CN/ returns 404; no /zh-CN/ links on the eight checked K1/T1 pages.",
     "sitemaps": {
@@ -160,9 +160,9 @@
     "backup": "reference/legacy/www-github-backup-2026-10-27.tar.gz"
   },
   "workflows": {
-    "site-www": "success; Pages build now downloads the published core artifact instead of repacking it",
-    "site-knowledge": "success",
-    "site-tools": "success",
+    "site-www": "success; Downloads the published core artifact and ignores docs/evidence-only commits",
+    "site-knowledge": "success; ignores README-only commits",
+    "site-tools": "success; ignores README-only commits",
     "bootstrapFailedRunsRemoved": true
   },
   "notes": [
@@ -170,6 +170,7 @@
     "The main-site Pages workflow now downloads the published core-v0.2.14 artifact and verifies its SHA-256, so the live manifest reports the same core hash as both subsites.",
     "All three live manifests match the local release bundle siteBundleIds: 388cbeb0…, 1c65fd19…, b271663d….",
     "The legacy paobuorg/www repository was backed up locally, its legacy Pages site was removed, and the repository was deleted after the new sites were verified.",
-    "Formal high-resolution imagery, real devices/readers, third-party EOX SLA, real Safari, remote rollback and independent professional review remain outside this deployment verification."
+    "Formal high-resolution imagery, real devices/readers, third-party EOX SLA, real Safari, remote rollback and independent professional review remain outside this deployment verification.",
+    "README and evidence commits no longer trigger Pages rebuilds, so the recorded code commits correspond to the verified artifacts."
   ]
 }
