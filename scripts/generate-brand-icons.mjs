@@ -64,12 +64,47 @@ const targets = ['site-www', 'site-knowledge', 'site-tools'].map((site) =>
   path.join(here, '..', '..', site, 'public'),
 );
 
+function buildIco(images) {
+  const header = Buffer.alloc(6);
+  header.writeUInt16LE(0, 0);
+  header.writeUInt16LE(1, 2);
+  header.writeUInt16LE(images.length, 4);
+  const directory = Buffer.alloc(images.length * 16);
+  let offset = header.length + directory.length;
+  images.forEach(({ size, png }, index) => {
+    const entry = index * 16;
+    directory.writeUInt8(size >= 256 ? 0 : size, entry);
+    directory.writeUInt8(size >= 256 ? 0 : size, entry + 1);
+    directory.writeUInt8(0, entry + 2);
+    directory.writeUInt8(0, entry + 3);
+    directory.writeUInt16LE(1, entry + 4);
+    directory.writeUInt16LE(32, entry + 6);
+    directory.writeUInt32LE(png.length, entry + 8);
+    directory.writeUInt32LE(offset, entry + 12);
+    offset += png.length;
+  });
+  return Buffer.concat([header, directory, ...images.map((image) => image.png)]);
+}
+
 for (const dir of targets) {
   fs.writeFileSync(path.join(dir, 'favicon.svg'), favicon);
   await sharp(Buffer.from(anyIcon(192))).png().toFile(path.join(dir, 'icon-192.png'));
   await sharp(Buffer.from(anyIcon(512))).png().toFile(path.join(dir, 'icon-512.png'));
   await sharp(Buffer.from(maskable)).png().toFile(path.join(dir, 'icon-maskable-512.png'));
   await sharp(Buffer.from(apple)).png().toFile(path.join(dir, 'apple-touch-icon.png'));
+  const png16 = await sharp(Buffer.from(anyIcon(16))).png().toBuffer();
+  const png32 = await sharp(Buffer.from(anyIcon(32))).png().toBuffer();
+  const png48 = await sharp(Buffer.from(anyIcon(48))).png().toBuffer();
+  fs.writeFileSync(path.join(dir, 'favicon-16x16.png'), png16);
+  fs.writeFileSync(path.join(dir, 'favicon-32x32.png'), png32);
+  fs.writeFileSync(
+    path.join(dir, 'favicon.ico'),
+    buildIco([
+      { size: 16, png: png16 },
+      { size: 32, png: png32 },
+      { size: 48, png: png48 },
+    ]),
+  );
 }
 
 console.log('brand icons written to', targets.join(', '));
