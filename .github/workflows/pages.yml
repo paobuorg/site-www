@@ -23,6 +23,8 @@ env:
   PNPM_VERSION: '10.18.3'
   PAOBU_REPOS_DIR: ${{ github.workspace }}/content-repos
   PREVIEW_UNREVIEWED: '0'
+  PUBLIC_ADSENSE_CLIENT: ${{ vars.PUBLIC_ADSENSE_CLIENT }}
+  PUBLIC_ADSENSE_SLOT: ${{ vars.PUBLIC_ADSENSE_SLOT }}
 
 jobs:
   build:

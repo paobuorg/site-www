@@ -10,7 +10,7 @@ const toolUrl = 'http://localhost:4423/tools/track-convert/';
 const enToolUrl = 'http://localhost:4423/en/tools/track-convert/';
 
 const gpx = `<?xml version="1.0" encoding="UTF-8"?>
-<gpx version="1.1" creator="RunMap test" xmlns="http://www.topografix.com/GPX/1/1">
+<gpx version="1.1" creator="RUNUP test" xmlns="http://www.topografix.com/GPX/1/1">
   <trk><name>hang</name><trkseg>
     <trkpt lat="42.3601" lon="-71.0589"><ele>10</ele></trkpt>
     <trkpt lat="42.3610" lon="-71.0570"><ele>12</ele></trkpt>

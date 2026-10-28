@@ -10,4 +10,4 @@
 
 The image is used as a visual basemap only. It is not course geometry, a race map or a
 survey product. NASA media usage guidelines apply. Do not relicense this image as part
-of RunMap's CC BY 4.0 content licence.
+of RUNUP's CC BY 4.0 content licence.

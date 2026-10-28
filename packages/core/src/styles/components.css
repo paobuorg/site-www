@@ -680,6 +680,12 @@
   color: var(--muted);
 }
 
+.empty-state .empty-mascot {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 12px;
+}
+
 .empty-state h2 {
   margin-bottom: 8px;
   font-size: 1.4rem;
@@ -969,6 +975,12 @@
 .globe-fallback p {
   max-width: 420px;
   color: #c9d8e3;
+}
+
+.globe-fallback .fallback-mascot {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 12px;
 }
 
 .globe-data-credit {

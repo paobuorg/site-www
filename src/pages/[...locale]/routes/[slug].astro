@@ -100,7 +100,7 @@ const copy = locale === 'zh-CN'
       actual: 'Actual state',
       previewStatus: 'Being checked',
     };
-const title = `${translation.title} · RunMap`;
+const title = `${translation.title} · RUNUP`;
 const description = translation.summary;
 const officialHref = details.geometryAccess === 'official-link' && details.officialGeometryUrl
   ? details.officialGeometryUrl
@@ -138,6 +138,7 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
   ogType="article"
   alternateHref={`${localePrefix(other)}/routes/${entity.slug}/`}
   structuredData={structuredData}
+  footerAd
 >
   <Fragment slot="head">
     <link rel="stylesheet" href="/cesium/Widgets/widgets.css" />

@@ -1,0 +1,109 @@
+---
+import { localePrefix } from '../lib/routing';
+import type { Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const client = import.meta.env.PUBLIC_ADSENSE_CLIENT as string | undefined;
+const slot = import.meta.env.PUBLIC_ADSENSE_SLOT as string | undefined;
+const enabled = Boolean(client && slot);
+const prefix = localePrefix(locale);
+const label = locale === 'zh-CN' ? '广告' : 'Advertisement';
+const about = locale === 'zh-CN' ? '关于广告与隐私' : 'About ads and privacy';
+---
+
+{enabled && (
+  <aside class="footer-ad" aria-label={label} data-footer-ad>
+    <div class="footer-ad-inner">
+      <div class="footer-ad-meta">
+        <span>{label}</span>
+        <a href={`${prefix}/legal/`}>{about}</a>
+      </div>
+      <ins
+        class="adsbygoogle"
+        style="display:block"
+        data-ad-client={client}
+        data-ad-slot={slot}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+    </div>
+  </aside>
+  <script is:inline>
+    (() => {
+      const ad = document.querySelector('[data-footer-ad] .adsbygoogle');
+      if (!ad) return;
+      const init = () => {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      };
+      if (!('IntersectionObserver' in window)) {
+        init();
+        return;
+      }
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            observer.disconnect();
+            init();
+          }
+        },
+        { rootMargin: '320px 0px' },
+      );
+      observer.observe(ad);
+    })();
+  </script>
+)}
+
+<style>
+  .footer-ad {
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .footer-ad-inner {
+    width: min(100% - 40px, var(--page-width));
+    margin: 0 auto;
+    padding: 18px 0 26px;
+  }
+
+  .footer-ad-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .footer-ad-meta a {
+    color: var(--muted);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .footer-ad .adsbygoogle {
+    display: block;
+    min-height: 90px;
+  }
+
+  .footer-ad .adsbygoogle[data-ad-status='unfilled'] {
+    display: none;
+  }
+
+  .footer-ad:has(.adsbygoogle[data-ad-status='unfilled']) {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .footer-ad-inner {
+      width: min(100% - 28px, var(--page-width));
+      padding: 14px 0 20px;
+    }
+  }
+</style>

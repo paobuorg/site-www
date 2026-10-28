@@ -16,11 +16,14 @@ const contactHref = gh ? `${gh}/issues` : null;
 const siteName = locale === 'zh-CN'
   ? { routes: '路线站', knowledge: '知识站', tools: '工具站' }[active]
   : { routes: 'Routes', knowledge: 'Learn', tools: 'Tools' }[active];
+const adsenseEnabled = Boolean(
+  (import.meta.env.PUBLIC_ADSENSE_CLIENT as string | undefined)?.trim(),
+);
 
 const copy = locale === 'zh-CN'
   ? {
       title: '法律、免责声明与许可',
-      description: '跑地图的使用条件、专业建议边界、赛事与户外安全、工具限制、来源与商标、CC BY 4.0 / MIT 许可、隐私与纠错方式。',
+      description: '跑起来的使用条件、专业建议边界、赛事与户外安全、工具限制、来源与商标、CC BY 4.0 / MIT 许可、隐私与纠错方式。',
       eyebrow: '使用前请阅读',
       lead: '本站提供一般跑步信息、赛事资料与计算工具。使用本站即表示你理解并接受以下边界；如果你不同意，请不要使用本站。',
       updated: '最后更新：2026-10-28',
@@ -31,7 +34,7 @@ const copy = locale === 'zh-CN'
           title: '使用条件与责任限制',
           paragraphs: [
             '本站内容按“现状”和“现有”提供。我们尽力核对来源并定期更新，但不保证内容完整、准确、及时、无错误或适合某一特定目的。赛事日期、路线、规则、补给、交通和天气都可能变化，历史版本不应被当作当前事实。',
-            '在适用法律允许的最大范围内，跑地图及其贡献者不对因访问、使用或依赖本站内容而产生的任何直接、间接、附带、特殊或后果性损失承担责任。此限制不影响依法不能排除或限制的责任。你应自行判断并承担使用本站的风险。',
+            '在适用法律允许的最大范围内，跑起来及其贡献者不对因访问、使用或依赖本站内容而产生的任何直接、间接、附带、特殊或后果性损失承担责任。此限制不影响依法不能排除或限制的责任。你应自行判断并承担使用本站的风险。',
           ],
         },
         {
@@ -65,21 +68,26 @@ const copy = locale === 'zh-CN'
         {
           title: '版权与许可',
           paragraphs: [
-            '本站原创正文、表格、工具说明和原创数据采用 CC BY 4.0（知识共享署名 4.0 国际）许可。转载、改编或再分发时，请署名“跑地图 RunMap”、链接到原页面、注明是否修改，并且不得暗示本站为你或你的产品背书。',
+            '本站原创正文、表格、工具说明和原创数据采用 CC BY 4.0（知识共享署名 4.0 国际）许可。转载、改编或再分发时，请署名“跑起来 RUNUP”、链接到原页面、注明是否修改，并且不得暗示本站为你或你的产品背书。',
             '网站代码采用 MIT 许可；各代码仓库的 LICENSE 文件是最终许可文本。第三方赛事资料、商标、照片、地图、轨迹、卫星影像和开源依赖不纳入本站的 CC BY 4.0 或 MIT 许可，仍按各自权利人的条款使用。',
           ],
         },
         {
           title: '隐私与第三方服务',
           paragraphs: [
-            '本站没有账户、评论、广告或第三方统计脚本。主题偏好和鞋里程等少量数据保存在浏览器本地。站点由 GitHub Pages 托管，托管方可能按自身政策记录访问日志；路线近景使用 EOX Sentinel-2 cloudless 公共瓦片，浏览器会向该服务发起请求并暴露常规网络信息。',
+            `${adsenseEnabled ? '本站使用 Google AdSense 在部分内容页底部展示广告。Google 及其合作伙伴可能使用 Cookie 或类似技术，根据你访问本站及其他网站的情况展示广告；你可以在 Google 广告设置（adssettings.google.com）中管理个性化广告。' : '本站没有账户、评论、广告或第三方统计脚本。'}主题偏好和鞋里程等少量数据保存在浏览器本地。站点由 GitHub Pages 托管，托管方可能按自身政策记录访问日志；路线近景使用 EOX Sentinel-2 cloudless 公共瓦片，浏览器会向该服务发起请求并暴露常规网络信息。`,
+            ...(adsenseEnabled
+              ? [
+                  '广告由 Google AdSense 提供。广告请求可能向 Google 发送页面地址、IP 地址、设备与浏览器信息等常规网络数据；Google 的隐私政策和广告设置适用于这些数据。本站不控制广告内容，也不会从 AdSense 获得你的个人身份信息。',
+                ]
+              : []),
             '本站不会出售你的个人数据，也不会要求你上传轨迹文件。外部链接打开后适用对方网站的隐私政策。',
           ],
         },
         {
           title: '编辑方法与自动化辅助',
           paragraphs: [
-            '内容由跑地图编辑部编写、核对和更新。编辑流程可能使用自动化工具辅助检索、比对、格式整理和一致性检查；自动化辅助不替代合格专业人士的判断，也不构成独立专业评估。',
+            '内容由跑起来编辑部编写、核对和更新。编辑流程可能使用自动化工具辅助检索、比对、格式整理和一致性检查；自动化辅助不替代合格专业人士的判断，也不构成独立专业评估。',
             '每个已发布条目都要求中英文版本、来源记录和内容摘要一致；发现事实、来源或计算问题时，我们会更正、补充说明或撤回内容。',
           ],
         },
@@ -99,24 +107,24 @@ const copy = locale === 'zh-CN'
     }
   : {
       title: 'Legal, disclaimers and licences',
-      description: 'RunMap terms of use, professional-advice boundaries, race and outdoor safety, tool limits, sources and trademarks, CC BY 4.0 / MIT licences, privacy and corrections.',
+      description: 'RunUp terms of use, professional-advice boundaries, race and outdoor safety, tool limits, sources and trademarks, CC BY 4.0 / MIT licences, privacy and corrections.',
       eyebrow: 'Read before use',
-      lead: 'RunMap provides general running information, race material and calculators. By using this site you accept the boundaries below; if you do not agree, please do not use the site.',
+      lead: 'RunUp provides general running information, race material and calculators. By using this site you accept the boundaries below; if you do not agree, please do not use the site.',
       updated: 'Last updated: 2026-10-28',
       summaryTitle: 'In one paragraph',
-      summary: 'Content is provided as is, with no guarantee that it is complete, accurate or suitable for you. RunMap does not provide medical, nutrition, coaching, legal or safety advice. Race and route information is governed by the latest official notice. Tool results are estimates, not guarantees.',
+      summary: 'Content is provided as is, with no guarantee that it is complete, accurate or suitable for you. RunUp does not provide medical, nutrition, coaching, legal or safety advice. Race and route information is governed by the latest official notice. Tool results are estimates, not guarantees.',
       sections: [
         {
           title: 'Terms of use and limitation of liability',
           paragraphs: [
             'This site is provided “as is” and “as available”. We try to check sources and update content, but we do not warrant that it is complete, accurate, current, error-free or fit for a particular purpose. Race dates, routes, rules, aid stations, transport and weather can change; an older version is not current fact.',
-            'To the maximum extent permitted by applicable law, RunMap and its contributors are not liable for any direct, indirect, incidental, special or consequential loss arising from access to, use of or reliance on this site. This does not exclude liability that cannot lawfully be excluded. You are responsible for your own judgment and for the risks of using the site.',
+            'To the maximum extent permitted by applicable law, RunUp and its contributors are not liable for any direct, indirect, incidental, special or consequential loss arising from access to, use of or reliance on this site. This does not exclude liability that cannot lawfully be excluded. You are responsible for your own judgment and for the risks of using the site.',
           ],
         },
         {
           title: 'Not professional advice; emergencies',
           paragraphs: [
-            'RunMap is not a medical provider, nutrition service, coaching service or race organiser, and does not provide individual diagnosis, treatment, rehabilitation, nutrition prescriptions or training plans. For pain, injury, chronic illness, medication, pregnancy, eating disorders or extreme environments, consult a properly qualified doctor, registered dietitian or coach.',
+            'RunUp is not a medical provider, nutrition service, coaching service or race organiser, and does not provide individual diagnosis, treatment, rehabilitation, nutrition prescriptions or training plans. For pain, injury, chronic illness, medication, pregnancy, eating disorders or extreme environments, consult a properly qualified doctor, registered dietitian or coach.',
             'For chest pain, fainting, altered consciousness, severe breathing difficulty, heat stroke or another emergency, contact local emergency services immediately. Do not wait for a reply from this site or continue exercising.',
           ],
         },
@@ -144,21 +152,26 @@ const copy = locale === 'zh-CN'
         {
           title: 'Copyright and licences',
           paragraphs: [
-            'Original RunMap articles, tables, tool documentation and original data are licensed under CC BY 4.0 (Creative Commons Attribution 4.0 International). When you republish, adapt or redistribute them, credit “RunMap 跑地图”, link to the original page, indicate changes and do not imply that RunMap endorses you or your product.',
-            'Site code is licensed under MIT; the LICENSE file in each code repository is the authoritative text. Third-party race material, trademarks, photographs, maps, tracks, satellite imagery and open-source dependencies are not covered by RunMap’s CC BY 4.0 or MIT licence and remain subject to their owners’ terms.',
+            'Original RunUp articles, tables, tool documentation and original data are licensed under CC BY 4.0 (Creative Commons Attribution 4.0 International). When you republish, adapt or redistribute them, credit “RUNUP 跑起来”, link to the original page, indicate changes and do not imply that RunUp endorses you or your product.',
+            'Site code is licensed under MIT; the LICENSE file in each code repository is the authoritative text. Third-party race material, trademarks, photographs, maps, tracks, satellite imagery and open-source dependencies are not covered by RunUp’s CC BY 4.0 or MIT licence and remain subject to their owners’ terms.',
           ],
         },
         {
           title: 'Privacy and third-party services',
           paragraphs: [
-            'This site has no accounts, comments, advertising or third-party analytics scripts. A small amount of data, such as theme preference and shoe mileage, stays in local browser storage. The site is hosted on GitHub Pages, which may keep access logs under its own policies. Route close-ups use the public EOX Sentinel-2 cloudless tiles, so your browser sends a request and ordinary network information to that service.',
+            `${adsenseEnabled ? 'This site uses Google AdSense to show ads at the bottom of some content pages. Google and its partners may use cookies or similar technologies to show ads based on your visits to this and other sites; you can manage personalised advertising in Google Ads Settings (adssettings.google.com).' : 'This site has no accounts, comments, advertising or third-party analytics scripts.'} A small amount of data, such as theme preference and shoe mileage, stays in local browser storage. The site is hosted on GitHub Pages, which may keep access logs under its own policies. Route close-ups use the public EOX Sentinel-2 cloudless tiles, so your browser sends a request and ordinary network information to that service.`,
+            ...(adsenseEnabled
+              ? [
+                  'Ads are served by Google AdSense. Ad requests may send Google ordinary network data such as the page address, IP address, device and browser information; Google’s privacy policy and ads settings apply to that data. This site does not control ad content and does not receive your identity from AdSense.',
+                ]
+              : []),
             'We do not sell personal data and do not ask you to upload track files. External links are governed by the destination site’s privacy policy.',
           ],
         },
         {
           title: 'Editorial method and automation',
           paragraphs: [
-            'Content is written, checked and updated by the RunMap editorial team. The editorial process may use automated tools for retrieval, comparison, formatting and consistency checks. Automation does not replace a qualified professional’s judgment and is not an independent specialist assessment.',
+            'Content is written, checked and updated by the RunUp editorial team. The editorial process may use automated tools for retrieval, comparison, formatting and consistency checks. Automation does not replace a qualified professional’s judgment and is not an independent specialist assessment.',
             'Every published entry requires matching Chinese and English versions, source records and a content digest. When a fact, source or calculation is wrong, we correct it, add a note or withdraw the content.',
           ],
         },
@@ -177,7 +190,7 @@ const copy = locale === 'zh-CN'
       backRoutes: 'Back to routes',
     };
 
-const title = `${copy.title} · RunMap`;
+const title = `${copy.title} · RUNUP`;
 const aboutHref = `${siteOrigin('routes')}${prefix}/about/`;
 const homeHref = locale === 'zh-CN' ? '/' : '/en/';
 ---

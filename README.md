@@ -1,4 +1,4 @@
-# 跑地图主站 · site-www
+# 跑起来主站 · site-www
 
 [English](README.en.md) · 中文
 
@@ -13,10 +13,10 @@
 - T15 浏览器矩阵本地通过（2026-10-28 最终生产构建）：Chromium 156.0.8078.4、Firefox 157.0、WebKit 27.2 各生成 48 张 1440×900 / 390×844 截图（6 页 × 2 语言 × 2 主题 × 2 视口）；三套均为 0 条 axe 违规、0 控制台错误与失败请求；320–1920px 共 60 项、200% 缩放 6 项均无横向溢出；键盘 4 页各 14/14 焦点、关键控件 ≥44px、AX 树、搜索分页展开 25/25、软键盘遮挡 0、长标题与 reduced-motion 检查通过。新增 8 个 K1/T1 页面在浅色/深色下 axe 均为 0 且无移动端溢出；K2 的 16 篇、K3 的 14 篇、K4 的 10 篇与 K5 的 6 篇文章页在 390px 下 200、axe 0、无移动端溢出；六张双语法律页 axe 0、无移动端溢出，所有文章、术语、工具和路线页均有法律提示。路线详情等待地球/近景瓦片可展示后再隐藏海报，移动端画布填满卡片。WebKit 27.2 缺少 `OffscreenCanvas`，因此正确降级为海报与文字说明，不执行 Cesium；真实 Safari、真实读屏与真机仍待补。
 - T16 本地实验室检查通过（2026-10-28）：普通文章 LCP 中位 1.308s/最慢 1.516s、CLS 0；地球桌面就绪中位 3.491s/最慢 3.619s（预算 4s）、模拟手机 4.825s/4.831s（预算 6s）；硬件加速 Chromium（Intel Arc）约 60fps；非地图 18,346B gzip、引擎 1,347,806B gzip、纹理 266,599B、地图索引 1,262B；11 项预算与 8 项故障断言通过。它不是线上 p75 或真实手机 GPU 结果。
 - 路线详情使用无需 API 密钥的 EOX Sentinel-2 cloudless 公开瓦片作为近景层，署名显示在地图底部；瓦片失败时重试并回退到本地 NASA Blue Marble。首页仍使用本地 NASA 基础层。公开瓦片可用性、第三方条款和额度不由本站保证，真实网络/SLA 仍需另行验证。
-- T17 本地发布校验通过：三站分别生成 `CNAME`、`.nojekyll`、`robots.txt`、按公开页面生成的 `sitemap.xml`、`release-manifest.json`、PWA manifest、`sw.js` 与离线页；`scripts/release-bundle.mjs` 与 `scripts/verify-release.mjs` 校验三站同核心、同内容锁和发布文件。当前 79 实体生产构建的静态页面为 43/133/31，发布清单 40/130/28，搜索记录 158/102/24，sitemap 40/130/28，内容守卫通过。当前 release bundleId 为 `fcdf71e3…`。
-- Pages 工作流与 core Release 工作流已加入 `.github/workflows/`；三站 Pages 工作流均已成功，`paobu.org`/`learn.paobu.org`/`tools.paobu.org` 已启用 HTTPS。旧 `paobuorg/www` 已备份并删除。法律与内容更新批次已于 2026-10-28 推送并复核；主站流水线下载已发布的 `core-v0.2.15` 制品并校验 SHA-256，线上三站清单使用同一核心哈希。
+- T17 本地发布校验通过：三站分别生成 `CNAME`、`.nojekyll`、`robots.txt`、按公开页面生成的 `sitemap.xml`、`release-manifest.json`、PWA manifest、`sw.js` 与离线页；`scripts/release-bundle.mjs` 与 `scripts/verify-release.mjs` 校验三站同核心、同内容锁和发布文件。当前 79 实体生产构建的静态页面为 43/133/31，发布清单 40/130/28，搜索记录 158/102/24，sitemap 40/130/28，内容守卫通过。当前 release bundleId 为 `1b7d5a70…`。
+- Pages 工作流与 core Release 工作流已加入 `.github/workflows/`；三站 Pages 工作流均已成功，`paobu.org`/`learn.paobu.org`/`tools.paobu.org` 已启用 HTTPS。旧 `paobuorg/www` 已备份并删除。法律与内容更新批次已于 2026-10-28 推送并复核；主站流水线下载已发布的 `core-v0.2.16` 制品并校验 SHA-256，线上三站清单使用同一核心哈希。
 - 三站新增中英文法律页 `/legal/` 与 `/en/legal/`，页脚固定入口；页面覆盖责任限制、非专业建议、赛事与户外安全、工具限制、来源与商标、CC BY 4.0 / MIT 许可、隐私和纠错。文章、术语、工具和路线页还显示对应的简短法律提示。
-- 79 个实体已于 2026-10-28 完成 **AI 辅助编辑审阅**并发布，158 个语言版本各有 `approve` 记录和匹配的 contentDigest；覆盖路线 16/16、九个知识主题、51 个知识实体（50 篇文章 + 术语表）和 12 项工具。审阅记录由 `runmap-editorial` 生成，内部标注为 AI 辅助；页面只显示中性的“跑地图编辑部 / RunMap Editorial”。这不是独立或专业医学/营养/教练审阅；限制见 [ai-review-report.md](evidence/2026-10-28/review/ai-review-report.md)。本地 `.env` 仍开启 `PREVIEW_UNREVIEWED=1`，开发/预览会带横幅；生产模式构建不带横幅。
+- 79 个实体已于 2026-10-28 完成 **AI 辅助编辑审阅**并发布，158 个语言版本各有 `approve` 记录和匹配的 contentDigest；覆盖路线 16/16、九个知识主题、51 个知识实体（50 篇文章 + 术语表）和 12 项工具。审阅记录由 `runmap-editorial` 生成，内部标注为 AI 辅助；页面只显示中性的“跑起来编辑部 / RunUp Editorial”。这不是独立或专业医学/营养/教练审阅；限制见 [ai-review-report.md](evidence/2026-10-28/review/ai-review-report.md)。本地 `.env` 仍开启 `PREVIEW_UNREVIEWED=1`，开发/预览会带横幅；生产模式构建不带横幅。
 - 首页使用 CesiumJS 1.146.0 与本地 NASA Blue Marble 基础纹理；路线详情再叠加无需密钥的 EOX Sentinel-2 cloudless 公开瓦片。两者都不需要 3D 在线服务或地图密钥，但近景瓦片依赖第三方公开服务。
 
 ## 技术基线
@@ -26,7 +26,7 @@
 - Cesium 1.146.0 是唯一 3D 引擎；`vite-plugin-cesium` 只参与构建，运行时资源由 `scripts/prepare-content.mjs` 复制到 `public/cesium/`。
 - Pagefind 1.5.2 在构建后生成三站汇总索引，按页面语言分别加载。
 - Playwright 1.64.1 与 axe-core 4.14.0 固定在 devDependencies；浏览器验收使用 Playwright 管理的 Chromium、Firefox 与 WebKit，不写死本机浏览器路径。
-- 核心版本 0.2.15，制品 SHA-256 `8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae`。
+- 核心版本 0.2.16，制品 SHA-256 `b8223481871c680eb3f2655a22abe8fab88b78c65dd5e3e52b7e3b68dee68f5e`。
 
 ## 目录
 
@@ -133,14 +133,27 @@ node scripts/content-lock.mjs          # 重新生成三个站点的 content.loc
 node scripts/content-lock.mjs --verify # 校验内容树未变化
 ```
 
-锁使用 `sha256-tree-v1` 覆盖三个内容仓库的 `content/`、`data/` 和 `assets/`。锁里的 `commit` 已固定为完整 SHA：`running-routes` `67a80ab…`、`running-knowledge` `1e8d114…`、`running-tools` `a423a45…`。锁用于本地可复现构建，不代替 Git 版本控制。
+锁使用 `sha256-tree-v1` 覆盖三个内容仓库的 `content/`、`data/` 和 `assets/`。锁里的 `commit` 已固定为完整 SHA：`running-routes` `e405f44…`、`running-knowledge` `36c7a22…`、`running-tools` `3afae8a…`。锁用于本地可复现构建，不代替 Git 版本控制。
+
+## AdSense（可选，默认关闭）
+
+AdSense 的站点验证选择 **AdSense 代码段**：它既完成验证，也是实际投放广告所必需的。`ads.txt` 是卖方授权文件，不是验证方式；`public/` 不预置占位文件，生产构建会根据 `PUBLIC_ADSENSE_CLIENT` 自动生成根目录 `ads.txt`。核心同时在 `<head>` 输出 `google-adsense-account` 元标记作为辅助验证。
+
+- 本地或仓库变量中设置 `PUBLIC_ADSENSE_CLIENT=ca-pub-…` 和 `PUBLIC_ADSENSE_SLOT=…` 后，详情页正文底部、页脚上方才会出现手动广告单元；首页、列表、搜索、关于、法律和 404 页面不加载广告单元。
+- 预览构建、缺少任一变量时不渲染广告；AdSense 脚本只在生产构建中出现。
+- 在 AdSense 后台关闭 Auto ads（尤其锚定、插页和页内自动广告），只保留手动展示广告单元，避免广告进入正文或悬浮遮挡。
+- EEA/UK/瑞士流量需要在 AdSense 的 Privacy & messaging 配置 Google 认证的同意管理平台；否则使用非个性化广告或暂停这些地区的广告。
+- 法律页的隐私段落会根据 `PUBLIC_ADSENSE_CLIENT` 自动切换为广告披露文本。启用广告前需在 AdSense 后台确认同意设置，并复核法律页。
+- AdSense 报告不能当作访问统计：广告拦截、同意拒绝和未填充都会让数据偏低。访问统计应另接隐私友好的分析服务。
+
+三站 Pages 工作流已传入同名仓库变量；只有设置了变量的站点会启用广告。子站使用不同的广告单元时，可分别设置各自的 `PUBLIC_ADSENSE_SLOT`。
 
 ## 外部配置与发布边界
 
 - 站点使用真实静态路径，不依赖服务端 SSR、运行时秘密或自定义响应头。
 - 跨子域链接由 `PUBLIC_ROUTES_ORIGIN`、`PUBLIC_KNOWLEDGE_ORIGIN`、`PUBLIC_TOOLS_ORIGIN` 控制；生产默认值已写入核心，本地 `.env` 指向三个本地端口。
 - 当前路线近景使用 EOX Sentinel-2 cloudless 公开瓦片，不读取任何地图 API 密钥；首页和降级仍使用本地 NASA 纹理。第三方瓦片服务的条款、可用性和额度需在上线前复核。
-- GitHub 仓库、DNS 与 Pages 已配置：六个仓库位于 `paobuorg`，三站 Pages 已上线并启用 HTTPS。`core-release.yml` 与 `pages.yml` 已实际执行；主站 Pages 构建下载 `core-v0.2.15` Release 制品并校验 SHA-256，子站工作流使用 `PAOBU_CORE_ARTIFACT_URL`、`PAOBU_CORE_SHA256` 仓库变量。K1/T1 线上页面已验证，证据见 [remote-status.json](evidence/2026-10-28/release/remote-status.json)。
+- GitHub 仓库、DNS 与 Pages 已配置：六个仓库位于 `paobuorg`，三站 Pages 已上线并启用 HTTPS。`core-release.yml` 与 `pages.yml` 已实际执行；主站 Pages 构建下载 `core-v0.2.16` Release 制品并校验 SHA-256，子站工作流使用 `PAOBU_CORE_ARTIFACT_URL`、`PAOBU_CORE_SHA256` 仓库变量。K1/T1 线上页面已验证，证据见 [remote-status.json](evidence/2026-10-28/release/remote-status.json)。
 
 ## 许可
 

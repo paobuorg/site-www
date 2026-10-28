@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Bean from '@paobu/core/components/Bean.astro';
 import Icon from '@paobu/core/components/Icon.astro';
 import SearchField from '@paobu/core/components/SearchField.astro';
 import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
@@ -62,10 +63,10 @@ const copy = locale === 'zh-CN'
       hintBody: 'Try Chinese or English race names, places, topics or tool names. Results are ranked by relevance and filters apply before pagination.',
       indexed: `${content.entities.length} visible entries`,
     };
-const title = `${copy.title} · RunMap`;
+const title = `${copy.title} · RUNUP`;
 const description = locale === 'zh-CN'
-  ? '搜索跑地图的路线、知识与工具；索引范围与语言在页面中明确说明。'
-  : 'Search RunMap routes, knowledge and tools, with the index scope and language stated on the page.';
+  ? '搜索跑起来的路线、知识与工具；索引范围与语言在页面中明确说明。'
+  : 'Search RunUp routes, knowledge and tools, with the index scope and language stated on the page.';
 ---
 
 <BaseLayout
@@ -128,7 +129,7 @@ const description = locale === 'zh-CN'
     </div>
 
     <div class="empty-state" data-search-empty hidden>
-      <Icon name="search" size={42} />
+      <Bean expression="search" size={92} className="empty-mascot" />
       <h2>{copy.noResultsTitle}</h2>
       <p>{copy.noResultsBody}</p>
       <a class="button primary" href={`${prefix}/routes/`}>{copy.browseRoutes}</a>

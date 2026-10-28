@@ -156,13 +156,14 @@ function writePwaFiles(distDir: string, origin: string): void {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>离线 · RunMap</title>
+<title>离线 · 跑起来 RUNUP</title>
 <style>
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
 body { margin: 0; min-height: 100dvh; display: grid; place-items: center; background: radial-gradient(circle at 60% 30%, #154c58, #06101f 62%); color: #eef7f5; font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
 main { width: min(92vw, 520px); padding: 32px; text-align: center; }
-.mark { width: 64px; height: 64px; margin: 0 auto 18px; border-radius: 22px; display: grid; place-items: center; background: #08b89d; color: #062c29; font-size: 1.8rem; font-weight: 900; }
+.mascot { width: 78px; height: 78px; margin: 0 auto 10px; }
+.brandline { margin: 0 0 16px; color: #7fe3cd; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.18em; }
 h1 { margin: 0 0 10px; font-size: 1.4rem; }
 p { margin: 0 0 12px; color: #b9d3d0; line-height: 1.65; }
 a { display: inline-flex; align-items: center; min-height: 46px; margin: 4px; padding: 0 20px; border-radius: 999px; background: #08b89d; color: #062c29; font-weight: 800; text-decoration: none; }
@@ -171,7 +172,23 @@ a.secondary { background: rgba(255,255,255,0.12); color: #eef7f5; }
 </head>
 <body>
 <main>
-<div class="mark">R</div>
+<div class="mascot" aria-hidden="true">
+<svg viewBox="0 0 96 96" width="78" height="78" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="offline-bean-gradient" x1="18" y1="16" x2="78" y2="82" gradientUnits="userSpaceOnUse">
+<stop stop-color="#45E0BF"/><stop offset="0.55" stop-color="#08B89D"/><stop offset="1" stop-color="#1761A8"/>
+</linearGradient>
+</defs>
+<circle cx="48" cy="48" r="44" fill="#E8FAF4"/>
+<path d="M48 13C67 13 81 28 80 47c-1 21-15 35-33 34C29 80 16 66 17 47 18 28 31 13 48 13Z" fill="url(#offline-bean-gradient)" stroke="#074C44" stroke-width="2.8"/>
+<path d="M22 46C33 33 41 39 48 30C53 24 60 26 66 21" fill="none" stroke="#F8FFFC" stroke-width="5.2" stroke-linecap="round"/>
+<circle cx="22" cy="46" r="3.6" fill="#F56765" stroke="#F8FFFC" stroke-width="1.4"/>
+<path d="M35 56c3 3 6 3 9 0M52 56c3 3 6 3 9 0" fill="none" stroke="#074C44" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M45 65h6" fill="none" stroke="#074C44" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M73 32h7l-7 8h7M82 43h5l-5 6h5" fill="none" stroke="#173A6B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<p class="brandline">跑起来 · RUNUP</p>
 <h1>当前离线</h1>
 <p>当前页面没有可用的离线副本。恢复网络后可继续浏览；已访问过的页面可能仍可打开。</p>
 <p lang="en">You are offline. This page has no cached copy. Reconnect to continue; previously visited pages may still be available.</p>
@@ -184,7 +201,7 @@ a.secondary { background: rgba(255,255,255,0.12); color: #eef7f5; }
   fs.writeFileSync(path.join(distDir, 'offline.html'), offline);
   const sw = `const CACHE = 'paobu-${host.replace(/[^a-z0-9]+/gi, '-')}-${token}';
 const OFFLINE = '/offline.html';
-const PRECACHE = [OFFLINE, '/favicon.svg', '/manifest.webmanifest'];
+const PRECACHE = [OFFLINE, '/favicon.svg', '/icon-192.png', '/manifest.webmanifest'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(PRECACHE)).then(() => self.skipWaiting()));
@@ -283,6 +300,18 @@ export function writeHostingFiles(options: HostingOptions): HostingResult {
   fs.writeFileSync(path.join(distDir, 'robots.txt'), robots);
   fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemap);
   writePwaFiles(distDir, origin);
+
+  const adsenseClient = process.env.PUBLIC_ADSENSE_CLIENT?.trim();
+  if (!preview && adsenseClient) {
+    const publisherId = adsenseClient.startsWith('ca-') ? adsenseClient.slice(3) : adsenseClient;
+    if (!/^pub-\d+$/.test(publisherId)) {
+      throw new Error(`PUBLIC_ADSENSE_CLIENT must look like ca-pub-<digits>, got ${adsenseClient}`);
+    }
+    fs.writeFileSync(
+      path.join(distDir, 'ads.txt'),
+      `google.com, ${publisherId}, DIRECT, f08c47fec0942fa0\n`,
+    );
+  }
 
   if (fs.readFileSync(path.join(distDir, 'CNAME'), 'utf8').trim() !== host) {
     throw new Error('CNAME verification failed');

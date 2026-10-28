@@ -1,7 +1,7 @@
 {
-  "name": "跑地图 RunMap",
-  "short_name": "RunMap",
-  "description": "真实卫星地球上的经典跑步路线、可追溯的跑步知识与可解释的计算工具。",
+  "name": "跑起来 RUNUP",
+  "short_name": "跑起来",
+  "description": "在真实卫星地球上探索经典跑步路线，查证可追溯的跑步知识，使用本地计算工具。",
   "lang": "zh-CN",
   "start_url": "/",
   "scope": "/",
@@ -14,6 +14,24 @@
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

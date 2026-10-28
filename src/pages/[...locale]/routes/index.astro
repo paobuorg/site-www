@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Bean from '@paobu/core/components/Bean.astro';
 import Icon from '@paobu/core/components/Icon.astro';
 import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
 import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
@@ -33,10 +34,10 @@ const copy = locale === 'zh-CN'
       noGeometry: 'No bundled track',
       empty: 'No routes are available to show.',
     };
-const title = `${copy.title} · RunMap`;
+const title = `${copy.title} · RUNUP`;
 const description = locale === 'zh-CN'
-  ? '浏览跑地图收录的马拉松与越野赛道档案，查看固定版本、来源与轨迹权利状态。'
-  : 'Browse the marathon and trail course archive on RunMap, with fixed versions, sources and track-rights status.';
+  ? '浏览跑起来收录的马拉松与越野赛道档案，查看固定版本、来源与轨迹权利状态。'
+  : 'Browse the marathon and trail course archive on RunUp, with fixed versions, sources and track-rights status.';
 ---
 
 <BaseLayout locale={locale} title={title} description={description} active="routes" preview={content.preview}>
@@ -53,6 +54,7 @@ const description = locale === 'zh-CN'
         <h1>{copy.title}</h1>
         <p>{copy.intro}</p>
       </div>
+      <Bean expression="map" size={126} className="intro-mascot" label={locale === 'zh-CN' ? '豆客在看路线' : 'Douke checking the route'} />
     </div>
 
     {routes.length === 0 ? (
@@ -128,3 +130,19 @@ const description = locale === 'zh-CN'
     )}
   </div>
 </BaseLayout>
+
+<style>
+  .intro-mascot {
+    width: 126px;
+    height: 126px;
+    flex: 0 0 auto;
+  }
+
+  @media (max-width: 767px) {
+    .intro-mascot {
+      width: 88px;
+      height: 88px;
+      margin-top: 16px;
+    }
+  }
+</style>

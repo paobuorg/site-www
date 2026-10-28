@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://paobu.org/schemas/content-bundle-v1.json",
-  "title": "RunMap normalized content bundle v1",
+  "title": "RUNUP normalized content bundle v1",
   "type": "object",
   "additionalProperties": false,
   "properties": {

@@ -50,4 +50,4 @@ jobs:
             core-dist/paobu-core-*.tgz.sha256 \
             core-dist/core.lock.json \
             --title "@paobu/core $GITHUB_REF_NAME" \
-            --notes "Shared core artifact for RunMap sites. Verify the SHA-256 before use."
+            --notes "Shared core artifact for RunUp sites. Verify the SHA-256 before use."

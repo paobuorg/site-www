@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Bean from '@paobu/core/components/Bean.astro';
 import Icon from '@paobu/core/components/Icon.astro';
 import SearchField from '@paobu/core/components/SearchField.astro';
 import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
@@ -49,7 +50,7 @@ const globeRoutes = routes.map((route) => {
     latitude: details.mapAnchor.latitude,
   };
 });
-const title = locale === 'zh-CN' ? '跑地图 RunMap · 经典赛道与卫星地球' : 'RunMap · Classic courses and a satellite Earth';
+const title = locale === 'zh-CN' ? '跑起来 RUNUP · 经典赛道与卫星地球' : 'RUNUP · Classic courses and a satellite Earth';
 const description = locale === 'zh-CN'
   ? '在真实卫星地球上探索经核验的马拉松与越野赛道，阅读来源透明的跑步知识与可解释的计算工具。'
   : 'Explore verified marathon and trail courses on a real satellite Earth, with traceable running knowledge and explainable calculators.';
@@ -79,7 +80,7 @@ const description = locale === 'zh-CN'
       </div>
       <div class="globe-fallback" hidden>
         <div>
-          <Icon name="globe" size={44} />
+          <Bean expression="tired" size={88} className="fallback-mascot" label={locale === 'zh-CN' ? '豆客没能打开地球' : 'Douke could not open the globe'} />
           <p>{t(locale, 'noGlobe')}</p>
         </div>
       </div>

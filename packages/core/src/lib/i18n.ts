@@ -288,6 +288,6 @@ export function topicLabel(topic: TopicId, locale: Locale): string {
 }
 
 export function contributorName(id: string, fallback: string, locale: Locale): string {
-  if (id === 'runmap-editorial') return locale === 'zh-CN' ? '跑地图编辑部' : 'RunMap Editorial';
+  if (id === 'runmap-editorial') return locale === 'zh-CN' ? '跑起来编辑部' : 'RunUp Editorial';
   return fallback;
 }

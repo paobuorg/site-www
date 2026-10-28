@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import FooterAd from '../components/FooterAd.astro';
 import BottomNav from '../components/BottomNav.astro';
 import Icon from '../components/Icon.astro';
 import { t, isLocale, type Locale, type SiteKind } from '../lib/i18n';
@@ -19,6 +20,7 @@ interface Props {
   bodyClass?: string;
   ogType?: 'website' | 'article';
   structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
+  footerAd?: boolean;
 }
 const {
   locale,
@@ -31,6 +33,7 @@ const {
   bodyClass = '',
   ogType = 'website',
   structuredData,
+  footerAd = false,
 } = Astro.props;
 const structuredJson = structuredData
   ? JSON.stringify(structuredData).replaceAll('<', '\\u003c')
@@ -48,11 +51,12 @@ const other = locale === 'zh-CN' ? 'en' : 'zh-CN';
 const altHref = alternateHref ?? alternateLocalePath(pathname, other);
 const canonical = new URL(pathname, Astro.site ?? Astro.url.origin).toString();
 const alternateCanonical = new URL(alternateLocalePath(pathname, other), Astro.site ?? Astro.url.origin).toString();
-const fullTitle = title.includes('RunMap') ? title : `${title} · 跑地图 RunMap`;
+const fullTitle = title.includes('RUNUP') || title.includes('跑起来') ? title : `${title} · 跑起来 RUNUP`;
 const isHome = pathname === '/' || pathname === '/en/';
 const xDefault = isHome ? new URL('/', Astro.site ?? Astro.url.origin).toString() : null;
 const otherLocale: Locale = other;
 const alternateLabel = isLocale(otherLocale) ? otherLocale : 'en';
+const adsenseClient = (import.meta.env.PUBLIC_ADSENSE_CLIENT as string | undefined)?.trim();
 ---
 <!doctype html>
 <html lang={locale === 'zh-CN' ? 'zh-CN' : 'en'} data-theme="light">
@@ -71,13 +75,24 @@ const alternateLabel = isLocale(otherLocale) ? otherLocale : 'en';
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content="RunMap" />
+    <meta property="og:site_name" content="RUNUP" />
     <meta name="twitter:card" content="summary_large_image" />
     {structuredJson && <script type="application/ld+json" is:inline set:html={structuredJson} />}
     <meta name="theme-color" content="#08B89D" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="跑起来" />
     <link rel="manifest" href="/manifest.webmanifest" />
+    {adsenseClient && <meta name="google-adsense-account" content={adsenseClient} />}
+    {adsenseClient && !preview && (
+      <script
+        is:inline
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+        crossorigin="anonymous"
+      ></script>
+    )}
     <slot name="head" />
   </head>
   <body class={bodyClass}>
@@ -92,6 +107,7 @@ const alternateLabel = isLocale(otherLocale) ? otherLocale : 'en';
     <main id="main-content" class="site-main">
       <slot />
     </main>
+    {footerAd && !preview && <FooterAd locale={locale} />}
     <Footer locale={locale} active={active} />
     <BottomNav locale={locale} active={active} />
     <script is:inline set:html={themeToggleScript(locale)} />

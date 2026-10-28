@@ -31,7 +31,7 @@ export function articleData(options: {
     description: options.description,
     inLanguage: options.locale,
     mainEntityOfPage: { '@type': 'WebPage', '@id': options.url },
-    publisher: { '@type': 'Organization', name: 'RunMap' },
+    publisher: { '@type': 'Organization', name: 'RUNUP' },
   };
   if (options.dateModified) data.dateModified = options.dateModified;
   if (options.authors.length > 0) {
