@@ -152,7 +152,12 @@
       "carbon plate -> learn.paobu.org/en/articles/shoe-technology/"
     ],
     "legalSearch": "A query for the legal-page title does not return any /legal/ page; legal pages are excluded from Pagefind.",
-    "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200."
+    "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200.",
+    "searchAcceptance": {
+      "zh-CN": "60/60",
+      "en": "56/56"
+    },
+    "searchAcceptanceNote": "Full 116-query acceptance set run against the live Pagefind index; threshold 90%, top-5."
   },
   "oldRepository": {
     "name": "www",
