@@ -1,6 +1,6 @@
 # Review packets
 
-Generated: 2026-10-28T02:34:44.142Z
+Generated: 2026-10-28T03:39:51.653Z
 
 This packet is review material. Approval records live in `data/reviews` with matching `contentDigest` values; they are AI-assisted editorial approvals, not independent or professional review.
 
@@ -9,7 +9,7 @@ This packet is review material. Approval records live in `data/reviews` with mat
 - Routes: 16/16; missing: none
 - Knowledge topics present: culture, gear, habits, health, nutrition, recovery, safety, technique, training; missing: none
 - Tools: 12 published
-- Status: draft=0, in-review=0, published=64, withdrawn=0
+- Status: draft=0, in-review=0, published=71, withdrawn=0
 
 ## Entities
 
@@ -37,16 +37,21 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | knowledge:core-terms | published | 7 | 2 | none | `7e7deb50c50e4400…` | `dfdef83afba75b7d…` |
 | knowledge:daily-fueling | published | 6 | 2 | none | `cacf6c7ed86660a2…` | `f8e5d518f830997d…` |
 | knowledge:easy-run | published | 2 | 2 | none | `e33a28bd96d70ec6…` | `099b0ab91c596444…` |
+| knowledge:goal-setting-and-review | published | 2 | 2 | none | `1dc409944b8336f6…` | `bb1f4907b0cce3c7…` |
 | knowledge:heat-and-humidity | published | 3 | 2 | none | `6a5c79952b4236b6…` | `e01bca1fabb947ab…` |
 | knowledge:hydration | published | 2 | 2 | none | `1ae3cc58680fdc80…` | `274222910971b5f3…` |
 | knowledge:load-and-overtraining | published | 3 | 2 | none | `ffac5928167360f2…` | `cef0d9dc9956d9cb…` |
 | knowledge:long-run-fueling | published | 2 | 2 | none | `a8278dbfaddd9525…` | `460b16fc0e9d1368…` |
 | knowledge:long-run | published | 3 | 2 | none | `3c21f0ef5169bf96…` | `a0632f40dd4406bb…` |
 | knowledge:marathon-distance | published | 1 | 2 | none | `6bcae8d604951f65…` | `e688ec3e448d3b84…` |
+| knowledge:night-running-and-traffic | published | 1 | 2 | none | `59c32e63d42b846a…` | `39446ad091ada5a8…` |
 | knowledge:pain-and-load | published | 2 | 2 | none | `1cce90377232d04f…` | `5544189e4eaad949…` |
+| knowledge:pain-communication | published | 1 | 2 | none | `56afe5caa02143f5…` | `6d67b03f8fddb8c1…` |
 | knowledge:post-race-recovery | published | 2 | 2 | none | `3fa19cd91dce7c3c…` | `8201d07cf1804eb3…` |
 | knowledge:race-anxiety-and-burnout | published | 3 | 2 | none | `4c977cf7da7cba3a…` | `3f5f14a551e77a3a…` |
 | knowledge:race-day-fueling | published | 2 | 2 | none | `bb7a2216338fc0b7…` | `de429b82da22943f…` |
+| knowledge:reading-running-research | published | 3 | 2 | none | `088c67ffa25689d4…` | `cdc1a0aa7eb9a1a5…` |
+| knowledge:records-and-course-validity | published | 3 | 2 | none | `091c43fb85514188…` | `cd77b35e5321fb35…` |
 | knowledge:recovery-day | published | 1 | 2 | none | `a933d055afe6b383…` | `90f1e8a842d78a34…` |
 | knowledge:return-to-running | published | 2 | 2 | none | `d051b748d6208a27…` | `8a21ca553a189320…` |
 | knowledge:route-safety | published | 3 | 2 | none | `686fd5da5e3aa6c3…` | `18470dfbfcdc07b7…` |
@@ -60,6 +65,7 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | knowledge:shoe-technology | published | 3 | 2 | none | `e913c19ea1000be0…` | `cfa3e7da25f60e8a…` |
 | knowledge:sleep-recovery | published | 1 | 2 | none | `62dcd3d74c1a63b0…` | `5b4ccdd01d599948…` |
 | knowledge:strength-and-taper | published | 4 | 2 | none | `2fbceba0f800dfee…` | `4354019658369627…` |
+| knowledge:supplements-and-evidence | published | 3 | 2 | none | `cd06131398e3b3b6…` | `cc920f7053bc3fcf…` |
 | knowledge:tempo-and-intervals | published | 2 | 2 | none | `6ee53ab8be74e8cc…` | `4e024c58b0c300a7…` |
 | knowledge:trail-gear | published | 3 | 2 | none | `319f09b1db4e985e…` | `7c41dac19e95af70…` |
 | knowledge:trail-navigation | published | 2 | 2 | none | `9cbd3d1b105aa44e…` | `f4c9b429ceaf2334…` |
@@ -67,6 +73,7 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | knowledge:training-week | published | 3 | 2 | none | `2bbf8af9834e6de2…` | `3ccfa83adc7221fb…` |
 | knowledge:uphill-and-downhill | published | 1 | 2 | none | `0bb25573b927b116…` | `4b8a6d2b12fe07b3…` |
 | knowledge:watch-gps | published | 2 | 2 | none | `f31d982acc5b3525…` | `af1b878e5f476613…` |
+| knowledge:wearables-and-recovery-data | published | 2 | 2 | none | `85011a2304cb0012…` | `5fbef8d1e5331c53…` |
 | tool:fueling-planner | published | 3 | 2 | none | `33de8edb483652a7…` | `346552a25c07fc4c…` |
 | tool:pace | published | 1 | 2 | none | `3a896d1522a38664…` | `23489a5ed07d3f09…` |
 | tool:race-checklist | published | 4 | 2 | none | `009290bcec6d838d…` | `e8df8ced7683062c…` |

@@ -7,14 +7,14 @@ Scope: the three production builds under `repos/site-www/dist`, `repos/site-know
 
 Local acceptance **passes** for the 56-entity launch set. The three public sites are live on their custom domains with HTTPS, and the K1/T1 deployment has been rechecked against the live release manifests.
 
-- Content: 64 entities / 128 bilingual versions published (routes 16, knowledge 36, tools 12); 62 sources; 26 tool cases; 128 AI-assisted editorial approval records; `check:production` passes with route=16, knowledge=36, tool=12.
-- Knowledge: 35 articles plus a 17-term glossary, nine topics covered, five learning paths.
-- Production artifacts: static builds 43/103/31 HTML files; release manifests 40/100/28 hosted HTML pages; Pagefind 128/72/24 records; sitemaps 40/100/28 URLs; no `localhost` URLs in production HTML.
-- Release bundle: `42ace64240eb0b47cf046354fd809b8a8bdeb19f21ea9bf2de54e5c947baccec`; core `0.2.15` (`8e264510…`); content locks match.
-- Local crawl: all 168 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
+- Content: 71 entities / 142 bilingual versions published (routes 16, knowledge 43, tools 12); 64 sources; 26 tool cases; 142 AI-assisted editorial approval records; `check:production` passes with route=16, knowledge=43, tool=12.
+- Knowledge: 42 articles plus a 17-term glossary, nine topics covered, five learning paths.
+- Production artifacts: static builds 43/117/31 HTML files; release manifests 40/114/28 hosted HTML pages; Pagefind 142/86/24 records; sitemaps 40/114/28 URLs; no `localhost` URLs in production HTML.
+- Release bundle: `df5c12ed8e60966db4fade2786d12d0407ee75c2748312e1fc2c54ac7e4e8efb`; core `0.2.15` (`8e264510…`); content locks match.
+- Local crawl: all 182 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
 - Browser matrix: Chromium/Firefox/WebKit each 48 screenshots; 0 axe violations, 0 console errors, 0 failed requests; keyboard 14/14 on four pages; search pagination fully expands to 25/25; no soft-keyboard overlap. The eight new K1/T1 pages have 0 axe violations in light and dark themes and no mobile overflow.
 - Search: 60/60 Chinese and 56/56 English queries rank an expected result in the top five (90% threshold); kind facets total 16/28/12.
-- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.748s; desktop globe-ready worst 3.679s; simulated mobile worst 5.567s; about 60fps on the local Intel Arc.
+- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.332s; desktop globe-ready worst 3.710s; simulated mobile worst 4.694s; about 60fps on the local Intel Arc.
 - T06/T12/T17: cross-site 11/11 (production hrefs mapped to the three local preview servers), track timeout/cancel 11/11, PWA offline 18/18.
 - Handoff: 0 issues, 63 links; handoff tests 46/46; content locks verified.
 
@@ -32,6 +32,10 @@ Browser checks: 90 minutes at 25 g per serving shows “45–90 g”; a sample G
 
 Eight bilingual articles were added: cadence/stride, uphill/downhill, running surfaces, race-day fuelling, caffeine, shoe fit/cushioning, trail navigation and post-race recovery. Each uses existing verified sources, states its limits and is linked into the relevant learning paths. Sixteen new pages were checked at 390px: all 200, 0 axe violations, no mobile overflow, 0 console/failed requests and legal notices present.
 
+## K3 knowledge batch
+
+Seven bilingual guides were added: night running/traffic, pain communication, wearables/recovery data, goal setting/review, reading research, records/course validity and supplement evidence. Fourteen new pages (seven articles × two languages) return 200, with legal notices, no mobile overflow and 0 axe violations; they are linked into the existing learning paths.
+
 ## Legal, tone and licences
 
 All 56 entities and 112 translations were re-checked after removing editorial-desk/AI-facing bylines and legacy locale links. Visible author labels now read “跑地图编辑部” / “RunMap Editorial”. A bilingual legal page exists on each site with liability, non-professional advice, race/outdoor safety, tool limits, source/trademark, CC BY 4.0, MIT, privacy and correction sections; every article, glossary, tool and route page carries a context-specific legal notice. Six legal pages were checked in both languages: 200, 0 axe violations, no mobile overflow, and CC BY 4.0 / MIT wording present. A source test rejects editorial-desk wording, AI-facing copy, legacy `/zh-CN/` links and missing CC BY 4.0 fields.
@@ -42,15 +46,15 @@ Route close-ups use EOX Sentinel-2 cloudless public tiles, a no-key CORS-enabled
 
 ## Remote deployment status
 
-The six public repositories are under `paobuorg`; `@paobu/core@0.2.15` is published as a Release with SHA-256 `8e264510…`, and both subsites use its artifact URL and hash. The three Pages workflows completed successfully and GitHub Pages serves:
+The six public repositories are under `paobuorg`; `@paobu/core@0.2.15` is published as a Release with SHA-256 `8e264510…`. The three Pages workflows completed successfully and GitHub Pages serves:
 
 - `https://paobu.org/`
 - `https://learn.paobu.org/`
 - `https://tools.paobu.org/`
 
-All three custom domains have approved certificates and HTTP redirects to HTTPS. The K2 legal/content deployment is live: the three release manifests report core 0.2.15 at `8e264510…`, content commits `67a80ab…` / `17e2e6d…` / `a423a45…`, and siteBundleIds `345aab33…` / `946de920…` / `20eb0d99…`, matching the local release bundle `42ace642…`. The knowledge site now has 100 sitemap pages and 72 search records; the main site has 128 aggregate records.
+All three custom domains have approved certificates and HTTP redirects to HTTPS. The K3 deployment is live: the three release manifests report core 0.2.15 at `8e264510…`, content commits `67a80ab…` / `ac0e780…` / `a423a45…`, and siteBundleIds `855cd3a2…` / `2954cb7a…` / `a861fa05…`, matching the local release bundle `df5c12ed…`. The knowledge site now has 114 sitemap pages and 86 search records; the main site has 142 aggregate records.
 
-The 16 new K2 article pages return 200 with legal notices, no mobile overflow, and no console or failed requests. Four representative K2 articles checked with axe in both languages had 0 violations. The full 116-query search set passed live at 60/60 Chinese and 56/56 English. Six legal pages remain live and the PWA start URL is `/` on all three sites.
+The 14 new K3 article pages return 200 with legal notices, 0 axe violations, no mobile overflow, and no console or failed requests. The full 116-query search set passed live at 60/60 Chinese and 56/56 English. Six legal pages remain live and the PWA start URL is `/` on all three sites.
 
 Remaining remote caveats:
 

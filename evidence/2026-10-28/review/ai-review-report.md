@@ -2,7 +2,7 @@
 
 Date: 2026-10-28  
 Reviewer identity: `runmap-editorial` — “RunMap editorial desk (AI-assisted draft and review)”  
-Scope: 64 entities and 128 translations (16 routes, 36 knowledge entities — 35 articles plus a glossary — and 12 tools)
+Scope: 71 entities and 142 translations (16 routes, 43 knowledge entities — 42 articles plus a glossary — and 12 tools)
 
 ## What this review is
 
@@ -27,23 +27,24 @@ This is an **AI-assisted editorial review**, performed by the same editorial des
 - **Imagery**: route close-ups were moved from a public tile service that failed CORS in the local Chromium environment to EOX Sentinel-2 cloudless, a public no-key CORS-enabled mosaic with attribution. Tile loading retries three times and falls back to the local NASA texture.
 - **Routing and source links**: Chinese routes moved to the root path and English routes to `/en/`; `/zh-CN/` is intentionally not redirected. The route anchor source URL was changed to `https://paobu.org/about/#method`, affected route digests were recomputed, and all approvals were re-recorded. All remaining legacy `/zh-CN/` links in article and tool Markdown were replaced with root paths.
 - **K2 knowledge batch**: added cadence/stride, uphill/downhill, running surfaces, race-day fuelling, caffeine, shoe fit/cushioning, trail navigation and post-race recovery. Cadence is presented as a testable variable rather than a 180 target; downhill guidance separates eccentric load from free speed; surface evidence is explicitly limited to a small study; race fuelling keeps the 30–60 g/h range conditional; caffeine states the 3–6 mg/kg range with individual limits; shoe advice separates fit/comfort associations from injury prevention; navigation treats a GPX as a plan, not a rescue guarantee.
+- **K3 knowledge batch**: added night running/traffic, pain communication, wearables and recovery data, goal setting/review, reading running research, records/course validity and supplement evidence. Night guidance cites FHWA data and separates visibility from pace; pain guidance is a consultation framework, not a diagnosis; wearables are treated as trend aids; goal setting uses a systematic review with limitations; research reading distinguishes design, measurement and effect size; records guidance separates official rules from course conditions; supplement guidance starts with regulation and evidence, not brands.
 - **Tone, legal and licence pass**: removed editorial-desk and AI-facing bylines from article bodies and rendered author labels, replaced formulaic “What this page does not provide” headings with plain scope language, and changed visible “review” labels to editorial “checked” language. Added a bilingual legal page on all three sites, footer links, and context-specific notices on article, tool and route pages. The legal page covers liability, non-professional advice, race/outdoor safety, tool limits, sources/trademarks, CC BY 4.0 content and MIT code, privacy and corrections. All 56 entities and 112 translations were re-checked and their digests re-recorded.
 
 ## Verification after approval
 
-- Content validator: 64 entities, 62 sources and 26 tool cases pass; every locale has one `approve` record with a matching digest.
+- Content validator: 71 entities, 64 sources and 26 tool cases pass; every locale has one `approve` record with a matching digest.
 - Three-browser matrix (Chromium, Firefox, WebKit): 48 screenshots each; 0 axe violations, 0 console errors and 0 failed requests. Search pagination expands to 25/25; keyboard, touch targets, soft keyboard and long-title checks pass.
-- New pages: 16 K2 article pages checked in both languages at 390px; all 200, 0 axe violations, no mobile overflow, 0 console/failed requests, legal notice present. The eight K1/T1 pages and six legal pages had already passed the same checks.
+- New pages: 16 K2 and 14 K3 article pages checked in both languages at 390px; all 200, 0 axe violations, no mobile overflow, 0 console/failed requests, legal notice present. The eight K1/T1 pages and six legal pages had already passed the same checks.
 - Tool tests: 38/38, including seven new tests for fueling, elevation, shoe mileage and checklist logic. Site unit tests: 16/16, including legal/licence and forbidden-wording checks.
-- Release: production builds emit 43/103/31 HTML files, manifests 40/100/28 hosted pages, Pagefind 128/72/24 records and sitemaps 40/100/28 URLs; `verify-release` passes with bundle `42ace642…` and core 0.2.15 (`8e264510…`).
-- Local crawl: 168 sitemap pages return 200 with canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker present.
+- Release: production builds emit 43/117/31 HTML files, manifests 40/114/28 hosted pages, Pagefind 142/86/24 records and sitemaps 40/114/28 URLs; `verify-release` passes with bundle `df5c12ed…` and core 0.2.15 (`8e264510…`).
+- Local crawl: 182 sitemap pages return 200 with canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker present.
 
 ## Residual limits
 
 - The review is not independent and does not constitute professional advice. Health/safety guidance still needs a qualified reviewer before being treated as specialist-approved.
 - Route facts come from official pages where accessible; Beijing and Shanghai official sites are dynamic and were cross-checked through organiser announcements. Some sources are third-party or paywalled; source/licence details remain visible.
 - Real NVDA/VoiceOver, physical phones, real Safari, third-party EOX tile SLA, formal high-resolution imagery, complete real-device performance and production p75 remain unverified.
-- The 16-route, nine-topic, 36-knowledge-entity and 12-tool set is covered. Future depth is a separate reviewed batch rather than bulk-generated content.
+- The 16-route, nine-topic, 43-knowledge-entity and 12-tool set is covered. Future depth is a separate reviewed batch rather than bulk-generated content.
 - The legal page is a general risk notice, not legal advice; a qualified lawyer should review it before relying on it as a jurisdiction-specific terms of service.
 
 ## Approval records

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T02:34:44.142Z",
+  "generatedAt": "2026-10-28T03:39:51.653Z",
   "note": "Review material only. Approval is recorded separately in data/reviews with a matching contentDigest; this file is not an independent or professional approval.",
   "contentLock": {
     "schemaVersion": 1,
@@ -11,7 +11,7 @@
       "data",
       "assets"
     ],
-    "generatedAt": "2026-10-28T02:31:55.115Z",
+    "generatedAt": "2026-10-28T03:36:45.184Z",
     "repositories": [
       {
         "name": "running-routes",
@@ -21,9 +21,9 @@
       },
       {
         "name": "running-knowledge",
-        "commit": "17e2e6d303e97ae5643ce864845a51b9261c08fa",
-        "digest": "3560dc68d9e316e31250d4f4a5f67c45f3c996343296711951a55b8ea58009d3",
-        "fileCount": 218
+        "commit": "ac0e780c67288b285546a4e1158e8e543fa731ef",
+        "digest": "740a3427df95bdcdef58b6ee77899c973ac2e56fe1eb782a13f023c018f941b8",
+        "fileCount": 255
       },
       {
         "name": "running-tools",
@@ -98,7 +98,7 @@
         "culture"
       ],
       "missingTopics": [],
-      "articles": 36
+      "articles": 43
     },
     "tools": {
       "present": [
@@ -120,7 +120,7 @@
     "status": {
       "draft": 0,
       "in-review": 0,
-      "published": 64,
+      "published": 71,
       "withdrawn": 0
     }
   },
@@ -2281,6 +2281,97 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:goal-setting-and-review",
+      "slug": "goal-setting-and-review",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-goal-setting-review",
+        "knowledge-odphp-activity-planner"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-goal-setting-review",
+          "title": "The performance and psychological effects of goal setting in sport: a systematic review and meta-analysis",
+          "publisher": "International Review of Sport and Exercise Psychology",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/1750984X.2022.2116723",
+          "publishedAt": null,
+          "license": "All rights reserved; citation and abstract only",
+          "claims": [
+            "Goal setting had a medium, positive effect on task performance in sport.",
+            "The effect was moderated by factors including goal type, proximity, experience and feedback.",
+            "The review notes mixed findings and limited cross-study evidence for some psychological outcomes."
+          ]
+        },
+        {
+          "sourceId": "knowledge-odphp-activity-planner",
+          "title": "Activity Planner",
+          "publisher": "ODPHP",
+          "url": "https://odphp.health.gov/moveyourway/activity-planner/",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "The planner helps set goals, choose preferred activities and print a weekly tracking plan.",
+            "Adults need a mix of moderate aerobic and muscle-strengthening activity."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "bb1f4907b0cce3c7c136bf3917042bc2140c477c4c744b9b23f2b7a585c6e38c"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "1dc409944b8336f6f2abd3767c1628dd42b59ae145d357800bfd363c7bfdbaff"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "目标与复盘：把“想跑快”变成可执行的事",
+          "summary": "结果目标给你方向，过程目标决定每天做什么。把目标拆小、定期回看、允许调整，比年初写下一个成绩数字更有用。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1105,
+          "digest": "1dc409944b8336f6f2abd3767c1628dd42b59ae145d357800bfd363c7bfdbaff",
+          "body": "## 目标不止一种\n\n运动心理学常把目标分为结果目标（完赛、名次、成绩）、表现目标（自己的配速、距离或技术指标）和过程目标（每周做什么、怎么睡、怎么补给）。结果目标能指明方向，但受天气、赛道、对手和当天状态影响；过程目标更接近你能控制的行为。\n\n一项关于运动目标设定的系统综述与元分析发现，目标设定对运动任务表现有中等程度的正向作用，效果会受到目标类型、时间跨度、经验和反馈等因素影响。研究也指出，不同心理结局的证据并不一致。目标不是魔法，它的价值主要来自把注意力和行动导向具体任务。\n\n## 把目标拆到这一周\n\n“今年跑进 3 小时 30 分”是结果目标，但今天该做什么并不清楚。可以把它拆成：每周一次长距离、一次质量课、两次轻松跑、一次力量训练；比赛前四周开始减量；每周记录睡眠和疼痛。过程目标应该具体到频率、时长或完成标准，而不是“多跑一点”“更努力”。\n\n目标要有难度，但不要建立在未经核验的假设上。第一次跑马拉松的人，先把“稳定完赛、不受伤、赛后能恢复”作为目标，比直接指定一个精英选手的配速更合理。ODPHP 的活动计划工具也是这个思路：先选活动和目标，再打印每周跟踪表。\n\n## 复盘而不是审判\n\n每周用五分钟回看：完成了什么、没完成什么、为什么；疲劳、睡眠、疼痛和工作压力有没有变化；下周是保持、减少还是增加。复盘不是给意志力打分，而是调整计划。连续两周完不成，通常说明目标太大、生活负荷变化或恢复不足，而不是“你不够自律”。\n\n每月再看一次长期方向：比赛是否还值得去、目标日期是否现实、是否需要换赛道或延期。目标可以修改，修改不是失败；硬撑一个已经不适合的目标，反而更容易受伤或失去动力。\n\n## 反馈与记录\n\n目标需要反馈才有意义。训练日志不必复杂，记录日期、距离、时长、强度、感受和疼痛即可。把过程目标写在看得见的地方，完成后打勾；但不要把打勾变成新的压力。和教练、同伴或家人分享目标时，明确你需要的是提醒、陪伴还是技术建议。\n\n## 适用边界\n\n本页不提供个体化训练计划或成绩保证。目标设定不能替代医学评估、教练指导和现实条件；有慢性病、伤病史、孕期或进食障碍史的人，应先与相应专业人员讨论目标。持续焦虑、抑郁或对训练失去控制感时，应寻求心理或医疗支持。\n\n## 来源与适用范围\n\n目标设定对运动表现的中等正向作用和调节因素，参考 International Review of Sport and Exercise Psychology 的系统综述与元分析；目标选择与每周跟踪的思路参考 ODPHP 的活动计划工具。研究结果不能保证个人目标一定实现。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Goals and review: turn “run faster” into something you can do",
+          "summary": "Outcome goals give direction; process goals decide what you do each day. Break the goal down, review it regularly and allow adjustment — that is more useful than writing a time on 1 January.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3336,
+          "digest": "bb1f4907b0cce3c7c136bf3917042bc2140c477c4c744b9b23f2b7a585c6e38c",
+          "body": "## More than one kind of goal\n\nSport psychology often separates outcome goals (finish, placing, time), performance goals (your own pace, distance or technical marker) and process goals (what you do each week, how you sleep, how you fuel). Outcome goals give direction, but weather, course, competitors and daily condition affect them. Process goals are closer to what you control.\n\nA systematic review and meta-analysis of goal setting in sport found a medium, positive effect on task performance, moderated by factors such as goal type, proximity, experience and feedback. It also noted mixed evidence for some psychological outcomes. Goals are not magic; their value comes mainly from directing attention and action toward specific tasks.\n\n## Break it down to this week\n\n“Run under 3:30 this year” is an outcome goal, but it does not tell you what to do today. It can become: one long run, one quality session, two easy runs and one strength session each week; a taper starting four weeks out; a weekly note on sleep and pain. A process goal should specify frequency, duration or a completion standard, not “a bit more” or “try harder”.\n\nMake the goal challenging but not built on unverified assumptions. For a first marathon, “finish steadily, stay injury-free and recover afterwards” is more reasonable than copying an elite runner’s pace. The ODPHP activity planner follows a similar logic: choose activities and goals, then print a weekly tracking plan.\n\n## Review, do not put yourself on trial\n\nSpend five minutes each week: what was done, what was missed and why; how fatigue, sleep, pain, work and stress changed; whether next week should stay the same, reduce or increase. Review is for adjusting the plan, not scoring willpower. Two consecutive weeks of missed sessions usually means the goal is too large, life load has changed or recovery is insufficient — not that you are lazy.\n\nOnce a month, review the longer direction: is the race still worth doing, is the date realistic, should the course or goal change? Goals can be revised. Revision is not failure; forcing a goal that no longer fits is more likely to cause injury or loss of motivation.\n\n## Feedback and records\n\nA goal needs feedback. A training log can be simple: date, distance, duration, intensity, how it felt and any pain. Put process goals somewhere visible and tick them off, but do not turn ticks into a new source of pressure. When sharing a goal with a coach, friend or family member, say whether you want a reminder, company or technical advice.\n\n## Scope and limits\n\nThis page does not provide an individual training plan or guarantee a result. Goal setting does not replace medical assessment, coaching or real-life constraints. People with a chronic condition, injury history, pregnancy or a history of disordered eating should discuss goals with the relevant professional. Persistent anxiety, depression or a loss of control around training deserves psychological or medical support.\n\n## Sources and scope\n\nThe medium positive effect of goal setting on sport performance and its moderators follow a systematic review and meta-analysis in the International Review of Sport and Exercise Psychology; the goal-choice and weekly-tracking approach follows the ODPHP activity planner. Research cannot guarantee an individual outcome. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:heat-and-humidity",
       "slug": "heat-and-humidity",
       "kind": "knowledge",
@@ -2858,6 +2949,84 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:night-running-and-traffic",
+      "slug": "night-running-and-traffic",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 1,
+      "sourceRefs": [
+        "knowledge-fhwa-night-visibility"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-fhwa-night-visibility",
+          "title": "Newspaper Article 2: Nighttime Visibility",
+          "publisher": "U.S. Federal Highway Administration",
+          "url": "https://highways.dot.gov/safety/pedestrian/newspaper-article-2-nighttime-visibility",
+          "publishedAt": null,
+          "license": "Public domain (U.S. federal government work), except third-party material",
+          "claims": [
+            "Almost fifty percent of all pedestrian fatalities occur between 6:00 p.m. and midnight, according to NHTSA data cited by FHWA.",
+            "In the cited material, eight out of ten drivers who struck people at night reported not seeing them.",
+            "A pedestrian in dark clothing at night may first be seen about 55 feet away, giving the driver little time to react."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "39446ad091ada5a88709fb097fe1c5fcc4b93f9335cfd52fa265697f5bf8d720"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "59c32e63d42b846a0b33ea59cd00edb8ab2c0d9e0a69f4dad7a6ac9bac598126"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "夜跑与交通：先让司机看见你",
+          "summary": "夜间风险的核心不是跑得快不快，而是驾驶者能不能及时看到你。反光、照明、路线选择和交通规则，比耳机里的配速更重要。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 966,
+          "digest": "59c32e63d42b846a0b33ea59cd00edb8ab2c0d9e0a69f4dad7a6ac9bac598126",
+          "body": "## 夜间不是白天的暗色版本\n\n美国联邦公路管理局引用的数据指出，近一半的行人死亡发生在傍晚 6 点到午夜之间；在夜间撞到行人的驾驶者中，约八成表示没有看到对方。穿着深色衣物时，行人在夜间可能要到约 55 英尺外才被看见，留给驾驶者的反应时间很短。\n\n这组数字说明，夜跑的首要任务不是“保持配速”，而是提高自己被看见的概率。深色衣服、没有路灯的路段、逆光、雨雾和停放的车辆都会降低可见性；即使你能看见车灯，也不代表驾驶者能看见你。\n\n## 反光与照明\n\n在车灯照射下能回射光线的材料，比普通浅色衣物更有效。反光背心、臂带、脚踝带、鞋面反光条和背包挂件都可以增加被发现的距离；放在会运动的部位通常更容易引起注意。白天则可以用亮色衣物提高对比。\n\n主动照明同样重要。头灯或胸灯能让你看清路面，也能让迎面车辆更早发现你；红光尾灯对后方来车有帮助。电池和备用光源要在出门前检查，低温和长时间使用会缩短续航。\n\n## 路线与交通规则\n\n尽量选择有路灯、人行道、路肩较宽、车速较低且熟悉的路线。过马路时走人行横道和信号灯，不要从停放车辆之间突然进入车道；在没有信号灯的路段，先确认车辆真正减速或停下，再通过。\n\n逆着车流跑步通常更容易看到迎面车辆，但具体要服从当地交通规则和道路条件。转弯、施工、桥梁和匝道附近尤其要减速，不要假设驾驶者会礼让。耳机音量要能听见环境声，最好只戴一只或使用通透模式。\n\n## 结伴与告知\n\n夜跑尽量结伴，或把路线和预计返回时间告诉家人朋友。手机保持电量，开启位置共享是可选项，但不要把实时位置公开给所有人。遇到尾随、挑衅或交通事故，优先进入明亮、有人、有监控的地方并联系当地执法或急救，不要为了“跑完这公里”进入陌生路段。\n\n## 适用边界\n\n本页不保证任何路线在夜间安全，也不替代当地交通法规、赛事规则和执法指引。视力、听力、平衡或心血管状况可能影响夜间运动安全，有相关问题时先咨询医生。发生碰撞、头部撞击、意识改变或无法负重时，应立即就医。\n\n## 来源与适用范围\n\n夜间行人死亡比例、驾驶者未看见行人的比例以及深色衣物的可见距离，参考美国联邦公路管理局关于夜间可见性的文章；路线、反光和照明建议属于一般交通安全原则。数据来自美国道路环境，具体风险因城市、道路和照明条件而异。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Night running and traffic: be seen before you are fast",
+          "summary": "The core night risk is not your pace; it is whether a driver can see you in time. Reflective gear, light, route choice and traffic rules matter more than the split on your watch.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3157,
+          "digest": "39446ad091ada5a88709fb097fe1c5fcc4b93f9335cfd52fa265697f5bf8d720",
+          "body": "## Night is not the daytime in a darker colour\n\nFigures cited by the U.S. Federal Highway Administration note that almost half of pedestrian deaths occur between 6 p.m. and midnight, and that about eight out of ten drivers who struck pedestrians at night reported not seeing them. A pedestrian in dark clothing may first be seen only about 55 feet away, leaving very little time to react.\n\nThe practical lesson is that night running is first a visibility problem, not a pacing problem. Dark clothes, unlit roads, glare, rain, fog and parked cars all reduce detection. Seeing a car’s headlights does not mean the driver can see you.\n\n## Reflective gear and light\n\nMaterials that retroreflect light back toward its source are more effective at night than ordinary light-coloured clothing. A reflective vest, armbands, ankle bands, reflective strips on shoes and a hanging tag on a pack can increase detection distance; placing them on moving body parts can help attract attention. In daylight, bright colours improve contrast.\n\nActive light matters too. A headlamp or chest lamp helps you see the ground and helps oncoming traffic notice you; a red rear light helps traffic approaching from behind. Check batteries and carry a backup; cold and long use reduce runtime.\n\n## Route and traffic rules\n\nChoose lit, familiar routes with pavements, wider shoulders and lower speeds where possible. Cross at marked crossings and signals, and do not step out from between parked cars. At an unmarked crossing, wait until a vehicle has actually slowed or stopped before entering the road.\n\nRunning against traffic can make oncoming vehicles easier to see, but follow local traffic law and road conditions. Slow down near junctions, roadworks, bridges and slip roads, and never assume a driver will yield. Keep headphone volume low enough to hear traffic; use one earbud or transparency mode.\n\n## Company and telling someone\n\nRun with someone when possible, or tell a household member or friend your route and expected return time. Keep your phone charged; live location sharing is optional, but do not broadcast your real-time position publicly. If you are followed, harassed or involved in a collision, move toward a lit, populated place with people or cameras and contact local police or emergency services rather than running into an unfamiliar area to finish the route.\n\n## Scope and limits\n\nThis page cannot guarantee that any route is safe at night and does not replace local traffic law, race rules or police guidance. Vision, hearing, balance or cardiovascular conditions can affect night safety; discuss exercise plans with a clinician if relevant. After a collision, head impact, altered consciousness or inability to bear weight, seek medical care.\n\n## Sources and scope\n\nThe proportion of night-time pedestrian deaths, the share of drivers who did not see the pedestrian and the detection distance for dark clothing follow a U.S. Federal Highway Administration article on night-time visibility; route, reflective and lighting advice is general traffic-safety practice. The data come from U.S. roads and vary with city, road and lighting. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:pain-and-load",
       "slug": "pain-and-load",
       "kind": "knowledge",
@@ -2945,6 +3114,84 @@
           "bodyCharacters": 2761,
           "digest": "5544189e4eaad949c01f97df744f134ff466c1e59ec19cc2311b8e8a68ddcc7f",
           "body": "## Pain is information, not a willpower test\n\nWhen pain appears during a run, stop or reduce intensity and observe whether it worsens with continued running, changes your gait, or comes with swelling, weakness or a joint that catches. The NHS explicitly advises not running while in pain and returning gradually after recovery. Pushing through pain does not automatically become safe training through “adaptation”.\n\n## Record, do not guess a diagnosis\n\nRecord the location, when it began, the movement that brings it on (uphill, downhill, acceleration, first steps after sitting), duration and recent training load. Turning “knee pain” into specific timing and movement information helps a clinician or physiotherapist. This page does not diagnose by body part or treat a common label as a confirmed cause.\n\n## Load change is not the only cause\n\nA systematic review of 36 studies and 23,047 runners reported that about 26.2% had a running-related injury. Evidence linking weekly distance, duration, frequency, intensity or recent changes to injury was conflicting. The authors explicitly caution against one “optimal” progression for every runner. Load matters, but it does not explain every pain.\n\n## When to seek help\n\nNHS advice includes urgent assessment for severe knee pain or swelling; review by a GP or physiotherapist if knee pain persists beyond a week, or for Achilles pain lasting two to three weeks; sudden sharp Achilles pain may be a tear and should be assessed promptly. Other reasons not to wait include inability to bear weight, obvious deformity, fever, pain waking you at night, or persistent palpitations, chest pain or fainting. Use local emergency services for emergencies.\n\n## Relative rest, not total stillness\n\nRest does not mean doing nothing. Temporarily reduce running volume and avoid the speeds and gradients that provoke pain, while keeping comfortable low-intensity movement. When symptoms settle, test with short, easy run-walk intervals and build gradually. The NHS progression suggestion is to repeat a similar run at least three or four times before increasing distance or pace. A clinician who knows your situation should adjust the plan.\n\n## Scope and limits\n\nThis page does not diagnose, recommend medication, replace imaging or a physical examination, or promise that “form, shoes or stretching” will cure pain. Causes may involve previous injury, bone stress, tendons, muscles or other medical issues. Do not delay professional assessment when it is needed.\n\n## Sources and scope\n\nPain warnings and gradual-return advice follow the NHS running-injury page; conflicting evidence on training parameters follows a Journal of Athletic Training systematic review. Both are general information, not individual medical advice."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:pain-communication",
+      "slug": "pain-communication",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 1,
+      "sourceRefs": [
+        "knowledge-nhs-running-injuries"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-nhs-running-injuries",
+          "title": "Knee pain and other running injuries",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/live-well/exercise/knee-pain-and-other-running-injuries/",
+          "publishedAt": "2022-11-25",
+          "license": null,
+          "claims": [
+            "NHS advises buying proper running shoes and getting fitted at a running shop, while noting that expensive shoes are not essential.",
+            "Unsupportive or worn-out shoes are listed among factors that can contribute to heel pain.",
+            "Do not run while in pain; seek medical or physiotherapy advice when pain is severe, persistent or accompanied by swelling."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "6d67b03f8fddb8c10c9ce77454df830bb0a4841229d19cb431b7f11d65089f50"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "56afe5caa02143f57705e5c65fb2031a1c4ca88e5299a79cc338f981a1588a22"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "疼痛沟通：把“哪里痛”说清楚",
+          "summary": "疼痛部位、出现时间、变化过程和功能影响，比一句“膝盖疼”更有用。整理好时间线，能帮助医生或物理治疗师更快判断，但不要自己先下诊断。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 964,
+          "digest": "56afe5caa02143f57705e5c65fb2031a1c4ca88e5299a79cc338f981a1588a22",
+          "body": "## 先描述，不急着命名\n\n跑步疼痛常被叫做“跑者膝”“髂胫束综合征”或“跟腱炎”，但这些名称不能代替评估。同一种疼痛可能来自不同组织，同一个名称也可能对应不同表现。就诊时最有用的不是先报一个病名，而是把现象说清楚：哪里痛、什么时候开始、什么动作加重、什么动作缓解、有没有肿胀或无力。\n\n可以用手指指出最痛的点，再说明疼痛是表面、深处还是沿一条线分布。左右两侧都痛时分别描述；疼痛会移动时，记录它从哪里开始、往哪里走。\n\n## 一条有用的时间线\n\n按时间顺序整理：第一次出现是什么时候；之前有没有增加跑量、速度、坡度、换鞋或改变路面；是突然发生还是逐渐加重；休息后是否缓解；第二天早上是否更僵；有没有夜间痛、肿胀、发热、麻木或无力。\n\n再补充功能影响：能不能正常走路、上下楼、单脚站立、提踵或下蹲；哪些动作让你不敢发力；疼痛从 0 到 10 分大概是多少，是否影响睡眠和工作。数字只是辅助，变化趋势比单次评分更有意义。\n\n## 带上训练记录\n\n训练日志、手表数据、鞋的里程和近期比赛安排都能帮助解释负荷变化。把最近四到六周的关键信息整理成一页：每周跑量、最长距离、质量课、比赛、伤病和恢复情况。不要只给一个总里程，也不要把手表数据当成诊断。\n\n如果你已经在做某个动作或康复练习，记录做了多久、频率和反应。医生或治疗师需要知道哪些方法有效、哪些让症状加重。\n\n## 红旗信号\n\n出现以下情况应尽快就医，而不是继续观察或换鞋：无法负重、明显肿胀、关节卡住或变形、发热、夜间痛醒、进行性麻木或无力、大小便功能改变、胸痛、晕厥或严重气短。头部撞击后出现头痛加重、呕吐或意识改变，也应按急症处理。\n\nNHS 的建议是不要带着疼痛继续跑；疼痛严重、持续或伴随肿胀时，应寻求医疗或物理治疗建议。本文不判断疼痛来源，也不建议自行使用止痛药掩盖症状后继续训练。\n\n## 适用边界\n\n本页提供就诊沟通框架，不提供诊断、影像判读、药物或康复处方。疼痛原因需要结合体格检查和必要检查由合格专业人员判断；孕期、术后、慢性病或神经系统症状需要相应专科评估。\n\n## 来源与适用范围\n\n“不要带痛跑步”、疼痛持续或伴随肿胀时就医，以及合脚鞋具的建议，参考 NHS 的跑步损伤页面；疼痛记录与训练负荷框架属于一般临床沟通建议。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Talking about pain: describe it before you name it",
+          "summary": "Where it hurts, when it started, how it changes and what it stops you doing is more useful than “my knee hurts”. A clear timeline helps a clinician assess you; it does not replace their diagnosis.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3091,
+          "digest": "6d67b03f8fddb8c10c9ce77454df830bb0a4841229d19cb431b7f11d65089f50",
+          "body": "## Describe first, name later\n\nRunning pain is often called “runner’s knee”, “IT band syndrome” or “Achilles tendinitis”, but a label is not an assessment. The same pain can come from different tissues, and the same label can describe different presentations. In a consultation, the useful information is the phenomenon: where it hurts, when it started, what makes it worse, what eases it, and whether there is swelling or weakness.\n\nPoint to the most painful spot with one finger, then say whether the pain is superficial, deep or follows a line. Describe both sides separately if both hurt. If it moves, record where it started and where it travels.\n\n## A useful timeline\n\nPut the events in order: when it first appeared; whether mileage, speed, hills, shoes or surfaces changed beforehand; whether it began suddenly or gradually; whether rest helps; whether it is stiffer the next morning; and whether there is night pain, swelling, heat, numbness or weakness.\n\nAdd the functional impact: can you walk normally, use stairs, stand on one leg, do a heel raise or squat? Which movements make you avoid loading the leg? What is the pain score from 0 to 10, and does it affect sleep or work? A number is only an aid; the trend matters more than one rating.\n\n## Bring your training record\n\nA training log, watch data, shoe mileage and upcoming races help explain changes in load. Put the last four to six weeks on one page: weekly distance, longest run, quality sessions, races, illness and recovery. Do not offer only a total mileage figure, and do not treat watch data as a diagnosis.\n\nIf you have already tried an exercise or rehabilitation drill, record how long, how often and what happened. A clinician needs to know what helped and what aggravated the symptoms.\n\n## Red flags\n\nSeek prompt medical care rather than watching and waiting, changing shoes or pushing through: inability to bear weight, marked swelling, a locked or deformed joint, fever, night pain that wakes you, progressive numbness or weakness, changes in bladder or bowel function, chest pain, fainting or severe breathlessness. After a head impact, worsening headache, vomiting or altered consciousness is an emergency.\n\nThe NHS advises not running while in pain and seeking medical or physiotherapy advice when pain is severe, persistent or accompanied by swelling. This page does not identify the source of pain and does not recommend masking it with painkillers to continue training.\n\n## Scope and limits\n\nThis page provides a consultation framework, not a diagnosis, imaging interpretation, medication advice or rehabilitation prescription. A qualified professional must assess the cause with an examination and any necessary tests. Pregnancy, surgery, chronic disease or neurological symptoms need the relevant specialist assessment.\n\n## Sources and scope\n\nThe advice not to run through pain, to seek help for persistent pain or swelling, and to use properly fitting shoes follows the NHS running-injury page. The pain-record and training-load framework is general clinical communication advice. Checked 2026-10-28."
         }
       ],
       "missingGates": []
@@ -3238,6 +3485,220 @@
           "bodyCharacters": 3489,
           "digest": "de429b82da22943f6f2ff15c430a83eaf90759d31f75f8b529944318196b57b0",
           "body": "## Fuel is a plan, not a ritual\n\nRace fuelling starts days before the race. In the 24–48 hours before most endurance events, increasing the proportion of carbohydrate while keeping familiar foods and meal times is a common approach. There is no need to suddenly eat large amounts of unfamiliar food or to stuff yourself on race morning. A race-day breakfast is usually eaten 2–3 hours before the start, with easily digestible carbohydrate you already tolerate, a little protein and fluid.\n\nIf the start is very early or nerves make eating difficult, split breakfast into a larger meal further out and a smaller snack closer to the start. Rehearse it in training instead of copying someone else’s menu.\n\n## Carbohydrate during the race\n\nThe International Society of Sports Nutrition position stand suggests about 30–60 grams of carbohydrate per hour for extended high-intensity exercise lasting more than 60 minutes, often as a 6–8% carbohydrate-electrolyte drink taken in small amounts every 10–15 minutes. Adjust the amount to event duration, intensity, weather, gut tolerance and what worked in training.\n\nGels, drinks, chews and solid food all provide carbohydrate, but concentration, volume and absorption differ. “A gel every 20 minutes” means nothing until you know how many grams each product contains. Record the product, timing, weather and gut response in training, and use only tested combinations on race day.\n\n## Fluid and electrolytes\n\nThere is no single fluid volume for everyone. Combine temperature, humidity, sweat rate, aid stations and personal tolerance. Do not drink a large volume at once, and do not avoid all fluid to avoid toilets. Electrolyte drinks can replace some salt lost in sweat, but a stronger concentration is not automatically better; salt tablets and supplements are especially poor choices for a first race-day experiment.\n\nIf you develop bloating, nausea, vomiting, dizziness or marked palpitations, reduce intensity, adjust fuelling and seek medical help. Persistent vomiting or altered consciousness is not a “push through it” problem.\n\n## Aid stations and self-carried fuel\n\nCheck the race manual for aid-station locations, what is provided, waste zones and water. Do not assume every station has your product. If you carry your own, confirm whether bottles, belts or vests are allowed and where you can discard waste.\n\nWrite your fuelling times on your bib or watch, but do not follow the clock through a body that is clearly struggling. Heat, climbing or higher intensity can slow gastric emptying; the original plan may need to change.\n\n## The first meal after the finish\n\nStart with fluid and carbohydrate, then add protein; if appetite is low, a carbohydrate-electrolyte drink can come before solid food. Recovery is not one meal. Sleep, normal meals and easy movement over the next 24–48 hours matter too.\n\n## Scope and limits\n\nThis page does not provide an individual nutrition prescription, therapeutic diet, fluid volume or medical clearance. People with diabetes, gastrointestinal disease, pregnancy, a history of disordered eating or medication should discuss race fuelling with a doctor or registered dietitian.\n\n## Sources and scope\n\nThe during-race carbohydrate range and timing follow the ISSN nutrient-timing position stand; pre-, during- and post-race nutrition follow the same stand and the ISSN carbohydrate-timing paper. These are sports-nutrition principles, not individual medical care or race clearance. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:reading-running-research",
+      "slug": "reading-running-research",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 3,
+      "sourceRefs": [
+        "knowledge-running-injury-review",
+        "knowledge-plos-taper",
+        "knowledge-physiology-determinants"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-running-injury-review",
+          "title": "The Association Between Running Injuries and Training Parameters: A Systematic Review",
+          "publisher": "Journal of Athletic Training",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34478518/",
+          "publishedAt": "2022-07-01",
+          "license": null,
+          "claims": [
+            "Across 36 studies and 23,047 runners, 26.2% reported a running-related injury.",
+            "Evidence linking weekly distance, duration, frequency, intensity or recent changes to injury was conflicting.",
+            "The authors caution against recommending one optimal training progression for every runner."
+          ]
+        },
+        {
+          "sourceId": "knowledge-plos-taper",
+          "title": "Effects of tapering on performance in endurance athletes: a systematic review and meta-analysis",
+          "publisher": "PLOS ONE",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282838",
+          "publishedAt": "2023-05-10",
+          "license": null,
+          "claims": [
+            "The meta-analysis included 14 studies and found significant improvements in time-trial and time-to-exhaustion performance after tapering.",
+            "A taper that reduced training volume by 41-60%, maintained training intensity and frequency, and lasted up to 21 days was associated with improved time-trial performance.",
+            "Tapering combined with pre-taper overload training showed a larger effect on time-trial performance than conventional tapering.",
+            "The authors note that tapering practices still need individual adaptation."
+          ]
+        },
+        {
+          "sourceId": "knowledge-physiology-determinants",
+          "title": "Toward a record-eligible sub-2-hour marathon: an updated integrative framework of physiological, technological, and cognitive determinants",
+          "publisher": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41351755/",
+          "publishedAt": "2026-09-25",
+          "license": null,
+          "claims": [
+            "VO2max, lactate threshold and running economy are physiological determinants commonly studied in distance-running performance.",
+            "Marathon performance is multi-factorial and includes physiological, technological and cognitive determinants.",
+            "Measurements depend on testing protocol and context, so values from different methods should not be treated as interchangeable."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "cdc1a0aa7eb9a1a5ddd2184f5b1fc6af3ee4c6eff0a6098123589df952cac83c"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "088c67ffa25689d4ba5684ec442054f65bdd4f87d256415e03e83aceb580226b"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "怎样读跑步研究：先看问题，再看结论",
+          "summary": "一项研究能回答的问题很窄。先看人群、设计、对照和测量，再看作者有没有超出数据下结论；不要用一条新闻标题决定训练。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1090,
+          "digest": "088c67ffa25689d4ba5684ec442054f65bdd4f87d256415e03e83aceb580226b",
+          "body": "## 先问它研究了谁\n\n看到“跑步者应该……”的标题，先找研究对象：是精英运动员、休闲跑者、大学生，还是有伤病或慢性病的人？样本量多大？男女比例、年龄、训练水平和路面是否与你相近？一项针对 30 名男性后跟着地跑者的小样本研究，不能直接推广到所有跑者。\n\n还要看研究设计。随机对照试验能更好地判断因果，但运动训练很难完全盲法；观察性研究能提示关联，却不能证明因果。横断面研究只拍一个时间点，不能说明先后顺序。系统综述和元分析汇总多项研究，但也会受纳入研究质量限制。\n\n## 再看它怎么测量\n\n配速、心率、主观用力、疼痛、伤病和表现都需要定义。研究里的“伤病”是自我报告还是临床诊断？“轻松跑”是按心率、乳酸阈还是主观感受定义？“成绩提升”是实验室时间试验还是比赛成绩？测量方法不同，结果不能直接比较。\n\n关注效应大小和不确定性，而不只看“显著”。一个统计上显著的结果，可能在实际中只差几秒；置信区间很宽，说明估计不稳定。研究有没有对照条件、是否随机、有没有资助或利益冲突，也值得看。\n\n## 从单项研究到整体证据\n\n单篇研究是拼图的一块，不是最终答案。跑步伤病与训练负荷的系统综述发现，周跑量、频率、强度和近期变化与伤病风险的证据互相冲突，作者提醒不要给所有人推荐同一个“最佳”增量。减量研究的元分析则发现减量通常能改善耐力表现，但具体比例和时长仍因项目和研究设计而异。\n\n这两类结论的确定性不同：前者更像“目前不知道一个通用公式”，后者更像“总体方向有支持”。把它们都读成“科学证明某某方法有效”，就超出了数据。\n\n## 实践中的用法\n\n把研究当成修正假设的工具，而不是寻找绝对命令。看到一个新方法，先问：它解决什么问题？适用于谁？代价和风险是什么？能不能在小范围内试验并记录反应？如果一项研究只支持很小的效果，或者与多项其他研究冲突，就不值得为此推翻稳定训练。\n\n新闻标题、社交媒体摘要和二手解读通常会省略限制。尽量找到原文摘要、研究设计和作者承认的局限；如果找不到，宁可保留不确定性。\n\n## 适用边界\n\n本页不提供统计培训或个体化训练建议，也不评价某项具体研究的质量。研究结论不能替代临床诊断、教练判断和个人试验；有伤病或健康问题时，先咨询合格专业人员。\n\n## 来源与适用范围\n\n跑步伤病与训练参数的证据冲突参考 Journal of Athletic Training 的系统综述；减量效果的示例参考 PLOS ONE 的系统综述与元分析；表现多因素框架参考 PubMed 的生理学综述。本文是阅读框架，不构成对具体研究的方法学审计。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "How to read running research: question first, conclusion later",
+          "summary": "A study answers a narrow question. Check the population, design, comparison and measurement before accepting the conclusion, and do not let one headline decide your training.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3337,
+          "digest": "cdc1a0aa7eb9a1a5ddd2184f5b1fc6af3ee4c6eff0a6098123589df952cac83c",
+          "body": "## Ask who was studied\n\nWhen a headline says “runners should…”, find the population: elite athletes, recreational runners, university students, or people with an injury or chronic condition? How large was the sample? How similar were the sex, age, training level and surface to you? A small study of 30 male rear-foot strikers cannot be generalised to every runner.\n\nLook at the design. A randomised controlled trial is better for causal questions, although training studies are hard to blind. Observational studies can show association but cannot prove causation. A cross-sectional study captures one moment and says nothing about sequence. Systematic reviews and meta-analyses pool studies but are still limited by the quality of those studies.\n\n## Look at how it was measured\n\nPace, heart rate, perceived effort, pain, injury and performance all need definitions. Is “injury” self-reported or clinically diagnosed? Is “easy running” defined by heart rate, lactate threshold or feel? Is “performance” a laboratory time trial or a race? Different measurements cannot be compared directly.\n\nLook at effect size and uncertainty, not only “significant”. A statistically significant result may be a few seconds in practice; a wide confidence interval means the estimate is unstable. Check whether there was a comparison condition, randomisation, and funding or conflicts of interest.\n\n## From one study to the body of evidence\n\nA single study is one piece of a puzzle, not the final answer. A systematic review of running injuries and training parameters found conflicting evidence on weekly distance, frequency, intensity and recent change, and the authors warned against one “optimal” progression for everyone. A meta-analysis of tapering found that taper generally improves endurance performance, but the exact volume and duration still vary by event and study design.\n\nThe certainty differs: the first is closer to “we do not have a universal formula”, the second to “the overall direction has support”. Reading either as “science proves this method works for everyone” goes beyond the data.\n\n## Using research in practice\n\nTreat research as a way to revise hypotheses, not as a search for absolute commands. For a new method, ask: what problem does it solve, for whom, at what cost and risk, and can I test it on a small scale and record the response? If a study supports only a small effect, or conflicts with several others, it is not a reason to overturn stable training.\n\nHeadlines, social posts and second-hand summaries often omit limitations. Try to find the abstract, design and stated limitations; if you cannot, keep the uncertainty.\n\n## Scope and limits\n\nThis page is not a statistics course, an individual training prescription or a quality appraisal of a specific paper. Research findings do not replace clinical diagnosis, coaching judgement and personal testing; consult a qualified professional for injury or health concerns.\n\n## Sources and scope\n\nThe conflicting evidence on running injury and training parameters follows a Journal of Athletic Training systematic review; the tapering example follows a PLOS ONE systematic review and meta-analysis; the multi-factor performance framework follows a PubMed physiology review. This is a reading framework, not a methodological audit of any one paper. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:records-and-course-validity",
+      "slug": "records-and-course-validity",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 3,
+      "sourceRefs": [
+        "knowledge-world-athletics-records",
+        "knowledge-baa-rules",
+        "knowledge-world-athletics-marathon"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-world-athletics-records",
+          "title": "World Records",
+          "publisher": "World Athletics",
+          "url": "https://worldathletics.org/records/by-category/world-records",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "World Athletics publishes world records by event and category.",
+            "The records list marks records that are pending ratification.",
+            "Road-running record tables distinguish mixed-gender and women-only races.",
+            "A record listing is a governing-body recognition, not simply the fastest time reported anywhere."
+          ]
+        },
+        {
+          "sourceId": "knowledge-baa-rules",
+          "title": "2026 Boston Marathon Rules and Policies",
+          "publisher": "Boston Athletic Association",
+          "url": "https://www.baa.org/wp-content/uploads/docs/2025-08/2026%20Boston%20Marathon%20Rules%20and%20Policies.pdf",
+          "publishedAt": "2025-08-01",
+          "license": null,
+          "claims": [
+            "Race bibs are non-transferable.",
+            "Participants may not run with anyone who is not registered as an official race participant on any part of the course.",
+            "Portable music devices may be used with headphones only if participants maintain awareness of their surroundings; professional, wheelchair and para athletics divisions have stricter rules.",
+            "Participants must follow the event code of conduct and the race's competition rules."
+          ]
+        },
+        {
+          "sourceId": "knowledge-world-athletics-marathon",
+          "title": "Marathon — World Athletics disciplines",
+          "publisher": "World Athletics",
+          "url": "https://worldathletics.org/disciplines/road-running/marathon",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "The marathon is a road running event over 42.195 kilometres.",
+            "The distance is also expressed as 26 miles and 385 yards."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "cd77b35e5321fb35a6d50665c1b9edc505caba4afe93fc9e6fb3209557cd7824"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "091c43fb855141882e7a5fac6631fd0c33f421d27100cb64395742bb88eadd3c"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "纪录与赛道：成绩为什么不能直接横着比",
+          "summary": "纪录需要符合项目规则、赛道丈量和比赛条件；不同赛道的成绩不能直接当作能力排名。读成绩时，先看距离、爬升、路面、海拔和当天条件。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 976,
+          "digest": "091c43fb855141882e7a5fac6631fd0c33f421d27100cb64395742bb88eadd3c",
+          "body": "## 纪录是一个有规则的结果\n\n世界田联的纪录页面按项目、性别和类别列出纪录，每项纪录都对应明确的距离、计时和比赛条件要求。公路纪录还涉及赛道丈量、起终点距离和海拔落差等规则。不是“手表显示 2 小时 50 分”就能成为官方纪录，也不是所有赛事都采用同一套认证标准。\n\n波士顿马拉松等赛事有自己的参赛成绩标准（BQ），这些标准按年龄和性别设置，并会随年份调整。达标成绩需要在受认可的赛道上取得，报名还要满足赛事其他要求。把 BQ 当成“所有马拉松的通用门槛”，会误解它的适用范围。\n\n## 赛道改变成绩的含义\n\n距离、爬升、路面、海拔、风向和气温都会影响成绩。平坦快速赛道与起伏山径的完赛时间不能直接比较；高海拔比赛和海平面比赛也不一样。即使都是公路马拉松，起终点分离、转弯数量、补给和起跑拥堵也会造成差异。\n\n赛道还会改版。赛事方可能调整起终点、路段或丈量方式，旧成绩对应的是旧版本。阅读成绩时，先确认比赛年份、组别、赛道版本和计时方式；不要把不同版本的赛道当成同一条。\n\n## 怎样比较才公平\n\n如果目的是评估自己的能力，尽量比较同一条赛道、相似天气和相似训练阶段的成绩；如果目的是选择比赛，比较距离、爬升、路面、关门时间、补给和交通，而不是只看冠军成绩。越野赛还应看技术性、海拔和强制装备，不能把公路马拉松的配速模型直接套用。\n\n对大众跑者，个人最好成绩（PB）也需要标注赛道和年份。把不同比赛的 PB 混在一起，会得到看似精确、实际不可比的排名。记录自己的比赛条件，比追求一个“最快”数字更有意义。\n\n## 纪录、年龄与身份\n\n世界田联的纪录分类、年龄组纪录和赛事规则会更新；性别、年龄和参赛资格有各自规定。引用纪录时，应链接官方页面并注明类别和日期。赛事名称、标识和官方路线文字归赛事方所有，本站不重新许可这些材料。\n\n## 适用边界\n\n本页不判定某项成绩是否可被官方认证，也不提供报名资格结论。具体纪录、BQ 标准和赛道丈量，以世界田联、赛事方和技术官员的最新规则为准。\n\n## 来源与适用范围\n\n纪录分类和项目定义参考 World Athletics 的纪录与马拉松项目页面；波士顿马拉松规则和参赛标准参考 BAA 的官方规则文件；赛道版本与距离口径参考本站马拉松距离条目。规则会更新，引用时应核对日期。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Records and courses: why times are not directly comparable",
+          "summary": "A record must meet event rules, course measurement and race conditions. Times from different courses are not a direct ranking of ability; read distance, climb, surface, altitude and the day’s conditions first.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 2851,
+          "digest": "cd77b35e5321fb35a6d50665c1b9edc505caba4afe93fc9e6fb3209557cd7824",
+          "body": "## A record is a result under rules\n\nWorld Athletics lists records by event, sex and category, and each record corresponds to defined distance, timing and competition requirements. Road records also involve course measurement, start-finish separation and elevation rules. A watch showing 2:50 does not make an official record, and not every race uses the same certification standard.\n\nThe Boston Marathon has its own qualifying times (BQ), set by age and sex and adjusted between years. A qualifying time must be run on an accepted course, and entry also depends on other race requirements. Treating BQ as a universal marathon threshold misunderstands its scope.\n\n## The course changes what a time means\n\nDistance, climb, surface, altitude, wind and temperature all affect performance. A flat fast course and a hilly trail cannot be compared by finish time alone; a high-altitude race is different from a sea-level one. Even within road marathons, point-to-point routes, turns, aid stations and start congestion create differences.\n\nCourses also change. Organisers may alter start, finish, sections or measurement, so an old result belongs to an old version. Before comparing, confirm the year, category, course version and timing method; do not treat different versions as the same course.\n\n## Comparing fairly\n\nTo assess your own ability, compare the same course, similar weather and a similar training phase. To choose a race, compare distance, climb, surface, cut-offs, aid and transport, not just the winner’s time. Trail races also involve technicality, altitude and mandatory kit; a road marathon pace model does not transfer directly.\n\nFor recreational runners, a personal best should carry its course and year. Mixing PBs from different races produces an apparently precise ranking that is not comparable. Recording the conditions of each race is more useful than chasing one “fastest” number.\n\n## Records, age and category\n\nWorld Athletics record categories, age-group records and race rules change; sex, age and eligibility have their own requirements. When citing a record, link the official page and note the category and date. Race names, marks and official route text belong to the organiser and are not relicensed by this site.\n\n## Scope and limits\n\nThis page does not decide whether a result will be officially ratified or whether you qualify for an event. The latest World Athletics, organiser and technical-official rules govern records, BQ standards and course measurement.\n\n## Sources and scope\n\nRecord categories and event definitions follow World Athletics record and marathon pages; Boston Marathon rules and qualifying standards follow the BAA’s official rules document; course-version and distance conventions follow this site’s marathon-distance article. Rules change, so check the date when citing them. Checked 2026-10-28."
         }
       ],
       "missingGates": []
@@ -4588,6 +5049,114 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:supplements-and-evidence",
+      "slug": "supplements-and-evidence",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 3,
+      "sourceRefs": [
+        "knowledge-fda-supplements",
+        "knowledge-issn-protein",
+        "knowledge-issn-caffeine"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-fda-supplements",
+          "title": "Dietary Supplements",
+          "publisher": "U.S. Food and Drug Administration",
+          "url": "https://www.fda.gov/food/dietary-supplements",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "Dietary supplements are regulated differently from conventional foods and drug products.",
+            "Manufacturers and distributors are responsible for evaluating the safety and labeling of their supplements before marketing.",
+            "The FDA can take action against adulterated or misbranded supplement products after they reach the market."
+          ]
+        },
+        {
+          "sourceId": "knowledge-issn-protein",
+          "title": "International Society of Sports Nutrition Position Stand: protein and exercise",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28642676/",
+          "publishedAt": "2017-06-20",
+          "license": null,
+          "claims": [
+            "An overall daily protein intake of 1.4-2.0 g/kg body weight per day is sufficient for most exercising individuals.",
+            "General per-serving recommendations are about 0.25 g of high-quality protein per kg body weight, or an absolute dose of 20-40 g, distributed every 3-4 hours across the day.",
+            "Physically active people can meet protein needs with whole foods, while supplements can be a practical way to ensure adequate intake.",
+            "Endurance athletes should focus on adequate carbohydrate intake for performance; protein may help offset muscle damage and support recovery."
+          ]
+        },
+        {
+          "sourceId": "knowledge-issn-caffeine",
+          "title": "International Society of Sports Nutrition position stand: caffeine and exercise performance",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33388079/",
+          "publishedAt": "2021-01-02",
+          "license": null,
+          "claims": [
+            "Caffeine can acutely enhance various aspects of exercise performance in many but not all studies, with aerobic endurance showing the most consistent moderate-to-large benefits.",
+            "Doses of 3-6 mg/kg body mass have consistently improved exercise performance; very high doses are associated with more side effects.",
+            "A common timing is about 60 minutes before exercise, although optimal timing depends on the caffeine source.",
+            "Individual responses vary, and caffeine can adversely affect sleep or anxiety in some people."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "cc920f7053bc3fcf8cd125509442438ab644a8c46e63c967f460c5a4cf9e782f"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "cd06131398e3b3b6ce694509ffc90b01bc378731ecf241efed868ae1dd580710"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "补剂判断：先看证据，再看标签",
+          "summary": "补剂不是药品，监管和证据标准不同。食物优先，只有明确缺口或证据支持的少数成分值得考虑；比赛日不要首次尝试，也不要把检测标识当成效果保证。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 995,
+          "digest": "cd06131398e3b3b6ce694509ffc90b01bc378731ecf241efed868ae1dd580710",
+          "body": "## 补剂和药品不是一回事\n\n美国 FDA 对膳食补充剂的监管方式与处方药不同：产品上市前不需要像药品那样获得疗效和安全性批准，企业负责确保标签和安全性，FDA 主要在上市后采取措施。这意味着“能买到”不等于“已证明有效”，也不等于“对所有人都安全”。\n\n补剂标签可能只写成分名称，不写全部剂量或第三方检测信息；不同批次的实际含量也可能与标签不符。选择有第三方检测、成分和剂量透明的产品，能降低一部分风险，但不能保证效果。\n\n## 先问缺什么\n\n对多数跑者，均衡饮食已经能提供训练所需的大部分营养。蛋白质、碳水、铁、维生素 D 等是否需要补充，取决于饮食、检测、健康状况和训练负荷，而不是“跑步就应该吃”。在没有明确缺乏或专业建议时，堆叠多种补剂通常收益很小，成本和相互作用风险却在增加。\n\nISSN 的蛋白质立场文件支持在总蛋白质和能量充足的前提下合理分配蛋白质，但这不是“人人需要蛋白粉”的证明。咖啡因在部分耐力运动中有中等偏大收益，但也存在剂量、睡眠和焦虑方面的限制，见咖啡因专文。\n\n## 证据等级\n\n随机对照试验、系统综述和元分析比单个小样本研究更可靠；但运动补剂研究常有样本小、资助来源、剂量和人群差异等问题。看到“提升百分之几”时，先问研究人群、对照条件、实际意义和是否重复验证。体外实验、动物实验和“专家推荐”不能直接证明对跑者有效。\n\n如果某个产品声称治疗疾病、替代药物或保证成绩，应特别警惕。补剂不能替代医疗诊断、治疗或均衡饮食；有基础疾病、孕期、哺乳期、服药或进食障碍史时，先咨询医生或注册营养师。\n\n## 比赛与反兴奋剂\n\n比赛日不要首次尝试新补剂。部分成分可能在反兴奋剂规则中受限，或被第三方检测发现污染；即使产品在普通商店销售，也不代表比赛允许。参赛者应查看赛事和反兴奋剂机构的最新禁用清单，保留产品批号和购买记录。\n\n## 适用边界\n\n本页不推荐任何品牌、剂量或补剂组合，也不判断某种产品是否适合你。补剂可能与药物相互作用，或对肝、肾、心血管和胃肠道造成负担；出现异常症状时应停止并寻求医疗建议。\n\n## 来源与适用范围\n\n膳食补充剂的监管方式参考 FDA 的膳食补充剂页面；蛋白质摄入原则参考 ISSN 的蛋白质与运动立场文件；咖啡因的效果与限制参考 ISSN 的咖啡因立场文件。本文是一般信息，不构成个体化营养或医疗建议。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Judging supplements: evidence before the label",
+          "summary": "Supplements are not medicines and are regulated differently. Food comes first; only a few ingredients with a clear gap or supporting evidence are worth considering. Do not try one for the first time on race day, and do not treat a testing mark as proof of effect.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3141,
+          "digest": "cc920f7053bc3fcf8cd125509442438ab644a8c46e63c967f460c5a4cf9e782f",
+          "body": "## Supplements are not medicines\n\nThe U.S. FDA regulates dietary supplements differently from prescription drugs. Products do not need pre-market approval for efficacy and safety in the way drugs do; companies are responsible for labelling and safety, and the FDA mainly acts after products reach the market. Being available does not mean proven effective or safe for everyone.\n\nA supplement label may list ingredients without full doses or third-party testing information, and actual content can differ between batches. Choosing products with third-party testing and transparent ingredients and doses reduces some risk, but does not guarantee benefit.\n\n## Ask what is missing first\n\nFor most runners, a balanced diet supplies most of what training needs. Whether protein, carbohydrate, iron, vitamin D or anything else needs supplementing depends on diet, testing, health and training load, not on “runners should take it”. Without a clear deficiency or professional advice, stacking supplements usually adds little benefit while increasing cost and interaction risk.\n\nThe ISSN protein position stand supports reasonable protein distribution when total protein and energy are adequate; that is not proof that everyone needs protein powder. Caffeine has moderate-to-large effects in some endurance settings, but dose, sleep and anxiety limits apply; see the caffeine article.\n\n## Levels of evidence\n\nRandomised trials, systematic reviews and meta-analyses are more reliable than a single small study. Supplement research often has small samples, funding issues and differences in dose and population. When a product claims a percentage improvement, ask who was studied, what the comparison was, whether the difference matters and whether it has been replicated. Cell and animal studies, or an “expert recommendation”, do not directly prove benefit for runners.\n\nBe especially cautious of products claiming to treat disease, replace medication or guarantee performance. Supplements do not replace medical diagnosis, treatment or a balanced diet. With a medical condition, pregnancy, breastfeeding, medication or a history of disordered eating, consult a doctor or registered dietitian first.\n\n## Racing and anti-doping\n\nDo not try a new supplement for the first time on race day. Some ingredients may be restricted by anti-doping rules or contaminated during manufacture; being sold in a normal shop does not make it permitted in competition. Check the latest prohibited list from the event and anti-doping authority, and keep batch and purchase records.\n\n## Scope and limits\n\nThis page does not recommend a brand, dose or stack, or decide whether a product suits you. Supplements can interact with medication and burden the liver, kidneys, cardiovascular system or gut; stop and seek medical advice for unusual symptoms.\n\n## Sources and scope\n\nSupplement regulation follows the FDA dietary-supplements page; protein principles follow the ISSN protein and exercise position stand; caffeine effects and limits follow the ISSN caffeine position stand. This is general information, not individual nutrition or medical advice. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:tempo-and-intervals",
       "slug": "tempo-and-intervals",
       "kind": "knowledge",
@@ -5255,6 +5824,100 @@
           "bodyCharacters": 2036,
           "digest": "af1b878e5f476613777594c4dac2b04130e02c71e05f5cb6ffee0bc466b75aa3",
           "body": "## GPS is an estimate, not a certified measurement\n\nWatch GPS can drift or lose points under trees, near tall buildings, in valleys, tunnels and turns. It records the device's estimate, not a race-certified course. Use it for trends on the same route and for approximate pace and location, not as precise distance or official geometry. The National Park Service also warns that GPS can be unreliable and recommends alternative navigation.\n\n## Optical heart rate has a delay\n\nWrist optical heart rate estimates from skin blood flow and can be affected by strap fit, cold, skin tone, tattoos, arm movement and sweat. It may lag during intervals, fast changes or strength work. A chest strap is often more stable but can also be disturbed. A single odd reading cannot diagnose a health problem; look at multi-day trends and perceived effort.\n\n## Pace and distance are smoothed\n\nInstant pace is often smoothed, and short reps, GPS drift or pauses can make it swing; average pace can also be affected by auto-laps and lost points. Cross-check with splits, route and perceived effort, and do not change your movement or ignore pain to chase a number.\n\n## Battery, navigation and safety\n\nFor long runs and trails, battery, offline maps and a backup power source are part of safety kit. The National Park Service recommends a map/compass and headlamp; a phone or watch should not be the only navigation. Tell someone your route and return time. Device data cannot replace judgement about weather, closures and body signals.\n\n## Scope and limits\n\nThis page does not rank brands or models, treat wrist heart rate as a medical diagnosis or guarantee GPS accuracy. Stop and seek medical help for chest pain, fainting, unusual palpitations or persistent symptoms rather than checking the watch again.\n\n## Sources and scope\n\nGPS reliability and alternative navigation follow the U.S. National Park Service Hike Smart and Ten Essentials pages; device accuracy and optical-heart-rate limits are general technical notes, not model-specific test results."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:wearables-and-recovery-data",
+      "slug": "wearables-and-recovery-data",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-overtraining-guide",
+        "knowledge-nhs-insomnia"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-overtraining-guide",
+          "title": "Overtraining syndrome: a practical guide",
+          "publisher": "PubMed / Current Sports Medicine Reports",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23016079/",
+          "publishedAt": "2012-09-01",
+          "license": null,
+          "claims": [
+            "Overtraining syndrome is described as a maladapted response to excessive exercise without adequate rest, involving neurological, endocrine and immune systems and mood changes.",
+            "Persistent fatigue and a decline or plateau in performance should prompt consideration of overtraining syndrome and exclusion of underlying illness.",
+            "There is no single diagnostic marker; assessment is clinical and requires identifying contributing training, recovery and health factors.",
+            "Management includes rest and correction of the factors that led to the imbalance between training and recovery."
+          ]
+        },
+        {
+          "sourceId": "knowledge-nhs-insomnia",
+          "title": "Insomnia",
+          "publisher": "National Health Service",
+          "url": "https://www.nhs.uk/conditions/insomnia/",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "Everyone needs different amounts of sleep.",
+            "On average, adults need 7 to 9 hours of sleep.",
+            "Insomnia means regularly having problems sleeping and usually improves by changing sleeping habits.",
+            "Persistent sleep problems can affect daily life and may need medical advice."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "5fbef8d1e5331c535525335a0ba1c0cefa4c6a31a52ac4ed36e281de739d5698"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "85011a2304cb0012427c9deedea83f62b7a96cac419de535f195392d58064d69"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "手表数据与恢复：看趋势，不要看一次分数",
+          "summary": "心率、HRV、睡眠和“恢复分数”能记录变化，但不能诊断疲劳或伤病。单次异常很常见，连续趋势和主观感受更值得一起看。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1038,
+          "digest": "85011a2304cb0012427c9deedea83f62b7a96cac419de535f195392d58064d69",
+          "body": "## 手表能记录什么\n\n跑步手表和手环可以记录配速、心率、步频、海拔、睡眠时长和心率变异性（HRV）等信号，有些还会给出“恢复”“准备度”或“训练负荷”分数。这些数字适合用来观察趋势和安排训练，不适合单独用来判断身体是否健康。\n\n光学心率在低温、手腕松动、肤色较深、手臂摆动或汗液干扰时可能失真；GPS 在城市峡谷、树林和隧道中会漂移；睡眠分期与实验室多导睡眠图并不等同。设备算法和基准值各不相同，两个品牌的分数字不能直接比较。\n\n## 单次异常不是结论\n\nHRV 会受睡眠、酒精、咖啡因、感染、压力和训练影响，一天偏低并不等于过度训练。静息心率偶尔升高也可能是炎热、脱水、晚睡或情绪紧张。把单次读数当成“身体评分”，容易在正常波动里做出过度反应。\n\n更有用的做法是建立自己的基线：连续记录数周，观察同一时间、同一条件下的趋势。如果 HRV 连续多天下降、静息心率持续升高，同时伴随睡眠变差、疲劳、动作沉重或训练表现下降，才值得进一步调整负荷。即使如此，也不能只凭手表诊断过度训练。\n\n## 恢复要看整体\n\n过度训练的识别没有单一生物标志物，通常需要结合训练史、表现下降、疲劳、睡眠和情绪，并排除贫血、甲状腺、感染、抑郁等其他原因。手表分数不能替代这种评估。\n\n睡眠是最值得关注的指标之一，但重点不是追求某个“睡眠分数”，而是规律作息、睡够、白天是否清醒。连续失眠、打鼾伴憋醒、白天严重嗜睡或疲劳持续数周，应寻求医疗评估。\n\n## 怎样把数据用起来\n\n每周回看一次趋势，不要每小时刷新。把训练日志、主观疲劳、疼痛、睡眠和比赛安排放在一起；如果数据与感受冲突，先相信身体感受，再找原因。比赛前不要因为一个“恢复分数”临时改变已经验证过的计划，也不要用数据为带痛训练找理由。\n\n分享数据时注意隐私。路线、心率和睡眠属于个人信息；公开截图前删除位置、姓名和设备标识。没有必要时，不要把完整训练历史交给不熟悉的第三方应用。\n\n## 适用边界\n\n本页不提供个体化训练负荷、HRV 解读或医疗诊断。心律不齐、胸痛、晕厥、持续失眠、严重疲劳或已知心血管疾病的人，应咨询医生；设备报警不能替代急救。\n\n## 来源与适用范围\n\n过度训练相关概念和“没有单一诊断指标、需要排除其他原因”的边界，参考 Current Sports Medicine Reports 的实用综述；持续失眠的就医提示参考 NHS 的失眠页面。消费级设备数据属于趋势参考，不是临床诊断。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Watch data and recovery: read trends, not one score",
+          "summary": "Heart rate, HRV, sleep and readiness scores can track change, but they cannot diagnose fatigue or injury. A single abnormal reading is common; trends plus how you feel are more useful.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3109,
+          "digest": "5fbef8d1e5331c535525335a0ba1c0cefa4c6a31a52ac4ed36e281de739d5698",
+          "body": "## What a watch can record\n\nRunning watches and bands record pace, heart rate, cadence, elevation, sleep duration and heart-rate variability (HRV); some also produce “recovery”, “readiness” or “training load” scores. These numbers are useful for spotting trends and planning training, not for deciding on their own whether the body is healthy.\n\nOptical heart rate can be distorted by cold, a loose strap, darker skin, arm movement or sweat. GPS drifts in urban canyons, forests and tunnels. Sleep staging is not the same as laboratory polysomnography. Algorithms and baselines differ between brands, so two readiness scores are not directly comparable.\n\n## One abnormal reading is not a conclusion\n\nHRV is affected by sleep, alcohol, caffeine, infection, stress and training; one low day does not mean overtraining. Resting heart rate can rise with heat, dehydration, a late night or nerves. Treating a single reading as a body score encourages overreaction to normal variation.\n\nA better approach is to build your own baseline over several weeks, measured at the same time under similar conditions. A sustained fall in HRV, a sustained rise in resting heart rate, worse sleep, fatigue, heavy legs or declining performance may justify adjusting load. Even then, a watch cannot diagnose overtraining.\n\n## Recovery is more than a number\n\nThere is no single biomarker for overtraining. Assessment combines training history, performance decline, fatigue, sleep and mood, and excludes other causes such as anaemia, thyroid disease, infection or depression. A device score cannot replace that assessment.\n\nSleep deserves attention, but the goal is not a perfect sleep score; it is regular, sufficient sleep and feeling awake during the day. Persistent insomnia, snoring with gasping, severe daytime sleepiness or weeks of fatigue warrant medical assessment.\n\n## Using the data well\n\nReview trends once a week rather than refreshing all day. Put training logs, perceived fatigue, pain, sleep and races together. When data and felt experience disagree, start with the body and then look for an explanation. Do not change a tested race plan because of one readiness score, and do not use data to justify running through pain.\n\nMind privacy when sharing. Routes, heart rate and sleep are personal data; remove location, names and device identifiers from screenshots. Do not hand a complete training history to an unfamiliar third-party app without a reason.\n\n## Scope and limits\n\nThis page does not provide individual training-load advice, HRV interpretation or medical diagnosis. People with arrhythmia, chest pain, fainting, persistent insomnia, severe fatigue or known cardiovascular disease should consult a clinician; a device alert is not a substitute for emergency care.\n\n## Sources and scope\n\nThe concepts around overtraining, the absence of a single diagnostic marker and the need to exclude other causes follow a practical review in Current Sports Medicine Reports; advice on persistent insomnia follows the NHS insomnia page. Consumer-device data is a trend aid, not a clinical diagnosis. Checked 2026-10-28."
         }
       ],
       "missingGates": []
