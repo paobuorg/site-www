@@ -14,7 +14,7 @@ Local acceptance **passes** for the 56-entity launch set. The three public sites
 - Local crawl: all 192 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
 - Browser matrix: Chromium/Firefox/WebKit each 48 screenshots; 0 axe violations, 0 console errors, 0 failed requests; keyboard 14/14 on four pages; search pagination fully expands to 25/25; no soft-keyboard overlap. The eight new K1/T1 pages have 0 axe violations in light and dark themes and no mobile overflow.
 - Search: 60/60 Chinese and 56/56 English queries rank an expected result in the top five (90% threshold); kind facets total 16/28/12.
-- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.332s; desktop globe-ready worst 3.710s; simulated mobile worst 4.694s; about 60fps on the local Intel Arc.
+- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.516s; desktop globe-ready worst 3.619s; simulated mobile worst 4.831s; about 60fps on the local Intel Arc.
 - T06/T12/T17: cross-site 11/11 (production hrefs mapped to the three local preview servers), track timeout/cancel 11/11, PWA offline 18/18.
 - Handoff: 0 issues, 63 links; handoff tests 46/46; content locks verified.
 
