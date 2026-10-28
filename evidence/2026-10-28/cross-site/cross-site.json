@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T01:54:11.650Z",
+  "generatedAt": "2026-10-28T12:19:45.391Z",
   "browser": "Playwright Chromium 156.0.8078.4",
   "note": [
     "The built pages carry https://paobu.org, https://learn.paobu.org and https://tools.paobu.org links. Each production host is mapped to its local 4421/4422/4423 preview server so the real production hrefs are exercised without DNS.",

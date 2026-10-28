@@ -1,75 +1,75 @@
 {
-  "generatedAt": "2026-10-28T08:40:00Z",
+  "generatedAt": "2026-10-28T12:45:00Z",
   "account": "paobuorg",
   "repositories": [
     {
       "name": "running-routes",
       "url": "https://github.com/paobuorg/running-routes",
-      "commit": "67a80abe30001527e6f60778e91ad9b206b31137",
-      "contentCommit": "0cd00cdaf9929390f4141fb1c58238ab1dee785d",
+      "commit": "a9316c267195cf5a946c99ccb7d235e5fb3c5ed9",
+      "contentCommit": "a9316c267195cf5a946c99ccb7d235e5fb3c5ed9",
       "visibility": "public"
     },
     {
       "name": "running-knowledge",
       "url": "https://github.com/paobuorg/running-knowledge",
-      "commit": "1e8d1146106e642e3a01b28e413da33f8be10258",
-      "contentCommit": "a879da16b26c7315531fcdba21555f6ef3c78da5",
+      "commit": "015a4c71e54262b935a3e7f3c9e5f899362b80aa",
+      "contentCommit": "015a4c71e54262b935a3e7f3c9e5f899362b80aa",
       "visibility": "public"
     },
     {
       "name": "running-tools",
       "url": "https://github.com/paobuorg/running-tools",
-      "commit": "a423a457a1d9fed1c086ef84c67f267d9b62112a",
-      "contentCommit": "4a8a3885b64d2a7c366845b118954a47392aea4a",
+      "commit": "db5aec2991de9a854a9a70354ef9e460712eefda",
+      "contentCommit": "db5aec2991de9a854a9a70354ef9e460712eefda",
       "visibility": "public"
     },
     {
       "name": "site-www",
       "url": "https://github.com/paobuorg/site-www",
-      "commit": "06e7c8f8b9a0d009ef0644538a871fa005a244c9",
+      "commit": "52bdfef09e9654abf591322c0c6c4cd87d6ae492",
       "visibility": "public"
     },
     {
       "name": "site-knowledge",
       "url": "https://github.com/paobuorg/site-knowledge",
-      "commit": "8a4f45efc66d0cea738f2b3ca9bd1d6a1b9bee73",
+      "commit": "0058f43025624dc2c69feba888a566486b583e99",
       "visibility": "public"
     },
     {
       "name": "site-tools",
       "url": "https://github.com/paobuorg/site-tools",
-      "commit": "b37f2339b3a3680fdd587ba743087d34a89c92f6",
+      "commit": "54b0ce1cf8c6422469ec7f10c3ee53160929b3dd",
       "visibility": "public"
     }
   ],
   "releaseBundle": {
-    "bundleId": "fcdf71e35b6061bd5d1b37c17846880ea0c062be8833a8708212a461f3e404a1",
+    "bundleId": "510b233fa8db10125acc678bac5d219a24fa7832b2da5bb3031f65fb24ee344e",
     "status": "local-build"
   },
   "contentRevision": {
-    "note": "Content locks pin the K5 content commits used by the production builds.",
-    "running-routes": "67a80abe30001527e6f60778e91ad9b206b31137",
-    "running-knowledge": "1e8d1146106e642e3a01b28e413da33f8be10258",
-    "running-tools": "a423a457a1d9fed1c086ef84c67f267d9b62112a"
+    "note": "Content locks pin the rebranded content commits used by the production builds.",
+    "running-routes": "a9316c267195cf5a946c99ccb7d235e5fb3c5ed9",
+    "running-knowledge": "015a4c71e54262b935a3e7f3c9e5f899362b80aa",
+    "running-tools": "db5aec2991de9a854a9a70354ef9e460712eefda"
   },
   "coreRelease": {
-    "tag": "core-v0.2.15",
-    "url": "https://github.com/paobuorg/site-www/releases/tag/core-v0.2.15",
+    "tag": "core-v0.2.16",
+    "url": "https://github.com/paobuorg/site-www/releases/tag/core-v0.2.16",
     "assets": [
-      "paobu-core-0.2.15.tgz",
-      "paobu-core-0.2.15.tgz.sha256",
+      "paobu-core-0.2.16.tgz",
+      "paobu-core-0.2.16.tgz.sha256",
       "core.lock.json"
     ],
-    "sha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae"
+    "sha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2"
   },
   "variables": {
     "site-knowledge": {
-      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.15/paobu-core-0.2.15.tgz",
-      "PAOBU_CORE_SHA256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae"
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.16/paobu-core-0.2.16.tgz",
+      "PAOBU_CORE_SHA256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2"
     },
     "site-tools": {
-      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.15/paobu-core-0.2.15.tgz",
-      "PAOBU_CORE_SHA256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae"
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.16/paobu-core-0.2.16.tgz",
+      "PAOBU_CORE_SHA256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2"
     }
   },
   "pages": {
@@ -80,31 +80,31 @@
         "site": "main",
         "url": "https://paobu.org/",
         "status": "success",
-        "codeCommit": "06e7c8f8b9a0d009ef0644538a871fa005a244c9",
-        "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
+        "codeCommit": "52bdfef09e9654abf591322c0c6c4cd87d6ae492",
+        "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
         "build": {
           "htmlPages": 40,
           "searchRecords": 158,
           "sitemapUrls": 40
         },
-        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40658187137",
+        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40689487223",
         "httpsEnforced": true,
         "certificate": "approved",
-        "siteBundleId": "c021cc36583a91de45f6dc3104921b6e35fd8c7fef5a06c25947a304f0ac6c10"
+        "siteBundleId": "12355d5ba681c8b40fef95e285b63d75585e7e3a5c815ed8eba13d7ba288ff3a"
       },
       {
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
-        "codeCommit": "8a4f45efc66d0cea738f2b3ca9bd1d6a1b9bee73",
-        "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "2abeafa3d9b17b68d63cce64b312da863518c75cf02f13bccd1555ba45e734a5",
+        "codeCommit": "0058f43025624dc2c69feba888a566486b583e99",
+        "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
+        "siteBundleId": "2a0a6dc1c2ba9f8f458d389e63c90558794f1092441bf5fc94bc1a9d386f1a56",
         "build": {
           "htmlPages": 130,
           "searchRecords": 102,
           "sitemapUrls": 130
         },
-        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40658192490",
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40689409365",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -112,46 +112,30 @@
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
-        "codeCommit": "b37f2339b3a3680fdd587ba743087d34a89c92f6",
-        "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "d46d2e8192035a5c503e429b3c0c94ea17da1d1a96227a5edba5d61311d06a8e",
+        "codeCommit": "54b0ce1cf8c6422469ec7f10c3ee53160929b3dd",
+        "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
+        "siteBundleId": "168f558c9baaf597b8c67eacf6f21775c75020ece217bc199e755bd55281789d",
         "build": {
           "htmlPages": 28,
           "searchRecords": 24,
           "sitemapUrls": 28
         },
-        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40658198746",
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40689465740",
         "httpsEnforced": true,
         "certificate": "approved"
       }
     ]
   },
   "liveVerification": {
-    "bundleConsistency": "All three live release manifests match the local release bundle siteBundleIds and core 0.2.15 at 8e264510….",
-    "coreArtifact": "The published core-v0.2.15 asset was downloaded and its SHA-256 recomputed as 8e264510….",
+    "bundleConsistency": "All three live release manifests match local release bundle 510b233f…, core 0.2.16 at 8b0e47ba… and content commits a9316c26… / 015a4c71… / db5aec29….",
+    "coreArtifact": "The published core-v0.2.16 asset was downloaded through the GitHub API and its SHA-256 recomputed as 8b0e47ba…; child pnpm integrity and core.lock.json use the same asset.",
+    "brand": "All three live home pages render 跑起来 / RUNUP with the Douke mark. Production HTML contains no 跑地图 / RunMap strings.",
+    "byline": "Article bylines read 跑起来编辑部 / RunUp Editorial; no AI-assisted or editorial-desk wording is rendered.",
+    "adsense": "Disabled by default. Production HTML contains no adsbygoogle, pagead2 or google-adsense markup, and /ads.txt returns 404. The slot is environment-gated and limited to route, article, glossary and tool detail pages.",
     "legalPages": {
       "count": 6,
       "status": "all 200",
       "axeViolations": 0
-    },
-    "authors": "Visible bylines read 跑地图编辑部 / RunMap Editorial; no AI-assisted or editorial-desk wording is rendered.",
-    "k2Pages": {
-      "count": 16,
-      "status": "all 200"
-    },
-    "k3Pages": {
-      "count": 14,
-      "status": "all 200",
-      "axeViolations": 0
-    },
-    "k4Pages": {
-      "count": 10,
-      "status": "all 200",
-      "axeViolations": 0,
-      "consoleErrors": 0,
-      "failedRequests": 0,
-      "mobileOverflow": 0,
-      "legalNotice": true
     },
     "sitemaps": {
       "paobu.org": 40,
@@ -162,19 +146,9 @@
       "zh-CN": "60/60",
       "en": "56/56"
     },
-    "searchAcceptanceNote": "Full 116-query acceptance set run against the live Pagefind index; threshold 90%, top-5.",
-    "pwa": "All three live manifest.webmanifest files use start_url \"/\" and scope \"/\".",
+    "pwa": "All three live manifest.webmanifest files use start_url \"/\", scope \"/\" and include 192/512/maskable PNG icons.",
     "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200.",
-    "k5Pages": {
-      "count": 6,
-      "status": "all 200",
-      "axeViolations": 0,
-      "consoleErrors": 0,
-      "failedRequests": 0,
-      "mobileOverflow": 0,
-      "legalNotice": true
-    },
-    "checkedAt": "2026-10-28T08:40:00Z"
+    "checkedAt": "2026-10-28T12:45:00Z"
   },
   "oldRepository": {
     "name": "www",
@@ -183,15 +157,16 @@
     "backup": "reference/legacy/www-github-backup-2026-10-27.tar.gz"
   },
   "workflows": {
-    "site-www": "success; downloads core-v0.2.15; K3 build 40/142/40",
-    "site-knowledge": "success; K3 build 114/86/114",
-    "site-tools": "success; K3 build 28/24/28",
-    "coreRelease": "core-v0.2.15 published and asset hash verified"
+    "site-www": "success at 52bdfef0; build 40/158/40",
+    "site-knowledge": "success at 0058f430; build 130/102/130",
+    "site-tools": "success at 54b0ce1c; build 28/24/28",
+    "coreRelease": "core-v0.2.16 published; asset SHA-256 8b0e47ba…"
   },
   "notes": [
-    "K2 added eight bilingual guides, K3 seven, K4 five and K5 three; the knowledge set now has 50 articles plus a glossary.",
+    "The public brand is 跑起来 / RUNUP. Visible content, bylines, legal attribution, PWA names, icons and offline copy use the new brand.",
+    "AdSense is implemented but not activated. Activation requires a publisher ID, an ad-unit slot ID, EEA/UK consent configuration and a legal-page review; AdSense is not a substitute for site analytics.",
     "Content is licensed CC BY 4.0 and site code is MIT; third-party race material, trademarks, imagery and dependencies remain under their own terms.",
     "The legal page is a general risk notice, not legal advice.",
-    "Real devices/readers, formal high-resolution imagery, third-party EOX SLA, remote rollback and independent professional review remain outside this deployment verification."
+    "Real devices/readers, formal high-resolution imagery, third-party EOX SLA, a remote rollback drill and independent professional review remain outside this deployment verification."
   ]
 }

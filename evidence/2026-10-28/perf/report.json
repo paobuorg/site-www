@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T04:45:35.690Z",
+  "generatedAt": "2026-10-28T12:19:57.681Z",
   "browser": "Playwright Chromium 156.0.8078.4",
   "launchArgs": [
     "--use-angle=d3d11",
@@ -73,7 +73,7 @@
       {
         "scenario": "article",
         "run": 1,
-        "elapsed": 33554,
+        "elapsed": 33116,
         "readyMs": null,
         "fallback": false,
         "idleClearsPerSecond": null,
@@ -86,36 +86,36 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 9477
+            "transferSize": 9658
           },
           {
-            "url": "http://localhost:4422/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4422/_astro/BaseLayout.DH6CJ2wo.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           }
         ],
         "perf": {
-          "lcp": 1516,
+          "lcp": 1228,
           "lcpElement": "p.",
           "cls": 0,
           "glClear": 0
         },
         "navigation": {
           "ttfb": 10,
-          "domContentLoaded": 1518,
-          "load": 1519,
-          "transferSize": 9496
+          "domContentLoaded": 1072,
+          "load": 1073,
+          "transferSize": 9677
         },
         "resources": [
           {
-            "name": "http://localhost:4422/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4422/_astro/BaseLayout.DH6CJ2wo.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 234
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 210
           }
         ],
         "canvas": null,
@@ -126,7 +126,7 @@
       {
         "scenario": "article",
         "run": 2,
-        "elapsed": 33323,
+        "elapsed": 33370,
         "readyMs": null,
         "fallback": false,
         "idleClearsPerSecond": null,
@@ -139,36 +139,36 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 9477
+            "transferSize": 9658
           },
           {
-            "url": "http://localhost:4422/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4422/_astro/BaseLayout.DH6CJ2wo.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           }
         ],
         "perf": {
-          "lcp": 1308,
+          "lcp": 1328,
           "lcpElement": "p.",
           "cls": 0,
           "glClear": 0
         },
         "navigation": {
           "ttfb": 4,
-          "domContentLoaded": 1291,
-          "load": 1291,
-          "transferSize": 9496
+          "domContentLoaded": 1320,
+          "load": 1321,
+          "transferSize": 9677
         },
         "resources": [
           {
-            "name": "http://localhost:4422/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4422/_astro/BaseLayout.DH6CJ2wo.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 223
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 216
           }
         ],
         "canvas": null,
@@ -179,7 +179,7 @@
       {
         "scenario": "article",
         "run": 3,
-        "elapsed": 33137,
+        "elapsed": 33046,
         "readyMs": null,
         "fallback": false,
         "idleClearsPerSecond": null,
@@ -192,36 +192,36 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 9477
+            "transferSize": 9658
           },
           {
-            "url": "http://localhost:4422/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4422/_astro/BaseLayout.DH6CJ2wo.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           }
         ],
         "perf": {
-          "lcp": 1120,
+          "lcp": 1012,
           "lcpElement": "p.",
           "cls": 0,
           "glClear": 0
         },
         "navigation": {
-          "ttfb": 8,
-          "domContentLoaded": 1108,
-          "load": 1109,
-          "transferSize": 9496
+          "ttfb": 11,
+          "domContentLoaded": 1004,
+          "load": 1004,
+          "transferSize": 9677
         },
         "resources": [
           {
-            "name": "http://localhost:4422/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4422/_astro/BaseLayout.DH6CJ2wo.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 208
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 221
           }
         ],
         "canvas": null,
@@ -234,12 +234,12 @@
       {
         "scenario": "homeDesktop",
         "run": 1,
-        "elapsed": 11063,
-        "readyMs": 3619,
+        "elapsed": 11283,
+        "readyMs": 3754,
         "fallback": false,
         "idleClearsPerSecond": 0,
-        "activeClearsPerSecond": 482.67,
-        "rafFps": 60.1,
+        "activeClearsPerSecond": 485.33,
+        "rafFps": 60.2,
         "consoleErrors": [],
         "network": [
           {
@@ -247,7 +247,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -257,13 +257,6 @@
             "transferSize": 726
           },
           {
-            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
-            "type": "Script",
-            "status": 200,
-            "mimeType": "text/javascript",
-            "transferSize": 764
-          },
-          {
             "url": "http://localhost:4421/cesium/Widgets/widgets.css",
             "type": "Stylesheet",
             "status": 200,
@@ -271,11 +264,18 @@
             "transferSize": 6325
           },
           {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
+            "type": "Script",
+            "status": 200,
+            "mimeType": "text/javascript",
+            "transferSize": 764
+          },
+          {
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           },
           {
             "url": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -306,18 +306,18 @@
             "transferSize": 27236
           },
           {
-            "url": "http://localhost:4421/cesium/Assets/Images/ion-credit.png",
-            "type": "Image",
-            "status": 200,
-            "mimeType": "image/png",
-            "transferSize": 6293
-          },
-          {
             "url": "http://localhost:4421/cesium/Assets/approximateTerrainHeights.json",
             "type": "XHR",
             "status": 200,
             "mimeType": "application/json",
             "transferSize": 98417
+          },
+          {
+            "url": "http://localhost:4421/cesium/Assets/Images/ion-credit.png",
+            "type": "Image",
+            "status": 200,
+            "mimeType": "image/png",
+            "transferSize": 6293
           },
           {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
@@ -334,13 +334,6 @@
             "transferSize": 119045
           },
           {
-            "url": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
-            "type": "Image",
-            "status": 200,
-            "mimeType": "image/jpeg",
-            "transferSize": 18464
-          },
-          {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
             "type": "XHR",
             "status": 200,
@@ -348,18 +341,25 @@
             "transferSize": 153269
           },
           {
-            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
-            "type": "XHR",
-            "status": 200,
-            "mimeType": "image/jpeg",
-            "transferSize": 152807
-          },
-          {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
             "type": "XHR",
             "status": 200,
             "mimeType": "image/jpeg",
             "transferSize": 152771
+          },
+          {
+            "url": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
+            "type": "Image",
+            "status": 200,
+            "mimeType": "image/jpeg",
+            "transferSize": 18464
+          },
+          {
+            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
+            "type": "XHR",
+            "status": 200,
+            "mimeType": "image/jpeg",
+            "transferSize": 152807
           },
           {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg",
@@ -377,16 +377,16 @@
           }
         ],
         "perf": {
-          "lcp": 568,
+          "lcp": 528,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
-          "glClear": 2206
+          "glClear": 2188
         },
         "navigation": {
-          "ttfb": 4,
-          "domContentLoaded": 450,
-          "load": 465,
-          "transferSize": 7450
+          "ttfb": 6,
+          "domContentLoaded": 411,
+          "load": 459,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -395,6 +395,22 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
+            "duration": 113
+          },
+          {
+            "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
+            "initiatorType": "link",
+            "transferSize": 764,
+            "encodedBodySize": 464,
+            "decodedBodySize": 464,
+            "duration": 110
+          },
+          {
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
+            "initiatorType": "link",
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
             "duration": 123
           },
           {
@@ -403,23 +419,7 @@
             "transferSize": 266899,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 348
-          },
-          {
-            "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
-            "initiatorType": "link",
-            "transferSize": 764,
-            "encodedBodySize": 464,
-            "decodedBodySize": 464,
-            "duration": 116
-          },
-          {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
-            "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 135
+            "duration": 349
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -427,7 +427,7 @@
             "transferSize": 743,
             "encodedBodySize": 443,
             "decodedBodySize": 443,
-            "duration": 116
+            "duration": 110
           },
           {
             "name": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -435,7 +435,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 109
+            "duration": 105
           },
           {
             "name": "http://localhost:4421/_astro/Cesium.KAZSxW2Q.js",
@@ -443,7 +443,7 @@
             "transferSize": 1347255,
             "encodedBodySize": 1346955,
             "decodedBodySize": 4927533,
-            "duration": 1186
+            "duration": 1194
           },
           {
             "name": "http://localhost:4421/cesium/Assets/approximateTerrainHeights.json",
@@ -451,7 +451,7 @@
             "transferSize": 98333,
             "encodedBodySize": 98033,
             "decodedBodySize": 299471,
-            "duration": 206
+            "duration": 213
           },
           {
             "name": "http://localhost:4421/cesium/Assets/IAU2006_XYS/IAU2006_XYS_18.json",
@@ -459,7 +459,7 @@
             "transferSize": 27205,
             "encodedBodySize": 26905,
             "decodedBodySize": 65310,
-            "duration": 147
+            "duration": 153
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Images/ion-credit.png",
@@ -467,7 +467,7 @@
             "transferSize": 6328,
             "encodedBodySize": 6028,
             "decodedBodySize": 6028,
-            "duration": 107
+            "duration": 278
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
@@ -475,7 +475,7 @@
             "transferSize": 123046,
             "encodedBodySize": 122746,
             "decodedBodySize": 122746,
-            "duration": 404
+            "duration": 579
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
@@ -483,7 +483,7 @@
             "transferSize": 119075,
             "encodedBodySize": 118775,
             "decodedBodySize": 118775,
-            "duration": 593
+            "duration": 666
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -491,7 +491,7 @@
             "transferSize": 153299,
             "encodedBodySize": 152999,
             "decodedBodySize": 152999,
-            "duration": 819
+            "duration": 696
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
@@ -499,7 +499,7 @@
             "transferSize": 152801,
             "encodedBodySize": 152501,
             "decodedBodySize": 152501,
-            "duration": 820
+            "duration": 747
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
@@ -507,7 +507,7 @@
             "transferSize": 152837,
             "encodedBodySize": 152537,
             "decodedBodySize": 152537,
-            "duration": 819
+            "duration": 880
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg",
@@ -515,7 +515,7 @@
             "transferSize": 168280,
             "encodedBodySize": 167980,
             "decodedBodySize": 167980,
-            "duration": 853
+            "duration": 910
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
@@ -523,15 +523,7 @@
             "transferSize": 18496,
             "encodedBodySize": 18196,
             "decodedBodySize": 18196,
-            "duration": 786
-          },
-          {
-            "name": "http://localhost:4421/cesium/Workers/transferTypedArrayTest.js",
-            "initiatorType": "other",
-            "transferSize": 1279,
-            "encodedBodySize": 979,
-            "decodedBodySize": 979,
-            "duration": -11
+            "duration": 839
           },
           {
             "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
@@ -539,7 +531,7 @@
             "transferSize": 10494,
             "encodedBodySize": 10194,
             "decodedBodySize": 27703,
-            "duration": 2
+            "duration": -26
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-MXXXHGW3.js",
@@ -547,7 +539,7 @@
             "transferSize": 2810,
             "encodedBodySize": 2510,
             "decodedBodySize": 7675,
-            "duration": 401
+            "duration": 375
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
@@ -555,7 +547,7 @@
             "transferSize": 1155,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 486
+            "duration": 442
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -563,7 +555,15 @@
             "transferSize": 133064,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 819
+            "duration": 677
+          },
+          {
+            "name": "http://localhost:4421/cesium/Workers/transferTypedArrayTest.js",
+            "initiatorType": "other",
+            "transferSize": 1279,
+            "encodedBodySize": 979,
+            "decodedBodySize": 979,
+            "duration": -7
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -571,7 +571,7 @@
             "transferSize": 300,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 102
+            "duration": 106
           },
           {
             "name": "http://localhost:4421/cesium/Workers/incrementallyBuildTerrainPicker.js",
@@ -587,7 +587,7 @@
             "transferSize": 300,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 96
+            "duration": 110
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -595,7 +595,7 @@
             "transferSize": 300,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 97
+            "duration": 112
           }
         ],
         "canvas": {
@@ -612,8 +612,8 @@
       {
         "scenario": "homeDesktop",
         "run": 2,
-        "elapsed": 10937,
-        "readyMs": 3490,
+        "elapsed": 11196,
+        "readyMs": 3724,
         "fallback": false,
         "idleClearsPerSecond": 0,
         "activeClearsPerSecond": 482.67,
@@ -625,7 +625,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -649,11 +649,11 @@
             "transferSize": 6325
           },
           {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           },
           {
             "url": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -698,18 +698,18 @@
             "transferSize": 98417
           },
           {
-            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
-            "type": "XHR",
-            "status": 200,
-            "mimeType": "image/jpeg",
-            "transferSize": 123016
-          },
-          {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
             "type": "XHR",
             "status": 200,
             "mimeType": "image/jpeg",
             "transferSize": 119045
+          },
+          {
+            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
+            "type": "XHR",
+            "status": 200,
+            "mimeType": "image/jpeg",
+            "transferSize": 123016
           },
           {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -733,18 +733,18 @@
             "transferSize": 152807
           },
           {
-            "url": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
-            "type": "Image",
-            "status": 200,
-            "mimeType": "image/jpeg",
-            "transferSize": 18464
-          },
-          {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg",
             "type": "XHR",
             "status": 200,
             "mimeType": "image/jpeg",
             "transferSize": 168250
+          },
+          {
+            "url": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
+            "type": "Image",
+            "status": 200,
+            "mimeType": "image/jpeg",
+            "transferSize": 18464
           },
           {
             "url": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -755,16 +755,16 @@
           }
         ],
         "perf": {
-          "lcp": 496,
+          "lcp": 492,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
-          "glClear": 2223
+          "glClear": 2274
         },
         "navigation": {
-          "ttfb": 4,
-          "domContentLoaded": 423,
-          "load": 459,
-          "transferSize": 7450
+          "ttfb": 5,
+          "domContentLoaded": 417,
+          "load": 450,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -773,15 +773,15 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
-            "duration": 125
+            "duration": 115
           },
           {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 139
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 128
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -789,7 +789,7 @@
             "transferSize": 266899,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 350
+            "duration": 339
           },
           {
             "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -797,7 +797,7 @@
             "transferSize": 764,
             "encodedBodySize": 464,
             "decodedBodySize": 464,
-            "duration": 114
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -805,7 +805,7 @@
             "transferSize": 743,
             "encodedBodySize": 443,
             "decodedBodySize": 443,
-            "duration": 114
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -813,7 +813,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 98
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/_astro/Cesium.KAZSxW2Q.js",
@@ -821,7 +821,7 @@
             "transferSize": 1347255,
             "encodedBodySize": 1346955,
             "decodedBodySize": 4927533,
-            "duration": 1176
+            "duration": 1194
           },
           {
             "name": "http://localhost:4421/cesium/Assets/approximateTerrainHeights.json",
@@ -829,7 +829,7 @@
             "transferSize": 98333,
             "encodedBodySize": 98033,
             "decodedBodySize": 299471,
-            "duration": 255
+            "duration": 271
           },
           {
             "name": "http://localhost:4421/cesium/Assets/IAU2006_XYS/IAU2006_XYS_18.json",
@@ -837,7 +837,7 @@
             "transferSize": 27205,
             "encodedBodySize": 26905,
             "decodedBodySize": 65310,
-            "duration": 142
+            "duration": 173
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Images/ion-credit.png",
@@ -845,7 +845,7 @@
             "transferSize": 6328,
             "encodedBodySize": 6028,
             "decodedBodySize": 6028,
-            "duration": 100
+            "duration": 171
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
@@ -853,7 +853,7 @@
             "transferSize": 123046,
             "encodedBodySize": 122746,
             "decodedBodySize": 122746,
-            "duration": 523
+            "duration": 704
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
@@ -861,7 +861,7 @@
             "transferSize": 119075,
             "encodedBodySize": 118775,
             "decodedBodySize": 118775,
-            "duration": 672
+            "duration": 697
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -869,7 +869,7 @@
             "transferSize": 153299,
             "encodedBodySize": 152999,
             "decodedBodySize": 152999,
-            "duration": 803
+            "duration": 810
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
@@ -877,7 +877,7 @@
             "transferSize": 152801,
             "encodedBodySize": 152501,
             "decodedBodySize": 152501,
-            "duration": 803
+            "duration": 809
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
@@ -885,7 +885,7 @@
             "transferSize": 152837,
             "encodedBodySize": 152537,
             "decodedBodySize": 152537,
-            "duration": 836
+            "duration": 846
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg",
@@ -893,7 +893,7 @@
             "transferSize": 168280,
             "encodedBodySize": 167980,
             "decodedBodySize": 167980,
-            "duration": 903
+            "duration": 861
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
@@ -901,7 +901,7 @@
             "transferSize": 18496,
             "encodedBodySize": 18196,
             "decodedBodySize": 18196,
-            "duration": 870
+            "duration": 915
           },
           {
             "name": "http://localhost:4421/cesium/Workers/transferTypedArrayTest.js",
@@ -909,7 +909,7 @@
             "transferSize": 1279,
             "encodedBodySize": 979,
             "decodedBodySize": 979,
-            "duration": -9
+            "duration": -16
           },
           {
             "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
@@ -917,7 +917,7 @@
             "transferSize": 10494,
             "encodedBodySize": 10194,
             "decodedBodySize": 27703,
-            "duration": 20
+            "duration": -12
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-MXXXHGW3.js",
@@ -925,7 +925,7 @@
             "transferSize": 2810,
             "encodedBodySize": 2510,
             "decodedBodySize": 7675,
-            "duration": 497
+            "duration": 700
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
@@ -933,7 +933,7 @@
             "transferSize": 1155,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 594
+            "duration": 699
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -941,7 +941,7 @@
             "transferSize": 133064,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 844
+            "duration": 968
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -949,7 +949,7 @@
             "transferSize": 300,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 97
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/cesium/Workers/incrementallyBuildTerrainPicker.js",
@@ -957,7 +957,7 @@
             "transferSize": 1321,
             "encodedBodySize": 1021,
             "decodedBodySize": 1892,
-            "duration": -5
+            "duration": -12
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
@@ -965,7 +965,7 @@
             "transferSize": 300,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 110
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -973,7 +973,7 @@
             "transferSize": 300,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 113
+            "duration": 106
           }
         ],
         "canvas": {
@@ -990,8 +990,8 @@
       {
         "scenario": "homeDesktop",
         "run": 3,
-        "elapsed": 10937,
-        "readyMs": 3491,
+        "elapsed": 11100,
+        "readyMs": 3619,
         "fallback": false,
         "idleClearsPerSecond": 0,
         "activeClearsPerSecond": 482.67,
@@ -1003,7 +1003,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -1020,18 +1020,18 @@
             "transferSize": 764
           },
           {
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
+            "type": "Stylesheet",
+            "status": 200,
+            "mimeType": "text/css",
+            "transferSize": 9724
+          },
+          {
             "url": "http://localhost:4421/cesium/Widgets/widgets.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
             "transferSize": 6325
-          },
-          {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
-            "type": "Stylesheet",
-            "status": 200,
-            "mimeType": "text/css",
-            "transferSize": 9520
           },
           {
             "url": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -1133,16 +1133,16 @@
           }
         ],
         "perf": {
-          "lcp": 500,
+          "lcp": 484,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
-          "glClear": 2211
+          "glClear": 2253
         },
         "navigation": {
           "ttfb": 4,
-          "domContentLoaded": 431,
-          "load": 458,
-          "transferSize": 7450
+          "domContentLoaded": 420,
+          "load": 451,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -1151,7 +1151,7 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
-            "duration": 125
+            "duration": 126
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -1159,7 +1159,7 @@
             "transferSize": 266899,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 349
+            "duration": 341
           },
           {
             "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -1167,15 +1167,15 @@
             "transferSize": 764,
             "encodedBodySize": 464,
             "decodedBodySize": 464,
-            "duration": 115
+            "duration": 111
           },
           {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 140
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 126
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -1183,7 +1183,7 @@
             "transferSize": 743,
             "encodedBodySize": 443,
             "decodedBodySize": 443,
-            "duration": 115
+            "duration": 110
           },
           {
             "name": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -1191,7 +1191,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 97
+            "duration": 107
           },
           {
             "name": "http://localhost:4421/_astro/Cesium.KAZSxW2Q.js",
@@ -1199,7 +1199,7 @@
             "transferSize": 1347255,
             "encodedBodySize": 1346955,
             "decodedBodySize": 4927533,
-            "duration": 1176
+            "duration": 1198
           },
           {
             "name": "http://localhost:4421/cesium/Assets/approximateTerrainHeights.json",
@@ -1207,7 +1207,7 @@
             "transferSize": 98333,
             "encodedBodySize": 98033,
             "decodedBodySize": 299471,
-            "duration": 310
+            "duration": 228
           },
           {
             "name": "http://localhost:4421/cesium/Assets/IAU2006_XYS/IAU2006_XYS_18.json",
@@ -1215,7 +1215,7 @@
             "transferSize": 27205,
             "encodedBodySize": 26905,
             "decodedBodySize": 65310,
-            "duration": 138
+            "duration": 129
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Images/ion-credit.png",
@@ -1223,7 +1223,7 @@
             "transferSize": 6328,
             "encodedBodySize": 6028,
             "decodedBodySize": 6028,
-            "duration": 127
+            "duration": 103
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
@@ -1231,7 +1231,7 @@
             "transferSize": 123046,
             "encodedBodySize": 122746,
             "decodedBodySize": 122746,
-            "duration": 517
+            "duration": 519
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
@@ -1239,7 +1239,7 @@
             "transferSize": 119075,
             "encodedBodySize": 118775,
             "decodedBodySize": 118775,
-            "duration": 699
+            "duration": 602
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -1247,7 +1247,7 @@
             "transferSize": 153299,
             "encodedBodySize": 152999,
             "decodedBodySize": 152999,
-            "duration": 817
+            "duration": 822
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
@@ -1255,7 +1255,7 @@
             "transferSize": 152801,
             "encodedBodySize": 152501,
             "decodedBodySize": 152501,
-            "duration": 821
+            "duration": 839
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
@@ -1263,7 +1263,7 @@
             "transferSize": 152837,
             "encodedBodySize": 152537,
             "decodedBodySize": 152537,
-            "duration": 832
+            "duration": 852
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg",
@@ -1271,7 +1271,7 @@
             "transferSize": 168280,
             "encodedBodySize": 167980,
             "decodedBodySize": 167980,
-            "duration": 920
+            "duration": 902
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
@@ -1279,15 +1279,7 @@
             "transferSize": 18496,
             "encodedBodySize": 18196,
             "decodedBodySize": 18196,
-            "duration": 850
-          },
-          {
-            "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
-            "initiatorType": "other",
-            "transferSize": 10494,
-            "encodedBodySize": 10194,
-            "decodedBodySize": 27703,
-            "duration": 20
+            "duration": 871
           },
           {
             "name": "http://localhost:4421/cesium/Workers/transferTypedArrayTest.js",
@@ -1295,7 +1287,15 @@
             "transferSize": 1279,
             "encodedBodySize": 979,
             "decodedBodySize": 979,
-            "duration": -14
+            "duration": -53
+          },
+          {
+            "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
+            "initiatorType": "other",
+            "transferSize": 10494,
+            "encodedBodySize": 10194,
+            "decodedBodySize": 27703,
+            "duration": -40
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-MXXXHGW3.js",
@@ -1303,7 +1303,7 @@
             "transferSize": 2810,
             "encodedBodySize": 2510,
             "decodedBodySize": 7675,
-            "duration": 496
+            "duration": 438
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
@@ -1311,7 +1311,7 @@
             "transferSize": 1155,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 578
+            "duration": 534
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -1319,7 +1319,7 @@
             "transferSize": 133064,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 860
+            "duration": 789
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -1327,7 +1327,7 @@
             "transferSize": 300,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 98
+            "duration": 113
           },
           {
             "name": "http://localhost:4421/cesium/Workers/incrementallyBuildTerrainPicker.js",
@@ -1335,7 +1335,7 @@
             "transferSize": 1321,
             "encodedBodySize": 1021,
             "decodedBodySize": 1892,
-            "duration": -7
+            "duration": -13
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
@@ -1343,7 +1343,7 @@
             "transferSize": 300,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 94
+            "duration": 107
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -1351,7 +1351,7 @@
             "transferSize": 300,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 95
+            "duration": 108
           }
         ],
         "canvas": {
@@ -1370,12 +1370,12 @@
       {
         "scenario": "homeMobile",
         "run": 1,
-        "elapsed": 12412,
-        "readyMs": 4825,
+        "elapsed": 12160,
+        "readyMs": 4555,
         "fallback": false,
         "idleClearsPerSecond": 0,
         "activeClearsPerSecond": 480,
-        "rafFps": 59.6,
+        "rafFps": 59.8,
         "consoleErrors": [],
         "network": [
           {
@@ -1383,14 +1383,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
-          },
-          {
-            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
-            "type": "Script",
-            "status": 200,
-            "mimeType": "text/javascript",
-            "transferSize": 764
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -1407,11 +1400,18 @@
             "transferSize": 6325
           },
           {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
+            "type": "Script",
+            "status": 200,
+            "mimeType": "text/javascript",
+            "transferSize": 764
+          },
+          {
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           },
           {
             "url": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -1456,18 +1456,18 @@
             "transferSize": 6293
           },
           {
-            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
-            "type": "XHR",
-            "status": 200,
-            "mimeType": "image/jpeg",
-            "transferSize": 119045
-          },
-          {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
             "type": "XHR",
             "status": 200,
             "mimeType": "image/jpeg",
             "transferSize": 123016
+          },
+          {
+            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
+            "type": "XHR",
+            "status": 200,
+            "mimeType": "image/jpeg",
+            "transferSize": 119045
           },
           {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -1513,16 +1513,16 @@
           }
         ],
         "perf": {
-          "lcp": 676,
+          "lcp": 732,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
-          "glClear": 2198
+          "glClear": 2174
         },
         "navigation": {
           "ttfb": 4,
-          "domContentLoaded": 673,
-          "load": 676,
-          "transferSize": 7450
+          "domContentLoaded": 725,
+          "load": 727,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -1531,7 +1531,7 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
-            "duration": 128
+            "duration": 111
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -1539,15 +1539,15 @@
             "transferSize": 266899,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 329
+            "duration": 332
           },
           {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 128
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 127
           },
           {
             "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -1555,7 +1555,7 @@
             "transferSize": 764,
             "encodedBodySize": 464,
             "decodedBodySize": 464,
-            "duration": 113
+            "duration": 101
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -1571,7 +1571,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 97
+            "duration": 108
           },
           {
             "name": "http://localhost:4421/_astro/Cesium.KAZSxW2Q.js",
@@ -1579,7 +1579,7 @@
             "transferSize": 1347255,
             "encodedBodySize": 1346955,
             "decodedBodySize": 4927533,
-            "duration": 1169
+            "duration": 1171
           },
           {
             "name": "http://localhost:4421/cesium/Assets/approximateTerrainHeights.json",
@@ -1587,7 +1587,7 @@
             "transferSize": 98333,
             "encodedBodySize": 98033,
             "decodedBodySize": 299471,
-            "duration": 209
+            "duration": 198
           },
           {
             "name": "http://localhost:4421/cesium/Assets/IAU2006_XYS/IAU2006_XYS_18.json",
@@ -1595,7 +1595,7 @@
             "transferSize": 27205,
             "encodedBodySize": 26905,
             "decodedBodySize": 65310,
-            "duration": 146
+            "duration": 132
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Images/ion-credit.png",
@@ -1603,7 +1603,7 @@
             "transferSize": 6328,
             "encodedBodySize": 6028,
             "decodedBodySize": 6028,
-            "duration": 105
+            "duration": 113
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
@@ -1611,7 +1611,7 @@
             "transferSize": 123046,
             "encodedBodySize": 122746,
             "decodedBodySize": 122746,
-            "duration": 645
+            "duration": 603
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
@@ -1619,7 +1619,7 @@
             "transferSize": 119075,
             "encodedBodySize": 118775,
             "decodedBodySize": 118775,
-            "duration": 629
+            "duration": 615
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -1627,7 +1627,7 @@
             "transferSize": 153299,
             "encodedBodySize": 152999,
             "decodedBodySize": 152999,
-            "duration": 745
+            "duration": 731
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
@@ -1635,7 +1635,7 @@
             "transferSize": 152801,
             "encodedBodySize": 152501,
             "decodedBodySize": 152501,
-            "duration": 744
+            "duration": 730
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
@@ -1643,7 +1643,7 @@
             "transferSize": 152837,
             "encodedBodySize": 152537,
             "decodedBodySize": 152537,
-            "duration": 775
+            "duration": 760
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg",
@@ -1651,7 +1651,7 @@
             "transferSize": 168280,
             "encodedBodySize": 167980,
             "decodedBodySize": 167980,
-            "duration": 785
+            "duration": 776
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
@@ -1659,15 +1659,7 @@
             "transferSize": 18496,
             "encodedBodySize": 18196,
             "decodedBodySize": 18196,
-            "duration": 840
-          },
-          {
-            "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
-            "initiatorType": "other",
-            "transferSize": 10494,
-            "encodedBodySize": 10194,
-            "decodedBodySize": 27703,
-            "duration": -8
+            "duration": 809
           },
           {
             "name": "http://localhost:4421/cesium/Workers/transferTypedArrayTest.js",
@@ -1675,7 +1667,15 @@
             "transferSize": 1279,
             "encodedBodySize": 979,
             "decodedBodySize": 979,
-            "duration": -24
+            "duration": -17
+          },
+          {
+            "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
+            "initiatorType": "other",
+            "transferSize": 10494,
+            "encodedBodySize": 10194,
+            "decodedBodySize": 27703,
+            "duration": -19
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-MXXXHGW3.js",
@@ -1683,7 +1683,7 @@
             "transferSize": 2810,
             "encodedBodySize": 2510,
             "decodedBodySize": 7675,
-            "duration": 658
+            "duration": 597
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
@@ -1691,7 +1691,7 @@
             "transferSize": 1155,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 659
+            "duration": 597
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -1699,7 +1699,7 @@
             "transferSize": 133064,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 870
+            "duration": 806
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -1707,7 +1707,7 @@
             "transferSize": 300,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 111
+            "duration": 101
           },
           {
             "name": "http://localhost:4421/cesium/Workers/incrementallyBuildTerrainPicker.js",
@@ -1715,7 +1715,7 @@
             "transferSize": 1321,
             "encodedBodySize": 1021,
             "decodedBodySize": 1892,
-            "duration": -7
+            "duration": -10
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
@@ -1748,8 +1748,8 @@
       {
         "scenario": "homeMobile",
         "run": 2,
-        "elapsed": 12016,
-        "readyMs": 4485,
+        "elapsed": 12106,
+        "readyMs": 4558,
         "fallback": false,
         "idleClearsPerSecond": 0,
         "activeClearsPerSecond": 482.67,
@@ -1761,14 +1761,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
-          },
-          {
-            "url": "http://localhost:4421/cesium/Widgets/widgets.css",
-            "type": "Stylesheet",
-            "status": 200,
-            "mimeType": "text/css",
-            "transferSize": 6325
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -1785,11 +1778,18 @@
             "transferSize": 764
           },
           {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4421/cesium/Widgets/widgets.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 6325
+          },
+          {
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
+            "type": "Stylesheet",
+            "status": 200,
+            "mimeType": "text/css",
+            "transferSize": 9724
           },
           {
             "url": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -1848,18 +1848,18 @@
             "transferSize": 123016
           },
           {
-            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
-            "type": "XHR",
-            "status": 200,
-            "mimeType": "image/jpeg",
-            "transferSize": 152771
-          },
-          {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
             "type": "XHR",
             "status": 200,
             "mimeType": "image/jpeg",
             "transferSize": 153269
+          },
+          {
+            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
+            "type": "XHR",
+            "status": 200,
+            "mimeType": "image/jpeg",
+            "transferSize": 152771
           },
           {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
@@ -1891,16 +1891,16 @@
           }
         ],
         "perf": {
-          "lcp": 604,
+          "lcp": 652,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
-          "glClear": 2190
+          "glClear": 2198
         },
         "navigation": {
-          "ttfb": 4,
-          "domContentLoaded": 682,
-          "load": 684,
-          "transferSize": 7450
+          "ttfb": 5,
+          "domContentLoaded": 747,
+          "load": 748,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -1909,7 +1909,7 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
-            "duration": 92
+            "duration": 119
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -1917,15 +1917,15 @@
             "transferSize": 266899,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 334
+            "duration": 333
           },
           {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 114
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 129
           },
           {
             "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -1933,7 +1933,7 @@
             "transferSize": 764,
             "encodedBodySize": 464,
             "decodedBodySize": 464,
-            "duration": 101
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -1941,7 +1941,7 @@
             "transferSize": 743,
             "encodedBodySize": 443,
             "decodedBodySize": 443,
-            "duration": 101
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -1949,7 +1949,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 107
+            "duration": 109
           },
           {
             "name": "http://localhost:4421/_astro/Cesium.KAZSxW2Q.js",
@@ -1957,7 +1957,7 @@
             "transferSize": 1347255,
             "encodedBodySize": 1346955,
             "decodedBodySize": 4927533,
-            "duration": 1173
+            "duration": 1170
           },
           {
             "name": "http://localhost:4421/cesium/Assets/approximateTerrainHeights.json",
@@ -1965,7 +1965,7 @@
             "transferSize": 98333,
             "encodedBodySize": 98033,
             "decodedBodySize": 299471,
-            "duration": 180
+            "duration": 199
           },
           {
             "name": "http://localhost:4421/cesium/Assets/IAU2006_XYS/IAU2006_XYS_18.json",
@@ -1973,7 +1973,7 @@
             "transferSize": 27205,
             "encodedBodySize": 26905,
             "decodedBodySize": 65310,
-            "duration": 140
+            "duration": 139
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Images/ion-credit.png",
@@ -1989,7 +1989,7 @@
             "transferSize": 123046,
             "encodedBodySize": 122746,
             "decodedBodySize": 122746,
-            "duration": 627
+            "duration": 641
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
@@ -1997,15 +1997,7 @@
             "transferSize": 119075,
             "encodedBodySize": 118775,
             "decodedBodySize": 118775,
-            "duration": 626
-          },
-          {
-            "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
-            "initiatorType": "xmlhttprequest",
-            "transferSize": 152801,
-            "encodedBodySize": 152501,
-            "decodedBodySize": 152501,
-            "duration": 727
+            "duration": 625
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -2013,7 +2005,15 @@
             "transferSize": 153299,
             "encodedBodySize": 152999,
             "decodedBodySize": 152999,
-            "duration": 740
+            "duration": 741
+          },
+          {
+            "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
+            "initiatorType": "xmlhttprequest",
+            "transferSize": 152801,
+            "encodedBodySize": 152501,
+            "decodedBodySize": 152501,
+            "duration": 738
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
@@ -2021,7 +2021,7 @@
             "transferSize": 152837,
             "encodedBodySize": 152537,
             "decodedBodySize": 152537,
-            "duration": 773
+            "duration": 770
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg",
@@ -2029,7 +2029,7 @@
             "transferSize": 168280,
             "encodedBodySize": 167980,
             "decodedBodySize": 167980,
-            "duration": 791
+            "duration": 784
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
@@ -2037,39 +2037,7 @@
             "transferSize": 18496,
             "encodedBodySize": 18196,
             "decodedBodySize": 18196,
-            "duration": 842
-          },
-          {
-            "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
-            "initiatorType": "other",
-            "transferSize": 10494,
-            "encodedBodySize": 10194,
-            "decodedBodySize": 27703,
-            "duration": -9
-          },
-          {
-            "name": "http://localhost:4421/cesium/Workers/chunk-MXXXHGW3.js",
-            "initiatorType": "script",
-            "transferSize": 2810,
-            "encodedBodySize": 2510,
-            "decodedBodySize": 7675,
-            "duration": 638
-          },
-          {
-            "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
-            "initiatorType": "script",
-            "transferSize": 1155,
-            "encodedBodySize": 855,
-            "decodedBodySize": 1518,
-            "duration": 638
-          },
-          {
-            "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
-            "initiatorType": "script",
-            "transferSize": 133064,
-            "encodedBodySize": 132764,
-            "decodedBodySize": 491570,
-            "duration": 856
+            "duration": 847
           },
           {
             "name": "http://localhost:4421/cesium/Workers/transferTypedArrayTest.js",
@@ -2077,7 +2045,39 @@
             "transferSize": 1279,
             "encodedBodySize": 979,
             "decodedBodySize": 979,
-            "duration": -12
+            "duration": -22
+          },
+          {
+            "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
+            "initiatorType": "other",
+            "transferSize": 10494,
+            "encodedBodySize": 10194,
+            "decodedBodySize": 27703,
+            "duration": -25
+          },
+          {
+            "name": "http://localhost:4421/cesium/Workers/chunk-MXXXHGW3.js",
+            "initiatorType": "script",
+            "transferSize": 2810,
+            "encodedBodySize": 2510,
+            "decodedBodySize": 7675,
+            "duration": 625
+          },
+          {
+            "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
+            "initiatorType": "script",
+            "transferSize": 1155,
+            "encodedBodySize": 855,
+            "decodedBodySize": 1518,
+            "duration": 626
+          },
+          {
+            "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
+            "initiatorType": "script",
+            "transferSize": 133064,
+            "encodedBodySize": 132764,
+            "decodedBodySize": 491570,
+            "duration": 847
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -2085,7 +2085,7 @@
             "transferSize": 300,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 89
+            "duration": 99
           },
           {
             "name": "http://localhost:4421/cesium/Workers/incrementallyBuildTerrainPicker.js",
@@ -2101,7 +2101,7 @@
             "transferSize": 300,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 95
+            "duration": 111
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -2109,7 +2109,7 @@
             "transferSize": 300,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 96
+            "duration": 113
           }
         ],
         "canvas": {
@@ -2126,12 +2126,12 @@
       {
         "scenario": "homeMobile",
         "run": 3,
-        "elapsed": 12417,
-        "readyMs": 4831,
+        "elapsed": 12177,
+        "readyMs": 4609,
         "fallback": false,
         "idleClearsPerSecond": 0,
-        "activeClearsPerSecond": 474.67,
-        "rafFps": 59.1,
+        "activeClearsPerSecond": 477.33,
+        "rafFps": 59.5,
         "consoleErrors": [],
         "network": [
           {
@@ -2139,7 +2139,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -2163,11 +2163,11 @@
             "transferSize": 6325
           },
           {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           },
           {
             "url": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -2212,18 +2212,18 @@
             "transferSize": 6293
           },
           {
-            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
-            "type": "XHR",
-            "status": 200,
-            "mimeType": "image/jpeg",
-            "transferSize": 123016
-          },
-          {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
             "type": "XHR",
             "status": 200,
             "mimeType": "image/jpeg",
             "transferSize": 119045
+          },
+          {
+            "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
+            "type": "XHR",
+            "status": 200,
+            "mimeType": "image/jpeg",
+            "transferSize": 123016
           },
           {
             "url": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -2269,16 +2269,16 @@
           }
         ],
         "perf": {
-          "lcp": 592,
+          "lcp": 628,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
-          "glClear": 2190
+          "glClear": 2198
         },
         "navigation": {
-          "ttfb": 5,
-          "domContentLoaded": 678,
-          "load": 681,
-          "transferSize": 7450
+          "ttfb": 4,
+          "domContentLoaded": 706,
+          "load": 709,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -2287,15 +2287,7 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
-            "duration": 111
-          },
-          {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
-            "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 124
+            "duration": 125
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -2303,7 +2295,15 @@
             "transferSize": 266899,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 327
+            "duration": 344
+          },
+          {
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
+            "initiatorType": "link",
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 139
           },
           {
             "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -2311,7 +2311,7 @@
             "transferSize": 764,
             "encodedBodySize": 464,
             "decodedBodySize": 464,
-            "duration": 97
+            "duration": 112
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -2319,7 +2319,7 @@
             "transferSize": 743,
             "encodedBodySize": 443,
             "decodedBodySize": 443,
-            "duration": 97
+            "duration": 112
           },
           {
             "name": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -2327,7 +2327,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 111
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/_astro/Cesium.KAZSxW2Q.js",
@@ -2335,7 +2335,7 @@
             "transferSize": 1347255,
             "encodedBodySize": 1346955,
             "decodedBodySize": 4927533,
-            "duration": 1168
+            "duration": 1169
           },
           {
             "name": "http://localhost:4421/cesium/Assets/approximateTerrainHeights.json",
@@ -2343,7 +2343,7 @@
             "transferSize": 98333,
             "encodedBodySize": 98033,
             "decodedBodySize": 299471,
-            "duration": 182
+            "duration": 176
           },
           {
             "name": "http://localhost:4421/cesium/Assets/IAU2006_XYS/IAU2006_XYS_18.json",
@@ -2351,7 +2351,7 @@
             "transferSize": 27205,
             "encodedBodySize": 26905,
             "decodedBodySize": 65310,
-            "duration": 130
+            "duration": 133
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Images/ion-credit.png",
@@ -2359,7 +2359,7 @@
             "transferSize": 6328,
             "encodedBodySize": 6028,
             "decodedBodySize": 6028,
-            "duration": 102
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_px.jpg",
@@ -2367,7 +2367,7 @@
             "transferSize": 123046,
             "encodedBodySize": 122746,
             "decodedBodySize": 122746,
-            "duration": 628
+            "duration": 635
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg",
@@ -2375,7 +2375,7 @@
             "transferSize": 119075,
             "encodedBodySize": 118775,
             "decodedBodySize": 118775,
-            "duration": 627
+            "duration": 604
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_py.jpg",
@@ -2383,7 +2383,7 @@
             "transferSize": 153299,
             "encodedBodySize": 152999,
             "decodedBodySize": 152999,
-            "duration": 742
+            "duration": 724
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_my.jpg",
@@ -2391,7 +2391,7 @@
             "transferSize": 152801,
             "encodedBodySize": 152501,
             "decodedBodySize": 152501,
-            "duration": 742
+            "duration": 727
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg",
@@ -2399,7 +2399,7 @@
             "transferSize": 152837,
             "encodedBodySize": 152537,
             "decodedBodySize": 152537,
-            "duration": 775
+            "duration": 771
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg",
@@ -2407,7 +2407,7 @@
             "transferSize": 168280,
             "encodedBodySize": 167980,
             "decodedBodySize": 167980,
-            "duration": 784
+            "duration": 794
           },
           {
             "name": "http://localhost:4421/cesium/Assets/Textures/moonSmall.jpg",
@@ -2415,7 +2415,7 @@
             "transferSize": 18496,
             "encodedBodySize": 18196,
             "decodedBodySize": 18196,
-            "duration": 842
+            "duration": 841
           },
           {
             "name": "http://localhost:4421/cesium/Workers/createVerticesFromHeightmap.js",
@@ -2423,7 +2423,7 @@
             "transferSize": 10494,
             "encodedBodySize": 10194,
             "decodedBodySize": 27703,
-            "duration": -20
+            "duration": -9
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-MXXXHGW3.js",
@@ -2431,7 +2431,7 @@
             "transferSize": 2810,
             "encodedBodySize": 2510,
             "decodedBodySize": 7675,
-            "duration": 644
+            "duration": 624
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-J6FR5PFB.js",
@@ -2439,7 +2439,7 @@
             "transferSize": 1155,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 643
+            "duration": 641
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -2447,7 +2447,7 @@
             "transferSize": 133064,
             "encodedBodySize": 132764,
             "decodedBodySize": 491570,
-            "duration": 861
+            "duration": 835
           },
           {
             "name": "http://localhost:4421/cesium/Workers/transferTypedArrayTest.js",
@@ -2455,7 +2455,7 @@
             "transferSize": 1279,
             "encodedBodySize": 979,
             "decodedBodySize": 979,
-            "duration": -30
+            "duration": -7
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -2463,7 +2463,7 @@
             "transferSize": 300,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 103
+            "duration": 104
           },
           {
             "name": "http://localhost:4421/cesium/Workers/incrementallyBuildTerrainPicker.js",
@@ -2479,7 +2479,7 @@
             "transferSize": 300,
             "encodedBodySize": 855,
             "decodedBodySize": 1518,
-            "duration": 108
+            "duration": 109
           },
           {
             "name": "http://localhost:4421/cesium/Workers/chunk-GWE2HRAQ.js",
@@ -2506,7 +2506,7 @@
       {
         "scenario": "homeVisibleMobile",
         "run": 1,
-        "elapsed": 3894,
+        "elapsed": 3809,
         "readyMs": null,
         "fallback": false,
         "idleClearsPerSecond": null,
@@ -2519,14 +2519,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
-          },
-          {
-            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
-            "type": "Script",
-            "status": 200,
-            "mimeType": "text/javascript",
-            "transferSize": 764
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -2536,6 +2529,13 @@
             "transferSize": 726
           },
           {
+            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
+            "type": "Script",
+            "status": 200,
+            "mimeType": "text/javascript",
+            "transferSize": 764
+          },
+          {
             "url": "http://localhost:4421/cesium/Widgets/widgets.css",
             "type": "Stylesheet",
             "status": 200,
@@ -2543,11 +2543,11 @@
             "transferSize": 6325
           },
           {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           },
           {
             "url": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -2565,16 +2565,16 @@
           }
         ],
         "perf": {
-          "lcp": 1876,
+          "lcp": 1808,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
           "glClear": 0
         },
         "navigation": {
           "ttfb": 5,
-          "domContentLoaded": 1215,
-          "load": 1854,
-          "transferSize": 7450
+          "domContentLoaded": 1026,
+          "load": 1788,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -2583,23 +2583,7 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
-            "duration": 275
-          },
-          {
-            "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
-            "initiatorType": "link",
-            "transferSize": 266899,
-            "encodedBodySize": 266599,
-            "decodedBodySize": 266599,
-            "duration": 1617
-          },
-          {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
-            "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 320
+            "duration": 269
           },
           {
             "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -2607,7 +2591,23 @@
             "transferSize": 764,
             "encodedBodySize": 464,
             "decodedBodySize": 464,
-            "duration": 195
+            "duration": 166
+          },
+          {
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
+            "initiatorType": "link",
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 319
+          },
+          {
+            "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
+            "initiatorType": "link",
+            "transferSize": 266899,
+            "encodedBodySize": 266599,
+            "decodedBodySize": 266599,
+            "duration": 1598
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -2615,7 +2615,7 @@
             "transferSize": 743,
             "encodedBodySize": 443,
             "decodedBodySize": 443,
-            "duration": 177
+            "duration": 178
           },
           {
             "name": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -2623,7 +2623,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 204
+            "duration": 205
           }
         ],
         "canvas": null,
@@ -2634,7 +2634,7 @@
       {
         "scenario": "homeVisibleMobile",
         "run": 2,
-        "elapsed": 3847,
+        "elapsed": 3840,
         "readyMs": null,
         "fallback": false,
         "idleClearsPerSecond": null,
@@ -2647,14 +2647,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
-          },
-          {
-            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
-            "type": "Script",
-            "status": 200,
-            "mimeType": "text/javascript",
-            "transferSize": 764
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -2664,6 +2657,13 @@
             "transferSize": 726
           },
           {
+            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
+            "type": "Script",
+            "status": 200,
+            "mimeType": "text/javascript",
+            "transferSize": 764
+          },
+          {
             "url": "http://localhost:4421/cesium/Widgets/widgets.css",
             "type": "Stylesheet",
             "status": 200,
@@ -2671,11 +2671,11 @@
             "transferSize": 6325
           },
           {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           },
           {
             "url": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -2693,16 +2693,16 @@
           }
         ],
         "perf": {
-          "lcp": 1832,
+          "lcp": 1828,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
           "glClear": 0
         },
         "navigation": {
           "ttfb": 4,
-          "domContentLoaded": 1097,
-          "load": 1814,
-          "transferSize": 7450
+          "domContentLoaded": 1050,
+          "load": 1800,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -2711,7 +2711,7 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
-            "duration": 291
+            "duration": 264
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -2719,15 +2719,15 @@
             "transferSize": 266899,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 1597
+            "duration": 1594
           },
           {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 320
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 312
           },
           {
             "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -2735,7 +2735,7 @@
             "transferSize": 764,
             "encodedBodySize": 464,
             "decodedBodySize": 464,
-            "duration": 195
+            "duration": 178
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -2743,7 +2743,7 @@
             "transferSize": 743,
             "encodedBodySize": 443,
             "decodedBodySize": 443,
-            "duration": 180
+            "duration": 189
           },
           {
             "name": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -2751,7 +2751,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 197
+            "duration": 201
           }
         ],
         "canvas": null,
@@ -2762,7 +2762,7 @@
       {
         "scenario": "homeVisibleMobile",
         "run": 3,
-        "elapsed": 3829,
+        "elapsed": 3858,
         "readyMs": null,
         "fallback": false,
         "idleClearsPerSecond": null,
@@ -2775,14 +2775,7 @@
             "type": "Document",
             "status": 200,
             "mimeType": "text/html",
-            "transferSize": 7431
-          },
-          {
-            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
-            "type": "Script",
-            "status": 200,
-            "mimeType": "text/javascript",
-            "transferSize": 764
+            "transferSize": 7900
           },
           {
             "url": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -2792,6 +2785,13 @@
             "transferSize": 726
           },
           {
+            "url": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
+            "type": "Script",
+            "status": 200,
+            "mimeType": "text/javascript",
+            "transferSize": 764
+          },
+          {
             "url": "http://localhost:4421/cesium/Widgets/widgets.css",
             "type": "Stylesheet",
             "status": 200,
@@ -2799,11 +2799,11 @@
             "transferSize": 6325
           },
           {
-            "url": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "url": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "type": "Stylesheet",
             "status": 200,
             "mimeType": "text/css",
-            "transferSize": 9520
+            "transferSize": 9724
           },
           {
             "url": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -2821,16 +2821,16 @@
           }
         ],
         "perf": {
-          "lcp": 1836,
+          "lcp": 1848,
           "lcpElement": "div.poster-sphere",
           "cls": 0,
           "glClear": 0
         },
         "navigation": {
           "ttfb": 4,
-          "domContentLoaded": 1113,
-          "load": 1808,
-          "transferSize": 7450
+          "domContentLoaded": 992,
+          "load": 1826,
+          "transferSize": 7919
         },
         "resources": [
           {
@@ -2839,7 +2839,7 @@
             "transferSize": 6312,
             "encodedBodySize": 6012,
             "decodedBodySize": 30710,
-            "duration": 282
+            "duration": 289
           },
           {
             "name": "http://localhost:4421/textures/earth-blue-marble-2048.jpg",
@@ -2847,15 +2847,15 @@
             "transferSize": 266899,
             "encodedBodySize": 266599,
             "decodedBodySize": 266599,
-            "duration": 1589
+            "duration": 1625
           },
           {
-            "name": "http://localhost:4421/_astro/BaseLayout.C76YNFy3.css",
+            "name": "http://localhost:4421/_astro/BaseLayout.D8O4CBX4.css",
             "initiatorType": "link",
-            "transferSize": 9507,
-            "encodedBodySize": 9207,
-            "decodedBodySize": 41863,
-            "duration": 312
+            "transferSize": 9711,
+            "encodedBodySize": 9411,
+            "decodedBodySize": 43006,
+            "duration": 323
           },
           {
             "name": "http://localhost:4421/_astro/index.DdtRdKUj.css",
@@ -2863,7 +2863,7 @@
             "transferSize": 764,
             "encodedBodySize": 464,
             "decodedBodySize": 464,
-            "duration": 188
+            "duration": 206
           },
           {
             "name": "http://localhost:4421/_astro/index.astro_astro_type_script_index_0_lang.CHAzfu9D.js",
@@ -2871,7 +2871,7 @@
             "transferSize": 743,
             "encodedBodySize": 443,
             "decodedBodySize": 443,
-            "duration": 171
+            "duration": 185
           },
           {
             "name": "http://localhost:4421/_astro/globe.BmZGt-W5.js",
@@ -2879,7 +2879,7 @@
             "transferSize": 4076,
             "encodedBodySize": 3776,
             "decodedBodySize": 9319,
-            "duration": 202
+            "duration": 208
           }
         ],
         "canvas": null,
@@ -2891,12 +2891,12 @@
   },
   "summary": {
     "article": {
-      "lcpMedianMs": 1308,
-      "lcpWorstMs": 1516,
+      "lcpMedianMs": 1228,
+      "lcpWorstMs": 1328,
       "clsMedian": 0,
       "clsWorst": 0,
-      "domContentLoadedMedianMs": 1291,
-      "loadMedianMs": 1291,
+      "domContentLoadedMedianMs": 1072,
+      "loadMedianMs": 1073,
       "readyMedianMs": null,
       "readyWorstMs": 0,
       "idleClearsPerSecond": [
@@ -2917,40 +2917,40 @@
       "rafFpsMedian": null
     },
     "homeDesktop": {
-      "lcpMedianMs": 500,
-      "lcpWorstMs": 568,
+      "lcpMedianMs": 492,
+      "lcpWorstMs": 528,
       "clsMedian": 0,
       "clsWorst": 0,
-      "domContentLoadedMedianMs": 431,
-      "loadMedianMs": 459,
-      "readyMedianMs": 3491,
-      "readyWorstMs": 3619,
+      "domContentLoadedMedianMs": 417,
+      "loadMedianMs": 451,
+      "readyMedianMs": 3724,
+      "readyWorstMs": 3754,
       "idleClearsPerSecond": [
         0,
         0,
         0
       ],
       "activeClearsPerSecond": [
-        482.67,
+        485.33,
         482.67,
         482.67
       ],
       "rafFps": [
-        60.1,
+        60.2,
         60.1,
         60.1
       ],
       "rafFpsMedian": 60.1
     },
     "homeMobile": {
-      "lcpMedianMs": 604,
-      "lcpWorstMs": 676,
+      "lcpMedianMs": 652,
+      "lcpWorstMs": 732,
       "clsMedian": 0,
       "clsWorst": 0,
-      "domContentLoadedMedianMs": 678,
-      "loadMedianMs": 681,
-      "readyMedianMs": 4825,
-      "readyWorstMs": 4831,
+      "domContentLoadedMedianMs": 725,
+      "loadMedianMs": 727,
+      "readyMedianMs": 4558,
+      "readyWorstMs": 4609,
       "idleClearsPerSecond": [
         0,
         0,
@@ -2959,22 +2959,22 @@
       "activeClearsPerSecond": [
         480,
         482.67,
-        474.67
+        477.33
       ],
       "rafFps": [
-        59.6,
+        59.8,
         60.1,
-        59.1
+        59.5
       ],
-      "rafFpsMedian": 59.6
+      "rafFpsMedian": 59.8
     },
     "homeVisibleMobile": {
-      "lcpMedianMs": 1836,
-      "lcpWorstMs": 1876,
+      "lcpMedianMs": 1828,
+      "lcpWorstMs": 1848,
       "clsMedian": 0,
       "clsWorst": 0,
-      "domContentLoadedMedianMs": 1113,
-      "loadMedianMs": 1814,
+      "domContentLoadedMedianMs": 1026,
+      "loadMedianMs": 1800,
       "readyMedianMs": null,
       "readyWorstMs": 0,
       "idleClearsPerSecond": [
@@ -2997,19 +2997,19 @@
   },
   "sizes": {
     "nonMap": {
-      "htmlGzip": 9188,
-      "cssGzip": 9158,
+      "htmlGzip": 9371,
+      "cssGzip": 9362,
       "jsGzip": 0,
-      "totalGzip": 18346,
+      "totalGzip": 18733,
       "files": [
         {
-          "ref": "/_astro/BaseLayout.C76YNFy3.css",
-          "gzipBytes": 9158
+          "ref": "/_astro/BaseLayout.DH6CJ2wo.css",
+          "gzipBytes": 9362
         }
       ]
     },
     "home": {
-      "htmlGzip": 7132,
+      "htmlGzip": 7600,
       "engineGzip": 1347806,
       "engineFiles": [
         {
@@ -3038,7 +3038,7 @@
   },
   "budgetResults": {
     "nonMapGzip": {
-      "value": 18346,
+      "value": 18733,
       "limit": 184320,
       "pass": true
     },
@@ -3073,7 +3073,7 @@
       "pass": true
     },
     "articleLcpMs": {
-      "value": 1516,
+      "value": 1328,
       "limit": 2500,
       "pass": true
     },
@@ -3083,12 +3083,12 @@
       "pass": true
     },
     "globeDesktopReadyMs": {
-      "value": 3619,
+      "value": 3754,
       "limit": 4000,
       "pass": true
     },
     "globeMobileReadyMs": {
-      "value": 4831,
+      "value": 4609,
       "limit": 6000,
       "pass": true
     }

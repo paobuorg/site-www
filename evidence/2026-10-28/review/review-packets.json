@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T08:38:58.502Z",
+  "generatedAt": "2026-10-28T12:33:45.787Z",
   "note": "Review material only. Approval is recorded separately in data/reviews with a matching contentDigest; this file is not an independent or professional approval.",
   "contentLock": {
     "schemaVersion": 1,
@@ -11,24 +11,24 @@
       "data",
       "assets"
     ],
-    "generatedAt": "2026-10-28T08:34:16.949Z",
+    "generatedAt": "2026-10-28T12:01:08.267Z",
     "repositories": [
       {
         "name": "running-routes",
-        "commit": "67a80abe30001527e6f60778e91ad9b206b31137",
-        "digest": "1001cd3a1a07e663c7c76a68aa6147cbc467d1c6f6eeb94e858bf541e83a1e46",
+        "commit": "a9316c267195cf5a946c99ccb7d235e5fb3c5ed9",
+        "digest": "6f74c34e49de77d3aedfed555ed38ad4b46a4180f6bb4d60e211438ad4714151",
         "fileCount": 99
       },
       {
         "name": "running-knowledge",
-        "commit": "1e8d1146106e642e3a01b28e413da33f8be10258",
-        "digest": "98e3c67852d9dabf061682feb56a7c2e2392de02b162cfefb454271619ac4443",
+        "commit": "015a4c71e54262b935a3e7f3c9e5f899362b80aa",
+        "digest": "4dcd794785e25f91d9aedac60b053a0465b0a4aa39df32a159cbef4f596c22c4",
         "fileCount": 297
       },
       {
         "name": "running-tools",
-        "commit": "a423a457a1d9fed1c086ef84c67f267d9b62112a",
-        "digest": "80004748b9faa2465b723a910b09f706dc57167838ab96dc2ad36ecfb6abe558",
+        "commit": "db5aec2991de9a854a9a70354ef9e460712eefda",
+        "digest": "b95a1a16465a57ff867e87c8d42ec268ec020d8624945e9d1362ce4cffa5767e",
         "fileCount": 94
       }
     ],
@@ -155,8 +155,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -172,14 +172,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "ecc9920cb619fa04dcd1a4f9a885c1bb418f6aa5de2cf5112325a3dbec595496"
+          "contentDigest": "d11680997e7b4b78d932c0558f730f5e4444bdd71892122fcc8e948866857f5a"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "63ff191e90ebe58f8399f9eabb1791c1a0984229cf440c9fb5b54ab2e019fc81"
+          "contentDigest": "7157d5452000488eda243c6bd4262079f69c4a35dfb6a8ea781319c98e318397"
         }
       ],
       "translations": [
@@ -194,9 +194,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 820,
-          "digest": "63ff191e90ebe58f8399f9eabb1791c1a0984229cf440c9fb5b54ab2e019fc81",
-          "body": "## 赛道身份\n\n北京马拉松从天安门广场东侧出发，沿长安街和城市北部道路行进，终点在奥林匹克公园中心区景观大道。 本页固定的是 **2026-beijing-official-course** 版本，官方资料来自 北京马拉松组织委员会。\n\n北京是一条穿越城市中轴与北部城区的点对点赛道，起终点分离，比赛日交通与安保安排尤其重要。把官方路线通知当作版本依据，不要把旧年份的轨迹套到 2026 年。\n\n## 已核验的事实\n\n- 起点在天安门广场东侧，终点在奥林匹克公园中心区景观大道。\n- 2026 路线沿长安街、复兴路和奥林匹克西路等城市道路行进，点对点方向。\n- 官方站点为动态页面，未提供可再分发的 GPX；本页只记录固定版本和官方入口。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 北京马拉松组织委员会 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 819,
+          "digest": "7157d5452000488eda243c6bd4262079f69c4a35dfb6a8ea781319c98e318397",
+          "body": "## 赛道身份\n\n北京马拉松从天安门广场东侧出发，沿长安街和城市北部道路行进，终点在奥林匹克公园中心区景观大道。 本页固定的是 **2026-beijing-official-course** 版本，官方资料来自 北京马拉松组织委员会。\n\n北京是一条穿越城市中轴与北部城区的点对点赛道，起终点分离，比赛日交通与安保安排尤其重要。把官方路线通知当作版本依据，不要把旧年份的轨迹套到 2026 年。\n\n## 已核验的事实\n\n- 起点在天安门广场东侧，终点在奥林匹克公园中心区景观大道。\n- 2026 路线沿长安街、复兴路和奥林匹克西路等城市道路行进，点对点方向。\n- 官方站点为动态页面，未提供可再分发的 GPX；本页只记录固定版本和官方入口。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 北京马拉松组织委员会 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -209,9 +209,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2363,
-          "digest": "ecc9920cb619fa04dcd1a4f9a885c1bb418f6aa5de2cf5112325a3dbec595496",
-          "body": "## Course identity\n\nThe Beijing Marathon starts on the east side of Tiananmen Square, follows Chang’an Avenue and northern city roads, and finishes on the Landscape Avenue in the Olympic Park central area. This page pins the **2026-beijing-official-course** version using the organiser's public material from 北京马拉松组织委员会.\n\nBeijing is a point-to-point course through the central axis and northern city, with separate start and finish; race-day transport and security arrangements matter. Treat the official route notice as the version authority, not an old-year track.\n\n## Verified facts\n\n- It starts on the east side of Tiananmen Square and finishes on the Olympic Park central Landscape Avenue.\n- The 2026 course follows city roads including Chang’an Avenue, Fuxing Road and Olympic West Road; it is point-to-point.\n- The official site is a dynamic page without a redistributable GPX; this page records the pinned version and official entry point only.\n- Distance basis: Official 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from 北京马拉松组织委员会's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2361,
+          "digest": "d11680997e7b4b78d932c0558f730f5e4444bdd71892122fcc8e948866857f5a",
+          "body": "## Course identity\n\nThe Beijing Marathon starts on the east side of Tiananmen Square, follows Chang’an Avenue and northern city roads, and finishes on the Landscape Avenue in the Olympic Park central area. This page pins the **2026-beijing-official-course** version using the organiser's public material from 北京马拉松组织委员会.\n\nBeijing is a point-to-point course through the central axis and northern city, with separate start and finish; race-day transport and security arrangements matter. Treat the official route notice as the version authority, not an old-year track.\n\n## Verified facts\n\n- It starts on the east side of Tiananmen Square and finishes on the Olympic Park central Landscape Avenue.\n- The 2026 course follows city roads including Chang’an Avenue, Fuxing Road and Olympic West Road; it is point-to-point.\n- The official site is a dynamic page without a redistributable GPX; this page records the pinned version and official entry point only.\n- Distance basis: Official 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from 北京马拉松组织委员会's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -246,8 +246,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -263,14 +263,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "dbf3114876a67fd6bd8af38303bb98f59bf368b8f3e1965bb39156ddea96bfde"
+          "contentDigest": "f74c48759a8d6302b69164fccad298262e6abbb9fd2ed7544894b017465e5b17"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "883eb4593c4d19cd0acd564a945d9102d73da9ce291a038a170ffb3b7b50a031"
+          "contentDigest": "208cc3f510d1e2dee3ba75f21dbb6bad60f0ae0a789eae163cd16151de545a3c"
         }
       ],
       "translations": [
@@ -285,9 +285,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 812,
-          "digest": "883eb4593c4d19cd0acd564a945d9102d73da9ce291a038a170ffb3b7b50a031",
-          "body": "## 赛道身份\n\n柏林马拉松在蒂尔加滕的六月十七日大街起跑，穿过柏林市区后在勃兰登堡门结束，是一条起点与终点相邻的城市环线。 本页固定的是 **2026-berlin-official-course** 版本，官方资料来自 SCC Events。\n\n柏林是起点与终点相邻的城市环线，住宿和赛后集合可以围绕市中心安排。低起伏只是官方描述，不能替代你对比赛日天气、拥挤和自身配速的判断。\n\n## 已核验的事实\n\n- 起点在蒂尔加滕的六月十七日大街，终点在勃兰登堡门。\n- 官方将赛道描述为少起伏的城市路线；本站不把“平坦”扩展成未经测量的爬升数字。\n- 路线穿过波茨坦广场和御林广场等中心区域；官方提供路线图，没有公开 GPX。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 SCC Events 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 811,
+          "digest": "208cc3f510d1e2dee3ba75f21dbb6bad60f0ae0a789eae163cd16151de545a3c",
+          "body": "## 赛道身份\n\n柏林马拉松在蒂尔加滕的六月十七日大街起跑，穿过柏林市区后在勃兰登堡门结束，是一条起点与终点相邻的城市环线。 本页固定的是 **2026-berlin-official-course** 版本，官方资料来自 SCC Events。\n\n柏林是起点与终点相邻的城市环线，住宿和赛后集合可以围绕市中心安排。低起伏只是官方描述，不能替代你对比赛日天气、拥挤和自身配速的判断。\n\n## 已核验的事实\n\n- 起点在蒂尔加滕的六月十七日大街，终点在勃兰登堡门。\n- 官方将赛道描述为少起伏的城市路线；本站不把“平坦”扩展成未经测量的爬升数字。\n- 路线穿过波茨坦广场和御林广场等中心区域；官方提供路线图，没有公开 GPX。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 SCC Events 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -300,9 +300,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2352,
-          "digest": "dbf3114876a67fd6bd8af38303bb98f59bf368b8f3e1965bb39156ddea96bfde",
-          "body": "## Course identity\n\nThe Berlin Marathon starts on Straße des 17. Juni in the Tiergarten, runs through Berlin and finishes at the Brandenburg Gate, with start and finish close together. This page pins the **2026-berlin-official-course** version using the organiser's public material from SCC Events.\n\nBerlin is a city loop with adjacent start and finish, so accommodation and post-race meeting can be planned around the centre. “Flat” is the organiser’s description, not a substitute for your own judgement about weather, crowding and pacing on race day.\n\n## Verified facts\n\n- It starts on Straße des 17. Juni in the Tiergarten and finishes at the Brandenburg Gate.\n- The organiser describes a flat city course with very little elevation gain; this page does not turn that description into an unverified climb figure.\n- The route passes central areas including Potsdamer Platz and Gendarmenmarkt; a course map is published, but no public GPX.\n- Distance basis: Official 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from SCC Events's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2350,
+          "digest": "f74c48759a8d6302b69164fccad298262e6abbb9fd2ed7544894b017465e5b17",
+          "body": "## Course identity\n\nThe Berlin Marathon starts on Straße des 17. Juni in the Tiergarten, runs through Berlin and finishes at the Brandenburg Gate, with start and finish close together. This page pins the **2026-berlin-official-course** version using the organiser's public material from SCC Events.\n\nBerlin is a city loop with adjacent start and finish, so accommodation and post-race meeting can be planned around the centre. “Flat” is the organiser’s description, not a substitute for your own judgement about weather, crowding and pacing on race day.\n\n## Verified facts\n\n- It starts on Straße des 17. Juni in the Tiergarten and finishes at the Brandenburg Gate.\n- The organiser describes a flat city course with very little elevation gain; this page does not turn that description into an unverified climb figure.\n- The route passes central areas including Potsdamer Platz and Gendarmenmarkt; a course map is published, but no public GPX.\n- Distance basis: Official 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from SCC Events's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -356,14 +356,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "130ff23043df1414cc9605a7b17bbab8bbad68faae897042b2c637c07072ac8c"
+          "contentDigest": "ad68dc49463bae9b277f8505751003a737489f12ed2f8e2143b4819597436262"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "024a5afa404928650f0684567e2df5ef7b1ffc14c5b06d64378deb89c7fd1494"
+          "contentDigest": "f8f229c858d87447d0be7a2fc0fc88a6ad12ad806f91e1f0aaea307847784e96"
         }
       ],
       "translations": [
@@ -379,8 +379,8 @@
           ],
           "translationStatus": "reviewed",
           "bodyCharacters": 1055,
-          "digest": "024a5afa404928650f0684567e2df5ef7b1ffc14c5b06d64378deb89c7fd1494",
-          "body": "## 这是一条怎样的赛道\n\n波士顿马拉松的赛道是一条**点对点**公路路线：起点在霍普金顿（Hopkinton），终点在波士顿（Boston）。它不是一个绕圈赛道，因此起终点不在同一处，比赛日的交通、存包和赛后离开路线都需要按点对点赛事来安排。\n\n本页把「赛道身份」与「赛道几何」分开处理。赛道身份回答的是：这场比赛从哪里出发、在哪里结束、采用哪个版本的路线。赛道几何则是可以在地图上逐段查看的坐标序列。对这条赛道，我们目前只有前者的可靠资料。\n\n## 已核验的信息\n\n- 赛事方公布的路线为霍普金顿至波士顿，点对点方向。\n- 全程采用马拉松标准距离 42.195 公里。\n- 本页固定的赛道版本为 `2026-baa-published-course`，依据 BAA 2026 年赛道页面与官方地图；后续若赛事方调整路线，本页需要重新核验并更新版本号。\n\n## 哪些信息本页不提供\n\n波士顿马拉松的官方赛道页面提供赛事说明与官方地图，但**没有授权我们复制或再分发完整轨迹**。因此本页不显示逐段海拔、坡度剖面或可下载的 GPX，也不把其他网站上的轨迹当作官方几何。地图锚点是编辑添加的波士顿一侧概览定位，不是 BAA 官方起终点坐标；来源页只用于确认大致城市位置。\n\n如果你需要精确的赛道几何，请以赛事方发布的官方资料为准；比赛日的实际路线也可能因施工、天气或安全安排临时调整。\n\n## 怎样使用这条赛道页\n\n把本页当作赛前阅读的入口，而不是导航工具：\n\n1. 先确认比赛年份与赛道版本，避免把旧版路线信息套用到新一届比赛。\n2. 起终点分离意味着住宿、交通和赛后集合点要分别规划。\n3. 训练中的配速与补给方案可以参考本站的[马拉松距离](/articles/marathon-distance/)与[轻松跑](/articles/easy-run/)条目，但不要根据未经核验的坡度传说制定比赛策略。\n4. 需要把完赛时间换算为配速时，使用[配速计算器](/tools/pace/)。\n\n## 资料与再发布\n\n本页由跑地图根据赛事方公开页面编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方地图的著作权归赛事方所有；本页不包含赛道轨迹文件。引用本页时请保留来源链接与版本日期。\n\n## 来源\n\n- 波士顿田径协会（BAA）赛道信息页：比赛起点、终点与路线说明。\n- World Athletics：马拉松标准距离 42.195 公里的项目定义。\n\n具体链接见页面底部的来源列表。"
+          "digest": "f8f229c858d87447d0be7a2fc0fc88a6ad12ad806f91e1f0aaea307847784e96",
+          "body": "## 这是一条怎样的赛道\n\n波士顿马拉松的赛道是一条**点对点**公路路线：起点在霍普金顿（Hopkinton），终点在波士顿（Boston）。它不是一个绕圈赛道，因此起终点不在同一处，比赛日的交通、存包和赛后离开路线都需要按点对点赛事来安排。\n\n本页把「赛道身份」与「赛道几何」分开处理。赛道身份回答的是：这场比赛从哪里出发、在哪里结束、采用哪个版本的路线。赛道几何则是可以在地图上逐段查看的坐标序列。对这条赛道，我们目前只有前者的可靠资料。\n\n## 已核验的信息\n\n- 赛事方公布的路线为霍普金顿至波士顿，点对点方向。\n- 全程采用马拉松标准距离 42.195 公里。\n- 本页固定的赛道版本为 `2026-baa-published-course`，依据 BAA 2026 年赛道页面与官方地图；后续若赛事方调整路线，本页需要重新核验并更新版本号。\n\n## 哪些信息本页不提供\n\n波士顿马拉松的官方赛道页面提供赛事说明与官方地图，但**没有授权我们复制或再分发完整轨迹**。因此本页不显示逐段海拔、坡度剖面或可下载的 GPX，也不把其他网站上的轨迹当作官方几何。地图锚点是编辑添加的波士顿一侧概览定位，不是 BAA 官方起终点坐标；来源页只用于确认大致城市位置。\n\n如果你需要精确的赛道几何，请以赛事方发布的官方资料为准；比赛日的实际路线也可能因施工、天气或安全安排临时调整。\n\n## 怎样使用这条赛道页\n\n把本页当作赛前阅读的入口，而不是导航工具：\n\n1. 先确认比赛年份与赛道版本，避免把旧版路线信息套用到新一届比赛。\n2. 起终点分离意味着住宿、交通和赛后集合点要分别规划。\n3. 训练中的配速与补给方案可以参考本站的[马拉松距离](/articles/marathon-distance/)与[轻松跑](/articles/easy-run/)条目，但不要根据未经核验的坡度传说制定比赛策略。\n4. 需要把完赛时间换算为配速时，使用[配速计算器](/tools/pace/)。\n\n## 资料与再发布\n\n本页由跑起来根据赛事方公开页面编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方地图的著作权归赛事方所有；本页不包含赛道轨迹文件。引用本页时请保留来源链接与版本日期。\n\n## 来源\n\n- 波士顿田径协会（BAA）赛道信息页：比赛起点、终点与路线说明。\n- World Athletics：马拉松标准距离 42.195 公里的项目定义。\n\n具体链接见页面底部的来源列表。"
         },
         {
           "locale": "en",
@@ -393,9 +393,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2988,
-          "digest": "130ff23043df1414cc9605a7b17bbab8bbad68faae897042b2c637c07072ac8c",
-          "body": "## What kind of course this is\n\nThe Boston Marathon course is a **point-to-point** road route: it starts in Hopkinton and finishes in Boston. It is not a loop, so the start and finish are in different places. Race-day transport, bag drop and post-race departure all need to be planned as a point-to-point event.\n\nThis page separates two things: the **course identity** and the **course geometry**. Course identity answers where the race starts, where it finishes and which version of the route is being described. Course geometry is a coordinate sequence that can be inspected segment by segment on a map. For this course, we currently have reliable material only for the former.\n\n## What has been verified\n\n- The organiser publishes the route as Hopkinton to Boston, point to point.\n- The race uses the standard marathon distance of 42.195 kilometres.\n- The course version pinned on this page is `2026-baa-published-course`, based on the BAA's 2026 course page and official map. If the organiser changes the route, this page must be re-checked and the version updated.\n\n## Scope and limits\n\nThe official course page explains the event and links the official course map, but it does **not grant us permission to copy or redistribute the full track**. This page therefore shows no segment-by-segment elevation, gradient profile or downloadable GPX, and it does not treat a track from another website as official geometry. The map anchor is an editorial overview position on the Boston side, not a BAA start or finish coordinate; the source page is used only to confirm the general city location.\n\nFor precise geometry, use the material published by the organiser. The course used on race day may also change temporarily because of construction, weather or safety arrangements.\n\n## How to use this course page\n\nTreat this page as a pre-race orientation, not a navigation tool:\n\n1. Confirm the race year and course version first, so that older route information is not applied to a newer edition.\n2. A separated start and finish means accommodation, transport and the post-race meeting point must be planned separately.\n3. For training pace and fuelling, see the [marathon distance](/en/knowledge/marathon-distance/) and [easy running](/en/knowledge/easy-run/) entries on this site. Do not build a race plan on unverified stories about hills.\n4. To convert a finish time into pace, use the [pace calculator](/en/tools/pace/).\n\n## Sources and reuse\n\nThis page was written by RunMap from the organiser's public pages and is licensed CC BY 4.0. The event name, official marks, official route text and official map remain the property of the organiser. No track file is included on this page. When quoting this page, keep the source links and version date.\n\n## Sources\n\n- Boston Athletic Association (BAA) course information: start, finish and route description.\n- World Athletics: the marathon as a standard 42.195 km event.\n\nThe exact links appear in the source list at the bottom of the page."
+          "bodyCharacters": 2987,
+          "digest": "ad68dc49463bae9b277f8505751003a737489f12ed2f8e2143b4819597436262",
+          "body": "## What kind of course this is\n\nThe Boston Marathon course is a **point-to-point** road route: it starts in Hopkinton and finishes in Boston. It is not a loop, so the start and finish are in different places. Race-day transport, bag drop and post-race departure all need to be planned as a point-to-point event.\n\nThis page separates two things: the **course identity** and the **course geometry**. Course identity answers where the race starts, where it finishes and which version of the route is being described. Course geometry is a coordinate sequence that can be inspected segment by segment on a map. For this course, we currently have reliable material only for the former.\n\n## What has been verified\n\n- The organiser publishes the route as Hopkinton to Boston, point to point.\n- The race uses the standard marathon distance of 42.195 kilometres.\n- The course version pinned on this page is `2026-baa-published-course`, based on the BAA's 2026 course page and official map. If the organiser changes the route, this page must be re-checked and the version updated.\n\n## Scope and limits\n\nThe official course page explains the event and links the official course map, but it does **not grant us permission to copy or redistribute the full track**. This page therefore shows no segment-by-segment elevation, gradient profile or downloadable GPX, and it does not treat a track from another website as official geometry. The map anchor is an editorial overview position on the Boston side, not a BAA start or finish coordinate; the source page is used only to confirm the general city location.\n\nFor precise geometry, use the material published by the organiser. The course used on race day may also change temporarily because of construction, weather or safety arrangements.\n\n## How to use this course page\n\nTreat this page as a pre-race orientation, not a navigation tool:\n\n1. Confirm the race year and course version first, so that older route information is not applied to a newer edition.\n2. A separated start and finish means accommodation, transport and the post-race meeting point must be planned separately.\n3. For training pace and fuelling, see the [marathon distance](/en/knowledge/marathon-distance/) and [easy running](/en/knowledge/easy-run/) entries on this site. Do not build a race plan on unverified stories about hills.\n4. To convert a finish time into pace, use the [pace calculator](/en/tools/pace/).\n\n## Sources and reuse\n\nThis page was written by RunUp from the organiser's public pages and is licensed CC BY 4.0. The event name, official marks, official route text and official map remain the property of the organiser. No track file is included on this page. When quoting this page, keep the source links and version date.\n\n## Sources\n\n- Boston Athletic Association (BAA) course information: start, finish and route description.\n- World Athletics: the marathon as a standard 42.195 km event.\n\nThe exact links appear in the source list at the bottom of the page."
         }
       ],
       "missingGates": []
@@ -430,8 +430,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -447,14 +447,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "d7139e2bf46e984d971b9b0fb5e77187caac0d0c732950bc29d42f538ca96518"
+          "contentDigest": "4ae81c3bca7cfddd518a6edd9ecdf9896779f6f441fb77aa58afa76624e32609"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "e2bd41323c905d1c3415ba0ea0560712fb8fe9fd869a35080470fe46a1ccdc05"
+          "contentDigest": "e7b05f01916db35d41a2d1db22c886761055ffdd6f6e5186b758c405912cbb09"
         }
       ],
       "translations": [
@@ -469,9 +469,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 831,
-          "digest": "e2bd41323c905d1c3415ba0ea0560712fb8fe9fd869a35080470fe46a1ccdc05",
-          "body": "## 赛道身份\n\n开普敦马拉松采用两个起点、多个波次出发的城市环线，终点在绿点（Green Point）的 Vlei Road。 本页固定的是 **2026-cape-town-official-course** 版本，官方资料来自 Cape Town Marathon。\n\n双起点意味着不能把一条轨迹当作所有人的赛道：先确认自己所在波次和起点，再读取官方路线。城市环线的风向和天气变化可能比爬升更影响体验。\n\n## 已核验的事实\n\n- 赛事采用两个起点和五个波次，以分散早期赛道压力。\n- 终点在绿点的 Vlei Road；官方距离写作 42.2 公里。\n- 官方提供路线图 PDF；没有公开的可再分发 GPX，双起点也无法用一条轨迹代表所有跑者。\n- 距离口径：官方 42.2 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 Cape Town Marathon 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 830,
+          "digest": "e7b05f01916db35d41a2d1db22c886761055ffdd6f6e5186b758c405912cbb09",
+          "body": "## 赛道身份\n\n开普敦马拉松采用两个起点、多个波次出发的城市环线，终点在绿点（Green Point）的 Vlei Road。 本页固定的是 **2026-cape-town-official-course** 版本，官方资料来自 Cape Town Marathon。\n\n双起点意味着不能把一条轨迹当作所有人的赛道：先确认自己所在波次和起点，再读取官方路线。城市环线的风向和天气变化可能比爬升更影响体验。\n\n## 已核验的事实\n\n- 赛事采用两个起点和五个波次，以分散早期赛道压力。\n- 终点在绿点的 Vlei Road；官方距离写作 42.2 公里。\n- 官方提供路线图 PDF；没有公开的可再分发 GPX，双起点也无法用一条轨迹代表所有跑者。\n- 距离口径：官方 42.2 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 Cape Town Marathon 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -484,9 +484,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2208,
-          "digest": "d7139e2bf46e984d971b9b0fb5e77187caac0d0c732950bc29d42f538ca96518",
-          "body": "## Course identity\n\nThe Cape Town Marathon is a city circuit with two start areas and several waves, finishing on Vlei Road in Green Point. This page pins the **2026-cape-town-official-course** version using the organiser's public material from Cape Town Marathon.\n\nTwo starts mean one track cannot represent every runner: confirm your wave and start area before reading the official route. On a coastal city circuit, wind and weather may matter more than elevation.\n\n## Verified facts\n\n- The race uses two start areas and five waves to spread early-course pressure.\n- The finish is on Vlei Road in Green Point; the official distance is stated as 42.2 km.\n- An official route-map PDF is available, but no redistributable public GPX; one track could not represent all runners from two starts.\n- Distance basis: Official 42.2 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from Cape Town Marathon's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2206,
+          "digest": "4ae81c3bca7cfddd518a6edd9ecdf9896779f6f441fb77aa58afa76624e32609",
+          "body": "## Course identity\n\nThe Cape Town Marathon is a city circuit with two start areas and several waves, finishing on Vlei Road in Green Point. This page pins the **2026-cape-town-official-course** version using the organiser's public material from Cape Town Marathon.\n\nTwo starts mean one track cannot represent every runner: confirm your wave and start area before reading the official route. On a coastal city circuit, wind and weather may matter more than elevation.\n\n## Verified facts\n\n- The race uses two start areas and five waves to spread early-course pressure.\n- The finish is on Vlei Road in Green Point; the official distance is stated as 42.2 km.\n- An official route-map PDF is available, but no redistributable public GPX; one track could not represent all runners from two starts.\n- Distance basis: Official 42.2 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from Cape Town Marathon's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -520,8 +520,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -537,14 +537,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "d2b973337e121c859c59779077feecd5bcccbb4d4ebd89727f96b6c0bb489315"
+          "contentDigest": "ce87556fe54f1f27dac8113165149093d7414b0efa385643b873f7339f1a025f"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "28b3732defdd5141b5f171402ec97289f712e2c3afa6cdfb810c97b003c92d97"
+          "contentDigest": "e4184301e30f2b592783bd8e9eb45a652e23db7d5923c02b2d93f7d677141917"
         }
       ],
       "translations": [
@@ -559,9 +559,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 809,
-          "digest": "28b3732defdd5141b5f171402ec97289f712e2c3afa6cdfb810c97b003c92d97",
-          "body": "## 赛道身份\n\n芝加哥马拉松从格兰特公园出发，穿过芝加哥多个街区，最后回到格兰特公园，是一条城市环线。 本页固定的是 **2026-chicago-official-course** 版本，官方资料来自 Chicago Marathon。\n\n同城起终点让住宿和赛后动线相对简单，但环线会经过多个街区，天气和风向可能在不同路段变化。用官方路线图确认版本，不要用第三方轨迹推断封路或补给。\n\n## 已核验的事实\n\n- 起点和终点都在格兰特公园，属于城市环线。\n- 官方资料称路线经过多个芝加哥街区；本站不把它写成一条可下载的轨迹。\n- 官方提供路线图 PDF；没有公开的可再分发 GPX。\n- 距离口径：官方 26.2 英里 / 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 Chicago Marathon 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 808,
+          "digest": "e4184301e30f2b592783bd8e9eb45a652e23db7d5923c02b2d93f7d677141917",
+          "body": "## 赛道身份\n\n芝加哥马拉松从格兰特公园出发，穿过芝加哥多个街区，最后回到格兰特公园，是一条城市环线。 本页固定的是 **2026-chicago-official-course** 版本，官方资料来自 Chicago Marathon。\n\n同城起终点让住宿和赛后动线相对简单，但环线会经过多个街区，天气和风向可能在不同路段变化。用官方路线图确认版本，不要用第三方轨迹推断封路或补给。\n\n## 已核验的事实\n\n- 起点和终点都在格兰特公园，属于城市环线。\n- 官方资料称路线经过多个芝加哥街区；本站不把它写成一条可下载的轨迹。\n- 官方提供路线图 PDF；没有公开的可再分发 GPX。\n- 距离口径：官方 26.2 英里 / 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 Chicago Marathon 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -574,9 +574,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2272,
-          "digest": "d2b973337e121c859c59779077feecd5bcccbb4d4ebd89727f96b6c0bb489315",
-          "body": "## Course identity\n\nThe Chicago Marathon starts in Grant Park, runs through many Chicago neighbourhoods and returns to Grant Park for the finish. This page pins the **2026-chicago-official-course** version using the organiser's public material from Chicago Marathon.\n\nA same-place start and finish simplifies accommodation and post-race movement, but a city loop crosses many neighbourhoods where weather and wind can differ. Use the official map to confirm the version; do not infer road closures or aid stations from a third-party track.\n\n## Verified facts\n\n- Start and finish are both in Grant Park, making this a city loop.\n- The official material says the route passes through many Chicago neighbourhoods; this page does not turn it into a downloadable track.\n- An official course-map PDF is published, but no redistributable public GPX.\n- Distance basis: Official 26.2 miles / 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from Chicago Marathon's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2270,
+          "digest": "ce87556fe54f1f27dac8113165149093d7414b0efa385643b873f7339f1a025f",
+          "body": "## Course identity\n\nThe Chicago Marathon starts in Grant Park, runs through many Chicago neighbourhoods and returns to Grant Park for the finish. This page pins the **2026-chicago-official-course** version using the organiser's public material from Chicago Marathon.\n\nA same-place start and finish simplifies accommodation and post-race movement, but a city loop crosses many neighbourhoods where weather and wind can differ. Use the official map to confirm the version; do not infer road closures or aid stations from a third-party track.\n\n## Verified facts\n\n- Start and finish are both in Grant Park, making this a city loop.\n- The official material says the route passes through many Chicago neighbourhoods; this page does not turn it into a downloadable track.\n- An official course-map PDF is published, but no redistributable public GPX.\n- Distance basis: Official 26.2 miles / 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from Chicago Marathon's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -612,8 +612,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -629,14 +629,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "5e7dd37da61f48be03e487ee95facf7fe3d265d16270e27b1496b35b43145842"
+          "contentDigest": "616e303ddd0b1a7864ee0f5c0647b1c24042791f506f04175e2d68023dba8162"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "e9ad8c267e66ca662f6fa8c8e7439899f305f5f3cf4a9f392858406e5b97e5cb"
+          "contentDigest": "03d90812f978801ce83bc7b07ea5dc3abcddd2013a2f6a2b8f5d72f868fd1413"
         }
       ],
       "translations": [
@@ -651,9 +651,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 886,
-          "digest": "e9ad8c267e66ca662f6fa8c8e7439899f305f5f3cf4a9f392858406e5b97e5cb",
-          "body": "## 赛道身份\n\n狂人对角线从留尼汪岛南部的圣皮埃尔出发，穿越岛上的山脊与峡谷，最终在北部圣但尼结束，官方距离约 180 公里。 本页固定的是 **2026-diagonale-des-fous-official-course** 版本，官方资料来自 Grand Raid de La Réunion。\n\n这是一场热带岛屿的夜间出发超长越野，距离和爬升只是入口，天气窗口、补给间隔和私有土地规则都必须阅读官方资料。不要在没有许可的路段自行踩线。\n\n## 已核验的事实\n\n- 起点在岛南的圣皮埃尔，终点在岛北的圣但尼，是横穿留尼汪的点对点赛道。\n- 官方距离约 180 公里、累计爬升约 10,200 米；路线穿越 Pitons、Cirques 与 Remparts 国家公园。\n- 组织方禁止在部分私人土地路段自行踩线，也没有公开可再分发 GPX；本站只提供锚点和官方链接。\n- 距离口径：官方约 180 公里。\n- 高程口径：官方累计爬升约 10,200 米\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 Grand Raid de La Réunion 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 885,
+          "digest": "03d90812f978801ce83bc7b07ea5dc3abcddd2013a2f6a2b8f5d72f868fd1413",
+          "body": "## 赛道身份\n\n狂人对角线从留尼汪岛南部的圣皮埃尔出发，穿越岛上的山脊与峡谷，最终在北部圣但尼结束，官方距离约 180 公里。 本页固定的是 **2026-diagonale-des-fous-official-course** 版本，官方资料来自 Grand Raid de La Réunion。\n\n这是一场热带岛屿的夜间出发超长越野，距离和爬升只是入口，天气窗口、补给间隔和私有土地规则都必须阅读官方资料。不要在没有许可的路段自行踩线。\n\n## 已核验的事实\n\n- 起点在岛南的圣皮埃尔，终点在岛北的圣但尼，是横穿留尼汪的点对点赛道。\n- 官方距离约 180 公里、累计爬升约 10,200 米；路线穿越 Pitons、Cirques 与 Remparts 国家公园。\n- 组织方禁止在部分私人土地路段自行踩线，也没有公开可再分发 GPX；本站只提供锚点和官方链接。\n- 距离口径：官方约 180 公里。\n- 高程口径：官方累计爬升约 10,200 米\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 Grand Raid de La Réunion 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -666,9 +666,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2357,
-          "digest": "5e7dd37da61f48be03e487ee95facf7fe3d265d16270e27b1496b35b43145842",
-          "body": "## Course identity\n\nThe Diagonale des Fous starts in Saint-Pierre in southern Réunion, crosses the island’s ridges and cirques and finishes in Saint-Denis in the north, officially about 180 km. This page pins the **2026-diagonale-des-fous-official-course** version using the organiser's public material from Grand Raid de La Réunion.\n\nThis is a night-start tropical-island ultra where distance and climb are only the entrance; weather windows, aid spacing and private-land rules must be read in the official material. Do not scout restricted sections without permission.\n\n## Verified facts\n\n- It starts in Saint-Pierre in the south and finishes in Saint-Denis in the north, crossing Réunion point-to-point.\n- The official distance is about 180 km with about 10,200 m of climb; the route crosses the Pitons, Cirques and Remparts national park.\n- The organiser prohibits scouting on some private-land sections and publishes no redistributable GPX; this site provides only an anchor and official link.\n- Distance basis: Official about 180 km.\n- Elevation basis: Official climb about 10,200 m\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from Grand Raid de La Réunion's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2355,
+          "digest": "616e303ddd0b1a7864ee0f5c0647b1c24042791f506f04175e2d68023dba8162",
+          "body": "## Course identity\n\nThe Diagonale des Fous starts in Saint-Pierre in southern Réunion, crosses the island’s ridges and cirques and finishes in Saint-Denis in the north, officially about 180 km. This page pins the **2026-diagonale-des-fous-official-course** version using the organiser's public material from Grand Raid de La Réunion.\n\nThis is a night-start tropical-island ultra where distance and climb are only the entrance; weather windows, aid spacing and private-land rules must be read in the official material. Do not scout restricted sections without permission.\n\n## Verified facts\n\n- It starts in Saint-Pierre in the south and finishes in Saint-Denis in the north, crossing Réunion point-to-point.\n- The official distance is about 180 km with about 10,200 m of climb; the route crosses the Pitons, Cirques and Remparts national park.\n- The organiser prohibits scouting on some private-land sections and publishes no redistributable GPX; this site provides only an anchor and official link.\n- Distance basis: Official about 180 km.\n- Elevation basis: Official climb about 10,200 m\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from Grand Raid de La Réunion's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -702,8 +702,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -719,14 +719,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "79406cb178d79c3a989ead547ca0480021a63fc682a8b7aff45cd1f9288cbd50"
+          "contentDigest": "10cdb4136ff718525f424ac1cc9f9d97f1b5a4e5a2f3c9caa2b413bbecf2d150"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "9fba4cd9bf13b3682836711201b6bb8cd6946bdab560be3de7bf1fe07667868f"
+          "contentDigest": "94439f80ea044c69a0344ecb5f4045fc284aa3850d673464fd4cdd54ffb82a8a"
         }
       ],
       "translations": [
@@ -741,9 +741,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 823,
-          "digest": "9fba4cd9bf13b3682836711201b6bb8cd6946bdab560be3de7bf1fe07667868f",
-          "body": "## 赛道身份\n\n硬石 100 从科罗拉多州西尔弗顿出发并回到西尔弗顿，是一条高海拔山地环线，方向每年轮换。 本页固定的是 **2026-hardrock-official-course** 版本，官方资料来自 Hardrock Hundred Endurance Run。\n\n硬石的高海拔、长时间暴露和方向轮换使它不适合用单条轨迹代替阅读。官方 GPX 是一个版本入口；参赛规则、海拔适应和装备要求必须另读。\n\n## 已核验的事实\n\n- 起点和终点都在西尔弗顿，是一条高海拔环线。\n- 官方距离 101.8 英里，累计爬升 33,441 英尺。\n- 方向逐年轮换；下载 GPX 前必须确认当年方向，不能把顺/逆时针轨迹混用。\n- 距离口径：官方 101.8 英里（约 163.8 公里）。\n- 高程口径：官方累计爬升 33,441 英尺（约 10,193 米）\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 Hardrock Hundred Endurance Run 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。"
+          "bodyCharacters": 822,
+          "digest": "94439f80ea044c69a0344ecb5f4045fc284aa3850d673464fd4cdd54ffb82a8a",
+          "body": "## 赛道身份\n\n硬石 100 从科罗拉多州西尔弗顿出发并回到西尔弗顿，是一条高海拔山地环线，方向每年轮换。 本页固定的是 **2026-hardrock-official-course** 版本，官方资料来自 Hardrock Hundred Endurance Run。\n\n硬石的高海拔、长时间暴露和方向轮换使它不适合用单条轨迹代替阅读。官方 GPX 是一个版本入口；参赛规则、海拔适应和装备要求必须另读。\n\n## 已核验的事实\n\n- 起点和终点都在西尔弗顿，是一条高海拔环线。\n- 官方距离 101.8 英里，累计爬升 33,441 英尺。\n- 方向逐年轮换；下载 GPX 前必须确认当年方向，不能把顺/逆时针轨迹混用。\n- 距离口径：官方 101.8 英里（约 163.8 公里）。\n- 高程口径：官方累计爬升 33,441 英尺（约 10,193 米）\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 Hardrock Hundred Endurance Run 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。"
         },
         {
           "locale": "en",
@@ -756,9 +756,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2176,
-          "digest": "79406cb178d79c3a989ead547ca0480021a63fc682a8b7aff45cd1f9288cbd50",
-          "body": "## Course identity\n\nHardrock 100 starts and finishes in Silverton, Colorado, on a high-altitude mountain loop whose direction alternates each year. This page pins the **2026-hardrock-official-course** version using the organiser's public material from Hardrock Hundred Endurance Run.\n\nHardrock’s altitude, long exposure and alternating direction mean a single track cannot replace reading the course. The official GPX is one version entry; entry rules, altitude preparation and equipment requirements need separate attention.\n\n## Verified facts\n\n- Start and finish are both in Silverton; the route is a high-altitude loop.\n- The official distance is 101.8 miles with 33,441 ft of climb.\n- Direction alternates each year; confirm the current direction before using a GPX and never mix clockwise and counter-clockwise tracks.\n- Distance basis: Official 101.8 miles (about 163.8 km).\n- Elevation basis: Official 33,441 ft climb (about 10,193 m)\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThe organiser provides an official GPX download; this page links to it but does not bundle or redistribute it. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from Hardrock Hundred Endurance Run's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; The organiser provides an official GPX download; this page links to it but does not bundle or redistribute it."
+          "bodyCharacters": 2174,
+          "digest": "10cdb4136ff718525f424ac1cc9f9d97f1b5a4e5a2f3c9caa2b413bbecf2d150",
+          "body": "## Course identity\n\nHardrock 100 starts and finishes in Silverton, Colorado, on a high-altitude mountain loop whose direction alternates each year. This page pins the **2026-hardrock-official-course** version using the organiser's public material from Hardrock Hundred Endurance Run.\n\nHardrock’s altitude, long exposure and alternating direction mean a single track cannot replace reading the course. The official GPX is one version entry; entry rules, altitude preparation and equipment requirements need separate attention.\n\n## Verified facts\n\n- Start and finish are both in Silverton; the route is a high-altitude loop.\n- The official distance is 101.8 miles with 33,441 ft of climb.\n- Direction alternates each year; confirm the current direction before using a GPX and never mix clockwise and counter-clockwise tracks.\n- Distance basis: Official 101.8 miles (about 163.8 km).\n- Elevation basis: Official 33,441 ft climb (about 10,193 m)\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThe organiser provides an official GPX download; this page links to it but does not bundle or redistribute it. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from Hardrock Hundred Endurance Run's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; The organiser provides an official GPX download; this page links to it but does not bundle or redistribute it."
         }
       ],
       "missingGates": []
@@ -794,8 +794,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -811,14 +811,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "836a3df6408dbaa3a4e3ef655e779d59dd2e6b2d54a222fc8c93878575474517"
+          "contentDigest": "7081445c65fa91b6522bae2b72f06beaedef105d0915b54edd0b9b321b23e01b"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "45aa41bd0f4522e0d970675a53ae425d7c4d9841b2f5d329d003c45a53408500"
+          "contentDigest": "4ef031b495cbe10d06ebe047d7a2644abac001c152d64d6cdc791d87573b13a8"
         }
       ],
       "translations": [
@@ -833,9 +833,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 871,
-          "digest": "45aa41bd0f4522e0d970675a53ae425d7c4d9841b2f5d329d003c45a53408500",
-          "body": "## 赛道身份\n\n香港 100 从西贡北潭涌出发，沿麦理浩径及风景支线行进，终点在大帽山道扶轮公园，是一条 100 公里点对点山径赛。 本页固定的是 **2027-hong-kong-100-official-course** 版本，官方资料来自 Hong Kong 100 Ultra Marathon。\n\n香港 100 的难点来自连续山径、夜间行进和湿热天气，而不是单一爬升数字。没有官方可再分发轨迹时，地图锚点只用于定位；训练和比赛准备应依据赛事技术资料与郊野公园规则。\n\n## 已核验的事实\n\n- 起点在西贡北潭涌，终点在大帽山道扶轮公园，点对点。\n- 赛道以麦理浩径为基础，加入风景支线，官方距离 100 公里、累计爬升约 5,142 米。\n- 最后从香港最高峰大帽山下降；本站没有可再分发的 GPX，进入郊野公园须遵守当地规则。\n- 距离口径：官方 100 公里。\n- 高程口径：官方累计爬升约 5,142 米\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 Hong Kong 100 Ultra Marathon 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 870,
+          "digest": "4ef031b495cbe10d06ebe047d7a2644abac001c152d64d6cdc791d87573b13a8",
+          "body": "## 赛道身份\n\n香港 100 从西贡北潭涌出发，沿麦理浩径及风景支线行进，终点在大帽山道扶轮公园，是一条 100 公里点对点山径赛。 本页固定的是 **2027-hong-kong-100-official-course** 版本，官方资料来自 Hong Kong 100 Ultra Marathon。\n\n香港 100 的难点来自连续山径、夜间行进和湿热天气，而不是单一爬升数字。没有官方可再分发轨迹时，地图锚点只用于定位；训练和比赛准备应依据赛事技术资料与郊野公园规则。\n\n## 已核验的事实\n\n- 起点在西贡北潭涌，终点在大帽山道扶轮公园，点对点。\n- 赛道以麦理浩径为基础，加入风景支线，官方距离 100 公里、累计爬升约 5,142 米。\n- 最后从香港最高峰大帽山下降；本站没有可再分发的 GPX，进入郊野公园须遵守当地规则。\n- 距离口径：官方 100 公里。\n- 高程口径：官方累计爬升约 5,142 米\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 Hong Kong 100 Ultra Marathon 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -848,9 +848,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2342,
-          "digest": "836a3df6408dbaa3a4e3ef655e779d59dd2e6b2d54a222fc8c93878575474517",
-          "body": "## Course identity\n\nHong Kong 100 runs point-to-point for 100 km from Pak Tam Chung in Sai Kung, largely on the MacLehose Trail and scenic diversions, finishing at Rotary Club Park on Tai Mo Shan Road. This page pins the **2027-hong-kong-100-official-course** version using the organiser's public material from Hong Kong 100 Ultra Marathon.\n\nHong Kong 100’s difficulty comes from continuous trails, night running and hot, humid weather rather than one climb figure. Without a redistributable official track, the map anchor only locates the race; preparation should follow the technical material and country-park rules.\n\n## Verified facts\n\n- It starts at Pak Tam Chung in Sai Kung and finishes at Rotary Club Park on Tai Mo Shan Road, point-to-point.\n- The course is based on the MacLehose Trail with scenic diversions: 100 km and about 5,142 m of climb.\n- The finish descends from Tai Mo Shan, Hong Kong’s highest peak; this site has no redistributable GPX and country-park rules apply.\n- Distance basis: Official 100 km.\n- Elevation basis: Official climb about 5,142 m\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from Hong Kong 100 Ultra Marathon's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2340,
+          "digest": "7081445c65fa91b6522bae2b72f06beaedef105d0915b54edd0b9b321b23e01b",
+          "body": "## Course identity\n\nHong Kong 100 runs point-to-point for 100 km from Pak Tam Chung in Sai Kung, largely on the MacLehose Trail and scenic diversions, finishing at Rotary Club Park on Tai Mo Shan Road. This page pins the **2027-hong-kong-100-official-course** version using the organiser's public material from Hong Kong 100 Ultra Marathon.\n\nHong Kong 100’s difficulty comes from continuous trails, night running and hot, humid weather rather than one climb figure. Without a redistributable official track, the map anchor only locates the race; preparation should follow the technical material and country-park rules.\n\n## Verified facts\n\n- It starts at Pak Tam Chung in Sai Kung and finishes at Rotary Club Park on Tai Mo Shan Road, point-to-point.\n- The course is based on the MacLehose Trail with scenic diversions: 100 km and about 5,142 m of climb.\n- The finish descends from Tai Mo Shan, Hong Kong’s highest peak; this site has no redistributable GPX and country-park rules apply.\n- Distance basis: Official 100 km.\n- Elevation basis: Official climb about 5,142 m\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from Hong Kong 100 Ultra Marathon's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -885,8 +885,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -902,14 +902,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "18dab212981b8db9d16efecfe89c7bec11589024a4edd3db48087b7269cd8e7b"
+          "contentDigest": "f5bb1dafb5b95c7fcfee7396748d747c817139e5251c17195ddc6d42027d43cd"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "6ca92635c4da79e2419175a2d73ab5631a016dbe44adc22ea5cbdae04ba2786a"
+          "contentDigest": "5f11e5c12373e4da1f92db108b55d3d548ebbdfab270102a2e3ee34945adff9f"
         }
       ],
       "translations": [
@@ -924,9 +924,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 822,
-          "digest": "6ca92635c4da79e2419175a2d73ab5631a016dbe44adc22ea5cbdae04ba2786a",
-          "body": "## 赛道身份\n\n伦敦马拉松从格林尼治/布莱克希思一带出发，沿泰晤士河两岸穿过伦敦，最终在圣詹姆斯公园旁林荫路结束。 本页固定的是 **2026-london-official-course** 版本，官方资料来自 London Marathon Events。\n\n伦敦是典型的大城市点对点公路马拉松，起点和终点相距较远。官方路线图用于确认固定版本；不要用其他来源的轨迹替代赛事方的路线说明。\n\n## 已核验的事实\n\n- 起点分在格林尼治/布莱克希思的不同区域，出发后汇合。\n- 路线穿过伦敦市中心，官方资料把塔桥作为中途地标。\n- 终点在圣詹姆斯公园旁的林荫路；官方只提供路线图，没有公开 GPX。\n- 距离口径：官方 26.2 英里 / 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 London Marathon Events 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 821,
+          "digest": "5f11e5c12373e4da1f92db108b55d3d548ebbdfab270102a2e3ee34945adff9f",
+          "body": "## 赛道身份\n\n伦敦马拉松从格林尼治/布莱克希思一带出发，沿泰晤士河两岸穿过伦敦，最终在圣詹姆斯公园旁林荫路结束。 本页固定的是 **2026-london-official-course** 版本，官方资料来自 London Marathon Events。\n\n伦敦是典型的大城市点对点公路马拉松，起点和终点相距较远。官方路线图用于确认固定版本；不要用其他来源的轨迹替代赛事方的路线说明。\n\n## 已核验的事实\n\n- 起点分在格林尼治/布莱克希思的不同区域，出发后汇合。\n- 路线穿过伦敦市中心，官方资料把塔桥作为中途地标。\n- 终点在圣詹姆斯公园旁的林荫路；官方只提供路线图，没有公开 GPX。\n- 距离口径：官方 26.2 英里 / 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 London Marathon Events 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -939,9 +939,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2276,
-          "digest": "18dab212981b8db9d16efecfe89c7bec11589024a4edd3db48087b7269cd8e7b",
-          "body": "## Course identity\n\nThe London Marathon starts around Greenwich and Blackheath, crosses London on both sides of the Thames and finishes on The Mall by St James’s Park. This page pins the **2026-london-official-course** version using the organiser's public material from London Marathon Events.\n\nLondon is a large-city point-to-point road marathon with a substantial distance between start and finish. Use the official map to identify the pinned version, and do not replace the organiser’s route information with a third-party track.\n\n## Verified facts\n\n- Separate start areas in Greenwich and Blackheath converge early in the race.\n- The route crosses central London and the official material identifies Tower Bridge as a mid-course landmark.\n- It finishes on The Mall by St James’s Park; the official page provides a map, not a public GPX.\n- Distance basis: Official 26.2 miles / 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from London Marathon Events's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2274,
+          "digest": "f5bb1dafb5b95c7fcfee7396748d747c817139e5251c17195ddc6d42027d43cd",
+          "body": "## Course identity\n\nThe London Marathon starts around Greenwich and Blackheath, crosses London on both sides of the Thames and finishes on The Mall by St James’s Park. This page pins the **2026-london-official-course** version using the organiser's public material from London Marathon Events.\n\nLondon is a large-city point-to-point road marathon with a substantial distance between start and finish. Use the official map to identify the pinned version, and do not replace the organiser’s route information with a third-party track.\n\n## Verified facts\n\n- Separate start areas in Greenwich and Blackheath converge early in the race.\n- The route crosses central London and the official material identifies Tower Bridge as a mid-course landmark.\n- It finishes on The Mall by St James’s Park; the official page provides a map, not a public GPX.\n- Distance basis: Official 26.2 miles / 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from London Marathon Events's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -975,8 +975,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -992,14 +992,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "6c0ffee274722531a5867020ace210abb8e3dbf71935b955d790215da70e6c3c"
+          "contentDigest": "600562039aaa52c8280504ad164106b0c0695fbe55ec0e2c7589e8131c77a4f9"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "157b4da8cb7af592626505aea08072728770eeacdedf98fcca88e884a405bfff"
+          "contentDigest": "47a945e3fe80fa0898dd017fb2a2cdb93beaea2211745da7e18007a0a51abef1"
         }
       ],
       "translations": [
@@ -1014,9 +1014,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 790,
-          "digest": "157b4da8cb7af592626505aea08072728770eeacdedf98fcca88e884a405bfff",
-          "body": "## 赛道身份\n\n纽约马拉松从斯塔滕岛的 Fort Wadsworth 出发，穿过五个行政区，最后在曼哈顿中央公园结束。 本页固定的是 **2025-tcs-new-york-city-marathon** 版本，官方资料来自 NYRR。\n\n纽约的起点在岛上，参赛动线和起跑分区比同城环线更复杂。不要根据旧轨迹安排交通或起跑时间；以官方当届说明为准。\n\n## 已核验的事实\n\n- 起点在斯塔滕岛的 Fort Wadsworth，终点在曼哈顿中央公园。\n- 路线穿越纽约五个行政区，起点与终点分离。\n- 本页固定 2025 年版本；当届路线调整与封路信息必须以官方页面为准。\n- 距离口径：官方 26.2 英里 / 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 NYRR 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 789,
+          "digest": "47a945e3fe80fa0898dd017fb2a2cdb93beaea2211745da7e18007a0a51abef1",
+          "body": "## 赛道身份\n\n纽约马拉松从斯塔滕岛的 Fort Wadsworth 出发，穿过五个行政区，最后在曼哈顿中央公园结束。 本页固定的是 **2025-tcs-new-york-city-marathon** 版本，官方资料来自 NYRR。\n\n纽约的起点在岛上，参赛动线和起跑分区比同城环线更复杂。不要根据旧轨迹安排交通或起跑时间；以官方当届说明为准。\n\n## 已核验的事实\n\n- 起点在斯塔滕岛的 Fort Wadsworth，终点在曼哈顿中央公园。\n- 路线穿越纽约五个行政区，起点与终点分离。\n- 本页固定 2025 年版本；当届路线调整与封路信息必须以官方页面为准。\n- 距离口径：官方 26.2 英里 / 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 NYRR 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -1029,9 +1029,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2165,
-          "digest": "6c0ffee274722531a5867020ace210abb8e3dbf71935b955d790215da70e6c3c",
-          "body": "## Course identity\n\nThe New York City Marathon starts at Fort Wadsworth on Staten Island, crosses all five boroughs and finishes in Central Park, Manhattan. This page pins the **2025-tcs-new-york-city-marathon** version using the organiser's public material from NYRR.\n\nThe island start and five-borough route make logistics more complex than a same-city loop. Do not use an old track to plan transport or start timing; follow the current official instructions.\n\n## Verified facts\n\n- It starts at Fort Wadsworth on Staten Island and finishes in Central Park, Manhattan.\n- The route crosses all five boroughs and is point-to-point.\n- This page pins the 2025 version; current route changes and race-day closures must be checked on the official page.\n- Distance basis: Official 26.2 miles / 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from NYRR's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2163,
+          "digest": "600562039aaa52c8280504ad164106b0c0695fbe55ec0e2c7589e8131c77a4f9",
+          "body": "## Course identity\n\nThe New York City Marathon starts at Fort Wadsworth on Staten Island, crosses all five boroughs and finishes in Central Park, Manhattan. This page pins the **2025-tcs-new-york-city-marathon** version using the organiser's public material from NYRR.\n\nThe island start and five-borough route make logistics more complex than a same-city loop. Do not use an old track to plan transport or start timing; follow the current official instructions.\n\n## Verified facts\n\n- It starts at Fort Wadsworth on Staten Island and finishes in Central Park, Manhattan.\n- The route crosses all five boroughs and is point-to-point.\n- This page pins the 2025 version; current route changes and race-day closures must be checked on the official page.\n- Distance basis: Official 26.2 miles / 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from NYRR's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -1065,8 +1065,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -1082,14 +1082,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "c4981c596a05d6ee54808da623d6d2b8bafa5ca883b676a04e720a8b3d04b234"
+          "contentDigest": "a5afafcfff6853b4c7a77bd762f29e42815f2835104b12102c694b228ffbf01a"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "da672852cfba0a63e2b542dced00f8e5fa3b091770f251a7590600d54a2a1a22"
+          "contentDigest": "338c6c1b7616a4044bebe92ac0eb6e870fe09f4d6e5c8d8583489753c145e5a7"
         }
       ],
       "translations": [
@@ -1104,9 +1104,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 787,
-          "digest": "da672852cfba0a63e2b542dced00f8e5fa3b091770f251a7590600d54a2a1a22",
-          "body": "## 赛道身份\n\n上海马拉松从外滩的中山东一路出发，穿过南京路、静安寺和新天地等城市区域，终点在徐家汇体育公园。 本页固定的是 **2025-shanghai-official-course** 版本，官方资料来自 上海马拉松。\n\n上海把外滩滨水区和多个商业街区串联起来，起终点跨区分离。官方当届公告比旧轨迹更适合确认路线和交通；不要在公共道路上按旧路线自行试跑。\n\n## 已核验的事实\n\n- 起点在外滩中山东一路，终点在徐家汇体育公园。\n- 路线经过外滩、南京路、静安寺和新天地等城市区域，是点对点城市赛道。\n- 本页固定 2025 年版本；官方为动态站点，未提供可再分发 GPX。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 上海马拉松 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 786,
+          "digest": "338c6c1b7616a4044bebe92ac0eb6e870fe09f4d6e5c8d8583489753c145e5a7",
+          "body": "## 赛道身份\n\n上海马拉松从外滩的中山东一路出发，穿过南京路、静安寺和新天地等城市区域，终点在徐家汇体育公园。 本页固定的是 **2025-shanghai-official-course** 版本，官方资料来自 上海马拉松。\n\n上海把外滩滨水区和多个商业街区串联起来，起终点跨区分离。官方当届公告比旧轨迹更适合确认路线和交通；不要在公共道路上按旧路线自行试跑。\n\n## 已核验的事实\n\n- 起点在外滩中山东一路，终点在徐家汇体育公园。\n- 路线经过外滩、南京路、静安寺和新天地等城市区域，是点对点城市赛道。\n- 本页固定 2025 年版本；官方为动态站点，未提供可再分发 GPX。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 上海马拉松 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -1119,9 +1119,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2248,
-          "digest": "c4981c596a05d6ee54808da623d6d2b8bafa5ca883b676a04e720a8b3d04b234",
-          "body": "## Course identity\n\nThe Shanghai Marathon starts on Zhongshan East 1st Road at the Bund, passes Nanjing Road, Jing’an Temple and Xintiandi, and finishes at Xujiahui Sports Park. This page pins the **2025-shanghai-official-course** version using the organiser's public material from 上海马拉松.\n\nShanghai links the Bund waterfront with several commercial districts, and start and finish are in different areas. The current official announcement is a better authority than an old track; do not use roads from an old route for unauthorised recces.\n\n## Verified facts\n\n- It starts on Zhongshan East 1st Road at the Bund and finishes at Xujiahui Sports Park.\n- The point-to-point city route passes the Bund, Nanjing Road, Jing’an Temple and Xintiandi.\n- This page pins the 2025 version; the official site is dynamic and provides no redistributable GPX.\n- Distance basis: Official 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from 上海马拉松's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2246,
+          "digest": "a5afafcfff6853b4c7a77bd762f29e42815f2835104b12102c694b228ffbf01a",
+          "body": "## Course identity\n\nThe Shanghai Marathon starts on Zhongshan East 1st Road at the Bund, passes Nanjing Road, Jing’an Temple and Xintiandi, and finishes at Xujiahui Sports Park. This page pins the **2025-shanghai-official-course** version using the organiser's public material from 上海马拉松.\n\nShanghai links the Bund waterfront with several commercial districts, and start and finish are in different areas. The current official announcement is a better authority than an old track; do not use roads from an old route for unauthorised recces.\n\n## Verified facts\n\n- It starts on Zhongshan East 1st Road at the Bund and finishes at Xujiahui Sports Park.\n- The point-to-point city route passes the Bund, Nanjing Road, Jing’an Temple and Xintiandi.\n- This page pins the 2025 version; the official site is dynamic and provides no redistributable GPX.\n- Distance basis: Official 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from 上海马拉松's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -1156,8 +1156,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -1173,14 +1173,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "fa8c7fb2817683e3585fc4ab192e7537dccfb07e738fc642c5ede4abc389271a"
+          "contentDigest": "bf6954060a6795ad26e34b5fa6fe83b209e2b6edeac7ff58cf814c3c98c0f1fb"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "b761ec081d69f5bdb6323add4f35c8edcaafadf8f3a4f4d23ffdc4ee42315d9b"
+          "contentDigest": "44af02253bfe8b2d05ad068c35fb6026a90264c9caefe70d1e67b6b70f57d729"
         }
       ],
       "translations": [
@@ -1195,9 +1195,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 824,
-          "digest": "b761ec081d69f5bdb6323add4f35c8edcaafadf8f3a4f4d23ffdc4ee42315d9b",
-          "body": "## 赛道身份\n\n悉尼马拉松从北悉尼的 Miller Street 出发，跨过悉尼海港大桥，最后在悉尼歌剧院结束。 本页固定的是 **2026-sydney-official-course** 版本，官方资料来自 TCS Sydney Marathon。\n\n悉尼把海港大桥和歌剧院放在同一条点对点赛道两端，城市景观与桥面起伏都需要单独考虑。官方 GPX 是固定版本的几何入口，不代表比赛日封路或补给安排。\n\n## 已核验的事实\n\n- 起点在北悉尼 Miller Street，终点在悉尼歌剧院。\n- 官方列出 42.195 公里、累计爬升 313 米、净下降 83 米。\n- 路线跨过悉尼海港大桥；官方页面提供 GPX 下载；文件元数据与页面版本的对应关系仍需核对，本页暂不链接。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方路线：累计爬升 313 米，净下降 83 米\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 TCS Sydney Marathon 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。"
+          "bodyCharacters": 823,
+          "digest": "44af02253bfe8b2d05ad068c35fb6026a90264c9caefe70d1e67b6b70f57d729",
+          "body": "## 赛道身份\n\n悉尼马拉松从北悉尼的 Miller Street 出发，跨过悉尼海港大桥，最后在悉尼歌剧院结束。 本页固定的是 **2026-sydney-official-course** 版本，官方资料来自 TCS Sydney Marathon。\n\n悉尼把海港大桥和歌剧院放在同一条点对点赛道两端，城市景观与桥面起伏都需要单独考虑。官方 GPX 是固定版本的几何入口，不代表比赛日封路或补给安排。\n\n## 已核验的事实\n\n- 起点在北悉尼 Miller Street，终点在悉尼歌剧院。\n- 官方列出 42.195 公里、累计爬升 313 米、净下降 83 米。\n- 路线跨过悉尼海港大桥；官方页面提供 GPX 下载；文件元数据与页面版本的对应关系仍需核对，本页暂不链接。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方路线：累计爬升 313 米，净下降 83 米\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 TCS Sydney Marathon 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。"
         },
         {
           "locale": "en",
@@ -1210,9 +1210,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2237,
-          "digest": "fa8c7fb2817683e3585fc4ab192e7537dccfb07e738fc642c5ede4abc389271a",
-          "body": "## Course identity\n\nThe Sydney Marathon starts on Miller Street in North Sydney, crosses the Sydney Harbour Bridge and finishes at the Sydney Opera House. This page pins the **2026-sydney-official-course** version using the organiser's public material from TCS Sydney Marathon.\n\nSydney puts the Harbour Bridge and Opera House at opposite ends of a point-to-point course; the city views and bridge profile deserve separate planning. The official GPX is the geometry entry point for the pinned version, not a race-day closure or aid-station plan.\n\n## Verified facts\n\n- It starts on Miller Street in North Sydney and finishes at the Sydney Opera House.\n- The official course lists 42.195 km with +313 m gain and −83 m net drop.\n- The route crosses the Sydney Harbour Bridge; the organiser publishes a GPX download, but its file metadata still needs version verification, so this page does not link it.\n- Distance basis: Official 42.195 km.\n- Elevation basis: Official course: +313 m elevation gain and −83 m net drop\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThe organiser provides an official GPX download; this page links to it but does not bundle or redistribute it. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from TCS Sydney Marathon's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; The organiser provides an official GPX download; this page links to it but does not bundle or redistribute it."
+          "bodyCharacters": 2235,
+          "digest": "bf6954060a6795ad26e34b5fa6fe83b209e2b6edeac7ff58cf814c3c98c0f1fb",
+          "body": "## Course identity\n\nThe Sydney Marathon starts on Miller Street in North Sydney, crosses the Sydney Harbour Bridge and finishes at the Sydney Opera House. This page pins the **2026-sydney-official-course** version using the organiser's public material from TCS Sydney Marathon.\n\nSydney puts the Harbour Bridge and Opera House at opposite ends of a point-to-point course; the city views and bridge profile deserve separate planning. The official GPX is the geometry entry point for the pinned version, not a race-day closure or aid-station plan.\n\n## Verified facts\n\n- It starts on Miller Street in North Sydney and finishes at the Sydney Opera House.\n- The official course lists 42.195 km with +313 m gain and −83 m net drop.\n- The route crosses the Sydney Harbour Bridge; the organiser publishes a GPX download, but its file metadata still needs version verification, so this page does not link it.\n- Distance basis: Official 42.195 km.\n- Elevation basis: Official course: +313 m elevation gain and −83 m net drop\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThe organiser provides an official GPX download; this page links to it but does not bundle or redistribute it. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from TCS Sydney Marathon's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; The organiser provides an official GPX download; this page links to it but does not bundle or redistribute it."
         }
       ],
       "missingGates": []
@@ -1248,8 +1248,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -1265,14 +1265,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "6e19fada03b8d03dd3d3363ece5bbe0657bacb49eec5af268331c74630dcc6c3"
+          "contentDigest": "1664b1857334936c73f7c55e00b87c408c66d7d0b8da564e6a9780ede0957332"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "99cbb8b12712faf8c9f70a91b177870b8bfccdda9a50069ff8a1e2610c15db73"
+          "contentDigest": "4acdfb4353138da682934495b0e912911c734b412d6a30b5ebc478085deccc95"
         }
       ],
       "translations": [
@@ -1287,9 +1287,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 842,
-          "digest": "99cbb8b12712faf8c9f70a91b177870b8bfccdda9a50069ff8a1e2610c15db73",
-          "body": "## 赛道身份\n\n东京马拉松是一条穿越东京中心区的点对点公路赛道，起点在新宿的东京都厅，终点在皇居和田仓门附近。 本页固定的是 **2026-tokyo-official-course** 版本，官方资料来自 Tokyo Marathon Foundation。\n\n这是一场在超大城市的中心区举行的公路马拉松：起终点分离，赛前交通和赛后离开要按点对点赛事安排。官方路线与分段是固定版本的依据，比赛日仍可能因安保或道路安排调整。\n\n## 已核验的事实\n\n- 起点在东京都厅（新宿）；终点在皇居和田仓门附近。\n- 路线穿过东京塔、浅草雷门和银座等东京中心地标，是点对点城市赛道。\n- 官方页面提供 42.195 公里分段和路线图；没有公开的可再分发 GPX。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 Tokyo Marathon Foundation 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
+          "bodyCharacters": 841,
+          "digest": "4acdfb4353138da682934495b0e912911c734b412d6a30b5ebc478085deccc95",
+          "body": "## 赛道身份\n\n东京马拉松是一条穿越东京中心区的点对点公路赛道，起点在新宿的东京都厅，终点在皇居和田仓门附近。 本页固定的是 **2026-tokyo-official-course** 版本，官方资料来自 Tokyo Marathon Foundation。\n\n这是一场在超大城市的中心区举行的公路马拉松：起终点分离，赛前交通和赛后离开要按点对点赛事安排。官方路线与分段是固定版本的依据，比赛日仍可能因安保或道路安排调整。\n\n## 已核验的事实\n\n- 起点在东京都厅（新宿）；终点在皇居和田仓门附近。\n- 路线穿过东京塔、浅草雷门和银座等东京中心地标，是点对点城市赛道。\n- 官方页面提供 42.195 公里分段和路线图；没有公开的可再分发 GPX。\n- 距离口径：官方 42.195 公里。\n- 高程口径：官方页面没有给出本站可核验的累计爬升数字，本页显示为未知。\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 Tokyo Marathon Foundation 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；本站没有任何可再分发的赛道轨迹；如果官方页面提供路线图，请以官方页面为最终依据。"
         },
         {
           "locale": "en",
@@ -1302,9 +1302,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2408,
-          "digest": "6e19fada03b8d03dd3d3363ece5bbe0657bacb49eec5af268331c74630dcc6c3",
-          "body": "## Course identity\n\nThe Tokyo Marathon is a point-to-point road course through central Tokyo, starting at the Tokyo Metropolitan Government Building in Shinjuku and finishing near the Imperial Palace at Wadakura Gate. This page pins the **2026-tokyo-official-course** version using the organiser's public material from Tokyo Marathon Foundation.\n\nThis is a road marathon through the centre of a very large city. Because the start and finish are separate, race-day transport and post-race departure need point-to-point planning. The official course and splits define the pinned version; race-day arrangements can still change.\n\n## Verified facts\n\n- It starts at the Tokyo Metropolitan Government Building in Shinjuku and finishes near Wadakura Gate by the Imperial Palace.\n- The point-to-point route passes central Tokyo landmarks including Tokyo Tower, Asakusa Kaminarimon and Ginza.\n- The official page provides 42.195 km splits and a course map, but no redistributable public GPX.\n- Distance basis: Official 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from Tokyo Marathon Foundation's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
+          "bodyCharacters": 2406,
+          "digest": "1664b1857334936c73f7c55e00b87c408c66d7d0b8da564e6a9780ede0957332",
+          "body": "## Course identity\n\nThe Tokyo Marathon is a point-to-point road course through central Tokyo, starting at the Tokyo Metropolitan Government Building in Shinjuku and finishing near the Imperial Palace at Wadakura Gate. This page pins the **2026-tokyo-official-course** version using the organiser's public material from Tokyo Marathon Foundation.\n\nThis is a road marathon through the centre of a very large city. Because the start and finish are separate, race-day transport and post-race departure need point-to-point planning. The official course and splits define the pinned version; race-day arrangements can still change.\n\n## Verified facts\n\n- It starts at the Tokyo Metropolitan Government Building in Shinjuku and finishes near Wadakura Gate by the Imperial Palace.\n- The point-to-point route passes central Tokyo landmarks including Tokyo Tower, Asakusa Kaminarimon and Ginza.\n- The official page provides 42.195 km splits and a course map, but no redistributable public GPX.\n- Distance basis: Official 42.195 km.\n- Elevation basis: The official page does not give a climb figure verified for this site, so it remains unknown here.\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThis site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from Tokyo Marathon Foundation's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; This site has no redistributable course track; where the organiser publishes a map, the official page remains the final authority."
         }
       ],
       "missingGates": []
@@ -1338,8 +1338,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -1355,14 +1355,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "21fa9c5d4e3127a0a5869ef282fb9ce14353d27643c349227d7c7d3ddf4265c9"
+          "contentDigest": "9daecfe80b59f5e12e42267552cf17a1c6ea276d9898e2ae837200b2ca741ddc"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "08cb18f8288599d465635a234e51811ed4811c59ddec009e76bb2d41ae9cbaba"
+          "contentDigest": "ffca5c67063289e0e6f4e6196d4a79114d10e5a4bd95d810357a96eaa02ed3b1"
         }
       ],
       "translations": [
@@ -1377,9 +1377,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 861,
-          "digest": "08cb18f8288599d465635a234e51811ed4811c59ddec009e76bb2d41ae9cbaba",
-          "body": "## 赛道身份\n\n巨人之旅 330 从意大利库马约尔出发并回到库马约尔，绕行阿尔卑斯最高峰群，官方距离 330 公里、累计爬升约 24,000 米。 本页固定的是 **2026-tor-des-geants-official-course** 版本，官方资料来自 TORX / VDA Trailers。\n\n巨人之旅不是“超长马拉松”，而是多日高山暴露：海拔、天气、睡眠、补给和自给能力共同决定风险。官方 GPX 只帮助理解环线，不能替代强制装备、公园规则和赛事医疗安排。\n\n## 已核验的事实\n\n- 起点和终点都在库马约尔，是一条绕行阿尔卑斯最高峰群的高山环线。\n- 官方距离 330 公里、累计爬升约 24,000 米，时限 150 小时，不设强制分段。\n- 路线经过 Gran Paradiso 与 Mont Avic 公园；官方提供完整 GPX，本站只链接，不再分发。\n- 距离口径：官方 330 公里。\n- 高程口径：官方累计爬升约 24,000 米\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 TORX / VDA Trailers 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。"
+          "bodyCharacters": 860,
+          "digest": "ffca5c67063289e0e6f4e6196d4a79114d10e5a4bd95d810357a96eaa02ed3b1",
+          "body": "## 赛道身份\n\n巨人之旅 330 从意大利库马约尔出发并回到库马约尔，绕行阿尔卑斯最高峰群，官方距离 330 公里、累计爬升约 24,000 米。 本页固定的是 **2026-tor-des-geants-official-course** 版本，官方资料来自 TORX / VDA Trailers。\n\n巨人之旅不是“超长马拉松”，而是多日高山暴露：海拔、天气、睡眠、补给和自给能力共同决定风险。官方 GPX 只帮助理解环线，不能替代强制装备、公园规则和赛事医疗安排。\n\n## 已核验的事实\n\n- 起点和终点都在库马约尔，是一条绕行阿尔卑斯最高峰群的高山环线。\n- 官方距离 330 公里、累计爬升约 24,000 米，时限 150 小时，不设强制分段。\n- 路线经过 Gran Paradiso 与 Mont Avic 公园；官方提供完整 GPX，本站只链接，不再分发。\n- 距离口径：官方 330 公里。\n- 高程口径：官方累计爬升约 24,000 米\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 TORX / VDA Trailers 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；赛事方提供官方 GPX 下载；本页只链接，不捆绑、不再分发。"
         },
         {
           "locale": "en",
@@ -1392,9 +1392,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2221,
-          "digest": "21fa9c5d4e3127a0a5869ef282fb9ce14353d27643c349227d7c7d3ddf4265c9",
-          "body": "## Course identity\n\nTor des Géants 330 starts and finishes in Courmayeur, Italy, loops beneath the highest Alps and is officially 330 km with about 24,000 m of climb. This page pins the **2026-tor-des-geants-official-course** version using the organiser's public material from TORX / VDA Trailers.\n\nTor des Géants is not an overlong marathon but multi-day alpine exposure: altitude, weather, sleep, aid and self-sufficiency jointly determine risk. The official GPX helps with the loop only and does not replace mandatory kit, park rules or race medical arrangements.\n\n## Verified facts\n\n- Start and finish are in Courmayeur on an alpine loop beneath the highest Alps.\n- The official distance is 330 km with about 24,000 m of climb, a 150-hour limit and no compulsory stages.\n- The route passes Gran Paradiso and Mont Avic parks; the organiser publishes a full GPX, which this site links but does not redistribute.\n- Distance basis: Official 330 km.\n- Elevation basis: Official climb about 24,000 m\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThe organiser provides an official GPX download; this page links to it but does not bundle or redistribute it. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from TORX / VDA Trailers's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; The organiser provides an official GPX download; this page links to it but does not bundle or redistribute it."
+          "bodyCharacters": 2219,
+          "digest": "9daecfe80b59f5e12e42267552cf17a1c6ea276d9898e2ae837200b2ca741ddc",
+          "body": "## Course identity\n\nTor des Géants 330 starts and finishes in Courmayeur, Italy, loops beneath the highest Alps and is officially 330 km with about 24,000 m of climb. This page pins the **2026-tor-des-geants-official-course** version using the organiser's public material from TORX / VDA Trailers.\n\nTor des Géants is not an overlong marathon but multi-day alpine exposure: altitude, weather, sleep, aid and self-sufficiency jointly determine risk. The official GPX helps with the loop only and does not replace mandatory kit, park rules or race medical arrangements.\n\n## Verified facts\n\n- Start and finish are in Courmayeur on an alpine loop beneath the highest Alps.\n- The official distance is 330 km with about 24,000 m of climb, a 150-hour limit and no compulsory stages.\n- The route passes Gran Paradiso and Mont Avic parks; the organiser publishes a full GPX, which this site links but does not redistribute.\n- Distance basis: Official 330 km.\n- Elevation basis: Official climb about 24,000 m\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThe organiser provides an official GPX download; this page links to it but does not bundle or redistribute it. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from TORX / VDA Trailers's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; The organiser provides an official GPX download; this page links to it but does not bundle or redistribute it."
         }
       ],
       "missingGates": []
@@ -1435,14 +1435,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "69e8448947d310cee273de53b52efa145a362aa1ce964cd5cea49b815c310bce"
+          "contentDigest": "2f2d3581dbbe72083ec3eb0b0a2ddc2ca65e4216ad050e0a2dee5a0dd22b093d"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "588084b7467683d7276cb7dc1d6369aeddbe506f09cf36cba1fb4877058d3a18"
+          "contentDigest": "97819dcccbef1731192e664dd0f57dc9e770944900e2d88294f091ab779a7017"
         }
       ],
       "translations": [
@@ -1458,8 +1458,8 @@
           ],
           "translationStatus": "reviewed",
           "bodyCharacters": 1323,
-          "digest": "588084b7467683d7276cb7dc1d6369aeddbe506f09cf36cba1fb4877058d3a18",
-          "body": "## 赛道的身份\n\nUTMB（Ultra-Trail du Mont-Blanc）环勃朗峰赛从法国霞慕尼出发，最终回到霞慕尼。它不是一条在单一山谷里折返的路线，而是环绕勃朗峰山体、跨越意大利、瑞士和法国三国的山径。起点与终点同在霞慕尼，但中间经过的国境、山谷和山口决定了它是一场典型的高山超长越野，而不是放大的公路马拉松。\n\n本页固定的是 **2026 年版**赛道，版本号为 `2026-utmb-mont-blanc`。赛事方 2026 年页面统计栏列出 **174 公里**、**9,700 米**累计爬升。它们是官方页面的取整统计值，不应被当作精确到米的测量值使用。\n\n## 高山赛道意味着什么\n\n距离和爬升只是入口。高山越野的难点还来自海拔变化、夜间行进、天气窗口和补给间隔，而这些信息不能从一条简化轨迹里读出来。本页不提供逐段海拔剖面，也不标注补给站、关门时间或山口名称，因为这些细节必须随年份和赛事公告更新，且没有可再分发的权威数据支撑。\n\n能确认的只有：这是一条穿越三国的环线，起终点在霞慕尼，官方距离与爬升为上述统计值。任何训练计划、配速目标和装备清单都应以赛事方当年的规则与技术资料为准。\n\n## 起终点同城，不等于路线简单\n\n霞慕尼既是出发地也是终点，这使得住宿可以集中安排，但也容易让人低估赛道。环线意味着你会经过多个不同的山谷气候区；高海拔路段的天气可能与镇区完全不同。行前应分别准备低海拔与高海拔的衣物，并把夜间头灯、备用电池和应急保暖作为独立清单核对。\n\n补给方面，可以参考本站的[长距离越野补给](/articles/long-run-fueling/)与[恢复日](/articles/recovery-day/)条目。它们提供通用原则，不替代赛事方的强制装备与补给站说明。\n\n## 为什么本站不提供轨迹下载\n\nUTMB 的赛道资料由赛事方发布，2026 年赛事页面提供官方 GPX 下载。本页将 `geometryAccess` 标记为 `official-link`：只链接官方文件，不捆绑、不再分发，也不展示模拟路线或把示意图伪装成真实几何。地图锚点只落在霞慕尼起点，用于在球面上定位赛事。\n\n如赛事方日后提供明确的再分发许可，本站才会补充本地轨迹文件、来源许可与署名，并更新内容摘要。\n\n## 怎样继续阅读\n\n- 先用[配速计算器](/tools/pace/)理解「174 公里」在不同完赛目标下的平均移动速度。\n- 用[轨迹查看](/tools/track-view/)处理你自己记录的活动文件；上传只在本机浏览器内完成。\n- 赛前以赛事方公布的技术资料核对路线变更、补给与强制装备。\n\n## 资料与再发布\n\n本页由跑地图根据赛事方 2026 年公开页面编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方 GPX 归赛事方所有；本页原创说明采用 CC BY 4.0。本页只链接官方轨迹，不在本站重新分发。\n\n## 来源\n\n- UTMB 官方赛事页面：2026 年路线、174 公里距离、9,700 米爬升，以及法国、意大利、瑞士三国穿越说明。\n\n具体链接见页面底部的来源列表。"
+          "digest": "97819dcccbef1731192e664dd0f57dc9e770944900e2d88294f091ab779a7017",
+          "body": "## 赛道的身份\n\nUTMB（Ultra-Trail du Mont-Blanc）环勃朗峰赛从法国霞慕尼出发，最终回到霞慕尼。它不是一条在单一山谷里折返的路线，而是环绕勃朗峰山体、跨越意大利、瑞士和法国三国的山径。起点与终点同在霞慕尼，但中间经过的国境、山谷和山口决定了它是一场典型的高山超长越野，而不是放大的公路马拉松。\n\n本页固定的是 **2026 年版**赛道，版本号为 `2026-utmb-mont-blanc`。赛事方 2026 年页面统计栏列出 **174 公里**、**9,700 米**累计爬升。它们是官方页面的取整统计值，不应被当作精确到米的测量值使用。\n\n## 高山赛道意味着什么\n\n距离和爬升只是入口。高山越野的难点还来自海拔变化、夜间行进、天气窗口和补给间隔，而这些信息不能从一条简化轨迹里读出来。本页不提供逐段海拔剖面，也不标注补给站、关门时间或山口名称，因为这些细节必须随年份和赛事公告更新，且没有可再分发的权威数据支撑。\n\n能确认的只有：这是一条穿越三国的环线，起终点在霞慕尼，官方距离与爬升为上述统计值。任何训练计划、配速目标和装备清单都应以赛事方当年的规则与技术资料为准。\n\n## 起终点同城，不等于路线简单\n\n霞慕尼既是出发地也是终点，这使得住宿可以集中安排，但也容易让人低估赛道。环线意味着你会经过多个不同的山谷气候区；高海拔路段的天气可能与镇区完全不同。行前应分别准备低海拔与高海拔的衣物，并把夜间头灯、备用电池和应急保暖作为独立清单核对。\n\n补给方面，可以参考本站的[长距离越野补给](/articles/long-run-fueling/)与[恢复日](/articles/recovery-day/)条目。它们提供通用原则，不替代赛事方的强制装备与补给站说明。\n\n## 为什么本站不提供轨迹下载\n\nUTMB 的赛道资料由赛事方发布，2026 年赛事页面提供官方 GPX 下载。本页将 `geometryAccess` 标记为 `official-link`：只链接官方文件，不捆绑、不再分发，也不展示模拟路线或把示意图伪装成真实几何。地图锚点只落在霞慕尼起点，用于在球面上定位赛事。\n\n如赛事方日后提供明确的再分发许可，本站才会补充本地轨迹文件、来源许可与署名，并更新内容摘要。\n\n## 怎样继续阅读\n\n- 先用[配速计算器](/tools/pace/)理解「174 公里」在不同完赛目标下的平均移动速度。\n- 用[轨迹查看](/tools/track-view/)处理你自己记录的活动文件；上传只在本机浏览器内完成。\n- 赛前以赛事方公布的技术资料核对路线变更、补给与强制装备。\n\n## 资料与再发布\n\n本页由跑起来根据赛事方 2026 年公开页面编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方 GPX 归赛事方所有；本页原创说明采用 CC BY 4.0。本页只链接官方轨迹，不在本站重新分发。\n\n## 来源\n\n- UTMB 官方赛事页面：2026 年路线、174 公里距离、9,700 米爬升，以及法国、意大利、瑞士三国穿越说明。\n\n具体链接见页面底部的来源列表。"
         },
         {
           "locale": "en",
@@ -1472,9 +1472,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 3725,
-          "digest": "69e8448947d310cee273de53b52efa145a362aa1ce964cd5cea49b815c310bce",
-          "body": "## The identity of the course\n\nUTMB (Ultra-Trail du Mont-Blanc) starts in Chamonix, France, and returns to Chamonix. It is not an out-and-back in a single valley: the route circles the Mont Blanc massif on mountain trails and crosses Italy, Switzerland and France. Starting and finishing in the same town does not make it a large road marathon; the borders, valleys and passes in between define it as a high-mountain ultra.\n\nThis page pins the **2026 edition**, version `2026-utmb-mont-blanc`. The organiser's 2026 stat block lists **174 km** and **9,700 m** of positive elevation gain. Treat these as rounded official statistics, not measurements to the metre.\n\n## What a high-mountain course implies\n\nDistance and climb are only the entrance. The difficulty of a mountain ultra also comes from altitude change, running through the night, weather windows and the spacing of aid stations — none of which can be read from a simplified track. This page provides no segment-by-segment elevation profile and does not label aid stations, cut-off times or pass names, because those details change with each edition and official announcement, and no authoritative, redistributable dataset supports them here.\n\nWhat can be confirmed is this: the route is a three-country loop, it starts and finishes in Chamonix, and the official distance and climb are the rounded values above. Training plans, pace targets and equipment lists should follow the organiser's rules and technical material for the current year.\n\n## Same town at both ends is not a simple course\n\nChamonix is both the departure point and the finish, which allows accommodation to be concentrated — and makes it easy to underestimate the course. A loop passes through several valleys with different weather; conditions at altitude can be completely unlike those in town. Prepare clothing for both low and high altitude, and treat a head torch, spare batteries and emergency warmth as a separate checklist.\n\nFor fuelling, see the [long-run fuelling](/en/knowledge/long-run-fueling/) and [recovery day](/en/knowledge/recovery-day/) entries on this site. They offer general principles and do not replace the organiser's mandatory equipment and aid-station information.\n\n## Why this site does not host a track\n\nThe organiser publishes an official GPX download on its 2026 race page. This page marks `geometryAccess` as `official-link`: it links to that file but does not bundle or redistribute it, draws no simulated route and does not pass off an illustration as real geometry. The map anchor sits at the Chamonix start only, to locate the event on the globe.\n\nOnly if the organiser later grants explicit redistribution permission will this site add a local track, its licence and attribution, and update the content digest.\n\n## Where to go next\n\n- Use the [pace calculator](/en/tools/pace/) to understand what \"174 km\" means as an average moving speed for different finish targets.\n- Use the [track viewer](/en/tools/track-view/) to process your own activity files; uploads stay in your browser.\n- Before race day, check the organiser's technical material for route changes, aid stations and mandatory equipment.\n\n## Sources and reuse\n\nThis page was written by RunMap from the organiser's 2026 public pages and is licensed CC BY 4.0. The event name, official marks, official route text and official GPX remain the property of the organiser; this page's original explanatory text is CC BY 4.0. The track is linked from the organiser, not redistributed here.\n\n## Sources\n\n- The official UTMB event page: 2026 route, the 174 km distance, 9,700 m of climb, and the crossing of France, Italy and Switzerland.\n\nThe exact links appear in the source list at the bottom of the page."
+          "bodyCharacters": 3724,
+          "digest": "2f2d3581dbbe72083ec3eb0b0a2ddc2ca65e4216ad050e0a2dee5a0dd22b093d",
+          "body": "## The identity of the course\n\nUTMB (Ultra-Trail du Mont-Blanc) starts in Chamonix, France, and returns to Chamonix. It is not an out-and-back in a single valley: the route circles the Mont Blanc massif on mountain trails and crosses Italy, Switzerland and France. Starting and finishing in the same town does not make it a large road marathon; the borders, valleys and passes in between define it as a high-mountain ultra.\n\nThis page pins the **2026 edition**, version `2026-utmb-mont-blanc`. The organiser's 2026 stat block lists **174 km** and **9,700 m** of positive elevation gain. Treat these as rounded official statistics, not measurements to the metre.\n\n## What a high-mountain course implies\n\nDistance and climb are only the entrance. The difficulty of a mountain ultra also comes from altitude change, running through the night, weather windows and the spacing of aid stations — none of which can be read from a simplified track. This page provides no segment-by-segment elevation profile and does not label aid stations, cut-off times or pass names, because those details change with each edition and official announcement, and no authoritative, redistributable dataset supports them here.\n\nWhat can be confirmed is this: the route is a three-country loop, it starts and finishes in Chamonix, and the official distance and climb are the rounded values above. Training plans, pace targets and equipment lists should follow the organiser's rules and technical material for the current year.\n\n## Same town at both ends is not a simple course\n\nChamonix is both the departure point and the finish, which allows accommodation to be concentrated — and makes it easy to underestimate the course. A loop passes through several valleys with different weather; conditions at altitude can be completely unlike those in town. Prepare clothing for both low and high altitude, and treat a head torch, spare batteries and emergency warmth as a separate checklist.\n\nFor fuelling, see the [long-run fuelling](/en/knowledge/long-run-fueling/) and [recovery day](/en/knowledge/recovery-day/) entries on this site. They offer general principles and do not replace the organiser's mandatory equipment and aid-station information.\n\n## Why this site does not host a track\n\nThe organiser publishes an official GPX download on its 2026 race page. This page marks `geometryAccess` as `official-link`: it links to that file but does not bundle or redistribute it, draws no simulated route and does not pass off an illustration as real geometry. The map anchor sits at the Chamonix start only, to locate the event on the globe.\n\nOnly if the organiser later grants explicit redistribution permission will this site add a local track, its licence and attribution, and update the content digest.\n\n## Where to go next\n\n- Use the [pace calculator](/en/tools/pace/) to understand what \"174 km\" means as an average moving speed for different finish targets.\n- Use the [track viewer](/en/tools/track-view/) to process your own activity files; uploads stay in your browser.\n- Before race day, check the organiser's technical material for route changes, aid stations and mandatory equipment.\n\n## Sources and reuse\n\nThis page was written by RunUp from the organiser's 2026 public pages and is licensed CC BY 4.0. The event name, official marks, official route text and official GPX remain the property of the organiser; this page's original explanatory text is CC BY 4.0. The track is linked from the organiser, not redistributed here.\n\n## Sources\n\n- The official UTMB event page: 2026 route, the 174 km distance, 9,700 m of climb, and the crossing of France, Italy and Switzerland.\n\nThe exact links appear in the source list at the bottom of the page."
         }
       ],
       "missingGates": []
@@ -1509,8 +1509,8 @@
         },
         {
           "sourceId": "route-anchor-editorial",
-          "title": "RunMap editorial map-anchor method",
-          "publisher": "RunMap",
+          "title": "RunUp editorial map-anchor method",
+          "publisher": "RunUp",
           "url": "https://paobu.org/about/#method",
           "publishedAt": null,
           "license": "CC-BY-4.0",
@@ -1526,14 +1526,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "1c8d98727e3fdf424d1cd62e2e27ee332e74e7bac25837773dbf0d70b1c2283c"
+          "contentDigest": "072c30b617b2e1c69cafdd66a995534a4b7f98555b087d66f409d6647f733c21"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "a7d823e93ad53315e24e4c19ba2886000c2787ad56fb95c2eb6368f750154dd1"
+          "contentDigest": "900da12a49585c914c0e6d365c5866a31b164058c0cb1121c5aac3f16a3fad17"
         }
       ],
       "translations": [
@@ -1548,9 +1548,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 923,
-          "digest": "a7d823e93ad53315e24e4c19ba2886000c2787ad56fb95c2eb6368f750154dd1",
-          "body": "## 赛道身份\n\n西部各州 100 从加州奥林匹克谷出发，沿历史矿工步道向奥本点对点推进，终点在 Placer High School 田径场。 本页固定的是 **2026-western-states-official-course** 版本，官方资料来自 Western States Endurance Run Foundation。\n\n这是点对点山地超马，距离、爬升、补给间隔和高温都不是公路马拉松可以直接类比的条件。官方路线/地图只帮助理解几何，不替代赛道技术资料、补给和参赛资格要求。\n\n## 已核验的事实\n\n- 起点在奥林匹克谷，终点在奥本 Placer High School 田径场，点对点。\n- 官方赛道 100.2 英里，累计爬升约 18,090 英尺；起段连续爬升到 Emigrant Pass。\n- 路线沿 1850 年代矿工步道行进；官方页面提供路线与地图入口，本站不捆绑或再分发赛道文件。\n- 距离口径：官方 100.2 英里（约 161.3 公里）。\n- 高程口径：官方累计爬升 18,090 英尺（约 5,514 米）\n- 地图锚点是 RunMap 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n赛事方提供路线与地图入口；本站不捆绑、不再分发赛道文件。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑地图根据 Western States Endurance Run Foundation 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；赛事方提供路线与地图入口；本站不捆绑、不再分发赛道文件。"
+          "bodyCharacters": 922,
+          "digest": "900da12a49585c914c0e6d365c5866a31b164058c0cb1121c5aac3f16a3fad17",
+          "body": "## 赛道身份\n\n西部各州 100 从加州奥林匹克谷出发，沿历史矿工步道向奥本点对点推进，终点在 Placer High School 田径场。 本页固定的是 **2026-western-states-official-course** 版本，官方资料来自 Western States Endurance Run Foundation。\n\n这是点对点山地超马，距离、爬升、补给间隔和高温都不是公路马拉松可以直接类比的条件。官方路线/地图只帮助理解几何，不替代赛道技术资料、补给和参赛资格要求。\n\n## 已核验的事实\n\n- 起点在奥林匹克谷，终点在奥本 Placer High School 田径场，点对点。\n- 官方赛道 100.2 英里，累计爬升约 18,090 英尺；起段连续爬升到 Emigrant Pass。\n- 路线沿 1850 年代矿工步道行进；官方页面提供路线与地图入口，本站不捆绑或再分发赛道文件。\n- 距离口径：官方 100.2 英里（约 161.3 公里）。\n- 高程口径：官方累计爬升 18,090 英尺（约 5,514 米）\n- 地图锚点是 RunUp 编辑添加的概览位置，不是官方起点、终点或赛道坐标。\n\n## 适用边界\n\n赛事方提供路线与地图入口；本站不捆绑、不再分发赛道文件。 本页不把其他网站的轨迹、示意图或海拔曲线当作官方几何；比赛日路线也可能因施工、天气或安全安排调整。\n\n## 怎样使用这条页面\n\n把本页当作固定版本的入口，而不是导航工具。先确认年份、组别和方向，再核对赛事方当年的技术资料。需要配速换算时使用[配速计算器](/tools/pace/)；需要阅读训练概念时先看[马拉松距离](/articles/marathon-distance/)。越野和超长路线还要另行核对强制装备、补给间隔、天气窗口和撤离条件。\n\n## 资料与再发布\n\n本页由跑起来根据 Western States Endurance Run Foundation 的公开资料编写，采用 CC BY 4.0 许可。赛事名称、官方标识、官方路线文字与官方文件归赛事方所有；赛事方提供路线与地图入口；本站不捆绑、不再分发赛道文件。"
         },
         {
           "locale": "en",
@@ -1563,9 +1563,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2317,
-          "digest": "1c8d98727e3fdf424d1cd62e2e27ee332e74e7bac25837773dbf0d70b1c2283c",
-          "body": "## Course identity\n\nThe Western States 100 runs point-to-point from Olympic Valley, California, along historic mining trails to Auburn, finishing on the Placer High School track. This page pins the **2026-western-states-official-course** version using the organiser's public material from Western States Endurance Run Foundation.\n\nThis is a point-to-point mountain ultra; distance, climb, aid spacing and heat are not interchangeable with road-marathon assumptions. The official route and map material help with geometry only and does not replace the technical course, aid or entry requirements.\n\n## Verified facts\n\n- It starts in Olympic Valley and finishes on the Placer High School track in Auburn, point-to-point.\n- The official course is 100.2 miles with 18,090 ft of climb; the opening section climbs to Emigrant Pass.\n- The route follows 1850s mining trails; the organiser provides route and map material, but this site does not bundle or redistribute a track file.\n- Distance basis: Official 100.2 miles (about 161.3 km).\n- Elevation basis: Official 18,090 ft climb (about 5,514 m)\n- The map anchor is a RunMap editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThe organiser provides route and map material; this site does not bundle or redistribute a track file. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunMap from Western States Endurance Run Foundation's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; The organiser provides route and map material; this site does not bundle or redistribute a track file."
+          "bodyCharacters": 2315,
+          "digest": "072c30b617b2e1c69cafdd66a995534a4b7f98555b087d66f409d6647f733c21",
+          "body": "## Course identity\n\nThe Western States 100 runs point-to-point from Olympic Valley, California, along historic mining trails to Auburn, finishing on the Placer High School track. This page pins the **2026-western-states-official-course** version using the organiser's public material from Western States Endurance Run Foundation.\n\nThis is a point-to-point mountain ultra; distance, climb, aid spacing and heat are not interchangeable with road-marathon assumptions. The official route and map material help with geometry only and does not replace the technical course, aid or entry requirements.\n\n## Verified facts\n\n- It starts in Olympic Valley and finishes on the Placer High School track in Auburn, point-to-point.\n- The official course is 100.2 miles with 18,090 ft of climb; the opening section climbs to Emigrant Pass.\n- The route follows 1850s mining trails; the organiser provides route and map material, but this site does not bundle or redistribute a track file.\n- Distance basis: Official 100.2 miles (about 161.3 km).\n- Elevation basis: Official 18,090 ft climb (about 5,514 m)\n- The map anchor is a RunUp editorial overview location, not an official start, finish or course coordinate.\n\n## Scope and limits\n\nThe organiser provides route and map material; this site does not bundle or redistribute a track file. It does not treat a third-party track, illustration or elevation sketch as official geometry; race-day routes can also change because of construction, weather or safety arrangements.\n\n## How to use this page\n\nTreat it as a pinned-version entry, not a navigation tool. Confirm the year, category and direction, then check the organiser's technical material for that edition. Use the [pace calculator](/en/tools/pace/) for arithmetic and read [the marathon distance](/en/knowledge/marathon-distance/) for training context. Ultra and trail races also require separate checks of mandatory kit, aid spacing, weather windows and escape options.\n\n## Sources and reuse\n\nThis page was written by RunUp from Western States Endurance Run Foundation's public material and is licensed CC BY 4.0. Event names, official marks, official route text and official files remain the property of the organiser; The organiser provides route and map material; this site does not bundle or redistribute a track file."
         }
       ],
       "missingGates": []
@@ -2192,14 +2192,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "dfdef83afba75b7d0e10904945b3b304ed28e40bfea3c0239e215eaef59a8d31"
+          "contentDigest": "0db63f4270a249d531ec63875b518009d742c05d68b8d8e5da40d505b5bed1e5"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "7e7deb50c50e4400ff83bb152049628209b442debd7fa96805e5f45f237910b4"
+          "contentDigest": "263361469713741e5c162eb61e632d5b442f1d1b4853ec2faeb5b44c9b7b7b0d"
         }
       ],
       "translations": [
@@ -2215,8 +2215,8 @@
           ],
           "translationStatus": "reviewed",
           "bodyCharacters": 1639,
-          "digest": "7e7deb50c50e4400ff83bb152049628209b442debd7fa96805e5f45f237910b4",
-          "body": "## 先说明使用边界\n\n术语是阅读工具，不是考试答案。同一个词在不同教练、研究或设备里可能有不同测量方式；例如“节奏跑”的强度、VO2max 的测试协议、GPS 的距离算法都可能不同。把定义当作起点，比较时要先确认口径、单位和测试条件。\n\n## 配速与速度\n\n- **配速（pace）**：完成一个单位距离所用的时间，常用 min/km 或 min/mi。配速越小，速度越快。\n- **速度（speed）**：单位时间移动的距离，常用 km/h 或 m/s；速度与配速互为倒数关系，但单位不同。\n- **平均配速**：总时间除以总距离；停顿、爬升和分段变化会被平均掉，不能代表每一段。\n\n## 强度与课类型\n\n- **RPE（主观用力感）**：用数字描述当下有多用力，常见 0–10 或 6–20 量表；它依赖个人感受，适合与谈话测试和心率趋势交叉使用。\n- **轻松跑（easy run）**：能以完整句子交谈、结束后仍有余力的低强度跑；没有唯一配速。\n- **节奏跑（tempo run）**：持续一段时间的“舒适地有压力”训练，常用于接近但不超过阈值附近；具体强度和时长因计划而异。\n- **间歇跑（interval）**：重复较高质量的工作段，中间安排恢复；工作段和恢复段都可以按时间或距离定义。\n- **长距离跑（long run）**：一周中较长的一次轻松或耐力跑，用于持续运动、补给和路线练习，不是每周必须测试极限。\n- **减量（taper）**：比赛前有计划地降低训练量、保留一些强度或比赛感觉的安排；没有适合所有人的固定天数。\n\n## 技术词汇\n\n- **步频（cadence）**：每分钟步数。它不是固定的 180；会随速度、坡度、身高和疲劳变化。\n- **步幅（stride length）**：每一步前进的距离，通常随速度增加；不代表越大越好。\n- **累计爬升（elevation gain）**：路线中所有正向高程变化之和，不等于终点减起点。\n- **坡度（grade）**：高程变化与水平距离的比值，常用百分比表示；上坡和下坡要分别看。\n\n## 生理与训练概念\n\n- **VO2max（最大摄氧量）**：身体在高强度运动中利用氧气的上限指标；实验室和手表估算的口径不同，不能直接互换。\n- **乳酸阈（lactate threshold）**：乳酸开始在血液中明显累积的强度概念；测试方法和定义并不唯一，不能用一个数字概括所有训练。\n- **跑步经济性（running economy）**：在给定速度下消耗氧气的效率；受速度、路面、鞋、疲劳和个体差异影响，比较时需要控制条件。\n\n## 文件格式\n\n- **GPX**：基于 XML 的 GPS 数据交换格式，可包含轨迹点、路线点、时间和可选高程；不是所有 GPX 都包含同样字段。\n- **GeoJSON**：基于 JSON 的地理数据格式，坐标通常按经度、纬度排列，可带第三位高程；LineString 与 MultiLineString 是线路工具常见的几何类型。\n\n## 怎样使用这些定义\n\n读训练文章时，先看它说的是配速、速度还是主观强度；读路线档案时，区分累计爬升、净变化和坡度；读工具结果时，确认单位、距离口径和是否有高程。拿不准时，回到原文的来源和适用条件，而不是只记一个数字。\n\n## 适用边界\n\n本页不提供个体化训练处方、医学诊断或设备精度保证。VO2max、乳酸阈等数值需要合格测试与解释；身体不适、疼痛或疾病管理应咨询相应专业人员。\n\n## 来源与适用范围\n\n活动强度和谈话测试参考 CDC；步频与步幅关系参考 Sports Health 系统综述；上下坡差异参考 Sports Medicine 综述；VO2max、乳酸阈和跑步经济性的多因素框架参考 PubMed 综述；GPX 与 GeoJSON 定义参考规范文档。术语的中文解释由跑地图编写，具体研究结论以来源为准。"
+          "digest": "263361469713741e5c162eb61e632d5b442f1d1b4853ec2faeb5b44c9b7b7b0d",
+          "body": "## 先说明使用边界\n\n术语是阅读工具，不是考试答案。同一个词在不同教练、研究或设备里可能有不同测量方式；例如“节奏跑”的强度、VO2max 的测试协议、GPS 的距离算法都可能不同。把定义当作起点，比较时要先确认口径、单位和测试条件。\n\n## 配速与速度\n\n- **配速（pace）**：完成一个单位距离所用的时间，常用 min/km 或 min/mi。配速越小，速度越快。\n- **速度（speed）**：单位时间移动的距离，常用 km/h 或 m/s；速度与配速互为倒数关系，但单位不同。\n- **平均配速**：总时间除以总距离；停顿、爬升和分段变化会被平均掉，不能代表每一段。\n\n## 强度与课类型\n\n- **RPE（主观用力感）**：用数字描述当下有多用力，常见 0–10 或 6–20 量表；它依赖个人感受，适合与谈话测试和心率趋势交叉使用。\n- **轻松跑（easy run）**：能以完整句子交谈、结束后仍有余力的低强度跑；没有唯一配速。\n- **节奏跑（tempo run）**：持续一段时间的“舒适地有压力”训练，常用于接近但不超过阈值附近；具体强度和时长因计划而异。\n- **间歇跑（interval）**：重复较高质量的工作段，中间安排恢复；工作段和恢复段都可以按时间或距离定义。\n- **长距离跑（long run）**：一周中较长的一次轻松或耐力跑，用于持续运动、补给和路线练习，不是每周必须测试极限。\n- **减量（taper）**：比赛前有计划地降低训练量、保留一些强度或比赛感觉的安排；没有适合所有人的固定天数。\n\n## 技术词汇\n\n- **步频（cadence）**：每分钟步数。它不是固定的 180；会随速度、坡度、身高和疲劳变化。\n- **步幅（stride length）**：每一步前进的距离，通常随速度增加；不代表越大越好。\n- **累计爬升（elevation gain）**：路线中所有正向高程变化之和，不等于终点减起点。\n- **坡度（grade）**：高程变化与水平距离的比值，常用百分比表示；上坡和下坡要分别看。\n\n## 生理与训练概念\n\n- **VO2max（最大摄氧量）**：身体在高强度运动中利用氧气的上限指标；实验室和手表估算的口径不同，不能直接互换。\n- **乳酸阈（lactate threshold）**：乳酸开始在血液中明显累积的强度概念；测试方法和定义并不唯一，不能用一个数字概括所有训练。\n- **跑步经济性（running economy）**：在给定速度下消耗氧气的效率；受速度、路面、鞋、疲劳和个体差异影响，比较时需要控制条件。\n\n## 文件格式\n\n- **GPX**：基于 XML 的 GPS 数据交换格式，可包含轨迹点、路线点、时间和可选高程；不是所有 GPX 都包含同样字段。\n- **GeoJSON**：基于 JSON 的地理数据格式，坐标通常按经度、纬度排列，可带第三位高程；LineString 与 MultiLineString 是线路工具常见的几何类型。\n\n## 怎样使用这些定义\n\n读训练文章时，先看它说的是配速、速度还是主观强度；读路线档案时，区分累计爬升、净变化和坡度；读工具结果时，确认单位、距离口径和是否有高程。拿不准时，回到原文的来源和适用条件，而不是只记一个数字。\n\n## 适用边界\n\n本页不提供个体化训练处方、医学诊断或设备精度保证。VO2max、乳酸阈等数值需要合格测试与解释；身体不适、疼痛或疾病管理应咨询相应专业人员。\n\n## 来源与适用范围\n\n活动强度和谈话测试参考 CDC；步频与步幅关系参考 Sports Health 系统综述；上下坡差异参考 Sports Medicine 综述；VO2max、乳酸阈和跑步经济性的多因素框架参考 PubMed 综述；GPX 与 GeoJSON 定义参考规范文档。术语的中文解释由跑起来编写，具体研究结论以来源为准。"
         },
         {
           "locale": "en",
@@ -2229,9 +2229,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 4202,
-          "digest": "dfdef83afba75b7d0e10904945b3b304ed28e40bfea3c0239e215eaef59a8d31",
-          "body": "## Scope first\n\nA glossary is a reading tool, not an exam answer. The same word can have different measurement conventions across coaches, studies and devices: the intensity of a “tempo” run, a VO2max protocol and a GPS distance algorithm may all differ. Treat a definition as a starting point, and check the basis, units and test conditions before comparing numbers.\n\n## Pace and speed\n\n- **Pace**: time per unit distance, usually min/km or min/mi. A smaller pace number means a faster speed.\n- **Speed**: distance per unit time, usually km/h or m/s. Speed and pace are reciprocal relationships, but the units differ.\n- **Average pace**: total time divided by total distance; stops, hills and changes are averaged out and do not describe every segment.\n\n## Effort and session types\n\n- **RPE (rating of perceived exertion)**: a number for how hard the effort feels, often on a 0–10 or 6–20 scale. It is personal and best cross-checked with the talk test and heart-rate trends.\n- **Easy run**: a low-intensity run where full sentences are possible and you finish with something left; there is no single pace.\n- **Tempo run**: a sustained “comfortably hard” session, often near but not beyond a threshold; exact intensity and duration vary by plan.\n- **Intervals**: repeated higher-quality work bouts with recovery between them; work and recovery can be defined by time or distance.\n- **Long run**: the longer easy or endurance run of the week, used for sustained movement, fuelling and route practice, not a weekly maximum test.\n- **Taper**: a planned reduction in training before a race, often retaining some intensity or race feel; there is no universal number of days.\n\n## Technique terms\n\n- **Cadence**: steps per minute. It is not a fixed 180; it changes with speed, gradient, height and fatigue.\n- **Stride length**: distance covered per step, usually increasing with speed; longer is not automatically better.\n- **Elevation gain**: the sum of all positive elevation changes, not the finish minus the start.\n- **Grade**: elevation change divided by horizontal distance, often expressed as a percentage; uphill and downhill should be considered separately.\n\n## Physiology and training concepts\n\n- **VO2max**: a marker of the upper limit of oxygen use during high-intensity exercise; laboratory and watch estimates use different methods and are not interchangeable.\n- **Lactate threshold**: the intensity at which blood lactate begins to accumulate markedly; definitions and testing methods are not unique, so one number cannot capture all training.\n- **Running economy**: the oxygen cost of running at a given speed; speed, surface, shoes, fatigue and individual variation matter, so comparisons need controlled conditions.\n\n## File formats\n\n- **GPX**: an XML GPS data exchange format that can contain track points, route points, time and optional elevation; not every GPX contains the same fields.\n- **GeoJSON**: a JSON geospatial format whose coordinates are usually longitude, latitude and an optional third elevation value; LineString and MultiLineString are common line geometries in track tools.\n\n## How to use the terms\n\nWhen reading training content, check whether it means pace, speed or perceived effort. In a route profile, distinguish cumulative climb, net change and grade. In a tool result, confirm units, distance basis and whether elevation is present. If unsure, return to the source and its conditions rather than memorising a number.\n\n## Scope and limits\n\nThis page does not provide an individual training prescription, medical diagnosis or guarantee of device accuracy. VO2max and lactate-threshold numbers require qualified testing and interpretation; pain or disease management should involve the relevant professional.\n\n## Sources and scope\n\nActivity intensity and the talk test follow the CDC; cadence/stride relationships follow a Sports Health systematic review; uphill/downhill differences follow a Sports Medicine review; the multi-factor VO2max, lactate-threshold and running-economy framework follows a PubMed review; GPX and GeoJSON definitions follow their specifications. RunMap wrote the Chinese explanations; specific research conclusions remain with the sources."
+          "bodyCharacters": 4201,
+          "digest": "0db63f4270a249d531ec63875b518009d742c05d68b8d8e5da40d505b5bed1e5",
+          "body": "## Scope first\n\nA glossary is a reading tool, not an exam answer. The same word can have different measurement conventions across coaches, studies and devices: the intensity of a “tempo” run, a VO2max protocol and a GPS distance algorithm may all differ. Treat a definition as a starting point, and check the basis, units and test conditions before comparing numbers.\n\n## Pace and speed\n\n- **Pace**: time per unit distance, usually min/km or min/mi. A smaller pace number means a faster speed.\n- **Speed**: distance per unit time, usually km/h or m/s. Speed and pace are reciprocal relationships, but the units differ.\n- **Average pace**: total time divided by total distance; stops, hills and changes are averaged out and do not describe every segment.\n\n## Effort and session types\n\n- **RPE (rating of perceived exertion)**: a number for how hard the effort feels, often on a 0–10 or 6–20 scale. It is personal and best cross-checked with the talk test and heart-rate trends.\n- **Easy run**: a low-intensity run where full sentences are possible and you finish with something left; there is no single pace.\n- **Tempo run**: a sustained “comfortably hard” session, often near but not beyond a threshold; exact intensity and duration vary by plan.\n- **Intervals**: repeated higher-quality work bouts with recovery between them; work and recovery can be defined by time or distance.\n- **Long run**: the longer easy or endurance run of the week, used for sustained movement, fuelling and route practice, not a weekly maximum test.\n- **Taper**: a planned reduction in training before a race, often retaining some intensity or race feel; there is no universal number of days.\n\n## Technique terms\n\n- **Cadence**: steps per minute. It is not a fixed 180; it changes with speed, gradient, height and fatigue.\n- **Stride length**: distance covered per step, usually increasing with speed; longer is not automatically better.\n- **Elevation gain**: the sum of all positive elevation changes, not the finish minus the start.\n- **Grade**: elevation change divided by horizontal distance, often expressed as a percentage; uphill and downhill should be considered separately.\n\n## Physiology and training concepts\n\n- **VO2max**: a marker of the upper limit of oxygen use during high-intensity exercise; laboratory and watch estimates use different methods and are not interchangeable.\n- **Lactate threshold**: the intensity at which blood lactate begins to accumulate markedly; definitions and testing methods are not unique, so one number cannot capture all training.\n- **Running economy**: the oxygen cost of running at a given speed; speed, surface, shoes, fatigue and individual variation matter, so comparisons need controlled conditions.\n\n## File formats\n\n- **GPX**: an XML GPS data exchange format that can contain track points, route points, time and optional elevation; not every GPX contains the same fields.\n- **GeoJSON**: a JSON geospatial format whose coordinates are usually longitude, latitude and an optional third elevation value; LineString and MultiLineString are common line geometries in track tools.\n\n## How to use the terms\n\nWhen reading training content, check whether it means pace, speed or perceived effort. In a route profile, distinguish cumulative climb, net change and grade. In a tool result, confirm units, distance basis and whether elevation is present. If unsure, return to the source and its conditions rather than memorising a number.\n\n## Scope and limits\n\nThis page does not provide an individual training prescription, medical diagnosis or guarantee of device accuracy. VO2max and lactate-threshold numbers require qualified testing and interpretation; pain or disease management should involve the relevant professional.\n\n## Sources and scope\n\nActivity intensity and the talk test follow the CDC; cadence/stride relationships follow a Sports Health systematic review; uphill/downhill differences follow a Sports Medicine review; the multi-factor VO2max, lactate-threshold and running-economy framework follows a PubMed review; GPX and GeoJSON definitions follow their specifications. RunUp wrote the Chinese explanations; specific research conclusions remain with the sources."
         }
       ],
       "missingGates": []
@@ -3196,14 +3196,14 @@
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "e688ec3e448d3b845803ceb62420ed9068abaee9f54d9e12ff626aed5d7ba341"
+          "contentDigest": "d42d234057efbcd8e0220ecf6ed603292484bb4c48bfff6a6964399e2113faa5"
         },
         {
           "locale": "zh-CN",
           "reviewerId": "runmap-editorial",
           "reviewedAt": "2026-10-28",
           "decision": "approve",
-          "contentDigest": "6bcae8d604951f65a7310d686443d31de9c1a1219009a0f9bd652de7b1b32b2d"
+          "contentDigest": "705f5bba6653e8ecbe4e1110f42bc1d4a55291de4c8caa5d88487a5d7a746f86"
         }
       ],
       "translations": [
@@ -3219,8 +3219,8 @@
           ],
           "translationStatus": "reviewed",
           "bodyCharacters": 1066,
-          "digest": "6bcae8d604951f65a7310d686443d31de9c1a1219009a0f9bd652de7b1b32b2d",
-          "body": "## 先给结论\n\n马拉松是一条公路跑项目，标准距离为 **42.195 公里**，也写作 **26 英里 385 码**。这两个表达描述的是同一个距离，只是单位不同。训练计划、配速表和赛道档案都应使用这个标准距离，除非赛事明确采用其他距离或组别。\n\n## 距离从哪里来\n\n现代公路赛事以 World Athletics 的项目定义为准。你不需要记住某一年、某一场比赛的故事，才能理解这个距离；需要记住的是：**42.195 公里是标准值，不是约数**。当一篇训练文章把马拉松写成「42 公里」或「26.2 英里」时，通常只是口语化处理；计算配速时仍应使用 42.195 公里。\n\n英里与公里的换算不是这篇文章的重点，但值得知道两者不能随意混用：按英里配速训练的人，与按公里配速训练的人，看到同一个完赛时间会得到不同的数字。\n\n## 距离如何影响配速\n\n配速是时间除以距离。以 42.195 公里为例：\n\n- 4 小时完赛，平均配速约为 5 分 41 秒/公里。\n- 3 小时 30 分完赛，平均配速约为 4 分 59 秒/公里。\n- 5 小时完赛，平均配速约为 7 分 07 秒/公里。\n\n这些只是平均值。实际比赛里，起跑拥堵、补给停留、坡度和天气都会让前后半程的配速不同。把平均值当作目标时，要预留这些变量，而不是要求每一公里都一模一样。\n\n需要准确换算时，使用跑地图工具站的[配速计算器](/tools/pace/)，输入距离与时间，分别得到配速和速度。\n\n## 训练上的含义\n\n42.195 公里不是两个半程马拉松简单相加。后半程的糖原、肌肉疲劳、补水节奏和心理波动，都要求你在训练中安排足够长的连续跑，并练习比赛日的补给与装备。具体安排应结合个人基础，不要直接套用他人的周跑量。\n\n如果你想先理解「轻松跑」为何占训练的大部分，可以继续阅读[轻松跑到底是什么强度](/articles/easy-run/)。\n\n## 常见混淆\n\n- **「全马」与「半马」**：半程马拉松是 21.0975 公里，正好是标准马拉松的一半；两者不是同一个项目。\n- **赛道距离与 GPS 距离**：手表记录的轨迹可能因信号漂移略长或略短，不能用来否定官方赛道距离。\n- **超级马拉松**：超过标准马拉松距离的公路或越野赛事属于另一类项目，不应套用马拉松配速模型。\n\n## 来源与适用范围\n\n本文的距离定义依据 World Athletics 的公路跑项目说明。配速示例为算术换算，不构成训练计划或完赛承诺。核验日期为 2026-10-27。"
+          "digest": "705f5bba6653e8ecbe4e1110f42bc1d4a55291de4c8caa5d88487a5d7a746f86",
+          "body": "## 先给结论\n\n马拉松是一条公路跑项目，标准距离为 **42.195 公里**，也写作 **26 英里 385 码**。这两个表达描述的是同一个距离，只是单位不同。训练计划、配速表和赛道档案都应使用这个标准距离，除非赛事明确采用其他距离或组别。\n\n## 距离从哪里来\n\n现代公路赛事以 World Athletics 的项目定义为准。你不需要记住某一年、某一场比赛的故事，才能理解这个距离；需要记住的是：**42.195 公里是标准值，不是约数**。当一篇训练文章把马拉松写成「42 公里」或「26.2 英里」时，通常只是口语化处理；计算配速时仍应使用 42.195 公里。\n\n英里与公里的换算不是这篇文章的重点，但值得知道两者不能随意混用：按英里配速训练的人，与按公里配速训练的人，看到同一个完赛时间会得到不同的数字。\n\n## 距离如何影响配速\n\n配速是时间除以距离。以 42.195 公里为例：\n\n- 4 小时完赛，平均配速约为 5 分 41 秒/公里。\n- 3 小时 30 分完赛，平均配速约为 4 分 59 秒/公里。\n- 5 小时完赛，平均配速约为 7 分 07 秒/公里。\n\n这些只是平均值。实际比赛里，起跑拥堵、补给停留、坡度和天气都会让前后半程的配速不同。把平均值当作目标时，要预留这些变量，而不是要求每一公里都一模一样。\n\n需要准确换算时，使用跑起来工具站的[配速计算器](/tools/pace/)，输入距离与时间，分别得到配速和速度。\n\n## 训练上的含义\n\n42.195 公里不是两个半程马拉松简单相加。后半程的糖原、肌肉疲劳、补水节奏和心理波动，都要求你在训练中安排足够长的连续跑，并练习比赛日的补给与装备。具体安排应结合个人基础，不要直接套用他人的周跑量。\n\n如果你想先理解「轻松跑」为何占训练的大部分，可以继续阅读[轻松跑到底是什么强度](/articles/easy-run/)。\n\n## 常见混淆\n\n- **「全马」与「半马」**：半程马拉松是 21.0975 公里，正好是标准马拉松的一半；两者不是同一个项目。\n- **赛道距离与 GPS 距离**：手表记录的轨迹可能因信号漂移略长或略短，不能用来否定官方赛道距离。\n- **超级马拉松**：超过标准马拉松距离的公路或越野赛事属于另一类项目，不应套用马拉松配速模型。\n\n## 来源与适用范围\n\n本文的距离定义依据 World Athletics 的公路跑项目说明。配速示例为算术换算，不构成训练计划或完赛承诺。核验日期为 2026-10-27。"
         },
         {
           "locale": "en",
@@ -3233,9 +3233,9 @@
             "runmap-editorial"
           ],
           "translationStatus": "reviewed",
-          "bodyCharacters": 2690,
-          "digest": "e688ec3e448d3b845803ceb62420ed9068abaee9f54d9e12ff626aed5d7ba341",
-          "body": "## The short answer\n\nThe marathon is a road running event over **42.195 kilometres**, also expressed as **26 miles and 385 yards**. Both describe the same distance in different units. Training plans, pace tables and course profiles should use this standard distance unless an event explicitly offers a different distance or category.\n\n## Where the distance comes from\n\nModern road events use the World Athletics discipline definition. You do not need to remember a particular year or race story to understand the distance; what matters is that **42.195 km is a standard, not an approximation**. When an article writes \"42 km\" or \"26.2 miles\", that is usually shorthand. Pace calculations should still use 42.195 km.\n\nMiles and kilometres should not be mixed casually: runners training by mile pace and runners training by kilometre pace will see different numbers for the same finish time.\n\n## How distance affects pace\n\nPace is time divided by distance. Over 42.195 km:\n\n- A 4:00 finish averages about 5:41 per kilometre.\n- A 3:30 finish averages about 4:59 per kilometre.\n- A 5:00 finish averages about 7:07 per kilometre.\n\nThese are averages only. In a real race, start congestion, aid-station stops, hills and weather make the first and second halves differ. Treat an average as a target to manage, not a demand that every kilometre be identical.\n\nFor accurate conversions, use the [pace calculator](/en/tools/pace/) in RunMap Tools: enter distance and time to get both pace and speed.\n\n## What it means for training\n\n42.195 km is not simply two half marathons added together. Glycogen, muscle fatigue, hydration rhythm and psychological swings in the later stages all argue for enough long continuous runs in training, plus practice with race-day fuelling and equipment. The details depend on your own base; do not copy someone else's weekly volume.\n\nIf you want to understand why easy running makes up much of a training week, read [what easy running really means](/en/articles/easy-run/).\n\n## Common confusions\n\n- **Marathon and half marathon**: the half marathon is 21.0975 km, exactly half the standard marathon. They are different events.\n- **Course distance and GPS distance**: a watch track can measure slightly long or short because of signal drift. It does not override the official course distance.\n- **Ultramarathon**: road or trail events longer than the standard marathon are a different category. Marathon pace models do not automatically apply.\n\n## Sources and scope\n\nThe distance definition follows World Athletics' road running discipline description. The pace examples are arithmetic and are not a training plan or a finish-time promise. It was checked on 2026-10-27."
+          "bodyCharacters": 2689,
+          "digest": "d42d234057efbcd8e0220ecf6ed603292484bb4c48bfff6a6964399e2113faa5",
+          "body": "## The short answer\n\nThe marathon is a road running event over **42.195 kilometres**, also expressed as **26 miles and 385 yards**. Both describe the same distance in different units. Training plans, pace tables and course profiles should use this standard distance unless an event explicitly offers a different distance or category.\n\n## Where the distance comes from\n\nModern road events use the World Athletics discipline definition. You do not need to remember a particular year or race story to understand the distance; what matters is that **42.195 km is a standard, not an approximation**. When an article writes \"42 km\" or \"26.2 miles\", that is usually shorthand. Pace calculations should still use 42.195 km.\n\nMiles and kilometres should not be mixed casually: runners training by mile pace and runners training by kilometre pace will see different numbers for the same finish time.\n\n## How distance affects pace\n\nPace is time divided by distance. Over 42.195 km:\n\n- A 4:00 finish averages about 5:41 per kilometre.\n- A 3:30 finish averages about 4:59 per kilometre.\n- A 5:00 finish averages about 7:07 per kilometre.\n\nThese are averages only. In a real race, start congestion, aid-station stops, hills and weather make the first and second halves differ. Treat an average as a target to manage, not a demand that every kilometre be identical.\n\nFor accurate conversions, use the [pace calculator](/en/tools/pace/) in RunUp Tools: enter distance and time to get both pace and speed.\n\n## What it means for training\n\n42.195 km is not simply two half marathons added together. Glycogen, muscle fatigue, hydration rhythm and psychological swings in the later stages all argue for enough long continuous runs in training, plus practice with race-day fuelling and equipment. The details depend on your own base; do not copy someone else's weekly volume.\n\nIf you want to understand why easy running makes up much of a training week, read [what easy running really means](/en/articles/easy-run/).\n\n## Common confusions\n\n- **Marathon and half marathon**: the half marathon is 21.0975 km, exactly half the standard marathon. They are different events.\n- **Course distance and GPS distance**: a watch track can measure slightly long or short because of signal drift. It does not override the official course distance.\n- **Ultramarathon**: road or trail events longer than the standard marathon are a different category. Marathon pace models do not automatically apply.\n\n## Sources and scope\n\nThe distance definition follows World Athletics' road running discipline description. The pace examples are arithmetic and are not a training plan or a finish-time promise. It was checked on 2026-10-27."
         }
       ],
       "missingGates": []

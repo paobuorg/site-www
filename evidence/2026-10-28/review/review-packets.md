@@ -1,6 +1,6 @@
 # Review packets
 
-Generated: 2026-10-28T08:38:58.502Z
+Generated: 2026-10-28T12:33:45.787Z
 
 This packet is review material. Approval records live in `data/reviews` with matching `contentDigest` values; they are AI-assisted editorial approvals, not independent or professional review.
 
@@ -15,28 +15,28 @@ This packet is review material. Approval records live in `data/reviews` with mat
 
 | entityId | status | sources | reviews | missing gates | zh digest | en digest |
 |---|---|---:|---:|---|---|---|
-| route:beijing | published | 2 | 2 | none | `63ff191e90ebe58f…` | `ecc9920cb619fa04…` |
-| route:berlin | published | 2 | 2 | none | `883eb4593c4d19cd…` | `dbf3114876a67fd6…` |
-| route:boston | published | 2 | 2 | none | `024a5afa40492865…` | `130ff23043df1414…` |
-| route:cape-town | published | 2 | 2 | none | `e2bd41323c905d1c…` | `d7139e2bf46e984d…` |
-| route:chicago | published | 2 | 2 | none | `28b3732defdd5141…` | `d2b973337e121c85…` |
-| route:diagonale-des-fous | published | 2 | 2 | none | `e9ad8c267e66ca66…` | `5e7dd37da61f48be…` |
-| route:hardrock | published | 2 | 2 | none | `9fba4cd9bf13b368…` | `79406cb178d79c3a…` |
-| route:hong-kong-100 | published | 2 | 2 | none | `45aa41bd0f4522e0…` | `836a3df6408dbaa3…` |
-| route:london | published | 2 | 2 | none | `6ca92635c4da79e2…` | `18dab212981b8db9…` |
-| route:new-york | published | 2 | 2 | none | `157b4da8cb7af592…` | `6c0ffee274722531…` |
-| route:shanghai | published | 2 | 2 | none | `da672852cfba0a63…` | `c4981c596a05d6ee…` |
-| route:sydney | published | 2 | 2 | none | `b761ec081d69f5bd…` | `fa8c7fb2817683e3…` |
-| route:tokyo | published | 2 | 2 | none | `99cbb8b12712faf8…` | `6e19fada03b8d03d…` |
-| route:tor-des-geants | published | 2 | 2 | none | `08cb18f8288599d4…` | `21fa9c5d4e3127a0…` |
-| route:utmb | published | 1 | 2 | none | `588084b7467683d7…` | `69e8448947d310ce…` |
-| route:western-states | published | 2 | 2 | none | `a7d823e93ad53315…` | `1c8d98727e3fdf42…` |
+| route:beijing | published | 2 | 2 | none | `7157d5452000488e…` | `d11680997e7b4b78…` |
+| route:berlin | published | 2 | 2 | none | `208cc3f510d1e2de…` | `f74c48759a8d6302…` |
+| route:boston | published | 2 | 2 | none | `f8f229c858d87447…` | `ad68dc49463bae9b…` |
+| route:cape-town | published | 2 | 2 | none | `e7b05f01916db35d…` | `4ae81c3bca7cfddd…` |
+| route:chicago | published | 2 | 2 | none | `e4184301e30f2b59…` | `ce87556fe54f1f27…` |
+| route:diagonale-des-fous | published | 2 | 2 | none | `03d90812f978801c…` | `616e303ddd0b1a78…` |
+| route:hardrock | published | 2 | 2 | none | `94439f80ea044c69…` | `10cdb4136ff71852…` |
+| route:hong-kong-100 | published | 2 | 2 | none | `4ef031b495cbe10d…` | `7081445c65fa91b6…` |
+| route:london | published | 2 | 2 | none | `5f11e5c12373e4da…` | `f5bb1dafb5b95c7f…` |
+| route:new-york | published | 2 | 2 | none | `47a945e3fe80fa08…` | `600562039aaa52c8…` |
+| route:shanghai | published | 2 | 2 | none | `338c6c1b7616a404…` | `a5afafcfff6853b4…` |
+| route:sydney | published | 2 | 2 | none | `44af02253bfe8b2d…` | `bf6954060a6795ad…` |
+| route:tokyo | published | 2 | 2 | none | `4acdfb4353138da6…` | `1664b1857334936c…` |
+| route:tor-des-geants | published | 2 | 2 | none | `ffca5c67063289e0…` | `9daecfe80b59f5e1…` |
+| route:utmb | published | 1 | 2 | none | `97819dcccbef1731…` | `2f2d3581dbbe7208…` |
+| route:western-states | published | 2 | 2 | none | `900da12a49585c91…` | `072c30b617b2e1c6…` |
 | knowledge:breathing-and-rhythm | published | 2 | 2 | none | `1395709a0541af5b…` | `c45145ee12631625…` |
 | knowledge:cadence-and-stride | published | 2 | 2 | none | `5b5d73a2c7ed76b8…` | `b2414005b6c733f9…` |
 | knowledge:caffeine-and-running | published | 2 | 2 | none | `2e0cc41fcc9df5e8…` | `c71e3e511b2dfb4c…` |
 | knowledge:classic-races-and-history | published | 3 | 2 | none | `186a515d2185aa30…` | `722bbe904abd15fb…` |
 | knowledge:cold-weather-running | published | 4 | 2 | none | `c27de2b74851de04…` | `08b749611432d4dd…` |
-| knowledge:core-terms | published | 7 | 2 | none | `7e7deb50c50e4400…` | `dfdef83afba75b7d…` |
+| knowledge:core-terms | published | 7 | 2 | none | `263361469713741e…` | `0db63f4270a249d5…` |
 | knowledge:daily-fueling | published | 6 | 2 | none | `cacf6c7ed86660a2…` | `f8e5d518f830997d…` |
 | knowledge:easy-run | published | 2 | 2 | none | `e33a28bd96d70ec6…` | `099b0ab91c596444…` |
 | knowledge:female-runners-and-red-s | published | 2 | 2 | none | `2563f376c72e338e…` | `6ee82d5ed9a3a4b4…` |
@@ -46,7 +46,7 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | knowledge:load-and-overtraining | published | 3 | 2 | none | `ffac5928167360f2…` | `cef0d9dc9956d9cb…` |
 | knowledge:long-run-fueling | published | 2 | 2 | none | `a8278dbfaddd9525…` | `460b16fc0e9d1368…` |
 | knowledge:long-run | published | 3 | 2 | none | `3c21f0ef5169bf96…` | `a0632f40dd4406bb…` |
-| knowledge:marathon-distance | published | 1 | 2 | none | `6bcae8d604951f65…` | `e688ec3e448d3b84…` |
+| knowledge:marathon-distance | published | 1 | 2 | none | `705f5bba6653e8ec…` | `d42d234057efbcd8…` |
 | knowledge:night-running-and-traffic | published | 1 | 2 | none | `59c32e63d42b846a…` | `39446ad091ada5a8…` |
 | knowledge:older-runners | published | 2 | 2 | none | `bc33fccd082c2b51…` | `131c6756e7c450f3…` |
 | knowledge:pain-and-load | published | 2 | 2 | none | `1cce90377232d04f…` | `5544189e4eaad949…` |
