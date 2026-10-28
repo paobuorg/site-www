@@ -1,6 +1,6 @@
 # Review packets
 
-Generated: 2026-10-28T01:54:55.089Z
+Generated: 2026-10-28T02:34:44.142Z
 
 This packet is review material. Approval records live in `data/reviews` with matching `contentDigest` values; they are AI-assisted editorial approvals, not independent or professional review.
 
@@ -9,7 +9,7 @@ This packet is review material. Approval records live in `data/reviews` with mat
 - Routes: 16/16; missing: none
 - Knowledge topics present: culture, gear, habits, health, nutrition, recovery, safety, technique, training; missing: none
 - Tools: 12 published
-- Status: draft=0, in-review=0, published=56, withdrawn=0
+- Status: draft=0, in-review=0, published=64, withdrawn=0
 
 ## Entities
 
@@ -31,6 +31,8 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | route:tor-des-geants | published | 2 | 2 | none | `08cb18f8288599d4…` | `21fa9c5d4e3127a0…` |
 | route:utmb | published | 1 | 2 | none | `588084b7467683d7…` | `69e8448947d310ce…` |
 | route:western-states | published | 2 | 2 | none | `a7d823e93ad53315…` | `1c8d98727e3fdf42…` |
+| knowledge:cadence-and-stride | published | 2 | 2 | none | `5b5d73a2c7ed76b8…` | `b2414005b6c733f9…` |
+| knowledge:caffeine-and-running | published | 2 | 2 | none | `2e0cc41fcc9df5e8…` | `c71e3e511b2dfb4c…` |
 | knowledge:cold-weather-running | published | 4 | 2 | none | `c27de2b74851de04…` | `08b749611432d4dd…` |
 | knowledge:core-terms | published | 7 | 2 | none | `7e7deb50c50e4400…` | `dfdef83afba75b7d…` |
 | knowledge:daily-fueling | published | 6 | 2 | none | `cacf6c7ed86660a2…` | `f8e5d518f830997d…` |
@@ -42,7 +44,9 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | knowledge:long-run | published | 3 | 2 | none | `3c21f0ef5169bf96…` | `a0632f40dd4406bb…` |
 | knowledge:marathon-distance | published | 1 | 2 | none | `6bcae8d604951f65…` | `e688ec3e448d3b84…` |
 | knowledge:pain-and-load | published | 2 | 2 | none | `1cce90377232d04f…` | `5544189e4eaad949…` |
+| knowledge:post-race-recovery | published | 2 | 2 | none | `3fa19cd91dce7c3c…` | `8201d07cf1804eb3…` |
 | knowledge:race-anxiety-and-burnout | published | 3 | 2 | none | `4c977cf7da7cba3a…` | `3f5f14a551e77a3a…` |
+| knowledge:race-day-fueling | published | 2 | 2 | none | `bb7a2216338fc0b7…` | `de429b82da22943f…` |
 | knowledge:recovery-day | published | 1 | 2 | none | `a933d055afe6b383…` | `90f1e8a842d78a34…` |
 | knowledge:return-to-running | published | 2 | 2 | none | `d051b748d6208a27…` | `8a21ca553a189320…` |
 | knowledge:route-safety | published | 3 | 2 | none | `686fd5da5e3aa6c3…` | `18470dfbfcdc07b7…` |
@@ -51,13 +55,17 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | knowledge:running-form | published | 4 | 2 | none | `90a2ddd46a7d307e…` | `4d50c7eeb427dccd…` |
 | knowledge:running-habits | published | 3 | 2 | none | `2f56a30e27cb526f…` | `79ec3a4b07c775e0…` |
 | knowledge:running-shoes | published | 3 | 2 | none | `b0b91b9061f8266a…` | `ac057534f87429e7…` |
+| knowledge:running-surface | published | 1 | 2 | none | `92754fd6ecd1f41c…` | `e41b781f2d20547e…` |
+| knowledge:shoe-fit-and-cushioning | published | 2 | 2 | none | `53b76d981c0de01e…` | `fa2c78c70fa0cb76…` |
 | knowledge:shoe-technology | published | 3 | 2 | none | `e913c19ea1000be0…` | `cfa3e7da25f60e8a…` |
 | knowledge:sleep-recovery | published | 1 | 2 | none | `62dcd3d74c1a63b0…` | `5b4ccdd01d599948…` |
 | knowledge:strength-and-taper | published | 4 | 2 | none | `2fbceba0f800dfee…` | `4354019658369627…` |
 | knowledge:tempo-and-intervals | published | 2 | 2 | none | `6ee53ab8be74e8cc…` | `4e024c58b0c300a7…` |
 | knowledge:trail-gear | published | 3 | 2 | none | `319f09b1db4e985e…` | `7c41dac19e95af70…` |
+| knowledge:trail-navigation | published | 2 | 2 | none | `9cbd3d1b105aa44e…` | `f4c9b429ceaf2334…` |
 | knowledge:training-log | published | 3 | 2 | none | `a622baf58b0945a5…` | `41ace2e303b284c5…` |
 | knowledge:training-week | published | 3 | 2 | none | `2bbf8af9834e6de2…` | `3ccfa83adc7221fb…` |
+| knowledge:uphill-and-downhill | published | 1 | 2 | none | `0bb25573b927b116…` | `4b8a6d2b12fe07b3…` |
 | knowledge:watch-gps | published | 2 | 2 | none | `f31d982acc5b3525…` | `af1b878e5f476613…` |
 | tool:fueling-planner | published | 3 | 2 | none | `33de8edb483652a7…` | `346552a25c07fc4c…` |
 | tool:pace | published | 1 | 2 | none | `3a896d1522a38664…` | `23489a5ed07d3f09…` |

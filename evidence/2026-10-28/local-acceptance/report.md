@@ -7,11 +7,11 @@ Scope: the three production builds under `repos/site-www/dist`, `repos/site-know
 
 Local acceptance **passes** for the 56-entity launch set. The three public sites are live on their custom domains with HTTPS, and the K1/T1 deployment has been rechecked against the live release manifests.
 
-- Content: 56 entities / 112 bilingual versions published (routes 16, knowledge 28, tools 12); 62 sources; 26 tool cases; 112 AI-assisted editorial approval records; `check:production` passes with route=16, knowledge=28, tool=12.
-- Knowledge: 27 articles plus a 17-term glossary, nine topics covered, five learning paths.
-- Production artifacts: static builds 43/87/31 HTML files; release manifests 40/84/28 hosted HTML pages; Pagefind 112/56/24 records; sitemaps 40/84/28 URLs; no `localhost` URLs in production HTML.
-- Release bundle: `c4d0e3fc9af4c19882cfe9a70c22216868d4ebfc9b26ed0b69cad76338888d0b`; core `0.2.15` (`8e264510…`); content locks match.
-- Local crawl: all 152 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
+- Content: 64 entities / 128 bilingual versions published (routes 16, knowledge 36, tools 12); 62 sources; 26 tool cases; 128 AI-assisted editorial approval records; `check:production` passes with route=16, knowledge=36, tool=12.
+- Knowledge: 35 articles plus a 17-term glossary, nine topics covered, five learning paths.
+- Production artifacts: static builds 43/103/31 HTML files; release manifests 40/100/28 hosted HTML pages; Pagefind 128/72/24 records; sitemaps 40/100/28 URLs; no `localhost` URLs in production HTML.
+- Release bundle: `42ace64240eb0b47cf046354fd809b8a8bdeb19f21ea9bf2de54e5c947baccec`; core `0.2.15` (`8e264510…`); content locks match.
+- Local crawl: all 168 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
 - Browser matrix: Chromium/Firefox/WebKit each 48 screenshots; 0 axe violations, 0 console errors, 0 failed requests; keyboard 14/14 on four pages; search pagination fully expands to 25/25; no soft-keyboard overlap. The eight new K1/T1 pages have 0 axe violations in light and dark themes and no mobile overflow.
 - Search: 60/60 Chinese and 56/56 English queries rank an expected result in the top five (90% threshold); kind facets total 16/28/12.
 - T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.568s; desktop globe-ready worst 3.839s; simulated mobile worst 4.873s; about 60fps on the local Intel Arc.
@@ -27,6 +27,10 @@ Four bilingual articles were added: tempo and interval execution, training load 
 Four browser-local tools were added: fueling planner, route elevation, shoe mileage and race checklist. Fueling shows a 30–60 g/h range only above 60 minutes and treats product servings as arithmetic; elevation reports missing elevation as unknown and reports short-segment grade as unknown; shoe mileage uses the user's own reminder threshold and makes no replacement-interval claim; the checklist is rule-based and not medical or mandatory advice. Six cases were added. The tools repository now has 12 entities and 26 cases; site-tools has 38 passing unit tests.
 
 Browser checks: 90 minutes at 25 g per serving shows “45–90 g”; a sample GPX shows 221 m, 100 m gain, 100 m loss, 90.4% maximum grade and 3 profile points; a 10 km shoe entry persists as 110.0 km after reload; a trail checklist produces eight sections including a headlamp. The four pages had no mobile overflow, console errors or failed requests.
+
+## K2 knowledge batch
+
+Eight bilingual articles were added: cadence/stride, uphill/downhill, running surfaces, race-day fuelling, caffeine, shoe fit/cushioning, trail navigation and post-race recovery. Each uses existing verified sources, states its limits and is linked into the relevant learning paths. Sixteen new pages were checked at 390px: all 200, 0 axe violations, no mobile overflow, 0 console/failed requests and legal notices present.
 
 ## Legal, tone and licences
 

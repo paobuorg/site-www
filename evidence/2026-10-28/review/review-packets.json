@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T01:54:55.089Z",
+  "generatedAt": "2026-10-28T02:34:44.142Z",
   "note": "Review material only. Approval is recorded separately in data/reviews with a matching contentDigest; this file is not an independent or professional approval.",
   "contentLock": {
     "schemaVersion": 1,
@@ -11,28 +11,28 @@
       "data",
       "assets"
     ],
-    "generatedAt": "2026-10-28T01:36:05.564Z",
+    "generatedAt": "2026-10-28T02:31:55.115Z",
     "repositories": [
       {
         "name": "running-routes",
-        "commit": null,
+        "commit": "67a80abe30001527e6f60778e91ad9b206b31137",
         "digest": "1001cd3a1a07e663c7c76a68aa6147cbc467d1c6f6eeb94e858bf541e83a1e46",
         "fileCount": 99
       },
       {
         "name": "running-knowledge",
-        "commit": null,
-        "digest": "6ccb9a54fcfde38f29f7491a42f77cb849968285674d732f4bf80ce95650ef48",
-        "fileCount": 178
+        "commit": "17e2e6d303e97ae5643ce864845a51b9261c08fa",
+        "digest": "3560dc68d9e316e31250d4f4a5f67c45f3c996343296711951a55b8ea58009d3",
+        "fileCount": 218
       },
       {
         "name": "running-tools",
-        "commit": null,
+        "commit": "a423a457a1d9fed1c086ef84c67f267d9b62112a",
         "digest": "80004748b9faa2465b723a910b09f706dc57167838ab96dc2ad36ecfb6abe558",
         "fileCount": 94
       }
     ],
-    "note": "Local source-tree lock for reproducible local builds. The repositories have no Git history or remote yet; replace commit null with a pinned full commit SHA when the repositories are initialized and published."
+    "note": "Local source-tree lock for reproducible local builds. The commit pins the content revision used for the build; README-only commits do not change this content tree."
   },
   "coverage": {
     "routes": {
@@ -98,7 +98,7 @@
         "culture"
       ],
       "missingTopics": [],
-      "articles": 28
+      "articles": 36
     },
     "tools": {
       "present": [
@@ -120,7 +120,7 @@
     "status": {
       "draft": 0,
       "in-review": 0,
-      "published": 56,
+      "published": 64,
       "withdrawn": 0
     }
   },
@@ -1571,6 +1571,191 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:cadence-and-stride",
+      "slug": "cadence-and-stride",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-stride-frequency-review",
+        "knowledge-surface-running"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-stride-frequency-review",
+          "title": "Influence of stride frequency and length on running mechanics: a systematic review",
+          "publisher": "Sports Health",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24790690/",
+          "publishedAt": "2014-05-01",
+          "license": null,
+          "claims": [
+            "Across the reviewed studies, higher stride rate at a fixed speed reduced vertical centre-of-mass excursion, ground reaction force and joint energy absorption.",
+            "The review concluded that a higher stride rate may reduce several biomechanical factors associated with running injury.",
+            "The included studies were small and methodologically varied, so they do not establish a universal target cadence."
+          ]
+        },
+        {
+          "sourceId": "knowledge-surface-running",
+          "title": "Surface effects on kinematics, kinetics and stiffness of habitual rearfoot strikers during running",
+          "publisher": "PLOS ONE",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283323",
+          "publishedAt": "2023-03-22",
+          "license": null,
+          "claims": [
+            "A small cross-sectional study of 30 male rear-foot strikers found no significant differences in several joint-motion and loading variables across artificial grass, rubber and concrete.",
+            "Concrete reduced braking and mediolateral force but increased ankle moments and frontal-plane hip and knee moments.",
+            "The authors suggest harder surfaces may increase overuse risk for rear-foot strikers, but the evidence is limited."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "b2414005b6c733f9050eca0ceef54f453dc673f81aa8bd9c7f3086fc10c872d8"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "5b5d73a2c7ed76b8020dfdf57c251d532b6598809cf06e1b4a64b4883e11a041"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "步频与步幅：别把 180 当成统一答案",
+          "summary": "步频和步幅一起决定速度，但不存在适合所有人的步频数字。小幅调整可以用来减少跨步和冲击，不必为了凑数字改变自然节奏。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1284,
+          "digest": "5b5d73a2c7ed76b8020dfdf57c251d532b6598809cf06e1b4a64b4883e11a041",
+          "body": "## 速度是两件事的乘积\n\n跑步速度由步频和步幅共同决定：同样的速度，可以靠更快的步频、更长的步幅，或两者的组合完成。只盯着其中一个数字，很容易忽略另一个变量。比如步频很高但步幅很短，速度未必快；步幅很大但落地在身体前方很远，也不等于效率高。\n\n步频通常用每分钟步数表示。数 30 秒的步数再乘二，比用整分钟更容易在跑动中完成。不同手表和手机会用不同算法平滑数据，两个设备给出的数字不必完全一致。\n\n## 180 不是处方\n\n“180 步/分”常被当作跑步标准，但这个数字来自对精英跑者的观察，不是针对所有身高、速度和路况的统一处方。身材、配速、坡度和路面都会改变自然步频。慢跑时步频通常低于快跑，上坡时又会自然加快；把这些差异压成一个固定数字，反而可能让动作变得不自然。\n\n更合理的做法是先看自己的常态，再判断有没有必要调整。如果你经常跨大步、脚落在身体前方很远、落地声音很重，或反复出现膝盖和小腿不适，可以尝试小幅提高步频；如果你本来步频较高、动作轻松，则不必为了“达标”继续加快。\n\n## 证据能说明什么\n\n一项系统综述汇总了步频和步幅对跑步力学的影响。综述中的研究显示，在固定速度下提高步频，可能降低身体重心的垂直起伏、地面反作用力和关节能量吸收；作者认为，较高的步频可能减少若干与跑步损伤相关的生物力学因素。但纳入研究样本较小、方法差异明显，不能据此确定一个普遍适用的目标步频，也不能证明提高步频一定预防伤病。\n\n换句话说，步频是一个可以调整的变量，不是健康或水平的考试分数。\n\n## 怎样做一次小实验\n\n先在一段熟悉的平路上跑 5 到 10 分钟，记录自然步频和感受。然后只做一个小变化：在同样速度下，尝试把步频提高约 5% 到 10%，让脚步更轻、更短，落地更靠近身体重心下方。不要同时改变配速、鞋子和路线，否则很难判断是什么起了作用。\n\n每次只练几分钟，隔几天再试。调整后如果呼吸更乱、动作僵硬、膝盖或小腿疼痛，说明幅度太大或当前不适合，应回到原来的节奏。步频改变需要肌肉和协调逐步适应，不需要一次改到位。\n\n## 上坡、下坡与路面\n\n上坡时步频通常会自然提高，步幅缩短，这是身体在应对坡度，不必强行维持平路节奏。下坡时步幅容易变长、腾空时间增加，冲击也随之变大；与其完全放开大步冲下去，不如保持可控的步幅和更轻的落地。\n\n不同路面的力学差异也存在，但研究证据有限。草地、土路、跑道和混凝土没有绝对的“最好”或“最坏”，关键是从一种路面转到另一种时给身体适应时间。突然增加大量硬地或技术路面，通常比步频数字更值得注意。\n\n## 适用边界\n\n本页不提供个体化的跑姿矫正或伤病治疗方案。步频调整不能替代力量训练、恢复、鞋具评估和医疗检查。疼痛持续、肿胀、跛行或神经症状出现时，应先停止相关训练并寻求合格专业人员评估。\n\n## 来源与适用范围\n\n步频和步幅力学的讨论参考 Sports Health 的系统综述；不同路面负荷的有限证据参考 PLOS ONE 的小样本研究。综述中的结论受样本和测量方法限制，不能当成统一处方。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Cadence and stride length: 180 is not a universal answer",
+          "summary": "Cadence and stride length together set your speed, but no single cadence suits everyone. Small changes can reduce overstriding; you do not need to hit a number.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 4153,
+          "digest": "b2414005b6c733f9050eca0ceef54f453dc673f81aa8bd9c7f3086fc10c872d8",
+          "body": "## Speed is the product of two things\n\nRunning speed depends on both cadence and stride length. At the same speed, you can take more steps per minute, cover more ground per step, or combine both. Fixating on one number makes it easy to miss the other. A very high cadence with very short steps is not automatically fast, and a very long stride that lands far in front of the body is not automatically efficient.\n\nCadence is usually expressed as steps per minute. Counting steps for 30 seconds and doubling the result is easier than counting for a full minute while running. Watches and phones smooth the data differently, so two devices do not have to agree exactly.\n\n## 180 is not a prescription\n\n“180 steps per minute” is often treated as a standard, but the figure comes from observations of elite runners, not a prescription for every height, speed and terrain. Body proportions, pace, gradient and surface all change natural cadence. Easy running usually has a lower cadence than fast running, and uphill running naturally increases it. Compressing those differences into one fixed number can make movement less natural.\n\nStart by observing your own normal rhythm, then decide whether a change is useful. If you routinely overstride, land far in front of your body, run loudly or repeatedly get knee and lower-leg trouble, a small increase in cadence may be worth testing. If you already run with a light, relaxed rhythm, there is no prize for adding more steps.\n\n## What the evidence can say\n\nA systematic review of stride frequency and length examined how changing cadence affects running mechanics. Across the included studies, a higher step rate at a fixed speed was associated with less vertical centre-of-mass excursion, lower ground reaction force and less joint energy absorption. The authors concluded that a higher step rate may reduce several biomechanical factors linked to running injury.\n\nThe studies were small and methodologically varied. They do not establish a universal target cadence, and they do not prove that increasing cadence prevents injury. Cadence is a variable you can adjust, not a score of health or ability.\n\n## A small experiment\n\nRun for five to ten minutes on familiar flat ground and note your natural cadence and how it feels. Then change one thing: at the same speed, try increasing cadence by about 5–10%, with lighter, shorter steps landing closer under your centre of mass. Do not change pace, shoes and route at the same time, or you will not know what made the difference.\n\nPractise for a few minutes at a time and repeat over several sessions. If breathing becomes ragged, movement feels stiff, or knee or calf pain appears, the change is too large or not appropriate today; return to your previous rhythm. Coordination and muscles need time to adapt, and there is no need to change everything at once.\n\n## Uphill, downhill and surface\n\nUphill running usually increases cadence and shortens stride; that is the body responding to the gradient, not a failure to hold a flat-road rhythm. Downhill running tends to lengthen stride and increase flight time, which also increases impact. Rather than letting the stride open completely, keep it controlled and the landing light.\n\nSurfaces also differ mechanically, but the evidence is limited. Grass, trail, track and concrete are not inherently “best” or “worst”; the important variable is how quickly you move from one to another. A sudden increase in hard or technical terrain deserves more attention than a cadence number.\n\n## Scope and limits\n\nThis page does not provide individual gait retraining or injury treatment. Cadence changes do not replace strength work, recovery, shoe assessment and medical care. Stop the relevant training and seek a qualified assessment for persistent pain, swelling, limping or neurological symptoms.\n\n## Sources and scope\n\nThe discussion of cadence and stride mechanics follows a Sports Health systematic review; the limited evidence on surface loading follows a small PLOS ONE study. The review’s conclusions are limited by sample size and measurement differences and are not a universal prescription. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:caffeine-and-running",
+      "slug": "caffeine-and-running",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-issn-caffeine",
+        "knowledge-issn-nutrient-timing"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-issn-caffeine",
+          "title": "International Society of Sports Nutrition position stand: caffeine and exercise performance",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33388079/",
+          "publishedAt": "2021-01-02",
+          "license": null,
+          "claims": [
+            "Caffeine can acutely enhance various aspects of exercise performance in many but not all studies, with aerobic endurance showing the most consistent moderate-to-large benefits.",
+            "Doses of 3-6 mg/kg body mass have consistently improved exercise performance; very high doses are associated with more side effects.",
+            "A common timing is about 60 minutes before exercise, although optimal timing depends on the caffeine source.",
+            "Individual responses vary, and caffeine can adversely affect sleep or anxiety in some people."
+          ]
+        },
+        {
+          "sourceId": "knowledge-issn-nutrient-timing",
+          "title": "International Society of Sports Nutrition position stand: nutrient timing",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://doi.org/10.1186/s12970-017-0189-4",
+          "publishedAt": "2017-08-29",
+          "license": null,
+          "claims": [
+            "The timing and amount of carbohydrate intake around exercise can affect performance and recovery.",
+            "Nutrient timing guidance should be adapted to the individual, the exercise demand and the overall diet.",
+            "Carbohydrate availability is relevant to prolonged endurance exercise."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "c71e3e511b2dfb4c5bd917a6bb3b4aca515b8166fe1ff093fd3a6f36c1e86d5d"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "2e0cc41fcc9df5e84c6db612e753a81217204414dbefc20c0152d741fa61e7b4"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "咖啡因与跑步：有效不代表适合每个人",
+          "summary": "咖啡因在部分耐力运动中有中等偏大的表现收益，但剂量、时间、睡眠和焦虑反应因人而异。它不是必需品，更不该在比赛日第一次试用。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 930,
+          "digest": "2e0cc41fcc9df5e84c6db612e753a81217204414dbefc20c0152d741fa61e7b4",
+          "body": "## 证据大致怎么说\n\n国际运动营养学会的立场文件指出，咖啡因可以在许多但不是全部研究中急性改善运动表现，其中有氧耐力项目的证据相对一致，收益多为中等偏大。常用剂量范围是每公斤体重 3 到 6 毫克，常见摄入时间约为运动前 60 分钟；具体时间会随咖啡因来源和个体吸收而变化。\n\n“常见”不等于“人人适用”。剂量越高，副作用通常越多；心悸、焦虑、手抖、胃部不适和失眠都可能出现。对平时不摄入咖啡因的人，突然在比赛日使用中高剂量，风险通常大于收益。\n\n## 先看你要解决什么问题\n\n如果比赛在清晨、需要提神，或你已经在训练中使用咖啡因并了解自己的反应，适量咖啡因可能是一个可测试的工具。如果你睡眠不足、容易焦虑、胃敏感、心律不齐，或比赛在下午而你需要当晚睡好，咖啡因未必值得。\n\n咖啡因不能替代训练、碳水补给和配速管理。它也不会把疲劳“消除”，只是改变主观用力感和唤醒水平；在高温、脱水或睡眠债很高时，靠咖啡因硬撑并不是安全策略。\n\n## 怎样测试\n\n选择一次质量课或长距离，在训练中模拟比赛的时间、剂量和来源，记录心率、呼吸、胃肠反应、焦虑程度和当晚睡眠。不要同时改变剂量和产品类型。第一次可以从低剂量开始，确认没有不适后再考虑比赛使用。\n\n咖啡、能量胶、含咖啡因饮料和片剂的浓度差异很大，标签也不总是完整。看清楚每份的毫克数，而不是“一杯”或“一包”。如果产品含其他刺激物或高糖，也要一起考虑。\n\n## 睡眠与比赛时间\n\n咖啡因的半衰期因人而异，下午摄入可能影响当晚睡眠。比赛前夜睡好通常比多一份咖啡因更重要；如果为了早起提神而牺牲睡眠，整体收益可能被抵消。对咖啡因敏感的人，比赛日可以把摄入时间提前，并减少总剂量。\n\n## 适用边界\n\n本页不提供个体化剂量、药物相互作用或心血管风险评估。孕期、哺乳期、心律不齐、高血压、焦虑障碍、胃食管反流、失眠或正在服药的人，应先咨询医生或注册营养师。咖啡因不是比赛必需的补剂。\n\n## 来源与适用范围\n\n咖啡因对运动表现的影响、常用剂量范围和摄入时间参考 ISSN 的咖啡因与运动表现立场文件；训练中的试用原则参考 ISSN 营养时机立场文件。研究结果来自群体平均，不能预测个体反应。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Caffeine and running: effective is not the same as suitable",
+          "summary": "Caffeine has moderate-to-large performance effects in some endurance settings, but dose, timing, sleep and anxiety responses vary. It is not essential, and race day is no place for a first trial.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 2881,
+          "digest": "c71e3e511b2dfb4c5bd917a6bb3b4aca515b8166fe1ff093fd3a6f36c1e86d5d",
+          "body": "## What the evidence broadly says\n\nThe International Society of Sports Nutrition position stand reports that caffeine can acutely improve exercise performance in many but not all studies. Aerobic endurance has the most consistent evidence, with moderate-to-large benefits in several trials. A common dose is 3–6 mg per kilogram of body mass, usually taken about 60 minutes before exercise; timing depends on the caffeine source and individual absorption.\n\n“Common” does not mean “right for everyone”. Higher doses tend to bring more side effects, including palpitations, anxiety, tremor, stomach discomfort and insomnia. For someone who does not normally use caffeine, a sudden moderate-to-high dose on race day is more likely to add risk than benefit.\n\n## Start with the problem you are solving\n\nIf a race starts early and you need alertness, or you already use caffeine in training and know your response, a tested dose may be a useful tool. If you are sleep-deprived, anxious, prone to stomach upset or palpitations, or racing in the afternoon and need to sleep that night, caffeine may not be worth it.\n\nCaffeine does not replace training, carbohydrate intake or pacing. It does not remove fatigue; it changes perceived effort and arousal. Using it to push through heat, dehydration or a large sleep debt is not a safe strategy.\n\n## How to test it\n\nChoose a quality session or long run and rehearse the race timing, dose and source. Record heart rate, breathing, gut response, anxiety and sleep that night. Do not change dose and product type at the same time. Start low, and only consider a race dose after you have tolerated it in training.\n\nCoffee, gels, caffeinated drinks and tablets vary widely in concentration, and labels are not always complete. Look at milligrams per serving, not “one cup” or “one packet”. If the product also contains other stimulants or a lot of sugar, account for that too.\n\n## Sleep and race timing\n\nCaffeine half-life varies between people, and an afternoon dose can affect sleep that night. Sleeping well before a race is usually more valuable than adding caffeine; sacrificing sleep to wake up with caffeine can cancel the benefit. If you are sensitive, move the dose earlier and reduce the total.\n\n## Scope and limits\n\nThis page does not provide individual dosing, drug-interaction advice or cardiovascular risk assessment. Pregnancy, breastfeeding, arrhythmia, high blood pressure, anxiety disorders, reflux, insomnia or medication warrant a conversation with a doctor or registered dietitian. Caffeine is not a required race supplement.\n\n## Sources and scope\n\nThe performance effects, common dose range and timing follow the ISSN caffeine and exercise-performance position stand; the training-trial principle follows the ISSN nutrient-timing stand. Findings are group averages and cannot predict an individual response. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:cold-weather-running",
       "slug": "cold-weather-running",
       "kind": "knowledge",
@@ -2765,6 +2950,98 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:post-race-recovery",
+      "slug": "post-race-recovery",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-nhs-running-injuries",
+        "knowledge-issn-nutrient-timing"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-nhs-running-injuries",
+          "title": "Knee pain and other running injuries",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/live-well/exercise/knee-pain-and-other-running-injuries/",
+          "publishedAt": "2022-11-25",
+          "license": null,
+          "claims": [
+            "NHS advises buying proper running shoes and getting fitted at a running shop, while noting that expensive shoes are not essential.",
+            "Unsupportive or worn-out shoes are listed among factors that can contribute to heel pain.",
+            "Do not run while in pain; seek medical or physiotherapy advice when pain is severe, persistent or accompanied by swelling."
+          ]
+        },
+        {
+          "sourceId": "knowledge-issn-nutrient-timing",
+          "title": "International Society of Sports Nutrition position stand: nutrient timing",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://doi.org/10.1186/s12970-017-0189-4",
+          "publishedAt": "2017-08-29",
+          "license": null,
+          "claims": [
+            "The timing and amount of carbohydrate intake around exercise can affect performance and recovery.",
+            "Nutrient timing guidance should be adapted to the individual, the exercise demand and the overall diet.",
+            "Carbohydrate availability is relevant to prolonged endurance exercise."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "8201d07cf1804eb3bc8d2f5fea8311ce53445e60d674701bbce1d5cc4ced6187"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "3fa19cd91dce7c3c0f1eb501faa12d9f94a783b930fee42a52db3cee246a7962"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "赛后恢复：先把身体从比赛里带回来",
+          "summary": "冲过终点不是恢复的开始，也不是立刻回到训练的理由。赛后几天先补液、进食、睡眠和观察疼痛，再按身体反应逐步恢复跑量。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 969,
+          "digest": "3fa19cd91dce7c3c0f1eb501faa12d9f94a783b930fee42a52db3cee246a7962",
+          "body": "## 终点之后先做三件事\n\n完赛后先让自己冷静下来，慢慢走几分钟，避免突然停下。接着补充液体和碳水，胃口允许时加入蛋白质；如果暂时吃不下固体食物，含碳水与电解质的饮料是一个起点。赛后第一顿不需要“大补”，重点是让身体重新获得能量和水分。\n\n然后回家洗澡、换干衣服、睡觉。比赛后的免疫、睡眠和肌肉修复都需要时间，庆功、长途驾驶和酒精可以往后放。若天气寒冷，尽快保暖；若天气炎热，继续补水并避免长时间暴晒。\n\n## 酸痛、疼痛和危险信号\n\n延迟性肌肉酸痛通常在赛后一两天出现，表现为肌肉压痛、僵硬和力量下降，走楼梯时尤其明显。它和急性损伤不同。若出现锐痛、肿胀、无法负重、关节卡住、麻木、发热、胸痛、晕厥或异常心悸，应尽快就医，而不是继续“排酸跑”。\n\n比赛中摔倒、扭伤或撞到头部，即使当时还能跑，也值得观察。头部撞击后出现头痛加重、呕吐、意识模糊或嗜睡，应立即寻求医疗评估。\n\n## 回到跑步的节奏\n\n恢复跑没有统一时间表。5 公里或 10 公里比赛后，很多人几天内就能轻松跑；马拉松或超长越野后，恢复通常以周计。判断标准不是“第几天”，而是走路是否正常、疼痛是否消失、睡眠和精力是否恢复、轻松跑是否真的轻松。\n\n可以先从短时间步行和轻松跑开始，隔天进行，观察第二天反应。如果疼痛加重、动作代偿或疲劳持续，退回上一阶段。不要用一次“恢复跑”证明自己已经恢复，也不要在赛后立刻安排质量课或长距离。\n\n## 营养与睡眠\n\n赛后 24 到 48 小时，正常吃饭比精确计算更重要。每餐包含碳水、蛋白质和蔬菜，按口渴补水；如果出汗很多，可以搭配含电解质的饮料。酒精会影响睡眠和恢复，赛后当晚不宜大量饮酒。\n\n睡眠是最容易被忽视的恢复工具。赛后几天尽量保持规律作息，必要时安排短时午睡；如果持续失眠、情绪低落或疲劳超过数周，应寻求专业评估。\n\n## 适用边界\n\n本页不提供个体化康复计划、伤病诊断或用药建议。比赛距离、路面、天气和个人健康状况差异很大；有基础疾病、孕期、既往伤病或赛后持续症状的人，应咨询医生或物理治疗师。\n\n## 来源与适用范围\n\n赛后补液、碳水和蛋白质的时机参考 ISSN 的营养时机立场文件；疼痛、肿胀、无法负重和就医提示参考 NHS 的跑步损伤页面。恢复时间因比赛和个人而异，本文不给固定天数。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Post-race recovery: bring the body back from the race",
+          "summary": "Crossing the finish is not the start of recovery, and it is not a reason to resume training immediately. Spend the next few days on fluid, food, sleep and pain checks, then return gradually.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3051,
+          "digest": "8201d07cf1804eb3bc8d2f5fea8311ce53445e60d674701bbce1d5cc4ced6187",
+          "body": "## Three things after the finish\n\nAfter finishing, cool down by walking for a few minutes instead of stopping abruptly. Then take fluid and carbohydrate, adding protein if appetite allows; if solid food is difficult, a carbohydrate-electrolyte drink is a start. The first meal does not need to be a feast; the priority is energy and fluid.\n\nGo home, shower, change into dry clothes and sleep. Immune function, sleep and muscle repair all need time; celebrations, long drives and alcohol can wait. Get warm quickly in cold weather; in heat, keep drinking and avoid prolonged sun exposure.\n\n## Soreness, pain and warning signs\n\nDelayed-onset muscle soreness usually appears a day or two after a race, with tenderness, stiffness and reduced strength, especially on stairs. It is different from an acute injury. Seek medical care for sharp pain, swelling, inability to bear weight, a locked joint, numbness, fever, chest pain, fainting or unusual palpitations rather than trying to “flush out” the race.\n\nA fall, sprain or head impact during the race deserves attention even if you could continue at the time. Worsening headache, vomiting, confusion or drowsiness after a head impact needs urgent medical assessment.\n\n## Returning to running\n\nThere is no universal timetable. After a 5K or 10K, many runners can jog easily within a few days; after a marathon or ultramarathon, recovery is usually measured in weeks. The useful criteria are not the calendar but whether walking is normal, pain has settled, sleep and energy are back, and an easy run actually feels easy.\n\nStart with short walks and easy running every other day, and check the next-day response. If pain worsens, movement compensates or fatigue persists, go back a step. Do not use one “recovery run” as proof that you are recovered, and do not schedule quality sessions or long runs immediately after a race.\n\n## Food and sleep\n\nIn the 24–48 hours after a race, normal meals matter more than precise calculations. Include carbohydrate, protein and vegetables at meals and drink to thirst; if sweat losses were high, include an electrolyte drink. Alcohol can impair sleep and recovery, so a large amount on race night is unhelpful.\n\nSleep is the most easily ignored recovery tool. Keep regular hours for a few days and nap briefly if needed. Persistent insomnia, low mood or fatigue lasting several weeks deserves professional assessment.\n\n## Scope and limits\n\nThis page does not provide an individual rehabilitation plan, injury diagnosis or medication advice. Race distance, surface, weather and personal health vary widely; people with a medical condition, pregnancy, previous injury or persistent post-race symptoms should consult a doctor or physiotherapist.\n\n## Sources and scope\n\nPost-race fluid, carbohydrate and protein timing follows the ISSN nutrient-timing position stand; pain, swelling, inability to bear weight and care-seeking advice follow the NHS running-injury page. Recovery time varies by race and person, so this page gives no fixed number of days. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:race-anxiety-and-burnout",
       "slug": "race-anxiety-and-burnout",
       "kind": "knowledge",
@@ -2869,6 +3146,98 @@
           "bodyCharacters": 3175,
           "digest": "3f5f14a551e77a3abe56fb7950e517da080c34605731c2822e8278a17d7b6d07",
           "body": "## Pre-race nerves are not automatically an anxiety disorder\n\nThe NHS notes that anxiety is a common response to stress and that occasional worry does not mean generalised anxiety disorder (GAD). GAD is more likely when worry is widespread, persistent and difficult to control, and affects daily life. Symptoms can include sleep difficulty, restlessness, irritability, fatigue, muscle tension, stomach problems and palpitations.\n\nA faster heartbeat, repeated kit checks or poor sleep before a race are familiar to many runners. If worry lasts for weeks, affects work or sleep, or makes normal training and life difficult, consider talking to a clinician or mental-health professional. Adults in the UK can also refer themselves to NHS talking therapies.\n\n## Small actions that help\n\nRather than telling yourself to “just stop worrying”, put attention on actions: prepare kit and route in advance, use a familiar warm-up, choose a few specific cues (“relax the first 5 km”, “shorten the stride uphill”), and allow yourself to feel nervous.\n\nAvoid adding new caffeine, supplements or rituals on race day; they can amplify palpitations and anxiety. Writing worries down, talking to a friend, or using a familiar breathing or attention practice is usually more useful than repeatedly refreshing race predictions.\n\n## Training burnout is not laziness\n\nWHO lists “burn-out” as an occupational phenomenon and states that it is not classified as a medical condition and should not be applied to other areas of life. Runners' “training burnout” is not a formal diagnosis; it may combine insufficient sleep, low energy intake, life stress, repetitive training and illness.\n\nIf persistent exhaustion, loss of interest, a clear performance drop, worsening sleep or low mood lasts more than a week or two, reduce training volume and intensity, review sleep, food and stress, and consider medical or psychological assessment. Do not use “push through” to mask worsening signals.\n\n## Life load and goals\n\nWork, family, caregiving and financial stress all affect training. Goals can change: treating a race as an experience, shortening the distance, deferring it, or simply maintaining health for a while are all legitimate choices. Rest is not failure, and one race does not define your worth.\n\nIf training has become persistent self-criticism, secrecy or compulsion, take it seriously. Talking with someone you trust, a clinician or a mental-health professional is safer than struggling alone.\n\n## Scope and limits\n\nThis page does not diagnose anxiety, depression, eating disorders or overtraining, and does not provide psychotherapy or medication advice. If you or someone else is at risk of self-harm, severely hopeless or in a mental-health crisis, contact local emergency or crisis services rather than waiting to adjust a training plan.\n\n## Sources and scope\n\nAnxiety symptoms and help pathways follow the NHS generalised anxiety disorder page; the definition of burnout follows WHO's ICD-11 note; sleep and recovery principles follow this site's sleep article and its sources. This page offers a general recognition and action framework, not a substitute for professional assessment."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:race-day-fueling",
+      "slug": "race-day-fueling",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-issn-carbohydrate-timing",
+        "knowledge-issn-nutrient-timing"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-issn-carbohydrate-timing",
+          "title": "International Society of Sports Nutrition position stand: nutrient timing",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28919842/",
+          "publishedAt": "2017-08-29",
+          "license": null,
+          "claims": [
+            "For extended bouts of high-intensity exercise longer than 60 minutes, carbohydrate should be consumed at about 30-60 grams per hour in a 6-8% carbohydrate-electrolyte solution every 10-15 minutes.",
+            "Carbohydrate intake during exercise should be practiced and adjusted to the individual and the event.",
+            "When carbohydrate delivery is inadequate, adding protein may help performance and recovery, but it does not replace adequate carbohydrate."
+          ]
+        },
+        {
+          "sourceId": "knowledge-issn-nutrient-timing",
+          "title": "International Society of Sports Nutrition position stand: nutrient timing",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://doi.org/10.1186/s12970-017-0189-4",
+          "publishedAt": "2017-08-29",
+          "license": null,
+          "claims": [
+            "The timing and amount of carbohydrate intake around exercise can affect performance and recovery.",
+            "Nutrient timing guidance should be adapted to the individual, the exercise demand and the overall diet.",
+            "Carbohydrate availability is relevant to prolonged endurance exercise."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "de429b82da22943f6f2ff15c430a83eaf90759d31f75f8b529944318196b57b0"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "bb7a2216338fc0b72894afb3fa42c04d2ab997a2b6192d6e950297527b920faf"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "比赛日补给：把熟悉的东西带进赛道",
+          "summary": "比赛日补给不是临时加量，而是把训练中验证过的碳水、液体和节奏搬进比赛。赛前、赛中、赛后各有任务，任何新产品都不该在起跑前才第一次出现。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1141,
+          "digest": "bb7a2216338fc0b72894afb3fa42c04d2ab997a2b6192d6e950297527b920faf",
+          "body": "## 补给是计划，不是仪式\n\n比赛日的补给从赛前几天就开始了。赛前 24 到 48 小时，多数耐力项目会建议提高碳水比例，同时保持熟悉的食物和进餐时间；不需要突然吃大量陌生食物，也不需要在赛前把胃塞满。比赛当天早餐通常安排在起跑前 2 到 3 小时，选择容易消化、自己平时吃过的碳水，搭配少量蛋白质和液体。\n\n如果起跑时间很早或赛前容易紧张，可以把早餐拆成起跑前较长时间的一顿和起跑前较短时间的小份加餐。关键是提前演练，而不是照搬别人的菜单。\n\n## 赛中的碳水节奏\n\n国际运动营养学会的立场文件指出，超过 60 分钟的高强度运动，可以按每小时约 30 到 60 克碳水补充，通常以 6% 到 8% 的碳水-电解质饮料每 10 到 15 分钟少量摄入。具体数量要根据项目时长、强度、天气、胃肠道耐受和训练中的试验调整。\n\n能量胶、饮料、软糖和固体食物都可以提供碳水，但浓度、体积和吸收速度不同。把“每小时几包”直接套用到自己身上没有意义，应该看每份实际含多少克碳水。训练中记录产品、时间、天气和胃肠反应，比赛日只使用验证过的组合。\n\n## 液体与电解质\n\n补液量没有统一答案。比赛日要结合气温、湿度、出汗量、补给点和个人习惯安排，不要一次喝大量液体，也不要为了减少上厕所而完全不喝。电解质饮料可以帮助补充汗液中的盐分，但浓度越高不一定越好；盐丸和补剂更不应该在比赛日首次尝试。\n\n如果比赛中出现腹胀、恶心、呕吐、头晕或明显心悸，应降低强度、调整补给并寻求医疗帮助。持续呕吐或意识改变不是“再坚持一下”的问题。\n\n## 补给点与自备\n\n提前查看补给站位置、提供什么、是否有垃圾区和水站。组委会通常会在赛事手册中说明；不要假设每个补给点都有你需要的产品。需要自备时，确认号码布、腰包或手持软水壶是否允许，以及补给站是否提供丢弃点。\n\n把补给时间写在号码布或手表上，但不要为了按表执行而忽略身体反应。天气热、坡度大或强度高时，胃排空可能变慢，原计划需要调整。\n\n## 赛后第一顿\n\n完赛后先补液和碳水，再考虑蛋白质；如果胃口不好，可以先喝含碳水和电解质的饮料，再逐步吃固体食物。赛后恢复不是一顿饭就能完成的，接下来 24 到 48 小时的睡眠、正常饮食和轻松活动同样重要。\n\n## 适用边界\n\n本页不提供个体化营养处方、疾病饮食建议、补液量或比赛医疗许可。糖尿病、胃肠疾病、孕期、进食障碍史或用药者，应与医生或注册营养师讨论比赛补给。\n\n## 来源与适用范围\n\n赛中碳水范围和补给节奏参考 ISSN 的营养时机立场文件；赛前、赛中和赛后的营养安排参考同一立场文件与 ISSN 的碳水化合物时机说明。立场文件给出的是运动营养原则，不是个体化医疗或比赛许可。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Race-day fuelling: take what you have already tested",
+          "summary": "Race-day fuelling is not a last-minute increase; it is the carbohydrate, fluid and timing you have already tested in training. Pre-race, during and after each have a job, and no new product belongs on the start line.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3489,
+          "digest": "de429b82da22943f6f2ff15c430a83eaf90759d31f75f8b529944318196b57b0",
+          "body": "## Fuel is a plan, not a ritual\n\nRace fuelling starts days before the race. In the 24–48 hours before most endurance events, increasing the proportion of carbohydrate while keeping familiar foods and meal times is a common approach. There is no need to suddenly eat large amounts of unfamiliar food or to stuff yourself on race morning. A race-day breakfast is usually eaten 2–3 hours before the start, with easily digestible carbohydrate you already tolerate, a little protein and fluid.\n\nIf the start is very early or nerves make eating difficult, split breakfast into a larger meal further out and a smaller snack closer to the start. Rehearse it in training instead of copying someone else’s menu.\n\n## Carbohydrate during the race\n\nThe International Society of Sports Nutrition position stand suggests about 30–60 grams of carbohydrate per hour for extended high-intensity exercise lasting more than 60 minutes, often as a 6–8% carbohydrate-electrolyte drink taken in small amounts every 10–15 minutes. Adjust the amount to event duration, intensity, weather, gut tolerance and what worked in training.\n\nGels, drinks, chews and solid food all provide carbohydrate, but concentration, volume and absorption differ. “A gel every 20 minutes” means nothing until you know how many grams each product contains. Record the product, timing, weather and gut response in training, and use only tested combinations on race day.\n\n## Fluid and electrolytes\n\nThere is no single fluid volume for everyone. Combine temperature, humidity, sweat rate, aid stations and personal tolerance. Do not drink a large volume at once, and do not avoid all fluid to avoid toilets. Electrolyte drinks can replace some salt lost in sweat, but a stronger concentration is not automatically better; salt tablets and supplements are especially poor choices for a first race-day experiment.\n\nIf you develop bloating, nausea, vomiting, dizziness or marked palpitations, reduce intensity, adjust fuelling and seek medical help. Persistent vomiting or altered consciousness is not a “push through it” problem.\n\n## Aid stations and self-carried fuel\n\nCheck the race manual for aid-station locations, what is provided, waste zones and water. Do not assume every station has your product. If you carry your own, confirm whether bottles, belts or vests are allowed and where you can discard waste.\n\nWrite your fuelling times on your bib or watch, but do not follow the clock through a body that is clearly struggling. Heat, climbing or higher intensity can slow gastric emptying; the original plan may need to change.\n\n## The first meal after the finish\n\nStart with fluid and carbohydrate, then add protein; if appetite is low, a carbohydrate-electrolyte drink can come before solid food. Recovery is not one meal. Sleep, normal meals and easy movement over the next 24–48 hours matter too.\n\n## Scope and limits\n\nThis page does not provide an individual nutrition prescription, therapeutic diet, fluid volume or medical clearance. People with diabetes, gastrointestinal disease, pregnancy, a history of disordered eating or medication should discuss race fuelling with a doctor or registered dietitian.\n\n## Sources and scope\n\nThe during-race carbohydrate range and timing follow the ISSN nutrient-timing position stand; pre-, during- and post-race nutrition follow the same stand and the ISSN carbohydrate-timing paper. These are sports-nutrition principles, not individual medical care or race clearance. Checked 2026-10-28."
         }
       ],
       "missingGates": []
@@ -3741,6 +4110,176 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:running-surface",
+      "slug": "running-surface",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 1,
+      "sourceRefs": [
+        "knowledge-surface-running"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-surface-running",
+          "title": "Surface effects on kinematics, kinetics and stiffness of habitual rearfoot strikers during running",
+          "publisher": "PLOS ONE",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283323",
+          "publishedAt": "2023-03-22",
+          "license": null,
+          "claims": [
+            "A small cross-sectional study of 30 male rear-foot strikers found no significant differences in several joint-motion and loading variables across artificial grass, rubber and concrete.",
+            "Concrete reduced braking and mediolateral force but increased ankle moments and frontal-plane hip and knee moments.",
+            "The authors suggest harder surfaces may increase overuse risk for rear-foot strikers, but the evidence is limited."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "e41b781f2d20547e5f328663d0b18e95634e9ccf16d512ba2c067c10e685492d"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "92754fd6ecd1f41c6305b45f0ec80e8306cd84d1797c42e3db46809d42dc8f87"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "路面选择：没有绝对最好，只有适应过程",
+          "summary": "混凝土、跑道、土路和跑步机各有不同的力学环境。研究能提示差异，但不足以宣布某一种路面最安全；更重要的是逐步适应和避免突然加量。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1092,
+          "digest": "92754fd6ecd1f41c6305b45f0ec80e8306cd84d1797c42e3db46809d42dc8f87",
+          "body": "## 路面不是单选题\n\n跑步可以在公路、人行道、跑道、土路、草地、跑步机和山径上进行。不同路面的硬度、平整度、摩擦力和变化程度不同，身体会用不同的关节活动、肌肉工作和落地方式适应。问题不在于找到一种“完美路面”，而在于让训练负荷与当前适应水平匹配。\n\n对多数城市跑者，最方便的路面就是最可持续的路面。为了追求“更软”而每次都长途坐车去土路，未必比在家门口稳定训练更有效；反过来，长期只在一种路面训练，突然参加技术性越野比赛，也会让身体面对不熟悉的负荷。\n\n## 研究提示了什么\n\n一项针对 30 名习惯后跟着地的男性跑者的小样本研究，比较了人造草、橡胶和混凝土上的跑步力学。研究没有在多个关节运动和负荷变量上发现显著差异，但混凝土条件与较小的制动力和内外侧力、较大的踝关节力矩以及额状面髋、膝力矩相关。作者提出，较硬路面可能增加后跟着地跑者的过度使用风险，但证据有限。\n\n这项研究样本小、人群单一，不能直接外推到所有人，也不能证明混凝土必然导致伤病。它更适合说明：路面会改变负荷分布，而“硬”与“软”不是唯一的判断维度。\n\n## 跑步机与户外\n\n跑步机提供可控的速度、坡度和环境，适合间歇、恢复跑和天气不好时训练。它的皮带会轻微移动，跑带弹性和户外地面不同，步频与步幅也可能略有变化。刚开始使用跑步机时，先选择熟悉的速度和 0–1% 坡度，不要用扶手承担体重，也不要突然把坡度调得很高。\n\n户外路面的变化更多：人行道有接缝和台阶，柏油路有车流和倾斜，土路有碎石和树根。把户外跑步当作需要持续观察路线的任务，而不是只看配速。夜跑、雨天和落叶覆盖时，路面判断会更困难，应降低速度并选择熟悉路线。\n\n## 怎样安全地换路面\n\n换路面和换鞋、换跑量一样，应该逐步进行。可以先在轻松跑中加入几分钟新路面，观察第二天有没有异常疼痛或紧张，再逐周增加时间。技术性山径需要额外的踝关节稳定性、注意力和导航准备，不适合用一次长距离“试试看”。\n\n如果某种路面反复引发同一部位疼痛，不要简单归因于“路面太硬”；跑量、速度、鞋、恢复和动作都可能是因素。减少相关负荷并记录反应，比换一种路面更可靠。\n\n## 适用边界\n\n本页不判断某条具体路面是否安全，也不提供鞋具处方或伤病治疗。施工路段、私人土地、封闭保护区和交通道路的通行规则，应以当地管理部门和现场标识为准。\n\n## 来源与适用范围\n\n不同路面跑步力学的有限证据参考 PLOS ONE 的小样本研究；跑步机与户外训练的一般原则属于训练常识，不替代个体评估。研究样本为 30 名习惯后跟着地的男性跑者，不能代表所有跑者。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Running surfaces: no absolute best, only adaptation",
+          "summary": "Concrete, track, trail and treadmill create different mechanical environments. Research hints at differences but cannot crown one surface as safest; gradual adaptation matters more.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3289,
+          "digest": "e41b781f2d20547e5f328663d0b18e95634e9ccf16d512ba2c067c10e685492d",
+          "body": "## Surface is not a single-choice question\n\nRunning happens on roads, pavements, tracks, trails, grass, treadmills and mountain paths. Hardness, evenness, grip and variability differ, and the body adapts with different joint motion, muscle work and landing patterns. The goal is not to find a perfect surface but to match training load to current adaptation.\n\nFor most city runners, the most convenient surface is the most sustainable one. Travelling a long way to a softer trail every session is not automatically better than consistent running from home. Equally, training only on one surface and then entering a technical trail race exposes the body to unfamiliar load.\n\n## What the research suggests\n\nA small study of 30 male habitual rear-foot strikers compared running mechanics on artificial grass, rubber and concrete. It found no significant differences in several joint-motion and loading variables, but concrete was associated with lower braking and mediolateral forces, higher ankle moments and higher frontal-plane hip and knee moments. The authors suggested harder surfaces might increase overuse risk for rear-foot strikers, but the evidence is limited.\n\nThe sample was small and narrow, so it cannot be generalised to everyone or used to prove that concrete causes injury. It is better read as a reminder that surfaces redistribute load, and that “hard” versus “soft” is not the only dimension.\n\n## Treadmill and outdoors\n\nA treadmill gives controllable speed, incline and weather, and is useful for intervals, recovery runs and bad conditions. The belt moves underfoot and its compliance differs from outdoor ground, so cadence and stride may shift slightly. Start with a familiar speed and 0–1% incline, do not hang on the handrails to carry body weight, and avoid sudden steep inclines.\n\nOutdoor surfaces vary more: pavements have seams and curbs, roads have traffic and camber, trails have stones and roots. Treat outdoor running as a task that requires reading the route, not just watching pace. At night, in rain or under leaves, surface judgement is harder; slow down and choose familiar routes.\n\n## Changing surfaces safely\n\nChange surface as you would change shoes or mileage: gradually. Add a few minutes of a new surface to an easy run, check the next day for unusual pain or tightness, then increase over several weeks. Technical trails also demand ankle stability, attention and navigation preparation; do not use one long run as a trial.\n\nIf the same body part complains repeatedly on one surface, do not reduce the explanation to “the ground is too hard”. Mileage, speed, shoes, recovery and movement all matter. Reducing the relevant load and tracking the response is more reliable than simply changing surface.\n\n## Scope and limits\n\nThis page does not judge whether a specific path is safe, prescribe shoes or treat injury. Access rules for construction areas, private land, protected areas and roads are governed by local authorities and on-site signs.\n\n## Sources and scope\n\nThe limited evidence on surface mechanics follows a small PLOS ONE study; general treadmill and outdoor principles are training common sense, not individual assessment. The study involved 30 male habitual rear-foot strikers and does not represent all runners. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:shoe-fit-and-cushioning",
+      "slug": "shoe-fit-and-cushioning",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-shoe-cushioning",
+        "knowledge-nhs-running-injuries"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-shoe-cushioning",
+          "title": "Association of Shoe Cushioning Perception and Comfort With Injury Risk in Leisure-Time Runners",
+          "publisher": "European Journal of Sport Science",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41122014/",
+          "publishedAt": "2025-11-01",
+          "license": null,
+          "claims": [
+            "In a secondary analysis of a randomised trial involving 527 recreational runners, moderate or high perceived heel cushioning was associated with lower injury risk than low cushioning.",
+            "Higher overall shoe appreciation was associated with lower injury risk.",
+            "The study reports associations, not proof that changing cushioning prevents injury."
+          ]
+        },
+        {
+          "sourceId": "knowledge-nhs-running-injuries",
+          "title": "Knee pain and other running injuries",
+          "publisher": "NHS",
+          "url": "https://www.nhs.uk/live-well/exercise/knee-pain-and-other-running-injuries/",
+          "publishedAt": "2022-11-25",
+          "license": null,
+          "claims": [
+            "NHS advises buying proper running shoes and getting fitted at a running shop, while noting that expensive shoes are not essential.",
+            "Unsupportive or worn-out shoes are listed among factors that can contribute to heel pain.",
+            "Do not run while in pain; seek medical or physiotherapy advice when pain is severe, persistent or accompanied by swelling."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "fa2c78c70fa0cb767b83b7f1786424c6669ad62853a7f1a3514f331d6d032dea"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "53b76d981c0de01e02b35e044d03a307a69c9040aea0230f60ff4d02e9ea6002"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "跑鞋合脚与缓震：先舒服，再谈科技",
+          "summary": "合脚比参数表更重要。缓震和舒适感与较低伤病风险有关联，但这不是换鞋就能预防伤病的证明；磨损、疼痛和训练负荷同样需要看。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 990,
+          "digest": "53b76d981c0de01e02b35e044d03a307a69c9040aea0230f60ff4d02e9ea6002",
+          "body": "## 合脚是第一位\n\n跑鞋首先应该合脚。脚趾前方留出约一指宽的空间，脚背不被压住，脚跟不上下滑动，前脚掌没有明显挤压。不同品牌的尺码并不统一，不要只看数字；下午或跑步后脚会轻微肿胀，试鞋时间尽量接近你实际跑步的时段。\n\n穿你平时跑步的袜子去试鞋，在店里走几步、小跑几下，感受脚趾、足弓和脚跟。新鞋不需要“磨合到不痛”；如果一开始就挤脚、磨脚或让你改变走路方式，换一双更合适。NHS 也建议在跑步用品店做合脚评估，同时提醒昂贵的鞋并不是必要条件。\n\n## 缓震与舒适感\n\n一项针对 527 名休闲跑者的随机试验二次分析发现，中等或较高的主观鞋跟缓震感与较低伤病风险相关，整体鞋款好感度较高也与较低风险相关。研究提示，舒适感和缓震感知可能是有用的选鞋线索。\n\n但这是关联，不是因果证明。它不能说明换一双更软的鞋就能预防伤病，也不能说明越软越好。过软的鞋可能让一些人感觉不稳定，过硬的鞋可能让另一些人觉得冲击明显；个体差异、路面、速度和训练负荷都会影响结果。\n\n## 稳定、支撑与“ pronation ”\n\n鞋店常用“过度内旋”解释支撑鞋，但单靠观察或鞋底磨损判断并不准确。没有疼痛和功能问题时，不需要因为某个标签强行选择“矫正”鞋。若你有反复扭伤、明显不稳、神经症状或结构性足部问题，应找运动医学或物理治疗专业人员评估，而不是只靠鞋解决。\n\n鞋能改变负荷分布，但不能替代力量、平衡、动作和训练调整。\n\n## 什么时候该换\n\n没有适用于所有人的公里数。NHS 把不支持足部或磨损严重的鞋列为脚跟疼痛的相关因素；实际更换可以看外底磨损、缓震塌陷、鞋面破损、异味和跑步时的舒适感。把新鞋和旧鞋交替穿，能帮助你感觉差异。\n\n记录鞋的使用里程会有帮助，但不要把某个数字当成硬性截止线。比赛前不要首次穿新鞋或新袜子；长距离和比赛应使用已经验证过的组合。\n\n## 适用边界\n\n本页不诊断足型、步态或伤病，也不推荐具体品牌。持续疼痛、肿胀、麻木、反复扭伤或影响行走时，应停止相关训练并寻求合格专业人员评估。\n\n## 来源与适用范围\n\n鞋跟缓震感知、整体舒适感与伤病风险的关联参考 European Journal of Sport Science 的随机试验二次分析；合脚、磨损鞋与就医提示参考 NHS 的跑步损伤页面。研究为观察性关联，不能证明换鞋可以预防伤病。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Shoe fit and cushioning: comfort before technology",
+          "summary": "Fit matters more than a spec sheet. Cushioning and comfort are associated with lower injury risk, but that is not proof that changing shoes prevents injury; wear, pain and training load still matter.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3157,
+          "digest": "fa2c78c70fa0cb767b83b7f1786424c6669ad62853a7f1a3514f331d6d032dea",
+          "body": "## Fit comes first\n\nA running shoe should fit. Leave about a thumb’s width in front of the toes, avoid pressure across the top of the foot, keep the heel from sliding up and down, and make sure the forefoot is not squeezed. Sizes differ between brands, so do not rely on the number alone. Feet swell slightly later in the day and after running; try shoes at a time close to when you actually run.\n\nWear the socks you run in, walk and jog a few steps in the shop, and pay attention to toes, arch and heel. New shoes do not need to be “broken in until they stop hurting”; if they pinch, rub or change how you walk from the start, try another pair. The NHS also suggests a fitting at a running shop while noting that expensive shoes are not essential.\n\n## Cushioning and comfort\n\nA secondary analysis of a randomised trial involving 527 recreational runners found that moderate or high perceived heel cushioning was associated with lower injury risk, and that higher overall shoe appreciation was also associated with lower risk. The study suggests that comfort and perceived cushioning may be useful cues when choosing shoes.\n\nThis is an association, not proof of cause. It does not show that switching to a softer shoe prevents injury, or that softer is always better. A very soft shoe can feel unstable to some runners, while a firmer shoe can feel harsh to others; individual response, surface, speed and training load all matter.\n\n## Stability, support and “pronation”\n\nShoe shops often use “overpronation” to explain stability shoes, but judging it by eye or by sole wear is not reliable. Without pain or a functional problem, there is no need to force a “corrective” shoe because of a label. Recurrent sprains, marked instability, neurological symptoms or a structural foot problem deserve assessment by a sports-medicine or physiotherapy professional, not a shoe alone.\n\nShoes can change load distribution, but they do not replace strength, balance, movement and training adjustments.\n\n## When to replace\n\nThere is no universal mileage. The NHS lists unsupportive or worn-out shoes among factors that can contribute to heel pain; practical signs include worn outsole, collapsed cushioning, a damaged upper, odour and reduced comfort when running. Rotating an older pair with a newer pair can help you feel the difference.\n\nTracking shoe mileage is useful, but a number is not a hard deadline. Do not wear new shoes or new socks for the first time in a race; long runs and races should use a combination you have already tested.\n\n## Scope and limits\n\nThis page does not diagnose foot type, gait or injury, or recommend a specific brand. Stop the relevant training and seek a qualified assessment for persistent pain, swelling, numbness, recurrent sprains or difficulty walking.\n\n## Sources and scope\n\nThe association between perceived heel cushioning, overall comfort and injury risk follows a secondary analysis of a randomised trial in the European Journal of Sport Science; fit, worn shoes and care-seeking advice follow the NHS running-injury page. The study is observational and cannot prove that changing shoes prevents injury. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:shoe-technology",
       "slug": "shoe-technology",
       "kind": "knowledge",
@@ -4249,6 +4788,98 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:trail-navigation",
+      "slug": "trail-navigation",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-nps-hike-smart",
+        "knowledge-nps-ten-essentials"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-nps-hike-smart",
+          "title": "Hike Smart",
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/hiking-safety.htm",
+          "publishedAt": "2024-06-13",
+          "license": null,
+          "claims": [
+            "Leave a trip plan with a trusted person including route, contacts, arrival and return times, and companions.",
+            "Mobile coverage may be absent; consider a locator beacon and conserve battery.",
+            "Check the weather, prepare for lightning and flash flooding, and keep a Plan B."
+          ]
+        },
+        {
+          "sourceId": "knowledge-nps-ten-essentials",
+          "title": "Ten Essentials",
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/10essentials.htm",
+          "publishedAt": "2026-05-28",
+          "license": null,
+          "claims": [
+            "The NPS minimum kit includes navigation, sun protection, clothing, illumination, first aid, fire, repair kit, food, water and water-treatment supplies, and shelter.",
+            "Navigation means a map, compass and GPS; a physical map should back up electronic tools.",
+            "A headlamp with spare batteries is recommended, and someone should know the route and expected return time."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "f4c9b429ceaf23347d91566294e236cf8ef88cd539b6ec1981963043d7dc4bfa"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "9cbd3d1b105aa44eebf9e0ecbc8c4e2cb151ad57f6d59b9408c31d872e225c4a"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "山径导航：GPX 是底图，不是保障",
+          "summary": "山径导航需要地图、计划、备用电量和撤退方案。GPX 能告诉你线路在哪里，却不能证明今天能走、手机有信号或救援能及时到达。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1063,
+          "digest": "9cbd3d1b105aa44eebf9e0ecbc8c4e2cb151ad57f6d59b9408c31d872e225c4a",
+          "body": "## 出发前先做计划\n\n山径导航从出门前开始。确定路线、方向、预计时间和折返点，查看天气、日出日落、积雪、降水和山洪风险，把行程计划告诉一位不会同行的可信联系人，包括路线、同伴、出发和返回时间。NPS 的 Hike Smart 建议把行程留给可信的人，并准备一个备用计划。\n\n不要只依赖手机。低温、摔落、进水或没电都可能让手机失效；纸质地图、指南针、离线 GPX、头灯和备用电源应该根据路线长度和环境携带。GPS 手表是辅助，不是唯一导航工具。\n\n## GPX 能做什么，不能做什么\n\nGPX 记录坐标、高程和路点，能帮助你在岔路口确认方向，也能显示大致爬升和距离。但它不包含实时封路、桥梁损毁、积雪深度、水源状态、通行许可或救援可达性。轨迹也可能来自旧版本、错误录制或未经许可的转载，不能因为“地图上有线”就认为可以通行。\n\n出发前把 GPX 导入离线地图，检查关键转弯、补给点和撤退点。打印一份简化地图或把关键坐标写在纸上，作为电子设备失效时的备份。把 GPX 当作计划底图，把当地管理部门和赛事方的最新公告当作事实来源。\n\n## 在路上\n\n保持对地形的观察，不要只盯着手表。岔路口停下来核对地图和方向，发现偏离时先回到最后一个确定点，不要凭感觉切路。队伍同行时约定集合点和折返时间；体力、天气或时间超预期时，主动缩短路线比“再走一段看看”更安全。\n\n手机信号可能完全缺失。NPS 提醒，移动覆盖不可靠时应考虑定位信标，并节省电量。夜间或恶劣天气下，头灯、哨子、额外保暖和急救包不是装饰；具体装备按路线、季节和当地规定准备。\n\n## 撤退与求救\n\n提前想清楚什么情况下撤退：时间晚了、天气转坏、有人受伤、补给不足、路线被水或雪阻断。撤退不是失败，是导航计划的一部分。告诉同行者和联系人你的决定，不要为了完成轨迹而进入未知路段。\n\n求救时提供位置、人数、伤情、天气和剩余资源；如果没有信号，按计划使用信标或到已知有信号的位置。不要把人单独留在危险地形中。\n\n## 适用边界\n\n本页不提供具体路线的通行许可、实时路况或救援保证。私人土地、保护区和赛事路线有各自规则；出发前应查看当地管理部门、赛事方和天气部门的的最新信息，并接受必要的导航与急救培训。\n\n## 来源与适用范围\n\n行程计划、可信联系人、定位信标、天气与备用计划参考 NPS 的 Hike Smart；地图、指南针、头灯、哨子、急救包和额外保暖等最低装备框架参考 NPS Ten Essentials。具体路线和季节需要额外判断。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Trail navigation: a GPX is a base map, not a safety net",
+          "summary": "Trail navigation needs a map, a plan, backup power and an escape route. A GPX shows where the line goes; it does not prove the route is open, that your phone works or that rescue can reach you.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3302,
+          "digest": "f4c9b429ceaf23347d91566294e236cf8ef88cd539b6ec1981963043d7dc4bfa",
+          "body": "## Plan before leaving\n\nTrail navigation starts before the trailhead. Choose the route, direction, expected time and turnaround point; check the weather, sunrise and sunset, snow, rain and flash-flood risk; and leave a trip plan with a trusted person who is not coming along, including the route, companions, departure and return times. The NPS Hike Smart guidance recommends leaving a plan with a trusted person and preparing a Plan B.\n\nDo not rely on a phone alone. Cold, a fall, water or a dead battery can take it out of the equation; carry a paper map, compass, offline GPX, headlamp and backup power according to the route and conditions. A GPS watch is an aid, not the only navigation tool.\n\n## What a GPX can and cannot do\n\nA GPX records coordinates, elevation and waypoints. It can confirm direction at a junction and show approximate distance and climb. It does not contain live closures, broken bridges, snow depth, water availability, access permission or rescue access. A track may be old, badly recorded or redistributed without permission; a line on a map is not proof that a route is open.\n\nLoad the GPX into an offline map before leaving and check key turns, aid points and escape points. Print a simplified map or write down key coordinates as a backup when electronics fail. Treat the GPX as a planning base and the land manager or race organiser’s latest notice as the authority.\n\n## On the trail\n\nKeep reading the terrain, not just the watch. Stop at junctions to check the map and direction; if you are off route, return to the last certain point instead of cutting across. Agree on meeting points and turnaround times within the group; if energy, weather or time is worse than expected, shortening the route is safer than “just seeing what is around the next corner”.\n\nPhone coverage may be absent. The NPS notes that mobile coverage can be unreliable and suggests considering a locator beacon and conserving battery. At night or in bad weather, a headlamp, whistle, extra warmth and first-aid kit are not decorations; carry what the route, season and local rules require.\n\n## Retreat and rescue\n\nDecide in advance what would make you turn around: late time, worsening weather, injury, running out of food or water, or a route blocked by water or snow. Retreat is part of navigation, not a failure. Tell your companions and contact about the decision; do not enter unknown terrain just to complete a track.\n\nWhen calling for help, give location, number of people, injuries, weather and remaining supplies. If there is no signal, use the planned beacon or move to a known coverage point. Do not leave an injured person alone in dangerous terrain.\n\n## Scope and limits\n\nThis page does not grant access, provide live conditions or guarantee rescue. Private land, protected areas and race routes have their own rules; check the land manager, organiser and weather service before leaving, and get the navigation and first-aid training the route demands.\n\n## Sources and scope\n\nTrip plans, trusted contacts, locator beacons, weather and Plan B follow the NPS Hike Smart guidance; the minimum kit framework, including map, compass, headlamp, whistle, first-aid kit and extra warmth, follows the NPS Ten Essentials. Route and season still require their own judgement. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:training-log",
       "slug": "training-log",
       "kind": "knowledge",
@@ -4454,6 +5085,84 @@
           "bodyCharacters": 2568,
           "digest": "3ccfa83adc7221fb0b1d6231dcc3b447380a1b8aac4ffe31e0307b0fe3192c14",
           "body": "## Start with the number of runs you can repeat\n\nThe first question is not which perfect template to copy, but which days you can actually run. NHS Couch to 5K begins with three runs a week and rest days between them, which makes frequency part of the training structure. For most amateur runners, three or four runs a week is easier to sustain than “make up every missed day this week, then stop next week”. The right number still depends on your base, goal and recovery.\n\n## Easy running takes most of the week\n\nEasy running is not filler mileage. It accumulates aerobic stimulus and running volume at a manageable cost. The talk test still applies: full sentences are possible and you finish with something left. If you run three times a week, two easy runs plus one quality session or long run is a common shape; do not turn every run into race pace.\n\n## Quality is a small slice\n\nTempo runs, intervals and hill sessions are quality work. They provide a stronger stimulus and cost more recovery. Beginners do not need to rush into them; experienced runners should place quality on a day when sleep, mood and weather are reasonably stable and avoid stacking hard days. CDC guidance also includes two days of muscle-strengthening activity a week, which can be arranged separately from running.\n\n## Where the long run fits\n\nThe long run is a place to practise sustained movement, fuelling and route judgement, not a weekly maximum test. Its length should relate to your current base and goal, not someone else's kilometre count. Follow it with an easy day or rest; if you are still clearly fatigued the next day, do not add more next time.\n\n## Keep a real recovery day\n\nA recovery day can be complete rest or very light walking or jogging; the test is that it does not leave you more tired. Sleep, work and life stress change the cost of the same plan, so review once a week: which session was hardest to recover from? Which day is always skipped? Shrink the unsustainable part instead of forcing it with willpower.\n\n## Scope and limits\n\nThis page does not give an individual training plan or promise that a frequency suits your injury history, health or race goal. Pain, persistent fatigue, worsening sleep or a previous injury should prompt a lower load and assessment by a qualified coach or clinician.\n\n## Sources and scope\n\nFrequency and progression follow NHS Couch to 5K; adult activity and strength guidance follow the CDC; goal setting and weekly tracking follow the ODPHP planner. These are general public-health suggestions, not an individual prescription."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:uphill-and-downhill",
+      "slug": "uphill-and-downhill",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 1,
+      "sourceRefs": [
+        "knowledge-uphill-downhill-running"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-uphill-downhill-running",
+          "title": "Biomechanics and Physiology of Uphill and Downhill Running",
+          "publisher": "Sports Medicine",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27501719/",
+          "publishedAt": "2017-04-01",
+          "license": null,
+          "claims": [
+            "Uphill running has a higher step frequency, shorter swing and aerial phase, and greater duty factor than level running.",
+            "Downhill running has longer aerial time, lower step frequency and more rear-foot striking than level running.",
+            "Downhill running emphasises eccentric work and energy dissipation; uphill running requires greater muscular work, particularly at the hip."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "4b8a6d2b12fe07b3312f9dd4d00c78f4dc78c5bdddda9ac25f2ac73bdfc36087"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "0bb25573b927b1160cfe8d22a749b4f5d3ad0f78d44cf0533ea2d823512502e6"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "上坡与下坡：同一座山，两种跑法",
+          "summary": "上坡靠持续做功，下坡靠离心控制。把平路配速搬到坡上，通常只会让上坡过早疲劳、下坡失去控制。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1161,
+          "digest": "0bb25573b927b1160cfe8d22a749b4f5d3ad0f78d44cf0533ea2d823512502e6",
+          "body": "## 坡度改变了动作\n\n上坡时，身体需要把更多质量抬升到更高位置，髋部伸肌和小腿承受的做功增加。为了在较短的支撑时间里完成推进，跑者通常会缩短步幅、提高步频，摆腿幅度和腾空时间减少。下坡则相反：重力帮忙，腾空时间变长，步频往往降低，脚更容易以足跟或全脚掌先落地，肌肉需要用离心收缩吸收冲击。\n\n这意味着“上坡跑慢一点、下坡跑快一点”只对了一半。上坡慢是因为同样的配速需要更高代价；下坡快并不等于可以完全放松，因为冲击和股四头肌负荷也在增加。\n\n## 上坡：用努力而不是配速\n\n上坡最实用的控制指标是呼吸和主观用力，而不是手表上的配速。能保持稳定节奏、呼吸逐渐加深但不混乱，通常比死守平路配速更可持续。坡很陡、路面技术性强或海拔较高时，走路并不丢人；越野比赛里，主动快步走往往比勉强跑更省总时间。\n\n步幅缩短、步频自然提高，身体略微前倾但不要弯腰；手臂摆动帮助节奏，不要跨大步去“够”坡顶。上坡练习可以从 20 到 60 秒的短坡开始，慢跑下来恢复，再做几组；总次数以动作不变形为限。\n\n上坡不是力量房的替代品。它提供的是特定角度的负荷和技术练习，不能代替系统的力量训练、恢复和渐进负荷。\n\n## 下坡：控制比速度重要\n\n下坡时，重力会把你往前拉，但肌肉仍在工作，尤其是股四头肌要吸收落地冲击。步幅突然拉大、脚落在身体前方很远，会让刹车和冲击集中到膝盖和小腿。更可控的做法是保持脚步轻、步幅不要完全放开，落地位置靠近身体下方，视线看远一点，提前选择落脚点。\n\n技术性下坡需要练习。先在短而缓的坡上适应，再逐渐增加长度和不平整度；不要在疲劳末段第一次尝试快速下坡。比赛前查看路线剖面和技术路段说明，把最陡的下坡写进配速和补给计划，而不是等到了坡顶才决定。\n\n## 坡度与天气\n\n湿滑、碎石、树根和积雪会改变抓地与制动，同一坡度在干燥和潮湿条件下完全不是一回事。下坡遇到技术路段时，减速、缩短步幅、必要时侧身或扶稳，比维持速度更安全。高海拔会降低可用氧，呼吸和心率反应更明显，不能用海平面的努力感直接套用。\n\n上坡时如果出现胸痛、眩晕、异常心悸或严重气短，应立即停止并寻求帮助。下坡摔倒后如果出现持续疼痛、肿胀、无法负重或头部撞击，应按急性损伤处理，不要靠继续跑“验证”。\n\n## 适用边界\n\n本页提供一般上下坡技术原则，不替代教练的个体化技术评估、越野导航培训或医疗建议。技术路段、天气和海拔条件变化很大，实际路线应以赛事方和当地管理部门的最新信息为准。\n\n## 来源与适用范围\n\n上坡的步频、支撑时间和髋部做功，以及下坡的腾空时间、步频和离心负荷，参考 Sports Medicine 关于上下坡跑步生物力学与生理学的综述。该综述描述的是群体和实验条件下的规律，不等于每个人的固定技术模板。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Uphill and downhill: one hill, two ways to run it",
+          "summary": "Uphill running is sustained work; downhill running is eccentric control. Copying flat-road pace onto a gradient usually leaves you tired on the climb and out of control on the descent.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3552,
+          "digest": "4b8a6d2b12fe07b3312f9dd4d00c78f4dc78c5bdddda9ac25f2ac73bdfc36087",
+          "body": "## Gradient changes the movement\n\nUphill, the body has to lift more mass against gravity, and the hip extensors and lower leg do more work. To produce propulsion in a shorter stance time, runners usually shorten the stride, increase step frequency and reduce swing and flight time. Downhill is different: gravity helps, flight time lengthens, cadence often falls, the foot is more likely to land heel-first or flat, and muscles absorb impact through eccentric work.\n\nSo “slower uphill, faster downhill” is only half true. Uphill is slower because the same pace costs more. Downhill is not free speed, because impact and quadriceps load also rise.\n\n## Uphill: effort, not pace\n\nBreathing and perceived effort are more useful than the pace on your watch. A steady rhythm with deeper but controlled breathing is usually more sustainable than defending a flat-road pace. On a steep, technical or high-altitude climb, walking is not a failure; in trail races, purposeful power-hiking often costs less overall than forcing a run.\n\nShorten the stride, let cadence rise naturally, lean slightly from the ankles rather than folding at the waist, and let the arms support the rhythm. Do not lunge for the top. Start hill sessions with 20–60 second repeats and an easy jog down; stop when form changes.\n\nHill running is not a replacement for strength training. It provides load and skill practice at a specific angle, not a substitute for progressive strength work, recovery and gradual load management.\n\n## Downhill: control before speed\n\nGravity pulls you forward, but the muscles still work, especially the quadriceps that absorb landing forces. A suddenly longer stride with the foot far in front concentrates braking and impact in the knee and lower leg. A more controlled descent keeps the steps light, the stride from opening completely, the landing closer under the body, the eyes further ahead and the next foothold chosen early.\n\nTechnical descending is a skill. Start on short, gentle slopes and gradually add length and uneven ground. Do not try your first fast descent at the end of a fatigued session. Check the course profile and technical notes before a race, and put the steep descents into the pace and fuelling plan rather than deciding at the top.\n\n## Gradient, weather and altitude\n\nWet rock, loose gravel, roots and snow change grip and braking; the same gradient is a different problem in dry and wet conditions. On a technical descent, slow down, shorten the stride, turn sideways or use a handhold when needed. Altitude reduces available oxygen, so breathing and heart-rate responses can be much higher than at sea level; do not apply a sea-level effort by feel.\n\nStop and seek help for chest pain, dizziness, unusual palpitations or severe breathlessness on a climb. After a fall, persistent pain, swelling, inability to bear weight or a head impact should be treated as an acute injury, not tested by running on.\n\n## Scope and limits\n\nThis page offers general uphill and downhill principles, not individual coaching, trail-navigation training or medical advice. Technical terrain, weather and altitude vary widely; the organiser and local land manager’s latest information govern the actual route.\n\n## Sources and scope\n\nUphill step frequency, stance time and hip work, and downhill flight time, cadence and eccentric load, follow a Sports Medicine review of uphill and downhill running biomechanics and physiology. The review describes group and laboratory patterns, not a fixed technical template for every runner. Checked 2026-10-28."
         }
       ],
       "missingGates": []

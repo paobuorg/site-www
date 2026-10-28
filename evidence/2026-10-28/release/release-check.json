@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T02:23:09.347Z",
-  "bundleId": "c4d0e3fc9af4c19882cfe9a70c22216868d4ebfc9b26ed0b69cad76338888d0b",
+  "generatedAt": "2026-10-28T02:32:46.884Z",
+  "bundleId": "42ace64240eb0b47cf046354fd809b8a8bdeb19f21ea9bf2de54e5c947baccec",
   "preview": false,
   "status": "passed",
   "results": [
@@ -9,7 +9,7 @@
       "origin": "https://paobu.org",
       "urls": 40,
       "pages": 40,
-      "searchRecords": 112,
+      "searchRecords": 128,
       "robots": "allow",
       "cname": "paobu.org",
       "nojekyll": 0,
@@ -21,9 +21,9 @@
     {
       "site": "knowledge",
       "origin": "https://learn.paobu.org",
-      "urls": 84,
-      "pages": 84,
-      "searchRecords": 56,
+      "urls": 100,
+      "pages": 100,
+      "searchRecords": 72,
       "robots": "allow",
       "cname": "learn.paobu.org",
       "nojekyll": 0,
