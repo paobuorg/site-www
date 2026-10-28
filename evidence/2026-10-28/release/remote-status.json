@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T12:45:00Z",
+  "generatedAt": "2026-10-28T13:10:00Z",
   "account": "paobuorg",
   "repositories": [
     {
@@ -80,14 +80,14 @@
         "site": "main",
         "url": "https://paobu.org/",
         "status": "success",
-        "codeCommit": "52bdfef09e9654abf591322c0c6c4cd87d6ae492",
+        "codeCommit": "940544ca73868450e03da6daa98c816aa5047c18",
         "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
         "build": {
           "htmlPages": 40,
           "searchRecords": 158,
           "sitemapUrls": 40
         },
-        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40689487223",
+        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40694167832",
         "httpsEnforced": true,
         "certificate": "approved",
         "siteBundleId": "12355d5ba681c8b40fef95e285b63d75585e7e3a5c815ed8eba13d7ba288ff3a"
@@ -96,7 +96,7 @@
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
-        "codeCommit": "0058f43025624dc2c69feba888a566486b583e99",
+        "codeCommit": "6f998275ac179e88706aaaef2be240b554946fb7",
         "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
         "siteBundleId": "2a0a6dc1c2ba9f8f458d389e63c90558794f1092441bf5fc94bc1a9d386f1a56",
         "build": {
@@ -104,7 +104,7 @@
           "searchRecords": 102,
           "sitemapUrls": 130
         },
-        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40689409365",
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40694191707",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -112,7 +112,7 @@
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
-        "codeCommit": "54b0ce1cf8c6422469ec7f10c3ee53160929b3dd",
+        "codeCommit": "28af34035b23af53f8ba932f9b5831e5ca549889",
         "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
         "siteBundleId": "168f558c9baaf597b8c67eacf6f21775c75020ece217bc199e755bd55281789d",
         "build": {
@@ -120,7 +120,7 @@
           "searchRecords": 24,
           "sitemapUrls": 28
         },
-        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40689465740",
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40694202393",
         "httpsEnforced": true,
         "certificate": "approved"
       }
@@ -131,7 +131,7 @@
     "coreArtifact": "The published core-v0.2.16 asset was downloaded through the GitHub API and its SHA-256 recomputed as 8b0e47ba…; child pnpm integrity and core.lock.json use the same asset.",
     "brand": "All three live home pages render 跑起来 / RUNUP with the Douke mark. Production HTML contains no 跑地图 / RunMap strings.",
     "byline": "Article bylines read 跑起来编辑部 / RunUp Editorial; no AI-assisted or editorial-desk wording is rendered.",
-    "adsense": "Disabled by default. Production HTML contains no adsbygoogle, pagead2 or google-adsense markup, and /ads.txt returns 404. The slot is environment-gated and limited to route, article, glossary and tool detail pages.",
+    "adsense": "Active on all three sites with publisher ca-pub-0088997035636558 and slot 1813332933. /ads.txt returns 200 with the correct DIRECT line; the code snippet and google-adsense-account meta tag are present. Ad units are on content/detail pages and excluded from search, 404 and legal pages. A local-network Playwright run returned data-ad-status=unfilled with no console errors or overflow; fill depends on AdSense review, unit status and region.",
     "legalPages": {
       "count": 6,
       "status": "all 200",
@@ -157,16 +157,28 @@
     "backup": "reference/legacy/www-github-backup-2026-10-27.tar.gz"
   },
   "workflows": {
-    "site-www": "success at 52bdfef0; build 40/158/40",
-    "site-knowledge": "success at 0058f430; build 130/102/130",
-    "site-tools": "success at 54b0ce1c; build 28/24/28",
+    "site-www": "success at 940544ca; AdSense-enabled build 40/158/40",
+    "site-knowledge": "success at 6f998275; AdSense-enabled build 130/102/130",
+    "site-tools": "success at 28af3403; AdSense-enabled build 28/24/28",
     "coreRelease": "core-v0.2.16 published; asset SHA-256 8b0e47ba…"
   },
   "notes": [
     "The public brand is 跑起来 / RUNUP. Visible content, bylines, legal attribution, PWA names, icons and offline copy use the new brand.",
-    "AdSense is implemented but not activated. Activation requires a publisher ID, an ad-unit slot ID, EEA/UK consent configuration and a legal-page review; AdSense is not a substitute for site analytics.",
+    "AdSense is active with the supplied publisher and unit IDs. Google returned unfilled in the local-network check; site/ad-unit approval, EEA/UK consent configuration and target-region fill remain external. AdSense is not a substitute for site analytics.",
     "Content is licensed CC BY 4.0 and site code is MIT; third-party race material, trademarks, imagery and dependencies remain under their own terms.",
     "The legal page is a general risk notice, not legal advice.",
     "Real devices/readers, formal high-resolution imagery, third-party EOX SLA, a remote rollback drill and independent professional review remain outside this deployment verification."
-  ]
+  ],
+  "adsense": {
+    "status": "active",
+    "client": "ca-pub-0088997035636558",
+    "slot": "1813332933",
+    "adsTxt": {
+      "paobu.org": "google.com, pub-0088997035636558, DIRECT, f08c47fec0942fa0",
+      "learn.paobu.org": "same",
+      "tools.paobu.org": "same"
+    },
+    "placement": "Above the footer on route/article/glossary/tool detail, routes list, knowledge home/article list/topics/glossary, tools home and about; excluded from search, 404 and legal pages.",
+    "liveFillCheck": "unfilled from the local network; no console errors or horizontal overflow"
+  }
 }

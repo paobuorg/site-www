@@ -27,32 +27,33 @@ The public brand is now **跑起来 / RUNUP**. The shared core renders 豆客 (D
 - Every visible old-brand string was replaced in the 50 articles, route source records, contributor display, legal attribution, page titles, metadata, GPX creator and READMEs. All 158 review digests were regenerated; the content validator accepts them.
 - Production HTML for all three sites contains no `跑地图` or `RunMap` strings. Article bylines read 跑起来编辑部 / RunUp Editorial.
 
-## AdSense readiness
+## AdSense
 
-The AdSense slot is **off by default** and was not active in this deployment.
+AdSense is **active** on all three sites with publisher `ca-pub-0088997035636558` and ad unit `1813332933`.
 
-- Verification choice: the AdSense code snippet is the primary method because it both verifies the site and is required to serve ads. A `google-adsense-account` meta tag is emitted as a secondary signal when `PUBLIC_ADSENSE_CLIENT` is set. `ads.txt` is a seller-authorisation file, not a substitute for the ad code; production builds generate it from the publisher ID.
-- Placement: a manual display unit only, below content and above the footer, on route, article, glossary and tool detail pages. Home, listing, search, about, legal and 404 pages do not render an ad unit. Auto ads, anchor ads and vignette formats are intentionally not used.
-- Gating: both `PUBLIC_ADSENSE_CLIENT` and `PUBLIC_ADSENSE_SLOT` are required. Preview builds and builds missing either variable render no ad markup. Current production HTML contains no `adsbygoogle`, `pagead2` or `google-adsense` markup, and `/ads.txt` returns 404.
-- Privacy: the legal page switches its privacy paragraph to an AdSense disclosure only when the client variable is set. Activation still requires a Google-certified consent message for EEA/UK/Swiss traffic and a legal review.
+- Verification choice: the AdSense code snippet is the primary method because it both verifies the site and is required to serve ads. The `google-adsense-account` meta tag is also emitted, and production builds generate `ads.txt`; all three live domains return the correct `ads.txt` line.
+- Placement: a manual responsive unit below content and above the footer on route/article/glossary/tool detail pages, the routes list, knowledge home/article list/topics/glossary, tools home and about. Search, 404 and legal pages do not render an ad unit. Auto ads, anchor ads and vignette formats are not used.
+- The slot uses `data-ad-format="auto"` and `data-full-width-responsive="true"`; it hides itself when unfilled. Production HTML contains the expected script, meta tag and slot on ad pages.
+- Privacy: the live legal pages now disclose Google AdSense, cookies/partners and Google Ads Settings.
+- A local-network Playwright check returned `unfilled` on desktop, mobile and a detail page, with no console errors or horizontal overflow. That is a Google fill result, not a layout failure; account/site approval, ad-unit status or regional no-fill still need checking in AdSense and from the target region.
 - AdSense is not a replacement for site analytics. Ad blockers, consent refusal and unfilled requests make its reports incomplete.
 
 ## Remote deployment
 
 The six public repositories are under `paobuorg`. `@paobu/core@0.2.16` is published as a Release with SHA-256 `8b0e47ba…`; both child repositories use that asset and the same SHA in `PAOBU_CORE_ARTIFACT_URL` / `PAOBU_CORE_SHA256`.
 
-The three Pages workflows completed successfully:
+The three AdSense-enabled Pages workflows completed successfully:
 
-- `https://paobu.org/` — code commit `52bdfef0…`, siteBundleId `12355d5b…`
-- `https://learn.paobu.org/` — code commit `0058f430…`, siteBundleId `2a0a6dc1…`
-- `https://tools.paobu.org/` — code commit `54b0ce1c…`, siteBundleId `168f558c…`
+- `https://paobu.org/` — code commit `940544ca…`, siteBundleId `12355d5b…`
+- `https://learn.paobu.org/` — code commit `6f998275…`, siteBundleId `2a0a6dc1…`
+- `https://tools.paobu.org/` — code commit `28af3403…`, siteBundleId `168f558c…`
 
 All three live release manifests report core 0.2.16 at `8b0e47ba…` and content commits `a9316c26…` / `015a4c71…` / `db5aec29…`, matching the local bundle `510b233f…`.
 
 Remote caveats:
 
 1. A real remote rollback drill has not been performed for 0.2.16. The earlier local artifact drill covered 0.2.11 → 0.2.10 → 0.2.11.
-2. AdSense is not activated; no live ad has been requested or served. Publisher ID, slot ID, consent configuration and approval are still external.
+2. AdSense is active, but Google returned `unfilled` in the local-network check. Consent configuration, site/ad-unit approval and target-region fill remain external.
 3. Real screen readers, physical phones, real Safari, third-party EOX tile SLA and formal high-resolution imagery remain outside this verification.
 
 ## Known limits

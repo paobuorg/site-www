@@ -135,15 +135,18 @@ node scripts/content-lock.mjs --verify # 校验内容树未变化
 
 锁使用 `sha256-tree-v1` 覆盖三个内容仓库的 `content/`、`data/` 和 `assets/`。锁里的 `commit` 已固定为完整 SHA：`running-routes` `a9316c26…`、`running-knowledge` `015a4c71…`、`running-tools` `db5aec29…`。锁用于本地可复现构建，不代替 Git 版本控制。
 
-## AdSense（可选，默认关闭）
+## AdSense（已启用）
 
-AdSense 的站点验证选择 **AdSense 代码段**：它既完成验证，也是实际投放广告所必需的。`ads.txt` 是卖方授权文件，不是验证方式；`public/` 不预置占位文件，生产构建会根据 `PUBLIC_ADSENSE_CLIENT` 自动生成根目录 `ads.txt`。核心同时在 `<head>` 输出 `google-adsense-account` 元标记作为辅助验证。
+AdSense 的站点验证选择 **AdSense 代码段**：它既完成验证，也是实际投放广告所必需的。`ads.txt` 是卖方授权文件，不是验证方式；生产构建会根据 `PUBLIC_ADSENSE_CLIENT` 自动生成根目录 `ads.txt`。核心同时在 `<head>` 输出 `google-adsense-account` 元标记作为辅助验证。
 
-- 本地或仓库变量中设置 `PUBLIC_ADSENSE_CLIENT=ca-pub-…` 和 `PUBLIC_ADSENSE_SLOT=…` 后，详情页正文底部、页脚上方才会出现手动广告单元；首页、列表、搜索、关于、法律和 404 页面不加载广告单元。
+- 当前三站均使用发布商 `ca-pub-0088997035636558` 与广告单元 `1813332933`，`ads.txt` 已在三个域名根目录返回 200。
+- 广告只出现在页面底部、页脚上方：路线/文章/术语/工具详情、路线列表、知识首页/文章列表/主题/术语表、工具首页和关于页；搜索、404 与法律页不放广告。页脚会显示“广告”标识和隐私入口。
+- 统一使用手动响应式展示单元（`data-ad-format="auto"`、`data-full-width-responsive="true"`），未填充时自动隐藏；没有开启 Auto ads、锚定、插页或正文内广告。
 - 预览构建、缺少任一变量时不渲染广告；AdSense 脚本只在生产构建中出现。
 - 在 AdSense 后台关闭 Auto ads（尤其锚定、插页和页内自动广告），只保留手动展示广告单元，避免广告进入正文或悬浮遮挡。
 - EEA/UK/瑞士流量需要在 AdSense 的 Privacy & messaging 配置 Google 认证的同意管理平台；否则使用非个性化广告或暂停这些地区的广告。
-- 法律页的隐私段落会根据 `PUBLIC_ADSENSE_CLIENT` 自动切换为广告披露文本。启用广告前需在 AdSense 后台确认同意设置，并复核法律页。
+- 法律页的隐私段落会在 `PUBLIC_ADSENSE_CLIENT` 存在时切换为广告披露文本。当前线上已显示 AdSense 披露。
+- 本地网络实测广告请求返回 `unfilled`；这是 Google 的填充结果，可能来自账户/站点审核、广告单元状态或地区无填充。代码、`ads.txt` 和自适应属性均已上线，需在 AdSense 后台确认站点审核与广告单元状态，或用目标地区网络复查。
 - AdSense 报告不能当作访问统计：广告拦截、同意拒绝和未填充都会让数据偏低。访问统计应另接隐私友好的分析服务。
 
 三站 Pages 工作流已传入同名仓库变量；只有设置了变量的站点会启用广告。子站使用不同的广告单元时，可分别设置各自的 `PUBLIC_ADSENSE_SLOT`。

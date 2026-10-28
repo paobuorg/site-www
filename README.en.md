@@ -135,15 +135,18 @@ node scripts/content-lock.mjs --verify # check that the content trees are unchan
 
 The `sha256-tree-v1` lock covers `content/`, `data/` and `assets/` in all three content repositories. Each lock pins a full commit SHA: `running-routes` `a9316c26…`, `running-knowledge` `015a4c71…`, `running-tools` `db5aec29…`. The lock supports reproducible local builds and does not replace version control.
 
-## AdSense (optional, off by default)
+## AdSense (enabled)
 
-Choose the **AdSense code snippet** for site verification: it both verifies the site and is required to serve ads. `ads.txt` is a seller-authorisation file, not a verification method; no placeholder file is shipped, and production builds generate a root `ads.txt` from `PUBLIC_ADSENSE_CLIENT`. The core also emits a `google-adsense-account` meta tag as a secondary verification signal.
+Choose the **AdSense code snippet** for site verification: it both verifies the site and is required to serve ads. `ads.txt` is a seller-authorisation file, not a verification method; production builds generate a root `ads.txt` from `PUBLIC_ADSENSE_CLIENT`. The core also emits a `google-adsense-account` meta tag as a secondary verification signal.
 
-- With `PUBLIC_ADSENSE_CLIENT=ca-pub-…` and `PUBLIC_ADSENSE_SLOT=…` set locally or as repository variables, a manual ad unit appears only below detail-page content and above the footer. Home, listing, search, about, legal and 404 pages do not load an ad unit.
+- All three sites currently use publisher `ca-pub-0088997035636558` and ad unit `1813332933`; `ads.txt` returns 200 at each domain root.
+- Ads appear only at the bottom of the page, above the footer, on route/article/glossary/tool detail pages, the routes list, the knowledge home/article list/topics/glossary pages, the tools home and the about page. Search, 404 and legal pages do not carry an ad unit. The footer shows an “Advertisement” label and a privacy link.
+- The unit is a manual responsive display unit (`data-ad-format="auto"`, `data-full-width-responsive="true"`); it hides itself when unfilled. Auto ads, anchor, vignette and in-article formats are not used.
 - Preview builds and builds missing either variable render no ad; the AdSense script appears only in production builds.
 - Disable Auto ads (especially anchor, vignette and in-page formats) in AdSense and keep only the manual display unit, so ads never enter the article body or float over content.
 - EEA/UK/Swiss traffic requires a Google-certified consent management platform configured under AdSense Privacy & messaging; otherwise use non-personalised ads or pause ads in those regions.
-- The legal privacy section switches to ad-disclosure text when `PUBLIC_ADSENSE_CLIENT` is set. Confirm consent settings in AdSense and review the legal page before enabling ads.
+- The legal privacy section switches to ad-disclosure text when `PUBLIC_ADSENSE_CLIENT` is set; the live legal pages now carry that disclosure.
+- A local-network check returned `unfilled`; that is Google’s fill result and can reflect account/site review, ad-unit status or regional no-fill. The code, `ads.txt` and responsive attributes are live; confirm site approval and ad-unit status in AdSense or re-check from the target region.
 - AdSense reports are not site analytics: ad blockers, consent refusal and unfilled requests all undercount. Use a privacy-friendly analytics service separately.
 
 All three Pages workflows pass the same repository variables; only sites with values set enable ads. A subsite that needs a separate unit can set its own `PUBLIC_ADSENSE_SLOT`.
