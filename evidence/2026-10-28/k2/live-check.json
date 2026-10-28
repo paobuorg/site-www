@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "cadence-and-stride",
+    "locale": "zh-CN",
+    "status": 200,
+    "legal": true,
+    "overflow": false,
+    "ai": false,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "cadence-and-stride",
+    "locale": "en",
+    "status": 200,
+    "legal": true,
+    "overflow": false,
+    "ai": false,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "uphill-and-downhill",
+    "locale": "zh-CN",
+    "status": 200,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "uphill-and-downhill",
+    "locale": "en",
+    "status": 200,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "running-surface",
+    "locale": "zh-CN",
+    "status": 200,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "running-surface",
+    "locale": "en",
+    "status": 200,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "race-day-fueling",
+    "locale": "zh-CN",
+    "status": 200,
+    "legal": true,
+    "overflow": false,
+    "ai": false,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "race-day-fueling",
+    "locale": "en",
+    "status": 200,
+    "legal": true,
+    "overflow": false,
+    "ai": false,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "caffeine-and-running",
+    "locale": "zh-CN",
+    "status": 200,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "caffeine-and-running",
+    "locale": "en",
+    "status": 200,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "shoe-fit-and-cushioning",
+    "locale": "zh-CN",
+    "status": 200,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "shoe-fit-and-cushioning",
+    "locale": "en",
+    "status": 200,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "trail-navigation",
+    "locale": "zh-CN",
+    "status": 200,
+    "legal": true,
+    "overflow": false,
+    "ai": false,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "trail-navigation",
+    "locale": "en",
+    "status": 200,
+    "legal": true,
+    "overflow": false,
+    "ai": false,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "post-race-recovery",
+    "locale": "zh-CN",
+    "status": 200,
+    "legal": true,
+    "overflow": false,
+    "ai": false,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  },
+  {
+    "slug": "post-race-recovery",
+    "locale": "en",
+    "status": 200,
+    "legal": true,
+    "overflow": false,
+    "ai": false,
+    "axe": [],
+    "errors": 0,
+    "failed": 0
+  }
+]

@@ -14,7 +14,7 @@ Local acceptance **passes** for the 56-entity launch set. The three public sites
 - Local crawl: all 168 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
 - Browser matrix: Chromium/Firefox/WebKit each 48 screenshots; 0 axe violations, 0 console errors, 0 failed requests; keyboard 14/14 on four pages; search pagination fully expands to 25/25; no soft-keyboard overlap. The eight new K1/T1 pages have 0 axe violations in light and dark themes and no mobile overflow.
 - Search: 60/60 Chinese and 56/56 English queries rank an expected result in the top five (90% threshold); kind facets total 16/28/12.
-- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.568s; desktop globe-ready worst 3.839s; simulated mobile worst 4.873s; about 60fps on the local Intel Arc.
+- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.748s; desktop globe-ready worst 3.679s; simulated mobile worst 5.567s; about 60fps on the local Intel Arc.
 - T06/T12/T17: cross-site 11/11 (production hrefs mapped to the three local preview servers), track timeout/cancel 11/11, PWA offline 18/18.
 - Handoff: 0 issues, 63 links; handoff tests 46/46; content locks verified.
 
@@ -48,9 +48,9 @@ The six public repositories are under `paobuorg`; `@paobu/core@0.2.15` is publis
 - `https://learn.paobu.org/`
 - `https://tools.paobu.org/`
 
-All three custom domains have approved certificates and HTTP redirects to HTTPS. The legal/content deployment is live: the three release manifests report core 0.2.15 at `8e264510…`, content commits `67a80ab…` / `5cfda73…` / `a423a45…`, and siteBundleIds `a8aa5d6e…` / `58a25c2a…` / `bbff0fe1…`, matching the local release bundle `c4d0e3fc…`. Six bilingual legal pages return 200 with 0 axe violations, 0 console errors, 0 failed requests and no mobile overflow; live article, tool and route pages carry legal notices and neutral author names. The full 116-query search set also passed against the live index: 60/60 Chinese and 56/56 English in the top five. Live search returns the overtraining article, fueling tool, UTMB route and shoe-technology article; legal pages do not appear in search.
+All three custom domains have approved certificates and HTTP redirects to HTTPS. The K2 legal/content deployment is live: the three release manifests report core 0.2.15 at `8e264510…`, content commits `67a80ab…` / `17e2e6d…` / `a423a45…`, and siteBundleIds `345aab33…` / `946de920…` / `20eb0d99…`, matching the local release bundle `42ace642…`. The knowledge site now has 100 sitemap pages and 72 search records; the main site has 128 aggregate records.
 
-The main-site Pages workflow downloads the published `core-v0.2.15` artifact and verifies its SHA-256 instead of repacking, so the live main-site manifest reports the same core hash as both subsites. README/evidence-only commits are excluded from Pages rebuilds.
+The 16 new K2 article pages return 200 with legal notices, no mobile overflow, and no console or failed requests. Four representative K2 articles checked with axe in both languages had 0 violations. The full 116-query search set passed live at 60/60 Chinese and 56/56 English. Six legal pages remain live and the PWA start URL is `/` on all three sites.
 
 Remaining remote caveats:
 

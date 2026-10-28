@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T02:25:00Z",
+  "generatedAt": "2026-10-28T03:05:00Z",
   "account": "paobuorg",
   "repositories": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "running-knowledge",
       "url": "https://github.com/paobuorg/running-knowledge",
-      "commit": "5cfda73c16f2fb7ee0cece9685f7b1595e2378e0",
+      "commit": "17e2e6d303e97ae5643ce864845a51b9261c08fa",
       "contentCommit": "a879da16b26c7315531fcdba21555f6ef3c78da5",
       "visibility": "public"
     },
@@ -26,30 +26,30 @@
     {
       "name": "site-www",
       "url": "https://github.com/paobuorg/site-www",
-      "commit": "174411324b07b0745fd1a459603a04d7fc37c2dd",
+      "commit": "61d3e5ddd9d829c3d4ff7e019d253793f0aae852",
       "visibility": "public"
     },
     {
       "name": "site-knowledge",
       "url": "https://github.com/paobuorg/site-knowledge",
-      "commit": "883f4a445b3525385d37c6fb598166e3cac09d3b",
+      "commit": "9af6df99ee6a9474cd91457ddb96128d24c439f9",
       "visibility": "public"
     },
     {
       "name": "site-tools",
       "url": "https://github.com/paobuorg/site-tools",
-      "commit": "86788f9c77a5a9d9bee0d03ffaa4b2f8ec01d395",
+      "commit": "edef1656fb2ea91744593c6f17fcb2c25b1360d1",
       "visibility": "public"
     }
   ],
   "releaseBundle": {
-    "bundleId": "c4d0e3fc9af4c19882cfe9a70c22216868d4ebfc9b26ed0b69cad76338888d0b",
+    "bundleId": "42ace64240eb0b47cf046354fd809b8a8bdeb19f21ea9bf2de54e5c947baccec",
     "status": "local-build"
   },
   "contentRevision": {
-    "note": "Content locks pin the cleaned content commits used by the production builds.",
+    "note": "Content locks pin the cleaned K2 content commits used by the production builds.",
     "running-routes": "67a80abe30001527e6f60778e91ad9b206b31137",
-    "running-knowledge": "5cfda73c16f2fb7ee0cece9685f7b1595e2378e0",
+    "running-knowledge": "17e2e6d303e97ae5643ce864845a51b9261c08fa",
     "running-tools": "a423a457a1d9fed1c086ef84c67f267d9b62112a"
   },
   "coreRelease": {
@@ -80,15 +80,15 @@
         "site": "main",
         "url": "https://paobu.org/",
         "status": "success",
-        "codeCommit": "174411324b07b0745fd1a459603a04d7fc37c2dd",
+        "codeCommit": "61d3e5ddd9d829c3d4ff7e019d253793f0aae852",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "a8aa5d6e92c5f152b7fff3e7db655a651b2cf69062b714459f82bb3c728dc2e3",
+        "siteBundleId": "345aab3366ffbda17a5139602a7627885734442be778cdacef852bdb72f999cc",
         "build": {
           "htmlPages": 40,
-          "searchRecords": 112,
+          "searchRecords": 128,
           "sitemapUrls": 40
         },
-        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40619875172",
+        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40624172170",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -96,15 +96,15 @@
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
-        "codeCommit": "883f4a445b3525385d37c6fb598166e3cac09d3b",
+        "codeCommit": "9af6df99ee6a9474cd91457ddb96128d24c439f9",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "58a25c2a1f5306c3e8e50b7b83e0ed381342bda96b10e986beae73309df78395",
+        "siteBundleId": "946de9203c2b4f8617b564bc77e118f8197feb15cf78d286f77f5d0c18c01a0c",
         "build": {
-          "htmlPages": 84,
-          "searchRecords": 56,
-          "sitemapUrls": 84
+          "htmlPages": 100,
+          "searchRecords": 72,
+          "sitemapUrls": 100
         },
-        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40620562372",
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40624216173",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -112,15 +112,15 @@
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
-        "codeCommit": "86788f9c77a5a9d9bee0d03ffaa4b2f8ec01d395",
+        "codeCommit": "edef1656fb2ea91744593c6f17fcb2c25b1360d1",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "bbff0fe14f761e526b69f678e954e28f2625cf412528cc18ec1dcc858ac90700",
+        "siteBundleId": "20eb0d99c326b1f786ac611d801b7eb3abff19454821323c0e05c7f60dc02513",
         "build": {
           "htmlPages": 28,
           "searchRecords": 24,
           "sitemapUrls": 28
         },
-        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40620567702",
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40624080847",
         "httpsEnforced": true,
         "certificate": "approved"
       }
@@ -139,10 +139,19 @@
     },
     "legalNotices": "Article, glossary, tool and route pages checked live carry a context-specific legal notice and footer legal link.",
     "authors": "Visible bylines read 跑地图编辑部 / RunMap Editorial; no AI-assisted or editorial-desk wording is rendered.",
-    "contentWording": "12 live legal/content pages contain no AI-assisted, RunMap 编辑台 or editorial-desk wording.",
+    "contentWording": "Live legal and K2 pages contain no AI-assisted, RunMap 编辑台 or editorial-desk wording.",
+    "k2Pages": {
+      "count": 16,
+      "status": "all 200",
+      "axeViolations": 0,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "mobileOverflow": 0,
+      "note": "Eight bilingual articles; four articles checked with axe in both languages, all 16 checked for status, legal notice, overflow and console/request failures."
+    },
     "sitemaps": {
       "paobu.org": 40,
-      "learn.paobu.org": 84,
+      "learn.paobu.org": 100,
       "tools.paobu.org": 28
     },
     "searchLive": [
@@ -151,15 +160,14 @@
       "越野跑 9700 米爬升 -> paobu.org/routes/utmb/",
       "carbon plate -> learn.paobu.org/en/articles/shoe-technology/"
     ],
-    "legalSearch": "A query for the legal-page title does not return any /legal/ page; legal pages are excluded from Pagefind.",
-    "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200.",
     "searchAcceptance": {
       "zh-CN": "60/60",
       "en": "56/56"
     },
     "searchAcceptanceNote": "Full 116-query acceptance set run against the live Pagefind index; threshold 90%, top-5.",
-    "checkedAt": "2026-10-28T02:25:00Z",
-    "pwa": "All three live manifest.webmanifest files use start_url \"/\" and scope \"/\". The site-knowledge/tools manifests were corrected from the legacy /zh-CN/ start URL."
+    "legalSearch": "A query for the legal-page title does not return any /legal/ page; legal pages are excluded from Pagefind.",
+    "pwa": "All three live manifest.webmanifest files use start_url \"/\" and scope \"/\".",
+    "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200."
   },
   "oldRepository": {
     "name": "www",
@@ -174,10 +182,10 @@
     "coreRelease": "core-v0.2.15 published with the verified local tgz; the tag-triggered repack run failed because the release already existed and was removed"
   },
   "notes": [
-    "The legal and tone pass removed editorial-desk/AI-facing bylines and legacy /zh-CN/ links from content, added bilingual legal pages, footer links and per-page legal notices, and re-recorded all 112 content checks.",
+    "K2 added eight bilingual knowledge guides: cadence/stride, uphill/downhill, surfaces, race-day fuelling, caffeine, shoe fit/cushioning, trail navigation and post-race recovery. They are linked into the existing learning paths.",
+    "The legal and tone pass removed editorial-desk/AI-facing bylines and legacy /zh-CN/ links from content, added bilingual legal pages, footer links and per-page legal notices, and re-recorded all 128 content checks.",
     "Content is licensed CC BY 4.0 and site code is MIT; third-party race material, trademarks, imagery and dependencies remain under their own terms.",
     "The legal page is a general risk notice, not legal advice. It covers liability, non-professional advice, race/outdoor safety, tool limits, sources/trademarks, privacy, automation disclosure and corrections.",
-    "Formal high-resolution imagery, real devices/readers, third-party EOX SLA, real Safari, remote rollback and independent professional review remain outside this deployment verification.",
-    "The final PWA manifest fix sets start_url and scope to / on the knowledge and tools sites; the release bundle siteBundleIds are unchanged."
+    "Formal high-resolution imagery, real devices/readers, third-party EOX SLA, real Safari, remote rollback and independent professional review remain outside this deployment verification."
   ]
 }
