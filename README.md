@@ -13,10 +13,10 @@
 - T15 浏览器矩阵本地通过（2026-10-28 最终生产构建）：Chromium 156.0.8078.4、Firefox 157.0、WebKit 27.2 各生成 48 张 1440×900 / 390×844 截图（6 页 × 2 语言 × 2 主题 × 2 视口）；三套均为 0 条 axe 违规、0 控制台错误与失败请求；320–1920px 共 60 项、200% 缩放 6 项均无横向溢出；键盘 4 页各 14/14 焦点、关键控件 ≥44px、AX 树、搜索分页展开 25/25、软键盘遮挡 0、长标题与 reduced-motion 检查通过。新增 8 个 K1/T1 页面在浅色/深色下 axe 均为 0 且无移动端溢出；K2 的 16 篇文章页在 390px 下 200、axe 0、无移动端溢出；六张双语法律页 axe 0、无移动端溢出，所有文章、术语、工具和路线页均有法律提示。路线详情等待地球/近景瓦片可展示后再隐藏海报，移动端画布填满卡片。WebKit 27.2 缺少 `OffscreenCanvas`，因此正确降级为海报与文字说明，不执行 Cesium；真实 Safari、真实读屏与真机仍待补。
 - T16 本地实验室检查通过（2026-10-28）：普通文章 LCP 中位 1.456s/最慢 1.748s、CLS 0；地球桌面就绪中位 3.494s/最慢 3.679s（预算 4s）、模拟手机 5.440s/5.567s（预算 6s）；硬件加速 Chromium（Intel Arc）约 60fps；非地图 18,346B gzip、引擎 1,347,806B gzip、纹理 266,599B、地图索引 1,262B；11 项预算与 8 项故障断言通过。它不是线上 p75 或真实手机 GPU 结果。
 - 路线详情使用无需 API 密钥的 EOX Sentinel-2 cloudless 公开瓦片作为近景层，署名显示在地图底部；瓦片失败时重试并回退到本地 NASA Blue Marble。首页仍使用本地 NASA 基础层。公开瓦片可用性、第三方条款和额度不由本站保证，真实网络/SLA 仍需另行验证。
-- T17 本地发布校验通过：三站分别生成 `CNAME`、`.nojekyll`、`robots.txt`、按公开页面生成的 `sitemap.xml`、`release-manifest.json`、PWA manifest、`sw.js` 与离线页；`scripts/release-bundle.mjs` 与 `scripts/verify-release.mjs` 校验三站同核心、同内容锁和发布文件。当前 64 实体生产构建的静态页面为 43/103/31，发布清单 40/100/28，搜索记录 128/72/24，sitemap 40/100/28，内容守卫通过。当前 release bundleId 为 `42ace642…`。
+- T17 本地发布校验通过：三站分别生成 `CNAME`、`.nojekyll`、`robots.txt`、按公开页面生成的 `sitemap.xml`、`release-manifest.json`、PWA manifest、`sw.js` 与离线页；`scripts/release-bundle.mjs` 与 `scripts/verify-release.mjs` 校验三站同核心、同内容锁和发布文件。当前 71 实体生产构建的静态页面为 43/117/31，发布清单 40/114/28，搜索记录 142/86/24，sitemap 40/114/28，内容守卫通过。当前 release bundleId 为 `df5c12ed…`。
 - Pages 工作流与 core Release 工作流已加入 `.github/workflows/`；三站 Pages 工作流均已成功，`paobu.org`/`learn.paobu.org`/`tools.paobu.org` 已启用 HTTPS。旧 `paobuorg/www` 已备份并删除。法律与内容更新批次已于 2026-10-28 推送并复核；主站流水线下载已发布的 `core-v0.2.15` 制品并校验 SHA-256，线上三站清单使用同一核心哈希。
 - 三站新增中英文法律页 `/legal/` 与 `/en/legal/`，页脚固定入口；页面覆盖责任限制、非专业建议、赛事与户外安全、工具限制、来源与商标、CC BY 4.0 / MIT 许可、隐私和纠错。文章、术语、工具和路线页还显示对应的简短法律提示。
-- 64 个实体已于 2026-10-28 完成 **AI 辅助编辑审阅**并发布，128 个语言版本各有 `approve` 记录和匹配的 contentDigest；覆盖路线 16/16、九个知识主题、36 个知识实体（35 篇文章 + 术语表）和 12 项工具。审阅记录由 `runmap-editorial` 生成，内部标注为 AI 辅助；页面只显示中性的“跑地图编辑部 / RunMap Editorial”。这不是独立或专业医学/营养/教练审阅；限制见 [ai-review-report.md](evidence/2026-10-28/review/ai-review-report.md)。本地 `.env` 仍开启 `PREVIEW_UNREVIEWED=1`，开发/预览会带横幅；生产模式构建不带横幅。
+- 71 个实体已于 2026-10-28 完成 **AI 辅助编辑审阅**并发布，142 个语言版本各有 `approve` 记录和匹配的 contentDigest；覆盖路线 16/16、九个知识主题、43 个知识实体（42 篇文章 + 术语表）和 12 项工具。审阅记录由 `runmap-editorial` 生成，内部标注为 AI 辅助；页面只显示中性的“跑地图编辑部 / RunMap Editorial”。这不是独立或专业医学/营养/教练审阅；限制见 [ai-review-report.md](evidence/2026-10-28/review/ai-review-report.md)。本地 `.env` 仍开启 `PREVIEW_UNREVIEWED=1`，开发/预览会带横幅；生产模式构建不带横幅。
 - 首页使用 CesiumJS 1.146.0 与本地 NASA Blue Marble 基础纹理；路线详情再叠加无需密钥的 EOX Sentinel-2 cloudless 公开瓦片。两者都不需要 3D 在线服务或地图密钥，但近景瓦片依赖第三方公开服务。
 
 ## 技术基线
@@ -65,7 +65,7 @@ pnpm dev
 - 内容校验：`pnpm test:content`。
 - 类型与 Astro 检查：`pnpm check`。
 - 单元测试：`pnpm test`（`tsx --test tests/*.ts`），当前 16 项，覆盖正文跨站链接、CJK/拼音/数字搜索助手、验收查询集契约，以及许可字段、法律页和禁用 AI/编辑台措辞检查。浏览器验收查询集在 `tests/search-acceptance.json`。
-- T14 审阅准备：`pnpm review:packet` 生成双语摘要、来源、内容摘要和缺失门禁；当前 64 个实体已有 AI 辅助编辑审阅记录；覆盖率为路线 16/16、知识主题 9/9、36 个知识实体、工具 12/12。证据见 [review-packets.md](evidence/2026-10-28/review/review-packets.md)。
+- T14 审阅准备：`pnpm review:packet` 生成双语摘要、来源、内容摘要和缺失门禁；当前 71 个实体已有 AI 辅助编辑审阅记录；覆盖率为路线 16/16、知识主题 9/9、43 个知识实体、工具 12/12。证据见 [review-packets.md](evidence/2026-10-28/review/review-packets.md)。
 
 内容目录可用 `PAOBU_REPOS_DIR` 指向父目录，或分别用 `ROUTES_CONTENT_DIR`、`KNOWLEDGE_CONTENT_DIR`、`TOOLS_CONTENT_DIR` 覆盖。生产构建必须确保实际生效的环境文件中 `PREVIEW_UNREVIEWED=0` 或未设置；本地 `.env` 当前为 `1`，发布前应修改或移除，不能只依赖命令行未设置。
 
@@ -89,7 +89,7 @@ pnpm qa:crawl   # 抓取三站 sitemap 的全部公开页面并检查 canonical/
 
 ### 本地发布准备
 
-生产模式检查（64 个实体已发布，内容守卫应通过）。本地 `.env` 的开发端口不能带进生产，构建时必须显式覆盖三个来源：
+生产模式检查（71 个实体已发布，内容守卫应通过）。本地 `.env` 的开发端口不能带进生产，构建时必须显式覆盖三个来源：
 
 ```bash
 pnpm core:pack
@@ -133,7 +133,7 @@ node scripts/content-lock.mjs          # 重新生成三个站点的 content.loc
 node scripts/content-lock.mjs --verify # 校验内容树未变化
 ```
 
-锁使用 `sha256-tree-v1` 覆盖三个内容仓库的 `content/`、`data/` 和 `assets/`。锁里的 `commit` 已固定为完整 SHA：`running-routes` `67a80ab…`、`running-knowledge` `17e2e6d…`、`running-tools` `a423a45…`。锁用于本地可复现构建，不代替 Git 版本控制。
+锁使用 `sha256-tree-v1` 覆盖三个内容仓库的 `content/`、`data/` 和 `assets/`。锁里的 `commit` 已固定为完整 SHA：`running-routes` `67a80ab…`、`running-knowledge` `ac0e780…`、`running-tools` `a423a45…`。锁用于本地可复现构建，不代替 Git 版本控制。
 
 ## 外部配置与发布边界
 
