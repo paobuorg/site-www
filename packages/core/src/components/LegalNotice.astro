@@ -1,0 +1,55 @@
+---
+import Icon from './Icon.astro';
+import { localePrefix } from '../lib/routing';
+import type { Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  context: 'article' | 'tool' | 'route';
+}
+const { locale, context } = Astro.props;
+const prefix = localePrefix(locale);
+const label = locale === 'zh-CN' ? '法律与许可' : 'Legal & licences';
+const text = locale === 'zh-CN'
+  ? {
+      article: '本文提供一般跑步信息，不构成医疗、营养或训练处方。身体不适、疼痛持续或处于极端环境时，请寻求合格专业人员或当地急救。',
+      tool: '结果仅为估算，不构成比赛、医疗或安全建议。文件只在你的浏览器中处理，不会上传。',
+      route: '赛事与路线信息可能随年份变化，请以组委会和当地管理部门的最新公告为准；本站不保证路线适合训练、比赛或导航。',
+    }[context]
+  : {
+      article: 'This article provides general running information and is not a medical, nutrition or training prescription. For persistent pain, illness or extreme conditions, seek a qualified professional or local emergency care.',
+      tool: 'Results are estimates, not race, medical or safety advice. Files are processed only in your browser and are never uploaded.',
+      route: 'Race and route information can change between editions. Follow the latest organiser and land-manager notices; this site does not warrant that a route is suitable for training, racing or navigation.',
+    }[context];
+---
+
+<p class="legal-note">
+  <Icon name="shield" size={15} />
+  <span>{text} <a href={`${prefix}/legal/`}>{label}</a></span>
+</p>
+
+<style>
+  .legal-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 26px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.8rem;
+    line-height: 1.65;
+  }
+
+  .legal-note :global(svg) {
+    flex: none;
+    margin-top: 2px;
+  }
+
+  .legal-note a {
+    color: var(--muted-strong);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>

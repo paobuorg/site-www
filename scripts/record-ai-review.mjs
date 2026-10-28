@@ -101,7 +101,7 @@ for (const { repo, file, entity } of entityFiles) {
   const contributorFile = path.join(repo, 'data', 'contributors', 'runmap-editorial.json');
   if (fs.existsSync(contributorFile)) {
     const contributor = readJson(contributorFile);
-    contributor.displayName = 'RunMap editorial desk (AI-assisted draft and review)';
+    contributor.displayName = '跑地图编辑部 · RunMap Editorial';
     contributor.roles = [...new Set([...contributor.roles, 'editor'])].sort();
     contributor.qualification = null;
     fs.writeFileSync(contributorFile, `${JSON.stringify(contributor, null, 2)}\n`);

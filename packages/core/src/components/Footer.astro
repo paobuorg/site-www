@@ -37,12 +37,13 @@ const aboutPath = localizedPath('routes', locale, 'about');
       <ul>
         <li><a href={`${origins.routes}${aboutPath}`} data-cross-site>{locale === 'zh-CN' ? '关于与方法' : 'About & method'}</a></li>
         <li><a href={`${origins.routes}${aboutPath}#licenses`} data-cross-site>{locale === 'zh-CN' ? '许可与署名' : 'Licenses & attribution'}</a></li>
+        <li><a href={`${prefix}/legal/`}>{t(locale, 'legal')}</a></li>
         {gh && <li><a href={gh} rel="external noopener">GitHub</a></li>}
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© {year} 跑地图 RunMap</span>
-    <span>{locale === 'zh-CN' ? '正文 CC BY 4.0 · 代码 MIT · 第三方素材按来源许可' : 'Text CC BY 4.0 · Code MIT · Third-party assets under their own licences'}</span>
+    <span>{locale === 'zh-CN' ? '内容 CC BY 4.0 · 代码 MIT · 第三方素材按来源许可' : 'Content CC BY 4.0 · Code MIT · Third-party assets under their own licences'}</span>
   </div>
 </footer>

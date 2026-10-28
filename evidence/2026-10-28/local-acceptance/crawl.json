@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T00:56:36.026Z",
+  "generatedAt": "2026-10-28T01:54:25.976Z",
   "results": [
     {
       "site": "routes",
@@ -47,6 +47,18 @@
       "noindex": true,
       "title": "About &amp; method · RunMap",
       "h1": "About &amp; method",
+      "noLocalhost": true
+    },
+    {
+      "site": "routes",
+      "url": "https://paobu.org/en/legal/",
+      "local": "http://localhost:4421/en/legal/",
+      "status": 200,
+      "canonical": true,
+      "alternates": true,
+      "noindex": true,
+      "title": "Legal, disclaimers and licences · RunMap",
+      "h1": "Legal, disclaimers and licences",
       "noLocalhost": true
     },
     {
@@ -251,6 +263,18 @@
       "noindex": true,
       "title": "Western States 100: Olympic Valley to Auburn · RunMap",
       "h1": "Western States 100: Olympic Valley to Auburn",
+      "noLocalhost": true
+    },
+    {
+      "site": "routes",
+      "url": "https://paobu.org/legal/",
+      "local": "http://localhost:4421/legal/",
+      "status": 200,
+      "canonical": true,
+      "alternates": true,
+      "noindex": true,
+      "title": "法律、免责声明与许可 · RunMap",
+      "h1": "法律、免责声明与许可",
       "noLocalhost": true
     },
     {
@@ -1179,6 +1203,18 @@
     },
     {
       "site": "knowledge",
+      "url": "https://learn.paobu.org/en/legal/",
+      "local": "http://localhost:4422/en/legal/",
+      "status": 200,
+      "canonical": true,
+      "alternates": true,
+      "noindex": true,
+      "title": "Legal, disclaimers and licences · RunMap",
+      "h1": "Legal, disclaimers and licences",
+      "noLocalhost": true
+    },
+    {
+      "site": "knowledge",
       "url": "https://learn.paobu.org/en/topics/",
       "local": "http://localhost:4422/en/topics/",
       "status": 200,
@@ -1319,6 +1355,18 @@
       "noindex": true,
       "title": "跑步基础术语表：配速、RPE、步频与训练黑话 · RunMap",
       "h1": "跑步基础术语表：配速、RPE、步频与训练黑话",
+      "noLocalhost": true
+    },
+    {
+      "site": "knowledge",
+      "url": "https://learn.paobu.org/legal/",
+      "local": "http://localhost:4422/legal/",
+      "status": 200,
+      "canonical": true,
+      "alternates": true,
+      "noindex": true,
+      "title": "法律、免责声明与许可 · RunMap",
+      "h1": "法律、免责声明与许可",
       "noLocalhost": true
     },
     {
@@ -1467,6 +1515,18 @@
     },
     {
       "site": "tools",
+      "url": "https://tools.paobu.org/en/legal/",
+      "local": "http://localhost:4423/en/legal/",
+      "status": 200,
+      "canonical": true,
+      "alternates": true,
+      "noindex": true,
+      "title": "Legal, disclaimers and licences · RunMap",
+      "h1": "Legal, disclaimers and licences",
+      "noLocalhost": true
+    },
+    {
+      "site": "tools",
       "url": "https://tools.paobu.org/en/tools/fueling-planner/",
       "local": "http://localhost:4423/en/tools/fueling-planner/",
       "status": 200,
@@ -1607,6 +1667,18 @@
       "noindex": true,
       "title": "Track viewer: read your GPX and GeoJSON · RunMap",
       "h1": "Track viewer: read your GPX and GeoJSON",
+      "noLocalhost": true
+    },
+    {
+      "site": "tools",
+      "url": "https://tools.paobu.org/legal/",
+      "local": "http://localhost:4423/legal/",
+      "status": 200,
+      "canonical": true,
+      "alternates": true,
+      "noindex": true,
+      "title": "法律、免责声明与许可 · RunMap",
+      "h1": "法律、免责声明与许可",
       "noLocalhost": true
     },
     {

@@ -94,7 +94,7 @@ export const UI = {
     learningPath: '学习路径',
     toc: '文章目录',
     sourcesHeading: '来源与证据',
-    reviewedOn: '审阅于',
+    reviewedOn: '核验于',
     updatedOn: '更新于',
     audience: '适用对象',
     toolsHome: '跑步工具',
@@ -122,7 +122,7 @@ export const UI = {
     notFound: '没有找到这个页面',
     notFoundBody: '地址可能已变更，或内容尚未发布。',
     backHome: '返回首页',
-    previewBanner: '预览：内容尚在审阅，未作为正式发布版本。',
+    previewBanner: '预览：内容尚在核验，未作为正式发布版本。',
     previewShort: '内容预览',
     allSites: '全站搜索',
     siteRoutes: '路线站',
@@ -137,16 +137,17 @@ export const UI = {
     page: '页面',
     languageName: '中文',
     switchToEnglish: 'English',
-    previewNotice: '待审阅内容',
+    previewNotice: '预览内容',
     closeSheet: '收起列表',
     openSheet: '展开路线列表',
     viewAllRoutes: '浏览全部路线',
     status: '状态',
-    reviewPending: '编辑审阅中',
+    reviewPending: '校对中',
     license: '许可',
     attribution: '署名',
     sourceLink: '查看来源',
     noGeometry: '暂无本站轨迹',
+    legal: '法律与许可',
   },
   en: {
     routes: 'Routes',
@@ -211,7 +212,7 @@ export const UI = {
     learningPath: 'Learning path',
     toc: 'Contents',
     sourcesHeading: 'Sources and evidence',
-    reviewedOn: 'Reviewed',
+    reviewedOn: 'Checked',
     updatedOn: 'Updated',
     audience: 'Who it is for',
     toolsHome: 'Running tools',
@@ -259,11 +260,12 @@ export const UI = {
     openSheet: 'Expand route list',
     viewAllRoutes: 'Browse all routes',
     status: 'Status',
-    reviewPending: 'Editorial review',
+    reviewPending: 'In final check',
     license: 'License',
     attribution: 'Attribution',
     sourceLink: 'View source',
     noGeometry: 'No bundled geometry',
+    legal: 'Legal & licences',
   },
 } as const;
 
@@ -283,4 +285,9 @@ export function otherLocale(locale: Locale): Locale {
 
 export function topicLabel(topic: TopicId, locale: Locale): string {
   return TOPIC_META[topic][locale === 'zh-CN' ? 'zh' : 'en'];
+}
+
+export function contributorName(id: string, fallback: string, locale: Locale): string {
+  if (id === 'runmap-editorial') return locale === 'zh-CN' ? '跑地图编辑部' : 'RunMap Editorial';
+  return fallback;
 }

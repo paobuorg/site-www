@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T00:39:34.431Z",
+  "generatedAt": "2026-10-28T01:37:45.770Z",
   "matrix": {
     "pages": [
       "home",
@@ -3378,7 +3378,7 @@
           },
           {
             "level": 2,
-            "name": "版本与审阅"
+            "name": "版本与核验"
           },
           {
             "level": 2,
@@ -3474,7 +3474,7 @@
           },
           {
             "level": 2,
-            "name": "版本与审阅"
+            "name": "版本与核验"
           },
           {
             "level": 2,
@@ -3630,7 +3630,7 @@
           },
           {
             "level": 2,
-            "name": "Version and review"
+            "name": "Version and checks"
           },
           {
             "level": 2,

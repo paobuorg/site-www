@@ -32,8 +32,8 @@ const copy = locale === 'zh-CN'
         },
         {
           icon: 'shield',
-          title: '审阅完成才发布',
-          body: '中英文正文同时审阅。健康与训练建议保持保守边界，不替代医生、教练或赛事官方信息。预览中的内容会明确标记为待审阅。',
+          title: '核验完成才发布',
+          body: '中英文正文同时核验。健康与训练建议保持保守边界，不替代医生、教练或赛事官方信息。预览中的内容会明确标记为待核对。',
         },
       ],
       methodTitle: '内容如何生产',
@@ -41,7 +41,7 @@ const copy = locale === 'zh-CN'
         '确定实体、版本与读者任务，先写清楚哪些问题不回答。',
         '查证官方赛事、公共机构或同行评议来源，记录可支持的结论。',
         '独立写作中英文正文，不使用旧版正文批量导入或机器扩写。',
-        '运行结构、引用与双语校验；编辑审阅后绑定内容摘要哈希。',
+        '运行结构、引用与双语校验；核对后绑定内容摘要哈希。',
         '发布后在复审到期或事实变化时重新核验，必要时撤回。',
       ],
       routesTitle: '路线与地图',
@@ -52,22 +52,24 @@ const copy = locale === 'zh-CN'
       toolsBody: '所有工具在浏览器本地计算，文件不上传。公式、输入范围、舍入规则和独立算例随工具一起公开。经验模型会标明适用距离与条件，不把预测写成保证，也不生成没有依据的安全排名。',
       licensesTitle: '许可与署名',
       licenses: [
-        { label: '本站正文', value: 'CC BY 4.0，署名“跑地图 RunMap”并链接原文。' },
-        { label: '本站代码', value: 'MIT；各仓库的许可证文件为最终依据。' },
+        { label: '本站内容', value: 'CC BY 4.0，署名“跑地图 RunMap”并链接原文；转载时注明是否修改。' },
+        { label: '本站代码', value: 'MIT；各仓库的 LICENSE 文件为最终依据。' },
         { label: '赛道资料', value: '按各来源许可处理；本站不重新许可第三方轨迹、照片或赛事标识。' },
         { label: '卫星底图', value: 'NASA Earth Observatory Blue Marble Next Generation 影像合成，署名 NASA；按 NASA 媒体使用指南使用。' },
+        { label: '路线近景', value: 'EOX Sentinel-2 cloudless 公开瓦片，署名 NASA / EOX，按 CC BY-NC-SA 4.0 使用。' },
         { label: '第三方依赖', value: 'Astro、CesiumJS、Pagefind 等按各自开源许可证使用。' },
       ],
       attributionTitle: '影像署名',
       attributionBody: '首页与路线页的卫星底图来自 NASA Earth Observatory 的 Blue Marble Next Generation 合成影像。它不是赛道几何，也不代表赛事官方地图。',
       statusTitle: '当前状态',
-      statusBody: '这是一个仍在建设中的站点快照。示例赛道、知识与工具内容处于编辑审阅阶段；预览构建会显示这些内容并加上提示，正式发布构建只纳入完成两种语言审阅的条目。当前没有配置公开代码托管地址，因此页脚不会显示 GitHub 链接。',
+      statusBody: '站点已上线，当前发布 56 个内容实体：16 条路线、28 个知识实体（27 篇文章 + 术语表）和 12 项工具，中英文成对发布。预览构建会标记尚未完成核验的条目；生产构建只纳入已完成核验的内容。',
       correctionsTitle: '纠错与参与',
-      correctionsBody: '发现事实、来源或计算问题时，请保留具体页面、版本与依据。公开仓库配置后，我们会在此提供可追踪的 Issue 入口，并记录实质性更正。',
-      correctionsFallback: '公开仓库尚未配置。上线前会补充可联系的仓库地址，不使用虚构邮箱或表单。',
-      githubCta: '前往 GitHub 仓库',
+      correctionsBody: '发现事实、来源、计算、版权或商标问题时，请保留具体页面、版本与依据，通过 GitHub Issues 提交。我们会在核实后更正、补充说明或撤回内容。',
+      correctionsFallback: '公开仓库暂不可用。上线前会补充可联系的仓库地址，不使用虚构邮箱或表单。',
+      githubCta: '前往 GitHub Issues',
       backRoutes: '浏览路线',
       lastUpdated: '本页随构建更新',
+      legalCta: '阅读法律、免责声明与许可',
     }
   : {
       title: 'About & method',
@@ -87,15 +89,15 @@ const copy = locale === 'zh-CN'
         {
           icon: 'shield',
           title: 'Publish only after review',
-          body: 'Chinese and English text are reviewed together. Health and training guidance keeps conservative boundaries and never replaces a clinician, coach or official race information. Preview content is labelled as unreviewed.',
+          body: 'Chinese and English text are checked together. Health and training guidance keeps conservative boundaries and never replaces a clinician, coach or official race information. Preview content is labelled as still being checked.',
         },
       ],
       methodTitle: 'How content is made',
       methodSteps: [
         'Define the entity, version and reader task, including the questions we will not answer.',
         'Verify official race, public-agency or peer-reviewed sources and record the claims they support.',
-        'Write both language versions independently, without bulk-importing legacy text or padding with generated words.',
-        'Run structural, citation and bilingual validation; bind an approved review to a content digest.',
+        'Write both language versions independently, without bulk-importing legacy text or padding.',
+        'Run structural, citation and bilingual validation; bind a check record to a content digest.',
         'Re-check at the review due date or when facts change, and withdraw content when it can no longer be supported.',
       ],
       routesTitle: 'Courses and maps',
@@ -106,26 +108,28 @@ const copy = locale === 'zh-CN'
       toolsBody: 'Every tool calculates locally in the browser and uploads no files. Formulas, input ranges, rounding rules and independent worked examples are published with the tool. Empirical models state their distance and conditions; predictions are not guarantees, and we do not invent safety rankings.',
       licensesTitle: 'Licences and attribution',
       licenses: [
-        { label: 'Site text', value: 'CC BY 4.0. Credit “RunMap 跑地图” and link to the original page.' },
-        { label: 'Site code', value: 'MIT; the licence file in each repository is authoritative.' },
+        { label: 'Site content', value: 'CC BY 4.0. Credit “RunMap 跑地图”, link to the original page and indicate changes.' },
+        { label: 'Site code', value: 'MIT; the LICENSE file in each repository is authoritative.' },
         { label: 'Course material', value: 'Handled under each source’s licence. We do not relicense third-party tracks, photographs or race marks.' },
         { label: 'Satellite basemap', value: 'NASA Earth Observatory Blue Marble Next Generation composite, credited to NASA and used under NASA media guidelines.' },
+        { label: 'Route close-ups', value: 'EOX Sentinel-2 cloudless public tiles, credited to NASA / EOX and used under CC BY-NC-SA 4.0.' },
         { label: 'Third-party software', value: 'Astro, CesiumJS, Pagefind and other dependencies remain under their own open-source licences.' },
       ],
       attributionTitle: 'Imagery credit',
       attributionBody: 'The satellite basemap on the home and route pages is a NASA Earth Observatory Blue Marble Next Generation composite. It is not course geometry and is not an official race map.',
       statusTitle: 'Current state',
-      statusBody: 'This is a site snapshot still under construction. The sample courses, knowledge and tools are in editorial review. A preview build shows them with a notice; a production build contains only entries whose two language versions have completed review. No public code host is configured yet, so the footer shows no GitHub link.',
+      statusBody: 'The site is live with 56 published entities: 16 routes, 28 knowledge entities (27 articles plus a glossary) and 12 tools, all paired in Chinese and English. Preview builds mark entries still being checked; production builds include only checked content.',
       correctionsTitle: 'Corrections and participation',
-      correctionsBody: 'If a fact, source or calculation is wrong, include the specific page, version and evidence. Once the public repositories are configured, we will add a traceable Issue entry point here and record substantive corrections.',
-      correctionsFallback: 'No public repository is configured yet. A real, contactable repository address will be added before launch; we do not invent an email or form.',
-      githubCta: 'Open the GitHub repository',
+      correctionsBody: 'If a fact, source, calculation, copyright or trademark issue is wrong, include the specific page, version and evidence and open a GitHub Issue. We will correct, annotate or withdraw content after checking it.',
+      correctionsFallback: 'The public repository is temporarily unavailable. A contactable repository address will be provided; we do not invent an email or form.',
+      githubCta: 'Open GitHub Issues',
       backRoutes: 'Browse routes',
       lastUpdated: 'Updated with each build',
+      legalCta: 'Read legal, disclaimers and licences',
     };
 const title = `${copy.title} · RunMap`;
 const description = locale === 'zh-CN'
-  ? '跑地图的来源、审阅、许可、地图与健康边界说明。'
+  ? '跑地图的来源、核验、许可、地图与健康边界说明。'
   : 'RunMap’s method for sources, review, licences, maps and health boundaries.';
 ---
 
@@ -193,6 +197,7 @@ const description = locale === 'zh-CN'
           </div>
         ))}
       </dl>
+      <p class="license-legal-link"><a href={`${prefix}/legal/`}>{copy.legalCta}</a></p>
     </section>
 
     <section class="about-section" id="attribution" aria-labelledby="attribution-title">
@@ -212,7 +217,7 @@ const description = locale === 'zh-CN'
       <div class="section-heading"><h2 id="corrections-title">{copy.correctionsTitle}</h2></div>
       <p>{copy.correctionsBody}</p>
       {gh ? (
-        <a class="button primary" href={gh} rel="external noopener">
+        <a class="button primary" href={`${gh}/issues`} rel="external noopener">
           <Icon name="github" size={17} />{copy.githubCta}
         </a>
       ) : (
@@ -274,6 +279,18 @@ const description = locale === 'zh-CN'
 
   .about-section {
     margin-top: 48px;
+  }
+
+  .license-legal-link {
+    margin-top: 14px;
+  }
+
+  .license-legal-link a {
+    color: var(--muted-strong);
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   .about-sections {

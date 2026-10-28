@@ -1,0 +1,335 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from './Icon.astro';
+import { localePrefix } from '../lib/routing';
+import { githubUrl, siteOrigin } from '../lib/sites';
+import type { Locale, SiteKind } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  active: SiteKind;
+}
+const { locale, active } = Astro.props;
+const prefix = localePrefix(locale);
+const gh = githubUrl();
+const contactHref = gh ? `${gh}/issues` : null;
+const siteName = locale === 'zh-CN'
+  ? { routes: '路线站', knowledge: '知识站', tools: '工具站' }[active]
+  : { routes: 'Routes', knowledge: 'Learn', tools: 'Tools' }[active];
+
+const copy = locale === 'zh-CN'
+  ? {
+      title: '法律、免责声明与许可',
+      description: '跑地图的使用条件、专业建议边界、赛事与户外安全、工具限制、来源与商标、CC BY 4.0 / MIT 许可、隐私与纠错方式。',
+      eyebrow: '使用前请阅读',
+      lead: '本站提供一般跑步信息、赛事资料与计算工具。使用本站即表示你理解并接受以下边界；如果你不同意，请不要使用本站。',
+      updated: '最后更新：2026-10-28',
+      summaryTitle: '一句话摘要',
+      summary: '内容按“现状”提供，不保证完整、准确或适用于你的情况；本站不提供医疗、营养、训练、法律或安全专业意见；赛事与路线以官方最新公告为准；工具结果是估算，不是保证。',
+      sections: [
+        {
+          title: '使用条件与责任限制',
+          paragraphs: [
+            '本站内容按“现状”和“现有”提供。我们尽力核对来源并定期更新，但不保证内容完整、准确、及时、无错误或适合某一特定目的。赛事日期、路线、规则、补给、交通和天气都可能变化，历史版本不应被当作当前事实。',
+            '在适用法律允许的最大范围内，跑地图及其贡献者不对因访问、使用或依赖本站内容而产生的任何直接、间接、附带、特殊或后果性损失承担责任。此限制不影响依法不能排除或限制的责任。你应自行判断并承担使用本站的风险。',
+          ],
+        },
+        {
+          title: '不是专业建议；紧急情况',
+          paragraphs: [
+            '本站不是医疗机构、营养服务机构、教练机构或赛事组织方，也不提供个体化诊断、治疗、康复、营养处方或训练计划。涉及疼痛、伤病、慢性病、用药、孕期、进食障碍或极端环境时，请咨询具备相应资质的医生、注册营养师或教练。',
+            '遇到胸痛、晕厥、意识改变、严重呼吸困难、热射病或其他紧急情况，请立即联系当地急救服务，不要等待本站回复或继续运动。',
+          ],
+        },
+        {
+          title: '赛事、路线与户外安全',
+          paragraphs: [
+            '赛事名称、标识、规则、路线文字和官方文件归赛事组织方所有。本站不是任何赛事的官方站点，也不代表赛事组织方。报名、参赛资格、强制装备、关门时间、补给和交通安排，一律以组织方最新公告为准。',
+            '地图锚点只是编辑性的概览位置，不是官方起点、终点或赛道坐标。没有明确许可时，本站不提供可再分发的赛道轨迹。任何 GPX、地图或路线描述都不能证明道路开放、补给可用、通信覆盖或救援可达；越野、山地、高温、严寒和夜间活动存在额外风险，请自行评估并遵守当地法规。',
+          ],
+        },
+        {
+          title: '工具、计算与文件',
+          paragraphs: [
+            '配速、分段、预测、补给、高程、鞋里程和清单等工具输出都是基于输入与公开公式的估算，不是比赛成绩、医疗建议、补给处方或安全认证。GPS、气压计、地图和轨迹文件可能包含误差、缺失或过时信息。',
+            '轨迹文件在浏览器本地读取和处理，不上传到本站服务器，也不需要账户。刷新或关闭页面后结果不会保留；鞋里程和主题偏好可能保存在浏览器本地存储中。请在公共设备上谨慎打开包含家庭住址或其他敏感位置的文件。',
+          ],
+        },
+        {
+          title: '来源、引用与商标',
+          paragraphs: [
+            '文章和工具尽量列出可追溯的来源，但来源本身也可能有错误、更新或访问限制。本站不保证外部链接持续可用，也不对外部页面的内容、隐私做法或安全性负责。',
+            '赛事名称、赛事标识、品牌名称、官方路线文字、官方文件、照片、地图和轨迹可能受商标权或著作权保护，归各自权利人所有。本站使用这些名称仅用于识别、评论和信息说明，不表示关联、授权或背书。',
+          ],
+        },
+        {
+          title: '版权与许可',
+          paragraphs: [
+            '本站原创正文、表格、工具说明和原创数据采用 CC BY 4.0（知识共享署名 4.0 国际）许可。转载、改编或再分发时，请署名“跑地图 RunMap”、链接到原页面、注明是否修改，并且不得暗示本站为你或你的产品背书。',
+            '网站代码采用 MIT 许可；各代码仓库的 LICENSE 文件是最终许可文本。第三方赛事资料、商标、照片、地图、轨迹、卫星影像和开源依赖不纳入本站的 CC BY 4.0 或 MIT 许可，仍按各自权利人的条款使用。',
+          ],
+        },
+        {
+          title: '隐私与第三方服务',
+          paragraphs: [
+            '本站没有账户、评论、广告或第三方统计脚本。主题偏好和鞋里程等少量数据保存在浏览器本地。站点由 GitHub Pages 托管，托管方可能按自身政策记录访问日志；路线近景使用 EOX Sentinel-2 cloudless 公共瓦片，浏览器会向该服务发起请求并暴露常规网络信息。',
+            '本站不会出售你的个人数据，也不会要求你上传轨迹文件。外部链接打开后适用对方网站的隐私政策。',
+          ],
+        },
+        {
+          title: '编辑方法与自动化辅助',
+          paragraphs: [
+            '内容由跑地图编辑部编写、核对和更新。编辑流程可能使用自动化工具辅助检索、比对、格式整理和一致性检查；自动化辅助不替代合格专业人士的判断，也不构成独立专业评估。',
+            '每个已发布条目都要求中英文版本、来源记录和内容摘要一致；发现事实、来源或计算问题时，我们会更正、补充说明或撤回内容。',
+          ],
+        },
+        {
+          title: '纠错、联系与变更',
+          paragraphs: [
+            '如果你发现事实错误、来源问题、版权或商标问题，请附上具体页面、版本、依据和权利说明。我们会在核实后处理，并在必要时记录实质性更正。',
+            '本页可能随站点、法律要求或第三方服务变化而更新；更新后以本页最新版本为准。本页不构成法律意见；如你需要法律建议，请咨询具备相应资质的律师。',
+          ],
+        },
+      ],
+      contactTitle: '联系与纠错',
+      contactBody: '公开问题可以通过 GitHub Issues 提交。请勿在公开 Issue 中放置个人敏感信息。',
+      contactCta: '打开 GitHub Issues',
+      backAbout: '返回关于与方法',
+      backRoutes: '返回路线首页',
+    }
+  : {
+      title: 'Legal, disclaimers and licences',
+      description: 'RunMap terms of use, professional-advice boundaries, race and outdoor safety, tool limits, sources and trademarks, CC BY 4.0 / MIT licences, privacy and corrections.',
+      eyebrow: 'Read before use',
+      lead: 'RunMap provides general running information, race material and calculators. By using this site you accept the boundaries below; if you do not agree, please do not use the site.',
+      updated: 'Last updated: 2026-10-28',
+      summaryTitle: 'In one paragraph',
+      summary: 'Content is provided as is, with no guarantee that it is complete, accurate or suitable for you. RunMap does not provide medical, nutrition, coaching, legal or safety advice. Race and route information is governed by the latest official notice. Tool results are estimates, not guarantees.',
+      sections: [
+        {
+          title: 'Terms of use and limitation of liability',
+          paragraphs: [
+            'This site is provided “as is” and “as available”. We try to check sources and update content, but we do not warrant that it is complete, accurate, current, error-free or fit for a particular purpose. Race dates, routes, rules, aid stations, transport and weather can change; an older version is not current fact.',
+            'To the maximum extent permitted by applicable law, RunMap and its contributors are not liable for any direct, indirect, incidental, special or consequential loss arising from access to, use of or reliance on this site. This does not exclude liability that cannot lawfully be excluded. You are responsible for your own judgment and for the risks of using the site.',
+          ],
+        },
+        {
+          title: 'Not professional advice; emergencies',
+          paragraphs: [
+            'RunMap is not a medical provider, nutrition service, coaching service or race organiser, and does not provide individual diagnosis, treatment, rehabilitation, nutrition prescriptions or training plans. For pain, injury, chronic illness, medication, pregnancy, eating disorders or extreme environments, consult a properly qualified doctor, registered dietitian or coach.',
+            'For chest pain, fainting, altered consciousness, severe breathing difficulty, heat stroke or another emergency, contact local emergency services immediately. Do not wait for a reply from this site or continue exercising.',
+          ],
+        },
+        {
+          title: 'Races, routes and outdoor safety',
+          paragraphs: [
+            'Race names, marks, rules, route text and official files belong to their organisers. This site is not an official race site and does not represent any organiser. Entry, eligibility, mandatory kit, cut-offs, aid and transport are governed by the organiser’s latest notice.',
+            'Map anchors are editorial overview positions, not official start, finish or course coordinates. We do not distribute course tracks without clear permission. A GPX file, map or route description does not prove that a road is open, that water is available, that communications work or that rescue is possible. Trail, mountain, heat, cold and night activities carry extra risk; assess conditions yourself and follow local rules.',
+          ],
+        },
+        {
+          title: 'Tools, calculations and files',
+          paragraphs: [
+            'Pace, splits, prediction, fuelling, elevation, shoe-mileage and checklist outputs are estimates based on your input and public formulas. They are not race results, medical advice, fuelling prescriptions or safety certification. GPS, barometers, maps and track files can contain errors, gaps or outdated information.',
+            'Track files are read and processed locally in your browser. They are not uploaded to this site and no account is required. Results are not retained after a refresh or when the page is closed; shoe-mileage and theme preferences may be stored in local browser storage. Be careful when opening a file that reveals a home address or other sensitive location on a shared device.',
+          ],
+        },
+        {
+          title: 'Sources, attribution and trademarks',
+          paragraphs: [
+            'Articles and tools try to list traceable sources, but sources can also be wrong, updated or access-restricted. We do not guarantee that external links will remain available and are not responsible for external content, privacy practices or security.',
+            'Race names, race marks, brand names, official route text, official files, photographs, maps and tracks may be protected by trademark or copyright and remain with their owners. We use names for identification, commentary and information only; this does not imply affiliation, authorisation or endorsement.',
+          ],
+        },
+        {
+          title: 'Copyright and licences',
+          paragraphs: [
+            'Original RunMap articles, tables, tool documentation and original data are licensed under CC BY 4.0 (Creative Commons Attribution 4.0 International). When you republish, adapt or redistribute them, credit “RunMap 跑地图”, link to the original page, indicate changes and do not imply that RunMap endorses you or your product.',
+            'Site code is licensed under MIT; the LICENSE file in each code repository is the authoritative text. Third-party race material, trademarks, photographs, maps, tracks, satellite imagery and open-source dependencies are not covered by RunMap’s CC BY 4.0 or MIT licence and remain subject to their owners’ terms.',
+          ],
+        },
+        {
+          title: 'Privacy and third-party services',
+          paragraphs: [
+            'This site has no accounts, comments, advertising or third-party analytics scripts. A small amount of data, such as theme preference and shoe mileage, stays in local browser storage. The site is hosted on GitHub Pages, which may keep access logs under its own policies. Route close-ups use the public EOX Sentinel-2 cloudless tiles, so your browser sends a request and ordinary network information to that service.',
+            'We do not sell personal data and do not ask you to upload track files. External links are governed by the destination site’s privacy policy.',
+          ],
+        },
+        {
+          title: 'Editorial method and automation',
+          paragraphs: [
+            'Content is written, checked and updated by the RunMap editorial team. The editorial process may use automated tools for retrieval, comparison, formatting and consistency checks. Automation does not replace a qualified professional’s judgment and is not an independent specialist assessment.',
+            'Every published entry requires matching Chinese and English versions, source records and a content digest. When a fact, source or calculation is wrong, we correct it, add a note or withdraw the content.',
+          ],
+        },
+        {
+          title: 'Corrections, contact and changes',
+          paragraphs: [
+            'If you find a factual, sourcing, copyright or trademark problem, include the specific page, version, evidence and rights information. We will review it and record material corrections where appropriate.',
+            'This page may change as the site, legal requirements or third-party services change; the latest version on this page governs. This page is not legal advice; consult a qualified lawyer if you need legal advice.',
+          ],
+        },
+      ],
+      contactTitle: 'Contact and corrections',
+      contactBody: 'Public issues can be submitted through GitHub Issues. Do not post sensitive personal information in a public issue.',
+      contactCta: 'Open GitHub Issues',
+      backAbout: 'Back to About & method',
+      backRoutes: 'Back to routes',
+    };
+
+const title = `${copy.title} · RunMap`;
+const aboutHref = `${siteOrigin('routes')}${prefix}/about/`;
+const homeHref = locale === 'zh-CN' ? '/' : '/en/';
+---
+
+<BaseLayout locale={locale} title={title} description={copy.description} active={active}>
+  <div class="page-shell narrow legal-page" data-pagefind-ignore>
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href={homeHref}>{locale === 'zh-CN' ? '首页' : 'Home'}</a></li>
+        <li>{copy.title}</li>
+      </ol>
+    </div>
+
+    <div class="page-intro">
+      <span class="pill mint"><Icon name="shield" size={14} />{copy.eyebrow}</span>
+      <h1>{copy.title}</h1>
+      <p>{copy.lead}</p>
+      <p class="legal-meta">{copy.updated} · {siteName}</p>
+    </div>
+
+    <div class="legal-summary">
+      <strong>{copy.summaryTitle}</strong>
+      <p>{copy.summary}</p>
+    </div>
+
+    <div class="legal-sections">
+      {copy.sections.map((section) => (
+        <section class="legal-section">
+          <h2>{section.title}</h2>
+          {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </section>
+      ))}
+    </div>
+
+    <section class="legal-contact">
+      <h2>{copy.contactTitle}</h2>
+      <p>{copy.contactBody}</p>
+      {contactHref && (
+        <a class="button primary" href={contactHref} rel="external noopener">
+          <Icon name="external" size={16} />{copy.contactCta}
+        </a>
+      )}
+    </section>
+
+    <div class="legal-links">
+      <a href={aboutHref}><Icon name="arrow-left" size={15} />{copy.backAbout}</a>
+      <a href={homeHref}>{copy.backRoutes}</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .legal-page {
+    padding-bottom: 64px;
+  }
+
+  .legal-meta {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.84rem;
+  }
+
+  .legal-summary {
+    margin: 26px 0 8px;
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    background: var(--surface-2);
+  }
+
+  .legal-summary strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.92rem;
+  }
+
+  .legal-summary p {
+    margin: 0;
+    color: var(--muted-strong);
+    line-height: 1.75;
+  }
+
+  .legal-sections {
+    display: grid;
+    gap: 2px;
+  }
+
+  .legal-section {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .legal-section h2 {
+    margin: 0 0 10px;
+    font-size: 1.18rem;
+  }
+
+  .legal-section p {
+    margin: 0 0 10px;
+    color: var(--muted-strong);
+    line-height: 1.8;
+  }
+
+  .legal-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .legal-contact {
+    margin-top: 30px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    background: var(--surface-2);
+  }
+
+  .legal-contact h2 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+  }
+
+  .legal-contact p {
+    margin: 0 0 14px;
+    color: var(--muted-strong);
+    line-height: 1.75;
+  }
+
+  .legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+  }
+
+  .legal-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--muted-strong);
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .legal-links a:hover {
+    color: var(--text);
+  }
+
+  @media (max-width: 620px) {
+    .legal-section {
+      padding: 20px 0;
+    }
+  }
+</style>

@@ -21,7 +21,7 @@ export function localeStaticParam(locale: Locale): string | undefined {
 export function localizedPath(
   _site: SiteKind,
   locale: Locale,
-  section: 'home' | 'routes' | 'articles' | 'glossary' | 'paths' | 'topics' | 'tools' | 'search' | 'about' | 'collections',
+  section: 'home' | 'routes' | 'articles' | 'glossary' | 'paths' | 'topics' | 'tools' | 'search' | 'about' | 'collections' | 'legal',
   slug?: string,
 ): string {
   const prefix = localePrefix(locale);

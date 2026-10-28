@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T00:55:44.053Z",
+  "generatedAt": "2026-10-28T01:53:26.824Z",
   "browser": "Playwright Chromium 156.0.8078.4",
   "notes": [
     "low-memory-hint uses navigator.deviceMemory, not real memory pressure; a real low-memory device test is still required.",
@@ -56,7 +56,7 @@
           "https://paobu.org/routes/"
         ],
         "searchPresent": true,
-        "mainTextLength": 2175,
+        "mainTextLength": 2169,
         "theme": "light",
         "themePreference": "light",
         "searchResultCount": null
@@ -208,7 +208,7 @@
       },
       "facts": {
         "fallbackVisible": false,
-        "loadingHidden": true,
+        "loadingHidden": false,
         "canvasPresent": true,
         "canvasDisplay": "block",
         "cesiumErrorPanels": 0,
@@ -223,7 +223,7 @@
           "/routes/diagonale-des-fous/"
         ],
         "searchPresent": true,
-        "mainTextLength": 525,
+        "mainTextLength": 535,
         "theme": "dark",
         "themePreference": "dark",
         "searchResultCount": null

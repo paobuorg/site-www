@@ -25,16 +25,17 @@ This is an **AI-assisted editorial review**, performed by the same editorial des
 - **T1 tool batch**: added fueling planner, route elevation, shoe mileage and race checklist. Fueling uses a 30–60 g/h range only after 60 minutes and labels product servings as arithmetic, not personal tolerance; elevation reports missing elevation as unknown instead of zero and rejects too-short segments for grade; shoe mileage separates the user's own reminder threshold from any replacement claim; the checklist is rule-based and never presents itself as medical or mandatory race advice. Six new cases cover 90/180-minute fueling, hill/missing-elevation routes, shoe summaries and a trail checklist.
 - **Mobile accessibility regression**: the long tool forms exposed a real soft-keyboard overlap. Shared core scrolls focused fields above the fixed bottom navigation, and the three-browser matrix re-checks the result.
 - **Imagery**: route close-ups were moved from a public tile service that failed CORS in the local Chromium environment to EOX Sentinel-2 cloudless, a public no-key CORS-enabled mosaic with attribution. Tile loading retries three times and falls back to the local NASA texture.
-- **Routing and source links**: Chinese routes moved to the root path and English routes to `/en/`; `/zh-CN/` is intentionally not redirected. The route anchor source URL was changed to `https://paobu.org/about/#method`, affected route digests were recomputed, and all approvals were re-recorded. Content Markdown links that still contain the old `/zh-CN/` form are normalized at render time to the new root paths.
+- **Routing and source links**: Chinese routes moved to the root path and English routes to `/en/`; `/zh-CN/` is intentionally not redirected. The route anchor source URL was changed to `https://paobu.org/about/#method`, affected route digests were recomputed, and all approvals were re-recorded. All remaining legacy `/zh-CN/` links in article and tool Markdown were replaced with root paths.
+- **Tone, legal and licence pass**: removed editorial-desk and AI-facing bylines from article bodies and rendered author labels, replaced formulaic “What this page does not provide” headings with plain scope language, and changed visible “review” labels to editorial “checked” language. Added a bilingual legal page on all three sites, footer links, and context-specific notices on article, tool and route pages. The legal page covers liability, non-professional advice, race/outdoor safety, tool limits, sources/trademarks, CC BY 4.0 content and MIT code, privacy and corrections. All 56 entities and 112 translations were re-checked and their digests re-recorded.
 
 ## Verification after approval
 
 - Content validator: 56 entities, 62 sources and 26 tool cases pass; every locale has one `approve` record with a matching digest.
 - Three-browser matrix (Chromium, Firefox, WebKit): 48 screenshots each; 0 axe violations, 0 console errors and 0 failed requests. Search pagination expands to 25/25; keyboard, touch targets, soft keyboard and long-title checks pass.
-- New pages: 8 K1/T1 pages checked in light and dark themes; 0 axe violations and no mobile overflow.
-- Tool tests: 38/38, including seven new tests for fueling, elevation, shoe mileage and checklist logic. Site unit tests: 13/13.
-- Release: production builds emit 42/86/30 HTML files, manifests 38/82/26 hosted pages, Pagefind 112/56/24 records and sitemaps 38/82/26 URLs; `verify-release` passes with bundle `a00bee5d…`.
-- Local crawl: 146 sitemap pages return 200 with canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker present.
+- New pages: 8 K1/T1 pages checked in light and dark themes; 0 axe violations and no mobile overflow. Six legal pages were checked in both languages with 0 axe violations, no mobile overflow and the legal/licence wording present; article, glossary, tool and route pages carry the context-specific legal notice.
+- Tool tests: 38/38, including seven new tests for fueling, elevation, shoe mileage and checklist logic. Site unit tests: 16/16, including legal/licence and forbidden-wording checks.
+- Release: production builds emit 43/87/31 HTML files, manifests 40/84/28 hosted pages, Pagefind 112/56/24 records and sitemaps 40/84/28 URLs; `verify-release` passes with bundle `c4d0e3fc…` and core 0.2.15 (`8e264510…`).
+- Local crawl: 152 sitemap pages return 200 with canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker present.
 
 ## Residual limits
 
@@ -42,6 +43,7 @@ This is an **AI-assisted editorial review**, performed by the same editorial des
 - Route facts come from official pages where accessible; Beijing and Shanghai official sites are dynamic and were cross-checked through organiser announcements. Some sources are third-party or paywalled; source/licence details remain visible.
 - Real NVDA/VoiceOver, physical phones, real Safari, third-party EOX tile SLA, formal high-resolution imagery, complete real-device performance and production p75 remain unverified.
 - The 16-route, nine-topic, 28-knowledge-entity and 12-tool set is covered. Future depth is a separate reviewed batch rather than bulk-generated content.
+- The legal page is a general risk notice, not legal advice; a qualified lawyer should review it before relying on it as a jurisdiction-specific terms of service.
 
 ## Approval records
 

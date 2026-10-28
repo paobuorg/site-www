@@ -9,12 +9,12 @@ Local acceptance **passes** for the 56-entity launch set. The three public sites
 
 - Content: 56 entities / 112 bilingual versions published (routes 16, knowledge 28, tools 12); 62 sources; 26 tool cases; 112 AI-assisted editorial approval records; `check:production` passes with route=16, knowledge=28, tool=12.
 - Knowledge: 27 articles plus a 17-term glossary, nine topics covered, five learning paths.
-- Production artifacts: static builds 42/86/30 HTML files; release manifests 38/82/26 hosted HTML pages; Pagefind 112/56/24 records; sitemaps 38/82/26 URLs; no `localhost` URLs in production HTML.
-- Release bundle: `a00bee5d23041407255cfb36380e95d0e18f6dd7c09115fa9445553d1ac616f7`; core `0.2.14` (`1fcda15d…`); content locks match.
-- Local crawl: all 146 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
+- Production artifacts: static builds 43/87/31 HTML files; release manifests 40/84/28 hosted HTML pages; Pagefind 112/56/24 records; sitemaps 40/84/28 URLs; no `localhost` URLs in production HTML.
+- Release bundle: `c4d0e3fc9af4c19882cfe9a70c22216868d4ebfc9b26ed0b69cad76338888d0b`; core `0.2.15` (`8e264510…`); content locks match.
+- Local crawl: all 152 sitemap pages return 200; canonical, hreflang, noindex absence, title, H1, PWA assets, robots and service worker are present.
 - Browser matrix: Chromium/Firefox/WebKit each 48 screenshots; 0 axe violations, 0 console errors, 0 failed requests; keyboard 14/14 on four pages; search pagination fully expands to 25/25; no soft-keyboard overlap. The eight new K1/T1 pages have 0 axe violations in light and dark themes and no mobile overflow.
 - Search: 60/60 Chinese and 56/56 English queries rank an expected result in the top five (90% threshold); kind facets total 16/28/12.
-- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.524s; desktop globe-ready worst 3.840s; simulated mobile worst 4.895s; about 60fps on the local Intel Arc.
+- T16: 11/11 budgets, 8/8 fault assertions; article LCP worst 1.568s; desktop globe-ready worst 3.839s; simulated mobile worst 4.873s; about 60fps on the local Intel Arc.
 - T06/T12/T17: cross-site 11/11 (production hrefs mapped to the three local preview servers), track timeout/cancel 11/11, PWA offline 18/18.
 - Handoff: 0 issues, 63 links; handoff tests 46/46; content locks verified.
 
@@ -27,6 +27,10 @@ Four bilingual articles were added: tempo and interval execution, training load 
 Four browser-local tools were added: fueling planner, route elevation, shoe mileage and race checklist. Fueling shows a 30–60 g/h range only above 60 minutes and treats product servings as arithmetic; elevation reports missing elevation as unknown and reports short-segment grade as unknown; shoe mileage uses the user's own reminder threshold and makes no replacement-interval claim; the checklist is rule-based and not medical or mandatory advice. Six cases were added. The tools repository now has 12 entities and 26 cases; site-tools has 38 passing unit tests.
 
 Browser checks: 90 minutes at 25 g per serving shows “45–90 g”; a sample GPX shows 221 m, 100 m gain, 100 m loss, 90.4% maximum grade and 3 profile points; a 10 km shoe entry persists as 110.0 km after reload; a trail checklist produces eight sections including a headlamp. The four pages had no mobile overflow, console errors or failed requests.
+
+## Legal, tone and licences
+
+All 56 entities and 112 translations were re-checked after removing editorial-desk/AI-facing bylines and legacy locale links. Visible author labels now read “跑地图编辑部” / “RunMap Editorial”. A bilingual legal page exists on each site with liability, non-professional advice, race/outdoor safety, tool limits, source/trademark, CC BY 4.0, MIT, privacy and correction sections; every article, glossary, tool and route page carries a context-specific legal notice. Six legal pages were checked in both languages: 200, 0 axe violations, no mobile overflow, and CC BY 4.0 / MIT wording present. A source test rejects editorial-desk wording, AI-facing copy, legacy `/zh-CN/` links and missing CC BY 4.0 fields.
 
 ## Imagery
 

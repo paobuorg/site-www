@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
 import Icon from '@paobu/core/components/Icon.astro';
-import { t, otherLocale, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import LegalNotice from '@paobu/core/components/LegalNotice.astro';
+import { contributorName, t, otherLocale, type Locale, LOCALES } from '@paobu/core/lib/i18n';
 import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
 import { articleData, breadcrumbList } from '@paobu/core/lib/seo';
 import { siteContent } from '../../../lib/content';
@@ -33,14 +34,11 @@ const details = routeDetails(entity);
 const translation = content.translation(entity, locale);
 const sources = content.sourcesFor(entity);
 const related = content.related(entity, locale);
-const reviewers = content.reviews.filter(
-  (review) => review.entityId === entity.entityId && review.locale === locale,
-);
 const authors = [
   ...new Set(
     entity.translations
       .flatMap((item) => item.authors)
-      .map((id) => content.contributors.find((person) => person.contributorId === id)?.displayName ?? id),
+      .map((id) => contributorName(id, content.contributors.find((person) => person.contributorId === id)?.displayName ?? id, locale)),
   ),
 ];
 const official = sources.find((source) => source.url) ?? sources[0];
@@ -57,7 +55,7 @@ const copy = locale === 'zh-CN'
       geometryRedistributable: '本站可提供经许可的简化轨迹。',
       official: '查看官方资料',
       officialTrack: '查看官方轨迹',
-      reviewNote: '本页仍在编辑审阅中，尚未完成发布所需的专业审阅。数字与表述可能调整。',
+      reviewNote: '本页尚在校对中，数字与表述可能调整。',
       unknown: '未知',
       access: '查阅',
       claims: '支持的结论',
@@ -69,9 +67,10 @@ const copy = locale === 'zh-CN'
       elevationMethod: '高程口径',
       mapAnchor: '锚点来源',
       authors: '撰写',
-      noReview: '尚无审阅记录',
+      noReview: '尚无核验记录',
+      checked: '最近核验',
       actual: '实际状态',
-      previewStatus: '编辑审阅中',
+      previewStatus: '校对中',
     }
   : {
       home: 'Home',
@@ -84,7 +83,7 @@ const copy = locale === 'zh-CN'
       geometryRedistributable: 'A licensed, simplified track is available on this site.',
       official: 'View official material',
       officialTrack: 'View official track',
-      reviewNote: 'This page is still in editorial review and has not completed the specialist review required for publication. Figures and wording may change.',
+      reviewNote: 'This page is being checked; figures and wording may change.',
       unknown: 'Unknown',
       access: 'Accessed',
       claims: 'Claims supported',
@@ -96,9 +95,10 @@ const copy = locale === 'zh-CN'
       elevationMethod: 'Elevation method',
       mapAnchor: 'Anchor source',
       authors: 'Written by',
-      noReview: 'No review record yet',
+      noReview: 'No check record yet',
+      checked: 'Last checked',
       actual: 'Actual state',
-      previewStatus: 'In editorial review',
+      previewStatus: 'Being checked',
     };
 const title = `${translation.title} · RunMap`;
 const description = translation.summary;
@@ -283,7 +283,7 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
         <span>{copy.distanceMethod}: {details.distanceMethod}</span>
         <span>{copy.elevationMethod}: {details.elevationMethod ?? copy.unknown}</span>
         <span>{copy.authors}: {authors.join(', ')}</span>
-        <span>{t(locale, 'reviewedOn')}: {formatDate(entity.reviewedAt, locale)} · {reviewers.length ? `${reviewers.length} ${locale === 'zh-CN' ? '条审阅记录' : 'review record(s)'}` : copy.noReview}</span>
+        <span>{copy.checked}: {formatDate(entity.reviewedAt, locale)}</span>
       </div>
 
       <div class="route-footer-grid">
@@ -347,6 +347,7 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
           )}
         </div>
       </div>
+      <LegalNotice locale={locale} context="route" />
     </div>
   </div>
 </BaseLayout>
