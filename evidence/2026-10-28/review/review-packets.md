@@ -1,6 +1,6 @@
 # Review packets
 
-Generated: 2026-10-28T04:29:56.786Z
+Generated: 2026-10-28T08:38:58.502Z
 
 This packet is review material. Approval records live in `data/reviews` with matching `contentDigest` values; they are AI-assisted editorial approvals, not independent or professional review.
 
@@ -9,7 +9,7 @@ This packet is review material. Approval records live in `data/reviews` with mat
 - Routes: 16/16; missing: none
 - Knowledge topics present: culture, gear, habits, health, nutrition, recovery, safety, technique, training; missing: none
 - Tools: 12 published
-- Status: draft=0, in-review=0, published=76, withdrawn=0
+- Status: draft=0, in-review=0, published=79, withdrawn=0
 
 ## Entities
 
@@ -34,6 +34,7 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | knowledge:breathing-and-rhythm | published | 2 | 2 | none | `1395709a0541af5b…` | `c45145ee12631625…` |
 | knowledge:cadence-and-stride | published | 2 | 2 | none | `5b5d73a2c7ed76b8…` | `b2414005b6c733f9…` |
 | knowledge:caffeine-and-running | published | 2 | 2 | none | `2e0cc41fcc9df5e8…` | `c71e3e511b2dfb4c…` |
+| knowledge:classic-races-and-history | published | 3 | 2 | none | `186a515d2185aa30…` | `722bbe904abd15fb…` |
 | knowledge:cold-weather-running | published | 4 | 2 | none | `c27de2b74851de04…` | `08b749611432d4dd…` |
 | knowledge:core-terms | published | 7 | 2 | none | `7e7deb50c50e4400…` | `dfdef83afba75b7d…` |
 | knowledge:daily-fueling | published | 6 | 2 | none | `cacf6c7ed86660a2…` | `f8e5d518f830997d…` |
@@ -51,6 +52,8 @@ This packet is review material. Approval records live in `data/reviews` with mat
 | knowledge:pain-and-load | published | 2 | 2 | none | `1cce90377232d04f…` | `5544189e4eaad949…` |
 | knowledge:pain-communication | published | 1 | 2 | none | `56afe5caa02143f5…` | `6d67b03f8fddb8c1…` |
 | knowledge:post-race-recovery | published | 2 | 2 | none | `3fa19cd91dce7c3c…` | `8201d07cf1804eb3…` |
+| knowledge:pre-and-post-run-fueling | published | 3 | 2 | none | `b35c8cf40bb72b45…` | `a042f2d73fcb0300…` |
+| knowledge:race-and-shared-path-etiquette | published | 2 | 2 | none | `c8548199b1c5fc49…` | `f0f644697b9473dc…` |
 | knowledge:race-anxiety-and-burnout | published | 3 | 2 | none | `4c977cf7da7cba3a…` | `3f5f14a551e77a3a…` |
 | knowledge:race-day-fueling | published | 2 | 2 | none | `bb7a2216338fc0b7…` | `de429b82da22943f…` |
 | knowledge:reading-running-research | published | 3 | 2 | none | `088c67ffa25689d4…` | `cdc1a0aa7eb9a1a5…` |

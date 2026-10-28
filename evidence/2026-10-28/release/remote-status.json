@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T04:30:00Z",
+  "generatedAt": "2026-10-28T08:40:00Z",
   "account": "paobuorg",
   "repositories": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "running-knowledge",
       "url": "https://github.com/paobuorg/running-knowledge",
-      "commit": "406cee174feda477376e2eebfa9b033212152e00",
+      "commit": "1e8d1146106e642e3a01b28e413da33f8be10258",
       "contentCommit": "a879da16b26c7315531fcdba21555f6ef3c78da5",
       "visibility": "public"
     },
@@ -26,30 +26,30 @@
     {
       "name": "site-www",
       "url": "https://github.com/paobuorg/site-www",
-      "commit": "53b13d550060525a37193c386b72c02624038f65",
+      "commit": "06e7c8f8b9a0d009ef0644538a871fa005a244c9",
       "visibility": "public"
     },
     {
       "name": "site-knowledge",
       "url": "https://github.com/paobuorg/site-knowledge",
-      "commit": "1c718c6c9b8ad006c0e44639cbe1900d194e6c0f",
+      "commit": "8a4f45efc66d0cea738f2b3ca9bd1d6a1b9bee73",
       "visibility": "public"
     },
     {
       "name": "site-tools",
       "url": "https://github.com/paobuorg/site-tools",
-      "commit": "366adc026ee2d9853ebe2d11894c1b539b38cd52",
+      "commit": "b37f2339b3a3680fdd587ba743087d34a89c92f6",
       "visibility": "public"
     }
   ],
   "releaseBundle": {
-    "bundleId": "de9184b08db5efe310d631b853f5d585efaf4b57004db0593b211b8f71daf626",
+    "bundleId": "fcdf71e35b6061bd5d1b37c17846880ea0c062be8833a8708212a461f3e404a1",
     "status": "local-build"
   },
   "contentRevision": {
-    "note": "Content locks pin the K4 content commits used by the production builds.",
+    "note": "Content locks pin the K5 content commits used by the production builds.",
     "running-routes": "67a80abe30001527e6f60778e91ad9b206b31137",
-    "running-knowledge": "406cee174feda477376e2eebfa9b033212152e00",
+    "running-knowledge": "1e8d1146106e642e3a01b28e413da33f8be10258",
     "running-tools": "a423a457a1d9fed1c086ef84c67f267d9b62112a"
   },
   "coreRelease": {
@@ -80,31 +80,31 @@
         "site": "main",
         "url": "https://paobu.org/",
         "status": "success",
-        "codeCommit": "53b13d550060525a37193c386b72c02624038f65",
+        "codeCommit": "06e7c8f8b9a0d009ef0644538a871fa005a244c9",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
         "build": {
           "htmlPages": 40,
-          "searchRecords": 152,
+          "searchRecords": 158,
           "sitemapUrls": 40
         },
-        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40633072968",
+        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40658187137",
         "httpsEnforced": true,
         "certificate": "approved",
-        "siteBundleId": "e577f9d56291c0abfc9dc4cf337a65e289aa34464c92109d655d8dab86deb120"
+        "siteBundleId": "c021cc36583a91de45f6dc3104921b6e35fd8c7fef5a06c25947a304f0ac6c10"
       },
       {
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
-        "codeCommit": "1c718c6c9b8ad006c0e44639cbe1900d194e6c0f",
+        "codeCommit": "8a4f45efc66d0cea738f2b3ca9bd1d6a1b9bee73",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "3635db23e64eecdccf8f713aacde33e3c445013ac89e9095b0a33c34bdf65112",
+        "siteBundleId": "2abeafa3d9b17b68d63cce64b312da863518c75cf02f13bccd1555ba45e734a5",
         "build": {
-          "htmlPages": 124,
-          "searchRecords": 96,
-          "sitemapUrls": 124
+          "htmlPages": 130,
+          "searchRecords": 102,
+          "sitemapUrls": 130
         },
-        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40633077251",
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40658192490",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -112,15 +112,15 @@
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
-        "codeCommit": "366adc026ee2d9853ebe2d11894c1b539b38cd52",
+        "codeCommit": "b37f2339b3a3680fdd587ba743087d34a89c92f6",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "c2b389edebd2ce759dd36bfc1260da6116fcdb570e63841e4db67fe84030458e",
+        "siteBundleId": "d46d2e8192035a5c503e429b3c0c94ea17da1d1a96227a5edba5d61311d06a8e",
         "build": {
           "htmlPages": 28,
           "searchRecords": 24,
           "sitemapUrls": 28
         },
-        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40633080736",
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40658198746",
         "httpsEnforced": true,
         "certificate": "approved"
       }
@@ -155,7 +155,7 @@
     },
     "sitemaps": {
       "paobu.org": 40,
-      "learn.paobu.org": 124,
+      "learn.paobu.org": 130,
       "tools.paobu.org": 28
     },
     "searchAcceptance": {
@@ -164,7 +164,17 @@
     },
     "searchAcceptanceNote": "Full 116-query acceptance set run against the live Pagefind index; threshold 90%, top-5.",
     "pwa": "All three live manifest.webmanifest files use start_url \"/\" and scope \"/\".",
-    "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200."
+    "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200.",
+    "k5Pages": {
+      "count": 6,
+      "status": "all 200",
+      "axeViolations": 0,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "mobileOverflow": 0,
+      "legalNotice": true
+    },
+    "checkedAt": "2026-10-28T08:40:00Z"
   },
   "oldRepository": {
     "name": "www",
@@ -179,7 +189,7 @@
     "coreRelease": "core-v0.2.15 published and asset hash verified"
   },
   "notes": [
-    "K2 added eight bilingual guides, K3 seven and K4 five; the knowledge set now has 47 articles plus a glossary.",
+    "K2 added eight bilingual guides, K3 seven, K4 five and K5 three; the knowledge set now has 50 articles plus a glossary.",
     "Content is licensed CC BY 4.0 and site code is MIT; third-party race material, trademarks, imagery and dependencies remain under their own terms.",
     "The legal page is a general risk notice, not legal advice.",
     "Real devices/readers, formal high-resolution imagery, third-party EOX SLA, remote rollback and independent professional review remain outside this deployment verification."

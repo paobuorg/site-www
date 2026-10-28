@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T04:29:56.786Z",
+  "generatedAt": "2026-10-28T08:38:58.502Z",
   "note": "Review material only. Approval is recorded separately in data/reviews with a matching contentDigest; this file is not an independent or professional approval.",
   "contentLock": {
     "schemaVersion": 1,
@@ -11,7 +11,7 @@
       "data",
       "assets"
     ],
-    "generatedAt": "2026-10-28T04:24:54.734Z",
+    "generatedAt": "2026-10-28T08:34:16.949Z",
     "repositories": [
       {
         "name": "running-routes",
@@ -21,9 +21,9 @@
       },
       {
         "name": "running-knowledge",
-        "commit": "406cee174feda477376e2eebfa9b033212152e00",
-        "digest": "17968e3e6de077e6067fc8f39c34f7db24bd909e9b0fce2e197f34c208b23d8b",
-        "fileCount": 282
+        "commit": "1e8d1146106e642e3a01b28e413da33f8be10258",
+        "digest": "98e3c67852d9dabf061682feb56a7c2e2392de02b162cfefb454271619ac4443",
+        "fileCount": 297
       },
       {
         "name": "running-tools",
@@ -98,7 +98,7 @@
         "culture"
       ],
       "missingTopics": [],
-      "articles": 48
+      "articles": 51
     },
     "tools": {
       "present": [
@@ -120,7 +120,7 @@
     "status": {
       "draft": 0,
       "in-review": 0,
-      "published": 76,
+      "published": 79,
       "withdrawn": 0
     }
   },
@@ -1848,6 +1848,113 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:classic-races-and-history",
+      "slug": "classic-races-and-history",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 3,
+      "sourceRefs": [
+        "knowledge-world-athletics-marathon",
+        "knowledge-world-athletics-records",
+        "knowledge-baa-rules"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-world-athletics-marathon",
+          "title": "Marathon — World Athletics disciplines",
+          "publisher": "World Athletics",
+          "url": "https://worldathletics.org/disciplines/road-running/marathon",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "The marathon is a road running event over 42.195 kilometres.",
+            "The distance is also expressed as 26 miles and 385 yards."
+          ]
+        },
+        {
+          "sourceId": "knowledge-world-athletics-records",
+          "title": "World Records",
+          "publisher": "World Athletics",
+          "url": "https://worldathletics.org/records/by-category/world-records",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "World Athletics publishes world records by event and category.",
+            "The records list marks records that are pending ratification.",
+            "Road-running record tables distinguish mixed-gender and women-only races.",
+            "A record listing is a governing-body recognition, not simply the fastest time reported anywhere."
+          ]
+        },
+        {
+          "sourceId": "knowledge-baa-rules",
+          "title": "2026 Boston Marathon Rules and Policies",
+          "publisher": "Boston Athletic Association",
+          "url": "https://www.baa.org/wp-content/uploads/docs/2025-08/2026%20Boston%20Marathon%20Rules%20and%20Policies.pdf",
+          "publishedAt": "2025-08-01",
+          "license": null,
+          "claims": [
+            "Race bibs are non-transferable.",
+            "Participants may not run with anyone who is not registered as an official race participant on any part of the course.",
+            "Portable music devices may be used with headphones only if participants maintain awareness of their surroundings; professional, wheelchair and para athletics divisions have stricter rules.",
+            "Participants must follow the event code of conduct and the race's competition rules."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "722bbe904abd15fb44713f5f6104c81cb4e92e43cee1909c931d55124895c3de"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "186a515d2185aa3021ee3d042fed053b5bdd96ed2741eb61270ac72fb1ec347c"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "经典赛事为什么值得读：版本、传统与比赛条件",
+          "summary": "经典赛事不是一组永恒不变的地图。赛道、规则、参赛规模和比赛条件都会变化；读历史是为了理解版本，而不是把旧成绩当成今天的保证。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 939,
+          "digest": "186a515d2185aa3021ee3d042fed053b5bdd96ed2741eb61270ac72fb1ec347c",
+          "body": "## 经典不等于不变\n\n波士顿、柏林、伦敦、纽约、东京、芝加哥等公路马拉松，以及 UTMB、西部各州、硬石等越野赛，常被称作“经典”。它们有长期历史、稳定的比赛文化和大量公开资料，但赛道、起终点、参赛规则和比赛日期都会调整。波士顿马拉松的赛道与参赛标准按年份和组别更新；越野赛的路线也可能因天气、许可或安全原因改变。\n\n因此，阅读经典赛事时，先确认“哪一届、哪个组别、哪条路线、什么规则”。把不同年份的赛道和成绩直接比较，很容易得出错误结论。\n\n## 历史提供了什么\n\n历史能帮助理解一项赛事的传统、难点和文化位置：为什么某个上坡成为标志，为什么某个赛事的完赛门槛特殊，为什么某条赛道以快或难闻名。它也提醒我们，今天的路线是长期演化的结果，不是天然存在的。\n\n但历史不能替代当前信息。报名资格、抽签、关门时间、补给、交通和强制装备，以赛事方最新公告为准；旧版路线图不应被当作当前导航。\n\n## 成绩与比赛条件\n\n同一赛事的不同年份，天气、风向、气温和参赛密度都可能不同。纪录需要符合项目规则和赛道丈量，普通参赛者的成绩也受当天条件影响。比较成绩时，至少标注赛事、年份、组别和赛道版本；跨赛事比较时，还要考虑距离、爬升、路面和海拔。\n\n经典赛事的名气不等于适合每个人。选择比赛时，考虑训练基础、旅行成本、赛道难度、关门时间和恢复安排，而不是只看它是否“有名”。\n\n## 怎样使用本站的赛道档案\n\n每条赛道页绑定一个固定版本，列出距离、爬升口径、方向、锚点和来源。没有可靠轨迹时不绘制模拟路线；赛事名称、标识和官方文字归赛事方所有。先读版本和来源，再看路段和训练建议；需要报名或导航时，回到赛事方官方页面。\n\n## 适用边界\n\n本页不提供赛事报名、资格、路线开放或成绩认证结论，也不评价某一赛事是否适合你。赛事规则和路线会变化，应以赛事方、世界田联和当地管理部门的最新信息为准。\n\n## 来源与适用范围\n\n马拉松距离与项目定义参考 World Athletics 的马拉松页面；纪录与成绩认证规则参考 World Athletics 的纪录页面；波士顿马拉松的参赛与比赛规则参考 BAA 的官方规则文件。历史与传统属于背景说明，不替代当届赛事公告。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Why classic races are worth reading: versions, tradition and conditions",
+          "summary": "A classic race is not an eternal map. Courses, rules, field size and conditions change; history helps you understand versions, not treat an old result as today’s guarantee.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 2692,
+          "digest": "722bbe904abd15fb44713f5f6104c81cb4e92e43cee1909c931d55124895c3de",
+          "body": "## Classic does not mean unchanged\n\nBoston, Berlin, London, New York, Tokyo and Chicago, along with trail races such as UTMB, Western States and Hardrock, are often called classics. They have long histories, a stable culture and a large public record, but courses, start and finish, entry rules and race dates change. The Boston Marathon course and qualifying standards are updated by year and category; trail routes may change because of weather, permits or safety.\n\nWhen reading a classic race, first establish which edition, category, course and rule set you are looking at. Comparing courses and times across years without that context easily produces the wrong conclusion.\n\n## What history adds\n\nHistory explains tradition, difficulty and cultural position: why a climb becomes a landmark, why an event has a particular entry standard, why a course is known as fast or hard. It also shows that today’s route is the result of long evolution, not a natural fact.\n\nHistory does not replace current information. Entry, ballot, cut-offs, aid, transport and mandatory kit follow the organiser’s latest notice; an old course map is not current navigation.\n\n## Times and conditions\n\nWeather, wind, temperature and field density differ between editions. Records require event rules and course measurement, and recreational times are also affected by the day’s conditions. When comparing, state the race, year, category and course version; across races, also consider distance, climb, surface and altitude.\n\nA famous race is not automatically right for everyone. Choose by training base, travel cost, course difficulty, cut-offs and recovery, not by reputation alone.\n\n## Using this site’s course files\n\nEach route page is tied to a fixed version and lists distance, elevation method, direction, anchor and sources. We do not draw a simulated route when reliable geometry is unavailable; race names, marks and official text remain with the organiser. Read the version and sources first, then the sections and training notes; for entry or navigation, return to the organiser’s official page.\n\n## Scope and limits\n\nThis page does not provide entry, eligibility, route access or result ratification advice, or judge whether a race suits you. Rules and routes change; the organiser, World Athletics and local land manager’s latest information govern.\n\n## Sources and scope\n\nMarathon distance and event definition follow World Athletics; record and result-ratification rules follow the World Athletics records page; Boston Marathon entry and competition rules follow the BAA’s official rules document. History and tradition are background and do not replace the current race notice. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:cold-weather-running",
       "slug": "cold-weather-running",
       "kind": "knowledge",
@@ -3563,6 +3670,204 @@
           "bodyCharacters": 3051,
           "digest": "8201d07cf1804eb3bc8d2f5fea8311ce53445e60d674701bbce1d5cc4ced6187",
           "body": "## Three things after the finish\n\nAfter finishing, cool down by walking for a few minutes instead of stopping abruptly. Then take fluid and carbohydrate, adding protein if appetite allows; if solid food is difficult, a carbohydrate-electrolyte drink is a start. The first meal does not need to be a feast; the priority is energy and fluid.\n\nGo home, shower, change into dry clothes and sleep. Immune function, sleep and muscle repair all need time; celebrations, long drives and alcohol can wait. Get warm quickly in cold weather; in heat, keep drinking and avoid prolonged sun exposure.\n\n## Soreness, pain and warning signs\n\nDelayed-onset muscle soreness usually appears a day or two after a race, with tenderness, stiffness and reduced strength, especially on stairs. It is different from an acute injury. Seek medical care for sharp pain, swelling, inability to bear weight, a locked joint, numbness, fever, chest pain, fainting or unusual palpitations rather than trying to “flush out” the race.\n\nA fall, sprain or head impact during the race deserves attention even if you could continue at the time. Worsening headache, vomiting, confusion or drowsiness after a head impact needs urgent medical assessment.\n\n## Returning to running\n\nThere is no universal timetable. After a 5K or 10K, many runners can jog easily within a few days; after a marathon or ultramarathon, recovery is usually measured in weeks. The useful criteria are not the calendar but whether walking is normal, pain has settled, sleep and energy are back, and an easy run actually feels easy.\n\nStart with short walks and easy running every other day, and check the next-day response. If pain worsens, movement compensates or fatigue persists, go back a step. Do not use one “recovery run” as proof that you are recovered, and do not schedule quality sessions or long runs immediately after a race.\n\n## Food and sleep\n\nIn the 24–48 hours after a race, normal meals matter more than precise calculations. Include carbohydrate, protein and vegetables at meals and drink to thirst; if sweat losses were high, include an electrolyte drink. Alcohol can impair sleep and recovery, so a large amount on race night is unhelpful.\n\nSleep is the most easily ignored recovery tool. Keep regular hours for a few days and nap briefly if needed. Persistent insomnia, low mood or fatigue lasting several weeks deserves professional assessment.\n\n## Scope and limits\n\nThis page does not provide an individual rehabilitation plan, injury diagnosis or medication advice. Race distance, surface, weather and personal health vary widely; people with a medical condition, pregnancy, previous injury or persistent post-race symptoms should consult a doctor or physiotherapist.\n\n## Sources and scope\n\nPost-race fluid, carbohydrate and protein timing follows the ISSN nutrient-timing position stand; pain, swelling, inability to bear weight and care-seeking advice follow the NHS running-injury page. Recovery time varies by race and person, so this page gives no fixed number of days. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:pre-and-post-run-fueling",
+      "slug": "pre-and-post-run-fueling",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 3,
+      "sourceRefs": [
+        "knowledge-issn-nutrient-timing",
+        "knowledge-issn-carbohydrate-timing",
+        "knowledge-nhs-hydration"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-issn-nutrient-timing",
+          "title": "International Society of Sports Nutrition position stand: nutrient timing",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://doi.org/10.1186/s12970-017-0189-4",
+          "publishedAt": "2017-08-29",
+          "license": null,
+          "claims": [
+            "The timing and amount of carbohydrate intake around exercise can affect performance and recovery.",
+            "Nutrient timing guidance should be adapted to the individual, the exercise demand and the overall diet.",
+            "Carbohydrate availability is relevant to prolonged endurance exercise."
+          ]
+        },
+        {
+          "sourceId": "knowledge-issn-carbohydrate-timing",
+          "title": "International Society of Sports Nutrition position stand: nutrient timing",
+          "publisher": "Journal of the International Society of Sports Nutrition",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28919842/",
+          "publishedAt": "2017-08-29",
+          "license": null,
+          "claims": [
+            "For extended bouts of high-intensity exercise longer than 60 minutes, carbohydrate should be consumed at about 30-60 grams per hour in a 6-8% carbohydrate-electrolyte solution every 10-15 minutes.",
+            "Carbohydrate intake during exercise should be practiced and adjusted to the individual and the event.",
+            "When carbohydrate delivery is inadequate, adding protein may help performance and recovery, but it does not replace adequate carbohydrate."
+          ]
+        },
+        {
+          "sourceId": "knowledge-nhs-hydration",
+          "title": "Water, drinks and hydration",
+          "publisher": "National Health Service",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "Most people should aim to drink enough during the day so their urine is a clear pale yellow colour.",
+            "People may need to drink more fluids when they are physically active for long periods or in a hot environment."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "a042f2d73fcb0300a60fa0ac4c43a43cf0e547096cde3bec01c0f62d20a58af7"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "b35c8cf40bb72b4565a017c2392b86b1c0e292097f65a850af9c8dddf76adf7c"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "跑前跑后吃什么：时间、份量和耐受",
+          "summary": "跑前不是越吃越好，跑后也不是只有“黄金窗口”。把碳水、蛋白质、时间和胃肠耐受安排好，比固定菜单更有用。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 957,
+          "digest": "b35c8cf40bb72b4565a017c2392b86b1c0e292097f65a850af9c8dddf76adf7c",
+          "body": "## 跑前：给胃留出时间\n\n跑前饮食的目标是提供可用能量，同时不让胃在跑动中翻腾。通常在训练或比赛前 2 到 3 小时吃一顿以碳水为主、脂肪和纤维不过多的餐；如果时间更紧，就选择更小、更容易消化的碳水，如香蕉、面包、米饭或含碳水的饮料。具体时间取决于胃排空速度、食物种类和你的耐受。\n\n空腹晨跑对短时间轻松跑可能没问题，但不适合质量课、长距离或比赛。尝试空腹训练前，先确认自己不头晕、不乏力，并准备好随时补充；有糖尿病或用药影响血糖的人，应先咨询医生。\n\n## 跑后：总摄入比“窗口”重要\n\n跑后补碳水可以帮助恢复糖原，蛋白质支持肌肉修复；两者一起摄入通常比只喝含糖饮料更完整。ISS 的营养时机立场文件强调，营养时机应结合运动需求、个体和整体饮食，而不是套用一个固定分钟数。训练后几小时内吃一顿正常餐，通常比精确计时更实际。\n\n如果训练后马上要比赛或进行第二次训练，尽快补充碳水和蛋白质更有意义；如果只是日常轻松跑，全天总能量和蛋白质分配更重要。补水按口渴、尿液颜色和出汗量调整，不必强迫自己一次喝很多。\n\n## 蛋白质与日常饮食\n\n蛋白质的需求取决于体重、训练量、年龄和能量摄入；把蛋白质分配到每餐，比集中在晚餐更容易执行。日常饮食中优先使用正常食物：主食、豆类、奶制品、蛋、鱼、肉和坚果。蛋白粉只是方便形式，不是必需品。\n\n跑后餐不需要昂贵补剂。巧克力奶、酸奶加水果、米饭配鸡蛋、面包夹豆腐都可以；关键是碳水、蛋白质和液体都有，且你愿意长期吃。\n\n## 胃肠不适\n\n跑前跑后腹胀、恶心或腹泻，可能来自份量太大、脂肪纤维过多、脱水、咖啡因或新产品。记录进食时间、食物和症状，一次只改变一个变量。比赛前不要首次尝试高纤维餐、浓咖啡或新补剂；如果症状持续、便血、体重下降或影响日常生活，应就医。\n\n## 适用边界\n\n本页不提供个体化营养处方、热量目标或疾病饮食建议。糖尿病、胃肠疾病、孕期、哺乳期、进食障碍史或用药者，应与医生或注册营养师讨论跑前跑后饮食。\n\n## 来源与适用范围\n\n跑前跑后营养时机和个体化原则参考 ISSN 的营养时机立场文件；长时间运动的碳水补充参考 ISSN 的碳水时机说明；补水与尿液颜色参考 NHS 的饮水页面。本文是一般运动营养教育，不替代临床评估。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "What to eat before and after running: timing, amount and tolerance",
+          "summary": "More food before a run is not automatically better, and recovery is not only a short “window”. Carbohydrate, protein, timing and gut tolerance matter more than a fixed menu.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3080,
+          "digest": "a042f2d73fcb0300a60fa0ac4c43a43cf0e547096cde3bec01c0f62d20a58af7",
+          "body": "## Before: give the stomach time\n\nThe goal of pre-run food is available energy without a stomach that rebels while running. A meal based on carbohydrate, with moderate fat and fibre, is usually eaten 2–3 hours before training or racing. If time is short, choose a smaller, easy-to-digest carbohydrate such as a banana, bread, rice or a carbohydrate drink. Timing depends on gastric emptying, the food and your tolerance.\n\nFasted morning runs may be fine for short easy runs but are a poor fit for quality sessions, long runs or races. Before trying fasted training, make sure you do not become dizzy or weak, and have fuel available. People with diabetes or medication that affects blood glucose should consult a clinician first.\n\n## After: total intake matters more than a “window”\n\nPost-run carbohydrate helps restore glycogen and protein supports repair; eating both is usually more complete than a sugary drink alone. The ISSN nutrient-timing position stand stresses that timing should fit the exercise demand, the individual and the overall diet, not a fixed number of minutes. A normal meal within a few hours is often more practical than precise timing.\n\nIf another session or race follows soon, earlier carbohydrate and protein has more value. After an easy run, total daily energy and protein distribution matter more. Replace fluid according to thirst, urine colour and sweat losses; do not force a large volume at once.\n\n## Protein and everyday eating\n\nProtein needs depend on body weight, training, age and energy intake; spreading it across meals is easier to implement than concentrating it at dinner. Prefer ordinary foods: grains, legumes, dairy, eggs, fish, meat and nuts. Protein powder is a convenience, not a requirement.\n\nRecovery food does not need to be expensive. Chocolate milk, yoghurt with fruit, rice with eggs or a sandwich with tofu can all work; the point is carbohydrate, protein and fluid together, in a form you will keep eating.\n\n## Gut problems\n\nBloating, nausea or diarrhoea before or after running can come from too much food, too much fat or fibre, dehydration, caffeine or a new product. Record the timing, food and symptoms, and change one variable at a time. Do not try a high-fibre meal, strong coffee or a new supplement for the first time before a race. Seek medical advice for persistent symptoms, blood in the stool, weight loss or interference with daily life.\n\n## Scope and limits\n\nThis page does not provide an individual nutrition prescription, calorie target or therapeutic diet. People with diabetes, gastrointestinal disease, pregnancy, breastfeeding, a history of disordered eating or medication should discuss pre- and post-run food with a doctor or registered dietitian.\n\n## Sources and scope\n\nPre- and post-exercise timing and individualisation follow the ISSN nutrient-timing position stand; carbohydrate during prolonged exercise follows the ISSN carbohydrate-timing paper; hydration and urine colour follow the NHS hydration page. This is general sports-nutrition education, not clinical assessment. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:race-and-shared-path-etiquette",
+      "slug": "race-and-shared-path-etiquette",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-baa-rules",
+        "knowledge-nps-hike-smart"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-baa-rules",
+          "title": "2026 Boston Marathon Rules and Policies",
+          "publisher": "Boston Athletic Association",
+          "url": "https://www.baa.org/wp-content/uploads/docs/2025-08/2026%20Boston%20Marathon%20Rules%20and%20Policies.pdf",
+          "publishedAt": "2025-08-01",
+          "license": null,
+          "claims": [
+            "Race bibs are non-transferable.",
+            "Participants may not run with anyone who is not registered as an official race participant on any part of the course.",
+            "Portable music devices may be used with headphones only if participants maintain awareness of their surroundings; professional, wheelchair and para athletics divisions have stricter rules.",
+            "Participants must follow the event code of conduct and the race's competition rules."
+          ]
+        },
+        {
+          "sourceId": "knowledge-nps-hike-smart",
+          "title": "Hike Smart",
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/hiking-safety.htm",
+          "publishedAt": "2024-06-13",
+          "license": null,
+          "claims": [
+            "Leave a trip plan with a trusted person including route, contacts, arrival and return times, and companions.",
+            "Mobile coverage may be absent; consider a locator beacon and conserve battery.",
+            "Check the weather, prepare for lightning and flash flooding, and keep a Plan B."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "f0f644697b9473dc42f130a0cd4a45eb74eb8425988dc73e8c0de049e50c0ea8"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "c8548199b1c5fc4988bb4f7e08d496a786c292e48f7dd8121a289df32f29f8db"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "比赛与共享路面礼仪：规则、空间和安全感",
+          "summary": "礼仪不是客套，而是让比赛和公共路面更安全、更可预测。号码布不可转让、不要陪跑未报名者、超越和补给站动作可预期，都是具体规则。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 929,
+          "digest": "c8548199b1c5fc4988bb4f7e08d496a786c292e48f7dd8121a289df32f29f8db",
+          "body": "## 比赛礼仪首先是规则\n\n波士顿马拉松的规则明确：号码布不可转让；参赛者不得让未报名的非官方参赛者在赛道任何路段陪跑；便携音乐设备只能在保持对周围环境警觉的前提下使用，精英、轮椅和残障组别有更严格规定；所有参赛者必须遵守赛事行为准则和竞赛规则。\n\n这些不是“建议”，而是参赛条件。替跑、转让号码布、绕过检录、在补给站逆行或随意穿越赛道，可能影响他人安全，也可能导致取消资格。不同赛事规则不完全相同，报名前阅读当届赛事手册。\n\n## 起跑、超越与补给站\n\n按自己的分区起跑，不要在起跑区突然横向穿插或停下自拍。超越时从左侧或赛事指定方向通过，提前让出空间；听到身后脚步或“借过”时，不要突然变线。进入补给站前伸手示意，拿水后向前离开再减速，避免在桌边急停。\n\n不要把垃圾丢在赛道或路边；按赛事指定垃圾区处理。需要走路时靠边，不要在赛道中央突然停下。比赛中的每个可预测动作，都能减少碰撞和绊倒。\n\n## 共享路面\n\n在日常跑步中，人行道、绿道和公园道路是共享空间。保持在自己的通行侧，超越前给出口头提示；不要并排占满整条路；经过儿童、老人、宠物和骑行者时减速。具体通行规则和让行顺序因城市、道路和场地而异，以现场标识和当地法规为准。\n\n夜跑要让自己可见，转弯和盲区减速；不要突然从停放的车辆或遮挡物后进入车道。越野跑要遵守当地土地管理方规则，不跨越封闭线、不抄近路、不打扰野生动物；赛事路线和日常通行可能不同。\n\n## 冲突与安全\n\n遇到挑衅、尾随或交通事故，优先离开到明亮、有人、有监控的地方并联系当地执法或急救，不要为了“争一口气”停下来对抗。比赛中如果身体不适，靠边并寻求医疗帮助，不要突然倒在赛道中央。\n\n## 适用边界\n\n本页不构成赛事规则全文、交通法规或土地管理规则。具体比赛以赛事方手册和技术会议为准；日常路线以当地法律、现场标识和管理方公告为准。规则会更新，引用时需核对日期。\n\n## 来源与适用范围\n\n号码布不可转让、禁止未报名者陪跑、耳机使用条件和遵守赛事行为准则，参考 BAA 的 2026 波士顿马拉松规则文件；共享路面和越野通行的具体规则需查当地管理部门。礼仪的通用原则属于安全实践，不替代官方规则。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Race and shared-path etiquette: rules, space and predictability",
+          "summary": "Etiquette is not politeness for its own sake; it makes races and public paths safer and more predictable. Non-transferable bibs, no unregistered pacers, predictable passing and aid-station exits are concrete rules.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 2993,
+          "digest": "f0f644697b9473dc42f130a0cd4a45eb74eb8425988dc73e8c0de049e50c0ea8",
+          "body": "## Race etiquette starts with rules\n\nThe Boston Marathon rules state that race bibs are non-transferable; participants may not run with anyone who is not registered as an official participant on any part of the course; portable music devices may be used with headphones only if participants maintain awareness of their surroundings, with stricter rules for professional, wheelchair and para divisions; and all participants must follow the event code of conduct and competition rules.\n\nThese are entry conditions, not suggestions. Bib swapping, unofficial pacing, bypassing check-in, moving against the flow at aid stations or cutting across the course can affect others’ safety and lead to disqualification. Rules differ between events; read the current race manual before entering.\n\n## Start, passing and aid stations\n\nStart in your assigned corral and do not weave sideways or stop for a photo without warning. Pass on the left or the direction specified by the race, and give space early. When you hear footsteps or “on your left”, do not change line suddenly. Signal before entering an aid station, take what you need, then move forward before slowing; do not stop at the table.\n\nDo not throw litter on the course or roadside; use the designated zones. If you need to walk, move to the side rather than stopping in the middle. Predictable movement reduces collisions and trips.\n\n## Shared paths\n\nOn pavements, greenways and park paths, keep to your side, give a verbal warning before passing, do not take the full width with a group, and slow down around children, older people, dogs and cyclists. Specific right-of-way rules vary by city, road and site; follow signs and local law.\n\nAt night, make yourself visible and slow down at corners and blind spots; do not step into the road from behind parked cars or obstructions. On trails, follow the land manager’s rules, do not cross closures or cut switchbacks, and do not disturb wildlife. Race routes and everyday access can differ.\n\n## Conflict and safety\n\nIf you are harassed, followed or involved in a collision, move to a lit, populated place with people or cameras and contact local police or emergency services; do not stop to confront someone to “win” the moment. In a race, move to the side and seek medical help if unwell rather than collapsing in the middle of the course.\n\n## Scope and limits\n\nThis page is not the full race rulebook, traffic law or land-management rule. The race manual and technical meeting govern a race; local law, signs and the land manager govern everyday routes. Rules change, so check the date when citing them.\n\n## Sources and scope\n\nNon-transferable bibs, the ban on unregistered pacers, headphone conditions and the requirement to follow the event code of conduct follow the BAA 2026 Boston Marathon rules document; shared-path and trail access rules must be checked with the local authority. General etiquette principles are safety practice, not a substitute for official rules. Checked 2026-10-28."
         }
       ],
       "missingGates": []
