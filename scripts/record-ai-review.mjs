@@ -14,7 +14,7 @@ const repoForKind = {
   tool: roots.tools,
 };
 const locales = ['zh-CN', 'en'];
-const date = '2026-10-27';
+const date = '2026-10-28';
 const reviewerId = 'runmap-editorial';
 
 function readJson(file) {
@@ -65,7 +65,7 @@ for (const { repo, file, entity } of entityFiles) {
   entityJson.status = 'published';
   entityJson.updatedAt = date;
   entityJson.reviewedAt = date;
-  entityJson.reviewDueAt = entity.riskLevel === 'guidance' ? '2027-04-27' : '2027-10-27';
+  entityJson.reviewDueAt = entity.riskLevel === 'guidance' ? '2027-04-28' : '2027-10-28';
   fs.writeFileSync(file, `${JSON.stringify(entityJson, null, 2)}\n`);
 
   for (const locale of locales) {

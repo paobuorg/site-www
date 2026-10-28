@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-10-28T01:08:25.187Z",
+  "build": "56-entity production build",
+  "threshold": 0.9,
+  "topN": 5,
+  "results": {
+    "zh-CN": {
+      "total": 60,
+      "hits": 60
+    },
+    "en": {
+      "total": 56,
+      "hits": 56
+    }
+  },
+  "note": "Local preview Pagefind index; UTMB query corrected to the verified 9,700 m figure."
+}

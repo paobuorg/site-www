@@ -10,7 +10,7 @@
     { "locale": "zh-CN", "query": "UTMB", "expected": ["utmb"], "category": "title" },
     { "locale": "zh-CN", "query": "环勃朗峰", "expected": ["utmb"], "category": "alias" },
     { "locale": "zh-CN", "query": "霞慕尼越野", "expected": ["utmb"], "category": "alias" },
-    { "locale": "zh-CN", "query": "越野跑 10000 米爬升", "expected": ["utmb"], "category": "body" },
+    { "locale": "zh-CN", "query": "越野跑 9700 米爬升", "expected": ["utmb"], "category": "body" },
     { "locale": "zh-CN", "query": "勃朗峰 超马", "expected": ["utmb"], "category": "body" },
     { "locale": "zh-CN", "query": "轻松跑", "expected": ["easy-run"], "category": "title" },
     { "locale": "zh-CN", "query": "谈话测试", "expected": ["easy-run"], "category": "body" },

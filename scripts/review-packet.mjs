@@ -137,7 +137,7 @@ const lines = [
   '',
   `- Routes: ${coverage.routes.present.length}/${coverage.routes.backlog.length}; missing: ${coverage.routes.missing.join(', ') || 'none'}`,
   `- Knowledge topics present: ${coverage.knowledge.presentTopics.join(', ')}; missing: ${coverage.knowledge.missingTopics.join(', ') || 'none'}`,
-  `- Tools: ${coverage.tools.count}/8`,
+  `- Tools: ${coverage.tools.count} published`,
   `- Status: ${Object.entries(coverage.status).map(([key, value]) => `${key}=${value}`).join(', ')}`,
   '',
   '## Entities',
