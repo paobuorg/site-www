@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T03:39:51.653Z",
+  "generatedAt": "2026-10-28T04:29:56.786Z",
   "note": "Review material only. Approval is recorded separately in data/reviews with a matching contentDigest; this file is not an independent or professional approval.",
   "contentLock": {
     "schemaVersion": 1,
@@ -11,7 +11,7 @@
       "data",
       "assets"
     ],
-    "generatedAt": "2026-10-28T03:36:45.184Z",
+    "generatedAt": "2026-10-28T04:24:54.734Z",
     "repositories": [
       {
         "name": "running-routes",
@@ -21,9 +21,9 @@
       },
       {
         "name": "running-knowledge",
-        "commit": "ac0e780c67288b285546a4e1158e8e543fa731ef",
-        "digest": "740a3427df95bdcdef58b6ee77899c973ac2e56fe1eb782a13f023c018f941b8",
-        "fileCount": 255
+        "commit": "406cee174feda477376e2eebfa9b033212152e00",
+        "digest": "17968e3e6de077e6067fc8f39c34f7db24bd909e9b0fce2e197f34c208b23d8b",
+        "fileCount": 282
       },
       {
         "name": "running-tools",
@@ -98,7 +98,7 @@
         "culture"
       ],
       "missingTopics": [],
-      "articles": 43
+      "articles": 48
     },
     "tools": {
       "present": [
@@ -120,7 +120,7 @@
     "status": {
       "draft": 0,
       "in-review": 0,
-      "published": 71,
+      "published": 76,
       "withdrawn": 0
     }
   },
@@ -1571,6 +1571,98 @@
       "missingGates": []
     },
     {
+      "entityId": "knowledge:breathing-and-rhythm",
+      "slug": "breathing-and-rhythm",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-cdc-intensity",
+        "knowledge-physiology-determinants"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-cdc-intensity",
+          "title": "How to Measure Physical Activity Intensity",
+          "publisher": "Centers for Disease Control and Prevention",
+          "url": "https://www.cdc.gov/physical-activity-basics/measuring/",
+          "publishedAt": null,
+          "license": null,
+          "claims": [
+            "A person doing moderate-intensity aerobic activity can talk, but not sing, during the activity.",
+            "A person doing vigorous-intensity aerobic activity cannot say more than a few words without pausing for a breath.",
+            "The talk test is a rule-of-thumb method for estimating aerobic intensity."
+          ]
+        },
+        {
+          "sourceId": "knowledge-physiology-determinants",
+          "title": "Toward a record-eligible sub-2-hour marathon: an updated integrative framework of physiological, technological, and cognitive determinants",
+          "publisher": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41351755/",
+          "publishedAt": "2026-09-25",
+          "license": null,
+          "claims": [
+            "VO2max, lactate threshold and running economy are physiological determinants commonly studied in distance-running performance.",
+            "Marathon performance is multi-factorial and includes physiological, technological and cognitive determinants.",
+            "Measurements depend on testing protocol and context, so values from different methods should not be treated as interchangeable."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "c45145ee12631625974b4217694c8cccd0d49bcbe34f8a61e4781a63bf1e51d0"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "1395709a0541af5b8e3cda80fcc74516cdecb8c93b2349da17cf24300fa6ab5f"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "呼吸节奏：用它判断强度，不要硬套节拍",
+          "summary": "呼吸是强度的即时反馈，但没有适合所有人的固定节奏。能说完整句子、呼吸逐渐加深但不乱，比数着几步一吸更有用。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 932,
+          "digest": "1395709a0541af5b8e3cda80fcc74516cdecb8c93b2349da17cf24300fa6ab5f",
+          "body": "## 呼吸反映的是强度\n\n跑步时呼吸会随着强度上升而加快、加深，这是身体在增加通气、排出二氧化碳和调节酸碱平衡。轻松跑时通常能用完整句子交谈；节奏跑只能说出短句；接近高强度时，呼吸会变得急促，恢复后才能重新说完整的话。CDC 把“能说话但不能唱歌”作为中等强度有氧活动的实用标志，谈话测试因此比一个固定呼吸节拍更可靠。\n\n呼吸频率也受气温、湿度、海拔、紧张和鼻塞影响。同样的配速，在炎热或高海拔环境中呼吸会更重；这不说明你“退步了”，只说明当下的生理负担更高。\n\n## 没有统一节拍\n\n“三步一吸、两步一呼”之类的节奏可以作为练习提示，但不是必须遵守的规则。不同速度、坡度和个体解剖结构会改变自然节律；强行维持一个数字，可能让呼吸变浅或动作僵硬。有人习惯鼻吸口呼，有人全程口呼吸，只要呼吸顺畅、能完成目标强度，就不需要纠正。\n\n如果某种节奏让你更放松，可以短时间试用并观察感受；不要同时改变配速、步频和呼吸模式。出现头晕、胸闷、过度换气或无法说话时，先降低强度或停止，而不是继续数节拍。\n\n## 用呼吸调整训练\n\n轻松跑时如果只能说单个词，说明强度已经超过轻松；质量课前用几分钟逐渐加深呼吸，让身体进入状态，而不是突然冲刺。比赛起跑阶段容易因为兴奋而呼吸过快，主动放慢前几百米，让呼吸和配速稳定下来。\n\n上坡、逆风或高温时，呼吸加重是正常反应。把呼吸作为降低强度的信号，而不是用意志力压住它。恢复段的目标是让呼吸逐渐回落；如果长时间回不来，下一组应降低强度或结束。\n\n## 需要就医的信号\n\n运动中出现胸痛、晕厥、严重气短、喘鸣、口唇发紫、异常心悸或咳血，应立即停止并寻求急救。哮喘、慢性肺病、心脏病或近期呼吸道感染的人，运动前应咨询医生；不要用深呼吸练习替代医疗评估。\n\n## 适用边界\n\n本页不提供呼吸训练处方、哮喘管理或高原适应方案。呼吸模式因人而异，不能凭一种节拍判断技术水平；有呼吸系统或心血管疾病时，应遵循医生和运动处方。\n\n## 来源与适用范围\n\n谈话测试和中等强度判断参考 CDC 的身体活动强度说明；表现的多因素框架参考 PubMed 的生理学综述。具体呼吸模式的研究证据有限，本文只提供强度判断和一般训练原则。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Breathing rhythm: use it to judge effort, not to hit a count",
+          "summary": "Breathing is immediate feedback on intensity, but no single rhythm suits everyone. Being able to speak in full sentences matters more than counting steps per breath.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3055,
+          "digest": "c45145ee12631625974b4217694c8cccd0d49bcbe34f8a61e4781a63bf1e51d0",
+          "body": "## Breathing reflects effort\n\nBreathing speeds up and deepens as running intensity rises; this increases ventilation, clears carbon dioxide and helps regulate acid-base balance. Easy running usually allows full sentences; tempo running allows short phrases; near high intensity, breathing becomes rapid and full speech returns only after recovery. The CDC uses “can talk but cannot sing” as a practical marker of moderate aerobic activity, which makes the talk test more reliable than a fixed breathing count.\n\nBreathing rate also changes with heat, humidity, altitude, nerves and a blocked nose. The same pace feels breathier in heat or at altitude; that does not mean you have lost fitness, only that the physiological load is higher that day.\n\n## There is no universal count\n\nPatterns such as “inhale for three steps, exhale for two” can be a practice cue, not a rule. Speed, gradient and individual anatomy change the natural rhythm; forcing a number can make breathing shallow or movement stiff. Some runners prefer nasal inhale and mouth exhale, others breathe through the mouth throughout. If breathing is smooth and the target effort is achievable, there is no need to correct it.\n\nIf a rhythm helps you relax, test it briefly and notice the response; do not change pace, cadence and breathing at the same time. Stop or reduce intensity for dizziness, chest tightness, hyperventilation or inability to speak, rather than counting through it.\n\n## Using breathing in training\n\nIf you can only say single words on an easy run, the effort is above easy. Before a quality session, take a few minutes to let breathing deepen gradually instead of starting with a sprint. In a race, excitement can make the opening breaths too fast; slow the first few hundred metres and let breathing and pace settle.\n\nBreathing gets heavier uphill, into wind or in heat. Treat that as a signal to reduce intensity, not something to suppress. Recovery intervals should let breathing come down; if it stays high for a long time, lower the next repetition or stop.\n\n## When to seek help\n\nStop and seek emergency care for chest pain, fainting, severe breathlessness, wheezing, blue lips, unusual palpitations or coughing blood during exercise. People with asthma, chronic lung disease, heart disease or a recent respiratory infection should consult a clinician before exercise; breathing drills are not a substitute for medical assessment.\n\n## Scope and limits\n\nThis page does not provide a breathing-training prescription, asthma management or altitude adaptation plan. Breathing patterns vary between runners and do not indicate technical level; follow medical and exercise advice if you have respiratory or cardiovascular disease.\n\n## Sources and scope\n\nThe talk test and moderate-intensity marker follow the CDC physical-activity intensity guidance; the multi-factor performance framework follows a PubMed physiology review. Evidence for specific breathing patterns is limited, so this page offers intensity judgement and general training principles. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
       "entityId": "knowledge:cadence-and-stride",
       "slug": "cadence-and-stride",
       "kind": "knowledge",
@@ -2276,6 +2368,99 @@
           "bodyCharacters": 3734,
           "digest": "099b0ab91c596444b99c0328d01065d98668a446ffc739c2f3394c6d0c37785a",
           "body": "## Definition: you can chat and sing\n\nThe most practical test for easy running is the **talk test**: you can speak in full sentences while running, your breathing is deeper but not chaotic, and you could hum a tune if you wanted to. Public-health guidance uses \"can talk, but not sing\" as a typical marker of moderate-intensity aerobic activity; easy running should usually feel more relaxed than that marker. The talk test is a rule of thumb, not a precise physiological measurement.\n\nIntensity is relative. The same pace can feel easy on a cool morning and hard in heat, after poor sleep or on a climb. Do not define easy running by one fixed pace; define it by breathing, conversation and perceived effort in the moment.\n\n## Why easy running matters\n\nThe value of easy running is **sustainable volume**. Because the intensity is low, the recovery cost of a single run is smaller, so it can be repeated through the week and leave room for higher-quality sessions. It also builds an aerobic base, adapts you to mileage and gives you room to practise form. For beginners, easy running lowers the risk of a single overly hard session derailing the whole plan.\n\nPublic-health guidance recommends 150 to 300 minutes of moderate-intensity aerobic activity a week, or 75 to 150 minutes of vigorous-intensity aerobic activity, or an equivalent combination, plus muscle-strengthening activity on at least two days. That is a health floor, not a marathon plan; weekly running volume should follow your own base and goal.\n\n## How to tell it is easy enough\n\nCross-check three signals:\n\n1. **Conversation**: can you say a whole sentence without gasping?\n2. **Perceived effort**: on a 0–10 scale, easy running often sits around 3–4, and you finish feeling you could continue.\n3. **Recovery**: the next day brings only mild fatigue, not a change in walking or sleep.\n\nIf the signals disagree, trust how you feel. Watch heart rate is affected by heat, caffeine, sleep and strap fit, so it should not be the only judge of intensity.\n\n## Common mistakes\n\n- **Turning easy runs into tempo runs**: pushing the pace a little every day lands you in a grey zone that is neither easy nor a proper quality session.\n- **Running only by a pace table**: pace tables assume cool, flat, well-rested conditions. Treating them as fixed ignores the day's real state.\n- **Using \"slow\" to hide fatigue**: if your easy pace now requires gritting your teeth, the problem may be recovery, not intensity.\n- **Avoiding walking**: run-walk intervals still provide an easy aerobic stimulus, especially for new runners.\n\n## Relationship to race pace\n\nMarathon race pace should be clearly faster than easy running. Use the [pace calculator](/en/tools/pace/) to see the average pace for different finish targets, then compare it with your easy pace. If the two are too close, easy runs may be too fast; if they are very far apart, check whether the plan lacks quality work. Training structure should follow your own situation and cycle.\n\n## Recovery and adjustment\n\nEasy running does not have to happen every day. After poor sleep, a block of hard training or unusual pain, rest or active recovery may be the better choice. See [what to do on a recovery day](/en/articles/recovery-day/). If fatigue lasts for weeks, resting heart rate is clearly unusual or daily life is affected, reduce training and seek medical advice.\n\n## Sources and scope\n\nThe talk-test description follows the U.S. CDC's explanation of physical activity intensity. The weekly activity recommendation follows the second edition of the Physical Activity Guidelines for Americans. This article offers general training concepts, not individual medical or coaching prescriptions. It was checked on 2026-10-27."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:female-runners-and-red-s",
+      "slug": "female-runners-and-red-s",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-ioc-reds",
+        "knowledge-cdc-pregnancy-activity"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-ioc-reds",
+          "title": "IOC consensus statement on Relative Energy Deficiency in Sport (REDs)",
+          "publisher": "International Olympic Committee",
+          "url": "https://olympics.com/ioc/medical-and-scientific-commission/consensus-statements",
+          "publishedAt": "2023-09-28",
+          "license": "IOC copyright; citation and summary only",
+          "claims": [
+            "REDs describes a syndrome of health and performance effects associated with low energy availability.",
+            "The 2023 IOC consensus updated the earlier female athlete triad framework and applies to both male and female athletes.",
+            "REDs can affect multiple body systems, including endocrine, bone, metabolic and psychological health, and requires clinical assessment."
+          ]
+        },
+        {
+          "sourceId": "knowledge-cdc-pregnancy-activity",
+          "title": "Weight Gain During Pregnancy",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/maternal-infant-health/pregnancy-weight/index.html",
+          "publishedAt": "2026-03-19",
+          "license": null,
+          "claims": [
+            "Physical activity is healthy and safe for most pregnant women.",
+            "Pregnant women should talk to their health care provider about any physical activity restrictions.",
+            "Work up to or maintain at least 150 minutes of moderate-intensity aerobic activity per week, which can be broken into smaller chunks.",
+            "Pregnancy weight-gain goals should be discussed with a health care provider."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "6ee82d5ed9a3a4b488a9c19e84c3232f06ccec1ea529b67953cddd094b6c587a"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "2563f376c72e338ecc95b03e7e4bb782f9ebfa95c534789da459c95d7933fb41"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "女性跑者与 RED-S：能量不足不是“练得不够狠”",
+          "summary": "月经紊乱、反复应力性骨折、持续疲劳和表现下降，可能不只是训练问题。RED-S 涉及长期能量可用性不足，需要医疗评估，不能靠加练或节食解决。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 1058,
+          "digest": "2563f376c72e338ecc95b03e7e4bb782f9ebfa95c534789da459c95d7933fb41",
+          "body": "## RED-S 是什么\n\n相对能量缺乏运动综合征（Relative Energy Deficiency in Sport，RED-S）描述的是长期能量可用性不足带来的一系列健康和表现影响。摄入的能量在扣除运动消耗后，剩余部分不足以支持正常生理功能；这不仅是“吃得太少”，也可能发生在训练量很大、恢复不足或刻意控重的人身上。\n\n国际奥委会 2023 年的共识更新了早期主要针对女性的“女运动员三联征”框架，强调 RED-S 可影响男女运动员，并涉及内分泌、骨骼、代谢、心理和表现等多个系统。它不是靠一次化验或一个体重数字就能诊断的。\n\n## 常见信号\n\n女性跑者可能出现月经周期改变、闭经、反复应力性骨折、持续疲劳、睡眠变差、怕冷、消化问题、情绪低落或运动表现下降。男性也可能出现性激素下降、性欲减退、骨密度下降和持续疲劳。单一症状不能证明 RED-S，但多个系统同时出问题，尤其伴随长期低体重、快速减重或高训练量时，应认真对待。\n\n不要把闭经当作“训练到位”的标志。月经周期变化可能是能量不足的信号，也可能与其他妇科、内分泌或药物因素有关，需要医生评估。\n\n## 不要用加练或节食解决\n\n如果表现下降或身体出现上述信号，第一反应不应是增加训练或进一步限制饮食。能量不足需要从摄入、训练负荷、恢复和医疗评估多方面处理；自行吃更少、增加有氧或依赖补剂，可能让问题更深。\n\n饮食恢复通常需要足够碳水和蛋白质，并逐步恢复体重和能量可用性；具体方案应由医生或注册营养师制定，尤其涉及骨密度、月经、进食障碍或内分泌问题时。运动心理学和进食障碍支持也可能是治疗的一部分。\n\n## 孕期与产后\n\n孕期和产后跑步需要个体化评估。CDC 的孕期活动信息强调在医生指导下保持适度活动，但具体强度、时长和禁忌取决于孕周、并发症、分娩方式和恢复情况。不要用孕前配速或比赛计划直接套用；出现出血、腹痛、头晕、胸痛、规律宫缩或胎动异常时，应立即就医。\n\n## 适用边界\n\n本页不诊断 RED-S、月经障碍、进食障碍或骨质疏松，也不提供个体化热量、体重或训练处方。持续月经改变、反复骨折、快速体重变化、对食物和体重失去控制感，或孕期/产后运动问题，应咨询医生、注册营养师或运动医学团队。\n\n## 来源与适用范围\n\nRED-S 的定义、2023 年共识更新和多系统影响参考国际奥委会的 RED-S 共识页面；孕期活动的一般原则参考 CDC 的孕期活动页面。RED-S 需要临床评估，不能仅凭症状或设备数据自行判断。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Female runners and RED-S: low energy is not “not training hard enough”",
+          "summary": "Menstrual changes, recurrent stress fractures, persistent fatigue and declining performance may be more than a training problem. RED-S involves chronic low energy availability and needs clinical assessment, not more training or stricter dieting.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3337,
+          "digest": "6ee82d5ed9a3a4b488a9c19e84c3232f06ccec1ea529b67953cddd094b6c587a",
+          "body": "## What RED-S is\n\nRelative Energy Deficiency in Sport (RED-S) describes the health and performance effects of chronic low energy availability. After exercise energy is subtracted, the remaining energy is insufficient to support normal physiology. It is not simply “eating too little”; it can occur in runners with high training loads, insufficient recovery or deliberate weight control.\n\nThe 2023 International Olympic Committee consensus updated the earlier female athlete triad framework, emphasising that RED-S can affect male and female athletes and involves endocrine, bone, metabolic, psychological and performance systems. It cannot be diagnosed from one blood test or one body-weight number.\n\n## Common signals\n\nFemale runners may notice menstrual changes, missed periods, recurrent stress fractures, persistent fatigue, poor sleep, feeling cold, digestive problems, low mood or declining performance. Men may experience reduced sex hormones, lower libido, reduced bone density and persistent fatigue. One symptom does not prove RED-S, but problems across several systems — especially with long-term low body weight, rapid weight loss or high training volume — deserve attention.\n\nDo not treat amenorrhoea as a sign that training is “working”. Menstrual change may signal low energy availability, but it can also have gynaecological, endocrine or medication causes and needs medical assessment.\n\n## Do not solve it with more training or less food\n\nWhen performance falls or these signals appear, the first response should not be to add training or restrict food further. Low energy availability is addressed through intake, training load, recovery and clinical assessment; eating less, adding cardio or relying on supplements can make it worse.\n\nNutrition recovery usually requires adequate carbohydrate and protein and a gradual return to energy availability and body weight; a doctor or registered dietitian should set the plan, especially with bone density, menstrual, eating-disorder or endocrine concerns. Psychological and eating-disorder support may also be part of care.\n\n## Pregnancy and postpartum\n\nRunning during pregnancy and after birth needs individual assessment. CDC pregnancy activity information encourages appropriate activity under medical guidance, but intensity, duration and contraindications depend on gestation, complications, delivery and recovery. Do not apply a pre-pregnancy pace or race plan directly. Seek urgent care for bleeding, abdominal pain, dizziness, chest pain, regular contractions or reduced fetal movement.\n\n## Scope and limits\n\nThis page does not diagnose RED-S, menstrual disorders, eating disorders or osteoporosis, and does not provide individual calorie, weight or training prescriptions. Persistent menstrual change, recurrent fractures, rapid weight change, loss of control around food or weight, or pregnancy/postpartum exercise concerns should be discussed with a doctor, registered dietitian or sports-medicine team.\n\n## Sources and scope\n\nThe definition of RED-S, the 2023 consensus update and its multi-system effects follow the International Olympic Committee RED-S consensus page; general pregnancy activity principles follow the CDC pregnancy activity page. RED-S requires clinical assessment and cannot be self-diagnosed from symptoms or device data. Checked 2026-10-28."
         }
       ],
       "missingGates": []
@@ -3022,6 +3207,100 @@
           "bodyCharacters": 3157,
           "digest": "39446ad091ada5a88709fb097fe1c5fcc4b93f9335cfd52fa265697f5bf8d720",
           "body": "## Night is not the daytime in a darker colour\n\nFigures cited by the U.S. Federal Highway Administration note that almost half of pedestrian deaths occur between 6 p.m. and midnight, and that about eight out of ten drivers who struck pedestrians at night reported not seeing them. A pedestrian in dark clothing may first be seen only about 55 feet away, leaving very little time to react.\n\nThe practical lesson is that night running is first a visibility problem, not a pacing problem. Dark clothes, unlit roads, glare, rain, fog and parked cars all reduce detection. Seeing a car’s headlights does not mean the driver can see you.\n\n## Reflective gear and light\n\nMaterials that retroreflect light back toward its source are more effective at night than ordinary light-coloured clothing. A reflective vest, armbands, ankle bands, reflective strips on shoes and a hanging tag on a pack can increase detection distance; placing them on moving body parts can help attract attention. In daylight, bright colours improve contrast.\n\nActive light matters too. A headlamp or chest lamp helps you see the ground and helps oncoming traffic notice you; a red rear light helps traffic approaching from behind. Check batteries and carry a backup; cold and long use reduce runtime.\n\n## Route and traffic rules\n\nChoose lit, familiar routes with pavements, wider shoulders and lower speeds where possible. Cross at marked crossings and signals, and do not step out from between parked cars. At an unmarked crossing, wait until a vehicle has actually slowed or stopped before entering the road.\n\nRunning against traffic can make oncoming vehicles easier to see, but follow local traffic law and road conditions. Slow down near junctions, roadworks, bridges and slip roads, and never assume a driver will yield. Keep headphone volume low enough to hear traffic; use one earbud or transparency mode.\n\n## Company and telling someone\n\nRun with someone when possible, or tell a household member or friend your route and expected return time. Keep your phone charged; live location sharing is optional, but do not broadcast your real-time position publicly. If you are followed, harassed or involved in a collision, move toward a lit, populated place with people or cameras and contact local police or emergency services rather than running into an unfamiliar area to finish the route.\n\n## Scope and limits\n\nThis page cannot guarantee that any route is safe at night and does not replace local traffic law, race rules or police guidance. Vision, hearing, balance or cardiovascular conditions can affect night safety; discuss exercise plans with a clinician if relevant. After a collision, head impact, altered consciousness or inability to bear weight, seek medical care.\n\n## Sources and scope\n\nThe proportion of night-time pedestrian deaths, the share of drivers who did not see the pedestrian and the detection distance for dark clothing follow a U.S. Federal Highway Administration article on night-time visibility; route, reflective and lighting advice is general traffic-safety practice. The data come from U.S. roads and vary with city, road and lighting. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:older-runners",
+      "slug": "older-runners",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-cdc-older-adults",
+        "knowledge-cdc-chronic-conditions"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-cdc-older-adults",
+          "title": "Older Adult Activity: An Overview",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html",
+          "publishedAt": "2025-12-04",
+          "license": null,
+          "claims": [
+            "Adults aged 65 and older need aerobic, muscle-strengthening and balance activities each week.",
+            "The aerobic target is at least 150 minutes at moderate intensity, 75 minutes at vigorous intensity, or an equivalent combination.",
+            "Older adults need at least two days of muscle-strengthening activity and activities that improve balance.",
+            "People benefit from physical activity throughout life, including as they age."
+          ]
+        },
+        {
+          "sourceId": "knowledge-cdc-chronic-conditions",
+          "title": "Chronic Conditions & Disabilities Activity",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/physical-activity-basics/guidelines/chronic-health-conditions-and-disabilities.html",
+          "publishedAt": "2025-12-04",
+          "license": null,
+          "claims": [
+            "Adults with chronic health conditions or disabilities can be physically active and gain important health benefits.",
+            "Adults with chronic conditions or disabilities who are able should get at least 150 minutes of moderate-intensity aerobic activity a week and at least two days of muscle-strengthening activity.",
+            "Some physical activity is better than none; people should be as active as they are able.",
+            "Regular activity can improve function, sleep, mental health and cardiovascular health for people with chronic conditions."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "131c6756e7c450f39c212e4ca74e10d56ccd11fd7ef88debb3b4874a87afbe90"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "bc33fccd082c2b5137de98b3fc18846ed09ad22b24a6c23c7bb18bbf674acd6d"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "大龄跑者：用力量、恢复和渐进负荷换长期",
+          "summary": "年龄增长会改变恢复速度和力量储备，但不是停止跑步的理由。把力量、平衡、睡眠和渐进负荷放进计划，比追求年轻时的配速更可持续。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 918,
+          "digest": "bc33fccd082c2b5137de98b3fc18846ed09ad22b24a6c23c7bb18bbf674acd6d",
+          "body": "## 年龄改变的是什么\n\n随着年龄增长，最大心率、肌肉力量和恢复速度可能下降，肌腱和骨骼对突然负荷的耐受也会变化。但这些变化的速度因人而异，长期训练者通常保留更多能力。CDC 的老年人活动指南强调有氧、力量、平衡和柔韧活动的组合；跑步可以是有氧部分，但不能替代力量和平衡练习。\n\n不要用“年纪大了”解释所有疼痛，也不要用年轻时的训练量直接套用。更合理的做法是记录恢复、睡眠和疼痛，逐步调整，而不是一次把跑量加回十年前。\n\n## 力量与平衡\n\n下肢力量、髋部和核心稳定性对跑步经济性和跌倒风险都有帮助。每周两次力量练习可以从简单动作开始：坐站、台阶、提踵、分腿蹲、臀桥和单脚站立；有器械或教练指导时可以增加负荷。平衡练习可以放在刷牙或等水烧开时，先扶稳，再逐渐减少支撑。\n\n力量训练不会让跑步一定变快，但能提高承担训练负荷的能力。开始新动作时先求动作质量，再增加次数或重量；疼痛、眩晕或关节不稳时停止并寻求评估。\n\n## 恢复与负荷\n\n大龄跑者可能需要更长的恢复时间，但不需要完全放弃质量课。把高强度课之间的轻松日留出来，长距离后安排恢复，连续疲劳或睡眠变差时主动减量。每周增加跑量时一次只改变一个变量，给身体几天观察反应。\n\n比赛目标可以调整：与其追求个人最好成绩，不如设置稳定完赛、保持连续训练或改善某段赛道体验。目标设定和复盘同样适用于大龄跑者。\n\n## 健康筛查与用药\n\n有高血压、心脏病、糖尿病、骨质疏松、关节疾病或长期用药的人，开始新的训练计划前应咨询医生；出现胸痛、晕厥、异常心悸或严重气短时立即停止并寻求急救。骨质疏松或既往骨折者需要特别评估冲击负荷和跌倒风险。\n\n年龄不是自动的禁忌，但健康状况需要个体化评估。不要因为“别人七十岁还在跑”就忽略自己的病史。\n\n## 适用边界\n\n本页不提供个体化运动处方、骨质疏松治疗或药物建议。跌倒风险高、平衡差、认知障碍或多种慢性病共存的人，应在专业人员指导下运动。\n\n## 来源与适用范围\n\n老年人有氧、力量、平衡活动的组合建议参考 CDC 的老年人活动页面；慢性病与残疾人的活动原则参考 CDC 的慢性病活动页面。具体训练量和医学禁忌需个体评估。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Older runners: trade speed for strength, recovery and gradual load",
+          "summary": "Age changes recovery and strength reserves, but it is not a reason to stop running. Strength, balance, sleep and gradual loading make training more sustainable than chasing a younger pace.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 2879,
+          "digest": "131c6756e7c450f39c212e4ca74e10d56ccd11fd7ef88debb3b4874a87afbe90",
+          "body": "## What age changes\n\nMaximum heart rate, muscle strength and recovery speed may decline with age, and tendons and bones may tolerate sudden load less well. The rate varies between people, and long-term training preserves more capacity. CDC older-adult guidance emphasises a mix of aerobic, strength, balance and flexibility activity; running can be the aerobic part, but it does not replace strength and balance work.\n\nDo not attribute every pain to “old age”, and do not copy your training volume from ten years ago. Record recovery, sleep and pain, then adjust gradually instead of trying to restore an old mileage in one jump.\n\n## Strength and balance\n\nLower-body strength, hip and trunk stability support running economy and reduce fall risk. Two short strength sessions a week can start with simple movements: sit-to-stand, step-ups, heel raises, split squats, bridges and single-leg standing. Add load only when technique is consistent and you have guidance if needed. Balance practice can fit into daily life; start with support and reduce it gradually.\n\nStrength training does not guarantee faster running, but it improves the capacity to carry training load. Prioritise movement quality before repetitions or weight; stop and seek assessment for pain, dizziness or joint instability.\n\n## Recovery and load\n\nOlder runners may need longer recovery, but do not have to abandon quality sessions. Keep easy days between hard sessions, recover after long runs and reduce load when fatigue or sleep worsens. Change one variable at a time and allow a few days to see the response.\n\nRace goals can change: steady finishing, staying consistent or enjoying a course may matter more than a personal best. Goal setting and review apply at every age.\n\n## Health screening and medication\n\nPeople with high blood pressure, heart disease, diabetes, osteoporosis, joint disease or long-term medication should consult a clinician before a new training plan. Stop and seek emergency care for chest pain, fainting, unusual palpitations or severe breathlessness. Osteoporosis or previous fractures need particular attention to impact load and fall risk.\n\nAge is not an automatic contraindication, but health needs individual assessment. Do not ignore your own history because someone else is still running at seventy.\n\n## Scope and limits\n\nThis page does not provide an individual exercise prescription, osteoporosis treatment or medication advice. People with high fall risk, poor balance, cognitive impairment or several chronic conditions should exercise with professional guidance.\n\n## Sources and scope\n\nThe combination of aerobic, strength and balance activity follows CDC older-adult guidance; activity principles for chronic conditions and disability follow the CDC chronic-conditions page. Individual training volume and medical contraindications need assessment. Checked 2026-10-28."
         }
       ],
       "missingGates": []
@@ -4100,6 +4379,100 @@
           "bodyCharacters": 3040,
           "digest": "1eae07cee5950da34dc69424dec1eab52f846c894f6cf3d0a7e29d309a8bca48",
           "body": "## The guidelines apply to most adults\n\nThe CDC recommends at least 150 minutes of moderate-intensity aerobic activity a week, or an equivalent amount of vigorous activity, plus muscle-strengthening activity on at least two days a week. Activity can be spread across the week, and some activity is better than none.\n\nThese are population minimums, not race plans. Running is one form of aerobic activity. If you are starting, returning or managing a health issue, begin with an amount you can repeat consistently and build from there.\n\n## Women, pregnancy and postpartum\n\nWomen runners follow the same basic aerobic and strength guidance as men. Pregnancy and postpartum are special phases: the CDC states that physical activity is healthy and safe for most pregnant women, and healthy pregnant or postpartum women need at least 150 minutes of moderate-intensity activity a week. Each person should discuss activity restrictions with their maternity or postpartum clinician.\n\nPostpartum recovery varies widely and should not be rushed to match social-media timelines. Pelvic-floor symptoms, persistent bleeding, wound problems, dizziness or pain deserve medical assessment. Before returning to running, check that daily activity and strength foundations are stable.\n\n## Older runners\n\nCDC guidance for adults 65 and older includes aerobic activity, muscle strengthening and activities that improve balance. Age alone is not a reason to stop running, but balance, bone health, medication, previous injury and recovery speed belong in the plan.\n\nOlder runners benefit more from strength, balance and gradual loading than from comparing pace with younger runners. Stop and seek medical advice for falls, chest symptoms, unusual breathlessness, dizziness or new pain.\n\n## Chronic conditions and medication\n\nThe CDC notes that adults with chronic health conditions or disabilities can be active and gain health benefits. When able, the target is still at least 150 minutes of moderate aerobic activity a week plus two days of muscle strengthening; some activity is better than none.\n\nThe details depend on the condition, medication and day-to-day state. Some medicines affect heart rate, temperature regulation or blood glucose; heat, dehydration and infection can raise risk. Discuss appropriate intensity and monitoring with a clinician who knows your condition, and do not change medication on your own.\n\n## Scope and limits\n\nThis page does not diagnose disease, prescribe individual exercise for pregnancy or chronic conditions, or replace maternity, cardiology, endocrinology or other specialist care. Chest pain, fainting, severe breathlessness, altered consciousness, persistent bleeding or marked deterioration need urgent medical help.\n\n## Sources and scope\n\nAdult, older-adult and chronic-condition guidance follows CDC activity pages; pregnancy activity and weight information follows CDC maternal-health guidance. This page provides general principles; restrictions should be judged by a professional who knows your health situation."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:running-apparel-and-chafing",
+      "slug": "running-apparel-and-chafing",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "general",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-nps-winter",
+        "knowledge-nhs-blisters"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-nps-winter",
+          "title": "Winter Hiking Tips",
+          "publisher": "U.S. National Park Service",
+          "url": "https://www.nps.gov/articles/000/winterhikingtips.htm",
+          "publishedAt": "2024-10-11",
+          "license": null,
+          "claims": [
+            "Winter conditions require layers of clothing, warm outer layers, sunglasses, sunscreen, water and snacks.",
+            "Traction devices are recommended on ice and snow, and snowshoes or traction devices are often needed.",
+            "Do not rely on cell phones; carry a map and compass or GPS and know how to use them.",
+            "Check the weather and trail conditions, tell someone your plans and expected return time, and be willing to turn around.",
+            "Snow-covered landscapes can hide trail markers; do not rely on other people's tracks."
+          ]
+        },
+        {
+          "sourceId": "knowledge-nhs-blisters",
+          "title": "Blisters",
+          "publisher": "National Health Service",
+          "url": "https://www.nhs.uk/conditions/blisters/",
+          "publishedAt": null,
+          "license": "Crown copyright; cited under NHS website terms",
+          "claims": [
+            "Most blisters heal on their own within about a week and usually do not need a GP appointment.",
+            "NHS advises keeping a blister clean, covering it with a soft plaster or padded dressing, and not bursting it yourself.",
+            "Friction from poorly fitting shoes is a common cause of foot blisters; moist skin and warm conditions make them more likely."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "545140b2e31a99ecd44cc35e63d6d97d19b136c5b37b447f19772e0da8cfe473"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "90e429c892dbb012dffafd42abc2fba9058e0981c2393f806d533fee36fbb609"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "跑步服装与摩擦：合身、干爽、少接缝",
+          "summary": "服装不需要昂贵，但合身、透气、少摩擦会直接影响舒适和皮肤完整。新衣、湿衣和粗糙接缝是长距离最常见的麻烦来源。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 974,
+          "digest": "90e429c892dbb012dffafd42abc2fba9058e0981c2393f806d533fee36fbb609",
+          "body": "## 先解决合身和摩擦\n\n跑步服装的第一任务是让动作不受限制、皮肤不被反复摩擦。贴身层应排汗快干，肩、腋下、胸口、大腿内侧和脚踝是常见摩擦点；接缝、标签、硬质拉链和过松的袖口都可能在长距离中变成问题。不是越紧越好，也不是越宽松越舒服，关键是动作时没有持续摩擦和明显晃动。\n\n新衣不要在比赛日第一次穿。长距离前先短距离试穿，洗一次，检查接缝和标签；容易摩擦的部位可以提前使用防摩擦膏、贴布或平滑的紧身层。女性需要根据支撑和肩带稳定性选择运动内衣，避免肩带滑落或钢圈压迫；具体款式因人而异。\n\n## 热天与冷天的层次\n\n热天选轻薄、透气、浅色或反光细节的衣物，减少暴晒和闷热；湿透的棉质衣物会变重、贴身并增加摩擦。冷天用分层：贴身排汗层、保暖层和防风防雨层，根据温度、风和运动强度增减。NPS 的冬季建议强调避免棉质贴身层，并准备额外保暖和防雨；跑步会产热，穿得过多同样会导致大量出汗和失温风险。\n\n手套、帽子、脖套和防水外层可以根据条件携带；越野或长距离还要考虑强制装备。深色衣物在夜间可见性差，夜跑应加入反光或主动照明。\n\n## 水泡与皮肤破损\n\nNHS 指出，摩擦水泡常见于不合脚的鞋和潮湿、温暖环境。小的水泡通常会在约一周内自行愈合，不要自己挑破；保持清洁、用软敷料或加垫敷料覆盖，不要继续穿造成摩擦的鞋。如果水泡很大、疼痛明显、破溃后红肿发热或有脓，应寻求医疗或足部护理建议。\n\n长距离前保持脚部干燥，选择合脚鞋和吸湿排汗袜，减少鞋内沙石；不要把“磨出茧”当作适应良好的证明。皮肤破损后继续跑，会增加感染和代偿风险。\n\n## 洗衣与更换\n\n运动衣物洗后彻底晾干，避免柔顺剂堵塞排汗纤维；鞋子取出鞋垫晾干，不要暴晒或烘干。衣物出现硬化、破洞、松紧带失效或持续摩擦时，应更换。装备不需要追求最新，但破损的接缝和失效的防雨层会影响保护。\n\n## 适用边界\n\n本页不推荐具体品牌或面料，也不诊断皮肤病、感染或足部结构问题。糖尿病、血液循环问题、感觉减退或反复水泡的人，应特别注意足部检查并咨询专业人员。\n\n## 来源与适用范围\n\n冬季分层、避免棉质贴身层和额外保暖建议参考 NPS 的冬季徒步提示；水泡的摩擦原因、愈合时间和“不要自行挑破”等处理原则参考 NHS 的水泡页面。具体服装选择因天气、强度和个体差异而异。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Running clothing and chafing: fit, dry, fewer seams",
+          "summary": "Clothing does not need to be expensive, but fit, breathability and low friction affect comfort and skin integrity. New clothes, wet fabric and rough seams are common long-run problems.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 3141,
+          "digest": "545140b2e31a99ecd44cc35e63d6d97d19b136c5b37b447f19772e0da8cfe473",
+          "body": "## Start with fit and friction\n\nRunning clothing should let you move without restriction and avoid repeated rubbing. A base layer should wick and dry quickly; shoulders, armpits, chest, inner thighs and ankles are common chafe points. Seams, labels, hard zips and loose cuffs can become problems over a long run. Tighter is not automatically better and looser is not automatically comfortable; the test is whether movement causes continuous rubbing or excess shifting.\n\nDo not wear new clothing for the first time in a race. Try it on a short run, wash it once and check seams and labels; use anti-chafe balm, tape or a smooth base layer on prone areas. Sports bras should provide stable support and shoulder straps that stay put; the right design varies between runners.\n\n## Hot and cold layers\n\nIn heat, choose light, breathable clothing, light colours or reflective details to reduce heat load and improve visibility; soaked cotton becomes heavy, clings and increases friction. In cold, use layers: a wicking base, an insulating layer and a wind/rain shell, adding or removing as temperature, wind and effort change. NPS winter advice emphasises avoiding cotton next to the skin and carrying extra warmth and rain protection. Running generates heat, so overdressing can also cause heavy sweating and later chilling.\n\nGloves, a hat, neck gaiter and waterproof outer layer can be carried as conditions require; trail and long runs may also have mandatory kit. Dark clothing is hard to see at night, so add reflective material or active light.\n\n## Blisters and broken skin\n\nThe NHS notes that friction blisters are common with poorly fitting shoes and in moist, warm conditions. Most heal within about a week; do not burst them yourself. Keep the area clean, cover it with a soft plaster or padded dressing and stop wearing the shoe that caused it. Seek medical or foot-care advice for a very large or painful blister, or if a burst blister becomes red, hot, swollen or produces pus.\n\nKeep feet dry before a long run, choose well-fitting shoes and moisture-wicking socks, and remove grit from the shoe. Calluses are not proof of good adaptation. Running on broken skin increases infection risk and can change your gait.\n\n## Washing and replacement\n\nDry sports clothing thoroughly and avoid fabric softener, which can clog wicking fibres. Remove insoles and air shoes without direct heat. Replace clothing when it becomes stiff, torn, loses elastic or keeps rubbing. Gear does not need to be the newest, but broken seams and failed waterproof layers reduce protection.\n\n## Scope and limits\n\nThis page does not recommend a brand or fabric or diagnose skin infections or foot structure. People with diabetes, circulation problems, reduced sensation or recurrent blisters should check their feet carefully and seek professional advice.\n\n## Sources and scope\n\nWinter layering, avoiding cotton next to the skin and carrying extra warmth follow NPS winter hiking tips; the friction cause, healing time and advice not to burst blisters follow the NHS blisters page. Clothing choice varies with weather, effort and individual fit. Checked 2026-10-28."
         }
       ],
       "missingGates": []
@@ -5918,6 +6291,99 @@
           "bodyCharacters": 3109,
           "digest": "5fbef8d1e5331c535525335a0ba1c0cefa4c6a31a52ac4ed36e281de739d5698",
           "body": "## What a watch can record\n\nRunning watches and bands record pace, heart rate, cadence, elevation, sleep duration and heart-rate variability (HRV); some also produce “recovery”, “readiness” or “training load” scores. These numbers are useful for spotting trends and planning training, not for deciding on their own whether the body is healthy.\n\nOptical heart rate can be distorted by cold, a loose strap, darker skin, arm movement or sweat. GPS drifts in urban canyons, forests and tunnels. Sleep staging is not the same as laboratory polysomnography. Algorithms and baselines differ between brands, so two readiness scores are not directly comparable.\n\n## One abnormal reading is not a conclusion\n\nHRV is affected by sleep, alcohol, caffeine, infection, stress and training; one low day does not mean overtraining. Resting heart rate can rise with heat, dehydration, a late night or nerves. Treating a single reading as a body score encourages overreaction to normal variation.\n\nA better approach is to build your own baseline over several weeks, measured at the same time under similar conditions. A sustained fall in HRV, a sustained rise in resting heart rate, worse sleep, fatigue, heavy legs or declining performance may justify adjusting load. Even then, a watch cannot diagnose overtraining.\n\n## Recovery is more than a number\n\nThere is no single biomarker for overtraining. Assessment combines training history, performance decline, fatigue, sleep and mood, and excludes other causes such as anaemia, thyroid disease, infection or depression. A device score cannot replace that assessment.\n\nSleep deserves attention, but the goal is not a perfect sleep score; it is regular, sufficient sleep and feeling awake during the day. Persistent insomnia, snoring with gasping, severe daytime sleepiness or weeks of fatigue warrant medical assessment.\n\n## Using the data well\n\nReview trends once a week rather than refreshing all day. Put training logs, perceived fatigue, pain, sleep and races together. When data and felt experience disagree, start with the body and then look for an explanation. Do not change a tested race plan because of one readiness score, and do not use data to justify running through pain.\n\nMind privacy when sharing. Routes, heart rate and sleep are personal data; remove location, names and device identifiers from screenshots. Do not hand a complete training history to an unfamiliar third-party app without a reason.\n\n## Scope and limits\n\nThis page does not provide individual training-load advice, HRV interpretation or medical diagnosis. People with arrhythmia, chest pain, fainting, persistent insomnia, severe fatigue or known cardiovascular disease should consult a clinician; a device alert is not a substitute for emergency care.\n\n## Sources and scope\n\nThe concepts around overtraining, the absence of a single diagnostic marker and the need to exclude other causes follow a practical review in Current Sports Medicine Reports; advice on persistent insomnia follows the NHS insomnia page. Consumer-device data is a trend aid, not a clinical diagnosis. Checked 2026-10-28."
+        }
+      ],
+      "missingGates": []
+    },
+    {
+      "entityId": "knowledge:weight-and-running",
+      "slug": "weight-and-running",
+      "kind": "knowledge",
+      "status": "published",
+      "riskLevel": "guidance",
+      "license": "CC-BY-4.0",
+      "updatedAt": "2026-10-28",
+      "sourceCount": 2,
+      "sourceRefs": [
+        "knowledge-cdc-healthy-weight",
+        "knowledge-ioc-reds"
+      ],
+      "sources": [
+        {
+          "sourceId": "knowledge-cdc-healthy-weight",
+          "title": "Tips for Maintaining Healthy Weight",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/healthy-weight-growth/about/tips-for-balancing-food-activity.html",
+          "publishedAt": "2026-03-27",
+          "license": null,
+          "claims": [
+            "Healthy pregnant or postpartum women need at least 150 minutes of moderate-intensity aerobic activity per week.",
+            "Weight is influenced by factors including sleep, age, genes and medications.",
+            "People who are physically active can still gain weight if they take in more calories than they use.",
+            "A health care provider is the best person to ask whether illnesses or medications are contributing to weight gain or making weight loss difficult."
+          ]
+        },
+        {
+          "sourceId": "knowledge-ioc-reds",
+          "title": "IOC consensus statement on Relative Energy Deficiency in Sport (REDs)",
+          "publisher": "International Olympic Committee",
+          "url": "https://olympics.com/ioc/medical-and-scientific-commission/consensus-statements",
+          "publishedAt": "2023-09-28",
+          "license": "IOC copyright; citation and summary only",
+          "claims": [
+            "REDs describes a syndrome of health and performance effects associated with low energy availability.",
+            "The 2023 IOC consensus updated the earlier female athlete triad framework and applies to both male and female athletes.",
+            "REDs can affect multiple body systems, including endocrine, bone, metabolic and psychological health, and requires clinical assessment."
+          ]
+        }
+      ],
+      "reviewCount": 2,
+      "reviews": [
+        {
+          "locale": "en",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "b0ae52154c5f14374718e05c5405564d634f3e85001b1db47ea013c6187950c4"
+        },
+        {
+          "locale": "zh-CN",
+          "reviewerId": "runmap-editorial",
+          "reviewedAt": "2026-10-28",
+          "decision": "approve",
+          "contentDigest": "84fab9550762c9c6b4b7ffd4af8c9531193a0e16aef9036921be9b91a7108840"
+        }
+      ],
+      "translations": [
+        {
+          "locale": "zh-CN",
+          "title": "体重与跑步：别把轻当成快的代名词",
+          "summary": "体重会影响跑步的代谢成本，但快速减重、长期能量不足和比赛目标叠加，可能损害健康与表现。先保证能量可用性，再谈体重。",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 931,
+          "digest": "84fab9550762c9c6b4b7ffd4af8c9531193a0e16aef9036921be9b91a7108840",
+          "body": "## 体重不是唯一的性能变量\n\n跑步时要把身体质量反复抬升和减速，体重会影响单位距离的能量消耗。但成绩还取决于训练、耐力、配速、跑步经济性、赛道、天气和恢复。把体重当成唯一变量，容易忽略训练质量和健康状态，也可能把正常的体重波动误当成失败。\n\nCDC 的健康体重建议强调均衡饮食、规律活动和可持续的生活方式，而不是短期极端节食。对跑者来说，足够的碳水和蛋白质是训练和恢复的基础；在能量摄入不足时增加训练，通常只会让疲劳和伤病风险上升。\n\n## 低能量可用性的风险\n\n长期能量可用性不足与 RED-S 相关，可能影响内分泌、骨骼、代谢、心理和运动表现。快速减重、长期低体重、月经改变、反复应力性骨折、持续疲劳、怕冷、睡眠变差或对食物失去控制感，都是需要认真对待的信号。\n\n体重下降不一定意味着表现提升。短期体重下降可能伴随糖原和水分的丢失，长期能量不足则可能降低恢复能力、骨密度和免疫功能，最终让训练无法持续。\n\n## 比赛目标与体重\n\n如果比赛目标需要调整体重，应该在不影响训练和健康的前提下缓慢进行，并由医生或注册营养师评估。不要把比赛日期和减重截止日绑在一起；赛前几周同时增加训练、减少进食和承受比赛压力，是风险最高的组合之一。\n\n训练日需要足够的碳水支持质量课和长距离，恢复日也不需要刻意挨饿。蛋白质分配、蔬菜水果和总能量比“某种神奇食物”更重要。补剂不能替代正常饮食，也不能保证减重或提速。\n\n## 身体形象与求助\n\n对体重、食物和训练失去控制感，反复称重、隐藏进食、因一顿饭感到强烈内疚，或体重已经明显影响健康和社交，应寻求进食障碍或心理健康专业评估。越早处理越容易恢复；不要等到受伤或闭经才重视。\n\n## 适用边界\n\n本页不提供减重计划、热量目标或体脂标准，也不诊断进食障碍、RED-S 或代谢疾病。孕期、哺乳期、青少年、慢性病、糖尿病或进食障碍史的人，应与医生或注册营养师讨论体重和训练目标。\n\n## 来源与适用范围\n\n健康体重和均衡饮食的一般原则参考 CDC 的健康体重建议；低能量可用性与 RED-S 的多系统风险参考国际奥委会的 RED-S 共识页面。体重与表现的关系受多因素影响，本文不提供个体化减重方案。核验日期为 2026-10-28。"
+        },
+        {
+          "locale": "en",
+          "title": "Weight and running: lighter is not automatically faster",
+          "summary": "Body weight affects the metabolic cost of running, but rapid weight loss, chronic low energy and race goals can harm health and performance. Protect energy availability before chasing a weight.",
+          "authors": [
+            "runmap-editorial"
+          ],
+          "reviewers": [
+            "runmap-editorial"
+          ],
+          "translationStatus": "reviewed",
+          "bodyCharacters": 2915,
+          "digest": "b0ae52154c5f14374718e05c5405564d634f3e85001b1db47ea013c6187950c4",
+          "body": "## Weight is not the only performance variable\n\nRunning repeatedly lifts and decelerates body mass, so weight affects energy cost per kilometre. Performance also depends on training, endurance, pacing, running economy, course, weather and recovery. Treating weight as the only variable ignores training quality and health, and can turn normal fluctuation into a false failure.\n\nCDC healthy-weight guidance emphasises balanced eating, regular activity and a sustainable lifestyle rather than short-term extreme dieting. For runners, enough carbohydrate and protein supports training and recovery; adding training while under-fuelling usually increases fatigue and injury risk.\n\n## Risks of low energy availability\n\nChronic low energy availability is linked to RED-S and can affect endocrine, bone, metabolic, psychological and performance systems. Rapid weight loss, long-term low body weight, menstrual changes, recurrent stress fractures, persistent fatigue, feeling cold, poor sleep or loss of control around food are signals to take seriously.\n\nWeight loss does not automatically mean better performance. Short-term loss may include glycogen and water; long-term under-fuelling can reduce recovery, bone density and immune function, eventually making training unsustainable.\n\n## Race goals and weight\n\nIf a race goal involves changing weight, do it slowly and only when it does not compromise training or health, with a doctor or registered dietitian. Do not tie the race date to a weight-loss deadline; combining more training, less food and race pressure in the final weeks is one of the riskiest combinations.\n\nTraining days need enough carbohydrate for quality sessions and long runs; recovery days do not require deliberate hunger. Protein distribution, vegetables and total energy matter more than a “magic” food. Supplements do not replace normal eating or guarantee weight loss or speed.\n\n## Body image and help\n\nSeek eating-disorder or mental-health assessment for loss of control around food, weight or training; repeated weighing, secret eating, intense guilt after a meal, or weight change that affects health and social life. Earlier support is easier; do not wait for injury or missed periods.\n\n## Scope and limits\n\nThis page does not provide a weight-loss plan, calorie target or body-fat standard, or diagnose eating disorders, RED-S or metabolic disease. Pregnancy, breastfeeding, adolescents, chronic disease, diabetes or a history of disordered eating should discuss weight and training goals with a doctor or registered dietitian.\n\n## Sources and scope\n\nGeneral healthy-weight and balanced-eating principles follow CDC healthy-weight guidance; the multi-system risks of low energy availability and RED-S follow the International Olympic Committee RED-S consensus page. Weight and performance are multi-factor, and this page does not provide an individual weight-loss plan. Checked 2026-10-28."
         }
       ],
       "missingGates": []

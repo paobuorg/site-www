@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T04:00:00Z",
+  "generatedAt": "2026-10-28T04:30:00Z",
   "account": "paobuorg",
   "repositories": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "running-knowledge",
       "url": "https://github.com/paobuorg/running-knowledge",
-      "commit": "ac0e780c67288b285546a4e1158e8e543fa731ef",
+      "commit": "406cee174feda477376e2eebfa9b033212152e00",
       "contentCommit": "a879da16b26c7315531fcdba21555f6ef3c78da5",
       "visibility": "public"
     },
@@ -26,30 +26,30 @@
     {
       "name": "site-www",
       "url": "https://github.com/paobuorg/site-www",
-      "commit": "b1a794185f42057add726520d29a5bd0625e9dc5",
+      "commit": "53b13d550060525a37193c386b72c02624038f65",
       "visibility": "public"
     },
     {
       "name": "site-knowledge",
       "url": "https://github.com/paobuorg/site-knowledge",
-      "commit": "6b350861a88f31795d3ee79401139c0f2290e629",
+      "commit": "1c718c6c9b8ad006c0e44639cbe1900d194e6c0f",
       "visibility": "public"
     },
     {
       "name": "site-tools",
       "url": "https://github.com/paobuorg/site-tools",
-      "commit": "99d3b8771bfd53aadee581a34c40baf8ca990658",
+      "commit": "366adc026ee2d9853ebe2d11894c1b539b38cd52",
       "visibility": "public"
     }
   ],
   "releaseBundle": {
-    "bundleId": "df5c12ed8e60966db4fade2786d12d0407ee75c2748312e1fc2c54ac7e4e8efb",
+    "bundleId": "de9184b08db5efe310d631b853f5d585efaf4b57004db0593b211b8f71daf626",
     "status": "local-build"
   },
   "contentRevision": {
-    "note": "Content locks pin the K3 content commits used by the production builds.",
+    "note": "Content locks pin the K4 content commits used by the production builds.",
     "running-routes": "67a80abe30001527e6f60778e91ad9b206b31137",
-    "running-knowledge": "ac0e780c67288b285546a4e1158e8e543fa731ef",
+    "running-knowledge": "406cee174feda477376e2eebfa9b033212152e00",
     "running-tools": "a423a457a1d9fed1c086ef84c67f267d9b62112a"
   },
   "coreRelease": {
@@ -80,31 +80,31 @@
         "site": "main",
         "url": "https://paobu.org/",
         "status": "success",
-        "codeCommit": "b1a794185f42057add726520d29a5bd0625e9dc5",
+        "codeCommit": "53b13d550060525a37193c386b72c02624038f65",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "855cd3a2a5a0e3d5e1d0b3f0b8e5e7d1b3f5a7c9e2d4f6a8b0c1d3e5f7a9b1c3",
         "build": {
           "htmlPages": 40,
-          "searchRecords": 142,
+          "searchRecords": 152,
           "sitemapUrls": 40
         },
-        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40627903745",
+        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40633072968",
         "httpsEnforced": true,
-        "certificate": "approved"
+        "certificate": "approved",
+        "siteBundleId": "e577f9d56291c0abfc9dc4cf337a65e289aa34464c92109d655d8dab86deb120"
       },
       {
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
-        "codeCommit": "6b350861a88f31795d3ee79401139c0f2290e629",
+        "codeCommit": "1c718c6c9b8ad006c0e44639cbe1900d194e6c0f",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "2954cb7acfdd6c70341f186e7f7aabe731333b6f19798a202ad01847faaa93bd",
+        "siteBundleId": "3635db23e64eecdccf8f713aacde33e3c445013ac89e9095b0a33c34bdf65112",
         "build": {
-          "htmlPages": 114,
-          "searchRecords": 86,
-          "sitemapUrls": 114
+          "htmlPages": 124,
+          "searchRecords": 96,
+          "sitemapUrls": 124
         },
-        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40627909416",
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40633077251",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -112,15 +112,15 @@
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
-        "codeCommit": "99d3b8771bfd53aadee581a34c40baf8ca990658",
+        "codeCommit": "366adc026ee2d9853ebe2d11894c1b539b38cd52",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
-        "siteBundleId": "a861fa057912ea18ebfc102be8c5caff8e526c167effd7e87798ee5199e475ac",
+        "siteBundleId": "c2b389edebd2ce759dd36bfc1260da6116fcdb570e63841e4db67fe84030458e",
         "build": {
           "htmlPages": 28,
           "searchRecords": 24,
           "sitemapUrls": 28
         },
-        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40627913438",
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40633080736",
         "httpsEnforced": true,
         "certificate": "approved"
       }
@@ -132,22 +132,20 @@
     "legalPages": {
       "count": 6,
       "status": "all 200",
-      "axeViolations": 0,
-      "consoleErrors": 0,
-      "failedRequests": 0,
-      "mobileOverflow": 0
+      "axeViolations": 0
     },
-    "legalNotices": "Article, glossary, tool and route pages checked live carry a context-specific legal notice and footer legal link.",
     "authors": "Visible bylines read 跑地图编辑部 / RunMap Editorial; no AI-assisted or editorial-desk wording is rendered.",
-    "contentWording": "Live legal and K2/K3 pages contain no AI-assisted, RunMap 编辑台 or editorial-desk wording.",
     "k2Pages": {
       "count": 16,
-      "status": "all 200",
-      "axeViolations": 0,
-      "note": "All 16 checked for status/legal/overflow; 8 axe-checked."
+      "status": "all 200"
     },
     "k3Pages": {
       "count": 14,
+      "status": "all 200",
+      "axeViolations": 0
+    },
+    "k4Pages": {
+      "count": 10,
       "status": "all 200",
       "axeViolations": 0,
       "consoleErrors": 0,
@@ -157,7 +155,7 @@
     },
     "sitemaps": {
       "paobu.org": 40,
-      "learn.paobu.org": 114,
+      "learn.paobu.org": 124,
       "tools.paobu.org": 28
     },
     "searchAcceptance": {
@@ -181,7 +179,7 @@
     "coreRelease": "core-v0.2.15 published and asset hash verified"
   },
   "notes": [
-    "K2 added eight bilingual guides and K3 added seven more: night traffic, pain communication, wearables/recovery data, goal setting/review, reading research, records/course validity and supplement evidence.",
+    "K2 added eight bilingual guides, K3 seven and K4 five; the knowledge set now has 47 articles plus a glossary.",
     "Content is licensed CC BY 4.0 and site code is MIT; third-party race material, trademarks, imagery and dependencies remain under their own terms.",
     "The legal page is a general risk notice, not legal advice.",
     "Real devices/readers, formal high-resolution imagery, third-party EOX SLA, remote rollback and independent professional review remain outside this deployment verification."
