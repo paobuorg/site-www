@@ -23,6 +23,7 @@ This is an **AI-assisted editorial review**, performed by the same editorial des
 - **Knowledge batch 2**: added eight bilingual guides and a breathing section. Checked the ISSN protein/caffeine position stands, FDA supplement regulation, CDC older-adult/chronic-condition/pregnancy guidance, CDC healthy-weight factors, NPS winter and Ten Essentials advice, NWS cold exposure, the PLOS ONE taper meta-analysis, BAA race rules, World Athletics records, NHS GAD and WHO's occupational burnout definition. Wording was kept conservative where evidence is observational or population-level.
 - **Mobile accessibility regression**: the long tool forms exposed a real soft-keyboard overlap. Shared core now scrolls focused fields above the fixed bottom navigation, and the three-browser matrix re-checks the result.
 - **Imagery**: route close-ups were moved from a public tile service that failed CORS in the local Chromium environment to EOX Sentinel-2 cloudless, a public no-key CORS-enabled mosaic with attribution. Tile loading now retries three times and falls back to the local NASA texture.
+- **Routing and source links**: Chinese routes moved to the root path and English routes to `/en/`; `/zh-CN/` is intentionally not redirected. The route anchor source URL was changed to `https://paobu.org/about/#method`, affected route digests were recomputed, and all 96 approvals were re-recorded. Content Markdown links that still contain the old `/zh-CN/` form are normalized at render time to the new root paths.
 
 ## Residual limits
 
