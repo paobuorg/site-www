@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T02:18:00Z",
+  "generatedAt": "2026-10-28T02:25:00Z",
   "account": "paobuorg",
   "repositories": [
     {
@@ -32,13 +32,13 @@
     {
       "name": "site-knowledge",
       "url": "https://github.com/paobuorg/site-knowledge",
-      "commit": "a20b7da93570246438c3ce56b3db629f5c6466fc",
+      "commit": "883f4a445b3525385d37c6fb598166e3cac09d3b",
       "visibility": "public"
     },
     {
       "name": "site-tools",
       "url": "https://github.com/paobuorg/site-tools",
-      "commit": "b68699fbae1a68583a519f3b390ffd8407286bd8",
+      "commit": "86788f9c77a5a9d9bee0d03ffaa4b2f8ec01d395",
       "visibility": "public"
     }
   ],
@@ -96,7 +96,7 @@
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
-        "codeCommit": "a20b7da93570246438c3ce56b3db629f5c6466fc",
+        "codeCommit": "883f4a445b3525385d37c6fb598166e3cac09d3b",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
         "siteBundleId": "58a25c2a1f5306c3e8e50b7b83e0ed381342bda96b10e986beae73309df78395",
         "build": {
@@ -104,7 +104,7 @@
           "searchRecords": 56,
           "sitemapUrls": 84
         },
-        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40619299384",
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40620562372",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -112,7 +112,7 @@
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
-        "codeCommit": "b68699fbae1a68583a519f3b390ffd8407286bd8",
+        "codeCommit": "86788f9c77a5a9d9bee0d03ffaa4b2f8ec01d395",
         "coreSha256": "8e2645102a7a8ebcabf56db44ceb49c4d16df54478be489919979fb4a72eaeae",
         "siteBundleId": "bbff0fe14f761e526b69f678e954e28f2625cf412528cc18ec1dcc858ac90700",
         "build": {
@@ -120,7 +120,7 @@
           "searchRecords": 24,
           "sitemapUrls": 28
         },
-        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40619304074",
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40620567702",
         "httpsEnforced": true,
         "certificate": "approved"
       }
@@ -157,7 +157,9 @@
       "zh-CN": "60/60",
       "en": "56/56"
     },
-    "searchAcceptanceNote": "Full 116-query acceptance set run against the live Pagefind index; threshold 90%, top-5."
+    "searchAcceptanceNote": "Full 116-query acceptance set run against the live Pagefind index; threshold 90%, top-5.",
+    "checkedAt": "2026-10-28T02:25:00Z",
+    "pwa": "All three live manifest.webmanifest files use start_url \"/\" and scope \"/\". The site-knowledge/tools manifests were corrected from the legacy /zh-CN/ start URL."
   },
   "oldRepository": {
     "name": "www",
@@ -175,6 +177,7 @@
     "The legal and tone pass removed editorial-desk/AI-facing bylines and legacy /zh-CN/ links from content, added bilingual legal pages, footer links and per-page legal notices, and re-recorded all 112 content checks.",
     "Content is licensed CC BY 4.0 and site code is MIT; third-party race material, trademarks, imagery and dependencies remain under their own terms.",
     "The legal page is a general risk notice, not legal advice. It covers liability, non-professional advice, race/outdoor safety, tool limits, sources/trademarks, privacy, automation disclosure and corrections.",
-    "Formal high-resolution imagery, real devices/readers, third-party EOX SLA, real Safari, remote rollback and independent professional review remain outside this deployment verification."
+    "Formal high-resolution imagery, real devices/readers, third-party EOX SLA, real Safari, remote rollback and independent professional review remain outside this deployment verification.",
+    "The final PWA manifest fix sets start_url and scope to / on the knowledge and tools sites; the release bundle siteBundleIds are unchanged."
   ]
 }
