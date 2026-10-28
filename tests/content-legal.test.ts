@@ -4,8 +4,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
 
-const root = path.join(import.meta.dirname, '..', '..');
-const content = loadContent({ roots: defaultContentRoots(), allowUnreviewed: true });
+const siteRoot = path.join(import.meta.dirname, '..');
+const roots = defaultContentRoots();
+const content = loadContent({ roots, allowUnreviewed: true });
 
 const forbidden = [
   /RunMap 编辑台/,
@@ -31,30 +32,28 @@ test('published content carries CC BY 4.0 and no editorial-desk or AI-facing cop
   }
 });
 
-test('content repositories state CC BY 4.0 and code repositories state MIT', () => {
-  for (const repo of ['running-routes', 'running-knowledge', 'running-tools']) {
-    const licence = fs.readFileSync(path.join(root, repo, 'LICENSE'), 'utf8');
+test('content repositories state CC BY 4.0 and the site code states MIT', () => {
+  for (const dir of [roots.routes, roots.knowledge, roots.tools]) {
+    const licence = fs.readFileSync(path.join(dir, 'LICENSE'), 'utf8');
     assert.match(licence, /CC BY 4\.0/);
   }
-  for (const repo of ['site-www', 'site-knowledge', 'site-tools']) {
-    const licence = fs.readFileSync(path.join(root, repo, 'LICENSE'), 'utf8');
-    assert.match(licence, /MIT License/);
-    const legal = fs.readFileSync(
-      path.join(root, repo, 'src', 'pages', '[...locale]', 'legal', 'index.astro'),
-      'utf8',
-    );
-    assert.match(legal, /LegalPage/);
-  }
+  const licence = fs.readFileSync(path.join(siteRoot, 'LICENSE'), 'utf8');
+  assert.match(licence, /MIT License/);
+  const legal = fs.readFileSync(
+    path.join(siteRoot, 'src', 'pages', '[...locale]', 'legal', 'index.astro'),
+    'utf8',
+  );
+  assert.match(legal, /LegalPage/);
 });
 
 test('shared footer and legal page link to the licence page', () => {
   const footer = fs.readFileSync(
-    path.join(root, 'site-www', 'packages', 'core', 'src', 'components', 'Footer.astro'),
+    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'Footer.astro'),
     'utf8',
   );
   assert.match(footer, /legal\//);
   const legalPage = fs.readFileSync(
-    path.join(root, 'site-www', 'packages', 'core', 'src', 'components', 'LegalPage.astro'),
+    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'LegalPage.astro'),
     'utf8',
   );
   assert.match(legalPage, /CC BY 4\.0/);
