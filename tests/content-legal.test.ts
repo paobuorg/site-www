@@ -109,7 +109,16 @@ test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
   assert.ok(manifest.icons.some((icon) => icon.src === '/icon-192.png' && icon.sizes === '192x192'));
   assert.ok(manifest.icons.some((icon) => icon.src === '/icon-512.png' && icon.sizes === '512x512'));
   assert.ok(manifest.icons.some((icon) => icon.purpose === 'maskable'));
-  for (const icon of ['icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png']) {
+  for (const icon of [
+    'favicon.ico',
+    'favicon-16x16.png',
+    'favicon-32x32.png',
+    'icon-192.png',
+    'icon-512.png',
+    'icon-maskable-512.png',
+    'apple-touch-icon.png',
+    'social-card.png',
+  ]) {
     assert.ok(fs.statSync(path.join(siteRoot, 'public', icon)).size > 0, icon);
   }
 
@@ -124,6 +133,10 @@ test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
     'utf8',
   );
   assert.match(layout, /og:site_name" content="RUNUP"/);
+  assert.match(layout, /og:image/);
+  assert.match(layout, /x-default/);
+  assert.match(layout, /favicon\.ico/);
+  assert.match(layout, /application\/ld\+json/);
   assert.match(layout, /apple-touch-icon/);
 });
 

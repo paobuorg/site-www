@@ -138,6 +138,7 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
   ogType="article"
   alternateHref={`${localePrefix(other)}/routes/${entity.slug}/`}
   structuredData={structuredData}
+  modifiedTime={entity.updatedAt}
   footerAd
 >
   <Fragment slot="head">
