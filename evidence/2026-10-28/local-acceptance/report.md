@@ -5,7 +5,7 @@ Scope: the three production builds under `repos/site-www/dist`, `repos/site-know
 
 ## Result
 
-Local acceptance **passes** for the 56-entity launch set. The three public sites remain live on their custom domains with HTTPS from the previous 48-entity deployment; the K1/T1 site commits are verified locally and are pushed and rechecked separately.
+Local acceptance **passes** for the 56-entity launch set. The three public sites are live on their custom domains with HTTPS, and the K1/T1 deployment has been rechecked against the live release manifests.
 
 - Content: 56 entities / 112 bilingual versions published (routes 16, knowledge 28, tools 12); 62 sources; 26 tool cases; 112 AI-assisted editorial approval records; `check:production` passes with route=16, knowledge=28, tool=12.
 - Knowledge: 27 articles plus a 17-term glossary, nine topics covered, five learning paths.
@@ -40,9 +40,9 @@ The six public repositories are under `paobuorg`; `@paobu/core@0.2.14` is publis
 - `https://learn.paobu.org/`
 - `https://tools.paobu.org/`
 
-All three custom domains have approved certificates and HTTP redirects to HTTPS. The previous live smoke test navigated paobu.org → learn → tools → paobu.org, loaded the Boston route map and returned 25 search results with no console errors or failed requests.
+All three custom domains have approved certificates and HTTP redirects to HTTPS. The K1/T1 deployment is live: the three release manifests report core 0.2.14 at `1fcda15…`, content commits `0cd00cda…` / `a879da16…` / `4a8a3885…`, and siteBundleIds `388cbeb0…` / `1c65fd19…` / `b271663d…`, matching the local release bundle `a00bee5d…`. Eight new K1/T1 pages return 200 with 0 axe violations, 0 console errors, 0 failed requests and no mobile overflow; live search returns the new overtraining article, fueling tool, UTMB route and shoe-technology article; the fueling planner returns 45–90 g for 90 minutes at 25 g per serving.
 
-Batch status: this report covers the local build only. The K1/T1 push and the resulting Pages deployment are recorded separately in `release/remote-status.json` for 2026-10-28. Until that verification is recorded, the live sites should be treated as the previous 48-entity build.
+The main-site Pages workflow was changed to download the published `core-v0.2.14` artifact and verify its SHA-256 instead of repacking, so the live main-site manifest reports the same core hash as both subsites.
 
 Remaining remote caveats:
 

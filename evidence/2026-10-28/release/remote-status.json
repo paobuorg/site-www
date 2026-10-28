@@ -1,0 +1,175 @@
+{
+  "generatedAt": "2026-10-28T01:20:00Z",
+  "account": "paobuorg",
+  "repositories": [
+    {
+      "name": "running-routes",
+      "url": "https://github.com/paobuorg/running-routes",
+      "commit": "b526227993ee017f7881500ec1642e10770bafc6",
+      "contentCommit": "0cd00cdaf9929390f4141fb1c58238ab1dee785d",
+      "visibility": "public"
+    },
+    {
+      "name": "running-knowledge",
+      "url": "https://github.com/paobuorg/running-knowledge",
+      "commit": "f4c638f27b825149594f007f029cb4a930ccd06a",
+      "contentCommit": "a879da16b26c7315531fcdba21555f6ef3c78da5",
+      "visibility": "public"
+    },
+    {
+      "name": "running-tools",
+      "url": "https://github.com/paobuorg/running-tools",
+      "commit": "7a5eb2f87f5d19b148ff69e807173274be5feeae",
+      "contentCommit": "4a8a3885b64d2a7c366845b118954a47392aea4a",
+      "visibility": "public"
+    },
+    {
+      "name": "site-www",
+      "url": "https://github.com/paobuorg/site-www",
+      "commit": "6ee40ddf689f5d560523fea57ec2e2a0d830db1a",
+      "visibility": "public"
+    },
+    {
+      "name": "site-knowledge",
+      "url": "https://github.com/paobuorg/site-knowledge",
+      "commit": "eb7ce824b0eb7fd43e093c7ddd47ab55e4831e7a",
+      "visibility": "public"
+    },
+    {
+      "name": "site-tools",
+      "url": "https://github.com/paobuorg/site-tools",
+      "commit": "d0b59ab9ec39f4c95d1ff0764d9d30e465c2a8fd",
+      "visibility": "public"
+    }
+  ],
+  "releaseBundle": {
+    "bundleId": "a00bee5d23041407255cfb36380e95d0e18f6dd7c09115fa9445553d1ac616f7",
+    "status": "local-build"
+  },
+  "contentRevision": {
+    "note": "Content locks pin the K1/T1 content commits used by the production builds; later README-only commits do not change the content tree.",
+    "running-routes": "0cd00cdaf9929390f4141fb1c58238ab1dee785d",
+    "running-knowledge": "a879da16b26c7315531fcdba21555f6ef3c78da5",
+    "running-tools": "4a8a3885b64d2a7c366845b118954a47392aea4a"
+  },
+  "coreRelease": {
+    "tag": "core-v0.2.14",
+    "url": "https://github.com/paobuorg/site-www/releases/tag/core-v0.2.14",
+    "assets": [
+      "paobu-core-0.2.14.tgz",
+      "paobu-core-0.2.14.tgz.sha256",
+      "core.lock.json"
+    ],
+    "sha256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89"
+  },
+  "variables": {
+    "site-knowledge": {
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.14/paobu-core-0.2.14.tgz",
+      "PAOBU_CORE_SHA256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89"
+    },
+    "site-tools": {
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.14/paobu-core-0.2.14.tgz",
+      "PAOBU_CORE_SHA256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89"
+    }
+  },
+  "pages": {
+    "enabled": true,
+    "successfulDeployment": true,
+    "deployments": [
+      {
+        "site": "main",
+        "url": "https://paobu.org/",
+        "status": "success",
+        "codeCommit": "6ee40ddf689f5d560523fea57ec2e2a0d830db1a",
+        "coreSha256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89",
+        "siteBundleId": "388cbeb0b3664ec4422fc14c69f115b7851988176dfd96f89e98ce14414313f6",
+        "build": {
+          "htmlPages": 38,
+          "searchRecords": 112,
+          "sitemapUrls": 38
+        },
+        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40614107339",
+        "httpsEnforced": true,
+        "certificate": "approved"
+      },
+      {
+        "site": "knowledge",
+        "url": "https://learn.paobu.org/",
+        "status": "success",
+        "codeCommit": "eb7ce824b0eb7fd43e093c7ddd47ab55e4831e7a",
+        "coreSha256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89",
+        "siteBundleId": "1c65fd193da58b720c60bb431e375fd651f5615ff27c978c4f4812f538354a56",
+        "build": {
+          "htmlPages": 82,
+          "searchRecords": 56,
+          "sitemapUrls": 82
+        },
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40613861595",
+        "httpsEnforced": true,
+        "certificate": "approved"
+      },
+      {
+        "site": "tools",
+        "url": "https://tools.paobu.org/",
+        "status": "success",
+        "codeCommit": "d0b59ab9ec39f4c95d1ff0764d9d30e465c2a8fd",
+        "coreSha256": "1fcda15d29b7e1de0240ea8b6061f92fc8dc7887a2469c85a3011584bd2bcd89",
+        "siteBundleId": "b271663ddee02bbf33285007d5ad6302f8637d30b63caaef12bd070ecf98aa99",
+        "build": {
+          "htmlPages": 26,
+          "searchRecords": 24,
+          "sitemapUrls": 26
+        },
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40613866307",
+        "httpsEnforced": true,
+        "certificate": "approved"
+      }
+    ]
+  },
+  "liveVerification": {
+    "checkedAt": "2026-10-28T01:20:00Z",
+    "bundleConsistency": "All three live release manifests match the local release bundle siteBundleIds and the published core 0.2.14 hash.",
+    "legacyPrefix": "https://paobu.org/zh-CN/ returns 404; no /zh-CN/ links on the eight checked K1/T1 pages.",
+    "sitemaps": {
+      "paobu.org": 38,
+      "learn.paobu.org": 82,
+      "tools.paobu.org": 26
+    },
+    "k1T1Pages": {
+      "count": 8,
+      "status": "all 200",
+      "axeViolations": 0,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "mobileOverflow": 0
+    },
+    "fuelingLive": "90 minutes at 25 g per serving returns 45–90 g total and 2–4 servings; 0 console errors.",
+    "searchLive": [
+      "过度训练 -> learn.paobu.org/articles/load-and-overtraining/",
+      "补给计划 -> tools.paobu.org/tools/fueling-planner/",
+      "越野跑 9700 米爬升 -> paobu.org/routes/utmb/",
+      "carbon plate -> learn.paobu.org/en/articles/shoe-technology/"
+    ],
+    "crossSiteNavigation": "paobu.org -> learn.paobu.org -> tools.paobu.org -> paobu.org header navigation available; direct page loads have no console errors or failed requests.",
+    "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200."
+  },
+  "oldRepository": {
+    "name": "www",
+    "status": "deleted",
+    "reason": "Legacy static site that previously served paobu.org",
+    "backup": "reference/legacy/www-github-backup-2026-10-27.tar.gz"
+  },
+  "workflows": {
+    "site-www": "success; Pages build now downloads the published core artifact instead of repacking it",
+    "site-knowledge": "success",
+    "site-tools": "success",
+    "bootstrapFailedRunsRemoved": true
+  },
+  "notes": [
+    "K1 added four bilingual knowledge articles; T1 added four browser-local tools and six cases. The live build publishes 56 entities / 112 bilingual versions.",
+    "The main-site Pages workflow now downloads the published core-v0.2.14 artifact and verifies its SHA-256, so the live manifest reports the same core hash as both subsites.",
+    "All three live manifests match the local release bundle siteBundleIds: 388cbeb0…, 1c65fd19…, b271663d….",
+    "The legacy paobuorg/www repository was backed up locally, its legacy Pages site was removed, and the repository was deleted after the new sites were verified.",
+    "Formal high-resolution imagery, real devices/readers, third-party EOX SLA, real Safari, remote rollback and independent professional review remain outside this deployment verification."
+  ]
+}
