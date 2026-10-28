@@ -38,19 +38,19 @@ Route close-ups use EOX Sentinel-2 cloudless public tiles, a no-key CORS-enabled
 
 ## Remote deployment status
 
-The six public repositories are under `paobuorg`; `@paobu/core@0.2.14` is published as a Release, and both subsites have `PAOBU_CORE_ARTIFACT_URL` / `PAOBU_CORE_SHA256`. The three Pages workflows completed successfully for the previous batch, and GitHub Pages serves:
+The six public repositories are under `paobuorg`; `@paobu/core@0.2.15` is published as a Release with SHA-256 `8e264510…`, and both subsites use its artifact URL and hash. The three Pages workflows completed successfully and GitHub Pages serves:
 
 - `https://paobu.org/`
 - `https://learn.paobu.org/`
 - `https://tools.paobu.org/`
 
-All three custom domains have approved certificates and HTTP redirects to HTTPS. The K1/T1 deployment is live: the three release manifests report core 0.2.14 at `1fcda15…`, content commits `0cd00cda…` / `a879da16…` / `4a8a3885…`, and siteBundleIds `388cbeb0…` / `1c65fd19…` / `b271663d…`, matching the local release bundle `a00bee5d…`. Eight new K1/T1 pages return 200 with 0 axe violations, 0 console errors, 0 failed requests and no mobile overflow; live search returns the new overtraining article, fueling tool, UTMB route and shoe-technology article; the fueling planner returns 45–90 g for 90 minutes at 25 g per serving.
+All three custom domains have approved certificates and HTTP redirects to HTTPS. The legal/content deployment is live: the three release manifests report core 0.2.15 at `8e264510…`, content commits `67a80ab…` / `5cfda73…` / `a423a45…`, and siteBundleIds `a8aa5d6e…` / `58a25c2a…` / `bbff0fe1…`, matching the local release bundle `c4d0e3fc…`. Six bilingual legal pages return 200 with 0 axe violations, 0 console errors, 0 failed requests and no mobile overflow; live article, tool and route pages carry legal notices and neutral author names. Live search still returns the overtraining article, fueling tool, UTMB route and shoe-technology article, and legal pages do not appear in search.
 
-The main-site Pages workflow was changed to download the published `core-v0.2.14` artifact and verify its SHA-256 instead of repacking, so the live main-site manifest reports the same core hash as both subsites.
+The main-site Pages workflow downloads the published `core-v0.2.15` artifact and verifies its SHA-256 instead of repacking, so the live main-site manifest reports the same core hash as both subsites. README/evidence-only commits are excluded from Pages rebuilds.
 
 Remaining remote caveats:
 
-1. A real remote rollback drill has not been performed. The earlier local artifact drill covered 0.2.11 → 0.2.10 → 0.2.11 and has not been repeated for 0.2.14.
+1. A real remote rollback drill has not been performed. The earlier local artifact drill covered 0.2.11 → 0.2.10 → 0.2.11 and has not been repeated for 0.2.15.
 2. Real screen readers, physical phones, real Safari, third-party EOX tile SLA and formal high-resolution imagery remain outside this deployment verification.
 
 ## Known limits
