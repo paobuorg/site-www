@@ -17,8 +17,8 @@ const forbidden = [
 ];
 
 test('published content carries CC BY 4.0 and no editorial-desk or AI-facing copy', () => {
-  assert.equal(content.allEntities.length, 76);
-  assert.equal(content.reviews.length, 152);
+  assert.equal(content.allEntities.length, 79);
+  assert.equal(content.reviews.length, 158);
   for (const entity of content.allEntities) {
     assert.equal(entity.license, 'CC-BY-4.0', entity.entityId);
     for (const translation of entity.translations) {
