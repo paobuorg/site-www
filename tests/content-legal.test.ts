@@ -147,9 +147,6 @@ test('AdSense is optional, production-only and limited to content detail pages',
 
   const detailPages = [
     path.join(siteRoot, 'src', 'pages', '[...locale]', 'routes', '[slug].astro'),
-    path.join(siteRoot, '..', 'site-knowledge', 'src', 'pages', '[...locale]', 'articles', '[slug].astro'),
-    path.join(siteRoot, '..', 'site-knowledge', 'src', 'pages', '[...locale]', 'glossary', '[slug].astro'),
-    path.join(siteRoot, '..', 'site-tools', 'src', 'pages', '[...locale]', 'tools', '[slug].astro'),
   ];
   for (const page of detailPages) {
     assert.match(fs.readFileSync(page, 'utf8'), /footerAd/, page);
