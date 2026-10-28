@@ -33,7 +33,11 @@ test('published content carries CC BY 4.0 and no editorial-desk or AI-facing cop
 });
 
 test('content repositories state CC BY 4.0 and the site code states MIT', () => {
-  for (const dir of [roots.routes, roots.knowledge, roots.tools]) {
+  const contentRoots = [roots.routes, roots.knowledge, roots.tools].filter(
+    (dir): dir is string => Boolean(dir),
+  );
+  assert.equal(contentRoots.length, 3);
+  for (const dir of contentRoots) {
     const licence = fs.readFileSync(path.join(dir, 'LICENSE'), 'utf8');
     assert.match(licence, /CC BY 4\.0/);
   }
