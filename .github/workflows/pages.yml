@@ -1,0 +1,117 @@
+name: Build and deploy site-www
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'README.md'
+      - 'README.en.md'
+      - 'evidence/**'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-site-www
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: '24'
+  PNPM_VERSION: '10.18.3'
+  PAOBU_REPOS_DIR: ${{ github.workspace }}/content-repos
+  PREVIEW_UNREVIEWED: '0'
+  PUBLIC_ADSENSE_CLIENT: ${{ vars.PUBLIC_ADSENSE_CLIENT }}
+  PUBLIC_ADSENSE_SLOT: ${{ vars.PUBLIC_ADSENSE_SLOT }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site-www
+        uses: actions/checkout@v4
+
+      - name: Checkout running-routes
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/running-routes
+          path: content-repos/running-routes
+          token: ${{ secrets.PAOBU_CONTENT_TOKEN || github.token }}
+
+      - name: Checkout running-knowledge
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/running-knowledge
+          path: content-repos/running-knowledge
+          token: ${{ secrets.PAOBU_CONTENT_TOKEN || github.token }}
+
+      - name: Checkout running-tools
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/running-tools
+          path: content-repos/running-tools
+          token: ${{ secrets.PAOBU_CONTENT_TOKEN || github.token }}
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate content
+        run: pnpm test:content
+
+      - name: Type check
+        run: pnpm check
+
+      - name: Unit tests
+        run: pnpm test
+
+      - name: Require published content
+        run: pnpm check:production
+
+      - name: Fetch published core artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(node -p "require('./packages/core/package.json').version")
+          mkdir -p core-dist
+          gh release download "core-v$VERSION" \
+            --pattern "paobu-core-$VERSION.tgz" \
+            --pattern "paobu-core-$VERSION.tgz.sha256" \
+            --pattern "core.lock.json" \
+            --dir core-dist
+          cd core-dist
+          sha256sum -c "paobu-core-$VERSION.tgz.sha256"
+
+      - name: Build static site
+        run: pnpm build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
