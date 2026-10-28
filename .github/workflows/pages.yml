@@ -74,8 +74,19 @@ jobs:
       - name: Require published content
         run: pnpm check:production
 
-      - name: Pack locked core
-        run: pnpm core:pack
+      - name: Fetch published core artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(node -p "require('./packages/core/package.json').version")
+          mkdir -p core-dist
+          gh release download "core-v$VERSION" \
+            --pattern "paobu-core-$VERSION.tgz" \
+            --pattern "paobu-core-$VERSION.tgz.sha256" \
+            --pattern "core.lock.json" \
+            --dir core-dist
+          cd core-dist
+          sha256sum -c "paobu-core-$VERSION.tgz.sha256"
 
       - name: Build static site
         run: pnpm build
