@@ -138,12 +138,12 @@ node scripts/content-lock.mjs --verify # 校验内容树未变化
 
 ## AdSense（已启用）
 
-AdSense 的站点验证选择 **AdSense 代码段**：它既完成验证，也是实际投放广告所必需的。`ads.txt` 是卖方授权文件，不是验证方式；生产构建会根据 `PUBLIC_ADSENSE_CLIENT` 自动生成根目录 `ads.txt`。核心同时在 `<head>` 输出 `google-adsense-account` 元标记作为辅助验证。
+AdSense 的站点验证建议选择 **元标记**：全站 `<head>` 静态输出 `google-adsense-account`；内容页同时加载代码段，生产构建会根据 `PUBLIC_ADSENSE_CLIENT` 自动生成根目录 `ads.txt`。首页为了地球性能，在地球稳定后延迟 8 秒加载 AdSense 脚本；搜索、404 和法律页不加载广告脚本。
 
 - 当前三站均使用发布商 `ca-pub-0088997035636558` 与广告单元 `1813332933`，`ads.txt` 已在三个域名根目录返回 200。
 - 广告只出现在页面底部、页脚上方：路线/文章/术语/工具详情、路线列表、知识首页/文章列表/主题/术语表、工具首页和关于页；搜索、404 与法律页不放广告。页脚会显示“广告”标识和隐私入口。
 - 统一使用手动响应式展示单元（`data-ad-format="auto"`、`data-full-width-responsive="true"`），未填充时自动隐藏；没有开启 Auto ads、锚定、插页或正文内广告。
-- 预览构建、缺少任一变量时不渲染广告；AdSense 脚本只在生产构建中出现。
+- 预览构建、缺少任一变量时不渲染广告；AdSense 脚本只在生产构建中出现。首页脚本延迟加载，内容页为低优先级异步加载。
 - 在 AdSense 后台关闭 Auto ads（尤其锚定、插页和页内自动广告），只保留手动展示广告单元，避免广告进入正文或悬浮遮挡。
 - EEA/UK/瑞士流量需要在 AdSense 的 Privacy & messaging 配置 Google 认证的同意管理平台；否则使用非个性化广告或暂停这些地区的广告。
 - 法律页的隐私段落会在 `PUBLIC_ADSENSE_CLIENT` 存在时切换为广告披露文本。当前线上已显示 AdSense 披露。

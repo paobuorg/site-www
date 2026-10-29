@@ -143,7 +143,7 @@ Choose the **AdSense code snippet** for site verification: it both verifies the 
 - All three sites currently use publisher `ca-pub-0088997035636558` and ad unit `1813332933`; `ads.txt` returns 200 at each domain root.
 - Ads appear only at the bottom of the page, above the footer, on route/article/glossary/tool detail pages, the routes list, the knowledge home/article list/topics/glossary pages, the tools home and the about page. Search, 404 and legal pages do not carry an ad unit. The footer shows an “Advertisement” label and a privacy link.
 - The unit is a manual responsive display unit (`data-ad-format="auto"`, `data-full-width-responsive="true"`); it hides itself when unfilled. Auto ads, anchor, vignette and in-article formats are not used.
-- Preview builds and builds missing either variable render no ad; the AdSense script appears only in production builds.
+- Preview builds and builds missing either variable render no ad; the AdSense script appears only in production builds. The home script is delayed; content pages load it asynchronously with low priority.
 - Disable Auto ads (especially anchor, vignette and in-page formats) in AdSense and keep only the manual display unit, so ads never enter the article body or float over content.
 - EEA/UK/Swiss traffic requires a Google-certified consent management platform configured under AdSense Privacy & messaging; otherwise use non-personalised ads or pause ads in those regions.
 - The legal privacy section switches to ad-disclosure text when `PUBLIC_ADSENSE_CLIENT` is set; the live legal pages now carry that disclosure.
