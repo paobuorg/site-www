@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T12:19:50.987Z",
+  "generatedAt": "2026-10-28T23:59:15.365Z",
   "browser": "Playwright Chromium 156.0.8078.4",
   "note": [
     "A hanging Worker and shortened 10s/30s timers simulate slow processing; no large real file is uploaded.",

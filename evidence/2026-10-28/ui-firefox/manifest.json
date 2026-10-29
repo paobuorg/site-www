@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T12:10:48.109Z",
+  "generatedAt": "2026-10-28T23:48:52.939Z",
   "matrix": {
     "pages": [
       "home",
@@ -64,7 +64,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=4791409149396786&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=4791409149396786&bg=!qaqlqsjNAAYraIq0C2g7AEcBe5WfOO3Eu2NkUOGD2Ei0gy6YR15r2sVcKkjlNOMI-9YLvp7yG7rxVBs91wHRH_alNQHuWNB3SRrOkcVuxsCa7m4C-Gq3GwIAAACzUgAAAARoAQd-ADZJjpOU0jUD5WB5fUD-JvlNYaAfHMOlEJ4mAA4OOpL1iYBJ-CxeQjTS92woCKNIeNb_1qK6IImZAoqJNSIglWvZADJuxKIJNdX30hOXbljJEOaTI1q08bot_KJfu5dTv7P1Flb5etXrrZJzBbJoDwA7vE9vMzSt5E0O1BR9Ni5ci4isMSDvMwbxjypkO30BaAi4hySLX6DBAflaBIaIdH12KmMHEN019MZra46OtXEVGK7mJylt1g2StYe6c1Y0UdRBFBL-AVLBc5yL3XpYKanMJ428-Y-tVVn-XOr_2VL9gIK7fGwdsQMfd_gET3lW8HW4GNr_rJsYQzGuEtxLX-YIEl8iyxCE2jyTZ-RXQ2LJY799lazUXhO5Gk23ZMNUW_IhTRdiyzNe_Eis4zvNMdIhuMmoQqUJSN0cz1v2QnUSq74O7nrSBamVzJgVVtqIY7Yey_WCOKKXjno1kCH5ZNeBlClpa_IOEN5B1NVA-g-n7_fLHb0fGV6ELsmOdqCrLNI5l5FYdGjsFnTVAfd1JqsunBcRCIUqk7VLQ5aeHQRsXsIZqed0ux2BRL4gvDCIrceUI34GWxLacZm2b1SCyP-RNsOjBFIPCJ8qHHNRBIYIVAQ4KCTYTlQvZgy4qDyqV5L_rwaNWZyN9wOryyrKLfgAY-Ln-WsmJ853HHzfgC9feDlyHfS4QVdadduuD0H0bwji59INc1_oXAKsYaGANOjfHGsPv6xun02psUSlK8ere4JEMxr4pv_018-gJqU0IAm9wMXJuWOpqHRBDi_Mfwkqgtaq0m41LLCakKnTZWoSznJFDekFKbXvbbgSm3KvIzytln3ZyZiD8885qt9aaAhuve_ehIApsyOWnpjMltDkZ4oqfeoYC_wp94Ww-cGOr9ofS0WijHg7UUT7fldcS-lsoAWe-MhOXlqIWoMGQxh9Y0dDDg NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 30,
@@ -103,7 +106,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=3644435739079276&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=3644435739079276&bg=!SkmlSSvNAAYraIq0C2g7AEcBe5WfOCmMS8RH58P4b0ruwTA1X23sfCfwJpPVyGoKlyi24P9MVX7FFAiCBWjdfK9LXr2IrJKz60eepnZKlJkg0SLKKo_XCQIAAACVUgAAAAVoAQd-ADaMAzWh0axDSWcmgs4TX_mYZBldbIwzF6cijkPOQJ_U6Yr3gaNYeVN7CTtNyktWh3aaqHNj_34KABPSBRTpJvlkqL0nVMmlY5olX057mQKU4yxKzIuupMPaP9whSPEKnxDX9O6rJbUn5Qa4WFE5aH1j9tczD4BWiivIjZQN-H-twPI65PCR2SYsF5qaP_xBZ7VmiaPNIWyiWczFMofrRbKN7l9pDMAULVMFLvMdyLEOIjnCPVbsZQTHt5-BetEiqltGpVay3J5xWjBx4tp4CqnLp42QTTvRL2diVPrWTCktuSmttAdr8_Dp6HiulcCoAEg4n9K34m4kkU8iGZ5Bye9JWEK837hv8JIsSJbp5grN2LbMUrVf_MA-hdeuqO4IRoQNvauuVrM9R3lCdIZMggRrlQby54WQwqXgr3e_d-Du9MVzBZERd_ZrRMzZwJwbGFmGZ-BM-taEdwcW3jjY8BSATwiFFdatKifxNvbcYes-gRsAFA90t8E_Gmjm4cZNjMKwKgNahyztlCP45iDdLT0YEUDV5rgvmI41jGM5U8utHorD9PvGVyMmUObL7fFVv2s_EB9P4XNGJ38M-snTf2gdJgnRtcrOGf_icBLQYyDdIzCqY0EBmp5DoVpV-VEW47-8s9i1LETNNib5D_lLhaUKmdJjFLRiiGoe4ldVBXVQY8BfWsJcTqK9TIpr-We9LJrEUoWFTdaGydgkMOkMwPdeQJrymB8VNq0Yj2Ticr4ClZk3KXX_Gi4jLD_6h4MOJyHSZhhIH30Qr2IWnMhHx1IqDN8bF4ve9dLTEESwyLfsfmvEtbCAjiUpU6C3joMuCyvLEOy6ctepxtjtYBj1AMrqpKq1a36NrCjyEUEcRYlv9XtLFi17e9VQtmjjsiBESP_Ls3wZL44Vp7zfiuDb5Z4y4ykJizvf256lW8Hm0uu3yVaYMXamuWxar_uvo8RoPeVLIwFo9ukweGaQ6TbDGHevBtJO NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 31,
@@ -142,7 +148,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=7702212221224294&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -220,7 +228,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=8247276842964246&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -259,7 +269,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=7253038147218426&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 30,
@@ -298,7 +310,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=7567371936558630&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=7567371936558630&bg=!fn2lfR_NAAYraIq0C2g7AEcBe5WfOL_LNmurGQ3aZEiluv-_smw3YIAN2rq1VeZEE88FP7LdLjsrJ9vRjfIpoIZDCDpSjm3Vr8SVsQHWEV4RsaaRM1BKVgIAAACLUgAAAANoAQd-ADa5kJ5Def5-o8eySY63CWexBry0O-xiUUz4tO_u3IImGGn8kg_Qxkw8meSqM2Wi1b8meyLwdaoKABceSFjyEHPGyQHImRfzX0ASShtjh4hCMJkCmegqOthZX9pBC-8q9zuXiiiJryFpOS_hZVDz96EIIZN694S8CL_Z8qcJgNSu5q32tTT1Y_QWGAc44vwaGgzSEKFeaGEpALlJNfejNnd4c-zPjIuxsVNtDmlNTHfY2nnNxrUHYf-LRmtpA4bnLttpQKUQWRsbfZHjdgRo4EWRtVtbv6Kdt1bM-lIzIqP691x07atO0ws7hIJswcdsBYLautQCy4b8s4et6laazjva0uH0bNCsrICbOQ7PrDiV_5R65EmCS4H4ejDqZcaz4Me_DQFi1jGuE6KI5iw8HRcGj1hlCuqhYlPX5NhXnqNX2oYVHv9_PNyj3e4eHlg6onm2VAtTwbzH0uzKn5vd6pPujPsq8LMBYurx9qkHWDflZwT39HixgkXTiBrkFW5b1bwJ10QcomdEEg9oU7RanUVASMdRq5QAQR4slAEUnzxnPNlLoI1Jb4V6mO1T1JyLlCclxlcFCL2q54mwieoTvFSRTeJs8h9gVxhkYwQpIdUH7ETUdFrQc7VTqu3-qVj2SeSXMpi3KJYNjb9udGXPlH8bTyyHa4jmbiRilTmWEmORmRp77DwnmGnNZH8WJvm8AvgYb2uV47UngKNQhvb66uUVMm7u1JFWBkbNxNT5Ao2-QAWW5VRJrdVOeb4VZ5YO1ekpcGOd2fzMQ3PPLCCIq_U5RpW7dpEgTiKXGKnxLajrU3161e9u_FWBR53IJMnqReLbDWVuHluKrJqtjsrwzBk0eSgr27z54f_ElFDl9_TY5haYKhR0uT2od7e3Y4Fe84jeuayfCaLS2nw_5QJZlb4MTqgzDNHNOstAlBif052E3TlFZ2_M7-RwCSJ-D3QVjiDWY2IXJHfVWhnIDo2hTpQw7-GYu9ifleE_MGGc NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 30,
@@ -337,7 +352,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=438359476320766&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=438359476320766&bg=!pqWlpcfNAAYraIq0C2g7AEcBe5WfOIvjEFMdp7b23NW8C0J47vZ-5ZKK7azx8JSTKKhk2k8V9Dtq9sAfA0QBGiVzVMQoszyP2_4xLqHvRPRf4Xq2K8He0gIAAAFbUgAAAANoAQd-ADaHtnH-FEij4sVpNfM2kWsSdg1GC-dE-KAMRZ6AjlmOXBtPgwoD6nJml_DuFAQomqgzsMLyptWZAoN4_lE_5MSYrxaqkbNNR_OZyZxtOWETuEdLBA7eXYNf7c5bkmUx5ySC1PqBU20v59_T_zZ6zM50MFjkpxAWOW_jCUBxINWf9XhuH6_b88Z6VsPl1GqSb1YM1aIa3Kd27VIqxZIh-ov0ooe5Pf-sjDrwJkiG5dENXhAki-MTgo2wU8svEwcglQ45dqXo9qAD4uDhP1KZd0g7r5S-4eeRMJHNIVYnoruC_wrk9kPkn0Gpc4SP16MVMhbLXV61yv1FupFOl-XKDFjEF_ADUksBvUiOhzpI5sWvra_p-IxoV9vfGkG_wt8TpevskkY5boyp8KLxCPXzAPM25aPl77vdjgBvL8sM-aV1nnoaCSQXhvXIDVMU106vrsedX5BHFQ7xyLVmESi_vminNnvFTrFexobkausfb22UQTP3kZQvSYhsZxCIfm-vqvfN5Em4mucrzbDcU__-brksteUM3yzX2vAp3ltitng4xR_wk4xbxU1RMvlsWybSfLXLetn5oDEdhIRcWrP1YVko5awkxkoYr6_UXGs6wkT8-1bRY316L8dUUaKXvuZdTbdntOPrwD7YfWfhF_UenIASjzbRu6fESBicTQQSQX_wMrWjQ0yG_yzqickGpC0sEA8vMbyxPm_7K7wg9wfDLdECS3TrYXFhjYVVz9eRa7UPjfhuuhVq4AYCJ7d3O855CxLj2Sy-XwpTo00Dnw_EI1Tx-Cw2u4gU_XvWzGVp6pVaNZIDPhn_4AIHjX7XKuheFmdNBBNpJl8_QmXkGjS8Zovm_oibq7bRe78QI6paAAACq1rx-Ulbuk0mJ8tsbRF1bFj6BYNhFglqbx7vIYg1KRp6IWAKaLYYLu5aSqqQ NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 31,
@@ -376,7 +394,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=4675638334881983&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -415,7 +435,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=7302376248024392&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -454,7 +476,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=3871523943516527&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -493,7 +517,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=5587250311396215&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 30,
@@ -532,7 +558,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=7338320224325473&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=7338320224325473&bg=!VlWlVTfNAAYraIq0C2g7AEcBe5WfOHE7PJsNgzTclyuXTQJBHVcSZkgaVjUvFxJtDf_WLIoQO0COlD3r-tg4h5hS6y09h5NTJgu0ZESNncd04qvBl3No4gIAAACQUgAAAAVoAQd-ADb-L33QwSkOxIR69OOhHRLXTxsgaA_ystr7hVdGxv0kklHP8rput0fD3qZU0f8b7yIwhgkXJd8KAB5DKmzXtqZ-b6Cy_H7FZQGRPISeAReg5l2xp7LcRxqZAojLXyQbjcD8sECnZfC6Fu3FF04xFXFjHXcNcPmJcmB3wcuUUOF-zFinm4J1ZMqRNmYhWr54Rrp0VNbIumr5ig8edoXuXmn4FuKOkJs17MmHJC14m-b4tIVqjtKO6y601qVdVCgUdT-onOHcnjbVnVCwSNBww7hFBiToHpk5W9xF0K4pw6t6BP6TyAp0lXMiccd_rYsTIAugV6G5DIRdDZwoZFgRSCTBm8ll0QOr-zg6_00-QWLaZkMgyNU4-4-66cd5JnjscONzrhn99Vlyxq9iKQJUoZmzRfiQyAMqMGimOwSwotleUVxgy9rr1P9EDUXAbUFqBau2s3E25jXT_d9K_0A44BSU5S3z0fnZiDQzVWrQIDxT-CcYrL59OXIK6rWu9rJHUP9jf1DbVbmaMacis0BwbNWAPp-7bHw_pAx1ppg3yI9tjxgbQTtTCBk7vKem3RXNXRy3SoKD71iBgaojwRsQFxZUyk-gv5r8-tWVbEeAS2L71FDJXkdNCKBZ0KMU4uUNaqccsEoJYC9U4Jvixw6JYXBY9hJSQdgrsacx88nB-YghPHVSsK9VTlUKVUgI9Zi3f3Yy48st41ukozu8BHWGhx6pahqSO3eBuCWykoYgOqEJTDr3PUPaCdG7qXtOaksrILUDSymVHyQrAlKxM1GK02bch3NtjJhNdVrExx0UamTnfciPy6oVJs3xWLENIHGiR-CTaUcUm7iE6ZRO9Z7oZoawX_tkjgGikJLQg4Uzf2Q8KndRDqL4q5apEggh8w99LySjorwYxHP-YHQNOZ2jFv7eHOfdlb38pcGhsqtwdmhJlXWzxv7kOkKGvY9tr6tA8s_YLEy74DfOAeeoN5irwVHIJgs NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 30,
@@ -571,7 +600,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=5065301906176601&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=5065301906176601&bg=!6eql6ojNAAYraIq0C2g7AEcBe5WfOEhEPqa3pL6Xasx61cGU7yxckVkfGs3koUfbO7dax65XAlTDr-au-iI6I_VsnCGLUXIzxVkbRnjQ2i4R7FMAImUkLgIAAAE2UgAAAAVoAQd-ADbENrXoLx9_noCOwV8aB7jh73_6e9hXVl29UG1z2g-PzLnQKDZMV2mlrqbwc-r4WvxZkmh_PeiZApWRAv4-rA4YbuEJDPB5Kd_hN627tztd2D3nYCGct6z4AK857ezww5Q9uRGAcabXyz61OUIraFADWjFiFXfhLK_SKpKCMsV8y--I2Uqp_MFXwVW9M-bDGvLIODY8FAilIIuiui14ZTHEU7Mw2tfQmrowug0mtUEjPK3Brb7f4R0dYt61TQiMPPx7yd9rpSSEabLsq93f-4H91ig1rnJ-TmwY2Ok3vkXNXDd_raFSlJmYtYMoegAHXN7Imsm-QKfUPvfoCAC_QlNiOaMVgqoCFaLDyBrbz8PjPCGiYIC9FjPlV-K1KXnN6nfP4udj8a8zoCHAtsz-x6yUO3IKI2Rwqaqk9JWAsCEAohyrYHPW5PjoV_8LJrzkKDr3pHELTa71J8MVwGXLkH_yLVo7G-lNAhEQsrHB3eYuIux2Gtr99tjKO8e69RN7Aw1lal_MHIMLZ6a2nc5R4luJtEGnvN-f4LaBwvvxtmD5GVpJfRR-VoEqZ-ArnG8iX3K1nptv9l91phlXfK1MlOUM2lW9KHyq8Mym2c--ORkXeLJTupFYZgB6AUWJ84JST9M9mUh1b0DB8CcgshyN2qpQwhJ6Fz3FG-LFbqiadRsLVI1x9Z7i6BvxiqhMMd6_KVabsBWjrw7ApRy-uti_SKZNAgYG-C25iJ3Tw3Mf63djUTI_ehu4NzdlQ3Bw3e-apqU0az3d7td6dDJnwOt8V66VVhF1r5PZN2NG-sJbzQJbeexo9U5bE81cbm2pHyjvAhAGPbdFxaWGW5Q63kvZGo62F9B7YJpwQcEFWQ9y7OH9_VK0g-0JF9k--miTS5Q7CGpLSgmBhswio4ZvvC64pxoup5Sh2SFxOrtOPsRnbI20o0hN_vENTNRXyYs2vI01 NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 31,
@@ -610,7 +642,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=642838914708334&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -649,7 +683,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=5563869543923794&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -688,7 +724,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=7767847353600202&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -727,7 +765,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=5434249067237416&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 30,
@@ -766,7 +806,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=8852838172220117&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=8852838172220117&bg=!wcKlwqDNAAYraIq0C2g7AEcBe5WfOAvnRpo0S0jgj8Kftk18RlU5HP9k7iLiYt7R7iEXP1liAqTmfiy3o-mgFh-QnANJ7UmGSAXq2hQ4VJrolJjqPoDyYAIAAACfUgAAAAZoAQd-ADYHaZMaqBgGfC33ixxly0xafGpV5i0Sqm6h7OkfQbkY2bwDcNcVwkep6sHB7e9t0MLht8GhV98KAFzwd69fJyHsI6ZeaAHBnuiUdh7JR8591GaiBmvhOQ7ELvfUImq4uw-5Ils5dRziQNwj4ci9NurDz868y_4ad0lThKwZ4-dwoT09xXNEKd9DaSsj8CiLc44LoMpo35kCjFMz4PSmrGGXlibvGLmoUl8nm1Ni_EYrbDLyUelbe1Hsez6TJ8uc_HemOpNR_Br6AkoqDBXeiZL0W1mbDOtXljhgNOLxAWZCLHmtkQOPW6rr0xYHEOXYS7W8kEa0_MUuUfoJe3rKQkieG7v3mjlSJPdE2HU32zjHt5-G6uzz0MoehyQlbL-PAq19DCHhhyv-ZDsIL2pFjHnmfg5I_78L53Zzz1rcJani7whCrrxLyh1e0HVRIFAmhVNW7INtE89QdMQPhfQgCiHEjMyU5-r2B7EhUTjLXg5S9guQ-5Gdrz9WMgY995DFddrXju3SYPeIG1cqDS5vevlJ9muGTpuwzmjFFOa9YbJWQJJWIbT5VSJu9RiTPTwSCBM4C72WgzkIGbK_HgUpE-Oove0_DomEeHb0hWm9gsj-gAA_FZ43y6ZbNTyAudRIINP150Lfpo5N2jcvHof7jbDMtoyRTGln4WNlaHvtPvwic8Nh4JzX5ZhKSFaDXB6XrPJ8245zUd_Ckng2JEx-DNrkxCc9lI-Cue25k-hn0xIyVUWB7nW002Dlif7VooYZnHV3euvd51LcE7jHnvhQug0d_v4P-YWbL2Yhogy4bDN0uGaLFwr67oUR-cf_ak2-iQhsXkNaoHFGOuCH7FLUBVvMFHEj0Ih48QprlctwBaxcBb2wSsf6pNpaB10E_lKWcyetdPT0IXVYYeevJ7ykrAm4AawNyWQXSy3g7FhH9x-OlCuXevuTWjwI-ke5lU--Uyi93ZOqamtZYJUNaoCm5kgD9vMrwsTQ34hkw7g5L7R_SHP7bewtvkx4p1xWdtDCTCxHKOpLpuOucgH-U8E64hHC2H37DLtLResAnJhaO6uFp1OvPBQ NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 30,
@@ -805,7 +848,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=6228469095901404&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=6228469095901404&bg=!o6CloMLNAAYraIq0C2g7AEcBe5WfOOtXBt8n7qD4vZz0UH8YvcAqKDopd1T8L-uo-oS5IitfspS_AjJ0pcnycqpqM8J9QXhR84OwCZcVbd2AEmy8tHYdhAIAAADnUgAAAANoAQd-ADZvrecOFTcIQFcWFTy-efxmsi3M6moj7guu-1Q-8wLN-61D93N2eKBttRwKCoqYI6pnPs_EaRKZAoz-WS5Yaktvc7NVBgzMAwmLYazaN1GE37xDHKujbC2CpD6wrNzpnQnQBEOO4GqQF3vlFY0W4xBgRlG9OUcugWjgiGkcWHb3dMfJpYrfS2YTOnBU5nl6A8iG3u96pB55Wz7gyvPSamhpxzoKTne10XhOnRDDXdm4nsSxUmGAPOqMm8bM-NFPucrEyR41gGrFyKycFmu1sRWX_ELjIF_kKToYQjdOOB3nrNRp9Uxy5ji0RM2sbrBBb-H7WbadbmAftYPe7vhctXH4ZgxPFHNTvDCQ-aZdH12y4mDfnh1_k44_1oVqNbK0jaZaZBn3Tm4eG4BpaEMJZlkEoZjn9O6IbyaUyM64TIVL3QZKcwWELQ5bEujOJaKxkkx_kLFwMNgEhzTeOY8bUHwVIXm4PNhygJvsc7ZEiCyYraL1-XUHArGBAXxPqt-A3xx3R157KGz6-QqJuxZNxrd41nhMq6DRqwN5n19_g3iXShd7Boal59M1yG1pFUyhwRtEHEfPmsDhlM7_nle7QSi6RfENpIloMTNuqpB9DsiX9vIahNEu_3Jz__YQhVyAo93-18P3jJ7UjLX5btEkS2wTZlE46OIWR3y8uoMNiORdDcgyAIuUh_NqhkXv4PdoeVjFZGOOMHum5iDbgdxJzNsCgXij4vjIF1Q-9J0pWtcVKErXwCawAW71fnVvSF_KuE-jvUepfX461-7a6RojWz7S_W9yeLlrw9D8s0Q9pn-ILJGNoiOnkKjCt8NH3jpeN4cWEuDAU3udurGUVM7YAA1d9eWIkliFRnZVa68BYiedzLlNCzoSujtR5w2_7DsDXcswS-TmxcoaldroZ3PAKm2lZcBWTlC6e58KbZjUtOogLGu7wvQ3 NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 31,
@@ -922,7 +968,9 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=39046991284325&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1000,7 +1048,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=1304141214826804&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=1304141214826804&bg=!4OOl44HNAAYraIq0C2g7AEcBe5WfOJceFtijMEP_bkjJYpDxoDXKNl-wBTwUd3kSsaCFDXS6UHcFdtCn0R_XPt3oDtblxR5WA3G9vHDzta4mjTuN8LAl3AIAAACSUgAAAARoAQd-ADaMNanEQ8fOaDAma1iVscrNDEX7V6JU2TyKCmg5Qh_Gh9SfE8JtvZTrLYBfrnqcLHixjQ5BgBaZApZ1Thr6PcACi5SEQxjuW4fLXdGwJ8U4EW-UWHPw3-nyZ9ZCTCj_E12XfgZwG6YDGeY63zTYDlAoc7HI3meNbmdkn_bnn7cHLc94dLHGlIm_7_u6v7uek2NlFpqTIa2WrfZNdADTUir2qYcJohcA59wcVfdoUPtFPw_Wc1sFrkspJho_OQWikUUjAp4Fql6tRO7kbWp9jF0DIoSKbSPUIenCi36H8Qj4BeeHp13PLtIgZxhPgdvmPkzr4cpThOFQbhGSrqi6eYtcmEfOrZrI_0bHXKvXegKS8y6f39ThfNpxp3iYKW-LlvjnXqcvo76f7gjnhrr3Cpu9SqNfICcjjbAqUM2oz7DdHKHrJ53b8DrfiesExSL2zz8NvuSA8xNKAinMzLA6JszojnJxu8paspuawoxAL_w4_LXYNg89u5UX0ucZqg_AXXfnJnNppoSVQuBiXX27akhRcIUHH6FwGN73kW7EohTnHZke7OhhAiZV1FQCxrF14ZzNANFAYc5l6MIpQTQV5Mrwk3B7xou7YiWJu__tcE5tFlLGFWwZvQjN4E6iAlIc73qo62ezhHsqE9-53nKVBCY1yuhC4ibdQibg_UZPHyZG-tlgnRjKm__BI-cIKu8WJqWfg3QjKu99NeA3FjeBc50KXNGy_Ryj6dtae174rm7l3iqS1NknAaI0u7I_hKZoG71n7dUme4kwWMUWum4pBSSGOFPhEUg2YlCgNAwPIWddwbyrTrGkzYtG4-ipbxiJmIbInv_Phv9iiOogbtRFERm3By0jipkB-PY0ZMVv5UFLrviBHdK7dehEnzx8iFTEHs85nujSAOb074zvVMgdR-i-w4zVf0_Y8On_j0PgkvNx07p-I89qylFkO--l02SGCQ NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 28,
@@ -1039,7 +1091,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=1188900466108256&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=1188900466108256&bg=!IiGlIUPNAAYraIq0C2g7AEcBe5WfOPgx7Hg1YnW79qNI1JySSegpBqvgeFffcEIzRyp84X61kGTC-w0ENwPN5S4OvOqf62AY8VvI2JvX1fU5dYhlkdxX8wIAAABdUgAAAANoAQd-ADaiNlZB0nNTdfvOdWEK1wBM9w-LToRyqxc_zWUlqRKJ-bz6y7n0tV-Ic7927vdd1Ybj-Hf3fmcKADBONW9qMshsLI5Wo0kH-uIbLvxKB3ts02HcNRBO74AiAZldtdACE_o1y8X-YiBdpmqZAorPTCvu3b9ahSJhttYwRyLeeNiHnw5Zo3RUrZ7i9qaIvFnH1P7k3_Bua3Hhx9-wyMPeu_qS77hRSgbvChgCEK7728L6TlE1qQg-iBKs9AdLWNuzse2WYDrJj2ZprlTiGAbpdbjoDqBXq1tVJDdIdgYxVrJ7-2YsokQvf3tPLXd3jePkStv9d1Hj2dG9Oo1oKSqZrMxivyRvtr6u0PV7pLeXtPaH3r9CvlzRzLb4wdvFd59xUnFfddxYpOZIU35aQ6OAtQWWL08CDja0KxLZxFvPYD0KUd3T-XEfHwfpE368iH3qd4j3sFhtQjDiyr6kJvQutAUT0EEkPw7Subz8scLTPlrzkJodlfOVhTtH7ETpHYr_jLVJ_Jv480GIW2dxuY8Ug2yUn6ehNiv0kY-0X5IyFexc0l62zuc2XbqcFZsJivZx-p3ZrDJyJQ6CBC8lHqprfLZXIzKOzDbBg_69myfwCagdtDOl_34qAu6OSGH6qxcNu2iTGX_Z2Y87dSMXrrTvMUTbNf8qrynIm9XYjA94QuIMt30UWvr21Pzm3DE5cL1cPUF6J5M8K0PFeM32qTOSf5PofhuJ2Z8myjV_f0VVy6nkto-VhgLArIKFbK5Kx6o586UOsNnP6rIUWImHFPwBYp-aEELgYvN7PWgSQ7EMjfj2Po_eARuqZLYhnZKgW-V-zPRLzW6weK7HOypH4_BNwrPz7AeSIOCnzlRyZsMxaEQIGBra4yrEFsyQGjxFgur8HPTSUwJOi4JoAsZxYSvLuP-5obTygdeVk_Dp1nRzzP08Z5ftKcLYZuGc9Z6lQ0KFkhYiCYXPhbNJ12JbO-T6BpUuS9mtGoX4bLB_OVVbJa3PRo4_DN1Wzw NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 25,
@@ -1078,7 +1134,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=153252874451145&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1117,7 +1176,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=5350105431561613&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 24,
@@ -1156,7 +1218,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=820722188507931&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1195,7 +1260,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=8055032395318749&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 27,
@@ -1234,7 +1302,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=771056868705963&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=771056868705963&bg=!tLelt9XNAAYraIq0C2g7AEcBe5WfONlWr0e6JWXjrpLsq2lo2ImDZeeq5kmyefOtOa8FHtxDQzHA5FRhtuXSpXDpXzcYr1enWeEu5RM5p-n0MQb4xOXHDAIAAACIUgAAAARoAQd-ADboE0zTmaEH8WvO06fwuBr-XWCiLufJFlDmc_vyn6Y62vmiW_lB9Ox3ipMvgklWOCE7u1TYGAYKAFOm2N6t2GenmjBQ3U0Z4lsl4LZCwblMQoOsnQbFnfZOWgzF0ttk3CWsq2nPEROdHXfOlfJOit-jL-t1u-EcdUDcDI0qnEGK6v5FPxuIENZlXoXMg5kCjyafke-ECvqSFIyNiAx-YW5EYEEhnHXQikjyzZrySR_Dl20YVqaT2h6nlBfT-MwzMtfRy7tG9WdM3_SGKTsTjnE8uWza7RhwA8n6sfr_u2_D8PomXTL0767KN7Z4xWKiBOaXQY3MPVIbwwqyhsfmDA7CZ9c5-R5LH5BV4tNm7muWkMG0n6gyiIPj7usyEC2joKHAFAOBce9sHiC9PY_T86nHfDvOTr3JglAaDjGgZQgnba3sRFRUgVCHcJYTeXcwuU-T9uGm_vDi1zOqSHl5oSz7Hku7-CcEkPhg7pyM6LMxbhLA-hd4rZvX9I750dDRR9lltzZkZDfLml6c0H1nTGPkV3Oo3V01ABRDqdGBRYor8_ejGnPdSGhwsICBkiFSd03nP_8tpOix2dSN9-lykeZqijz1rVWeRFw_pSK0fUjTSmoGJT_LX_q6YEme4FaIapK2-X8MVXhqXcsocis1tqSj2YTnZbbRopIJ5N3aklAcFSYzkqCJNeCNujw4YRaoTwq8kbfwKSJpy_npNSmnastUUzb_ONHtJcgWTPKTKk3w94Dk8uR6HhiX5zjgo1BFl3PMJxTV1Y74Ac21zJbaTmHgnOfsgoRzrMg4KqQT79kbkict_GOvGInCuG9V3EJMCluxvI45zWoMUVGxtF3DN95JA6UzlIKl4tTPRWgVUdGVJbH3mHyzEeW5MRXGhJ2IUv6qRQe7RZLMQ_KFXyRr8FyijK6Mq6_nP16wETqMtqJRQBfevV0axAwz5saT8I6HqgSOsreJYmKHDt-Pb8NR2DpeQl_m1Izw9IqExB3uXJm8keBeNCX8oBGDquk4qQ50-oCa0wdd8VfFo8YH6o0soZ5jJ6n7OqqwuaCVOaMa0LE NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 28,
@@ -1273,7 +1345,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=761774002512755&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=761774002512755&bg=!09Cl0LLNAAYraIq0C2g7AEcBe5WfOA_55Gq2v2VY6trAZ7cXOlTrMhBCbkTYhE2_JCKFQvIYPVtPjFG3StYuQwDu81xFKcZypP3YZaxwxoIYb3nr8qxG7wIAAABqUgAAAARoAQd-ADbRsIfUF7b6j3W9LxkwPgDJo5UG7KlELfiuWkodNz-5ndMjlmirbgA1kH2uJmlCiodKXywfhjiZAoKj6xmTs7YjXoNrec8EgUF266Sb16CLvBTsLhhXUJA0gylgQcSzVnQMmfqEeSMI6ypiKqVco5L4RyPWmDUM8xL6D-cz5FewXzKgu3mAZjVoBX1LQt0nwNGD4BP2yrdsPbZy1-b7k7wXqrprsElaZYuzYhP4vslfgsoAjmVNRF3IHgoeg_732yOyRW0Fpat2sik9iusLWTcs5cdnQ_z6ZBQH0WARGsl9Mk_eFShfoFT5aylohqmY6I5BNBhcOtX5GcthORRJkizfPykF5HHoq7AYcmCpQ_vOpTW_FtENjOCGmNnxHJXo5jS-b5dO3EobMhCEO8ylNwbp045Ke01OJ3tUxlCCgZiUpcCZIFxLQaHP5PaNVJ4hB2YktX1nyy0q60eTjcqvc5BKQV-kxipKerODFuqy83TvrJ0av4CitTNpDS4k_eUJFEs8Bf-EarpGDaygMhSsdbEVy2_uHky7s_sF-hbcI84eGk2KDnyoXRxW6p-I3oSxyV7x-gQoQu6qZ7feCzrKn0JAy1g0yTeiQ-jszzeqC4SDVtELO8etJTSO6je1a_BrJccPGR5fnt-SywzvE3fl8g48ctaoEeVR9trSmxgK0s85OKp3HLx9Yc_P5B9Rk1UKS_Z8ertfPK-qDQt6F7GLMANpU14U8w6Y73oBRMKQ4XNyzzvrlWIvVW35xrt5ThWYQcSc-24ENOY4k6z4-IS4AnQDTFhnRiZ8kXE8312ZQRwtU2mS-5h9WpZ8gB8beTbHf_RPfxM6Pq6iuCIh66Dk53sP0Jty6uxKCBda9UpctLspOhhfPSustprtXIlf8v2RkZXzNW2QiJgx8DWm4FPBNHV_XUPhMn9jZ83X2bA NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 25,
@@ -1312,7 +1388,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=8819218156544609&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1351,7 +1430,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=6486308327511660&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 24,
@@ -1390,7 +1472,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=A&cls=skip-link&ign=false&pw=390&ph=844&x=195&y=38 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=4289655114983060&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1429,7 +1515,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=A&cls=skip-link&ign=false&pw=390&ph=844&x=195&y=0 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=8753077842781113&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 27,
@@ -1468,7 +1558,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261027&jk=2318923693477400&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261027&jk=2318923693477400&bg=!MjGlMVPNAAYraIq0C2g7AEcBe5WfOBTkJlzsGwvTyxneM3fEzKFGzvz7hBB5qUykCKunm_vzwPdvKMoTEnTIRp9spcItx3OjesjrwJRS-gK43neHL7VSTAIAAAJSUgAAAANoAQd-ADbRiqimpE1qYkK88RBzQZ4_re_uJnRnVqJ3lqCniVOoWH6FpkWPVHBNYVJAnFj46WAP4JSTWziZApk5OYDhEjixy14jDfR98evoKEiqqhmLVJY2vBEvzIqKxdEJb5qYdpGO3cMgvNIhD96g9Rj7xot0i23GL2sgZ4FM6AVbx1malre1YIzcm8TGt90q9dP3igB8klVzSHKMaHKs7NaNyuX0hV9qAn5MzYe5DVhOG8JgWRwG_sQR5_efctx_KS27vXO36jGGDc6xo1NrC-p1rOXhawHI2I0sIA6poKPsuOqc97UGjN8yZvxmIjMaLVbMjnHQoZLWcFVlAVNsdKI6Uaw2rtzEGXBCP4oURAzZagodKFXbYfRVjltaZlVTUsUIu2wUwZG8hZu923r9iNAOywb1JTwzhXi_FD9uSSa3CcAoT5DIV4gfEVIzSxngqEdD8EccYJ8e8_1OsUqYA4edJN2uAxc-sWg57kX4y78a44iMcaHlv9SZcAgZneDNhlrHbZmkkebXsxUEVrAyMbfThYnLnEA2BYzh1bJrg_K612_kZoUgf26qhD5UYIPzgFrsadyMHYy2cbu6I0tFsvhS5KF8ox-2vVtf7Gy5MtqDLyCqxnCkYw_WThm0lGUj1APxJAOQvJcO6VSPj1PetyDliYAWSGtH6uD8GVinYeSXNlaLBnP7kyZbsjU_qKuJ0gkRy-wvHuUHKt5BkNXVbIJ3Y11QX4FxPaInzMivTIpgCIE1rL842r9VxKRL6Y21_W4fpqj2Cw8fbHo7NTgov1dfGJ4kNcCew1VSltB8WmMWhKUjBw-64Wxfyk3fxBTaF0y4-zHxxurNwSe8OR12xh52t2VtLwGw2WIlLzef__XCRsHgFePcKegkrM7ojCuBFP_m6grD0NHDB_ZLVO3zRiQoQJ0WAnQuA-EE34j6G1-k9zbWRRm5ySuYWilnwdnr-JnuDr-B7g NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 28,
@@ -1507,7 +1601,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261027&jk=8807485879781071&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261027&jk=8807485879781071&bg=!MjGlMVPNAAYraIq0C2g7AEcBe5WfOARMLpukeOIcLriCsUFVsFc2Z-JJdWhYaGT3wS-jJOsWXhdUyT1Wai-p2wVmVmOgwOKzKElOIB3ODFsHzaU1GImkfwIAAAERUgAAAARoAQd-ADZ9PiTUo7Z8WRgZZfiQgT_5njh8eVGwxltCixBEJyduM29Cv2EDUrsWdEdacXqU3bvNRBoeN0eZAozbC0FwYUaoIfr_IpH4FWAkz8twFUMWZRHG973_EXJEcyoEWgAb3eP-_ipi3UHdyArPu8IzjSyfj_n98pu_7L-1fGcfutpmFzJt_xl7UVUBMPpSNuVwieC8hxn3fALS3d0Dq4ZhCL9n52HY7FjsM0riCjh88dW2cJxoQ_q5rGcFasYlmN2LUPcqygrEzKBzkX313zF1hHBLlzlsEIKLEF-Zno-wbrVvh5uOMLsG4ovTfpDQCxWkjRQHVr6PNrWnYnaCMAW8axnVQg10F279l-TFbVww-EKsMRUdJKbjaJE_41U5juxuSWIhoGu8A3XHiO4w_yGQwbRGH5b9MAXJ5CJZeGyGBVal6LQUPzHUQTp1TiWct3p8swJ5wRp3Xk9B5CxYYv67tHzZuNxTYLD-7FLwadO9kXPpXLlN5H5ULZ7LH60dAliVGk_y6GKH0b2i6D85jyici8mDWhR0fw-ChgNihqsYY-sv7HJc_dUliXx5tnm4sCxomO3ibvL123nMHbjjRWR6SszRBpPcKRpPUqzAFPxRo_yYXPCXIIBQNxYt1DKg1e_Jz5Os-Ijb-JeIFFeO0NEJ7VhYy1ceAI5h9qvmrGTk3Nios1CD6WE3ACh2EgaJyvXsNFVRZpt7TqD5WQudOacfALSe9y0-D1O9wI2QbQ06LdqRXCXzaD8vNppmwdvpgZXUKcFhuZ6ozDA510mSuX-kxVKFjutY7O4pAPNm9obMaO_KTZJlQI7xY1g1XT31jxycK8RKZ1LzJGAY_mQuumTnD3B69Y_VHB2b7WydbPfIY0vF9egPXJvXkOgcK8uK71VPL-ikVz-oeLUtdljH1C4skvQPQQf73aiuvkvU2j-AxYPll5cm2Nqm NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 25,
@@ -1546,7 +1644,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261027&jk=799096949030240&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1585,7 +1686,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261027&jk=1149875524138571&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 24,
@@ -1624,7 +1728,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261027&jk=3694143389949624&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1663,7 +1770,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261027&jk=2276454731143374&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 27,
@@ -1702,7 +1812,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=454420387480886&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=454420387480886&bg=!kZKlkvDNAAYraIq0C2g7AEcBe5WfOO4irwhtZpE17PSHwfZA_-FsZFgkyjGnlLAZDIp5xHCxv791HNrBEIM6EvFk7qHlxWP8pFnOj8K6hYf6TbT8SES8BQIAAACeUgAAAANoAQd-ADbRArSNxdk8z52BLICem8_Mm_WbyCN_0bnAzbswmBXYAk5ojP_80eYeaQXPla5CscsoSdYP6SWZAoclBTIS6ZWdLEp8OH5BUDfhBIYOVO86eGrZ12amhlJd9Dnp7Vp-RmsMPmm33AMkX4n_oPKFrIPmf_9ncLVoGECmRlF2IkOdmhpvdE65qr5CkpOqhca90oti1jYf65uujt5g8dCKXyxfOn97NnpRJAorxKj99IJpvmlWNvoio8oAhW3BmW7yu6BOuThHXOmh2YBP_GseIa4VvUn3v9_EA4_KD12xouwo0UZ7252YIJ0SUiYpBCvC3GjDzJjivsWyRkxt91_CLngiRCHI2uwLgzASb3sRrgXOosfWN9Bo2oeNnwti9hD3fXM6mkDMlaNFGCjW9vq7iMr5Jwnu_TLMVH67yM6F7fmFIOpLMwpQIoIjh0fwRCozwVSvNvWatKz-yq46ga2kSimrdbjTFT6HAl-HYPDLCvHZdszMHbvdGRXn7slDmbVBQlx46ghgrBIr2VlvuI2g8_WTORmFGeeKYWDOB7C3oh6TgesvLe0nHcnUB2YsfkUCVL8daD1AgRZ-bHMj6_h3WU_bEwyi9bv7sMIkzuk7sk5-SJLm42o93rvlObxchp_8sgeirzlemLgkH2zOGrBe5_u2VTs03VHShV5cV1yHjR7Xu8z93E0mAiITfI7HJJiwp2CTobrW4guGkIIcr6-_R1wcklXC0ZyxL95jUL69psvo9NmGj4oB7jHLpHBOFgd9CSd9IADTu1Su1IBp44B1HdcEO3Y6_0RJQTr3NJ5uQIHOjRU4G3szqM1beVB53IvMsilcPNNVRbwGQRcVvgid6sm42bdcmrt0AKfLjoTZCZQE2guD2BVn71w1XPmWGqMvMAhTEort3lNm4O-TaZLzoSAvn05tYHa9GAx9VTDcaDojrQ NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 28,
@@ -1741,7 +1855,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=5685861192925393&rc= NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=5685861192925393&bg=!7-yl7I7NAAYraIq0C2g7AEcBe5WfOBBjAzAtxFpEQuVXAVooN2C2qTGgW1KKRKRZKLVUFgdz78Mg_BfYyQfGE_E8ToP_06zvL2_emI04QlchiDMVKsiCjAIAAAB0UgAAAAJoAQd-ADZmkws_iJxzDdQe4APwOt57bos7-P1GaYK3K0QVJQw9K9znZriS7bYylD0HmTWRy_uIo_D-wN0KADO1NfAaFMZ3Mc9dxTT0pOzIEohrjcUSu89Llznu7eKsjE0--K5OYpuWkETQ8HPgbcQAGX2ZAo9FvSoXJuh6Bld9YsBGwQV_hG1y8Woy0PRUXwIA_yHMTe8HTdLfPE-wN4EEK0QVIs9EFD_z4v6mFQsdZ5boNTN0MPEkpLiHfTasOJdim_0zVbOSs-fy9pe6AEZtfQZ_g6_XzlazHTshUINWBqd8TqJ30-kKrBAb1V0KZB07-tK2z_Avnh4aT8JpKEO8xaY4uTMhR4FO8bAjqfVDgz9dhAw90DfmaqhOzckGLAvX_coYLAC9p4nIzlQXcdZG_Ajroqc4FYIx2G-R0BiOfP_Cz9jCtdvXAEhYvssQxDYDgHxiqmZRQ23cn1wbxOKhO1WKeL92UZwWM1EiHVcCCPTfZw8KRjQcCW329w8YKSUmcP1RR9yp5tHrZ1uJvhYS-5VDHfVSgnxie5ETcSGn2AhEpaXHdNRVP4QVS_aa1F9Ub2a475nxSB9-p90kB-_i4PlfW3wuwk8hxRgMFpo1JWzqRxy3P0uGeIHf6AxLBIsDD4HodhwtzvNEPYFK7N-Zp8fvNIBqMF6WU_1yD0nFKjy2FW4dBjIyp8y1R3Hd1ehD5TEReLyZeM1-J5GBNKi_Xmtzp1mjAolyFCVu6-SOXuJzeNmY9odqalFcQlCzOOAPg_fkWY5ZVBzITZFRMFv-IMu6CIOdNrp1r3JmQZNLW06ICBjJdQx6AaJbko0NxilwmlUt-MSejIv_EM8lHWkaQLhQQ9JQx7JDUnDHARYwv2G5rCpyLQmDnNbmrJelrd9iBvECerHlZjqKtfk_1QnfKvmtTaTKUKA52EI7MqfD_22t56-eWSt1hLPAnPCfQZKFCGkA3r_VZt-zQjEInBBRlpB9L7INlXtKOorObkR7iweNERPD09hONQUwjrk_kDKZd7G8 NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 25,
@@ -1780,7 +1898,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=7118857361738589&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1819,7 +1940,10 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=5923684205522406&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 24,
@@ -1858,7 +1982,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=A&cls=skip-link&ign=false&pw=390&ph=844&x=195&y=0 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=8517763593242287&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 29,
@@ -1897,7 +2025,11 @@
         "overflowX": false
       },
       "consoleErrors": [],
-      "failedRequests": [],
+      "failedRequests": [
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=NAV&cls=bottom-nav&ign=false&pw=390&ph=844&x=195&y=768 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/gen_204?id=ach_evt&tn=A&cls=skip-link&ign=false&pw=390&ph=844&x=195&y=0 NS_ERROR_DOM_NETWORK_ERR",
+        "GET https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=8131151127997038&rc= NS_ERROR_DOM_NETWORK_ERR"
+      ],
       "axe": {
         "violations": [],
         "passes": 27,

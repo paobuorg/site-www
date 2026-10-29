@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T12:19:31.839Z",
+  "generatedAt": "2026-10-28T23:58:59.134Z",
   "browser": "Playwright Chromium 156.0.8078.4",
   "note": "Requires production builds (PREVIEW_UNREVIEWED=0); service workers are intentionally not registered on preview builds.",
   "results": [
@@ -12,10 +12,11 @@
       },
       "controlledAfterReload": true,
       "cachedBanner": true,
-      "cachedText": "离线副本 · 缓存于 2026-10-28 12:19:29 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n正在载入卫星地球…\n马拉松\n越野跑\n\n底图：NASA Blue Marble 卫星影像合成 · NASA\n",
+      "cachedText": "离线副本 · 缓存于 2026-10-28 23:58:55 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n正在载入卫星地球…\n马拉松\n越野跑\n\n底图：NASA Blue Marble 卫星影像合成 · NASA\n",
       "fallbackVisible": true,
       "fallbackText": "跑起来 · RUNUP\n\n当前离线\n\n当前页面没有可用的离线副本。恢复网络后可继续浏览；已访问过的页面可能仍可打开。\n\nYou are offline. This page has no cached copy. Reconnect to continue; previously visited pages may s",
       "consoleErrors": [
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
         "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
         "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
         "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
@@ -31,10 +32,12 @@
       },
       "controlledAfterReload": true,
       "cachedBanner": true,
-      "cachedText": "离线副本 · 缓存于 2026-10-28 12:19:30 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n知识\n跑步知识\n\n更科学地跑，更长久地跑\n\n围绕训练、恢复、营养与安全的常青知识。每篇正文都保留来源、适用",
+      "cachedText": "离线副本 · 缓存于 2026-10-28 23:58:56 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n知识\n跑步知识\n\n更科学地跑，更长久地跑\n\n围绕训练、恢复、营养与安全的常青知识。每篇正文都保留来源、适用",
       "fallbackVisible": true,
       "fallbackText": "跑起来 · RUNUP\n\n当前离线\n\n当前页面没有可用的离线副本。恢复网络后可继续浏览；已访问过的页面可能仍可打开。\n\nYou are offline. This page has no cached copy. Reconnect to continue; previously visited pages may s",
-      "consoleErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+      ],
       "pageErrors": []
     },
     {
@@ -46,10 +49,12 @@
       },
       "controlledAfterReload": true,
       "cachedBanner": true,
-      "cachedText": "离线副本 · 缓存于 2026-10-28 12:19:31 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n工具\n跑步工具\n\n算清楚，再出发\n\n配速、分段和轨迹计算都在浏览器本地完成。公式、舍入和独立算例随每个工具",
+      "cachedText": "离线副本 · 缓存于 2026-10-28 23:58:58 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n工具\n跑步工具\n\n算清楚，再出发\n\n配速、分段和轨迹计算都在浏览器本地完成。公式、舍入和独立算例随每个工具",
       "fallbackVisible": true,
       "fallbackText": "跑起来 · RUNUP\n\n当前离线\n\n当前页面没有可用的离线副本。恢复网络后可继续浏览；已访问过的页面可能仍可打开。\n\nYou are offline. This page has no cached copy. Reconnect to continue; previously visited pages may s",
-      "consoleErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+      ],
       "pageErrors": []
     }
   ],
@@ -74,7 +79,7 @@
     {
       "id": "routes-cached-home-offline",
       "pass": true,
-      "detail": "离线副本 · 缓存于 2026-10-28 12:19:29 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n正在载入卫星地球…\n马拉松\n越野跑\n\n底图：NASA Blue Marble 卫星影像合成 · NASA\n"
+      "detail": "离线副本 · 缓存于 2026-10-28 23:58:55 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n正在载入卫星地球…\n马拉松\n越野跑\n\n底图：NASA Blue Marble 卫星影像合成 · NASA\n"
     },
     {
       "id": "routes-uncached-offline-fallback",
@@ -90,7 +95,7 @@
       "id": "routes-no-unexpected-console-errors",
       "pass": true,
       "detail": {
-        "expectedOfflineNetworkErrors": 3,
+        "expectedOfflineNetworkErrors": 4,
         "unexpected": []
       }
     },
@@ -114,7 +119,7 @@
     {
       "id": "knowledge-cached-home-offline",
       "pass": true,
-      "detail": "离线副本 · 缓存于 2026-10-28 12:19:30 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n知识\n跑步知识\n\n更科学地跑，更长久地跑\n\n围绕训练、恢复、营养与安全的常青知识。每篇正文都保留来源、适用"
+      "detail": "离线副本 · 缓存于 2026-10-28 23:58:56 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n知识\n跑步知识\n\n更科学地跑，更长久地跑\n\n围绕训练、恢复、营养与安全的常青知识。每篇正文都保留来源、适用"
     },
     {
       "id": "knowledge-uncached-offline-fallback",
@@ -130,7 +135,7 @@
       "id": "knowledge-no-unexpected-console-errors",
       "pass": true,
       "detail": {
-        "expectedOfflineNetworkErrors": 0,
+        "expectedOfflineNetworkErrors": 1,
         "unexpected": []
       }
     },
@@ -154,7 +159,7 @@
     {
       "id": "tools-cached-home-offline",
       "pass": true,
-      "detail": "离线副本 · 缓存于 2026-10-28 12:19:31 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n工具\n跑步工具\n\n算清楚，再出发\n\n配速、分段和轨迹计算都在浏览器本地完成。公式、舍入和独立算例随每个工具"
+      "detail": "离线副本 · 缓存于 2026-10-28 23:58:58 UTC\n跳到主要内容\n跑起来\nRUNUP\n路线\n知识\n工具\n搜索\nEN\n工具\n跑步工具\n\n算清楚，再出发\n\n配速、分段和轨迹计算都在浏览器本地完成。公式、舍入和独立算例随每个工具"
     },
     {
       "id": "tools-uncached-offline-fallback",
@@ -170,7 +175,7 @@
       "id": "tools-no-unexpected-console-errors",
       "pass": true,
       "detail": {
-        "expectedOfflineNetworkErrors": 0,
+        "expectedOfflineNetworkErrors": 1,
         "unexpected": []
       }
     }

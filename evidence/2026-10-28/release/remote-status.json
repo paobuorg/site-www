@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T13:10:00Z",
+  "generatedAt": "2026-10-29T00:20:00Z",
   "account": "paobuorg",
   "repositories": [
     {
@@ -43,7 +43,7 @@
     }
   ],
   "releaseBundle": {
-    "bundleId": "510b233fa8db10125acc678bac5d219a24fa7832b2da5bb3031f65fb24ee344e",
+    "bundleId": "8d5a8a736f8c1780b5845678e847f714c78ef89bee3cc4966a0f8990a2fd5dca",
     "status": "local-build"
   },
   "contentRevision": {
@@ -53,23 +53,23 @@
     "running-tools": "db5aec2991de9a854a9a70354ef9e460712eefda"
   },
   "coreRelease": {
-    "tag": "core-v0.2.16",
-    "url": "https://github.com/paobuorg/site-www/releases/tag/core-v0.2.16",
+    "tag": "core-v0.2.18",
+    "url": "https://github.com/paobuorg/site-www/releases/tag/core-v0.2.18",
     "assets": [
-      "paobu-core-0.2.16.tgz",
-      "paobu-core-0.2.16.tgz.sha256",
+      "paobu-core-0.2.18.tgz",
+      "paobu-core-0.2.18.tgz.sha256",
       "core.lock.json"
     ],
-    "sha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2"
+    "sha256": "8aa7eed376c59ef91ffe5b2f8da4ed3cdeeee88c919db19e1954ebe2aa0f16f8"
   },
   "variables": {
     "site-knowledge": {
-      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.16/paobu-core-0.2.16.tgz",
-      "PAOBU_CORE_SHA256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2"
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.18/paobu-core-0.2.18.tgz",
+      "PAOBU_CORE_SHA256": "8aa7eed376c59ef91ffe5b2f8da4ed3cdeeee88c919db19e1954ebe2aa0f16f8"
     },
     "site-tools": {
-      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.16/paobu-core-0.2.16.tgz",
-      "PAOBU_CORE_SHA256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2"
+      "PAOBU_CORE_ARTIFACT_URL": "https://github.com/paobuorg/site-www/releases/download/core-v0.2.18/paobu-core-0.2.18.tgz",
+      "PAOBU_CORE_SHA256": "8aa7eed376c59ef91ffe5b2f8da4ed3cdeeee88c919db19e1954ebe2aa0f16f8"
     }
   },
   "pages": {
@@ -80,31 +80,31 @@
         "site": "main",
         "url": "https://paobu.org/",
         "status": "success",
-        "codeCommit": "940544ca73868450e03da6daa98c816aa5047c18",
-        "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
+        "codeCommit": "a206739c27fb42f11f9467bdff7eeafdcacb8fc3",
+        "coreSha256": "8aa7eed376c59ef91ffe5b2f8da4ed3cdeeee88c919db19e1954ebe2aa0f16f8",
         "build": {
           "htmlPages": 40,
           "searchRecords": 158,
           "sitemapUrls": 40
         },
-        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40694167832",
+        "workflowRun": "https://github.com/paobuorg/site-www/actions/runs/40793675976",
         "httpsEnforced": true,
         "certificate": "approved",
-        "siteBundleId": "12355d5ba681c8b40fef95e285b63d75585e7e3a5c815ed8eba13d7ba288ff3a"
+        "siteBundleId": "e77670a1bfb5a165f89b5dbda4fad6c285ca33b534e380b7a6b50395f6e84b90"
       },
       {
         "site": "knowledge",
         "url": "https://learn.paobu.org/",
         "status": "success",
-        "codeCommit": "6f998275ac179e88706aaaef2be240b554946fb7",
-        "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
-        "siteBundleId": "2a0a6dc1c2ba9f8f458d389e63c90558794f1092441bf5fc94bc1a9d386f1a56",
+        "codeCommit": "4d2d6cea20a3b93981392daf305404f4b6d9bc0d",
+        "coreSha256": "8aa7eed376c59ef91ffe5b2f8da4ed3cdeeee88c919db19e1954ebe2aa0f16f8",
+        "siteBundleId": "82fc81b1735ad8e58078172262c58cfbf851ac2af796c1a1924e5410bc8a38b6",
         "build": {
           "htmlPages": 130,
           "searchRecords": 102,
           "sitemapUrls": 130
         },
-        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40694191707",
+        "workflowRun": "https://github.com/paobuorg/site-knowledge/actions/runs/40793936160",
         "httpsEnforced": true,
         "certificate": "approved"
       },
@@ -112,23 +112,23 @@
         "site": "tools",
         "url": "https://tools.paobu.org/",
         "status": "success",
-        "codeCommit": "28af34035b23af53f8ba932f9b5831e5ca549889",
-        "coreSha256": "8b0e47ba5ba8c724a96697e5c8a9c527fce6faa9df1d11d5c1a5ec1504f680e2",
-        "siteBundleId": "168f558c9baaf597b8c67eacf6f21775c75020ece217bc199e755bd55281789d",
+        "codeCommit": "9c59463399785705b63ee62713b3a8dd9e7b727d",
+        "coreSha256": "8aa7eed376c59ef91ffe5b2f8da4ed3cdeeee88c919db19e1954ebe2aa0f16f8",
+        "siteBundleId": "b6696aee08fff321d5e058ed645468e3ddf1720f5c6d167eb404676b87252fe0",
         "build": {
           "htmlPages": 28,
           "searchRecords": 24,
           "sitemapUrls": 28
         },
-        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40694202393",
+        "workflowRun": "https://github.com/paobuorg/site-tools/actions/runs/40793947291",
         "httpsEnforced": true,
         "certificate": "approved"
       }
     ]
   },
   "liveVerification": {
-    "bundleConsistency": "All three live release manifests match local release bundle 510b233f…, core 0.2.16 at 8b0e47ba… and content commits a9316c26… / 015a4c71… / db5aec29….",
-    "coreArtifact": "The published core-v0.2.16 asset was downloaded through the GitHub API and its SHA-256 recomputed as 8b0e47ba…; child pnpm integrity and core.lock.json use the same asset.",
+    "bundleConsistency": "All three live release manifests match local release bundle 8d5a8a73…, core 0.2.18 at 8aa7eed3… and content commits a9316c26… / 015a4c71… / db5aec29….",
+    "coreArtifact": "The published core-v0.2.18 asset was downloaded through the GitHub API and its SHA-256 recomputed as 8aa7eed3…; child pnpm integrity and core.lock.json use the same asset.",
     "brand": "All three live home pages render 跑起来 / RUNUP with the Douke mark. Production HTML contains no 跑地图 / RunMap strings.",
     "byline": "Article bylines read 跑起来编辑部 / RunUp Editorial; no AI-assisted or editorial-desk wording is rendered.",
     "adsense": "Active on all three sites with publisher ca-pub-0088997035636558 and slot 1813332933. /ads.txt returns 200 with the correct DIRECT line; the code snippet and google-adsense-account meta tag are present. Ad units are on content/detail pages and excluded from search, 404 and legal pages. A local-network Playwright run returned data-ad-status=unfilled with no console errors or overflow; fill depends on AdSense review, unit status and region.",
@@ -148,7 +148,9 @@
     },
     "pwa": "All three live manifest.webmanifest files use start_url \"/\", scope \"/\" and include 192/512/maskable PNG icons.",
     "https": "All three custom domains return HTTP 301 to HTTPS and HTTPS 200.",
-    "checkedAt": "2026-10-28T12:45:00Z"
+    "checkedAt": "2026-10-28T12:45:00Z",
+    "seo": "All 210 indexable pages pass the metadata audit: one H1, canonical, x-default/language alternates, OG/Twitter image, rich-result robots, parseable JSON-LD, no duplicate titles/descriptions within a site. /favicon.ico, 16/32 PNGs and /social-card.png return 200 on all three domains.",
+    "favicon": "favicon.ico, favicon-16x16.png, favicon-32x32.png, favicon.svg and apple-touch-icon.png are linked with cache-busting v=3."
   },
   "oldRepository": {
     "name": "www",
@@ -157,10 +159,10 @@
     "backup": "reference/legacy/www-github-backup-2026-10-27.tar.gz"
   },
   "workflows": {
-    "site-www": "success at 940544ca; AdSense-enabled build 40/158/40",
-    "site-knowledge": "success at 6f998275; AdSense-enabled build 130/102/130",
-    "site-tools": "success at 28af3403; AdSense-enabled build 28/24/28",
-    "coreRelease": "core-v0.2.16 published; asset SHA-256 8b0e47ba…"
+    "site-www": "success at a206739c; SEO/AdSense build 40/158/40",
+    "site-knowledge": "success at 4d2d6cea; SEO/AdSense build 130/102/130",
+    "site-tools": "success at 9c594633; SEO/AdSense build 28/24/28",
+    "coreRelease": "core-v0.2.18 published; asset SHA-256 8aa7eed3…"
   },
   "notes": [
     "The public brand is 跑起来 / RUNUP. Visible content, bylines, legal attribution, PWA names, icons and offline copy use the new brand.",

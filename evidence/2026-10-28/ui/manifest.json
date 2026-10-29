@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T12:02:45.089Z",
+  "generatedAt": "2026-10-28T23:43:56.362Z",
   "matrix": {
     "pages": [
       "home",
@@ -2541,8 +2541,8 @@
             "outlineWidth": "0px",
             "boxShadow": "none",
             "borderColor": "rgb(16, 27, 53)",
-            "fieldBorderColor": "rgb(8, 184, 157)",
-            "fieldBoxShadow": "color(srgb 0.0313726 0.721569 0.615686 / 0.14) 0px 0px 0px 4px",
+            "fieldBorderColor": "rgb(219, 230, 225)",
+            "fieldBoxShadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
             "siblingOutlineStyle": "none",
             "siblingBoxShadow": "none"
           },
@@ -2555,8 +2555,8 @@
             "outlineWidth": "3px",
             "boxShadow": "none",
             "borderColor": "rgb(7, 52, 44)",
-            "fieldBorderColor": "rgb(8, 184, 157)",
-            "fieldBoxShadow": "color(srgb 0.0313726 0.721569 0.615686 / 0.14) 0px 0px 0px 4px",
+            "fieldBorderColor": "rgb(219, 230, 225)",
+            "fieldBoxShadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
             "siblingOutlineStyle": null,
             "siblingBoxShadow": null
           },
@@ -2945,8 +2945,8 @@
             "outlineWidth": "0px",
             "boxShadow": "none",
             "borderColor": "rgb(16, 27, 53)",
-            "fieldBorderColor": "rgb(131, 211, 197)",
-            "fieldBoxShadow": "oklab(0.700182 -0.128622 0.00663173 / 0.0581167) 0px 0px 0px 1.66048px",
+            "fieldBorderColor": "rgb(219, 230, 225)",
+            "fieldBoxShadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
             "siblingOutlineStyle": "none",
             "siblingBoxShadow": "none"
           },
@@ -2959,8 +2959,8 @@
             "outlineWidth": "3px",
             "boxShadow": "none",
             "borderColor": "rgb(7, 52, 44)",
-            "fieldBorderColor": "rgb(23, 187, 162)",
-            "fieldBoxShadow": "oklab(0.700182 -0.128622 0.00663173 / 0.129737) 0px 0px 0px 3.70677px",
+            "fieldBorderColor": "rgb(219, 230, 225)",
+            "fieldBoxShadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
             "siblingOutlineStyle": null,
             "siblingBoxShadow": null
           },
@@ -3231,8 +3231,8 @@
             "outlineWidth": "3px",
             "boxShadow": "none",
             "borderColor": "rgb(7, 52, 44)",
-            "fieldBorderColor": "rgb(131, 211, 197)",
-            "fieldBoxShadow": "oklab(0.700182 -0.128622 0.00663173 / 0.0581167) 0px 0px 0px 1.66048px",
+            "fieldBorderColor": "rgb(219, 230, 225)",
+            "fieldBoxShadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
             "siblingOutlineStyle": null,
             "siblingBoxShadow": null
           },
