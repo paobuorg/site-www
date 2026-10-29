@@ -48,6 +48,7 @@ const defaultCanonical = new URL(alternateLocalePath(pathname, 'zh-CN'), origin)
 const fullTitle = title.includes('RUNUP') || title.includes('跑起来') ? title : `${title} · 跑起来 RUNUP`;
 const otherLocale: Locale = other;
 const alternateLabel = isLocale(otherLocale) ? otherLocale : 'en';
+const isHome = pathname === '/' || pathname === '/en/';
 const adsenseClient = (import.meta.env.PUBLIC_ADSENSE_CLIENT as string | undefined)?.trim();
 const socialImage = new URL('/social-card.png', origin).toString();
 const siteRoot = siteOrigin(active);
@@ -157,16 +158,10 @@ const serviceWorkerScript = String.raw`
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <meta name="apple-mobile-web-app-title" content="跑起来" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    {adsenseClient && <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />}
-    {adsenseClient && <meta name="google-adsense-account" content={adsenseClient} />}
-    {adsenseClient && !preview && (
-      <script
-        is:inline
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
-        crossorigin="anonymous"
-      ></script>
+    {adsenseClient && footerAd && !isHome && (
+      <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
     )}
+    {adsenseClient && <meta name="google-adsense-account" content={adsenseClient} />}
     <slot name="head" />
   </head>
   <body class={bodyClass}>
@@ -187,6 +182,33 @@ const serviceWorkerScript = String.raw`
     <script is:inline set:html={themeToggleScript(locale)} />
     <script is:inline set:html={localeSwitchScript(other)} />
     <script is:inline set:html={viewportAssistScript} />
+    {adsenseClient && !preview && footerAd && !isHome && (
+      <script
+        is:inline
+        async
+        fetchpriority="low"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+        crossorigin="anonymous"
+      ></script>
+    )}
+    {adsenseClient && !preview && footerAd && isHome && (
+      <script is:inline data-adsense-client={adsenseClient}>
+        (() => {
+          const client = document.currentScript?.dataset.adsenseClient;
+          if (!client) return;
+          const load = () => {
+            if (document.querySelector('script[data-adsense-loader]')) return;
+            const script = document.createElement('script');
+            script.async = true;
+            script.dataset.adsenseLoader = 'true';
+            script.crossOrigin = 'anonymous';
+            script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${client}`;
+            document.head.appendChild(script);
+          };
+          window.addEventListener('load', () => window.setTimeout(load, 8000), { once: true });
+        })();
+      </script>
+    )}
     {!preview && <script is:inline set:html={serviceWorkerScript} />}
     <slot name="scripts" />
   </body>
