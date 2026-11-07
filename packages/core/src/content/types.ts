@@ -13,6 +13,14 @@ export type KnowledgeType =
   | 'glossary'
   | 'learning-path';
 
+export interface SourceVerification {
+  access: 'direct' | 'browser' | 'metadata-only' | 'blocked';
+  bodyRead: boolean;
+  checkedAt: string;
+  checkedVia?: string;
+  note?: string;
+}
+
 export interface SourceRecord {
   sourceId: string;
   title: string;
@@ -22,6 +30,7 @@ export interface SourceRecord {
   accessedAt: string;
   claims: string[];
   license: string | null;
+  verification?: SourceVerification;
 }
 
 export interface ContributorRecord {

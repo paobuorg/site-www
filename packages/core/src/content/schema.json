@@ -833,6 +833,40 @@
             "string",
             "null"
           ]
+        },
+        "verification": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "access": {
+              "enum": [
+                "direct",
+                "browser",
+                "metadata-only",
+                "blocked"
+              ]
+            },
+            "bodyRead": {
+              "type": "boolean"
+            },
+            "checkedAt": {
+              "type": "string",
+              "format": "date"
+            },
+            "checkedVia": {
+              "type": "string",
+              "minLength": 1
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "access",
+            "bodyRead",
+            "checkedAt"
+          ]
         }
       },
       "required": [
