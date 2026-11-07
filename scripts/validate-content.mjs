@@ -1,10 +1,15 @@
+import path from 'node:path';
 import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
+import { collectEnLocaleLinkProblems } from '../../../.agent/check-en-locale-links.mjs';
 
 const roots = defaultContentRoots();
 const preview = loadContent({ roots, allowUnreviewed: true });
 const production = loadContent({ roots, allowUnreviewed: false });
 
 const problems = [];
+for (const hit of collectEnLocaleLinkProblems(path.resolve(import.meta.dirname, '../../..'))) {
+  problems.push(`${hit.file}:${hit.line} internal link missing /en/ prefix: ${hit.original} (expected ${hit.suggested})`);
+}
 for (const entity of preview.allEntities) {
   if (entity.translations.length !== 2) {
     problems.push(`${entity.entityId} has ${entity.translations.length} translation(s), expected 2.`);
