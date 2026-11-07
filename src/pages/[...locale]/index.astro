@@ -178,10 +178,16 @@ const description = locale === 'zh-CN'
 </BaseLayout>
 
 <script>
-  import { initHomeGlobe } from '../../client/globe';
-  const startGlobe = () => window.setTimeout(() => initHomeGlobe(), 300);
-  if (document.readyState === 'complete') startGlobe();
-  else window.addEventListener('load', startGlobe, { once: true });
+  import { initHomeGlobe, preloadCesium } from '../../client/globe';
+  if (window.matchMedia('(min-width: 1024px)').matches) {
+    preloadCesium();
+    new Image().src = '/textures/earth-blue-marble-2048.jpg';
+    requestAnimationFrame(() => requestAnimationFrame(() => initHomeGlobe()));
+  } else {
+    const startGlobe = () => initHomeGlobe();
+    if (document.readyState === 'complete') startGlobe();
+    else window.addEventListener('load', startGlobe, { once: true });
+  }
 
   const panel = document.querySelector('.globe-panel');
   document.querySelector('[data-sheet-toggle]')?.addEventListener('click', () => {

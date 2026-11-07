@@ -43,6 +43,10 @@ async function loadCesium(): Promise<CesiumModule> {
   return cesiumPromise;
 }
 
+export function preloadCesium(): void {
+  void loadCesium();
+}
+
 const HOME_CAMERA = { longitude: -18, latitude: 22, height: 19_000_000 };
 
 function prefersReducedMotion(): boolean {
@@ -100,6 +104,7 @@ function createViewer(Cesium: CesiumModule, container: HTMLElement, highResoluti
     requestRenderMode: true,
     maximumRenderTimeChange: Infinity,
     scene3DOnly: true,
+    skyBox: false,
   });
   if (highResolution) {
     const detailLayer = viewer.imageryLayers.addImageryProvider(
@@ -121,8 +126,13 @@ function createViewer(Cesium: CesiumModule, container: HTMLElement, highResoluti
   const scene = viewer.scene;
   scene.globe.baseColor = Cesium.Color.fromCssColorString('#0a1a2a');
   scene.globe.enableLighting = false;
-  scene.globe.showGroundAtmosphere = true;
-  scene.skyAtmosphere.show = true;
+  // On wide screens, atmosphere and FXAA add shader compilation to the first
+  // render and are enabled right after the globe is revealed. Narrow screens
+  // keep them on from the start to avoid repeated re-render work.
+  const deferPolish = window.matchMedia('(min-width: 1024px)').matches;
+  scene.globe.showGroundAtmosphere = !deferPolish;
+  scene.skyAtmosphere.show = !deferPolish;
+  if (deferPolish && scene.postProcessStages?.fxaa) scene.postProcessStages.fxaa.enabled = false;
   scene.backgroundColor = Cesium.Color.fromCssColorString('#030a16');
   scene.screenSpaceCameraController.minimumZoomDistance = 1_500_000;
   scene.screenSpaceCameraController.maximumZoomDistance = 40_000_000;
@@ -174,6 +184,17 @@ function revealPoster(container: HTMLElement): void {
   if (loading) loading.hidden = true;
 }
 
+function enablePolish(viewer: any): void {
+  if (!window.matchMedia('(min-width: 1024px)').matches) return;
+  const scene = viewer.scene;
+  requestAnimationFrame(() => {
+    scene.globe.showGroundAtmosphere = true;
+    scene.skyAtmosphere.show = true;
+    if (scene.postProcessStages?.fxaa) scene.postProcessStages.fxaa.enabled = true;
+    scene.requestRender();
+  });
+}
+
 function revealWhenReady(viewer: any, container: HTMLElement): void {
   let finished = false;
   let listener: ((remaining: number) => void) | undefined;
@@ -182,6 +203,7 @@ function revealWhenReady(viewer: any, container: HTMLElement): void {
     finished = true;
     if (listener) viewer.scene.globe.tileLoadProgressEvent.removeEventListener(listener);
     revealPoster(container);
+    enablePolish(viewer);
   };
   listener = (remaining: number) => {
     if (remaining === 0) finish();

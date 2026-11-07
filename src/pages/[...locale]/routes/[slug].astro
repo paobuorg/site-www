@@ -5,6 +5,7 @@ import LegalNotice from '@paobu/core/components/LegalNotice.astro';
 import { contributorName, t, otherLocale, type Locale, LOCALES } from '@paobu/core/lib/i18n';
 import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
 import { articleData, breadcrumbList } from '@paobu/core/lib/seo';
+import { describeSourceVerification } from '@paobu/core/content';
 import { siteContent } from '../../../lib/content';
 import {
   entityHref,
@@ -32,7 +33,9 @@ const entity = content.byId(Astro.props.entityId);
 if (!entity) throw new Error(`Route ${Astro.props.entityId} is not visible`);
 const details = routeDetails(entity);
 const translation = content.translation(entity, locale);
+const bodyHtml = translation.html.replace(/<table>/g, '<table tabindex="0">');
 const sources = content.sourcesFor(entity);
+const sourceNotes = sources.map((source) => describeSourceVerification(source, locale));
 const related = content.related(entity, locale);
 const authors = [
   ...new Set(
@@ -277,7 +280,7 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
       )}
 
       <h2>{t(locale, 'sections')}</h2>
-      <div class="prose" set:html={translation.html} />
+      <div class="prose" set:html={bodyHtml} />
 
       <div class="route-version-box">
         <strong>{copy.versionTitle}</strong>
@@ -292,10 +295,11 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
         <div class="route-sources">
           <h2>{t(locale, 'sourcesHeading')}</h2>
           <div class="source-list">
-            {sources.map((source) => (
+            {sources.map((source, index) => (
               <div class="source-item">
                 <a href={source.url} rel="external noopener">{source.title} <Icon name="external" size={14} /></a>
                 <p>{source.claims.join(' ')}</p>
+                {sourceNotes[index] ? <p class="source-meta source-verification">{sourceNotes[index]}</p> : null}
                 <p class="source-meta">
                   {source.publisher}
                   {source.publishedAt ? ` · ${formatDate(source.publishedAt, locale)}` : ''}
