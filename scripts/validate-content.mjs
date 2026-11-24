@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
-import { collectEnLocaleLinkProblems } from '../../../.agent/check-en-locale-links.mjs';
+import { collectEnLocaleLinkProblems } from './check-en-locale-links.mjs';
 
 const roots = defaultContentRoots();
 const preview = loadContent({ roots, allowUnreviewed: true });
