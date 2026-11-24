@@ -35,7 +35,7 @@ export function computeContentDigest(
     riskLevel: entity.riskLevel,
     license: entity.license,
     sourceRefs: [...entity.sourceRefs].sort(),
-    details: entity.details,
+    details: omitPublicationState(entity.details),
     locale: translation.locale,
     title: translation.title,
     summary: translation.summary,
@@ -44,4 +44,11 @@ export function computeContentDigest(
     sources: referenced,
   };
   return createHash('sha256').update(JSON.stringify(canonical(value))).digest('hex');
+}
+
+// courseStatus is publication state, not content: flipping it must not invalidate a review.
+function omitPublicationState(details: unknown): unknown {
+  if (details === null || typeof details !== 'object' || Array.isArray(details)) return details;
+  const { courseStatus: _ignored, ...rest } = details as Record<string, unknown>;
+  return rest;
 }

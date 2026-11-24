@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1438" viewBox="0 0 360 1438" role="img" aria-label="Black Canyon 100K 2027 station chain and cutoffs">
+<rect width="360" height="1438" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">BLACK CANYON 100K · 2027 站序</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">11 个节点 · 起点 + 9 个中途站 + 终点 · 62.2 mi / 100.1 km</text>
+<text x="20" y="63" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">三波发枪 · 关门按各波枪声计算 · 官方 2027 补给/关门表</text>
+<line x1="20" y1="76" x2="340" y2="76" stroke="#d8d0c0" stroke-width="1"/>
+<line x1="26" y1="84" x2="26" y2="200" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="142" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="145" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#ffffff">1</text>
+<rect x="42" y="102" width="298" height="100" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="54" y="124" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Start · Mayer HS</text>
+<text x="328" y="124" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" font-weight="700" fill="#345f46">起跑</text>
+<text x="54" y="140" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 0.0 mi · 0.0 km</text>
+<text x="54" y="157" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 07:00</text>
+<text x="54" y="171" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 07:30</text>
+<text x="54" y="185" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 08:00</text>
+<line x1="26" y1="200" x2="26" y2="316" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="258" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="261" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">2</text>
+<rect x="42" y="218" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="240" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Antelope Mesa</text>
+<text x="328" y="240" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+7.7 mi</text>
+<text x="54" y="256" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 7.7 mi · 12.4 km</text>
+<text x="54" y="273" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 09:15</text>
+<text x="54" y="287" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 09:45</text>
+<text x="54" y="301" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 10:15</text>
+<line x1="26" y1="316" x2="26" y2="432" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="374" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="377" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">3</text>
+<rect x="42" y="334" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="356" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Hidden Treasure</text>
+<text x="328" y="356" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+5.2 mi</text>
+<text x="54" y="372" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 12.9 mi · 20.8 km</text>
+<text x="54" y="389" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 10:45</text>
+<text x="54" y="403" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 11:15</text>
+<text x="54" y="417" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 11:45</text>
+<line x1="26" y1="432" x2="26" y2="548" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="490" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="493" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">4</text>
+<rect x="42" y="450" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="472" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Bumble Bee Ranch</text>
+<text x="328" y="472" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+6.5 mi</text>
+<text x="54" y="488" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 19.4 mi · 31.2 km</text>
+<text x="54" y="505" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 12:45</text>
+<text x="54" y="519" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 13:15</text>
+<text x="54" y="533" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 13:45</text>
+<line x1="26" y1="548" x2="26" y2="664" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="606" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="609" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">5</text>
+<rect x="42" y="566" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="588" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Gloriana Mine</text>
+<text x="328" y="588" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+4.6 mi</text>
+<text x="54" y="604" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 24.0 mi · 38.6 km</text>
+<text x="54" y="621" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 14:30</text>
+<text x="54" y="635" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 15:00</text>
+<text x="54" y="649" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 15:30</text>
+<line x1="26" y1="664" x2="26" y2="780" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="722" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="725" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">6</text>
+<rect x="42" y="682" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="704" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Deep Canyon Ranch</text>
+<text x="328" y="704" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+7.9 mi</text>
+<text x="54" y="720" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 31.9 mi · 51.3 km</text>
+<text x="54" y="737" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 17:00</text>
+<text x="54" y="751" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 17:30</text>
+<text x="54" y="765" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 18:00</text>
+<line x1="26" y1="780" x2="26" y2="896" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="838" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="841" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">7</text>
+<rect x="42" y="798" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="820" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Black Canyon City</text>
+<text x="328" y="820" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+5.3 mi</text>
+<text x="54" y="836" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 37.2 mi · 59.9 km</text>
+<text x="54" y="853" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 19:00</text>
+<text x="54" y="867" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 19:30</text>
+<text x="54" y="881" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 20:00</text>
+<line x1="26" y1="896" x2="26" y2="1012" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="954" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="957" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">8</text>
+<rect x="42" y="914" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="936" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Cottonwood Gulch</text>
+<text x="328" y="936" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+9.0 mi</text>
+<text x="54" y="952" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 46.4 mi · 74.7 km</text>
+<text x="54" y="969" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 22:00</text>
+<text x="54" y="983" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 22:30</text>
+<text x="54" y="997" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 23:00</text>
+<line x1="26" y1="1012" x2="26" y2="1128" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="1070" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="1073" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">9</text>
+<rect x="42" y="1030" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="1052" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Table Mesa</text>
+<text x="328" y="1052" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+4.7 mi</text>
+<text x="54" y="1068" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 51.1 mi · 82.2 km</text>
+<text x="54" y="1085" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 23:30</text>
+<text x="54" y="1099" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 00:00</text>
+<text x="54" y="1113" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 00:30</text>
+<line x1="26" y1="1128" x2="26" y2="1244" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="1186" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="1189" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">10</text>
+<rect x="42" y="1146" width="298" height="100" rx="7" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="1168" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Doe Spring</text>
+<text x="328" y="1168" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+7.6 mi</text>
+<text x="54" y="1184" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 58.7 mi · 94.5 km</text>
+<text x="54" y="1201" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 02:00</text>
+<text x="54" y="1215" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 02:30</text>
+<text x="54" y="1229" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 03:00</text>
+<line x1="26" y1="1244" x2="26" y2="1360" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="1302" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="1305" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#ffffff">11</text>
+<rect x="42" y="1262" width="298" height="100" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="54" y="1284" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#1f2a24">Finish · Emery</text>
+<text x="328" y="1284" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#7b847d">+3.6 mi</text>
+<text x="54" y="1300" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">累计 62.3 mi · 100.3 km</text>
+<text x="54" y="1317" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#8b5e52">07:00 → 03:00</text>
+<text x="54" y="1331" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">07:30 → 03:30</text>
+<text x="54" y="1345" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#a33f31">08:00 → 04:00</text>
+<line x1="20" y1="1384" x2="340" y2="1384" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="1402" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">Table Mesa 之后为周六深夜/周日凌晨；三波关门依次相差 30 分钟。</text>
+<text x="20" y="1416" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">本站自制结构图，不是官方地图或导航图；累计 62.3 mi 为官方表末行，Key Stats 写 62.2 mi。</text>
+<text x="20" y="1428" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.4" fill="#8a9189">Cottonwood 官方分段 9.0 mi 与累计差 46.4−37.2=9.2 mi 不一致，图中保留 9.0 与累计 46.4。</text>
+</svg>

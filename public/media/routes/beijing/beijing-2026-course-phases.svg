@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="880" viewBox="0 0 360 880" role="img" aria-label="Beijing Marathon 2026 course phases in street order">
+<rect width="360" height="880" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">北京马拉松 2026 · 五段顺序</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">按关门点粗分 · 街道顺序示意 · 不是地图或轨迹</text>
+<line x1="20" y1="62" x2="340" y2="62" stroke="#d8d0c0" stroke-width="1"/>
+<rect x="20" y="80" width="320" height="142" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="102" r="11" fill="#345f46"/>
+<text x="39" y="106" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">1</text>
+<text x="58" y="105" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">起点与西长安街</text>
+<text x="328" y="105" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#345f46">0 → 10 km</text>
+<text x="32" y="128" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">天安门广场东侧路 → 西长安街</text>
+<text x="32" y="146" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">东城 → 西城，城市东西向主轴</text>
+<line x1="32" y1="188" x2="328" y2="188" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="206" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#345f46">32,000 人集结；5→10 km 是全程最紧一段</text>
+<rect x="20" y="230" width="320" height="142" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="252" r="11" fill="#4f6f82"/>
+<text x="39" y="256" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">2</text>
+<text x="58" y="255" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">西城—西三环—蓝靛厂</text>
+<text x="328" y="255" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#4f6f82">10 → 25 km</text>
+<text x="32" y="278" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">复兴门内/外大街 → 复兴路 → 新兴桥</text>
+<text x="32" y="296" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">西三环辅路 → 花园桥 → 玲珑路</text>
+<text x="32" y="314" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">蓝靛厂南/北路 → 北四环辅路</text>
+<line x1="32" y1="338" x2="328" y2="338" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="356" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#4f6f82">长直主干道转辅路；半程 21.0975 km 单独关门</text>
+<rect x="20" y="380" width="320" height="142" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="402" r="11" fill="#6f6650"/>
+<text x="39" y="406" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">3</text>
+<text x="58" y="405" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">北四环—高校区</text>
+<text x="328" y="405" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#6f6650">25 → 35 km</text>
+<text x="32" y="428" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">志新东路 → 志新路 → 学院路 → 学清路</text>
+<text x="32" y="446" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">石板房南路 → 科荟路</text>
+<line x1="32" y1="488" x2="328" y2="488" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="506" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#6f6650">路口与转弯密集；30–35 km 是典型“墙”区</text>
+<rect x="20" y="530" width="320" height="142" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="552" r="11" fill="#8b5e52"/>
+<text x="39" y="556" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">4</text>
+<text x="58" y="555" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">奥林匹克中心区绕行</text>
+<text x="328" y="555" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#8b5e52">35 → 40 km</text>
+<text x="32" y="578" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">林萃路 → 速滑馆北路/内部路/南路</text>
+<text x="32" y="596" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">奥林西路 → 科荟路折返 → 北五环辅路</text>
+<text x="32" y="614" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">奥林东路 → 科荟南路</text>
+<line x1="32" y1="638" x2="328" y2="638" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="656" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#8b5e52">方向变化最密集；不是绕圈赛道</text>
+<rect x="20" y="680" width="320" height="142" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="702" r="11" fill="#345f46"/>
+<text x="39" y="706" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">5</text>
+<text x="58" y="705" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">中轴景观大道终点</text>
+<text x="328" y="705" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#345f46">40 → 42.195 km</text>
+<text x="32" y="728" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">北中轴景观大道 → 大屯北路</text>
+<text x="32" y="746" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.8" fill="#4f5a52">湖景东路 → 大屯路 → 景观大道</text>
+<line x1="32" y1="788" x2="328" y2="788" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="806" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#345f46">终点前最后一个小环；13:30 关门</text>
+<line x1="20" y1="832" x2="340" y2="832" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="850" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">五段边界为本页按 5/25/35/40 km 与终点粗分，不是官方分段；官方只发关门点与站点表。</text>
+<text x="20" y="864" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">横向位置与长度不成比例；图中不画赛道几何，也不替代官方 2026 静态路线图。</text>
+</svg>

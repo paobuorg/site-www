@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">UTCT 100 英里 13 个官方顺序节点</title>
+  <desc id="desc">UTCT 100 英里从 Gardens Rugby Club 出发，按官方描述经过 Kloof Corner 与桌山北壁、Llandudno、Hout Bay、Silvermine、Kalk Bay、Simon's Town、Scarborough、Kommetjie、Noordhoek、UCT 与 King's Blockhouse，再回到 Gardens。卡片等宽，不代表距离比例，也不是可导航轨迹。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08131A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1490" cy="70" r="230" fill="#5FD3C4" opacity="0.07"/>
+  <circle cx="90" cy="945" r="250" fill="#F4B860" opacity="0.06"/>
+
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="60" y="60" fill="#5FD3C4" font-size="20" font-weight="700" letter-spacing="4">UTCT 100 MILE / COURSE ORDER</text>
+    <text x="60" y="116" fill="#F4FFFC" font-size="44" font-weight="750">100 英里：13 个官方顺序节点</text>
+    <text x="60" y="158" fill="#91A8B8" font-size="19">按官方 100 英里页的赛道叙述排列 · 等宽卡片，不代表距离比例 · 不画真实轨迹</text>
+  </g>
+
+  <!-- stat strip -->
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <rect x="50" y="190" width="350" height="84" rx="16" fill="#10283A" stroke="#24506A"/>
+    <text x="72" y="219" fill="#91A8B8" font-size="15">官方卡片距离</text>
+    <text x="72" y="254" fill="#F4FFFC" font-size="30" font-weight="700">163 km</text>
+
+    <rect x="425" y="190" width="350" height="84" rx="16" fill="#10283A" stroke="#24506A"/>
+    <text x="447" y="219" fill="#91A8B8" font-size="15">两个第一方爬升值</text>
+    <text x="447" y="254" fill="#F4FFFC" font-size="30" font-weight="700">7,187 / 7,516 m</text>
+
+    <rect x="800" y="190" width="350" height="84" rx="16" fill="#10283A" stroke="#24506A"/>
+    <text x="822" y="219" fill="#91A8B8" font-size="15">总时限</text>
+    <text x="822" y="254" fill="#F4FFFC" font-size="30" font-weight="700">45 h</text>
+
+    <rect x="1175" y="190" width="350" height="84" rx="16" fill="#10283A" stroke="#24506A"/>
+    <text x="1197" y="219" fill="#91A8B8" font-size="15">补给站数量</text>
+    <text x="1197" y="254" fill="#F4FFFC" font-size="30" font-weight="700">14 站 · 未给逐站公里</text>
+  </g>
+
+  <!-- row 1 -->
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(50,310)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#5FD3C4"/>
+      <text x="18" y="38" fill="#5FD3C4" font-size="18" font-weight="700">01</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">START</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Gardens</text>
+      <text x="18" y="110" fill="#F4FFFC" font-size="22" font-weight="650">Rugby Club</text>
+      <text x="18" y="150" fill="#91A8B8" font-size="16">17:00 Friday</text>
+      <text x="18" y="214" fill="#5FD3C4" font-size="13">起点 / 同地终点</text>
+    </g>
+    <text x="254" y="440" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(267,310)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#5FD3C4"/>
+      <text x="18" y="38" fill="#5FD3C4" font-size="18" font-weight="700">02</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">MOUNTAIN</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="21" font-weight="650">Kloof Corner</text>
+      <text x="18" y="110" fill="#F4FFFC" font-size="21" font-weight="650">Table Mountain</text>
+      <text x="18" y="150" fill="#91A8B8" font-size="16">北壁爬升</text>
+      <text x="18" y="214" fill="#5FD3C4" font-size="13">官方叙述节点</text>
+    </g>
+    <text x="471" y="440" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(484,310)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#F4B860"/>
+      <text x="18" y="38" fill="#F4B860" font-size="18" font-weight="700">03</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">COAST</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Llandudno</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">Ravine 下降</text>
+      <text x="18" y="214" fill="#F4B860" font-size="13">海岸段</text>
+    </g>
+    <text x="688" y="440" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(701,310)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#F4B860"/>
+      <text x="18" y="38" fill="#F4B860" font-size="18" font-weight="700">04</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">COAST</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Hout Bay</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">半岛东岸</text>
+      <text x="18" y="214" fill="#F4B860" font-size="13">海岸段</text>
+    </g>
+    <text x="905" y="440" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(918,310)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#F4B860"/>
+      <text x="18" y="38" fill="#F4B860" font-size="18" font-weight="700">05</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">RIDGE</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Silvermine</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">山脊过渡</text>
+      <text x="18" y="214" fill="#F4B860" font-size="13">山脊段</text>
+    </g>
+    <text x="1122" y="440" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(1135,310)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#F4B860"/>
+      <text x="18" y="38" fill="#F4B860" font-size="18" font-weight="700">06</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">COAST</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Kalk Bay</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">东岸城镇</text>
+      <text x="18" y="214" fill="#F4B860" font-size="13">海岸段</text>
+    </g>
+    <text x="1339" y="440" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(1352,310)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#F08A7A"/>
+      <text x="18" y="38" fill="#F08A7A" font-size="18" font-weight="700">07</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">SOUTH</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Simon's Town</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">半岛南段</text>
+      <text x="18" y="214" fill="#F08A7A" font-size="13">南端</text>
+    </g>
+  </g>
+
+  <!-- row 2 -->
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(159,578)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#F08A7A"/>
+      <text x="18" y="38" fill="#F08A7A" font-size="18" font-weight="700">08</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">SOUTH</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Scarborough</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">大西洋侧</text>
+      <text x="18" y="214" fill="#F08A7A" font-size="13">南端</text>
+    </g>
+    <text x="363" y="708" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(376,578)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#F08A7A"/>
+      <text x="18" y="38" fill="#F08A7A" font-size="18" font-weight="700">09</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">SOUTH</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Kommetjie</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">半岛西南</text>
+      <text x="18" y="214" fill="#F08A7A" font-size="13">南端</text>
+    </g>
+    <text x="580" y="708" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(593,578)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#F08A7A"/>
+      <text x="18" y="38" fill="#F08A7A" font-size="18" font-weight="700">10</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">TURN</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Noordhoek</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">转向内陆</text>
+      <text x="18" y="214" fill="#F08A7A" font-size="13">回城段</text>
+    </g>
+    <text x="797" y="708" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(810,578)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#5FD3C4"/>
+      <text x="18" y="38" fill="#5FD3C4" font-size="18" font-weight="700">11</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">CITY</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">UCT</text>
+      <text x="18" y="122" fill="#91A8B8" font-size="16">城市边缘</text>
+      <text x="18" y="214" fill="#5FD3C4" font-size="13">回城段</text>
+    </g>
+    <text x="1014" y="708" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(1027,578)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#5FD3C4"/>
+      <text x="18" y="38" fill="#5FD3C4" font-size="18" font-weight="700">12</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">CLIMB</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="21" font-weight="650">King's</text>
+      <text x="18" y="110" fill="#F4FFFC" font-size="21" font-weight="650">Blockhouse</text>
+      <text x="18" y="150" fill="#91A8B8" font-size="16">最后爬升</text>
+      <text x="18" y="214" fill="#5FD3C4" font-size="13">回城段</text>
+    </g>
+    <text x="1231" y="708" fill="#4D7286" font-size="20" text-anchor="middle">›</text>
+
+    <g transform="translate(1244,578)">
+      <rect width="195" height="240" rx="18" fill="#101E2E" stroke="#25485F"/>
+      <rect width="195" height="6" rx="3" fill="#5FD3C4"/>
+      <text x="18" y="38" fill="#5FD3C4" font-size="18" font-weight="700">13</text>
+      <text x="177" y="38" fill="#91A8B8" font-size="13" text-anchor="end">FINISH</text>
+      <text x="18" y="82" fill="#F4FFFC" font-size="22" font-weight="650">Gardens</text>
+      <text x="18" y="110" fill="#F4FFFC" font-size="22" font-weight="650">Rugby Club</text>
+      <text x="18" y="150" fill="#91A8B8" font-size="16">14:00 Sunday*</text>
+      <text x="18" y="214" fill="#5FD3C4" font-size="13">终点 / 推算关门</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <line x1="60" y1="868" x2="1540" y2="868" stroke="#25485F" stroke-width="1"/>
+    <text x="60" y="902" fill="#B9CBD7" font-size="16">读法：13 个节点按官方 100 英里页的叙述顺序排列；卡片等宽，逐站距离与爬升都没有公布，不能当作配速表。</text>
+    <text x="60" y="932" fill="#91A8B8" font-size="15">边界：非比例、非官方轨迹、不可导航；不画真实折返线。终点 14:00 为 17:00 + 45 h 的算术推算，官方未另列绝对钟点。</text>
+    <text x="60" y="962" fill="#6F8797" font-size="14">图：跑起来编辑部，2026-11-22。节点顺序：官方 100 英里页；人数与完赛状态：Sportraxs 2026 计时页。</text>
+  </g>
+</svg>

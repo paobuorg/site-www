@@ -110,6 +110,7 @@ const description = locale === 'zh-CN'
 
       <div class="globe-legend" aria-hidden="true">
         <span><i class="legend-dot"></i>{t(locale, 'road')}</span>
+        <span><i class="legend-dot"></i>{t(locale, 'roadUltra')}</span>
         <span><i class="legend-dot trail"></i>{t(locale, 'trail')}</span>
       </div>
 
@@ -142,8 +143,14 @@ const description = locale === 'zh-CN'
         <button class="filter-chip road" type="button" data-route-filter="road-marathon" aria-pressed="false">
           <span class="legend-dot"></span>{t(locale, 'road')}
         </button>
+        <button class="filter-chip road" type="button" data-route-filter="road-ultra" aria-pressed="false">
+          <span class="legend-dot"></span>{t(locale, 'roadUltra')}
+        </button>
         <button class="filter-chip trail" type="button" data-route-filter="trail-ultra" aria-pressed="false">
           <span class="legend-dot trail"></span>{t(locale, 'trail')}
+        </button>
+        <button class="filter-chip trail" type="button" data-route-filter="trail-mountain" aria-pressed="false">
+          <span class="legend-dot trail"></span>{t(locale, 'mountain')}
         </button>
       </div>
 
@@ -158,7 +165,7 @@ const description = locale === 'zh-CN'
               data-route-card
               data-route-kind={details.raceType}
             >
-              <span class:list={['route-list-thumb', details.raceType === 'trail-ultra' && 'trail']} aria-hidden="true"></span>
+              <span class:list={['route-list-thumb', details.raceType !== 'road-marathon' && details.raceType !== 'road-ultra' && 'trail']} aria-hidden="true"></span>
               <span class="route-list-content">
                 <strong>{translation.title}</strong>
                 <span>{details.placeName[locale]}</span>

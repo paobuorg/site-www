@@ -12,6 +12,7 @@ const outRoot =
 const axePath = path.join(repoRoot, 'node_modules', 'axe-core', 'axe.min.js');
 const axeSource = await readFile(axePath, 'utf8');
 
+const host = process.env.QA_HOST ?? 'localhost';
 const origins = {
   routes: 4421,
   knowledge: 4422,
@@ -59,18 +60,18 @@ async function applyPreferences(context, theme) {
     Object.values(origins).map((port) => ({
       name: 'paobu_theme',
       value: theme,
-      url: `http://localhost:${port}`,
+      url: `http://${host}:${port}`,
     })),
   );
 }
 
 function pageUrl(definition, locale) {
-  return `http://localhost:${origins[definition.origin]}${definition.path(locale)}`;
+  return `http://${host}:${origins[definition.origin]}${definition.path(locale)}`;
 }
 
 async function checkServers() {
   for (const [name, port] of Object.entries(origins)) {
-    const url = `http://localhost:${port}/`;
+    const url = `http://${host}:${port}/`;
     let response;
     try {
       response = await fetch(url, { signal: AbortSignal.timeout(5000) });
@@ -234,12 +235,12 @@ async function systemThemeCheck(browser, colorScheme) {
     colorScheme,
   });
   await context.addCookies([
-    { name: 'paobu_theme', value: 'system', url: `http://localhost:${origins.routes}` },
-    { name: 'paobu_theme', value: 'system', url: `http://localhost:${origins.knowledge}` },
-    { name: 'paobu_theme', value: 'system', url: `http://localhost:${origins.tools}` },
+    { name: 'paobu_theme', value: 'system', url: `http://${host}:${origins.routes}` },
+    { name: 'paobu_theme', value: 'system', url: `http://${host}:${origins.knowledge}` },
+    { name: 'paobu_theme', value: 'system', url: `http://${host}:${origins.tools}` },
   ]);
   const page = await context.newPage();
-  await page.goto(`http://localhost:${origins.routes}/`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`http://${host}:${origins.routes}/`, { waitUntil: 'domcontentloaded' });
   await waitForPage(page, 'home');
   const result = await page.evaluate(() => ({
     preference: document.documentElement.dataset.themePreference,
@@ -257,7 +258,7 @@ async function reducedMotionCheck(browser) {
   });
   await applyPreferences(context, 'light');
   const page = await context.newPage();
-  await page.goto(`http://localhost:${origins.routes}/`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`http://${host}:${origins.routes}/`, { waitUntil: 'domcontentloaded' });
   await waitForPage(page, 'home');
   const before = await page.evaluate(() => ({
     matches: matchMedia('(prefers-reduced-motion: reduce)').matches,
@@ -630,7 +631,7 @@ async function main() {
             page.on('requestfailed', (request) => {
               failedRequests.push(`${request.method()} ${request.url()} ${request.failure()?.errorText ?? ''}`);
             });
-            const url = `http://localhost:${origins[definition.origin]}${definition.path(locale)}`;
+            const url = `http://${host}:${origins[definition.origin]}${definition.path(locale)}`;
             await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
             await waitForPage(page, definition.id);
             const facts = await pageFacts(page);

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">QMT135 2026 官方 11 段赛道结构</title>
+  <desc id="desc">QMT135 从 Baie-Saint-Paul 到 Mont-Sainte-Anne 的 11 个官方剖面分段，按等宽卡片展示每段距离和该段累计爬升。它是结构示意，不是逐点海拔剖面，也不代表 2027 已确认赛道。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#08131A"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#1761A8"/>
+      <stop offset="1" stop-color="#45E0BF"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1480" cy="80" r="230" fill="#08B89D" opacity="0.08"/>
+  <circle cx="120" cy="940" r="260" fill="#1761A8" opacity="0.08"/>
+  <text x="60" y="66" fill="#45E0BF" font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="22" font-weight="700" letter-spacing="4">QMT135 / COURSE STRUCTURE</text>
+  <text x="60" y="132" fill="#F4FFFC" font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="44" font-weight="750">11 段：从圣劳伦斯河到 Mont-Sainte-Anne</text>
+  <text x="60" y="176" fill="#91A8B8" font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="20">官方 2026 静态剖面的 11 个补给/节点段 · 等宽排列，不代表实际距离比例</text>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <rect x="1110" y="52" width="430" height="112" rx="18" fill="#10283A" stroke="#24506A"/>
+    <text x="1140" y="94" fill="#91A8B8" font-size="18">TOTAL / 官方口径</text>
+    <text x="1140" y="138" fill="#F4FFFC" font-size="34" font-weight="700">134 km · +6,000 m · 37 h</text>
+  </g>
+  <!-- cards -->
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <!-- row 1 -->
+    <g transform="translate(60,220)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">01</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="25" font-weight="650">Halte de l'Arche</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">0–19.8 km · 19.8 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+922 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(310,220)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">02</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="25" font-weight="650">Le Massif</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">19.8–39.1 km · 19.3 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+921 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="176" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(560,220)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">03</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="25" font-weight="650">Cap du Salut</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">39.1–51.3 km · 12.2 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+407 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="78" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(810,220)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">04</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="25" font-weight="650">Cap Gribane</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">51.3–64.9 km · 13.7 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+669 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="128" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(1060,220)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">05</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="22" font-weight="650">Saint-Tite-des-Caps</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">64.9–79.5 km · 14.6 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+591 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="113" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(1310,220)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">06</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="25" font-weight="650">Mestachibo</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">79.5–90.4 km · 10.9 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+485 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="93" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <!-- row 2 -->
+    <g transform="translate(185,510)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">07</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="25" font-weight="650">MSA</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">90.4–101.5 km · 11.1 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+465 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="89" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(435,510)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#F56765"/>
+      <text x="22" y="40" fill="#F56765" font-size="22" font-weight="700">08 · STEEP</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="25" font-weight="650">Sommet 1</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">101.5–105.7 km · 4.2 km</text>
+      <text x="22" y="174" fill="#F56765" font-size="40" font-weight="750">+633 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="122" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(685,510)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">09</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="25" font-weight="650">Sommet 2</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">105.7–110.3 km · 4.6 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+393 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="75" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(935,510)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">10</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="22" font-weight="650">Auberge du Fondeur</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">110.3–124.9 km · 14.6 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+348 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="67" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(1185,510)">
+      <rect width="230" height="252" rx="20" fill="#101E2E" stroke="#25485F"/>
+      <text x="22" y="40" fill="#45E0BF" font-size="22" font-weight="700">11 · FINISH</text>
+      <text x="22" y="80" fill="#F4FFFC" font-size="22" font-weight="650">Mont-Sainte-Anne</text>
+      <text x="22" y="110" fill="#91A8B8" font-size="18">124.9–134.0 km · 9.1 km</text>
+      <text x="22" y="174" fill="#45E0BF" font-size="40" font-weight="750">+110 m</text>
+      <rect x="22" y="206" width="177" height="12" rx="6" fill="#1E3A4A"/>
+      <rect x="22" y="206" width="21" height="12" rx="6" fill="url(#bar)"/>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <line x1="60" y1="842" x2="1540" y2="842" stroke="#25485F" stroke-width="1"/>
+    <text x="60" y="890" fill="#91A8B8" font-size="18">逐段 D+ 相加 = 5,944 m，与官方总爬升 6,000 m 差 56 m；每段 D+ 为官方图件整数，差値未分摊。距离按官方剖面与页面 134 km 对齐。</text>
+    <text x="60" y="924" fill="#F56765" font-size="18" font-weight="600">这是结构示意，不是逐点海拔剖面，也不是测绘地图；不能据此导航，也不代表 2027 已确认赛道。</text>
+    <text x="60" y="966" fill="#5F7A8A" font-size="16">Data: QMT135 official 2026 elevation chart · Design: RUNUP editorial · CC BY 4.0</text>
+  </g>
+</svg>

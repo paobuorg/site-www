@@ -10,3 +10,4 @@ public/cesium/
 playwright-report/
 test-results/
 screenshots/
+tmp-*

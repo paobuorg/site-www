@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1500" viewBox="0 0 480 1500" role="img" aria-labelledby="title desc">
+  <title id="title">UTA100 2027: ten timing rows with cut-offs</title>
+  <desc id="desc">Ten equal-width cards in the order of the official UTA100 time chart: Scenic World start at 0 km, Tarros at 13.8 km, Foggy Knob at 23.8 km, Six Foot Track Outbound at 37.3 km, Six Foot Track Water Point at 45.7 km, Katoomba Aquatic Centre at 56.2 km, Fairmont Resort at 68.3 km, Queen Victoria Hospital at 79.3 km, Emergency Aid Station at 92.5 km and Scenic World finish at 101.3 km. Each card gives distance from the previous point, distance to finish, cut-off, spectators/drop bags and published supplies. Cut-offs are absolute clock times across waves starting 05:00 to 08:30; the final limit is 28 hours after the last starter. The chart has ten rows but the official text says seven checkpoints; the Water Point, Emergency Aid Station and finish are not counted as checkpoints. The cards are not a map, profile or navigation aid.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="1500" fill="url(#bg)"/>
+  <circle cx="430" cy="58" r="120" fill="#F4B860" opacity="0.06"/>
+  <circle cx="40" cy="1440" r="110" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="38" fill="#F4B860" font-size="16" font-weight="700" letter-spacing="2">UTA100 / 2027 DRAFT</text>
+    <text x="14" y="84" fill="#F4FFFC" font-size="40" font-weight="750">10 timing rows</text>
+    <text x="14" y="124" fill="#F4FFFC" font-size="27" font-weight="700">101.3 km · +4,400 m+ · 28 h</text>
+    <text x="14" y="154" fill="#91A8B8" font-size="18">Official time chart · waves 05:00–08:30</text>
+    <text x="14" y="182" fill="#FFB38A" font-size="16">Cut-offs are absolute clock times, not per-runner splits</text>
+    <text x="14" y="208" fill="#6E8494" font-size="13">10 rows ≠ 7 checkpoints · water, aid &amp; finish excluded</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(14,232)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="25" fill="#F4B860" font-size="18" font-weight="800">01</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Scenic World (start)</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">0 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 0 km · To finish 101.3 km · Spectators/Drop Y / Y</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off —</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">all waves 05:00–08:30</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water only</text>
+    </g>
+    <g transform="translate(14,340)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="25" fill="#5FD3C4" font-size="18" font-weight="800">02</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Tarros</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">13.8 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 13.8 km · To finish 87.5 km · Spectators/Drop N / N</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off 12:30PM</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">first timing point</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water · Näak · waffles · gels · food</text>
+    </g>
+    <g transform="translate(14,448)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="25" fill="#5FD3C4" font-size="18" font-weight="800">03</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Foggy Knob</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">23.8 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 10 km · To finish 77.5 km · Spectators/Drop N / N</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off 02:30PM</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">no spectators</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water · Näak · waffles · gels · food</text>
+    </g>
+    <g transform="translate(14,556)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="25" fill="#5FD3C4" font-size="18" font-weight="800">04</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Six Foot Track Outbound</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">37.3 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 13.5 km · To finish 64 km · Spectators/Drop Y / Y</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off 05:20PM</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">spectators + drop bags</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water · Näak · waffles · gels · food</text>
+    </g>
+    <g transform="translate(14,664)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="25" fill="#5FD3C4" font-size="18" font-weight="800">05</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Six Foot Track Water Point</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">45.7 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 8.4 km · To finish 55.6 km · Spectators/Drop Y / N</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off none</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">no cutoff; water only</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water only</text>
+    </g>
+    <g transform="translate(14,772)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="25" fill="#5FD3C4" font-size="18" font-weight="800">06</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Katoomba Aquatic Centre</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">56.2 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 10.5 km · To finish 45.1 km · Spectators/Drop Y / Y</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off 10:20PM</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">flushing toilets</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water · Näak · waffles · hot food</text>
+    </g>
+    <g transform="translate(14,880)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="25" fill="#5FD3C4" font-size="18" font-weight="800">07</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Fairmont Resort</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">68.3 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 12.1 km · To finish 33 km · Spectators/Drop Y / N</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off 02:05PM Sun</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">Leura side</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water · Näak · waffles · gels · hot food</text>
+    </g>
+    <g transform="translate(14,988)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="25" fill="#5FD3C4" font-size="18" font-weight="800">08</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Queen Victoria Hospital</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">79.3 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 11 km · To finish 22 km · Spectators/Drop Y / Y</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off 05:5AM Sun</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">printed 05:5AM, not 05:55</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water · Näak · waffles · gels · hot food</text>
+    </g>
+    <g transform="translate(14,1096)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="25" fill="#5FD3C4" font-size="18" font-weight="800">09</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Emergency Aid Station</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">92.5 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 13.2 km · To finish 8.8 km · Spectators/Drop N / N</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off none</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">not a full aid station</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water · Näak · waffles · limited food</text>
+    </g>
+    <g transform="translate(14,1204)">
+      <rect width="452" height="100" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="100" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="25" fill="#F4B860" font-size="18" font-weight="800">10</text>
+      <text x="52" y="25" fill="#F4FFFC" font-size="17" font-weight="700">Scenic World (finish)</text>
+      <text x="430" y="25" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">101.3 km</text>
+      <text x="52" y="50" fill="#91A8B8" font-size="13">From last 8.8 km · To finish 0 km · Spectators/Drop Y / Y</text>
+      <text x="52" y="73" fill="#FFB38A" font-size="13">Cut-off 12:30PM Sun</text>
+      <text x="430" y="73" fill="#6E8494" font-size="12" text-anchor="end">after 951 Furber Steps</text>
+      <text x="52" y="94" fill="#91A8B8" font-size="12">Water · hot meal</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="1340" fill="#F4B860" font-size="16" font-weight="700">Final limit: 28 h after the last starter</text>
+    <text x="14" y="1364" fill="#91A8B8" font-size="13">Last wave 08:30 → 12:30 Sunday = 28 h; first wave 05:00 gets 31 h 30 min.</text>
+    <text x="14" y="1386" fill="#6E8494" font-size="13">Tarros 12:30PM is 4 h after an 08:30 start and 7 h 30 min after 05:00.</text>
+    <text x="14" y="1408" fill="#6E8494" font-size="13">Queen Victoria Hospital prints “05:5AM”, not a valid four-digit time.</text>
+    <text x="14" y="1430" fill="#6E8494" font-size="13">Presented as a 2027 draft; schedule page is labelled subject to change.</text>
+    <text x="14" y="1462" fill="#6E8494" font-size="12">Editorial graphic. Not an official map, profile or race-day image.</text>
+  </g>
+</svg>

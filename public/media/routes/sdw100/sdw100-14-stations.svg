@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1580" viewBox="0 0 480 1580" role="img" aria-labelledby="title desc">
+  <title id="title">South Downs Way 100 2027: fourteen route points in official order</title>
+  <desc id="desc">Fourteen equal-width cards from the Start at Matterley Bowl at 0.0 miles to the Finish at Eastbourne at 100.0 miles, with the twelve numbered aid stations between them. Each card gives the segment distance, cumulative mileage, cumulative kilometres, Wave 1 and Wave 2 leave-by times, and crew or hot-food notes. Houghton Farm is at 47.3 miles in the 2027 chart. The cards are not a map, not distance-scaled and not navigable. Cut-offs are leave-by limits, not target paces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="1580" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="1580" fill="url(#bg)"/>
+  <circle cx="430" cy="58" r="120" fill="#F4B860" opacity="0.06"/>
+  <circle cx="40" cy="1510" r="110" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="38" fill="#F4B860" font-size="16" font-weight="700" letter-spacing="2">SOUTH DOWNS WAY / SDW100 2027</text>
+    <text x="14" y="82" fill="#F4FFFC" font-size="38" font-weight="750">100.0 miles</text>
+    <text x="14" y="122" fill="#F4FFFC" font-size="27" font-weight="700">14 points, 12 numbered stations</text>
+    <text x="14" y="152" fill="#91A8B8" font-size="18">Official aid-station chart · 3,800 m+ · 30 h</text>
+    <text x="14" y="180" fill="#FFB38A" font-size="17">Wave 1 05:30 Saturday · Wave 2 06:30 Saturday</text>
+    <text x="14" y="202" fill="#6E8494" font-size="14">SEG = segment · CUM = cumulative · equal-width cards</text>
+    <text x="14" y="222" fill="#6E8494" font-size="14">Not a map · not distance-scaled · not navigable</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(14,238)">
+      <rect width="452" height="84" rx="12" fill="#142435" stroke="#4A3A1E"/>
+      <rect width="5" height="84" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="29" fill="#F4B860" font-size="22" font-weight="800">S</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Start — Matterley Bowl</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">0.0</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +0.0 mi · CUM 0.0 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">0.0 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 05:30 · W2 06:30</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Parking on site</text>
+    </g>
+    <g transform="translate(14,328)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">01</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Beacon Hill Beeches</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">11.4</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +11.4 mi · CUM 11.4 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">18.3 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 09:00 · W2 10:00</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✗</text>
+    </g>
+    <g transform="translate(14,418)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">02</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">QECP</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">23.4</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +12.0 mi · CUM 23.4 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">37.7 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 12:30 · W2 13:30</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✓</text>
+    </g>
+    <g transform="translate(14,508)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">03</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">South Harting</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">28.0</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +4.6 mi · CUM 28.0 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">45.1 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 13:55 · W2 14:55</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✗</text>
+    </g>
+    <g transform="translate(14,598)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">04</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Cocking</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">36.6</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +8.6 mi · CUM 36.6 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">58.9 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 16:30 · W2 17:30</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✓</text>
+    </g>
+    <g transform="translate(14,688)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#3D2D14"/>
+      <rect width="5" height="84" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="29" fill="#F4B860" font-size="22" font-weight="800">05</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Houghton Farm</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">47.3</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +10.7 mi · CUM 47.3 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">76.1 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 20:20 · W2 21:20</text>
+      <text x="432" y="76" fill="#F4B860" font-size="15" text-anchor="end">Crew ✓ · hot drinks</text>
+    </g>
+    <g transform="translate(14,778)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">06</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Washington</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">55.0</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +7.7 mi · CUM 55.0 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">88.5 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 22:00 · W2 23:00</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✓ · hot food</text>
+    </g>
+    <g transform="translate(14,868)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">07</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Botolphs</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">60.9</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +5.9 mi · CUM 60.9 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">98.0 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 23:50 · W2 00:50 Sun</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✗ · hot drinks</text>
+    </g>
+    <g transform="translate(14,958)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">08</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Saddlescombe Farm</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">66.6</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +5.7 mi · CUM 66.6 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">107.2 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 01:30 Sun · W2 02:30 Sun</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✗ · hot drinks</text>
+    </g>
+    <g transform="translate(14,1048)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">09</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Housedean Farm</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">76.6</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +10.0 mi · CUM 76.6 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">123.3 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 04:25 Sun · W2 05:25 Sun</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✗ · hot drinks</text>
+    </g>
+    <g transform="translate(14,1138)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">10</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Southease</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">84.0</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +7.4 mi · CUM 84.0 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">135.2 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 06:40 Sun · W2 07:40 Sun</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✗ · hot drinks</text>
+    </g>
+    <g transform="translate(14,1228)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">11</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Alfriston</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">91.6</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +7.6 mi · CUM 91.6 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">147.4 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 09:00 Sun · W2 10:00 Sun</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="15" text-anchor="end">Crew ✗ · hot drinks</text>
+    </g>
+    <g transform="translate(14,1318)">
+      <rect width="452" height="84" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="84" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="22" font-weight="800">12</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Jevington</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">95.7</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +4.1 mi · CUM 95.7 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">154.0 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 10:15 Sun · W2 11:15 Sun</text>
+      <text x="432" y="76" fill="#91A8B8" font-size="16" text-anchor="end">Crew ✗ · hot drinks</text>
+    </g>
+    <g transform="translate(14,1408)">
+      <rect width="452" height="84" rx="12" fill="#142435" stroke="#4A3A1E"/>
+      <rect width="5" height="84" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="29" fill="#F4B860" font-size="22" font-weight="800">F</text>
+      <text x="64" y="29" fill="#F4FFFC" font-size="20" font-weight="700">Finish — Eastbourne</text>
+      <text x="432" y="29" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">100.0</text>
+      <text x="64" y="54" fill="#91A8B8" font-size="16">SEG +4.3 mi · CUM 100.0 mi</text>
+      <text x="432" y="54" fill="#91A8B8" font-size="16" text-anchor="end">160.9 km</text>
+      <text x="64" y="76" fill="#FFB38A" font-size="16">W1 11:30 Sun · W2 12:30 Sun</text>
+      <text x="432" y="76" fill="#F4B860" font-size="15" text-anchor="end">Hot food</text>
+    </g>
+    <text x="14" y="1532" fill="#6E8494" font-size="14">Not a map, not distance-scaled, not navigable. Cut-offs are leave-by times.</text>
+    <text x="14" y="1556" fill="#91A8B8" font-size="14">Houghton Farm: 47.3 mi in the 2027 chart; 45.0 mi in the 2026 chart.</text>
+  </g>
+</svg>

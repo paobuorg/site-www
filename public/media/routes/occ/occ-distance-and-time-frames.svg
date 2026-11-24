@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="880" viewBox="0 0 480 880" role="img" aria-labelledby="title desc">
+  <title id="title">OCC 2026: three official distance frames and two wave-based time limits</title>
+  <desc id="desc">Three distance frames are shown as bars scaled to 62 km: the page-header stat block at 60 km with 3,500 m+ gain, the timing table at 61.4 km with 3,342 m gain and 3,222 m loss, and the official GPX measured locally at 60.14 km with 3,342 m gain and 3,221 m loss at a 3 m threshold. The figures are not averaged. Below, two time-limit bars show 14 hours 30 minutes from the last wave at 09:00 to the 23:30 finish, and 15 hours 15 minutes from the first wave at 08:15 to the same finish. Bars are schematic and not a race plan.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="880" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="880" fill="url(#bg)"/>
+  <circle cx="430" cy="58" r="120" fill="#F4B860" opacity="0.06"/>
+  <circle cx="40" cy="820" r="110" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="38" fill="#F4B860" font-size="16" font-weight="700" letter-spacing="2">OCC / 2026 DISTANCE &amp; TIME</text>
+    <text x="14" y="84" fill="#F4FFFC" font-size="40" font-weight="750">Three frames</text>
+    <text x="14" y="124" fill="#F4FFFC" font-size="27" font-weight="750">60 / 61.4 / 60.14 km</text>
+    <text x="14" y="154" fill="#91A8B8" font-size="18">Same official page, three distance figures</text>
+    <text x="14" y="182" fill="#FFB38A" font-size="16">No average, no conversion, no single “true” distance</text>
+    <text x="14" y="208" fill="#6E8494" font-size="16">Bars scaled to 62 km · schematic, not a map or race plan</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(14,246)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="18" font-weight="700">Page-header stat block</text>
+      <text x="440" y="18" fill="#F4FFFC" font-size="21" font-weight="750" text-anchor="end">60 km</text>
+      <text x="0" y="44" fill="#91A8B8" font-size="14">+3,500 m+</text>
+      <text x="440" y="44" fill="#6E8494" font-size="13" text-anchor="end">no descent published</text>
+      <rect x="0" y="54" width="440" height="18" rx="9" fill="#13263A"/>
+      <rect x="0" y="54" width="425.8" height="18" rx="9" fill="#F4B860"/>
+    </g>
+    <g transform="translate(14,352)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="18" font-weight="700">Timing table total</text>
+      <text x="440" y="18" fill="#F4FFFC" font-size="21" font-weight="750" text-anchor="end">61.4 km</text>
+      <text x="0" y="44" fill="#91A8B8" font-size="14">+3,342 / −3,222 m</text>
+      <text x="440" y="44" fill="#6E8494" font-size="13" text-anchor="end">card value</text>
+      <rect x="0" y="54" width="440" height="18" rx="9" fill="#13263A"/>
+      <rect x="0" y="54" width="435.7" height="18" rx="9" fill="#5FD3C4"/>
+    </g>
+    <g transform="translate(14,458)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="18" font-weight="700">Official GPX, local measure</text>
+      <text x="440" y="18" fill="#F4FFFC" font-size="21" font-weight="750" text-anchor="end">60.14 km</text>
+      <text x="0" y="44" fill="#91A8B8" font-size="14">+3,342 / −3,221 m</text>
+      <text x="440" y="44" fill="#6E8494" font-size="13" text-anchor="end">3 m threshold</text>
+      <rect x="0" y="54" width="440" height="18" rx="9" fill="#13263A"/>
+      <rect x="0" y="54" width="426.8" height="18" rx="9" fill="#FF8A5B"/>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="560" fill="#F4B860" font-size="17" font-weight="700">The time limit is a wave rule, not a contradiction</text>
+    <text x="14" y="584" fill="#91A8B8" font-size="14">The official rule applies the maximum duration to the last wave.</text>
+    <g transform="translate(14,620)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="18" font-weight="700">Last wave</text>
+      <text x="440" y="18" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">14 h 30</text>
+      <rect x="0" y="34" width="440" height="18" rx="9" fill="#13263A"/>
+      <rect x="0" y="34" width="418.4" height="18" rx="9" fill="#5FD3C4"/>
+      <text x="0" y="72" fill="#91A8B8" font-size="14">start 09:00 → finish 23:30</text>
+    </g>
+    <g transform="translate(14,706)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="18" font-weight="700">First wave</text>
+      <text x="440" y="18" fill="#F4FFFC" font-size="20" font-weight="750" text-anchor="end">15 h 15</text>
+      <rect x="0" y="34" width="440" height="18" rx="9" fill="#13263A"/>
+      <rect x="0" y="34" width="440.0" height="18" rx="9" fill="#F4B860"/>
+      <text x="0" y="72" fill="#91A8B8" font-size="14">start 08:15 → finish 23:30</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="812" fill="#6E8494" font-size="13">Card value 61.4 km; header 60 km; GPX 60.14 km.</text>
+    <text x="14" y="832" fill="#6E8494" font-size="13">GPX linked only; gain/loss at a 3 m threshold.</text>
+    <text x="14" y="858" fill="#6E8494" font-size="12">Editorial graphic. Not an official map or race-day image.</text>
+  </g>
+</svg>

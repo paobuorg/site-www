@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="720" viewBox="0 0 360 720" role="img" aria-label="Kodiak 2026 five distances">
+<rect width="360" height="720" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">五个距离 · 一个周末</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">Big Bear Lake · 2026 · 距离按 0–170 km 非零刻度</text>
+<line x1="20" y1="60" x2="340" y2="60" stroke="#d8d0c0" stroke-width="1"/>
+<line x1="70" y1="80" x2="70" y2="520" stroke="#ded8cb" stroke-width="1"/>
+<line x1="320" y1="80" x2="320" y2="520" stroke="#ded8cb" stroke-width="1"/>
+<text x="20" y="121" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">100M</text>
+<rect x="70" y="108" width="236.91176470588235" height="24" rx="4" fill="#345f46"/>
+<text x="302.9117647058823" y="124" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">161.1 km</text>
+<text x="70" y="147" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#66726a">4,876 m · 36 h · 8 stones</text>
+<text x="20" y="207" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">100K</text>
+<rect x="70" y="194" width="148.6764705882353" height="24" rx="4" fill="#53745c"/>
+<text x="214.6764705882353" y="210" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">101.1 km</text>
+<text x="70" y="233" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#66726a">3,143 m · 20 h 15 min · 6 stones</text>
+<text x="20" y="293" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">50K</text>
+<rect x="70" y="280" width="72.05882352941177" height="24" rx="4" fill="#758f7c"/>
+<text x="146.05882352941177" y="296" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">49.0 km</text>
+<text x="70" y="319" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#66726a">1,364 m · 10 h · 4 stones</text>
+<text x="20" y="379" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">21K</text>
+<rect x="70" y="366" width="31.911764705882355" height="24" rx="4" fill="#9aab9b"/>
+<text x="105.91176470588235" y="382" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">21.7 km</text>
+<text x="70" y="405" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#66726a">678 m · 5 h · 2 stones · 页面另写 12.1 mi</text>
+<text x="20" y="465" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">10K</text>
+<rect x="70" y="452" width="13.823529411764707" height="24" rx="4" fill="#bdc7ba"/>
+<text x="87.82352941176471" y="468" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">9.4 km</text>
+<text x="70" y="491" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#66726a">342 m · 3 h · 0 stones</text>
+<line x1="20" y1="560" x2="340" y2="560" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="580" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">100M 的 161.1 km 取 100.1 mi 补给表；官方页头写 161 km，成绩/第三方写 161.1 km。</text>
+<text x="20" y="596" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">21K 在赛事页写 12.1 mi、1,886 ft，主页写 21.7 km、678 m；本图并列，不平均。</text>
+<text x="20" y="620" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">本站自制距离对比图，不是官方路线图；条形只用于比较 2026 五个组别的距离量级。</text>
+<text x="20" y="650" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">颜色越深表示距离越长；数字来自 2026 赛事页、races 页与 100M 官方补给表。</text>
+</svg>

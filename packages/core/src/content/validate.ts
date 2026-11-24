@@ -119,6 +119,24 @@ export function validateSemantics(
     if (!Array.isArray(source.claims) || source.claims.length === 0 || !source.claims.every(nonempty)) {
       add('source.claims', source.sourceId, 'Source must identify supported claims.');
     }
+    if (source.claimVerification !== undefined) {
+      const seen = new Set<number>();
+      const valid =
+        Array.isArray(source.claimVerification) &&
+        source.claimVerification.every((item) => {
+          const ok =
+            Number.isInteger(item.index) &&
+            item.index >= 0 &&
+            item.index < source.claims.length &&
+            ['supported', 'partial', 'unsupported', 'unknown'].includes(item.status) &&
+            validDate(item.checkedAt) &&
+            !seen.has(item.index) &&
+            (item.note === undefined || typeof item.note === 'string');
+          if (ok) seen.add(item.index);
+          return ok;
+        });
+      if (!valid) add('source.claimVerification', source.sourceId, 'Invalid claim verification record.');
+    }
     if (!allowTestFixtures && validUrl(source.url)) {
       const host = new URL(source.url).hostname;
       if (['example.org', 'example.com', 'example.net'].includes(host)) {
@@ -170,8 +188,8 @@ export function validateSemantics(
     if (!validDate(entity.createdAt) || !validDate(entity.updatedAt) || entity.createdAt > entity.updatedAt) {
       add('entity.date', id, 'Invalid content dates.');
     }
-    if (!Array.isArray(entity.sourceRefs) || entity.sourceRefs.some((source) => !sources.has(source))) {
-      add('entity.sources', id, 'Unknown source references.');
+    if (!Array.isArray(entity.sourceRefs) || entity.sourceRefs.length === 0 || entity.sourceRefs.some((source) => !sources.has(source))) {
+      add('entity.sources', id, 'Every entity needs at least one known source reference.');
     }
     if (!Array.isArray(entity.relatedRefs) || entity.relatedRefs.some((ref) => !entities.has(ref))) {
       add('entity.related', id, 'Unknown entity references.');
@@ -260,7 +278,7 @@ export function validateSemantics(
     if (entity.kind === 'route') {
       const route = details as RouteDetails;
       if (
-        !['road-marathon', 'trail-ultra'].includes(route.raceType) ||
+        !['road-marathon', 'road-ultra', 'trail-ultra', 'trail-mountain'].includes(route.raceType) ||
         !nonempty(route.courseVersion) ||
         !nonempty(route.direction) ||
         !isObject(route.placeName) ||
@@ -271,6 +289,40 @@ export function validateSemantics(
         route.countryCodes.some((code) => !/^[A-Z]{2}$/.test(code))
       ) {
         add('route.identity', id, 'Invalid course identity or bilingual place names.');
+      }
+      const edition = route.courseEdition ?? '';
+      if (published && (!/^\d{4}$/.test(edition) || !route.courseVersion.startsWith(edition))) {
+        add('route.edition', id, 'Published route needs a course edition matching its version prefix.');
+      }
+      if (
+        published &&
+        !['current', 'latest-held', 'superseded', 'unsupported', 'unknown'].includes(route.courseStatus ?? '')
+      ) {
+        add('route.course-status', id, 'Published route needs an explicit course status.');
+      }
+      if (
+        route.courseChanges !== undefined &&
+        !route.courseChanges.every(
+          (item) =>
+            /^\d{4}$/.test(item.edition) &&
+            validDate(item.observedAt) &&
+            nonempty(item.field) &&
+            [
+              'new-course',
+              'edition-roll',
+              'edition-lag',
+              'page-offline',
+              'distance-revised',
+              'elevation-revised',
+              'timing-revised',
+              'route-refined',
+            ].includes(item.change) &&
+            entity.sourceRefs.includes(item.sourceRef) &&
+            nonempty(item.note?.['zh-CN']) &&
+            nonempty(item.note?.en),
+        )
+      ) {
+        add('route.course-changes', id, 'Course change log must cite a known source and a dated edition.');
       }
       if (
         !isObject(route.mapAnchor) ||
@@ -310,6 +362,67 @@ export function validateSemantics(
       }
       if (route.geometryAccess === 'official-link' && !validUrl(route.officialGeometryUrl)) {
         add('route.official-link', id, 'Official geometry URL required.');
+      }
+      if (route.stages !== undefined) {
+        const stages = route.stages;
+        if (!Array.isArray(stages) || stages.length === 0) {
+          add('route.stages', id, 'Stages must be a non-empty array when provided.');
+        } else {
+          let distanceSum = 0;
+          let lastCumulative: number | null = null;
+          let stagesValid = true;
+          for (const [position, stage] of stages.entries()) {
+            const indexOk = stage.index === position + 1;
+            const dateOk = validDate(stage.date);
+            const distanceOk = Number.isFinite(stage.distanceMeters) && stage.distanceMeters >= 0;
+            const elevationOk =
+              stage.elevationGainMeters === null ||
+              (Number.isFinite(stage.elevationGainMeters) && stage.elevationGainMeters >= 0);
+            const cutoffOk =
+              stage.cutoffHours === null || (Number.isFinite(stage.cutoffHours) && stage.cutoffHours > 0);
+            const cumulativeOk =
+              stage.cumulativeCutoffHours === null ||
+              (Number.isFinite(stage.cumulativeCutoffHours) && stage.cumulativeCutoffHours > 0);
+            const cumulativeOrderOk =
+              stage.cumulativeCutoffHours === null ||
+              lastCumulative === null ||
+              stage.cumulativeCutoffHours >= lastCumulative;
+            const cutoffOrderOk =
+              stage.cutoffHours === null ||
+              stage.cumulativeCutoffHours === null ||
+              stage.cumulativeCutoffHours >= stage.cutoffHours;
+            const restOk = !stage.isRestDay || stage.distanceMeters === 0;
+            const runningOk = stage.isRestDay || stage.distanceMeters > 0;
+            const namesOk = nonempty(stage.startName) && nonempty(stage.finishName);
+            const flagsOk = typeof stage.selfSupported === 'boolean' && typeof stage.isRestDay === 'boolean';
+            if (
+              !indexOk ||
+              !dateOk ||
+              !distanceOk ||
+              !elevationOk ||
+              !cutoffOk ||
+              !cumulativeOk ||
+              !cumulativeOrderOk ||
+              !cutoffOrderOk ||
+              !restOk ||
+              !runningOk ||
+              !namesOk ||
+              !flagsOk
+            ) {
+              add('route.stages-entry', id, `Invalid stage entry at index ${stage.index}.`);
+              stagesValid = false;
+            }
+            if (stage.cumulativeCutoffHours !== null) lastCumulative = stage.cumulativeCutoffHours;
+            distanceSum += Number.isFinite(stage.distanceMeters) ? stage.distanceMeters : 0;
+          }
+          if (stagesValid && distanceSum !== route.distanceMeters) {
+            add(
+              'route.stages-distance',
+              id,
+              `Stage distances sum to ${distanceSum} m but distanceMeters is ${route.distanceMeters} m; they must match exactly.`,
+            );
+          }
+        }
       }
     }
 

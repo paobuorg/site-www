@@ -18,8 +18,10 @@ export function formatElevation(meters: number | null, locale: Locale): string {
   return `${meters.toLocaleString(locale === 'zh-CN' ? 'zh-CN' : 'en-US')} m`;
 }
 
-export function routeTypeLabel(kind: 'road-marathon' | 'trail-ultra', locale: Locale): string {
+export function routeTypeLabel(kind: RouteDetails['raceType'], locale: Locale): string {
   if (kind === 'road-marathon') return locale === 'zh-CN' ? '公路马拉松' : 'Road marathon';
+  if (kind === 'road-ultra') return locale === 'zh-CN' ? '公路超马' : 'Road ultra';
+  if (kind === 'trail-mountain') return locale === 'zh-CN' ? '山地竞速' : 'Mountain race';
   return locale === 'zh-CN' ? '越野超马' : 'Trail ultra';
 }
 

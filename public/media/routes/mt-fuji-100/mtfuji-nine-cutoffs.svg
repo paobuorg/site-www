@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1540" viewBox="0 0 360 1540" role="img" aria-labelledby="title desc">
+  <title id="title">Mt.FUJI 100 2026: nine cut-off points from F1 to the finish</title>
+  <desc id="desc">Nine cards list the 2026 FUJI100mi cut-offs in order: F1 Fujinomiya at 25.8 km, 527 m, in 22:30 on 24 April with no exit time; F2 Fumoto at 52.4 km, 818 m, in 05:50 and out 06:00 on 25 April; F3 Shojiko at 74.0 km, 922 m, 14:00 and 14:10; F4 Hanamaruki at 96.9 km, 864 m, 17:20 and 17:30; F5 Oshino at 113.2 km, 933 m, 21:30 and 21:40; F6 Yamanakako Kirara at 122.5 km, 984 m, in 02:30 and out 02:40 on 26 April; F7 Nijumagari at 136.9 km, 1,144 m, no entrance time and out 06:00; F8 Fujiyoshida at 148.4 km, 740 m, 10:00 and 10:10; and the finish at Fujisan GX Stadium, 167.0 km, 1,007 m, in 14:30 with no exit time. The start at 0 km is not counted among these nine cut-offs. F1 and the finish have one gate only, F7 has no entrance time and is generally not a retirement point. The 2026 table must not be applied to 2027, whose station table is not published. Elevations are GPX waypoint values for orientation only. The cards are schematic and are not a map, profile or navigation aid.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="360" y2="1540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="1540" fill="url(#bg)"/>
+  <circle cx="326" cy="46" r="98" fill="#F4B860" opacity="0.06"/>
+  <circle cx="30" cy="1490" r="92" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="12" y="30" fill="#F4B860" font-size="14" font-weight="700" letter-spacing="1.6">MT.FUJI 100 / 2026 FUJI100mi</text>
+    <text x="12" y="68" fill="#F4FFFC" font-size="34" font-weight="750">九处关门</text>
+    <text x="12" y="92" fill="#F4FFFC" font-size="19" font-weight="750">Nine cut-offs</text>
+    <text x="12" y="118" fill="#F4FFFC" font-size="13" font-weight="700">F1–F8 + finish · 2026 手册 · 四波 17:00–17:45</text>
+    <text x="12" y="140" fill="#FFB38A" font-size="12.5">入 / 出双关门 · F1 与终点只有单向时刻</text>
+    <text x="12" y="160" fill="#6E8494" font-size="11.5">F7 无入口时刻；起点 0 km 不计入这九处</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <circle cx="18" cy="186" r="6" fill="#FFB38A"/>
+    <text x="29" y="191" fill="#91A8B8" font-size="11.5">IN 入口</text>
+    <circle cx="92" cy="186" r="6" fill="#5FD3C4"/>
+    <text x="103" y="191" fill="#91A8B8" font-size="11.5">OUT 出口</text>
+    <text x="348" y="191" fill="#6E8494" font-size="10.5" text-anchor="end">all times absolute, 2026</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(12,210)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#5FD3C4"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#5FD3C4" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#5FD3C4" font-size="12" font-weight="800" text-anchor="middle">F1</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Fujinomiya</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">25.8 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">527 m · Fujinomiya, Shizuoka</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN 4/24 22:30 · OUT —</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end">single gate</text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">1 / 9</text>
+    </g>
+    <g transform="translate(12,338)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#5FD3C4"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#5FD3C4" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#5FD3C4" font-size="12" font-weight="800" text-anchor="middle">F2</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Fumoto</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">52.4 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">818 m · Fujinomiya, Shizuoka</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN 4/25 05:50 · OUT 06:00</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end"></text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">2 / 9</text>
+    </g>
+    <g transform="translate(12,466)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#5FD3C4"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#5FD3C4" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#5FD3C4" font-size="12" font-weight="800" text-anchor="middle">F3</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Shojiko</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">74.0 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">922 m · Fujikawaguchiko, Yamanashi</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN 4/25 14:00 · OUT 14:10</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end"></text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">3 / 9</text>
+    </g>
+    <g transform="translate(12,594)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#5FD3C4"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#5FD3C4" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#5FD3C4" font-size="12" font-weight="800" text-anchor="middle">F4</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Hanamaruki</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">96.9 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">864 m · Fujiyoshida, Yamanashi</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN 4/25 17:20 · OUT 17:30</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end"></text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">4 / 9</text>
+    </g>
+    <g transform="translate(12,722)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#5FD3C4"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#5FD3C4" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#5FD3C4" font-size="12" font-weight="800" text-anchor="middle">F5</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Oshino</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">113.2 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">933 m · Oshino, Yamanashi</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN 4/25 21:30 · OUT 21:40</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end">poles after F5</text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">5 / 9</text>
+    </g>
+    <g transform="translate(12,850)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#5FD3C4"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#5FD3C4" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#5FD3C4" font-size="12" font-weight="800" text-anchor="middle">F6</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Yamanakako Kirara</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">122.5 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">984 m · Yamanakako, Yamanashi</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN 4/26 02:30 · OUT 02:40</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end"></text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">6 / 9</text>
+    </g>
+    <g transform="translate(12,978)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#5FD3C4"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#5FD3C4" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#5FD3C4" font-size="12" font-weight="800" text-anchor="middle">F7</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Nijumagari</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">136.9 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">1,144 m · Oshino, Yamanashi</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN — · OUT 4/26 06:00</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end">no retirement</text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">7 / 9</text>
+    </g>
+    <g transform="translate(12,1106)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#5FD3C4"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#5FD3C4" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#5FD3C4" font-size="12" font-weight="800" text-anchor="middle">F8</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Fujiyoshida</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">148.4 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">740 m · Fujiyoshida, Yamanashi</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN 4/26 10:00 · OUT 10:10</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end"></text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">8 / 9</text>
+    </g>
+    <g transform="translate(12,1234)">
+      <rect width="336" height="112" rx="13" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="112" rx="2.5" fill="#F4B860"/>
+      <circle cx="28" cy="28" r="15" fill="#13263A" stroke="#F4B860" stroke-width="1.5"/>
+      <text x="28" y="33" fill="#F4B860" font-size="9" font-weight="800" text-anchor="middle">FIN</text>
+      <text x="52" y="27" fill="#F4FFFC" font-size="16" font-weight="700">Fujisan GX Stadium</text>
+      <text x="324" y="27" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">167.0 km</text>
+      <text x="52" y="47" fill="#91A8B8" font-size="11.5">1,007 m · Fujiyoshida, Yamanashi</text>
+      <text x="52" y="71" fill="#FFB38A" font-size="13.5" font-weight="650">IN 4/26 14:30 · OUT —</text>
+      <text x="324" y="71" fill="#6E8494" font-size="9.5" text-anchor="end">single gate</text>
+      <text x="52" y="96" fill="#6E8494" font-size="10">2026 cut-off · absolute clock time</text>
+      <text x="324" y="96" fill="#6E8494" font-size="10" text-anchor="end">9 / 9</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <line x1="12" y1="1364" x2="348" y2="1364" stroke="#20374A" stroke-width="1"/>
+    <text x="12" y="1390" fill="#F4B860" font-size="13.5" font-weight="700">九处关门 ≠ 九个可退赛点</text>
+    <text x="12" y="1410" fill="#91A8B8" font-size="11.5">F7 二十曲原则上不能退赛；支持者也不能开车来接。</text>
+    <text x="12" y="1432" fill="#6E8494" font-size="11.5">2026 表不能套到 2027：三波起跑与时限不同，</text>
+    <text x="12" y="1452" fill="#6E8494" font-size="11.5">逐站表约 2027 年 3 月公开。</text>
+    <text x="12" y="1474" fill="#6E8494" font-size="11.5">海拔为 GPX waypoint，仅作定位，不替代官方计时。</text>
+    <text x="12" y="1502" fill="#6E8494" font-size="10">Editorial graphic · CC BY 4.0 · not official or race-day</text>
+  </g>
+</svg>

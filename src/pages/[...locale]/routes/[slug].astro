@@ -33,7 +33,320 @@ const entity = content.byId(Astro.props.entityId);
 if (!entity) throw new Error(`Route ${Astro.props.entityId} is not visible`);
 const details = routeDetails(entity);
 const translation = content.translation(entity, locale);
-const bodyHtml = translation.html.replace(/<table>/g, '<table tabindex="0">');
+const mapLabel = (translation.title.split(/[：:]/)[0] ?? '').trim();
+const bodyHtml = translation.html
+  .replace(/<table>/g, '<div class="table-scroll"><table tabindex="0">')
+  .replace(/<\/table>/g, '</table></div>')
+  .replace(
+    /<div class="table-scroll">(<table tabindex="0">\s*<thead>\s*<tr>\s*<th[^>]*>(?:项目|Item|总榜)<\/th>)/g,
+    '<div class="table-scroll tight-first-col">$1',
+  )
+  .replace(
+    /<div class="table-scroll(?: tight-first-col)?">(<table tabindex="0">[\s\S]*?<\/table>)<\/div>/g,
+    (block, table) => {
+      if (entity.slug === 'ccc' && (table.match(/<th\b/g) ?? []).length === 8) {
+        return `<div class="table-scroll ccc-timing-table">${table}</div>`;
+      }
+      if (entity.slug === 'canyons') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 5 && /^(站点|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll canyons-aid-table">${table}</div>`;
+        }
+        if (headers.length === 5 && /^(区段|Segment)$/.test(headers[0])) {
+          return `<div class="table-scroll canyons-split-table">${table}</div>`;
+        }
+        if (headers.length === 6 && /^(组别|Race)$/.test(headers[0])) {
+          return `<div class="table-scroll canyons-race-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll canyons-conflict-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'tarawera') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 6 && /^(组别|Race)$/.test(headers[0])) {
+          return `<div class="table-scroll tarawera-race-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(口径|Basis|Source)$/.test(headers[0])) {
+          return `<div class="table-scroll tarawera-distance-table">${table}</div>`;
+        }
+        if (headers.length === 10 && /^(计时点|Timing point)$/.test(headers[0])) {
+          return `<div class="table-scroll tarawera-checkpoint-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'sdw100') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 5 && /^(站点|Point)$/.test(headers[0])) {
+          return `<div class="table-scroll sdw100-aid-table">${table}</div>`;
+        }
+        if (headers.length === 6 && /^(区段|Segment)$/.test(headers[0])) {
+          return `<div class="table-scroll sdw100-split-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll sdw100-conflict-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'hong-kong-100') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 4 && /^(口径|Basis)/.test(headers[0])) {
+          return `<div class="table-scroll hk100-distance-table">${table}</div>`;
+        }
+        if (headers.length === 6 && /^(分段|段|Segment)$/.test(headers[0])) {
+          return `<div class="table-scroll hk100-split-table">${table}</div>`;
+        }
+        if (headers.length === 6 && /^(地点|Location)/.test(headers[0])) {
+          return `<div class="table-scroll hk100-aid-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Location)$/.test(headers[0])) {
+          return `<div class="table-scroll hk100-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'occ') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 8 && /^(计时点|Checkpoint)$/.test(headers[0])) {
+          return `<div class="table-scroll occ-checkpoint-table">${table}</div>`;
+        }
+        if (headers.length === 5 && /^(口径|Source)$/.test(headers[0])) {
+          return `<div class="table-scroll occ-official-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll occ-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'ultra-trail-australia') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 6 && /^(组别|Race)$/.test(headers[0])) {
+          return `<div class="table-scroll uta-card-table uta-race-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(口径|Source)$/.test(headers[0])) {
+          return `<div class="table-scroll uta-card-table uta-official-table">${table}</div>`;
+        }
+        if (headers.length === 8 && /^(站点|Point)$/.test(headers[0])) {
+          return `<div class="table-scroll uta-card-table uta-checkpoints-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll uta-card-table uta-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'doi-inthanon-pagoda-50-day') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 4 && /^(点位|Point)$/.test(headers[0])) {
+          return `<div class="table-scroll doi-card-table doi-aid-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll doi-card-table doi-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'kodiak') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 3 && /^(站点|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll kodiak-card-table kodiak-aid-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(站点|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll kodiak-card-table kodiak-aid-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(区间|Segment)$/.test(headers[0])) {
+          return `<div class="table-scroll kodiak-card-table kodiak-split-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll kodiak-card-table kodiak-conflict-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll kodiak-card-table kodiak-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'black-canyon-ultras') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 5 && /^(补给站|站点|站|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll bc-card-table bc-aid-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(站点|站|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll bc-card-table bc-cutoff-table">${table}</div>`;
+        }
+        if (headers.length === 5 && /^(名次|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll bc-card-table bc-result-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll bc-card-table bc-conflict-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll bc-card-table bc-key-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(时间|Time)$/.test(headers[0])) {
+          return `<div class="table-scroll bc-card-table bc-kit-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(目标|Target)$/.test(headers[0])) {
+          return `<div class="table-scroll bc-card-table bc-pace-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll bc-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'beijing') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 4 && /^(口径|Source)$/.test(headers[0])) {
+          return `<div class="table-scroll bj-card-table bj-figure-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(段|Segment)$/.test(headers[0])) {
+          return `<div class="table-scroll bj-card-table bj-segment-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(站点|Point)$/.test(headers[0])) {
+          return `<div class="table-scroll bj-card-table bj-service-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll bj-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'wildstrubel') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 2 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll ws-card-table ws-key-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0]) && /GPX/.test(headers[2])) {
+          return `<div class="table-scroll ws-card-table ws-gpx-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll ws-card-table ws-conflict-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(站点|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll ws-card-table ws-station-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(区间|Segment)$/.test(headers[0])) {
+          return `<div class="table-scroll ws-card-table ws-segment-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll ws-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'val-daran') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 6 && /^(组别|Format)$/.test(headers[0])) {
+          return `<div class="table-scroll vd-card-table vd-group-table">${table}</div>`;
+        }
+        if (headers.length === 6 && /^(口径|Source)$/.test(headers[0])) {
+          return `<div class="table-scroll vd-card-table vd-figure-table">${table}</div>`;
+        }
+        if (headers.length === 9 && /^(段|Segment)$/.test(headers[0])) {
+          return `<div class="table-scroll vd-card-table vd-segment-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll vd-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'gpt100-miler') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 2 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll g100-card-table g100-key-table">${table}</div>`;
+        }
+        if (headers.length === 5 && /^(站点|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll g100-card-table g100-segment-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(站点|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll g100-card-table g100-aid-table">${table}</div>`;
+        }
+        if (headers.length === 2 && /^(站点|Station)$/.test(headers[0])) {
+          return `<div class="table-scroll g100-card-table g100-cutoff-table">${table}</div>`;
+        }
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0])) {
+          return `<div class="table-scroll g100-card-table g100-conflict-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll g100-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'paraty-brazil') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 6 && /^(组别|Race)$/.test(headers[0])) {
+          return `<div class="table-scroll p100-card-table p100-race-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(点位|Point)$/.test(headers[0])) {
+          return `<div class="table-scroll p100-card-table p100-point-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^2026 /.test(headers[0])) {
+          return `<div class="table-scroll p100-card-table p100-result-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点 \/ 图|Place \/ figure)$/.test(headers[0])) {
+          return `<div class="table-scroll p100-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'buenos-aires') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0]) && /^(官方规则|Official rule)$/.test(headers[1])) {
+          return `<div class="table-scroll ba-card-table ba-rule-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(项目|Item)$/.test(headers[0]) && /^(选手 \/ 年份|Athlete \/ year)$/.test(headers[2])) {
+          return `<div class="table-scroll ba-card-table ba-record-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'vmm-100') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 3 && /^(项目|Item)$/.test(headers[0]) && /^(一处写法|One version)$/.test(headers[1]) && /^(另一处写法|Another version)$/.test(headers[2])) {
+          return `<div class="table-scroll vmm-card-table vmm-compare-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'chiang-dao-160') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 5 && /^(点位|Point)$/.test(headers[0])) {
+          return `<div class="table-scroll cd160-card-table cd160-point-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点 \/ 图|Place \/ (figure|image))$/.test(headers[0])) {
+          return `<div class="table-scroll cd160-card-table cd160-media-table">${table}</div>`;
+        }
+      }
+      if (entity.slug === 'mt-fuji-100') {
+        const headers = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((match) =>
+          match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+        );
+        if (headers.length === 4 && /^(口径|Figure)$/.test(headers[0])) {
+          return `<div class="table-scroll mtfuji-card-table mtfuji-distance-table">${table}</div>`;
+        }
+        if (headers.length === 4 && /^(计时点|Timing point)$/.test(headers[0])) {
+          return `<div class="table-scroll mtfuji-card-table mtfuji-split-table">${table}</div>`;
+        }
+        if (headers.length === 5 && /^(计时点|Timing point)$/.test(headers[0])) {
+          return `<div class="table-scroll mtfuji-card-table mtfuji-cutoff-table">${table}</div>`;
+        }
+        if (headers.length === 7 && /^(地点|Place)$/.test(headers[0])) {
+          return `<div class="table-scroll mtfuji-card-table mtfuji-media-table">${table}</div>`;
+        }
+      }
+      return block;
+    },
+  );
 const sources = content.sourcesFor(entity);
 const sourceNotes = sources.map((source) => describeSourceVerification(source, locale));
 const related = content.related(entity, locale);
@@ -66,6 +379,16 @@ const copy = locale === 'zh-CN'
       relatedTools: '关联工具',
       relatedRoutes: '关联路线',
       versionTitle: '版本与口径',
+      edition: '适用届次',
+      reviewDue: '下次必查',
+      changesTitle: '届次变更记录',
+      status: {
+        current: '官方当前届次',
+        'latest-held': '最近已办届次',
+        superseded: '官方已切至下一届',
+        unsupported: '官方页已不可复核',
+        unknown: '未判定',
+      },
       distanceMethod: '距离口径',
       elevationMethod: '高程口径',
       mapAnchor: '锚点来源',
@@ -94,6 +417,16 @@ const copy = locale === 'zh-CN'
       relatedTools: 'Related tools',
       relatedRoutes: 'Related routes',
       versionTitle: 'Version and method',
+      edition: 'Edition covered',
+      reviewDue: 'Next check due',
+      changesTitle: 'Edition change log',
+      status: {
+        current: 'Current official edition',
+        'latest-held': 'Latest held edition',
+        superseded: 'Official page moved to the next edition',
+        unsupported: 'Official page no longer checkable',
+        unknown: 'Not determined',
+      },
       distanceMethod: 'Distance method',
       elevationMethod: 'Elevation method',
       mapAnchor: 'Anchor source',
@@ -165,7 +498,7 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
           data-route-globe
           data-longitude={details.mapAnchor.longitude}
           data-latitude={details.mapAnchor.latitude}
-          data-title={translation.title}
+          data-title={mapLabel}
           data-kind={details.raceType}
         >
           <div class="globe-poster" aria-hidden="true">
@@ -211,8 +544,8 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
 
       <aside class="card route-info-card" aria-labelledby="route-title">
         <div class="route-type">
-          <span class:list={['pill', details.raceType === 'trail-ultra' ? 'yellow' : 'blue']}>
-            <Icon name={details.raceType === 'trail-ultra' ? 'mountain' : 'route'} size={14} />
+          <span class:list={['pill', details.raceType === 'road-marathon' || details.raceType === 'road-ultra' ? 'blue' : 'yellow']}>
+            <Icon name={details.raceType === 'road-marathon' || details.raceType === 'road-ultra' ? 'route' : 'mountain'} size={14} />
             {routeTypeLabel(details.raceType, locale)}
           </span>
           <span class="pill lavender">{anchorLabel}</span>
@@ -268,7 +601,7 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
       </aside>
     </div>
 
-    <div class="route-narrative">
+    <div class={`route-narrative${entity.slug === 'ccc' ? ' ccc-narrative' : ''}${entity.slug === 'canyons' ? ' canyons-narrative' : ''}${entity.slug === 'tarawera' ? ' tarawera-narrative' : ''}${entity.slug === 'sdw100' ? ' sdw100-narrative' : ''}${entity.slug === 'hong-kong-100' ? ' hongkong100-narrative' : ''}${entity.slug === 'occ' ? ' occ-narrative' : ''}${entity.slug === 'ultra-trail-australia' ? ' uta-narrative' : ''}${entity.slug === 'mt-fuji-100' ? ' mtfuji-narrative' : ''}${entity.slug === 'doi-inthanon-pagoda-50-day' ? ' doi-narrative' : ''}${entity.slug === 'kodiak' ? ' kodiak-narrative' : ''}${entity.slug === 'black-canyon-ultras' ? ' blackcanyon-narrative' : ''}${entity.slug === 'beijing' ? ' beijing-narrative' : ''}${entity.slug === 'wildstrubel' ? ' wildstrubel-narrative' : ''}${entity.slug === 'val-daran' ? ' val-daran-narrative' : ''}${entity.slug === 'gpt100-miler' ? ' gpt100-narrative' : ''}${entity.slug === 'paraty-brazil' ? ' paraty-narrative' : ''}${entity.slug === 'chiang-dao-160' ? ' chiang-dao-narrative' : ''}${entity.slug === 'buenos-aires' ? ' buenos-aires-narrative' : ''}${entity.slug === 'vmm-100' ? ' vmm-100-narrative' : ''}`}>
       {entity.status !== 'published' && (
         <div class="notice tone-yellow">
           <Icon name="alert" size={18} />
@@ -284,7 +617,19 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
 
       <div class="route-version-box">
         <strong>{copy.versionTitle}</strong>
+        <span>{copy.edition}: {details.courseEdition ?? copy.unknown} · {copy.status[details.courseStatus ?? 'unknown']}</span>
         <span>{t(locale, 'courseVersion')}: {details.courseVersion}</span>
+        <span>{copy.reviewDue}: {formatDate(entity.reviewDueAt, locale)}</span>
+        {details.courseChanges?.length ? (
+          <div>
+            <span>{copy.changesTitle}</span>
+            <ul>
+              {details.courseChanges.map((change) => (
+                <li>{change.edition} · {change.note[locale]}</li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
         <span>{copy.distanceMethod}: {details.distanceMethod}</span>
         <span>{copy.elevationMethod}: {details.elevationMethod ?? copy.unknown}</span>
         <span>{copy.authors}: {authors.join(', ')}</span>
@@ -384,5 +729,4176 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
+  }
+
+  .table-scroll {
+    min-width: 0;
+    max-width: 100%;
+    margin-bottom: 1.15em;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-scroll table {
+    display: table;
+    width: max-content;
+    min-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 0.86rem;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th,
+  .tarawera-narrative .tarawera-checkpoint-table td {
+    padding-left: 6px;
+    padding-right: 6px;
+    overflow-wrap: normal;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th {
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 0.70rem;
+    line-height: 1.2;
+    overflow-wrap: normal;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(1),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(1) {
+    width: 16%;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(2),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(2) {
+    width: 6%;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(3),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(3),
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(4),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(4),
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(5),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(5) {
+    width: 9%;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(2),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(3),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(4),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(5) {
+    white-space: nowrap;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(6),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(6) {
+    width: 9%;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(7),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(7) {
+    width: 11%;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(8),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(8) {
+    width: 8%;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(9),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(9) {
+    width: 8%;
+  }
+
+  .tarawera-narrative .tarawera-checkpoint-table th:nth-child(10),
+  .tarawera-narrative .tarawera-checkpoint-table td:nth-child(10) {
+    width: 15%;
+  }
+
+  .sdw100-narrative .sdw100-aid-table table,
+  .sdw100-narrative .sdw100-split-table table,
+  .sdw100-narrative .sdw100-conflict-table table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 0.86rem;
+  }
+
+  .sdw100-narrative .sdw100-aid-table th,
+  .sdw100-narrative .sdw100-aid-table td,
+  .sdw100-narrative .sdw100-split-table th,
+  .sdw100-narrative .sdw100-split-table td,
+  .sdw100-narrative .sdw100-conflict-table th,
+  .sdw100-narrative .sdw100-conflict-table td {
+    padding-left: 6px;
+    padding-right: 6px;
+    overflow-wrap: normal;
+  }
+
+  .sdw100-narrative .sdw100-aid-table th,
+  .sdw100-narrative .sdw100-split-table th,
+  .sdw100-narrative .sdw100-conflict-table th {
+    font-size: 0.72rem;
+    line-height: 1.2;
+    overflow-wrap: normal;
+  }
+
+  .sdw100-narrative .sdw100-aid-table th:nth-child(1),
+  .sdw100-narrative .sdw100-aid-table td:nth-child(1) {
+    width: 28%;
+  }
+
+  .sdw100-narrative .sdw100-aid-table th:nth-child(2),
+  .sdw100-narrative .sdw100-aid-table td:nth-child(2) {
+    width: 7%;
+  }
+
+  .sdw100-narrative .sdw100-aid-table th:nth-child(3),
+  .sdw100-narrative .sdw100-aid-table td:nth-child(3),
+  .sdw100-narrative .sdw100-aid-table th:nth-child(4),
+  .sdw100-narrative .sdw100-aid-table td:nth-child(4) {
+    width: 15%;
+  }
+
+  .sdw100-narrative .sdw100-aid-table th:nth-child(5),
+  .sdw100-narrative .sdw100-aid-table td:nth-child(5) {
+    width: 35%;
+    text-align: left;
+  }
+
+  .sdw100-narrative .sdw100-aid-table td:nth-child(2),
+  .sdw100-narrative .sdw100-aid-table td:nth-child(3),
+  .sdw100-narrative .sdw100-aid-table td:nth-child(4),
+  .sdw100-narrative .sdw100-aid-table td:nth-child(5) {
+    white-space: nowrap;
+  }
+
+  .sdw100-narrative .sdw100-split-table th:nth-child(1),
+  .sdw100-narrative .sdw100-split-table td:nth-child(1) {
+    width: 20%;
+  }
+
+  .sdw100-narrative .sdw100-split-table th:nth-child(2),
+  .sdw100-narrative .sdw100-split-table td:nth-child(2),
+  .sdw100-narrative .sdw100-split-table th:nth-child(3),
+  .sdw100-narrative .sdw100-split-table td:nth-child(3) {
+    width: 9%;
+  }
+
+  .sdw100-narrative .sdw100-split-table th:nth-child(4),
+  .sdw100-narrative .sdw100-split-table td:nth-child(4) {
+    width: 17%;
+  }
+
+  .sdw100-narrative .sdw100-split-table th:nth-child(5),
+  .sdw100-narrative .sdw100-split-table td:nth-child(5) {
+    width: 22%;
+  }
+
+  .sdw100-narrative .sdw100-split-table th:nth-child(6),
+  .sdw100-narrative .sdw100-split-table td:nth-child(6) {
+    width: 23%;
+  }
+
+  .sdw100-narrative .sdw100-split-table td:nth-child(2),
+  .sdw100-narrative .sdw100-split-table td:nth-child(3),
+  .sdw100-narrative .sdw100-split-table td:nth-child(4),
+  .sdw100-narrative .sdw100-split-table td:nth-child(5),
+  .sdw100-narrative .sdw100-split-table td:nth-child(6) {
+    white-space: nowrap;
+  }
+
+  .sdw100-narrative .sdw100-conflict-table th:nth-child(1),
+  .sdw100-narrative .sdw100-conflict-table td:nth-child(1) {
+    width: 26%;
+  }
+
+  .sdw100-narrative .sdw100-conflict-table th:nth-child(2),
+  .sdw100-narrative .sdw100-conflict-table td:nth-child(2),
+  .sdw100-narrative .sdw100-conflict-table th:nth-child(3),
+  .sdw100-narrative .sdw100-conflict-table td:nth-child(3) {
+    width: 37%;
+  }
+
+  .prose code {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  @media (max-width: 430px) {
+    .ccc-narrative .table-scroll table {
+      font-size: 0.82rem;
+    }
+
+    .ccc-narrative .table-scroll th,
+    .ccc-narrative .table-scroll td {
+      padding: 6px 5px;
+    }
+
+    .ccc-narrative .ccc-timing-table {
+      overflow-x: visible;
+    }
+
+    .ccc-narrative .ccc-timing-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      font-size: 0.84rem;
+    }
+
+    .ccc-narrative .ccc-timing-table thead {
+      display: none;
+    }
+
+    .ccc-narrative .ccc-timing-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .ccc-narrative .ccc-timing-table tr {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      gap: 7px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .ccc-narrative .ccc-timing-table td {
+      display: block;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(1) {
+      grid-column: 1 / span 1;
+      grid-row: 1;
+      color: var(--primary-text);
+      font-weight: 800;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(2) {
+      grid-column: 2 / -1;
+      grid-row: 1;
+      font-weight: 750;
+      font-size: 0.94rem;
+      overflow-wrap: anywhere;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(3),
+    .ccc-narrative .ccc-timing-table td:nth-child(5),
+    .ccc-narrative .ccc-timing-table td:nth-child(7) {
+      grid-column: 1 / span 4;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(4),
+    .ccc-narrative .ccc-timing-table td:nth-child(6),
+    .ccc-narrative .ccc-timing-table td:nth-child(8) {
+      grid-column: 5 / span 4;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(3) {
+      grid-row: 2;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(4) {
+      grid-row: 2;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(5) {
+      grid-row: 3;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(6) {
+      grid-row: 3;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(7) {
+      grid-row: 4;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(8) {
+      grid-row: 4;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(n + 3)::before {
+      display: block;
+      margin-bottom: 1px;
+      color: var(--muted);
+      font-size: 0.66rem;
+      font-weight: 620;
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(3)::before {
+      content: "累计距离";
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(4)::before {
+      content: "段距离";
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(5)::before {
+      content: "段爬升 / 下降";
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(6)::before {
+      content: "累计爬升 / 下降";
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(7)::before {
+      content: "海拔";
+    }
+
+    .ccc-narrative .ccc-timing-table td:nth-child(8)::before {
+      content: "关门";
+    }
+
+    :lang(en) .ccc-narrative .ccc-timing-table td:nth-child(3)::before {
+      content: "Cum. distance";
+    }
+
+    :lang(en) .ccc-narrative .ccc-timing-table td:nth-child(4)::before {
+      content: "Seg. distance";
+    }
+
+    :lang(en) .ccc-narrative .ccc-timing-table td:nth-child(5)::before {
+      content: "Seg. gain / loss";
+    }
+
+    :lang(en) .ccc-narrative .ccc-timing-table td:nth-child(6)::before {
+      content: "Cum. gain / loss";
+    }
+
+    :lang(en) .ccc-narrative .ccc-timing-table td:nth-child(7)::before {
+      content: "Altitude";
+    }
+
+    :lang(en) .ccc-narrative .ccc-timing-table td:nth-child(8)::before {
+      content: "Cut-off";
+    }
+  }
+
+  @media (max-width: 430px) {
+    .canyons-narrative .canyons-aid-table,
+    .canyons-narrative .canyons-split-table,
+    .canyons-narrative .canyons-race-table,
+    .canyons-narrative .canyons-conflict-table {
+      overflow-x: visible;
+    }
+
+    .canyons-narrative .canyons-aid-table table,
+    .canyons-narrative .canyons-split-table table,
+    .canyons-narrative .canyons-race-table table,
+    .canyons-narrative .canyons-conflict-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      font-size: 0.82rem;
+    }
+
+    .canyons-narrative .canyons-aid-table thead,
+    .canyons-narrative .canyons-split-table thead,
+    .canyons-narrative .canyons-race-table thead,
+    .canyons-narrative .canyons-conflict-table thead {
+      display: none;
+    }
+
+    .canyons-narrative .canyons-aid-table tbody,
+    .canyons-narrative .canyons-split-table tbody,
+    .canyons-narrative .canyons-race-table tbody,
+    .canyons-narrative .canyons-conflict-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .canyons-narrative .canyons-aid-table tr,
+    .canyons-narrative .canyons-split-table tr,
+    .canyons-narrative .canyons-race-table tr,
+    .canyons-narrative .canyons-conflict-table tr {
+      display: grid;
+      gap: 7px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .canyons-narrative .canyons-aid-table td,
+    .canyons-narrative .canyons-split-table td,
+    .canyons-narrative .canyons-race-table td,
+    .canyons-narrative .canyons-conflict-table td {
+      display: block;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .canyons-narrative .canyons-aid-table tr,
+    .canyons-narrative .canyons-split-table tr,
+    .canyons-narrative .canyons-race-table tr {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(1),
+    .canyons-narrative .canyons-split-table td:nth-child(1),
+    .canyons-narrative .canyons-race-table td:nth-child(1),
+    .canyons-narrative .canyons-conflict-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+      overflow-wrap: anywhere;
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(4) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(5) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .canyons-narrative .canyons-split-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .canyons-narrative .canyons-split-table td:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .canyons-narrative .canyons-split-table td:nth-child(4) {
+      grid-column: 1 / -1;
+      grid-row: 3;
+    }
+
+    .canyons-narrative .canyons-split-table td:nth-child(5) {
+      grid-column: 1 / -1;
+      grid-row: 4;
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(4) {
+      grid-column: 1 / -1;
+      grid-row: 3;
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(5) {
+      grid-column: 1;
+      grid-row: 4;
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(6) {
+      grid-column: 2;
+      grid-row: 4;
+    }
+
+    .canyons-narrative .canyons-conflict-table tr {
+      grid-template-columns: 1fr;
+    }
+
+    .canyons-narrative .canyons-conflict-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .canyons-narrative .canyons-conflict-table td:nth-child(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(n + 2)::before,
+    .canyons-narrative .canyons-split-table td:nth-child(n + 2)::before,
+    .canyons-narrative .canyons-race-table td:nth-child(n + 2)::before,
+    .canyons-narrative .canyons-conflict-table td:nth-child(n + 2)::before {
+      display: block;
+      margin-bottom: 1px;
+      color: var(--muted);
+      font-size: 0.66rem;
+      font-weight: 620;
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(2)::before {
+      content: "累计 km";
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(3)::before {
+      content: "累计 + / −";
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(4)::before {
+      content: "关门";
+    }
+
+    .canyons-narrative .canyons-aid-table td:nth-child(5)::before {
+      content: "存包 / crew";
+    }
+
+    .canyons-narrative .canyons-split-table td:nth-child(2)::before {
+      content: "本段距离";
+    }
+
+    .canyons-narrative .canyons-split-table td:nth-child(3)::before {
+      content: "累计距离";
+    }
+
+    .canyons-narrative .canyons-split-table td:nth-child(4)::before {
+      content: "累计爬升 / 下降";
+    }
+
+    .canyons-narrative .canyons-split-table td:nth-child(5)::before {
+      content: "备注";
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(2)::before {
+      content: "距离";
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(3)::before {
+      content: "爬升";
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(4)::before {
+      content: "起跑";
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(5)::before {
+      content: "时限";
+    }
+
+    .canyons-narrative .canyons-race-table td:nth-child(6)::before {
+      content: "Stones";
+    }
+
+    .canyons-narrative .canyons-conflict-table td:nth-child(2)::before {
+      content: "一处写法";
+    }
+
+    .canyons-narrative .canyons-conflict-table td:nth-child(3)::before {
+      content: "另一处写法";
+    }
+
+    :lang(en) .canyons-narrative .canyons-aid-table td:nth-child(2)::before {
+      content: "Cum. km";
+    }
+
+    :lang(en) .canyons-narrative .canyons-aid-table td:nth-child(3)::before {
+      content: "Cum. + / −";
+    }
+
+    :lang(en) .canyons-narrative .canyons-aid-table td:nth-child(4)::before {
+      content: "Cut-off";
+    }
+
+    :lang(en) .canyons-narrative .canyons-aid-table td:nth-child(5)::before {
+      content: "Drop bag / crew";
+    }
+
+    :lang(en) .canyons-narrative .canyons-split-table td:nth-child(2)::before {
+      content: "Seg. distance";
+    }
+
+    :lang(en) .canyons-narrative .canyons-split-table td:nth-child(3)::before {
+      content: "Cum. distance";
+    }
+
+    :lang(en) .canyons-narrative .canyons-split-table td:nth-child(4)::before {
+      content: "Cum. gain / loss";
+    }
+
+    :lang(en) .canyons-narrative .canyons-split-table td:nth-child(5)::before {
+      content: "Note";
+    }
+
+    :lang(en) .canyons-narrative .canyons-race-table td:nth-child(2)::before {
+      content: "Distance";
+    }
+
+    :lang(en) .canyons-narrative .canyons-race-table td:nth-child(3)::before {
+      content: "Gain";
+    }
+
+    :lang(en) .canyons-narrative .canyons-race-table td:nth-child(4)::before {
+      content: "Start";
+    }
+
+    :lang(en) .canyons-narrative .canyons-race-table td:nth-child(5)::before {
+      content: "Limit";
+    }
+
+    :lang(en) .canyons-narrative .canyons-race-table td:nth-child(6)::before {
+      content: "Stones";
+    }
+
+    :lang(en) .canyons-narrative .canyons-conflict-table td:nth-child(2)::before {
+      content: "One version";
+    }
+
+    :lang(en) .canyons-narrative .canyons-conflict-table td:nth-child(3)::before {
+      content: "Another version";
+    }
+  }
+
+  .hongkong100-narrative .hk100-distance-table table,
+  .hongkong100-narrative .hk100-split-table table,
+  .hongkong100-narrative .hk100-aid-table table,
+  .hongkong100-narrative .hk100-media-table table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 0.84rem;
+  }
+
+  .hongkong100-narrative .hk100-distance-table th,
+  .hongkong100-narrative .hk100-distance-table td,
+  .hongkong100-narrative .hk100-split-table th,
+  .hongkong100-narrative .hk100-split-table td,
+  .hongkong100-narrative .hk100-aid-table th,
+  .hongkong100-narrative .hk100-aid-table td,
+  .hongkong100-narrative .hk100-media-table th,
+  .hongkong100-narrative .hk100-media-table td {
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-wrap: anywhere;
+    line-height: 1.35;
+  }
+
+  .hongkong100-narrative .hk100-distance-table th,
+  .hongkong100-narrative .hk100-split-table th,
+  .hongkong100-narrative .hk100-aid-table th,
+  .hongkong100-narrative .hk100-media-table th {
+    font-size: 0.68rem;
+    line-height: 1.2;
+  }
+
+  .hongkong100-narrative .hk100-distance-table th:nth-child(1),
+  .hongkong100-narrative .hk100-distance-table td:nth-child(1) {
+    width: 31%;
+  }
+
+  .hongkong100-narrative .hk100-distance-table th:nth-child(2),
+  .hongkong100-narrative .hk100-distance-table td:nth-child(2) {
+    width: 19%;
+  }
+
+  .hongkong100-narrative .hk100-distance-table th:nth-child(3),
+  .hongkong100-narrative .hk100-distance-table td:nth-child(3),
+  .hongkong100-narrative .hk100-distance-table th:nth-child(4),
+  .hongkong100-narrative .hk100-distance-table td:nth-child(4) {
+    width: 25%;
+  }
+
+  .hongkong100-narrative .hk100-split-table th:nth-child(1),
+  .hongkong100-narrative .hk100-split-table td:nth-child(1) {
+    width: 6%;
+  }
+
+  .hongkong100-narrative .hk100-split-table th:nth-child(2),
+  .hongkong100-narrative .hk100-split-table td:nth-child(2) {
+    width: 43%;
+  }
+
+  .hongkong100-narrative .hk100-split-table th:nth-child(3),
+  .hongkong100-narrative .hk100-split-table td:nth-child(3),
+  .hongkong100-narrative .hk100-split-table th:nth-child(4),
+  .hongkong100-narrative .hk100-split-table td:nth-child(4),
+  .hongkong100-narrative .hk100-split-table th:nth-child(5),
+  .hongkong100-narrative .hk100-split-table td:nth-child(5) {
+    width: 10%;
+  }
+
+  .hongkong100-narrative .hk100-split-table th:nth-child(6),
+  .hongkong100-narrative .hk100-split-table td:nth-child(6) {
+    width: 21%;
+  }
+
+  .hongkong100-narrative .hk100-aid-table th:nth-child(1),
+  .hongkong100-narrative .hk100-aid-table td:nth-child(1) {
+    width: 38%;
+  }
+
+  .hongkong100-narrative .hk100-aid-table th:nth-child(2),
+  .hongkong100-narrative .hk100-aid-table td:nth-child(2) {
+    width: 11%;
+  }
+
+  .hongkong100-narrative .hk100-aid-table th:nth-child(3),
+  .hongkong100-narrative .hk100-aid-table td:nth-child(3) {
+    width: 15%;
+  }
+
+  .hongkong100-narrative .hk100-aid-table th:nth-child(4),
+  .hongkong100-narrative .hk100-aid-table td:nth-child(4) {
+    width: 13%;
+  }
+
+  .hongkong100-narrative .hk100-aid-table th:nth-child(5),
+  .hongkong100-narrative .hk100-aid-table td:nth-child(5),
+  .hongkong100-narrative .hk100-aid-table th:nth-child(6),
+  .hongkong100-narrative .hk100-aid-table td:nth-child(6) {
+    width: 11.5%;
+  }
+
+  .hongkong100-narrative .hk100-media-table th:nth-child(1),
+  .hongkong100-narrative .hk100-media-table td:nth-child(1) {
+    width: 15%;
+  }
+
+  .hongkong100-narrative .hk100-media-table th:nth-child(2),
+  .hongkong100-narrative .hk100-media-table td:nth-child(2) {
+    width: 20%;
+  }
+
+  .hongkong100-narrative .hk100-media-table th:nth-child(3),
+  .hongkong100-narrative .hk100-media-table td:nth-child(3) {
+    width: 15%;
+  }
+
+  .hongkong100-narrative .hk100-media-table th:nth-child(4),
+  .hongkong100-narrative .hk100-media-table td:nth-child(4),
+  .hongkong100-narrative .hk100-media-table th:nth-child(5),
+  .hongkong100-narrative .hk100-media-table td:nth-child(5) {
+    width: 10%;
+  }
+
+  .hongkong100-narrative .hk100-media-table th:nth-child(6),
+  .hongkong100-narrative .hk100-media-table td:nth-child(6),
+  .hongkong100-narrative .hk100-media-table th:nth-child(7),
+  .hongkong100-narrative .hk100-media-table td:nth-child(7) {
+    width: 15%;
+  }
+
+  @media (max-width: 430px) {
+    .hongkong100-narrative .hk100-distance-table,
+    .hongkong100-narrative .hk100-split-table,
+    .hongkong100-narrative .hk100-aid-table,
+    .hongkong100-narrative .hk100-media-table {
+      overflow-x: visible;
+    }
+
+    .hongkong100-narrative .hk100-distance-table table,
+    .hongkong100-narrative .hk100-split-table table,
+    .hongkong100-narrative .hk100-aid-table table,
+    .hongkong100-narrative .hk100-media-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .hongkong100-narrative .hk100-distance-table thead,
+    .hongkong100-narrative .hk100-split-table thead,
+    .hongkong100-narrative .hk100-aid-table thead,
+    .hongkong100-narrative .hk100-media-table thead {
+      display: none;
+    }
+
+    .hongkong100-narrative .hk100-distance-table tbody,
+    .hongkong100-narrative .hk100-split-table tbody,
+    .hongkong100-narrative .hk100-aid-table tbody,
+    .hongkong100-narrative .hk100-media-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .hongkong100-narrative .hk100-distance-table tr,
+    .hongkong100-narrative .hk100-split-table tr,
+    .hongkong100-narrative .hk100-aid-table tr,
+    .hongkong100-narrative .hk100-media-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .hongkong100-narrative .hk100-distance-table td,
+    .hongkong100-narrative .hk100-split-table td,
+    .hongkong100-narrative .hk100-aid-table td,
+    .hongkong100-narrative .hk100-media-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(n),
+    .hongkong100-narrative .hk100-split-table td:nth-child(n),
+    .hongkong100-narrative .hk100-aid-table td:nth-child(n),
+    .hongkong100-narrative .hk100-media-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(1),
+    .hongkong100-narrative .hk100-split-table td:nth-child(1),
+    .hongkong100-narrative .hk100-aid-table td:nth-child(1),
+    .hongkong100-narrative .hk100-media-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+      overflow-wrap: anywhere;
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(4) {
+      grid-column: 1 / -1;
+      grid-row: 3;
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(2) {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      font-weight: 650;
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(4) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(5) {
+      grid-column: 1;
+      grid-row: 4;
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(6) {
+      grid-column: 2;
+      grid-row: 4;
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(4) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(5) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(6) {
+      grid-column: 1 / -1;
+      grid-row: 4;
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(4) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(5) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(6) {
+      grid-column: 1;
+      grid-row: 4;
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(7) {
+      grid-column: 2;
+      grid-row: 4;
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(n + 2)::before,
+    .hongkong100-narrative .hk100-split-table td:nth-child(n + 2)::before,
+    .hongkong100-narrative .hk100-aid-table td:nth-child(n + 2)::before,
+    .hongkong100-narrative .hk100-media-table td:nth-child(n + 2)::before {
+      display: block;
+      margin-bottom: 1px;
+      color: var(--muted);
+      font-size: 0.66rem;
+      font-weight: 620;
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(2)::before {
+      content: "距离";
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(3)::before {
+      content: "爬升";
+    }
+
+    .hongkong100-narrative .hk100-distance-table td:nth-child(4)::before {
+      content: "下降";
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(2)::before {
+      content: "区间（正文 / 表标签）";
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(3)::before {
+      content: "本段距离";
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(4)::before {
+      content: "本段爬升";
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(5)::before {
+      content: "本段下降";
+    }
+
+    .hongkong100-narrative .hk100-split-table td:nth-child(6)::before {
+      content: "累计爬升";
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(2)::before {
+      content: "累计距离";
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(3)::before {
+      content: "分段 + / −";
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(4)::before {
+      content: "累计爬升";
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(5)::before {
+      content: "开放";
+    }
+
+    .hongkong100-narrative .hk100-aid-table td:nth-child(6)::before {
+      content: "关门";
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(2)::before {
+      content: "Commons 文件";
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(3)::before {
+      content: "作者";
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(4)::before {
+      content: "许可";
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(5)::before {
+      content: "拍摄日期";
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(6)::before {
+      content: "原图";
+    }
+
+    .hongkong100-narrative .hk100-media-table td:nth-child(7)::before {
+      content: "本地";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-distance-table td:nth-child(2)::before {
+      content: "Distance";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-distance-table td:nth-child(3)::before {
+      content: "Climb";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-distance-table td:nth-child(4)::before {
+      content: "Descent";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-split-table td:nth-child(2)::before {
+      content: "Section (text / table)";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-split-table td:nth-child(3)::before {
+      content: "Seg. distance";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-split-table td:nth-child(4)::before {
+      content: "Seg. gain";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-split-table td:nth-child(5)::before {
+      content: "Seg. loss";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-split-table td:nth-child(6)::before {
+      content: "Cum. gain";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-aid-table td:nth-child(2)::before {
+      content: "Cumulative";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-aid-table td:nth-child(3)::before {
+      content: "Segment + / −";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-aid-table td:nth-child(4)::before {
+      content: "Cum. gain";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-aid-table td:nth-child(5)::before {
+      content: "Opens";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-aid-table td:nth-child(6)::before {
+      content: "Closes";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-media-table td:nth-child(2)::before {
+      content: "Commons file";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-media-table td:nth-child(3)::before {
+      content: "Author";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-media-table td:nth-child(4)::before {
+      content: "Licence";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-media-table td:nth-child(5)::before {
+      content: "Date";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-media-table td:nth-child(6)::before {
+      content: "Original";
+    }
+
+    :lang(en) .hongkong100-narrative .hk100-media-table td:nth-child(7)::before {
+      content: "Local";
+    }
+  }
+
+  @media (max-width: 430px) {
+    .sdw100-narrative .sdw100-aid-table,
+    .sdw100-narrative .sdw100-split-table,
+    .sdw100-narrative .sdw100-conflict-table {
+      overflow-x: visible;
+    }
+
+    .sdw100-narrative .sdw100-aid-table table,
+    .sdw100-narrative .sdw100-split-table table,
+    .sdw100-narrative .sdw100-conflict-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .sdw100-narrative .sdw100-aid-table thead,
+    .sdw100-narrative .sdw100-split-table thead,
+    .sdw100-narrative .sdw100-conflict-table thead {
+      display: none;
+    }
+
+    .sdw100-narrative .sdw100-aid-table tbody,
+    .sdw100-narrative .sdw100-split-table tbody,
+    .sdw100-narrative .sdw100-conflict-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .sdw100-narrative .sdw100-aid-table tr,
+    .sdw100-narrative .sdw100-split-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .sdw100-narrative .sdw100-conflict-table tr {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .sdw100-narrative .sdw100-aid-table td,
+    .sdw100-narrative .sdw100-split-table td,
+    .sdw100-narrative .sdw100-conflict-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(n),
+    .sdw100-narrative .sdw100-split-table td:nth-child(n),
+    .sdw100-narrative .sdw100-conflict-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(1),
+    .sdw100-narrative .sdw100-split-table td:nth-child(1),
+    .sdw100-narrative .sdw100-conflict-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+      overflow-wrap: anywhere;
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(5) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(4) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(4) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(5) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(6) {
+      grid-column: 1 / -1;
+      grid-row: 4;
+    }
+
+    .sdw100-narrative .sdw100-conflict-table td:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .sdw100-narrative .sdw100-conflict-table td:nth-child(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(n + 2)::before,
+    .sdw100-narrative .sdw100-split-table td:nth-child(n + 2)::before,
+    .sdw100-narrative .sdw100-conflict-table td:nth-child(n + 2)::before {
+      display: block;
+      margin-bottom: 1px;
+      color: var(--muted);
+      font-size: 0.66rem;
+      font-weight: 620;
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(2)::before {
+      content: "英里";
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(3)::before {
+      content: "Wave 1 关门";
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(4)::before {
+      content: "Wave 2 关门";
+    }
+
+    .sdw100-narrative .sdw100-aid-table td:nth-child(5)::before {
+      content: "Crew / 补给";
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(2)::before {
+      content: "英里";
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(3)::before {
+      content: "公里";
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(4)::before {
+      content: "累计用时（Wave 1）";
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(5)::before {
+      content: "隐含均速";
+    }
+
+    .sdw100-narrative .sdw100-split-table td:nth-child(6)::before {
+      content: "Wave 1 离站";
+    }
+
+    .sdw100-narrative .sdw100-conflict-table td:nth-child(2)::before {
+      content: "一处写法";
+    }
+
+    .sdw100-narrative .sdw100-conflict-table td:nth-child(3)::before {
+      content: "另一处写法";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-aid-table td:nth-child(2)::before {
+      content: "Miles";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-aid-table td:nth-child(3)::before {
+      content: "Wave 1 cut-off";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-aid-table td:nth-child(4)::before {
+      content: "Wave 2 cut-off";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-aid-table td:nth-child(5)::before {
+      content: "Crew / support";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-split-table td:nth-child(2)::before {
+      content: "Miles";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-split-table td:nth-child(3)::before {
+      content: "Km";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-split-table td:nth-child(4)::before {
+      content: "Elapsed (Wave 1)";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-split-table td:nth-child(5)::before {
+      content: "Implied speed";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-split-table td:nth-child(6)::before {
+      content: "Wave 1 leave-by";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-conflict-table td:nth-child(2)::before {
+      content: "One version";
+    }
+
+    :lang(en) .sdw100-narrative .sdw100-conflict-table td:nth-child(3)::before {
+      content: "Another version";
+    }
+  }
+
+  @media (max-width: 430px) {
+    .tarawera-narrative .tarawera-race-table,
+    .tarawera-narrative .tarawera-distance-table,
+    .tarawera-narrative .tarawera-checkpoint-table {
+      overflow-x: visible;
+    }
+
+    .tarawera-narrative .tarawera-race-table table,
+    .tarawera-narrative .tarawera-distance-table table,
+    .tarawera-narrative .tarawera-checkpoint-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      font-size: 0.82rem;
+    }
+
+    .tarawera-narrative .tarawera-race-table thead,
+    .tarawera-narrative .tarawera-distance-table thead,
+    .tarawera-narrative .tarawera-checkpoint-table thead {
+      display: none;
+    }
+
+    .tarawera-narrative .tarawera-race-table tbody,
+    .tarawera-narrative .tarawera-distance-table tbody,
+    .tarawera-narrative .tarawera-checkpoint-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .tarawera-narrative .tarawera-race-table tr,
+    .tarawera-narrative .tarawera-distance-table tr,
+    .tarawera-narrative .tarawera-checkpoint-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .tarawera-narrative .tarawera-race-table td,
+    .tarawera-narrative .tarawera-distance-table td,
+    .tarawera-narrative .tarawera-checkpoint-table td {
+      display: block;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .tarawera-narrative .tarawera-race-table td:nth-child(1),
+    .tarawera-narrative .tarawera-distance-table td:nth-child(1),
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+      overflow-wrap: anywhere;
+    }
+
+    .tarawera-narrative .tarawera-race-table td:nth-child(4),
+    .tarawera-narrative .tarawera-distance-table td:nth-child(4),
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(10) {
+      grid-column: 1 / -1;
+    }
+
+    .tarawera-narrative .tarawera-race-table td:nth-child(n + 2)::before,
+    .tarawera-narrative .tarawera-distance-table td:nth-child(n + 2)::before,
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(n + 2)::before {
+      display: block;
+      margin-bottom: 1px;
+      color: var(--muted);
+      font-size: 0.66rem;
+      font-weight: 620;
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+    }
+
+    .tarawera-narrative .tarawera-race-table td:nth-child(2)::before {
+      content: "距离";
+    }
+
+    .tarawera-narrative .tarawera-race-table td:nth-child(3)::before {
+      content: "爬升";
+    }
+
+    .tarawera-narrative .tarawera-race-table td:nth-child(4)::before {
+      content: "起跑";
+    }
+
+    .tarawera-narrative .tarawera-race-table td:nth-child(5)::before {
+      content: "时限";
+    }
+
+    .tarawera-narrative .tarawera-race-table td:nth-child(6)::before {
+      content: "Running Stones";
+    }
+
+    .tarawera-narrative .tarawera-distance-table td:nth-child(2)::before {
+      content: "距离";
+    }
+
+    .tarawera-narrative .tarawera-distance-table td:nth-child(3)::before {
+      content: "爬升";
+    }
+
+    .tarawera-narrative .tarawera-distance-table td:nth-child(4)::before {
+      content: "下降";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(2)::before {
+      content: "公里";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(3)::before {
+      content: "距上一站";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(4)::before {
+      content: "距下一站";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(5)::before {
+      content: "距终点";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(6)::before {
+      content: "关门";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(7)::before {
+      content: "观众";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(8)::before {
+      content: "存包";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(9)::before {
+      content: "计时";
+    }
+
+    .tarawera-narrative .tarawera-checkpoint-table td:nth-child(10)::before {
+      content: "服务";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-race-table td:nth-child(2)::before {
+      content: "Distance";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-race-table td:nth-child(3)::before {
+      content: "Gain";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-race-table td:nth-child(4)::before {
+      content: "Start";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-race-table td:nth-child(5)::before {
+      content: "Limit";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-race-table td:nth-child(6)::before {
+      content: "Stones";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-distance-table td:nth-child(2)::before {
+      content: "Distance";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-distance-table td:nth-child(3)::before {
+      content: "Gain";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-distance-table td:nth-child(4)::before {
+      content: "Loss";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(2)::before {
+      content: "km";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(3)::before {
+      content: "From previous";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(4)::before {
+      content: "To next";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(5)::before {
+      content: "To finish";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(6)::before {
+      content: "Cut-off";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(7)::before {
+      content: "Spectators";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(8)::before {
+      content: "Drop bag";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(9)::before {
+      content: "Timing";
+    }
+
+    :lang(en) .tarawera-narrative .tarawera-checkpoint-table td:nth-child(10)::before {
+      content: "Services";
+    }
+  }
+
+  @media (max-width: 340px) {
+    .ccc-narrative .table-scroll:not(.ccc-timing-table) table {
+      font-size: 0.76rem;
+    }
+
+    .ccc-narrative .table-scroll:not(.ccc-timing-table) th,
+    .ccc-narrative .table-scroll:not(.ccc-timing-table) td {
+      padding: 5px 4px;
+    }
+
+    .canyons-narrative .canyons-aid-table table,
+    .canyons-narrative .canyons-split-table table,
+    .canyons-narrative .canyons-race-table table,
+    .canyons-narrative .canyons-conflict-table table {
+      font-size: 0.78rem;
+    }
+
+    .canyons-narrative .canyons-aid-table tr,
+    .canyons-narrative .canyons-split-table tr,
+    .canyons-narrative .canyons-race-table tr,
+    .canyons-narrative .canyons-conflict-table tr {
+      padding: 10px 11px;
+      gap: 6px 8px;
+    }
+
+    .tarawera-narrative .tarawera-race-table table,
+    .tarawera-narrative .tarawera-distance-table table,
+    .tarawera-narrative .tarawera-checkpoint-table table {
+      font-size: 0.78rem;
+    }
+
+    .tarawera-narrative .tarawera-race-table tr,
+    .tarawera-narrative .tarawera-distance-table tr,
+    .tarawera-narrative .tarawera-checkpoint-table tr {
+      padding: 10px 11px;
+      gap: 6px 8px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .table-scroll.tight-first-col th:first-child,
+    .table-scroll.tight-first-col td:first-child {
+      white-space: nowrap;
+    }
+
+    .prose a[href$="qmt-135-course-structure.svg"],
+    .prose a[href$="qmt-135-locator.svg"],
+    .prose a[href$="utct-100m-course-order.svg"],
+    .prose a[href$="utct-100m-climb-values.svg"],
+    .prose a[href$="tds-24-checkpoints.svg"],
+    .prose a[href$="tds-elevation-profile.svg"],
+    .prose a[href$="ccc-10-checkpoints.svg"],
+    .prose a[href$="ccc-elevation-profile.svg"],
+    .prose a[href$="canyons-11-stations.svg"],
+    .prose a[href$="canyons-cutoff-pressure.svg"],
+    .prose a[href$="tarawera-16-checkpoints.svg"],
+    .prose a[href$="tarawera-cutoff-pressure.svg"] {
+      display: block;
+      max-width: 100%;
+      margin: 1.5em 0;
+      overflow-x: auto;
+      border-radius: var(--radius-card);
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
+    }
+
+    .prose a[href$="qmt-135-course-structure.svg"] img {
+      width: 860px;
+      max-width: none;
+      margin: 0;
+    }
+
+    .prose a[href$="qmt-135-locator.svg"] img {
+      width: 620px;
+      max-width: none;
+      margin: 0;
+    }
+
+    .prose a[href$="utct-100m-course-order.svg"] img {
+      width: 920px;
+      max-width: none;
+      margin: 0;
+    }
+
+    .prose a[href$="utct-100m-climb-values.svg"] img {
+      width: 820px;
+      max-width: none;
+      margin: 0;
+    }
+
+    .prose a[href$="tds-24-checkpoints.svg"] img {
+      width: 1180px;
+      max-width: none;
+      margin: 0;
+    }
+
+    .prose a[href$="tds-elevation-profile.svg"] img {
+      width: 1120px;
+      max-width: none;
+      margin: 0;
+    }
+
+    .prose a[href$="ccc-10-checkpoints.svg"] img {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .prose a[href$="ccc-elevation-profile.svg"] img {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .prose a[href$="canyons-11-stations.svg"] img,
+    .prose a[href$="canyons-cutoff-pressure.svg"] img {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .occ-narrative .occ-official-table {
+      overflow-x: visible;
+    }
+
+    .occ-narrative .occ-official-table table {
+      display: table;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: fixed;
+      font-size: 0.72rem;
+    }
+
+    .occ-narrative .occ-official-table th,
+    .occ-narrative .occ-official-table td {
+      padding: 5px 4px;
+      line-height: 1.32;
+      overflow-wrap: anywhere;
+      white-space: normal;
+    }
+
+    .occ-narrative .occ-official-table th:nth-child(1),
+    .occ-narrative .occ-official-table td:nth-child(1) {
+      width: 27%;
+    }
+
+    .occ-narrative .occ-official-table th:nth-child(2),
+    .occ-narrative .occ-official-table td:nth-child(2) {
+      width: 16%;
+    }
+
+    .occ-narrative .occ-official-table th:nth-child(3),
+    .occ-narrative .occ-official-table td:nth-child(3) {
+      width: 20%;
+    }
+
+    .occ-narrative .occ-official-table th:nth-child(4),
+    .occ-narrative .occ-official-table td:nth-child(4) {
+      width: 12%;
+    }
+
+    .occ-narrative .occ-official-table th:nth-child(5),
+    .occ-narrative .occ-official-table td:nth-child(5) {
+      width: 25%;
+    }
+
+    .occ-narrative .occ-checkpoint-table,
+    .occ-narrative .occ-media-table {
+      overflow-x: visible;
+    }
+
+    .occ-narrative .occ-checkpoint-table table,
+    .occ-narrative .occ-media-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .occ-narrative .occ-checkpoint-table thead,
+    .occ-narrative .occ-media-table thead {
+      display: none;
+    }
+
+    .occ-narrative .occ-checkpoint-table tbody,
+    .occ-narrative .occ-media-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .occ-narrative .occ-checkpoint-table tr,
+    .occ-narrative .occ-media-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .occ-narrative .occ-checkpoint-table td,
+    .occ-narrative .occ-media-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(n),
+    .occ-narrative .occ-media-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(1),
+    .occ-narrative .occ-media-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(2),
+    .occ-narrative .occ-media-table td:nth-child(2),
+    .occ-narrative .occ-checkpoint-table td:nth-child(3),
+    .occ-narrative .occ-checkpoint-table td:nth-child(4),
+    .occ-narrative .occ-checkpoint-table td:nth-child(5),
+    .occ-narrative .occ-checkpoint-table td:nth-child(6),
+    .occ-narrative .occ-checkpoint-table td:nth-child(7),
+    .occ-narrative .occ-checkpoint-table td:nth-child(8),
+    .occ-narrative .occ-media-table td:nth-child(3),
+    .occ-narrative .occ-media-table td:nth-child(4),
+    .occ-narrative .occ-media-table td:nth-child(5),
+    .occ-narrative .occ-media-table td:nth-child(6),
+    .occ-narrative .occ-media-table td:nth-child(7) {
+      font-size: 0.78rem;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(2),
+    .occ-narrative .occ-media-table td:nth-child(3),
+    .occ-narrative .occ-media-table td:nth-child(5) {
+      grid-column: 1;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(3),
+    .occ-narrative .occ-media-table td:nth-child(4),
+    .occ-narrative .occ-media-table td:nth-child(6) {
+      grid-column: 2;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(4),
+    .occ-narrative .occ-media-table td:nth-child(2),
+    .occ-narrative .occ-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(5),
+    .occ-narrative .occ-checkpoint-table td:nth-child(7) {
+      grid-column: 1;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(6),
+    .occ-narrative .occ-checkpoint-table td:nth-child(8) {
+      grid-column: 2;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(n)::before,
+    .occ-narrative .occ-media-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(2)::before {
+      content: "累计";
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(3)::before {
+      content: "本段";
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(4)::before {
+      content: "爬升 / 下降";
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(5)::before {
+      content: "海拔";
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(6)::before {
+      content: "Fastest";
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(7)::before {
+      content: "Slowest";
+    }
+
+    .occ-narrative .occ-checkpoint-table td:nth-child(8)::before {
+      content: "关门";
+    }
+
+    .occ-narrative .occ-media-table td:nth-child(2)::before {
+      content: "Commons 文件";
+    }
+
+    .occ-narrative .occ-media-table td:nth-child(3)::before {
+      content: "作者";
+    }
+
+    .occ-narrative .occ-media-table td:nth-child(4)::before {
+      content: "许可";
+    }
+
+    .occ-narrative .occ-media-table td:nth-child(5)::before {
+      content: "日期";
+    }
+
+    .occ-narrative .occ-media-table td:nth-child(6)::before {
+      content: "原图";
+    }
+
+    .occ-narrative .occ-media-table td:nth-child(7)::before {
+      content: "本地";
+    }
+
+    :lang(en) .occ-narrative .occ-checkpoint-table td:nth-child(2)::before {
+      content: "Cumulative";
+    }
+
+    :lang(en) .occ-narrative .occ-checkpoint-table td:nth-child(3)::before {
+      content: "Section";
+    }
+
+    :lang(en) .occ-narrative .occ-checkpoint-table td:nth-child(4)::before {
+      content: "Gain / loss";
+    }
+
+    :lang(en) .occ-narrative .occ-checkpoint-table td:nth-child(5)::before {
+      content: "Elevation";
+    }
+
+    :lang(en) .occ-narrative .occ-checkpoint-table td:nth-child(8)::before {
+      content: "Cut-off";
+    }
+
+    :lang(en) .occ-narrative .occ-media-table td:nth-child(2)::before {
+      content: "Commons file";
+    }
+
+    :lang(en) .occ-narrative .occ-media-table td:nth-child(3)::before {
+      content: "Author";
+    }
+
+    :lang(en) .occ-narrative .occ-media-table td:nth-child(4)::before {
+      content: "Licence";
+    }
+
+    :lang(en) .occ-narrative .occ-media-table td:nth-child(5)::before {
+      content: "Date";
+    }
+
+    :lang(en) .occ-narrative .occ-media-table td:nth-child(6)::before {
+      content: "Original";
+    }
+
+    :lang(en) .occ-narrative .occ-media-table td:nth-child(7)::before {
+      content: "Local";
+    }
+  }
+
+  @media (max-width: 430px) {
+    .uta-narrative .uta-card-table {
+      overflow-x: visible;
+    }
+
+    .uta-narrative .uta-card-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .uta-narrative .uta-card-table thead {
+      display: none;
+    }
+
+    .uta-narrative .uta-card-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .uta-narrative .uta-card-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .uta-narrative .uta-card-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .uta-narrative .uta-card-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .uta-narrative .uta-card-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .uta-narrative .uta-card-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .uta-narrative .uta-race-table td:nth-child(4),
+    .uta-narrative .uta-official-table td:nth-child(4),
+    .uta-narrative .uta-checkpoints-table td:nth-child(8),
+    .uta-narrative .uta-media-table td:nth-child(2),
+    .uta-narrative .uta-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .uta-narrative .uta-race-table td:nth-child(2)::before { content: "距离"; }
+    .uta-narrative .uta-race-table td:nth-child(3)::before { content: "爬升"; }
+    .uta-narrative .uta-race-table td:nth-child(4)::before { content: "起跑"; }
+    .uta-narrative .uta-race-table td:nth-child(5)::before { content: "时限"; }
+    .uta-narrative .uta-race-table td:nth-child(6)::before { content: "价格"; }
+
+    .uta-narrative .uta-official-table td:nth-child(2)::before { content: "距离"; }
+    .uta-narrative .uta-official-table td:nth-child(3)::before { content: "爬升"; }
+    .uta-narrative .uta-official-table td:nth-child(4)::before { content: "下降"; }
+
+    .uta-narrative .uta-checkpoints-table td:nth-child(2)::before { content: "公里"; }
+    .uta-narrative .uta-checkpoints-table td:nth-child(3)::before { content: "距上一站"; }
+    .uta-narrative .uta-checkpoints-table td:nth-child(4)::before { content: "距终点"; }
+    .uta-narrative .uta-checkpoints-table td:nth-child(5)::before { content: "关门"; }
+    .uta-narrative .uta-checkpoints-table td:nth-child(6)::before { content: "观众"; }
+    .uta-narrative .uta-checkpoints-table td:nth-child(7)::before { content: "存包"; }
+    .uta-narrative .uta-checkpoints-table td:nth-child(8)::before { content: "补给"; }
+
+    .uta-narrative .uta-media-table td:nth-child(2)::before { content: "Commons 文件"; }
+    .uta-narrative .uta-media-table td:nth-child(3)::before { content: "作者"; }
+    .uta-narrative .uta-media-table td:nth-child(4)::before { content: "许可"; }
+    .uta-narrative .uta-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .uta-narrative .uta-media-table td:nth-child(6)::before { content: "原图"; }
+    .uta-narrative .uta-media-table td:nth-child(7)::before { content: "本地"; }
+
+    :lang(en) .uta-narrative .uta-race-table td:nth-child(2)::before { content: "Distance"; }
+    :lang(en) .uta-narrative .uta-race-table td:nth-child(3)::before { content: "Climb"; }
+    :lang(en) .uta-narrative .uta-race-table td:nth-child(4)::before { content: "Start"; }
+    :lang(en) .uta-narrative .uta-race-table td:nth-child(5)::before { content: "Limit"; }
+    :lang(en) .uta-narrative .uta-race-table td:nth-child(6)::before { content: "Price"; }
+
+    :lang(en) .uta-narrative .uta-official-table td:nth-child(2)::before { content: "Distance"; }
+    :lang(en) .uta-narrative .uta-official-table td:nth-child(3)::before { content: "Climb"; }
+    :lang(en) .uta-narrative .uta-official-table td:nth-child(4)::before { content: "Descent"; }
+
+    :lang(en) .uta-narrative .uta-checkpoints-table td:nth-child(2)::before { content: "km"; }
+    :lang(en) .uta-narrative .uta-checkpoints-table td:nth-child(3)::before { content: "From last"; }
+    :lang(en) .uta-narrative .uta-checkpoints-table td:nth-child(4)::before { content: "To finish"; }
+    :lang(en) .uta-narrative .uta-checkpoints-table td:nth-child(5)::before { content: "Cut-off"; }
+    :lang(en) .uta-narrative .uta-checkpoints-table td:nth-child(6)::before { content: "Spectators"; }
+    :lang(en) .uta-narrative .uta-checkpoints-table td:nth-child(7)::before { content: "Drop bags"; }
+    :lang(en) .uta-narrative .uta-checkpoints-table td:nth-child(8)::before { content: "Supplies"; }
+
+    :lang(en) .uta-narrative .uta-media-table td:nth-child(2)::before { content: "Commons file"; }
+    :lang(en) .uta-narrative .uta-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .uta-narrative .uta-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .uta-narrative .uta-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .uta-narrative .uta-media-table td:nth-child(6)::before { content: "Original"; }
+    :lang(en) .uta-narrative .uta-media-table td:nth-child(7)::before { content: "Local"; }
+  }
+
+  .uta-narrative a[href$="uta-10-checkpoints.svg"],
+  .uta-narrative a[href$="uta-five-distances-two-clocks.svg"] {
+    display: block;
+    max-width: 480px;
+    margin: 1.5em auto;
+    overflow-x: auto;
+    border-radius: var(--radius-card);
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .uta-narrative a[href$="uta-10-checkpoints.svg"] img,
+  .uta-narrative a[href$="uta-five-distances-two-clocks.svg"] img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  @media (max-width: 430px) {
+    .mtfuji-narrative .mtfuji-card-table {
+      overflow-x: visible;
+    }
+
+    .mtfuji-narrative .mtfuji-card-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .mtfuji-narrative .mtfuji-card-table thead {
+      display: none;
+    }
+
+    .mtfuji-narrative .mtfuji-card-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .mtfuji-narrative .mtfuji-card-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .mtfuji-narrative .mtfuji-card-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .mtfuji-narrative .mtfuji-card-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .mtfuji-narrative .mtfuji-card-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .mtfuji-narrative .mtfuji-card-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .mtfuji-narrative .mtfuji-distance-table td:nth-child(4),
+    .mtfuji-narrative .mtfuji-split-table td:nth-child(4),
+    .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(4),
+    .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(5),
+    .mtfuji-narrative .mtfuji-media-table td:nth-child(2),
+    .mtfuji-narrative .mtfuji-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .mtfuji-narrative .mtfuji-distance-table td:nth-child(2)::before { content: "距离"; }
+    .mtfuji-narrative .mtfuji-distance-table td:nth-child(3)::before { content: "累计爬升"; }
+    .mtfuji-narrative .mtfuji-distance-table td:nth-child(4)::before { content: "出处与说明"; }
+
+    .mtfuji-narrative .mtfuji-split-table td:nth-child(2)::before { content: "官方表距离"; }
+    .mtfuji-narrative .mtfuji-split-table td:nth-child(3)::before { content: "GPX 投影距离"; }
+    .mtfuji-narrative .mtfuji-split-table td:nth-child(4)::before { content: "差值"; }
+
+    .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(2)::before { content: "所在地"; }
+    .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(3)::before { content: "距离"; }
+    .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(4)::before { content: "GPX 高程"; }
+    .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(5)::before { content: "2026 关门 · 入 / 出"; }
+
+    .mtfuji-narrative .mtfuji-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .mtfuji-narrative .mtfuji-media-table td:nth-child(3)::before { content: "作者"; }
+    .mtfuji-narrative .mtfuji-media-table td:nth-child(4)::before { content: "许可"; }
+    .mtfuji-narrative .mtfuji-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .mtfuji-narrative .mtfuji-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .mtfuji-narrative .mtfuji-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .mtfuji-narrative .mtfuji-distance-table td:nth-child(2)::before { content: "Distance"; }
+    :lang(en) .mtfuji-narrative .mtfuji-distance-table td:nth-child(3)::before { content: "Gain"; }
+    :lang(en) .mtfuji-narrative .mtfuji-distance-table td:nth-child(4)::before { content: "Source and note"; }
+
+    :lang(en) .mtfuji-narrative .mtfuji-split-table td:nth-child(2)::before { content: "Official table"; }
+    :lang(en) .mtfuji-narrative .mtfuji-split-table td:nth-child(3)::before { content: "GPX projection"; }
+    :lang(en) .mtfuji-narrative .mtfuji-split-table td:nth-child(4)::before { content: "Difference"; }
+
+    :lang(en) .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(2)::before { content: "Location"; }
+    :lang(en) .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(3)::before { content: "Distance"; }
+    :lang(en) .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(4)::before { content: "GPX elevation"; }
+    :lang(en) .mtfuji-narrative .mtfuji-cutoff-table td:nth-child(5)::before { content: "2026 cut-off · in / out"; }
+
+    :lang(en) .mtfuji-narrative .mtfuji-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .mtfuji-narrative .mtfuji-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .mtfuji-narrative .mtfuji-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .mtfuji-narrative .mtfuji-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .mtfuji-narrative .mtfuji-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .mtfuji-narrative .mtfuji-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  .mtfuji-narrative img[src$="mtfuji-four-distances.svg"],
+  .mtfuji-narrative img[src$="mtfuji-nine-cutoffs.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  .doi-narrative img[src$="doi-inthanon-four-distances.svg"],
+  .doi-narrative img[src$="doi-inthanon-profile-cutoffs.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (min-width: 431px) {
+    .doi-narrative .doi-media-table table {
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+
+    .doi-narrative .doi-media-table th:nth-child(1),
+    .doi-narrative .doi-media-table td:nth-child(1) { width: 13%; }
+    .doi-narrative .doi-media-table th:nth-child(2),
+    .doi-narrative .doi-media-table td:nth-child(2) { width: 22%; }
+    .doi-narrative .doi-media-table th:nth-child(3),
+    .doi-narrative .doi-media-table td:nth-child(3) { width: 15%; }
+    .doi-narrative .doi-media-table th:nth-child(4),
+    .doi-narrative .doi-media-table td:nth-child(4) { width: 13%; }
+    .doi-narrative .doi-media-table th:nth-child(5),
+    .doi-narrative .doi-media-table td:nth-child(5) { width: 10%; }
+    .doi-narrative .doi-media-table th:nth-child(5) {
+      white-space: nowrap;
+      font-size: 0.7rem;
+      letter-spacing: 0;
+    }
+    .doi-narrative .doi-media-table th:nth-child(6),
+    .doi-narrative .doi-media-table td:nth-child(6) { width: 15%; }
+    .doi-narrative .doi-media-table th:nth-child(7),
+    .doi-narrative .doi-media-table td:nth-child(7) {
+      width: 12%;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .doi-narrative .doi-card-table {
+      overflow-x: visible;
+    }
+
+    .doi-narrative .doi-card-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .doi-narrative .doi-card-table thead {
+      display: none;
+    }
+
+    .doi-narrative .doi-card-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .doi-narrative .doi-card-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .doi-narrative .doi-card-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .doi-narrative .doi-card-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .doi-narrative .doi-card-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .doi-narrative .doi-card-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .doi-narrative .doi-aid-table td:nth-child(4),
+    .doi-narrative .doi-media-table td:nth-child(2),
+    .doi-narrative .doi-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .doi-narrative .doi-aid-table td:nth-child(2)::before { content: "累计距离"; }
+    .doi-narrative .doi-aid-table td:nth-child(3)::before { content: "关门"; }
+    .doi-narrative .doi-aid-table td:nth-child(4)::before { content: "距起跑"; }
+
+    .doi-narrative .doi-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .doi-narrative .doi-media-table td:nth-child(3)::before { content: "作者"; }
+    .doi-narrative .doi-media-table td:nth-child(4)::before { content: "许可"; }
+    .doi-narrative .doi-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .doi-narrative .doi-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .doi-narrative .doi-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .doi-narrative .doi-aid-table td:nth-child(2)::before { content: "Cumulative distance"; }
+    :lang(en) .doi-narrative .doi-aid-table td:nth-child(3)::before { content: "Cut-off"; }
+    :lang(en) .doi-narrative .doi-aid-table td:nth-child(4)::before { content: "From start"; }
+
+    :lang(en) .doi-narrative .doi-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .doi-narrative .doi-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .doi-narrative .doi-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .doi-narrative .doi-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .doi-narrative .doi-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .doi-narrative .doi-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  .kodiak-narrative img[src$="kodiak-100m-station-chain.svg"],
+  .kodiak-narrative img[src$="kodiak-five-distances.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (min-width: 431px) {
+    .kodiak-narrative .kodiak-media-table table {
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+
+    .kodiak-narrative .kodiak-media-table th:nth-child(1),
+    .kodiak-narrative .kodiak-media-table td:nth-child(1) { width: 13%; }
+    .kodiak-narrative .kodiak-media-table th:nth-child(2),
+    .kodiak-narrative .kodiak-media-table td:nth-child(2) { width: 22%; }
+    .kodiak-narrative .kodiak-media-table th:nth-child(3),
+    .kodiak-narrative .kodiak-media-table td:nth-child(3) { width: 15%; }
+    .kodiak-narrative .kodiak-media-table th:nth-child(4),
+    .kodiak-narrative .kodiak-media-table td:nth-child(4) { width: 13%; }
+    .kodiak-narrative .kodiak-media-table th:nth-child(5),
+    .kodiak-narrative .kodiak-media-table td:nth-child(5) { width: 10%; }
+    .kodiak-narrative .kodiak-media-table th:nth-child(5) {
+      white-space: nowrap;
+      font-size: 0.7rem;
+      letter-spacing: 0;
+    }
+    .kodiak-narrative .kodiak-media-table th:nth-child(6),
+    .kodiak-narrative .kodiak-media-table td:nth-child(6) { width: 15%; }
+    .kodiak-narrative .kodiak-media-table th:nth-child(7),
+    .kodiak-narrative .kodiak-media-table td:nth-child(7) {
+      width: 12%;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .kodiak-narrative .kodiak-card-table {
+      overflow-x: visible;
+    }
+
+    .kodiak-narrative .kodiak-card-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .kodiak-narrative .kodiak-card-table thead {
+      display: none;
+    }
+
+    .kodiak-narrative .kodiak-card-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .kodiak-narrative .kodiak-card-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .kodiak-narrative .kodiak-card-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .kodiak-narrative .kodiak-card-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .kodiak-narrative .kodiak-card-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .kodiak-narrative .kodiak-card-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .kodiak-narrative .kodiak-aid-table td:nth-child(4),
+    .kodiak-narrative .kodiak-media-table td:nth-child(2),
+    .kodiak-narrative .kodiak-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .kodiak-narrative .kodiak-aid-table td:nth-child(2)::before { content: "累计英里"; }
+    .kodiak-narrative .kodiak-aid-table td:nth-child(3)::before { content: "官方关门 / 起跑（2026）"; }
+    .kodiak-narrative .kodiak-aid-table td:nth-child(4)::before { content: "备注"; }
+
+    .kodiak-narrative .kodiak-split-table td:nth-child(2)::before { content: "本段英里"; }
+    .kodiak-narrative .kodiak-split-table td:nth-child(3)::before { content: "累计英里"; }
+    .kodiak-narrative .kodiak-split-table td:nth-child(4)::before { content: "累计公里"; }
+
+    .kodiak-narrative .kodiak-conflict-table td:nth-child(2)::before { content: "一处写法"; }
+    .kodiak-narrative .kodiak-conflict-table td:nth-child(3)::before { content: "另一处写法"; }
+
+    .kodiak-narrative .kodiak-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .kodiak-narrative .kodiak-media-table td:nth-child(3)::before { content: "作者"; }
+    .kodiak-narrative .kodiak-media-table td:nth-child(4)::before { content: "许可"; }
+    .kodiak-narrative .kodiak-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .kodiak-narrative .kodiak-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .kodiak-narrative .kodiak-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .kodiak-narrative .kodiak-aid-table td:nth-child(2)::before { content: "Cumulative miles"; }
+    :lang(en) .kodiak-narrative .kodiak-aid-table td:nth-child(3)::before { content: "Cut-off / start (2026)"; }
+    :lang(en) .kodiak-narrative .kodiak-aid-table td:nth-child(4)::before { content: "Note"; }
+
+    :lang(en) .kodiak-narrative .kodiak-split-table td:nth-child(2)::before { content: "Segment miles"; }
+    :lang(en) .kodiak-narrative .kodiak-split-table td:nth-child(3)::before { content: "Cumulative miles"; }
+    :lang(en) .kodiak-narrative .kodiak-split-table td:nth-child(4)::before { content: "Cumulative km"; }
+
+    :lang(en) .kodiak-narrative .kodiak-conflict-table td:nth-child(2)::before { content: "One version"; }
+    :lang(en) .kodiak-narrative .kodiak-conflict-table td:nth-child(3)::before { content: "Another version"; }
+
+    :lang(en) .kodiak-narrative .kodiak-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .kodiak-narrative .kodiak-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .kodiak-narrative .kodiak-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .kodiak-narrative .kodiak-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .kodiak-narrative .kodiak-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .kodiak-narrative .kodiak-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  .blackcanyon-narrative img[src$="black-canyon-100k-aid-chain.svg"],
+  .blackcanyon-narrative img[src$="black-canyon-100k-vs-50k.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (min-width: 431px) {
+    .blackcanyon-narrative .bc-media-table table {
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+
+    .blackcanyon-narrative .bc-media-table th:nth-child(1),
+    .blackcanyon-narrative .bc-media-table td:nth-child(1) { width: 12%; }
+    .blackcanyon-narrative .bc-media-table th:nth-child(2),
+    .blackcanyon-narrative .bc-media-table td:nth-child(2) { width: 20%; }
+    .blackcanyon-narrative .bc-media-table th:nth-child(3),
+    .blackcanyon-narrative .bc-media-table td:nth-child(3) { width: 14%; }
+    .blackcanyon-narrative .bc-media-table th:nth-child(4),
+    .blackcanyon-narrative .bc-media-table td:nth-child(4) { width: 11%; }
+    .blackcanyon-narrative .bc-media-table th:nth-child(5),
+    .blackcanyon-narrative .bc-media-table td:nth-child(5) { width: 14%; }
+    .blackcanyon-narrative .bc-media-table th:nth-child(5) {
+      white-space: nowrap;
+      line-height: 1.45;
+      font-size: 0.74rem;
+      letter-spacing: 0;
+    }
+    .blackcanyon-narrative .bc-media-table th:nth-child(6),
+    .blackcanyon-narrative .bc-media-table td:nth-child(6) { width: 17%; }
+    .blackcanyon-narrative .bc-media-table th:nth-child(7),
+    .blackcanyon-narrative .bc-media-table td:nth-child(7) {
+      width: 12%;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .blackcanyon-narrative .bc-card-table,
+    .blackcanyon-narrative .bc-media-table {
+      overflow-x: visible;
+    }
+
+    .blackcanyon-narrative .bc-card-table table,
+    .blackcanyon-narrative .bc-media-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .blackcanyon-narrative .bc-card-table thead,
+    .blackcanyon-narrative .bc-media-table thead {
+      display: none;
+    }
+
+    .blackcanyon-narrative .bc-card-table tbody,
+    .blackcanyon-narrative .bc-media-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .blackcanyon-narrative .bc-card-table tr,
+    .blackcanyon-narrative .bc-media-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .blackcanyon-narrative .bc-card-table td,
+    .blackcanyon-narrative .bc-media-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .blackcanyon-narrative .bc-card-table td:nth-child(n),
+    .blackcanyon-narrative .bc-media-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .blackcanyon-narrative .bc-card-table td:nth-child(1),
+    .blackcanyon-narrative .bc-media-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .blackcanyon-narrative .bc-card-table td:nth-child(n)::before,
+    .blackcanyon-narrative .bc-media-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .blackcanyon-narrative .bc-aid-table tr {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .blackcanyon-narrative .bc-aid-table td:nth-child(1) { grid-column: 1 / -1; }
+
+    .blackcanyon-narrative .bc-cutoff-table tr {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .blackcanyon-narrative .bc-cutoff-table td:nth-child(1) { grid-column: 1 / -1; }
+
+    .blackcanyon-narrative .bc-conflict-table td:nth-child(4),
+    .blackcanyon-narrative .bc-media-table td:nth-child(2),
+    .blackcanyon-narrative .bc-media-table td:nth-child(6),
+    .blackcanyon-narrative .bc-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .blackcanyon-narrative .bc-aid-table td:nth-child(2)::before { content: "分段英里"; }
+    .blackcanyon-narrative .bc-aid-table td:nth-child(3)::before { content: "累计英里"; }
+    .blackcanyon-narrative .bc-aid-table td:nth-child(4)::before { content: "Crew"; }
+    .blackcanyon-narrative .bc-aid-table td:nth-child(5)::before { content: "Drop bag"; }
+
+    .blackcanyon-narrative .bc-cutoff-table td:nth-child(2)::before { content: "07:00 波"; }
+    .blackcanyon-narrative .bc-cutoff-table td:nth-child(3)::before { content: "07:30 波"; }
+    .blackcanyon-narrative .bc-cutoff-table td:nth-child(4)::before { content: "08:00 波"; }
+
+    .blackcanyon-narrative .bc-result-table td:nth-child(2)::before { content: "男子"; }
+    .blackcanyon-narrative .bc-result-table td:nth-child(3)::before { content: "成绩"; }
+    .blackcanyon-narrative .bc-result-table td:nth-child(4)::before { content: "女子"; }
+    .blackcanyon-narrative .bc-result-table td:nth-child(5)::before { content: "成绩"; }
+
+    .blackcanyon-narrative .bc-conflict-table td:nth-child(2)::before { content: "一处写法"; }
+    .blackcanyon-narrative .bc-conflict-table td:nth-child(3)::before { content: "另一处写法"; }
+    .blackcanyon-narrative .bc-conflict-table td:nth-child(4)::before { content: "本页处理"; }
+
+    .blackcanyon-narrative .bc-key-table td:nth-child(2)::before { content: "100K"; }
+    .blackcanyon-narrative .bc-key-table td:nth-child(3)::before { content: "50K"; }
+
+    .blackcanyon-narrative .bc-kit-table td:nth-child(2)::before { content: "地点"; }
+    .blackcanyon-narrative .bc-kit-table td:nth-child(3)::before { content: "对象"; }
+
+    .blackcanyon-narrative .bc-pace-table td:nth-child(2)::before { content: "平均配速"; }
+    .blackcanyon-narrative .bc-pace-table td:nth-child(3)::before { content: "说明"; }
+
+    .blackcanyon-narrative .bc-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .blackcanyon-narrative .bc-media-table td:nth-child(3)::before { content: "作者"; }
+    .blackcanyon-narrative .bc-media-table td:nth-child(4)::before { content: "许可"; }
+    .blackcanyon-narrative .bc-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .blackcanyon-narrative .bc-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .blackcanyon-narrative .bc-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .blackcanyon-narrative .bc-aid-table td:nth-child(2)::before { content: "Segment miles"; }
+    :lang(en) .blackcanyon-narrative .bc-aid-table td:nth-child(3)::before { content: "Cumulative miles"; }
+    :lang(en) .blackcanyon-narrative .bc-aid-table td:nth-child(4)::before { content: "Crew"; }
+    :lang(en) .blackcanyon-narrative .bc-aid-table td:nth-child(5)::before { content: "Drop bag"; }
+
+    :lang(en) .blackcanyon-narrative .bc-cutoff-table td:nth-child(2)::before { content: "07:00 wave"; }
+    :lang(en) .blackcanyon-narrative .bc-cutoff-table td:nth-child(3)::before { content: "07:30 wave"; }
+    :lang(en) .blackcanyon-narrative .bc-cutoff-table td:nth-child(4)::before { content: "08:00 wave"; }
+
+    :lang(en) .blackcanyon-narrative .bc-result-table td:nth-child(2)::before { content: "Men"; }
+    :lang(en) .blackcanyon-narrative .bc-result-table td:nth-child(3)::before { content: "Time"; }
+    :lang(en) .blackcanyon-narrative .bc-result-table td:nth-child(4)::before { content: "Women"; }
+    :lang(en) .blackcanyon-narrative .bc-result-table td:nth-child(5)::before { content: "Time"; }
+
+    :lang(en) .blackcanyon-narrative .bc-conflict-table td:nth-child(2)::before { content: "One version"; }
+    :lang(en) .blackcanyon-narrative .bc-conflict-table td:nth-child(3)::before { content: "Another version"; }
+    :lang(en) .blackcanyon-narrative .bc-conflict-table td:nth-child(4)::before { content: "Treatment here"; }
+
+    :lang(en) .blackcanyon-narrative .bc-kit-table td:nth-child(2)::before { content: "Location"; }
+    :lang(en) .blackcanyon-narrative .bc-kit-table td:nth-child(3)::before { content: "Who"; }
+
+    :lang(en) .blackcanyon-narrative .bc-pace-table td:nth-child(2)::before { content: "Average pace"; }
+    :lang(en) .blackcanyon-narrative .bc-pace-table td:nth-child(3)::before { content: "Comment"; }
+
+    :lang(en) .blackcanyon-narrative .bc-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .blackcanyon-narrative .bc-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .blackcanyon-narrative .bc-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .blackcanyon-narrative .bc-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .blackcanyon-narrative .bc-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .blackcanyon-narrative .bc-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  .beijing-narrative img[src$="beijing-2026-cutoff-ladder.svg"],
+  .beijing-narrative img[src$="beijing-2026-course-phases.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (min-width: 431px) {
+    .beijing-narrative .bj-media-table table {
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+
+    .beijing-narrative .bj-media-table th:nth-child(1),
+    .beijing-narrative .bj-media-table td:nth-child(1) { width: 12%; }
+    .beijing-narrative .bj-media-table th:nth-child(2),
+    .beijing-narrative .bj-media-table td:nth-child(2) { width: 20%; }
+    .beijing-narrative .bj-media-table th:nth-child(3),
+    .beijing-narrative .bj-media-table td:nth-child(3) { width: 14%; }
+    .beijing-narrative .bj-media-table th:nth-child(4),
+    .beijing-narrative .bj-media-table td:nth-child(4) { width: 11%; }
+    .beijing-narrative .bj-media-table th:nth-child(5),
+    .beijing-narrative .bj-media-table td:nth-child(5) { width: 14%; }
+    .beijing-narrative .bj-media-table th:nth-child(5) {
+      white-space: nowrap;
+      line-height: 1.45;
+      font-size: 0.74rem;
+      letter-spacing: 0;
+    }
+    .beijing-narrative .bj-media-table th:nth-child(6),
+    .beijing-narrative .bj-media-table td:nth-child(6) { width: 17%; }
+    .beijing-narrative .bj-media-table th:nth-child(7),
+    .beijing-narrative .bj-media-table td:nth-child(7) {
+      width: 12%;
+      white-space: nowrap;
+    }
+
+    .beijing-narrative .bj-figure-table table {
+      table-layout: fixed;
+      font-size: 0.82rem;
+    }
+    .beijing-narrative .bj-figure-table th:nth-child(1),
+    .beijing-narrative .bj-figure-table td:nth-child(1) { width: 24%; }
+    .beijing-narrative .bj-figure-table th:nth-child(2),
+    .beijing-narrative .bj-figure-table td:nth-child(2) { width: 26%; }
+    .beijing-narrative .bj-figure-table th:nth-child(3),
+    .beijing-narrative .bj-figure-table td:nth-child(3),
+    .beijing-narrative .bj-figure-table th:nth-child(4),
+    .beijing-narrative .bj-figure-table td:nth-child(4) { width: 25%; }
+
+    .beijing-narrative .bj-segment-table table {
+      table-layout: fixed;
+      font-size: 0.82rem;
+    }
+    .beijing-narrative .bj-segment-table th:nth-child(1),
+    .beijing-narrative .bj-segment-table td:nth-child(1) { width: 10%; }
+    .beijing-narrative .bj-segment-table th:nth-child(2),
+    .beijing-narrative .bj-segment-table td:nth-child(2) { width: 30%; }
+    .beijing-narrative .bj-segment-table th:nth-child(3),
+    .beijing-narrative .bj-segment-table td:nth-child(3) { width: 16%; }
+    .beijing-narrative .bj-segment-table th:nth-child(4),
+    .beijing-narrative .bj-segment-table td:nth-child(4) { width: 44%; }
+
+    .beijing-narrative .bj-service-table table {
+      table-layout: fixed;
+      font-size: 0.84rem;
+    }
+    .beijing-narrative .bj-service-table th:nth-child(1),
+    .beijing-narrative .bj-service-table td:nth-child(1) { width: 18%; }
+    .beijing-narrative .bj-service-table th:nth-child(2),
+    .beijing-narrative .bj-service-table td:nth-child(2) { width: 56%; }
+    .beijing-narrative .bj-service-table th:nth-child(3),
+    .beijing-narrative .bj-service-table td:nth-child(3) { width: 26%; }
+  }
+
+  @media (max-width: 430px) {
+    .beijing-narrative .bj-card-table,
+    .beijing-narrative .bj-media-table {
+      overflow-x: visible;
+    }
+
+    .beijing-narrative .bj-card-table table,
+    .beijing-narrative .bj-media-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.84rem;
+    }
+
+    .beijing-narrative .bj-card-table thead,
+    .beijing-narrative .bj-media-table thead {
+      display: none;
+    }
+
+    .beijing-narrative .bj-card-table tbody,
+    .beijing-narrative .bj-media-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .beijing-narrative .bj-card-table tr,
+    .beijing-narrative .bj-media-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .beijing-narrative .bj-card-table td,
+    .beijing-narrative .bj-media-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .beijing-narrative .bj-card-table td:nth-child(n),
+    .beijing-narrative .bj-media-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .beijing-narrative .bj-card-table td:nth-child(1),
+    .beijing-narrative .bj-media-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .beijing-narrative .bj-card-table td:nth-child(n)::before,
+    .beijing-narrative .bj-media-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .beijing-narrative .bj-figure-table tr {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .beijing-narrative .bj-figure-table td:nth-child(1) { grid-column: 1 / -1; }
+
+    .beijing-narrative .bj-segment-table tr {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .beijing-narrative .bj-segment-table td:nth-child(1),
+    .beijing-narrative .bj-segment-table td:nth-child(2) { grid-column: 1 / -1; }
+
+    .beijing-narrative .bj-service-table tr {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .beijing-narrative .bj-service-table td:nth-child(1) { grid-column: 1 / -1; }
+
+    .beijing-narrative .bj-media-table tr {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+    .beijing-narrative .bj-media-table td:nth-child(1),
+    .beijing-narrative .bj-media-table td:nth-child(2),
+    .beijing-narrative .bj-media-table td:nth-child(6),
+    .beijing-narrative .bj-media-table td:nth-child(7) { grid-column: 1 / -1; }
+    .beijing-narrative .bj-media-table td:nth-child(3),
+    .beijing-narrative .bj-media-table td:nth-child(4),
+    .beijing-narrative .bj-media-table td:nth-child(5) { grid-column: span 2; }
+
+    .beijing-narrative .bj-figure-table td:nth-child(2)::before { content: "距离"; }
+    .beijing-narrative .bj-figure-table td:nth-child(3)::before { content: "爬升"; }
+    .beijing-narrative .bj-figure-table td:nth-child(4)::before { content: "下降"; }
+
+    .beijing-narrative .bj-segment-table td:nth-child(2)::before { content: "区间"; }
+    .beijing-narrative .bj-segment-table td:nth-child(3)::before { content: "本段距离"; }
+    .beijing-narrative .bj-segment-table td:nth-child(4)::before { content: "本段爬升 / 下降"; }
+
+    .beijing-narrative .bj-service-table td:nth-child(2)::before { content: "距离 · 海拔 · 累计爬升"; }
+    .beijing-narrative .bj-service-table td:nth-child(3)::before { content: "服务 / 最近关门"; }
+
+    .beijing-narrative .bj-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .beijing-narrative .bj-media-table td:nth-child(3)::before { content: "作者"; }
+    .beijing-narrative .bj-media-table td:nth-child(4)::before { content: "许可"; }
+    .beijing-narrative .bj-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .beijing-narrative .bj-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .beijing-narrative .bj-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .beijing-narrative .bj-figure-table td:nth-child(2)::before { content: "Distance"; }
+    :lang(en) .beijing-narrative .bj-figure-table td:nth-child(3)::before { content: "Ascent"; }
+    :lang(en) .beijing-narrative .bj-figure-table td:nth-child(4)::before { content: "Descent"; }
+
+    :lang(en) .beijing-narrative .bj-segment-table td:nth-child(2)::before { content: "Span"; }
+    :lang(en) .beijing-narrative .bj-segment-table td:nth-child(3)::before { content: "Segment distance"; }
+    :lang(en) .beijing-narrative .bj-segment-table td:nth-child(4)::before { content: "Segment ascent / descent"; }
+
+    :lang(en) .beijing-narrative .bj-service-table td:nth-child(2)::before { content: "Distance · elevation · cumulative ascent"; }
+    :lang(en) .beijing-narrative .bj-service-table td:nth-child(3)::before { content: "Service / nearest cut-off"; }
+
+    :lang(en) .beijing-narrative .bj-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .beijing-narrative .bj-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .beijing-narrative .bj-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .beijing-narrative .bj-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .beijing-narrative .bj-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .beijing-narrative .bj-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  .wildstrubel-narrative img[src$="wildstrubel-2027-station-chain.svg"],
+  .wildstrubel-narrative img[src$="wildstrubel-2027-terrain-bands.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (min-width: 720px) {
+    .wildstrubel-narrative .ws-media-table table {
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+    .wildstrubel-narrative .ws-media-table th:nth-child(1),
+    .wildstrubel-narrative .ws-media-table td:nth-child(1) { width: 14%; }
+    .wildstrubel-narrative .ws-media-table th:nth-child(2),
+    .wildstrubel-narrative .ws-media-table td:nth-child(2) { width: 19%; }
+    .wildstrubel-narrative .ws-media-table th:nth-child(3),
+    .wildstrubel-narrative .ws-media-table td:nth-child(3) { width: 14%; }
+    .wildstrubel-narrative .ws-media-table th:nth-child(4),
+    .wildstrubel-narrative .ws-media-table td:nth-child(4) { width: 12%; }
+    .wildstrubel-narrative .ws-media-table th:nth-child(5),
+    .wildstrubel-narrative .ws-media-table td:nth-child(5) { width: 12%; }
+    .wildstrubel-narrative .ws-media-table th:nth-child(6),
+    .wildstrubel-narrative .ws-media-table td:nth-child(6) { width: 17%; }
+    .wildstrubel-narrative .ws-media-table th:nth-child(7),
+    .wildstrubel-narrative .ws-media-table td:nth-child(7) { width: 12%; }
+
+    .wildstrubel-narrative .ws-media-table td:nth-child(1),
+    .wildstrubel-narrative .ws-media-table td:nth-child(7) {
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .wildstrubel-narrative .ws-card-table,
+    .wildstrubel-narrative .ws-media-table {
+      overflow-x: visible;
+    }
+
+    .wildstrubel-narrative .ws-card-table table,
+    .wildstrubel-narrative .ws-media-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.84rem;
+    }
+
+    .wildstrubel-narrative .ws-card-table thead,
+    .wildstrubel-narrative .ws-media-table thead {
+      display: none;
+    }
+
+    .wildstrubel-narrative .ws-card-table tbody,
+    .wildstrubel-narrative .ws-media-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .wildstrubel-narrative .ws-card-table tr,
+    .wildstrubel-narrative .ws-media-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .wildstrubel-narrative .ws-card-table td,
+    .wildstrubel-narrative .ws-media-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .wildstrubel-narrative .ws-card-table td:nth-child(n),
+    .wildstrubel-narrative .ws-media-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .wildstrubel-narrative .ws-card-table td:nth-child(1),
+    .wildstrubel-narrative .ws-media-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .wildstrubel-narrative .ws-card-table td:nth-child(n)::before,
+    .wildstrubel-narrative .ws-media-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .wildstrubel-narrative .ws-key-table tr,
+    .wildstrubel-narrative .ws-conflict-table tr {
+      grid-template-columns: 1fr;
+    }
+
+    .wildstrubel-narrative .ws-key-table td:nth-child(2)::before { content: "官方值"; }
+    .wildstrubel-narrative .ws-gpx-table td:nth-child(2)::before { content: "官方页面"; }
+    .wildstrubel-narrative .ws-gpx-table td:nth-child(3)::before { content: "官方 GPX 本地逐点"; }
+    .wildstrubel-narrative .ws-conflict-table td:nth-child(2)::before { content: "一处写法"; }
+    .wildstrubel-narrative .ws-conflict-table td:nth-child(3)::before { content: "另一处写法"; }
+    .wildstrubel-narrative .ws-station-table td:nth-child(2)::before { content: "累计 km"; }
+    .wildstrubel-narrative .ws-station-table td:nth-child(3)::before { content: "官方关门（2027）"; }
+    .wildstrubel-narrative .ws-station-table td:nth-child(4)::before { content: "备注"; }
+    .wildstrubel-narrative .ws-segment-table td:nth-child(2)::before { content: "本段距离"; }
+    .wildstrubel-narrative .ws-segment-table td:nth-child(3)::before { content: "累计里程"; }
+    .wildstrubel-narrative .ws-segment-table td:nth-child(4)::before { content: "备注"; }
+    .wildstrubel-narrative .ws-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .wildstrubel-narrative .ws-media-table td:nth-child(3)::before { content: "作者"; }
+    .wildstrubel-narrative .ws-media-table td:nth-child(4)::before { content: "许可"; }
+    .wildstrubel-narrative .ws-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .wildstrubel-narrative .ws-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .wildstrubel-narrative .ws-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    .wildstrubel-narrative .ws-gpx-table tr,
+    .wildstrubel-narrative .ws-station-table tr,
+    .wildstrubel-narrative .ws-segment-table tr,
+    .wildstrubel-narrative .ws-media-table tr {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .wildstrubel-narrative .ws-gpx-table td:nth-child(1),
+    .wildstrubel-narrative .ws-station-table td:nth-child(4),
+    .wildstrubel-narrative .ws-segment-table td:nth-child(4),
+    .wildstrubel-narrative .ws-media-table td:nth-child(1),
+    .wildstrubel-narrative .ws-media-table td:nth-child(2),
+    .wildstrubel-narrative .ws-media-table td:nth-child(6),
+    .wildstrubel-narrative .ws-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    :lang(en) .wildstrubel-narrative .ws-key-table td:nth-child(2)::before { content: "Official value"; }
+    :lang(en) .wildstrubel-narrative .ws-gpx-table td:nth-child(2)::before { content: "Official page"; }
+    :lang(en) .wildstrubel-narrative .ws-gpx-table td:nth-child(3)::before { content: "Official GPX, point by point"; }
+    :lang(en) .wildstrubel-narrative .ws-conflict-table td:nth-child(2)::before { content: "One version"; }
+    :lang(en) .wildstrubel-narrative .ws-conflict-table td:nth-child(3)::before { content: "Another version"; }
+    :lang(en) .wildstrubel-narrative .ws-station-table td:nth-child(2)::before { content: "Cumulative km"; }
+    :lang(en) .wildstrubel-narrative .ws-station-table td:nth-child(3)::before { content: "Official 2027 cut-off"; }
+    :lang(en) .wildstrubel-narrative .ws-station-table td:nth-child(4)::before { content: "Note"; }
+    :lang(en) .wildstrubel-narrative .ws-segment-table td:nth-child(2)::before { content: "Segment distance"; }
+    :lang(en) .wildstrubel-narrative .ws-segment-table td:nth-child(3)::before { content: "Cumulative"; }
+    :lang(en) .wildstrubel-narrative .ws-segment-table td:nth-child(4)::before { content: "Note"; }
+    :lang(en) .wildstrubel-narrative .ws-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .wildstrubel-narrative .ws-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .wildstrubel-narrative .ws-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .wildstrubel-narrative .ws-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .wildstrubel-narrative .ws-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .wildstrubel-narrative .ws-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  .val-daran-narrative img[src$="val-daran-2027-segment-chain.svg"],
+  .val-daran-narrative img[src$="val-daran-2027-terrain-bands.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (min-width: 431px) {
+    .val-daran-narrative .vd-media-table table {
+      table-layout: fixed;
+      font-size: 0.76rem;
+    }
+    .val-daran-narrative .vd-media-table th:nth-child(1),
+    .val-daran-narrative .vd-media-table td:nth-child(1) { width: 12%; }
+    .val-daran-narrative .vd-media-table th:nth-child(2),
+    .val-daran-narrative .vd-media-table td:nth-child(2) { width: 20%; }
+    .val-daran-narrative .vd-media-table th:nth-child(3),
+    .val-daran-narrative .vd-media-table td:nth-child(3) { width: 13%; }
+    .val-daran-narrative .vd-media-table th:nth-child(4),
+    .val-daran-narrative .vd-media-table td:nth-child(4) { width: 11%; }
+    .val-daran-narrative .vd-media-table th:nth-child(5),
+    .val-daran-narrative .vd-media-table td:nth-child(5) { width: 13%; }
+    .val-daran-narrative .vd-media-table th:nth-child(5) {
+      white-space: nowrap;
+      font-size: 0.7rem;
+      letter-spacing: 0;
+    }
+    .val-daran-narrative .vd-media-table th:nth-child(6),
+    .val-daran-narrative .vd-media-table td:nth-child(6) { width: 18%; }
+    .val-daran-narrative .vd-media-table th:nth-child(7),
+    .val-daran-narrative .vd-media-table td:nth-child(7) {
+      width: 13%;
+      white-space: nowrap;
+    }
+
+    .val-daran-narrative .vd-group-table table {
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+    .val-daran-narrative .vd-group-table th:nth-child(1),
+    .val-daran-narrative .vd-group-table td:nth-child(1) { width: 12%; }
+    .val-daran-narrative .vd-group-table th:nth-child(2),
+    .val-daran-narrative .vd-group-table td:nth-child(2) { width: 10%; }
+    .val-daran-narrative .vd-group-table th:nth-child(3),
+    .val-daran-narrative .vd-group-table td:nth-child(3) { width: 13%; }
+    .val-daran-narrative .vd-group-table th:nth-child(4),
+    .val-daran-narrative .vd-group-table td:nth-child(4) { width: 24%; }
+    .val-daran-narrative .vd-group-table th:nth-child(5),
+    .val-daran-narrative .vd-group-table td:nth-child(5) { width: 9%; }
+    .val-daran-narrative .vd-group-table th:nth-child(6),
+    .val-daran-narrative .vd-group-table td:nth-child(6) { width: 31%; }
+
+    .val-daran-narrative .vd-figure-table table {
+      table-layout: fixed;
+      font-size: 0.8rem;
+    }
+    .val-daran-narrative .vd-figure-table th:nth-child(1),
+    .val-daran-narrative .vd-figure-table td:nth-child(1) { width: 20%; }
+    .val-daran-narrative .vd-figure-table th:nth-child(2),
+    .val-daran-narrative .vd-figure-table td:nth-child(2) { width: 16%; }
+    .val-daran-narrative .vd-figure-table th:nth-child(3),
+    .val-daran-narrative .vd-figure-table td:nth-child(3) { width: 15%; }
+    .val-daran-narrative .vd-figure-table th:nth-child(4),
+    .val-daran-narrative .vd-figure-table td:nth-child(4) { width: 15%; }
+    .val-daran-narrative .vd-figure-table th:nth-child(5),
+    .val-daran-narrative .vd-figure-table td:nth-child(5) { width: 17%; }
+    .val-daran-narrative .vd-figure-table th:nth-child(6),
+    .val-daran-narrative .vd-figure-table td:nth-child(6) { width: 17%; }
+
+    .val-daran-narrative .vd-segment-table table {
+      table-layout: fixed;
+      font-size: 0.7rem;
+    }
+    .val-daran-narrative .vd-segment-table th:nth-child(1),
+    .val-daran-narrative .vd-segment-table td:nth-child(1) { width: 7%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(2),
+    .val-daran-narrative .vd-segment-table td:nth-child(2) { width: 18%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(3),
+    .val-daran-narrative .vd-segment-table td:nth-child(3) { width: 9%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(4),
+    .val-daran-narrative .vd-segment-table td:nth-child(4) { width: 9%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(5),
+    .val-daran-narrative .vd-segment-table td:nth-child(5) { width: 8%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(6),
+    .val-daran-narrative .vd-segment-table td:nth-child(6) { width: 15%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(7),
+    .val-daran-narrative .vd-segment-table td:nth-child(7) { width: 10%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(8),
+    .val-daran-narrative .vd-segment-table td:nth-child(8) { width: 12%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(9),
+    .val-daran-narrative .vd-segment-table td:nth-child(9) { width: 11%; }
+    .val-daran-narrative .vd-segment-table th:nth-child(1),
+    .val-daran-narrative .vd-segment-table td:nth-child(1),
+    .val-daran-narrative .vd-segment-table th:nth-child(7),
+    .val-daran-narrative .vd-segment-table td:nth-child(7) {
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .val-daran-narrative .vd-card-table,
+    .val-daran-narrative .vd-media-table {
+      overflow-x: visible;
+    }
+
+    .val-daran-narrative .vd-card-table table,
+    .val-daran-narrative .vd-media-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .val-daran-narrative .vd-card-table thead,
+    .val-daran-narrative .vd-media-table thead {
+      display: none;
+    }
+
+    .val-daran-narrative .vd-card-table tbody,
+    .val-daran-narrative .vd-media-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .val-daran-narrative .vd-card-table tr,
+    .val-daran-narrative .vd-media-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .val-daran-narrative .vd-card-table td,
+    .val-daran-narrative .vd-media-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .val-daran-narrative .vd-card-table td:nth-child(n),
+    .val-daran-narrative .vd-media-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .val-daran-narrative .vd-card-table td:nth-child(1),
+    .val-daran-narrative .vd-media-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .val-daran-narrative .vd-card-table td:nth-child(n)::before,
+    .val-daran-narrative .vd-media-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .val-daran-narrative .vd-segment-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-size: 0.78rem;
+      font-weight: 650;
+      color: var(--muted);
+    }
+    .val-daran-narrative .vd-segment-table td:nth-child(1)::before {
+      display: inline;
+      margin: 0;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: 0;
+      text-transform: none;
+      content: "第 ";
+    }
+    .val-daran-narrative .vd-segment-table td:nth-child(1)::after {
+      content: " 段";
+    }
+    .val-daran-narrative .vd-segment-table td:nth-child(2) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+    .val-daran-narrative .vd-segment-table td:nth-child(6) {
+      grid-column: 1 / -1;
+    }
+    .val-daran-narrative .vd-media-table td:nth-child(2),
+    .val-daran-narrative .vd-media-table td:nth-child(6),
+    .val-daran-narrative .vd-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .val-daran-narrative .vd-group-table td:nth-child(2)::before { content: "距离"; }
+    .val-daran-narrative .vd-group-table td:nth-child(3)::before { content: "爬升"; }
+    .val-daran-narrative .vd-group-table td:nth-child(4)::before { content: "起跑"; }
+    .val-daran-narrative .vd-group-table td:nth-child(5)::before { content: "时限"; }
+    .val-daran-narrative .vd-group-table td:nth-child(6)::before { content: "备注"; }
+
+    .val-daran-narrative .vd-figure-table td:nth-child(2)::before { content: "距离"; }
+    .val-daran-narrative .vd-figure-table td:nth-child(3)::before { content: "爬升"; }
+    .val-daran-narrative .vd-figure-table td:nth-child(4)::before { content: "下降"; }
+    .val-daran-narrative .vd-figure-table td:nth-child(5)::before { content: "最高点"; }
+    .val-daran-narrative .vd-figure-table td:nth-child(6)::before { content: "最低点"; }
+
+    .val-daran-narrative .vd-segment-table td:nth-child(3)::before { content: "本段距离"; }
+    .val-daran-narrative .vd-segment-table td:nth-child(4)::before { content: "累计"; }
+    .val-daran-narrative .vd-segment-table td:nth-child(5)::before { content: "海拔"; }
+    .val-daran-narrative .vd-segment-table td:nth-child(6)::before { content: "本段爬升 / 下降"; }
+    .val-daran-narrative .vd-segment-table td:nth-child(7)::before { content: "补给"; }
+    .val-daran-narrative .vd-segment-table td:nth-child(8)::before { content: "关门"; }
+    .val-daran-narrative .vd-segment-table td:nth-child(9)::before { content: "Slowest"; }
+
+    .val-daran-narrative .vd-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .val-daran-narrative .vd-media-table td:nth-child(3)::before { content: "作者"; }
+    .val-daran-narrative .vd-media-table td:nth-child(4)::before { content: "许可"; }
+    .val-daran-narrative .vd-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .val-daran-narrative .vd-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .val-daran-narrative .vd-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .val-daran-narrative .vd-group-table td:nth-child(2)::before { content: "Distance"; }
+    :lang(en) .val-daran-narrative .vd-group-table td:nth-child(3)::before { content: "Gain"; }
+    :lang(en) .val-daran-narrative .vd-group-table td:nth-child(4)::before { content: "Start"; }
+    :lang(en) .val-daran-narrative .vd-group-table td:nth-child(5)::before { content: "Limit"; }
+    :lang(en) .val-daran-narrative .vd-group-table td:nth-child(6)::before { content: "Note"; }
+
+    :lang(en) .val-daran-narrative .vd-figure-table td:nth-child(2)::before { content: "Distance"; }
+    :lang(en) .val-daran-narrative .vd-figure-table td:nth-child(3)::before { content: "Gain"; }
+    :lang(en) .val-daran-narrative .vd-figure-table td:nth-child(4)::before { content: "Loss"; }
+    :lang(en) .val-daran-narrative .vd-figure-table td:nth-child(5)::before { content: "High point"; }
+    :lang(en) .val-daran-narrative .vd-figure-table td:nth-child(6)::before { content: "Low point"; }
+
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(1)::before {
+      content: "Segment ";
+    }
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(1)::after {
+      content: "";
+    }
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(3)::before { content: "Segment distance"; }
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(4)::before { content: "Cumulative"; }
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(5)::before { content: "Elevation"; }
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(6)::before { content: "Gain / loss"; }
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(7)::before { content: "Supplies"; }
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(8)::before { content: "Cut-off"; }
+    :lang(en) .val-daran-narrative .vd-segment-table td:nth-child(9)::before { content: "Slowest"; }
+
+    :lang(en) .val-daran-narrative .vd-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .val-daran-narrative .vd-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .val-daran-narrative .vd-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .val-daran-narrative .vd-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .val-daran-narrative .vd-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .val-daran-narrative .vd-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  .gpt100-narrative img[src$="gpt100-2026-station-chain.svg"],
+  .gpt100-narrative img[src$="gpt100-2026-stage-bands.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (min-width: 431px) {
+    .gpt100-narrative .g100-key-table table {
+      table-layout: fixed;
+      font-size: 0.82rem;
+    }
+    .gpt100-narrative .g100-key-table th:nth-child(1),
+    .gpt100-narrative .g100-key-table td:nth-child(1) { width: 28%; }
+    .gpt100-narrative .g100-key-table th:nth-child(2),
+    .gpt100-narrative .g100-key-table td:nth-child(2) { width: 72%; }
+
+    .gpt100-narrative .g100-segment-table table {
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+    .gpt100-narrative .g100-segment-table th:nth-child(1),
+    .gpt100-narrative .g100-segment-table td:nth-child(1) { width: 27%; }
+    .gpt100-narrative .g100-segment-table th:nth-child(2),
+    .gpt100-narrative .g100-segment-table td:nth-child(2) { width: 14%; }
+    .gpt100-narrative .g100-segment-table th:nth-child(3),
+    .gpt100-narrative .g100-segment-table td:nth-child(3) { width: 14%; }
+    .gpt100-narrative .g100-segment-table th:nth-child(4),
+    .gpt100-narrative .g100-segment-table td:nth-child(4) { width: 22%; }
+    .gpt100-narrative .g100-segment-table th:nth-child(5),
+    .gpt100-narrative .g100-segment-table td:nth-child(5) { width: 23%; }
+
+    .gpt100-narrative .g100-aid-table table {
+      table-layout: fixed;
+      font-size: 0.8rem;
+    }
+    .gpt100-narrative .g100-aid-table th:nth-child(1),
+    .gpt100-narrative .g100-aid-table td:nth-child(1) { width: 31%; }
+    .gpt100-narrative .g100-aid-table th:nth-child(2),
+    .gpt100-narrative .g100-aid-table td:nth-child(2) { width: 25%; }
+    .gpt100-narrative .g100-aid-table th:nth-child(3),
+    .gpt100-narrative .g100-aid-table td:nth-child(3) { width: 21%; }
+    .gpt100-narrative .g100-aid-table th:nth-child(4),
+    .gpt100-narrative .g100-aid-table td:nth-child(4) { width: 23%; }
+
+    .gpt100-narrative .g100-cutoff-table table {
+      table-layout: fixed;
+      font-size: 0.84rem;
+    }
+    .gpt100-narrative .g100-cutoff-table th:nth-child(1),
+    .gpt100-narrative .g100-cutoff-table td:nth-child(1) { width: 62%; }
+    .gpt100-narrative .g100-cutoff-table th:nth-child(2),
+    .gpt100-narrative .g100-cutoff-table td:nth-child(2) { width: 38%; }
+
+    .gpt100-narrative .g100-conflict-table table {
+      table-layout: fixed;
+      font-size: 0.8rem;
+    }
+    .gpt100-narrative .g100-conflict-table th:nth-child(1),
+    .gpt100-narrative .g100-conflict-table td:nth-child(1) { width: 22%; }
+    .gpt100-narrative .g100-conflict-table th:nth-child(2),
+    .gpt100-narrative .g100-conflict-table td:nth-child(2) { width: 39%; }
+    .gpt100-narrative .g100-conflict-table th:nth-child(3),
+    .gpt100-narrative .g100-conflict-table td:nth-child(3) { width: 39%; }
+
+    .gpt100-narrative .g100-media-table table {
+      table-layout: fixed;
+      font-size: 0.76rem;
+    }
+    .gpt100-narrative .g100-media-table th:nth-child(1),
+    .gpt100-narrative .g100-media-table td:nth-child(1) { width: 12%; }
+    .gpt100-narrative .g100-media-table th:nth-child(2),
+    .gpt100-narrative .g100-media-table td:nth-child(2) { width: 20%; }
+    .gpt100-narrative .g100-media-table th:nth-child(3),
+    .gpt100-narrative .g100-media-table td:nth-child(3) { width: 13%; }
+    .gpt100-narrative .g100-media-table th:nth-child(4),
+    .gpt100-narrative .g100-media-table td:nth-child(4) { width: 11%; }
+    .gpt100-narrative .g100-media-table th:nth-child(5),
+    .gpt100-narrative .g100-media-table td:nth-child(5) { width: 13%; }
+    .gpt100-narrative .g100-media-table th:nth-child(6),
+    .gpt100-narrative .g100-media-table td:nth-child(6) { width: 18%; }
+    .gpt100-narrative .g100-media-table th:nth-child(7),
+    .gpt100-narrative .g100-media-table td:nth-child(7) {
+      width: 13%;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .gpt100-narrative .g100-card-table,
+    .gpt100-narrative .g100-media-table {
+      overflow-x: visible;
+    }
+
+    .gpt100-narrative .g100-card-table table,
+    .gpt100-narrative .g100-media-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .gpt100-narrative .g100-card-table thead,
+    .gpt100-narrative .g100-media-table thead {
+      display: none;
+    }
+
+    .gpt100-narrative .g100-card-table tbody,
+    .gpt100-narrative .g100-media-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .gpt100-narrative .g100-card-table tr,
+    .gpt100-narrative .g100-media-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .gpt100-narrative .g100-card-table td,
+    .gpt100-narrative .g100-media-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .gpt100-narrative .g100-card-table td:nth-child(n),
+    .gpt100-narrative .g100-media-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .gpt100-narrative .g100-card-table td:nth-child(1),
+    .gpt100-narrative .g100-media-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .gpt100-narrative .g100-card-table td:nth-child(n)::before,
+    .gpt100-narrative .g100-media-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .gpt100-narrative .g100-key-table td:nth-child(2),
+    .gpt100-narrative .g100-cutoff-table td:nth-child(2),
+    .gpt100-narrative .g100-conflict-table td:nth-child(2),
+    .gpt100-narrative .g100-conflict-table td:nth-child(3),
+    .gpt100-narrative .g100-aid-table td:nth-child(4),
+    .gpt100-narrative .g100-media-table td:nth-child(2),
+    .gpt100-narrative .g100-media-table td:nth-child(6),
+    .gpt100-narrative .g100-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .gpt100-narrative .g100-key-table td:nth-child(2)::before { content: "官方值"; }
+    .gpt100-narrative .g100-segment-table td:nth-child(2)::before { content: "累计"; }
+    .gpt100-narrative .g100-segment-table td:nth-child(3)::before { content: "段长"; }
+    .gpt100-narrative .g100-segment-table td:nth-child(4)::before { content: "段爬升"; }
+    .gpt100-narrative .g100-segment-table td:nth-child(5)::before { content: "段下降"; }
+    .gpt100-narrative .g100-aid-table td:nth-child(2)::before { content: "crew"; }
+    .gpt100-narrative .g100-aid-table td:nth-child(3)::before { content: "存包"; }
+    .gpt100-narrative .g100-aid-table td:nth-child(4)::before { content: "可小睡"; }
+    .gpt100-narrative .g100-cutoff-table td:nth-child(2)::before { content: "关门时刻"; }
+    .gpt100-narrative .g100-conflict-table td:nth-child(2)::before { content: "一处写法"; }
+    .gpt100-narrative .g100-conflict-table td:nth-child(3)::before { content: "另一处写法"; }
+    .gpt100-narrative .g100-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .gpt100-narrative .g100-media-table td:nth-child(3)::before { content: "作者"; }
+    .gpt100-narrative .g100-media-table td:nth-child(4)::before { content: "许可"; }
+    .gpt100-narrative .g100-media-table td:nth-child(5)::before { content: "拍摄日期"; }
+    .gpt100-narrative .g100-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .gpt100-narrative .g100-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .gpt100-narrative .g100-key-table td:nth-child(2)::before { content: "Official value"; }
+    :lang(en) .gpt100-narrative .g100-segment-table td:nth-child(2)::before { content: "Cumulative"; }
+    :lang(en) .gpt100-narrative .g100-segment-table td:nth-child(3)::before { content: "Leg"; }
+    :lang(en) .gpt100-narrative .g100-segment-table td:nth-child(4)::before { content: "Leg ascent"; }
+    :lang(en) .gpt100-narrative .g100-segment-table td:nth-child(5)::before { content: "Leg descent"; }
+    :lang(en) .gpt100-narrative .g100-aid-table td:nth-child(2)::before { content: "Crew"; }
+    :lang(en) .gpt100-narrative .g100-aid-table td:nth-child(3)::before { content: "Drop bag"; }
+    :lang(en) .gpt100-narrative .g100-aid-table td:nth-child(4)::before { content: "Nap beds"; }
+    :lang(en) .gpt100-narrative .g100-cutoff-table td:nth-child(2)::before { content: "Cut-off"; }
+    :lang(en) .gpt100-narrative .g100-conflict-table td:nth-child(2)::before { content: "One wording"; }
+    :lang(en) .gpt100-narrative .g100-conflict-table td:nth-child(3)::before { content: "Other wording"; }
+    :lang(en) .gpt100-narrative .g100-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .gpt100-narrative .g100-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .gpt100-narrative .g100-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .gpt100-narrative .g100-media-table td:nth-child(5)::before { content: "Date"; }
+    :lang(en) .gpt100-narrative .g100-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .gpt100-narrative .g100-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  .paraty-narrative img[src$="paraty-2027-point-chain.svg"],
+  .paraty-narrative img[src$="paraty-2027-elevation-profile.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (max-width: 560px) {
+    .paraty-narrative .p100-card-table,
+    .paraty-narrative .p100-media-table {
+      overflow-x: visible;
+    }
+
+    .paraty-narrative .p100-card-table table,
+    .paraty-narrative .p100-media-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .paraty-narrative .p100-card-table thead,
+    .paraty-narrative .p100-media-table thead {
+      display: none;
+    }
+
+    .paraty-narrative .p100-card-table tbody,
+    .paraty-narrative .p100-media-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .paraty-narrative .p100-card-table tr,
+    .paraty-narrative .p100-media-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .paraty-narrative .p100-card-table td,
+    .paraty-narrative .p100-media-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .paraty-narrative .p100-card-table td:nth-child(n),
+    .paraty-narrative .p100-media-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .paraty-narrative .p100-card-table td:nth-child(1),
+    .paraty-narrative .p100-media-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .paraty-narrative .p100-card-table td:nth-child(n)::before,
+    .paraty-narrative .p100-media-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .paraty-narrative .p100-race-table td:nth-child(6),
+    .paraty-narrative .p100-point-table td:nth-child(7),
+    .paraty-narrative .p100-media-table td:nth-child(2),
+    .paraty-narrative .p100-media-table td:nth-child(5),
+    .paraty-narrative .p100-media-table td:nth-child(6),
+    .paraty-narrative .p100-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .paraty-narrative .p100-result-table td:nth-child(1),
+    .paraty-narrative .p100-result-table td:nth-child(3) {
+      grid-column: auto;
+      font-weight: 750;
+      font-size: 0.9rem;
+    }
+
+    .paraty-narrative .p100-race-table td:nth-child(1)::before,
+    .paraty-narrative .p100-point-table td:nth-child(1)::before,
+    .paraty-narrative .p100-media-table td:nth-child(1)::before { content: none; }
+
+    .paraty-narrative .p100-race-table td:nth-child(2)::before { content: "距离"; }
+    .paraty-narrative .p100-race-table td:nth-child(3)::before { content: "累计爬升"; }
+    .paraty-narrative .p100-race-table td:nth-child(4)::before { content: "时限"; }
+    .paraty-narrative .p100-race-table td:nth-child(5)::before { content: "起跑"; }
+    .paraty-narrative .p100-race-table td:nth-child(6)::before { content: "起终点"; }
+
+    .paraty-narrative .p100-point-table td:nth-child(2)::before { content: "累计 km"; }
+    .paraty-narrative .p100-point-table td:nth-child(3)::before { content: "海拔 m"; }
+    .paraty-narrative .p100-point-table td:nth-child(4)::before { content: "累计爬升 m"; }
+    .paraty-narrative .p100-point-table td:nth-child(5)::before { content: "距上一点 km / +m"; }
+    .paraty-narrative .p100-point-table td:nth-child(6)::before { content: "关门（2027）"; }
+    .paraty-narrative .p100-point-table td:nth-child(7)::before { content: "官方服务"; }
+
+    .paraty-narrative .p100-result-table td:nth-child(1)::before { content: "男子 / Men"; }
+    .paraty-narrative .p100-result-table td:nth-child(2)::before { content: "时间 / Time"; }
+    .paraty-narrative .p100-result-table td:nth-child(3)::before { content: "女子 / Women"; }
+    .paraty-narrative .p100-result-table td:nth-child(4)::before { content: "时间 / Time"; }
+
+    .paraty-narrative .p100-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .paraty-narrative .p100-media-table td:nth-child(3)::before { content: "作者"; }
+    .paraty-narrative .p100-media-table td:nth-child(4)::before { content: "许可"; }
+    .paraty-narrative .p100-media-table td:nth-child(5)::before { content: "拍摄 / 制作日期"; }
+    .paraty-narrative .p100-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .paraty-narrative .p100-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .paraty-narrative .p100-race-table td:nth-child(2)::before { content: "Distance"; }
+    :lang(en) .paraty-narrative .p100-race-table td:nth-child(3)::before { content: "Gain"; }
+    :lang(en) .paraty-narrative .p100-race-table td:nth-child(4)::before { content: "Limit"; }
+    :lang(en) .paraty-narrative .p100-race-table td:nth-child(5)::before { content: "Start"; }
+    :lang(en) .paraty-narrative .p100-race-table td:nth-child(6)::before { content: "Start / finish"; }
+
+    :lang(en) .paraty-narrative .p100-point-table td:nth-child(2)::before { content: "Cumulative km"; }
+    :lang(en) .paraty-narrative .p100-point-table td:nth-child(3)::before { content: "Elevation m"; }
+    :lang(en) .paraty-narrative .p100-point-table td:nth-child(4)::before { content: "Cumulative gain m"; }
+    :lang(en) .paraty-narrative .p100-point-table td:nth-child(5)::before { content: "From previous km / +m"; }
+    :lang(en) .paraty-narrative .p100-point-table td:nth-child(6)::before { content: "Cut-off (2027)"; }
+    :lang(en) .paraty-narrative .p100-point-table td:nth-child(7)::before { content: "Official services"; }
+
+    :lang(en) .paraty-narrative .p100-result-table td:nth-child(1)::before { content: "Men"; }
+    :lang(en) .paraty-narrative .p100-result-table td:nth-child(2)::before { content: "Time"; }
+    :lang(en) .paraty-narrative .p100-result-table td:nth-child(3)::before { content: "Women"; }
+    :lang(en) .paraty-narrative .p100-result-table td:nth-child(4)::before { content: "Time"; }
+
+    :lang(en) .paraty-narrative .p100-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .paraty-narrative .p100-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .paraty-narrative .p100-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .paraty-narrative .p100-media-table td:nth-child(5)::before { content: "Taken / made"; }
+    :lang(en) .paraty-narrative .p100-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .paraty-narrative .p100-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  @media (min-width: 561px) {
+    .paraty-narrative .p100-card-table th,
+    .paraty-narrative .p100-media-table th {
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+
+    .paraty-narrative .p100-race-table table {
+      table-layout: fixed;
+      font-size: 0.82rem;
+    }
+    .paraty-narrative .p100-race-table th:nth-child(1),
+    .paraty-narrative .p100-race-table td:nth-child(1) { width: 18%; }
+    .paraty-narrative .p100-race-table th:nth-child(2),
+    .paraty-narrative .p100-race-table td:nth-child(2) { width: 12%; }
+    .paraty-narrative .p100-race-table th:nth-child(3),
+    .paraty-narrative .p100-race-table td:nth-child(3) { width: 12%; }
+    .paraty-narrative .p100-race-table th:nth-child(4),
+    .paraty-narrative .p100-race-table td:nth-child(4) { width: 12%; }
+    .paraty-narrative .p100-race-table th:nth-child(5),
+    .paraty-narrative .p100-race-table td:nth-child(5) { width: 13%; }
+    .paraty-narrative .p100-race-table th:nth-child(6),
+    .paraty-narrative .p100-race-table td:nth-child(6) { width: 33%; }
+
+    .paraty-narrative .p100-point-table table {
+      table-layout: fixed;
+      font-size: 0.76rem;
+    }
+    .paraty-narrative .p100-point-table th {
+      font-size: 0.7rem;
+    }
+    .paraty-narrative .p100-point-table th:nth-child(1),
+    .paraty-narrative .p100-point-table td:nth-child(1) { width: 15%; }
+    .paraty-narrative .p100-point-table th:nth-child(2),
+    .paraty-narrative .p100-point-table td:nth-child(2) { width: 10%; }
+    .paraty-narrative .p100-point-table th:nth-child(3),
+    .paraty-narrative .p100-point-table td:nth-child(3) { width: 9%; }
+    .paraty-narrative .p100-point-table th:nth-child(4),
+    .paraty-narrative .p100-point-table td:nth-child(4) { width: 12%; }
+    .paraty-narrative .p100-point-table th:nth-child(5),
+    .paraty-narrative .p100-point-table td:nth-child(5) { width: 15%; }
+    .paraty-narrative .p100-point-table th:nth-child(6),
+    .paraty-narrative .p100-point-table td:nth-child(6) { width: 11%; }
+    .paraty-narrative .p100-point-table th:nth-child(7),
+    .paraty-narrative .p100-point-table td:nth-child(7) { width: 28%; }
+
+    .paraty-narrative .p100-result-table table {
+      table-layout: fixed;
+      font-size: 0.82rem;
+    }
+    .paraty-narrative .p100-result-table th:nth-child(1),
+    .paraty-narrative .p100-result-table td:nth-child(1) { width: 32%; }
+    .paraty-narrative .p100-result-table th:nth-child(2),
+    .paraty-narrative .p100-result-table td:nth-child(2) { width: 18%; }
+    .paraty-narrative .p100-result-table th:nth-child(3),
+    .paraty-narrative .p100-result-table td:nth-child(3) { width: 32%; }
+    .paraty-narrative .p100-result-table th:nth-child(4),
+    .paraty-narrative .p100-result-table td:nth-child(4) { width: 18%; }
+
+    .paraty-narrative .p100-media-table table {
+      table-layout: fixed;
+      font-size: 0.74rem;
+    }
+    .paraty-narrative .p100-media-table th:nth-child(1),
+    .paraty-narrative .p100-media-table td:nth-child(1) { width: 12%; }
+    .paraty-narrative .p100-media-table th:nth-child(2),
+    .paraty-narrative .p100-media-table td:nth-child(2) { width: 20%; }
+    .paraty-narrative .p100-media-table th:nth-child(3),
+    .paraty-narrative .p100-media-table td:nth-child(3) { width: 13%; }
+    .paraty-narrative .p100-media-table th:nth-child(4),
+    .paraty-narrative .p100-media-table td:nth-child(4) { width: 11%; }
+    .paraty-narrative .p100-media-table th:nth-child(5),
+    .paraty-narrative .p100-media-table td:nth-child(5) { width: 13%; }
+    .paraty-narrative .p100-media-table th:nth-child(6),
+    .paraty-narrative .p100-media-table td:nth-child(6) { width: 18%; }
+    .paraty-narrative .p100-media-table th:nth-child(7),
+    .paraty-narrative .p100-media-table td:nth-child(7) { width: 13%; }
+  }
+
+  .chiang-dao-narrative img[src$="chiang-dao-2026-point-chain.svg"],
+  .chiang-dao-narrative img[src$="chiang-dao-2026-elevation-profile.svg"] {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: var(--radius-card);
+  }
+
+  @media (max-width: 560px) {
+    .chiang-dao-narrative .cd160-card-table {
+      overflow-x: visible;
+    }
+
+    .chiang-dao-narrative .cd160-card-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+
+    .chiang-dao-narrative .cd160-card-table thead {
+      display: none;
+    }
+
+    .chiang-dao-narrative .cd160-card-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .chiang-dao-narrative .cd160-card-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .chiang-dao-narrative .cd160-card-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .chiang-dao-narrative .cd160-card-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .chiang-dao-narrative .cd160-card-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.92rem;
+    }
+
+    .chiang-dao-narrative .cd160-card-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .chiang-dao-narrative .cd160-point-table td:nth-child(5),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(2),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(6),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(7) {
+      grid-column: 1 / -1;
+    }
+
+    .chiang-dao-narrative .cd160-point-table td:nth-child(1)::before,
+    .chiang-dao-narrative .cd160-media-table td:nth-child(1)::before { content: none; }
+
+    .chiang-dao-narrative .cd160-point-table td:nth-child(2)::before { content: "累计 km"; }
+    .chiang-dao-narrative .cd160-point-table td:nth-child(3)::before { content: "海拔 m"; }
+    .chiang-dao-narrative .cd160-point-table td:nth-child(4)::before { content: "累计爬升 m"; }
+    .chiang-dao-narrative .cd160-point-table td:nth-child(5)::before { content: "关门"; }
+
+    .chiang-dao-narrative .cd160-media-table td:nth-child(2)::before { content: "画面与用途"; }
+    .chiang-dao-narrative .cd160-media-table td:nth-child(3)::before { content: "作者"; }
+    .chiang-dao-narrative .cd160-media-table td:nth-child(4)::before { content: "许可"; }
+    .chiang-dao-narrative .cd160-media-table td:nth-child(5)::before { content: "拍摄 / 制作日期"; }
+    .chiang-dao-narrative .cd160-media-table td:nth-child(6)::before { content: "原图 / 本地"; }
+    .chiang-dao-narrative .cd160-media-table td:nth-child(7)::before { content: "文件页"; }
+
+    :lang(en) .chiang-dao-narrative .cd160-point-table td:nth-child(2)::before { content: "Cumulative km"; }
+    :lang(en) .chiang-dao-narrative .cd160-point-table td:nth-child(3)::before { content: "Elevation m"; }
+    :lang(en) .chiang-dao-narrative .cd160-point-table td:nth-child(4)::before { content: "Cumulative gain m"; }
+    :lang(en) .chiang-dao-narrative .cd160-point-table td:nth-child(5)::before { content: "Cut-off"; }
+
+    :lang(en) .chiang-dao-narrative .cd160-media-table td:nth-child(2)::before { content: "What it shows"; }
+    :lang(en) .chiang-dao-narrative .cd160-media-table td:nth-child(3)::before { content: "Author"; }
+    :lang(en) .chiang-dao-narrative .cd160-media-table td:nth-child(4)::before { content: "Licence"; }
+    :lang(en) .chiang-dao-narrative .cd160-media-table td:nth-child(5)::before { content: "Taken / made"; }
+    :lang(en) .chiang-dao-narrative .cd160-media-table td:nth-child(6)::before { content: "Original / local"; }
+    :lang(en) .chiang-dao-narrative .cd160-media-table td:nth-child(7)::before { content: "File page"; }
+  }
+
+  @media (min-width: 561px) {
+    .chiang-dao-narrative .cd160-card-table th {
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+
+    .chiang-dao-narrative .cd160-point-table table {
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+    .chiang-dao-narrative .cd160-point-table th {
+      font-size: 0.72rem;
+    }
+    .chiang-dao-narrative .cd160-point-table th:nth-child(1),
+    .chiang-dao-narrative .cd160-point-table td:nth-child(1) { width: 30%; }
+    .chiang-dao-narrative .cd160-point-table th:nth-child(2),
+    .chiang-dao-narrative .cd160-point-table td:nth-child(2) { width: 13%; }
+    .chiang-dao-narrative .cd160-point-table th:nth-child(3),
+    .chiang-dao-narrative .cd160-point-table td:nth-child(3) { width: 11%; }
+    .chiang-dao-narrative .cd160-point-table th:nth-child(4),
+    .chiang-dao-narrative .cd160-point-table td:nth-child(4) { width: 16%; }
+    .chiang-dao-narrative .cd160-point-table th:nth-child(5),
+    .chiang-dao-narrative .cd160-point-table td:nth-child(5) { width: 30%; }
+
+    .chiang-dao-narrative .cd160-media-table table {
+      table-layout: fixed;
+      font-size: 0.74rem;
+    }
+    .chiang-dao-narrative .cd160-media-table th:nth-child(1),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(1) { width: 15%; }
+    .chiang-dao-narrative .cd160-media-table th:nth-child(2),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(2) { width: 16%; }
+    .chiang-dao-narrative .cd160-media-table th:nth-child(3),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(3) { width: 15%; }
+    .chiang-dao-narrative .cd160-media-table th:nth-child(4),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(4) { width: 10%; }
+    .chiang-dao-narrative .cd160-media-table th:nth-child(5),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(5) { width: 12%; }
+    .chiang-dao-narrative .cd160-media-table th:nth-child(6),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(6) { width: 17%; }
+    .chiang-dao-narrative .cd160-media-table th:nth-child(7),
+    .chiang-dao-narrative .cd160-media-table td:nth-child(7) { width: 15%; }
+  }
+
+  @media (max-width: 560px) {
+    .buenos-aires-narrative .ba-card-table {
+      overflow-x: visible;
+    }
+
+    .buenos-aires-narrative .ba-card-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.84rem;
+    }
+
+    .buenos-aires-narrative .ba-card-table thead {
+      display: none;
+    }
+
+    .buenos-aires-narrative .ba-card-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .buenos-aires-narrative .ba-card-table tr {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 10px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .buenos-aires-narrative .ba-card-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .buenos-aires-narrative .ba-card-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .buenos-aires-narrative .ba-card-table td:nth-child(1) {
+      grid-column: 1 / -1;
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .buenos-aires-narrative .ba-card-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .buenos-aires-narrative .ba-rule-table td:nth-child(1)::before,
+    .buenos-aires-narrative .ba-record-table td:nth-child(1)::before {
+      content: none;
+    }
+
+    .buenos-aires-narrative .ba-rule-table td:nth-child(2)::before {
+      content: "官方规则";
+    }
+    .buenos-aires-narrative .ba-rule-table td:nth-child(3)::before {
+      content: "实务影响";
+    }
+    .buenos-aires-narrative .ba-record-table td:nth-child(2)::before {
+      content: "成绩";
+    }
+    .buenos-aires-narrative .ba-record-table td:nth-child(3)::before {
+      content: "选手 / 年份";
+    }
+    .buenos-aires-narrative .ba-record-table td:nth-child(4)::before {
+      content: "备注";
+    }
+
+    :lang(en) .buenos-aires-narrative .ba-rule-table td:nth-child(2)::before {
+      content: "Official rule";
+    }
+    :lang(en) .buenos-aires-narrative .ba-rule-table td:nth-child(3)::before {
+      content: "Practical effect";
+    }
+    :lang(en) .buenos-aires-narrative .ba-record-table td:nth-child(2)::before {
+      content: "Time";
+    }
+    :lang(en) .buenos-aires-narrative .ba-record-table td:nth-child(3)::before {
+      content: "Athlete / year";
+    }
+    :lang(en) .buenos-aires-narrative .ba-record-table td:nth-child(4)::before {
+      content: "Note";
+    }
+  }
+
+  @media (max-width: 560px) {
+    .vmm-100-narrative .vmm-card-table {
+      overflow-x: visible;
+    }
+
+    .vmm-100-narrative .vmm-card-table table {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      table-layout: auto;
+      font-size: 0.84rem;
+    }
+
+    .vmm-100-narrative .vmm-card-table thead {
+      display: none;
+    }
+
+    .vmm-100-narrative .vmm-card-table tbody {
+      display: grid;
+      gap: 10px;
+    }
+
+    .vmm-100-narrative .vmm-card-table tr {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 8px;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+    }
+
+    .vmm-100-narrative .vmm-card-table td {
+      display: block;
+      width: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      white-space: normal;
+      text-align: left !important;
+      line-height: 1.45;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .vmm-100-narrative .vmm-card-table td:nth-child(n) {
+      width: auto;
+    }
+
+    .vmm-100-narrative .vmm-card-table td:nth-child(1) {
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    .vmm-100-narrative .vmm-card-table td:nth-child(2),
+    .vmm-100-narrative .vmm-card-table td:nth-child(3) {
+      padding-top: 6px;
+      border-top: 1px solid var(--border);
+    }
+
+    .vmm-100-narrative .vmm-card-table td:nth-child(n)::before {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .vmm-100-narrative .vmm-card-table td:nth-child(1)::before {
+      content: none;
+    }
+
+    .vmm-100-narrative .vmm-compare-table td:nth-child(2)::before {
+      content: "一处写法";
+    }
+    .vmm-100-narrative .vmm-compare-table td:nth-child(3)::before {
+      content: "另一处写法";
+    }
+
+    :lang(en) .vmm-100-narrative .vmm-compare-table td:nth-child(2)::before {
+      content: "One version";
+    }
+    :lang(en) .vmm-100-narrative .vmm-compare-table td:nth-child(3)::before {
+      content: "Another version";
+    }
   }
 </style>

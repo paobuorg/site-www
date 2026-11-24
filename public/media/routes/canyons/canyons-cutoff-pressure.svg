@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" role="img" aria-labelledby="title desc">
+  <title id="title">Canyons 100K 2026 cut-offs: implied average speed between consecutive published times</title>
+  <desc id="desc">Six bars show the average speed implied by consecutive published cut-offs in the 2026 Canyons 100K aid chart: Start to Deadwood-2 3.91 km/h over 25.4 km and 6.50 hours; Deadwood-2 to Michigan Bluff 8.80 km/h over 11.0 km and 1.25 hours; Michigan Bluff to Foresthill 5.43 km/h over 9.5 km and 1.75 hours; Foresthill to Drivers Flat 5.35 km/h over 28.1 km and 5.25 hours; Drivers Flat to Mammoth Bar 5.08 km/h over 12.7 km and 2.50 hours; Mammoth Bar to Finish 4.51 km/h over 12.4 km and 2.75 hours. The 8.80 km/h bar is highlighted because the page flags it as implausible for a mid-pack runner. These are administrative cut-offs, not target paces, and the chart is a 2026 version that will change for 2027.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="820" fill="url(#bg)"/>
+  <circle cx="650" cy="58" r="140" fill="#FF7A6B" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="24" y="46" fill="#FF9A8A" font-size="19" font-weight="700" letter-spacing="3">CANYONS 100K / CUT-OFF PRESSURE</text>
+    <text x="24" y="94" fill="#F4FFFC" font-size="47" font-weight="750">20-hour limit</text>
+    <text x="24" y="140" fill="#F4FFFC" font-size="32" font-weight="700">6 published cut-offs, 6 implied speeds</text>
+    <text x="24" y="174" fill="#91A8B8" font-size="21">Segment distance ÷ time between cut-offs · km/h</text>
+    <text x="24" y="206" fill="#6E8494" font-size="18">2026 chart; the 2027 page says it will change. Cut-offs are limits, not targets.</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <line x1="24" y1="286" x2="24" y2="686" stroke="#1E3547" stroke-width="1"/>
+    <text x="24" y="708" fill="#6E8494" font-size="17" text-anchor="middle">0</text>
+    <line x1="144" y1="286" x2="144" y2="686" stroke="#1E3547" stroke-width="1"/>
+    <text x="144" y="708" fill="#6E8494" font-size="17" text-anchor="middle">2</text>
+    <line x1="264" y1="286" x2="264" y2="686" stroke="#1E3547" stroke-width="1"/>
+    <text x="264" y="708" fill="#6E8494" font-size="17" text-anchor="middle">4</text>
+    <line x1="384" y1="286" x2="384" y2="686" stroke="#1E3547" stroke-width="1"/>
+    <text x="384" y="708" fill="#6E8494" font-size="17" text-anchor="middle">6</text>
+    <line x1="504" y1="286" x2="504" y2="686" stroke="#1E3547" stroke-width="1"/>
+    <text x="504" y="708" fill="#6E8494" font-size="17" text-anchor="middle">8</text>
+    <line x1="624" y1="286" x2="624" y2="686" stroke="#1E3547" stroke-width="1"/>
+    <text x="624" y="708" fill="#6E8494" font-size="17" text-anchor="middle">10</text>
+    <text x="324" y="730" fill="#6E8494" font-size="17" text-anchor="middle">implied km/h</text>
+    <text x="24" y="260" fill="#F4FFFC" font-size="20" font-weight="700">Start → Deadwood-2</text>
+    <text x="24" y="280" fill="#91A8B8" font-size="17">25.4 km · 6.50 h</text>
+    <rect x="24" y="288" width="600" height="18" rx="7" fill="#0A1725"/>
+    <rect x="24" y="288" width="234.5" height="18" rx="7" fill="#5FD3C4"/>
+    <text x="268.5" y="302" fill="#F4FFFC" font-size="19" font-weight="750">3.91</text>
+    <text x="24" y="336" fill="#F4FFFC" font-size="20" font-weight="700">Deadwood-2 → Michigan Bluff</text>
+    <text x="24" y="356" fill="#91A8B8" font-size="17">11.0 km · 1.25 h</text>
+    <rect x="24" y="364" width="600" height="18" rx="7" fill="#0A1725"/>
+    <rect x="24" y="364" width="528.0" height="18" rx="7" fill="#FF7A6B" opacity="0.92"/>
+    <text x="562.0" y="378" fill="#FF9A8A" font-size="19" font-weight="750">8.80</text>
+    <text x="24" y="412" fill="#F4FFFC" font-size="20" font-weight="700">Michigan Bluff → Foresthill</text>
+    <text x="24" y="432" fill="#91A8B8" font-size="17">9.5 km · 1.75 h</text>
+    <rect x="24" y="440" width="600" height="18" rx="7" fill="#0A1725"/>
+    <rect x="24" y="440" width="325.7" height="18" rx="7" fill="#F4B860"/>
+    <text x="359.7" y="454" fill="#F4FFFC" font-size="19" font-weight="750">5.43</text>
+    <text x="24" y="488" fill="#F4FFFC" font-size="20" font-weight="700">Foresthill → Drivers Flat</text>
+    <text x="24" y="508" fill="#91A8B8" font-size="17">28.1 km · 5.25 h</text>
+    <rect x="24" y="516" width="600" height="18" rx="7" fill="#0A1725"/>
+    <rect x="24" y="516" width="321.1" height="18" rx="7" fill="#8FD3FF"/>
+    <text x="355.1" y="530" fill="#F4FFFC" font-size="19" font-weight="750">5.35</text>
+    <text x="24" y="564" fill="#F4FFFC" font-size="20" font-weight="700">Drivers Flat → Mammoth Bar</text>
+    <text x="24" y="584" fill="#91A8B8" font-size="17">12.7 km · 2.50 h</text>
+    <rect x="24" y="592" width="600" height="18" rx="7" fill="#0A1725"/>
+    <rect x="24" y="592" width="304.8" height="18" rx="7" fill="#8FD3FF"/>
+    <text x="338.8" y="606" fill="#F4FFFC" font-size="19" font-weight="750">5.08</text>
+    <text x="24" y="640" fill="#F4FFFC" font-size="20" font-weight="700">Mammoth Bar → Finish</text>
+    <text x="24" y="660" fill="#91A8B8" font-size="17">12.4 km · 2.75 h</text>
+    <rect x="24" y="668" width="600" height="18" rx="7" fill="#0A1725"/>
+    <rect x="24" y="668" width="270.5" height="18" rx="7" fill="#5FD3C4"/>
+    <text x="304.5" y="682" fill="#F4FFFC" font-size="19" font-weight="750">4.51</text>
+
+    <rect x="24" y="690" width="672" height="76" rx="12" fill="#2A1720" stroke="#FF7A6B"/>
+    <text x="42" y="714" fill="#FF9A8A" font-size="18" font-weight="700">The 11.0 km / 1.25 h segment implies 8.80 km/h.</text>
+    <text x="42" y="736" fill="#F4FFFC" font-size="17">The page flags this as unlikely for a mid-pack runner;</text>
+    <text x="42" y="756" fill="#F4FFFC" font-size="17">treat both published times as administrative cut-offs.</text>
+  </g>
+  <text x="24" y="790" fill="#6E8494" font-size="16">Data: official 2026 Canyons 100K metric aid chart. Stations without a cut-off are omitted.</text>
+  <text x="24" y="812" fill="#6E8494" font-size="16">Arithmetic on published times only; not a 2027 plan.</text>
+</svg>

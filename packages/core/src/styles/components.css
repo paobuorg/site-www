@@ -1356,6 +1356,10 @@
   align-items: start;
 }
 
+.tool-layout > * {
+  min-width: 0;
+}
+
 .tool-card-panel {
   padding: 26px;
 }
@@ -1514,7 +1518,7 @@
 
 @media (max-width: 900px) {
   .tool-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .form-grid {

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1080" viewBox="0 0 480 1080" role="img" aria-labelledby="title desc">
+  <title id="title">OCC 2026: seven official timing points</title>
+  <desc id="desc">Seven equal-width cards in the order of the 2026 OCC timing table: Orsières at 0 km, Champex-Lac sortie at 7.3 km, Plan de l'Au at 12.2 km, Trient at 23.9 km, Col de Balme at 33.5 km, Argentière at 50.5 km and Chamonix at 61.4 km. Each card gives the cumulative distance, segment distance, elevation, stage gain and loss, and the printed cutoff. Five points have cutoffs; Champex-Lac and Orsières do not. The cards are not a map, distance-scaled profile or navigation aid.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="1080" fill="url(#bg)"/>
+  <circle cx="430" cy="58" r="120" fill="#F4B860" opacity="0.06"/>
+  <circle cx="40" cy="1020" r="110" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="38" fill="#F4B860" font-size="16" font-weight="700" letter-spacing="2">OCC / 2026</text>
+    <text x="14" y="84" fill="#F4FFFC" font-size="40" font-weight="750">7 timing points</text>
+    <text x="14" y="124" fill="#F4FFFC" font-size="27" font-weight="700">61.4 km · +3,342 / −3,222 m</text>
+    <text x="14" y="154" fill="#91A8B8" font-size="18">Official 2026 timing table · four waves 08:15–09:00</text>
+    <text x="14" y="182" fill="#FFB38A" font-size="16">Five cutoffs · Champex-Lac and Orsières have none</text>
+    <text x="14" y="208" fill="#6E8494" font-size="16">Equal-width cards · not a map, profile or navigation aid</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(14,238)">
+      <rect width="452" height="92" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="92" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="29" fill="#F4B860" font-size="20" font-weight="800">01</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">Orsières</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">0.0 km</text>
+      <text x="56" y="56" fill="#91A8B8" font-size="15">SEG Start · 915 m · Gain — / Loss —</text>
+      <text x="56" y="79" fill="#FFB38A" font-size="15">Cutoff no cutoff</text>
+      <text x="430" y="79" fill="#6E8494" font-size="13" text-anchor="end">four waves 08:15–09:00</text>
+    </g>
+    <g transform="translate(14,338)">
+      <rect width="452" height="92" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="92" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="20" font-weight="800">02</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">Champex-Lac sortie</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">7.3 km</text>
+      <text x="56" y="56" fill="#91A8B8" font-size="15">SEG +7.3 · 1,472 m · Gain +654 / Loss −98</text>
+      <text x="56" y="79" fill="#FFB38A" font-size="15">Cutoff no cutoff</text>
+      <text x="430" y="79" fill="#6E8494" font-size="13" text-anchor="end">first timing point</text>
+    </g>
+    <g transform="translate(14,438)">
+      <rect width="452" height="92" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="92" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="20" font-weight="800">03</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">Plan de l'Au</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">12.2 km</text>
+      <text x="56" y="56" fill="#91A8B8" font-size="15">SEG +4.9 · 1,341 m · Gain +72 / Loss −205</text>
+      <text x="56" y="79" fill="#FFB38A" font-size="15">Cutoff 11:30</text>
+      <text x="430" y="79" fill="#6E8494" font-size="13" text-anchor="end">cutoff before Slowest 11:41</text>
+    </g>
+    <g transform="translate(14,538)">
+      <rect width="452" height="92" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="92" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="20" font-weight="800">04</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">Trient</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">23.9 km</text>
+      <text x="56" y="56" fill="#91A8B8" font-size="15">SEG +11.7 · 1,303 m · Gain +805 / Loss −841</text>
+      <text x="56" y="79" fill="#FFB38A" font-size="15">Cutoff 14:30</text>
+      <text x="430" y="79" fill="#6E8494" font-size="13" text-anchor="end">Swiss side</text>
+    </g>
+    <g transform="translate(14,638)">
+      <rect width="452" height="92" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="92" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="20" font-weight="800">05</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">Col de Balme</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">33.5 km</text>
+      <text x="56" y="56" fill="#91A8B8" font-size="15">SEG +9.6 · 2,206 m · Gain +1,080 / Loss −177</text>
+      <text x="56" y="79" fill="#FFB38A" font-size="15">Cutoff 17:45</text>
+      <text x="430" y="79" fill="#6E8494" font-size="13" text-anchor="end">highest timed point</text>
+    </g>
+    <g transform="translate(14,738)">
+      <rect width="452" height="92" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="92" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="20" font-weight="800">06</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">Argentière</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">50.5 km</text>
+      <text x="56" y="56" fill="#91A8B8" font-size="15">SEG +17.0 · 1,255 m · Gain +544 / Loss −1,494</text>
+      <text x="56" y="79" fill="#FFB38A" font-size="15">Cutoff 21:15</text>
+      <text x="430" y="79" fill="#6E8494" font-size="13" text-anchor="end">longest segment</text>
+    </g>
+    <g transform="translate(14,838)">
+      <rect width="452" height="92" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="92" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="29" fill="#F4B860" font-size="20" font-weight="800">07</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">Chamonix</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">61.4 km</text>
+      <text x="56" y="56" fill="#91A8B8" font-size="15">SEG +10.8 · 1,035 m · Gain +187 / Loss −407</text>
+      <text x="56" y="79" fill="#FFB38A" font-size="15">Cutoff 23:30</text>
+      <text x="430" y="79" fill="#6E8494" font-size="13" text-anchor="end">finish</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="970" fill="#F4B860" font-size="16" font-weight="700">Steepest stage: Trient → Col de Balme</text>
+    <text x="14" y="992" fill="#91A8B8" font-size="14">9.6 km with +1,080 m, about 113 m per kilometre.</text>
+    <text x="14" y="1014" fill="#6E8494" font-size="13">Col de Balme is the highest timed point at 2,206 m; the course</text>
+    <text x="14" y="1032" fill="#6E8494" font-size="13">high point Tête de Balme at 2,321 m is not a timing point.</text>
+    <text x="14" y="1054" fill="#6E8494" font-size="13">Cutoffs are printed values, not extrapolated from Slowest.</text>
+    <text x="14" y="1074" fill="#6E8494" font-size="12">Editorial graphic. Not an official map or race-day image.</text>
+  </g>
+</svg>

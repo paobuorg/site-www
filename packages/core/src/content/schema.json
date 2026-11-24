@@ -447,7 +447,9 @@
         "raceType": {
           "enum": [
             "road-marathon",
-            "trail-ultra"
+            "road-ultra",
+            "trail-ultra",
+            "trail-mountain"
           ]
         },
         "countryCodes": {
@@ -513,6 +515,94 @@
           "type": "string",
           "minLength": 1
         },
+        "courseEdition": {
+          "type": "string",
+          "pattern": "^\\d{4}$"
+        },
+        "courseStatus": {
+          "enum": [
+            "current",
+            "latest-held",
+            "superseded",
+            "unsupported",
+            "unknown"
+          ]
+        },
+        "courseChanges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "edition": {
+                "type": "string",
+                "pattern": "^\\d{4}$"
+              },
+              "observedAt": {
+                "type": "string",
+                "format": "date"
+              },
+              "field": {
+                "type": "string",
+                "minLength": 1
+              },
+              "change": {
+                "enum": [
+                  "new-course",
+                  "edition-roll",
+                  "edition-lag",
+                  "page-offline",
+                  "distance-revised",
+                  "elevation-revised",
+                  "timing-revised",
+                  "route-refined"
+                ]
+              },
+              "from": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "to": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sourceRef": {
+                "type": "string",
+                "minLength": 1
+              },
+              "note": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "zh-CN": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "zh-CN",
+                  "en"
+                ]
+              }
+            },
+            "required": [
+              "edition",
+              "observedAt",
+              "field",
+              "change",
+              "sourceRef",
+              "note"
+            ]
+          }
+        },
         "direction": {
           "type": "string",
           "minLength": 1
@@ -574,6 +664,75 @@
             "string",
             "null"
           ]
+        },
+        "stages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "index": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "date": {
+                "type": "string",
+                "format": "date"
+              },
+              "distanceMeters": {
+                "type": "number",
+                "minimum": 0
+              },
+              "elevationGainMeters": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "startName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "finishName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "cutoffHours": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "exclusiveMinimum": 0
+              },
+              "cumulativeCutoffHours": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "exclusiveMinimum": 0
+              },
+              "selfSupported": {
+                "type": "boolean"
+              },
+              "isRestDay": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "index",
+              "date",
+              "distanceMeters",
+              "elevationGainMeters",
+              "startName",
+              "finishName",
+              "cutoffHours",
+              "cumulativeCutoffHours",
+              "selfSupported",
+              "isRestDay"
+            ]
+          }
         }
       },
       "required": [
@@ -867,6 +1026,40 @@
             "bodyRead",
             "checkedAt"
           ]
+        },
+        "claimVerification": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "index": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "status": {
+                "enum": [
+                  "supported",
+                  "partial",
+                  "unsupported",
+                  "unknown"
+                ]
+              },
+              "checkedAt": {
+                "type": "string",
+                "format": "date"
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "index",
+              "status",
+              "checkedAt"
+            ]
+          }
         }
       },
       "required": [

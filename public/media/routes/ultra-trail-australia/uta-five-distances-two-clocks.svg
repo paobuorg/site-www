@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="960" viewBox="0 0 480 960" role="img" aria-labelledby="title desc">
+  <title id="title">UTA100 2027: five official distance readings and two wave clocks</title>
+  <desc id="desc">Five bars use a 100 to 102 km scale, not a zero baseline: the 2027 race card at 101 km, the time chart at 101.3 km, the embedded page track at 101.395 km, the GPX internal cumulative at 101.106 km, and this page's planar measurement of the same GPX at 100.108 km. Deviations from 101.000 km are 0 m, +300 m, +395 m, +106 m and -892 m. Below, two clocks run from the 05:00 first wave and the 08:30 last wave to a 12:30 Sunday finish: 31 hours 30 minutes and 28 hours. The official final limit is 28 hours after the last starter, so the first wave gets more than 28 hours. Bars are schematic and not a race plan or elevation profile.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="960" fill="url(#bg)"/>
+  <circle cx="430" cy="58" r="120" fill="#F4B860" opacity="0.06"/>
+  <circle cx="40" cy="900" r="110" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="38" fill="#F4B860" font-size="16" font-weight="700" letter-spacing="2">UTA100 / 2027 DISTANCE &amp; TIME</text>
+    <text x="14" y="84" fill="#F4FFFC" font-size="40" font-weight="750">Five distances</text>
+    <text x="14" y="124" fill="#F4FFFC" font-size="26" font-weight="750">101 / 101.3 / 101.395</text>
+    <text x="14" y="152" fill="#F4FFFC" font-size="26" font-weight="750">101.106 / 100.108 km</text>
+    <text x="14" y="178" fill="#91A8B8" font-size="17">All official or file-derived · none averaged</text>
+    <text x="14" y="202" fill="#FFB38A" font-size="14">Scale starts at 100 km, not zero: read deltas, not bar length alone</text>
+    <text x="14" y="224" fill="#6E8494" font-size="13">Bars schematic · not a map, profile or race plan</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(14,254)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="15" font-weight="700">2027 race card</text>
+      <text x="440" y="0" fill="#F4FFFC" font-size="18" font-weight="750" text-anchor="end">101 km</text>
+      <rect x="0" y="12" width="440" height="16" rx="8" fill="#13263A"/>
+      <rect x="0" y="12" width="220.0" height="16" rx="8" fill="#F4B860"/>
+      <text x="0" y="48" fill="#91A8B8" font-size="12">Δ vs 101.000 km: 0 m</text>
+      <text x="440" y="48" fill="#6E8494" font-size="12" text-anchor="end">official promotional figure</text>
+    </g>
+    <g transform="translate(14,336)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="15" font-weight="700">Time chart cumulative</text>
+      <text x="440" y="0" fill="#F4FFFC" font-size="18" font-weight="750" text-anchor="end">101.3 km</text>
+      <rect x="0" y="12" width="440" height="16" rx="8" fill="#13263A"/>
+      <rect x="0" y="12" width="286.0" height="16" rx="8" fill="#5FD3C4"/>
+      <text x="0" y="48" fill="#91A8B8" font-size="12">Δ vs 101.000 km: +300 m</text>
+      <text x="440" y="48" fill="#6E8494" font-size="12" text-anchor="end">point-by-point chart total</text>
+    </g>
+    <g transform="translate(14,418)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="15" font-weight="700">Embedded page track</text>
+      <text x="440" y="0" fill="#F4FFFC" font-size="18" font-weight="750" text-anchor="end">101.395 km</text>
+      <rect x="0" y="12" width="440" height="16" rx="8" fill="#13263A"/>
+      <rect x="0" y="12" width="306.9" height="16" rx="8" fill="#8FD3FF"/>
+      <text x="0" y="48" fill="#91A8B8" font-size="12">Δ vs 101.000 km: +395 m</text>
+      <text x="440" y="48" fill="#6E8494" font-size="12" text-anchor="end">map component reading</text>
+    </g>
+    <g transform="translate(14,500)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="15" font-weight="700">GPX internal cumulative</text>
+      <text x="440" y="0" fill="#F4FFFC" font-size="18" font-weight="750" text-anchor="end">101.106 km</text>
+      <rect x="0" y="12" width="440" height="16" rx="8" fill="#13263A"/>
+      <rect x="0" y="12" width="243.3" height="16" rx="8" fill="#FF8A5B"/>
+      <text x="0" y="48" fill="#91A8B8" font-size="12">Δ vs 101.000 km: +106 m</text>
+      <text x="440" y="48" fill="#6E8494" font-size="12" text-anchor="end">sum carried by the file</text>
+    </g>
+    <g transform="translate(14,582)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="15" font-weight="700">This page, planar measure</text>
+      <text x="440" y="0" fill="#F4FFFC" font-size="18" font-weight="750" text-anchor="end">100.108 km</text>
+      <rect x="0" y="12" width="440" height="16" rx="8" fill="#13263A"/>
+      <rect x="0" y="12" width="23.8" height="16" rx="8" fill="#C7A6FF"/>
+      <text x="0" y="48" fill="#91A8B8" font-size="12">Δ vs 101.000 km: −892 m</text>
+      <text x="440" y="48" fill="#6E8494" font-size="12" text-anchor="end">same GPX, flat distance</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="672" fill="#F4B860" font-size="16" font-weight="700">Two clocks, one finish estimate</text>
+    <g transform="translate(14,700)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="16" font-weight="700">First wave 05:00 → 12:30 Sunday</text>
+      <text x="440" y="0" fill="#F4B860" font-size="20" font-weight="750" text-anchor="end">31 h 30 min</text>
+      <rect x="0" y="12" width="440" height="16" rx="8" fill="#13263A"/>
+      <rect x="0" y="12" width="440" height="16" rx="8" fill="#F4B860"/>
+      <text x="0" y="48" fill="#91A8B8" font-size="12">More than the official 28 h, because the clock runs from the last starter.</text>
+    </g>
+    <g transform="translate(14,778)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="16" font-weight="700">Last wave 08:30 → 12:30 Sunday</text>
+      <text x="440" y="0" fill="#5FD3C4" font-size="20" font-weight="750" text-anchor="end">28 h 00 min</text>
+      <rect x="0" y="12" width="440" height="16" rx="8" fill="#13263A"/>
+      <rect x="0" y="12" width="391.1" height="16" rx="8" fill="#5FD3C4"/>
+      <text x="0" y="48" fill="#91A8B8" font-size="12">Official final limit: 28 h after the last starter crosses the mat.</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="884" fill="#6E8494" font-size="12">28 h is the official limit for the last starter, not every starter.</text>
+    <text x="14" y="906" fill="#6E8494" font-size="12">The GPX is linked only; no hosting, drawing or redistribution.</text>
+    <text x="14" y="936" fill="#6E8494" font-size="11">Editorial graphic. Not an official map or race-day image.</text>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 interface GlobeRoute {
   id: string;
-  kind: 'road-marathon' | 'trail-ultra';
+  kind: 'road-marathon' | 'road-ultra' | 'trail-ultra' | 'trail-mountain';
   title: string;
   place: string;
   url: string;
@@ -145,7 +145,7 @@ function routePoint(Cesium: CesiumModule, route: GlobeRoute, selected = false): 
     position: Cesium.Cartesian3.fromDegrees(route.longitude, route.latitude),
     point: {
       pixelSize: selected ? 14 : 11,
-      color: Cesium.Color.fromCssColorString(route.kind === 'trail-ultra' ? '#FFD65A' : '#2E70F6'),
+      color: Cesium.Color.fromCssColorString(route.kind === 'road-marathon' || route.kind === 'road-ultra' ? '#2E70F6' : '#FFD65A'),
       outlineColor: Cesium.Color.fromCssColorString(selected ? '#ffffff' : 'rgba(255,255,255,0.45)'),
       outlineWidth: selected ? 3 : 1.5,
       disableDepthTestDistance: 0,
@@ -424,7 +424,14 @@ export async function initRouteGlobe(): Promise<void> {
     const viewer = createViewer(Cesium, container, true);
     const route: GlobeRoute = {
       id: 'route-anchor',
-      kind: container.dataset.kind === 'trail-ultra' ? 'trail-ultra' : 'road-marathon',
+      kind:
+        container.dataset.kind === 'trail-ultra'
+          ? 'trail-ultra'
+          : container.dataset.kind === 'trail-mountain'
+            ? 'trail-mountain'
+            : container.dataset.kind === 'road-ultra'
+              ? 'road-ultra'
+              : 'road-marathon',
       title,
       place: '',
       url: '',

@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1188" viewBox="0 0 360 1188" role="img" aria-label="GPT100 Miler 2026 thirteen numbered points with cumulative distance, official cut-off time, crew, drop bag and sleep access">
+<rect width="360" height="1188" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">GPT100 Miler 2026 · 13 个编号点</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">163.0 km · 11 个中途补给站 + 终点 · 官方逐站关门</text>
+<text x="20" y="64" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">Crew / 存包 / 小睡 均按官方补给站页；不明则留空，不推断。</text>
+<line x1="20" y1="78" x2="340" y2="78" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="27" cy="138" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="27" y="141" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#ffffff">起</text>
+<rect x="43" y="112" width="297" height="68" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="55" y="126" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Mt Zero Picnic Area</text>
+<text x="328" y="126" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#345f46">0.0 km</text>
+<text x="55" y="141" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-06 08:00</text>
+<rect x="55" y="150" width="42" height="13" rx="6.5" fill="#ffffff" stroke="#e5e2da" stroke-width="0.8"/>
+<text x="76" y="159.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#9a9a93">Crew —</text>
+<rect x="101" y="150" width="42" height="13" rx="6.5" fill="#ffffff" stroke="#e5e2da" stroke-width="0.8"/>
+<text x="122" y="159.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#9a9a93">存包 —</text>
+<rect x="147" y="150" width="42" height="13" rx="6.5" fill="#ffffff" stroke="#e5e2da" stroke-width="0.8"/>
+<text x="168" y="159.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#9a9a93">小睡 —</text>
+<line x1="27" y1="168" x2="27" y2="214" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="214" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="217" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">1</text>
+<rect x="43" y="188" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="202" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">GAR Trailhead</text>
+<text x="328" y="202" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">15.5 km</text>
+<text x="55" y="217" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-06 12:00</text>
+<rect x="55" y="226" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="235.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="226" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="122" y="235.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">存包 ✕</text>
+<rect x="147" y="226" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="168" y="235.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">小睡 ✕</text>
+<line x1="27" y1="244" x2="27" y2="290" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="290" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="293" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#a33f31">2</text>
+<rect x="43" y="264" width="297" height="68" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="278" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Mt Difficult Rd</text>
+<text x="328" y="278" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">35.5 km</text>
+<text x="55" y="293" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-06 17:00</text>
+<rect x="55" y="302" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="76" y="311.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">Crew ✕</text>
+<rect x="101" y="302" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="122" y="311.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">存包 ✕</text>
+<rect x="147" y="302" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="168" y="311.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">小睡 ✕</text>
+<line x1="27" y1="320" x2="27" y2="366" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="366" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="369" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">3</text>
+<rect x="43" y="340" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="354" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Halls Gap</text>
+<text x="328" y="354" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">49.5 km</text>
+<text x="55" y="369" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-06 20:00</text>
+<rect x="55" y="378" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="387.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="378" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="122" y="387.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">存包 ✓</text>
+<rect x="147" y="378" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="168" y="387.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">小睡 ✕</text>
+<line x1="27" y1="396" x2="27" y2="442" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="442" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="445" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">4</text>
+<rect x="43" y="416" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="430" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Rosea Carpark</text>
+<text x="328" y="430" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">59.5 km</text>
+<text x="55" y="445" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-06 23:00</text>
+<rect x="55" y="454" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="463.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="454" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="122" y="463.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">存包 ✕</text>
+<rect x="147" y="454" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="168" y="463.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">小睡 ✕</text>
+<line x1="27" y1="472" x2="27" y2="518" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="518" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="521" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">5</text>
+<rect x="43" y="492" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="506" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Borough Huts Camp</text>
+<text x="328" y="506" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">72.0 km</text>
+<text x="55" y="521" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-07 02:15</text>
+<rect x="55" y="530" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="539.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="530" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="122" y="539.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">存包 ✕</text>
+<rect x="147" y="530" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="168" y="539.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">小睡 ✓</text>
+<line x1="27" y1="548" x2="27" y2="594" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="594" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="597" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">6</text>
+<rect x="43" y="568" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="582" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Mt William Carpark</text>
+<text x="328" y="582" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">86.6 km</text>
+<text x="55" y="597" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-07 08:15</text>
+<rect x="55" y="606" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="615.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="606" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="122" y="615.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">存包 ✓</text>
+<rect x="147" y="606" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="168" y="615.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">小睡 ✓</text>
+<line x1="27" y1="624" x2="27" y2="670" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="670" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="673" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">7</text>
+<rect x="43" y="644" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="658" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Jimmy Creek Camp</text>
+<text x="328" y="658" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">106.7 km</text>
+<text x="55" y="673" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-07 14:30</text>
+<rect x="55" y="682" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="691.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="682" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="122" y="691.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">存包 ✓</text>
+<rect x="147" y="682" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="168" y="691.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">小睡 ✓</text>
+<line x1="27" y1="700" x2="27" y2="746" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="746" r="7" fill="#fcfbf7" stroke="#9a6b27" stroke-width="1.6"/>
+<text x="27" y="749" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#9a6b27">8</text>
+<rect x="43" y="720" width="297" height="68" rx="7" fill="#fcf6e9" stroke="#e7d2ae" stroke-width="1"/>
+<text x="55" y="734" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Yarram Gap Rd</text>
+<text x="328" y="734" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#8a5a16">118.5 km</text>
+<text x="55" y="749" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-07 18:30</text>
+<text x="328" y="749" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.8" font-weight="600" fill="#8a5a16">2026 应急站</text>
+<rect x="55" y="758" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="76" y="767.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">Crew ✕</text>
+<rect x="101" y="758" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="122" y="767.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">存包 ✕</text>
+<rect x="147" y="758" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="168" y="767.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">小睡 ✕</text>
+<line x1="27" y1="776" x2="27" y2="822" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="822" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="825" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">9</text>
+<rect x="43" y="796" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="810" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Griffin Fireline</text>
+<text x="328" y="810" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">130.7 km</text>
+<text x="55" y="825" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-07 22:15</text>
+<rect x="55" y="834" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="843.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="834" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="122" y="843.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">存包 ✓</text>
+<rect x="147" y="834" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="168" y="843.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">小睡 ✓</text>
+<line x1="27" y1="852" x2="27" y2="898" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="898" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="901" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">10</text>
+<rect x="43" y="872" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="886" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Cassidys Gap</text>
+<text x="328" y="886" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">142.0 km</text>
+<text x="55" y="901" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-08 02:00</text>
+<rect x="55" y="910" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="919.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="910" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="122" y="919.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">存包 ✕</text>
+<rect x="147" y="910" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="168" y="919.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">小睡 ✓</text>
+<line x1="27" y1="928" x2="27" y2="974" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="974" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="977" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#7d8a90">11</text>
+<rect x="43" y="948" width="297" height="68" rx="7" fill="#f8f9f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="962" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Bainggug Carpark</text>
+<text x="328" y="962" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#4f5a52">152.8 km</text>
+<text x="55" y="977" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-08 06:30</text>
+<rect x="55" y="986" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="995.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="986" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="122" y="995.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">存包 ✕</text>
+<rect x="147" y="986" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="168" y="995.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">小睡 ✕</text>
+<line x1="27" y1="1004" x2="27" y2="1050" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="1050" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="27" y="1053" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.8" font-weight="700" fill="#ffffff">终</text>
+<rect x="43" y="1024" width="297" height="68" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="55" y="1038" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="700" fill="#1f2a24">Dunkeld</text>
+<text x="328" y="1038" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#345f46">163.0 km</text>
+<text x="55" y="1053" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">关门 11-08 10:00</text>
+<rect x="55" y="1062" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="76" y="1071.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">Crew ✓</text>
+<rect x="101" y="1062" width="42" height="13" rx="6.5" fill="#edf5ef" stroke="#9fb9a7" stroke-width="0.8"/>
+<text x="122" y="1071.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#345f46">存包 ✓</text>
+<rect x="147" y="1062" width="42" height="13" rx="6.5" fill="#f5f5f4" stroke="#d7d9d6" stroke-width="0.8"/>
+<text x="168" y="1071.4" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#8a9189">小睡 ✕</text>
+<line x1="20" y1="1120" x2="340" y2="1120" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="1138" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#4f5a52">累计里程与段长按官方表；0.3 km 的表内出入见正文，不在本图修正。</text>
+<text x="20" y="1154" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.3" fill="#5d675f">#8 在 2026 改为应急站，补给减少、仍不允许 crew。</text>
+<text x="20" y="1170" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#8a9189">顺序示意，横向位置与长度不成比例；不是官方地图、轨迹或海拔剖面。</text>
+</svg>

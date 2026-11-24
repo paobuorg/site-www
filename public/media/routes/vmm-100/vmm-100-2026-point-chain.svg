@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1840" viewBox="0 0 360 1840" role="img" aria-label="VMM 100km 2026 eighteen points with official distance, cut-off times and the CP Topas 28.6 versus 25.9 kilometre conflict">
+<rect width="360" height="1840" fill="#fcfbf7"/>
+<text x="20" y="28" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="13.2" font-weight="700" fill="#1f2a24">VMM 100KM 2026 · 18 points</text>
+<text x="20" y="46" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">101 km · +5,500 m · 05:00 start · 28 h limit · seven cut-offs</text>
+<text x="20" y="61" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.8" fill="#5d675f">CP = checkpoint 检查站 · WS = water station 水站 · orange = cut-off 关门</text>
+<text x="20" y="74" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#5d675f">Point order and km from the official 2026 map and profile; no GPX obtained</text>
+<line x1="20" y1="84" x2="340" y2="84" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="140" r="7" fill="#2f6b57" stroke="#2f6b57" stroke-width="1.6"/><text x="24" y="143" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">起</text>
+<rect x="40" y="100" width="300" height="80" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="52" y="119" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">START Sapa Square</text>
+<text x="328" y="119" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#2f6b57">0 km</text>
+<text x="52" y="137" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">Start 起点 · Sapa town centre</text>
+<text x="52" y="153" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#2f6b57">05:00 start · official 2026 profile</text>
+<line x1="24" y1="147" x2="24" y2="219" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="234" r="7" fill="#5d7479" stroke="#5d7479" stroke-width="1.6"/><text x="24" y="237" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">M2</text>
+<rect x="40" y="194" width="300" height="80" rx="7" fill="#f8fafa" stroke="#d8e0e1" stroke-width="1"/>
+<text x="52" y="213" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP M2 Háng Đá</text>
+<text x="328" y="213" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#4f5f63">6.7 km</text>
+<text x="52" y="231" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP 检查站 · Aid 补给</text>
+<text x="52" y="247" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#4f5f63">No cut-off 未设</text>
+<line x1="24" y1="241" x2="24" y2="313" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="328" r="7" fill="#5d7479" stroke="#5d7479" stroke-width="1.6"/><text x="24" y="331" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">M3</text>
+<rect x="40" y="288" width="300" height="80" rx="7" fill="#f8fafa" stroke="#d8e0e1" stroke-width="1"/>
+<text x="52" y="307" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP M3 Hà Sử Pán</text>
+<text x="328" y="307" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#4f5f63">12.7 km</text>
+<text x="52" y="325" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP · profile only 仅剖面</text>
+<text x="52" y="341" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#4f5f63">No cut-off 未设</text>
+<line x1="24" y1="335" x2="24" y2="407" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="422" r="7" fill="#416f8e" stroke="#416f8e" stroke-width="1.6"/><text x="24" y="425" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">W1</text>
+<rect x="40" y="382" width="300" height="80" rx="7" fill="#f3f7fb" stroke="#c6d6e4" stroke-width="1"/>
+<text x="52" y="401" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">WS Lếch Mông</text>
+<text x="328" y="401" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#355d77">17.7 km</text>
+<text x="52" y="419" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">WS 水站 · profile only 仅剖面</text>
+<text x="52" y="435" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#355d77">No cut-off 未设</text>
+<line x1="24" y1="429" x2="24" y2="501" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="516" r="7" fill="#5d7479" stroke="#5d7479" stroke-width="1.6"/><text x="24" y="519" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">M4</text>
+<rect x="40" y="476" width="300" height="80" rx="7" fill="#f8fafa" stroke="#d8e0e1" stroke-width="1"/>
+<text x="52" y="495" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP M4 Bản Mới</text>
+<text x="328" y="495" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#4f5f63">23.1 km</text>
+<text x="52" y="513" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP · Red Dao valley 红瑶谷</text>
+<text x="52" y="529" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#4f5f63">No cut-off 未设</text>
+<line x1="24" y1="523" x2="24" y2="595" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="610" r="7" fill="#a85c3a" stroke="#a85c3a" stroke-width="1.6"/><text x="24" y="613" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">T</text>
+<rect x="40" y="570" width="300" height="80" rx="7" fill="#fbf3ee" stroke="#e2c5b8" stroke-width="1"/>
+<text x="52" y="589" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP Topas Ecolodge</text>
+<text x="328" y="589" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#8c4227">28.6 / 25.9 km</text>
+<text x="52" y="607" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">Map 28.6 · Profile 25.9 · 2.7 km conflict</text>
+<text x="52" y="623" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#8c4227">Cut-off 12:00 · 7 h · both values kept</text>
+<line x1="24" y1="617" x2="24" y2="689" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="704" r="7" fill="#416f8e" stroke="#416f8e" stroke-width="1.6"/><text x="24" y="707" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">W2</text>
+<rect x="40" y="664" width="300" height="80" rx="7" fill="#f3f7fb" stroke="#c6d6e4" stroke-width="1"/>
+<text x="52" y="683" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">WS Suối Văn Đến</text>
+<text x="328" y="683" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#355d77">31.0 km</text>
+<text x="52" y="701" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">WS 水站 · river valley</text>
+<text x="52" y="717" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#355d77">No cut-off 未设</text>
+<line x1="24" y1="711" x2="24" y2="783" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="798" r="7" fill="#5d7479" stroke="#5d7479" stroke-width="1.6"/><text x="24" y="801" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">1</text>
+<rect x="40" y="758" width="300" height="80" rx="7" fill="#f8fafa" stroke="#d8e0e1" stroke-width="1"/>
+<text x="52" y="777" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP1 Cầu Lao Chải</text>
+<text x="328" y="777" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#4f5f63">40.2 km</text>
+<text x="52" y="795" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP 检查站 · Aid 补给</text>
+<text x="52" y="811" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#4f5f63">No cut-off 未设 · supporter point</text>
+<line x1="24" y1="805" x2="24" y2="877" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="892" r="7" fill="#416f8e" stroke="#416f8e" stroke-width="1.6"/><text x="24" y="895" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">W3</text>
+<rect x="40" y="852" width="300" height="80" rx="7" fill="#f3f7fb" stroke="#c6d6e4" stroke-width="1"/>
+<text x="52" y="871" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">WS Y Linh Hồ</text>
+<text x="328" y="871" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#355d77">48.8 / 48.4 km</text>
+<text x="52" y="889" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">WS 水站 · map 48.8 · profile 48.4</text>
+<text x="52" y="905" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#355d77">No cut-off 未设</text>
+<line x1="24" y1="899" x2="24" y2="971" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="986" r="7" fill="#5d7479" stroke="#5d7479" stroke-width="1.6"/><text x="24" y="989" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">2</text>
+<rect x="40" y="946" width="300" height="80" rx="7" fill="#f8fafa" stroke="#d8e0e1" stroke-width="1"/>
+<text x="52" y="965" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP2 Cát Cát</text>
+<text x="328" y="965" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#4f5f63">52.7 km</text>
+<text x="52" y="983" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP 检查站 · drop bag 存包</text>
+<text x="52" y="999" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#4f5f63">No cut-off 未设 · supporter point</text>
+<line x1="24" y1="993" x2="24" y2="1065" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="1080" r="7" fill="#a85c3a" stroke="#a85c3a" stroke-width="1.6"/><text x="24" y="1083" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">3</text>
+<rect x="40" y="1040" width="300" height="80" rx="7" fill="#fbf3ee" stroke="#e2c5b8" stroke-width="1"/>
+<text x="52" y="1059" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP3 Ô Quy Hồ</text>
+<text x="328" y="1059" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#8c4227">60.9 km</text>
+<text x="52" y="1077" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP 检查站 · Cow Mountain after this</text>
+<text x="52" y="1093" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#8c4227">Cut-off 21:00 · 16 h · no supporter</text>
+<line x1="24" y1="1087" x2="24" y2="1159" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="1174" r="7" fill="#a85c3a" stroke="#a85c3a" stroke-width="1.6"/><text x="24" y="1177" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">4</text>
+<rect x="40" y="1134" width="300" height="80" rx="7" fill="#fbf3ee" stroke="#e2c5b8" stroke-width="1"/>
+<text x="52" y="1153" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP4 Tả Phìn</text>
+<text x="328" y="1153" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#8c4227">70.3 km</text>
+<text x="52" y="1171" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP 检查站 · drop bag 存包</text>
+<text x="52" y="1187" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#8c4227">Cut-off 00:00 Sun · 19 h</text>
+<line x1="24" y1="1181" x2="24" y2="1253" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="1268" r="7" fill="#a85c3a" stroke="#a85c3a" stroke-width="1.6"/><text x="24" y="1271" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">5</text>
+<rect x="40" y="1228" width="300" height="80" rx="7" fill="#fbf3ee" stroke="#e2c5b8" stroke-width="1"/>
+<text x="52" y="1247" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP5 Cầu 31</text>
+<text x="328" y="1247" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#8c4227">78.1 km</text>
+<text x="52" y="1265" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP 检查站 · 31 Bridge</text>
+<text x="52" y="1281" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#8c4227">Cut-off 02:00 · 21 h</text>
+<line x1="24" y1="1275" x2="24" y2="1347" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="1362" r="7" fill="#416f8e" stroke="#416f8e" stroke-width="1.6"/><text x="24" y="1365" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">W4</text>
+<rect x="40" y="1322" width="300" height="80" rx="7" fill="#f3f7fb" stroke="#c6d6e4" stroke-width="1"/>
+<text x="52" y="1341" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">WS Sáu Chua</text>
+<text x="328" y="1341" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#355d77">82.9 km</text>
+<text x="52" y="1359" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">WS 水站 · steep trail after</text>
+<text x="52" y="1375" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#355d77">No cut-off 未设</text>
+<line x1="24" y1="1369" x2="24" y2="1441" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="1456" r="7" fill="#a85c3a" stroke="#a85c3a" stroke-width="1.6"/><text x="24" y="1459" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">6</text>
+<rect x="40" y="1416" width="300" height="80" rx="7" fill="#fbf3ee" stroke="#e2c5b8" stroke-width="1"/>
+<text x="52" y="1435" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP6 Hầu Chu Ngài</text>
+<text x="328" y="1435" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#8c4227">87.4 km</text>
+<text x="52" y="1453" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP 检查站 · supporter point</text>
+<text x="52" y="1469" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#8c4227">Cut-off 05:00 · 24 h</text>
+<line x1="24" y1="1463" x2="24" y2="1535" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="1550" r="7" fill="#a85c3a" stroke="#a85c3a" stroke-width="1.6"/><text x="24" y="1553" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">7</text>
+<rect x="40" y="1510" width="300" height="80" rx="7" fill="#fbf3ee" stroke="#e2c5b8" stroke-width="1"/>
+<text x="52" y="1529" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">CP7 Sử Pán</text>
+<text x="328" y="1529" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#8c4227">93.1 km</text>
+<text x="52" y="1547" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">CP 检查站 · no supporter</text>
+<text x="52" y="1563" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#8c4227">Cut-off 06:30 · 25.5 h</text>
+<line x1="24" y1="1557" x2="24" y2="1629" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="1644" r="7" fill="#416f8e" stroke="#416f8e" stroke-width="1.6"/><text x="24" y="1647" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">W5</text>
+<rect x="40" y="1604" width="300" height="80" rx="7" fill="#f3f7fb" stroke="#c6d6e4" stroke-width="1"/>
+<text x="52" y="1623" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">WS Lếch Mỏng</text>
+<text x="328" y="1623" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#355d77">95.7 km</text>
+<text x="52" y="1641" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">WS 水站 · before second Silverstone</text>
+<text x="52" y="1657" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#355d77">No cut-off 未设</text>
+<line x1="24" y1="1651" x2="24" y2="1723" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="24" cy="1738" r="7" fill="#2f6b57" stroke="#2f6b57" stroke-width="1.6"/><text x="24" y="1741" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="6.5" font-weight="700" fill="#ffffff">终</text>
+<rect x="40" y="1698" width="300" height="80" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="52" y="1717" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#1f2a24">FINISH Topas Ecolodge</text>
+<text x="328" y="1717" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.0" font-weight="700" fill="#2f6b57">101 km</text>
+<text x="52" y="1735" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#5d675f">Finish 终点 · bus back to Sapa</text>
+<text x="52" y="1751" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.9" fill="#2f6b57">Cut-off 09:00 · 28 h total</text>
+<text x="20" y="1798" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.0" fill="#7b857e">CP M3 and WS Lếch Mông are profile-only; the map's 89.7 km WS is not merged into this chain.</text>
+<text x="20" y="1810" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#7b857e">Edited structure from official 2026 graphics. 按官方 2026 图整理的结构图。</text>
+<text x="20" y="1822" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#7b857e">Not a map, not to scale, not for navigation. 非地图、非比例、不可导航。</text>
+</svg>

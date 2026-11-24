@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="890" viewBox="0 0 720 890" role="img" aria-labelledby="title desc">
+  <title id="title">CCC 2026: elevation at the ten official timing points</title>
+  <desc id="desc">Profile of the ten official 2026 CCC timing points: Courmayeur 1,221 m, Refuge Bertone 1,982 m, Arnouvaz 1,777 m, La Fouly 1,604 m, Champex-Lac 1,472 m, Plan de l'Au 1,340 m, Martigny 507 m, Trient 1,304 m, Vallorcine 1,260 m and Chamonix 1,035 m. The highest timing point is Refuge Bertone at 1,982 m and the lowest is Martigny at 507 m. Grand Col Ferret, about 2,500 m, lies between Arnouvaz and La Fouly but is not a timing point, so it is not on the line. The line connects only timing points and is not a full GPX profile or a navigable track.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="890" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="228" x2="0" y2="714" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5FD3C4" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#5FD3C4" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="890" fill="url(#bg)"/>
+  <circle cx="660" cy="64" r="150" fill="#5FD3C4" opacity="0.07"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="24" y="46" fill="#5FD3C4" font-size="19" font-weight="700" letter-spacing="3">CCC 2026 / ELEVATION</text>
+    <text x="24" y="94" fill="#F4FFFC" font-size="47" font-weight="750">107.8 km</text>
+    <text x="24" y="140" fill="#F4FFFC" font-size="32" font-weight="750">10 points, 507–1,982 m</text>
+    <text x="24" y="174" fill="#91A8B8" font-size="21">Official altitudes · timing points only</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <line x1="86.0" y1="228" x2="86.0" y2="714" stroke="#1E3547" stroke-width="1"/>
+    <text x="86.0" y="744" fill="#6E8494" font-size="19" text-anchor="middle">0 km</text>
+    <line x1="196.9" y1="228" x2="196.9" y2="714" stroke="#1E3547" stroke-width="1"/>
+    <text x="196.9" y="744" fill="#6E8494" font-size="19" text-anchor="middle">20 km</text>
+    <line x1="307.9" y1="228" x2="307.9" y2="714" stroke="#1E3547" stroke-width="1"/>
+    <text x="307.9" y="744" fill="#6E8494" font-size="19" text-anchor="middle">40 km</text>
+    <line x1="418.8" y1="228" x2="418.8" y2="714" stroke="#1E3547" stroke-width="1"/>
+    <text x="418.8" y="744" fill="#6E8494" font-size="19" text-anchor="middle">60 km</text>
+    <line x1="529.8" y1="228" x2="529.8" y2="714" stroke="#1E3547" stroke-width="1"/>
+    <text x="529.8" y="744" fill="#6E8494" font-size="19" text-anchor="middle">80 km</text>
+    <line x1="640.7" y1="228" x2="640.7" y2="714" stroke="#1E3547" stroke-width="1"/>
+    <text x="640.7" y="744" fill="#6E8494" font-size="19" text-anchor="middle">100 km</text>
+    <line x1="86" y1="692.1" x2="684" y2="692.1" stroke="#1E3547" stroke-width="1"/>
+    <text x="74" y="698.1" fill="#6E8494" font-size="19" text-anchor="end">500 m</text>
+    <line x1="86" y1="582.6" x2="684" y2="582.6" stroke="#1E3547" stroke-width="1"/>
+    <text x="74" y="588.6" fill="#6E8494" font-size="19" text-anchor="end">1,000 m</text>
+    <line x1="86" y1="473.2" x2="684" y2="473.2" stroke="#1E3547" stroke-width="1"/>
+    <text x="74" y="479.2" fill="#6E8494" font-size="19" text-anchor="end">1,500 m</text>
+    <line x1="86" y1="363.7" x2="684" y2="363.7" stroke="#1E3547" stroke-width="1"/>
+    <text x="74" y="369.7" fill="#6E8494" font-size="19" text-anchor="end">2,000 m</text>
+    <line x1="86" y1="254.3" x2="684" y2="254.3" stroke="#1E3547" stroke-width="1"/>
+    <text x="74" y="260.3" fill="#6E8494" font-size="19" text-anchor="end">2,500 m</text>
+    <line x1="231.9" y1="254.3" x2="311.8" y2="254.3" stroke="#F4B860" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <text x="239.9" y="242.3" fill="#F4B860" font-size="18">Grand Col Ferret area ~2,500 m · no timing point</text>
+    <polygon points="86,714 86.0,534.3 161.4,367.7 231.9,412.5 311.8,450.4 386.7,479.3 413.8,508.2 469.9,690.6 524.8,516.1 585.8,525.7 684.0,575.0 684,714" fill="url(#area)"/>
+    <polyline points="86.0,534.3 161.4,367.7 231.9,412.5 311.8,450.4 386.7,479.3 413.8,508.2 469.9,690.6 524.8,516.1 585.8,525.7 684.0,575.0" fill="none" stroke="#5FD3C4" stroke-width="3.5" stroke-linejoin="round"/>
+    <circle cx="86.0" cy="534.3" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="161.4" cy="367.7" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="231.9" cy="412.5" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="311.8" cy="450.4" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="386.7" cy="479.3" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="413.8" cy="508.2" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="469.9" cy="690.6" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="524.8" cy="516.1" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="585.8" cy="525.7" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <circle cx="684.0" cy="575.0" r="5" fill="#F4FFFC" stroke="#0D1926" stroke-width="1.5"/>
+    <text x="100.0" y="569.3" fill="#F4FFFC" font-size="20" font-weight="600" text-anchor="start">Courmayeur 1,221</text>
+    <text x="169.4" y="349.7" fill="#F4FFFC" font-size="20" font-weight="600" text-anchor="start">Refuge Bertone 1,982</text>
+    <text x="311.8" y="430.4" fill="#F4FFFC" font-size="20" font-weight="600" text-anchor="middle">La Fouly 1,604</text>
+    <text x="386.7" y="513.3" fill="#F4FFFC" font-size="20" font-weight="600" text-anchor="middle">Champex-Lac 1,472</text>
+    <text x="479.9" y="672.6" fill="#F4FFFC" font-size="20" font-weight="600" text-anchor="start">Martigny 507</text>
+    <text x="524.8" y="496.1" fill="#F4FFFC" font-size="20" font-weight="600" text-anchor="middle">Trient 1,304</text>
+    <text x="585.8" y="559.7" fill="#F4FFFC" font-size="20" font-weight="600" text-anchor="middle">Vallorcine 1,260</text>
+    <text x="684.0" y="609.0" fill="#F4FFFC" font-size="20" font-weight="600" text-anchor="end">Chamonix 1,035</text>
+
+    <rect x="86" y="682" width="165" height="32" rx="8" fill="#10283A" opacity="0.9"/>
+    <text x="168" y="703" fill="#F4FFFC" font-size="18" text-anchor="middle">Start 0.0 km</text>
+    <rect x="499" y="682" width="185" height="32" rx="8" fill="#10283A" opacity="0.9"/>
+    <text x="592" y="703" fill="#F4FFFC" font-size="18" text-anchor="middle">Finish 107.8 km</text>
+  </g>
+  <text x="24" y="838" fill="#6E8494" font-size="16">Data: official 2026 CCC timing table. Highest timing point 1,982 m; lowest 507 m.</text>
+  <text x="24" y="862" fill="#6E8494" font-size="16">Grand Col Ferret is not a timing point. Not a map or GPX profile, not navigable.</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1330" viewBox="0 0 720 1330" role="img" aria-labelledby="title desc">
+  <title id="title">CCC 2026: the ten official timing points</title>
+  <desc id="desc">Ten cards in official order from Courmayeur to Chamonix: Courmayeur 0 km, Refuge Bertone 13.6 km, Arnouvaz 26.3 km, La Fouly 40.7 km, Champex-Lac 54.2 km, Plan de l'Au 59.1 km, Martigny 69.2 km, Trient 79.1 km, Vallorcine 90.1 km and Chamonix 107.8 km. Cards show cumulative and segment gain/loss, altitude and cut-off. Cards are equally spaced and do not represent distance; this is not a map and cannot be used for navigation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="1330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1330" fill="url(#bg)"/>
+  <circle cx="660" cy="64" r="150" fill="#5FD3C4" opacity="0.07"/>
+  <circle cx="46" cy="1290" r="140" fill="#F4B860" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="24" y="46" fill="#5FD3C4" font-size="19" font-weight="700" letter-spacing="3">CCC 2026 / 10 CHECKPOINTS</text>
+    <text x="24" y="94" fill="#F4FFFC" font-size="47" font-weight="750">107.8 km</text>
+    <text x="24" y="140" fill="#F4FFFC" font-size="36" font-weight="750">10 timing points</text>
+    <text x="24" y="174" fill="#91A8B8" font-size="21">Official table · +6,198 / −6,382 m · equal-width cards</text>
+    <text x="24" y="200" fill="#91A8B8" font-size="19">CUM cumulative · SEG segment · cut-off in local time</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(24.0,228.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#2B6E7A"/>
+      <rect width="328" height="5" rx="2.5" fill="#5FD3C4"/>
+      <text x="18" y="32" fill="#5FD3C4" font-size="24" font-weight="700">01</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Courmayeur</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">0.0 km · 1,221 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +0 / −0</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +0 / −0</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Fri 09:00</text>
+    </g>    <g transform="translate(368.0,228.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#6B3A48"/>
+      <rect width="328" height="5" rx="2.5" fill="#FF9A8A"/>
+      <text x="18" y="32" fill="#FF9A8A" font-size="24" font-weight="700">02</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Refuge Bertone</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">13.6 km · 1,982 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +1,436 / −677</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +1,436 / −677</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Fri 13:45</text>
+    </g>    <g transform="translate(24.0,436.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#6B3A48"/>
+      <rect width="328" height="5" rx="2.5" fill="#FF9A8A"/>
+      <text x="18" y="32" fill="#FF9A8A" font-size="24" font-weight="700">03</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Arnouvaz</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">26.3 km · 1,777 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +1,908 / −1,350</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +472 / −673</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Fri 16:30</text>
+    </g>    <g transform="translate(368.0,436.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#6B3A48"/>
+      <rect width="328" height="5" rx="2.5" fill="#FF9A8A"/>
+      <text x="18" y="32" fill="#FF9A8A" font-size="24" font-weight="700">04</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">La Fouly</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">40.7 km · 1,604 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +2,774 / −2,392</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +866 / −1,042</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Fri 20:15</text>
+    </g>    <g transform="translate(24.0,644.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#2B6E7A"/>
+      <rect width="328" height="5" rx="2.5" fill="#5FD3C4"/>
+      <text x="18" y="32" fill="#5FD3C4" font-size="24" font-weight="700">05</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Champex-Lac</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">54.2 km · 1,472 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +3,287 / −3,036</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +513 / −644</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Fri 23:15</text>
+    </g>    <g transform="translate(368.0,644.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#2B6E7A"/>
+      <rect width="328" height="5" rx="2.5" fill="#5FD3C4"/>
+      <text x="18" y="32" fill="#5FD3C4" font-size="24" font-weight="700">06</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Plan de l'Au</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">59.1 km · 1,340 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +3,361 / −3,244</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +74 / −208</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Sat 00:15</text>
+    </g>    <g transform="translate(24.0,852.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#70552F"/>
+      <rect width="328" height="5" rx="2.5" fill="#F4B860"/>
+      <text x="18" y="32" fill="#F4B860" font-size="24" font-weight="700">07</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Martigny</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">69.2 km · 507 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +3,526 / −4,240</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +165 / −996</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Sat 02:15</text>
+    </g>    <g transform="translate(368.0,852.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#70552F"/>
+      <rect width="328" height="5" rx="2.5" fill="#F4B860"/>
+      <text x="18" y="32" fill="#F4B860" font-size="24" font-weight="700">08</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Trient</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">79.1 km · 1,304 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +4,603 / −4,521</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +1,077 / −281</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Sat 05:15</text>
+    </g>    <g transform="translate(24.0,1060.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#6B3A48"/>
+      <rect width="328" height="5" rx="2.5" fill="#FF9A8A"/>
+      <text x="18" y="32" fill="#FF9A8A" font-size="24" font-weight="700">09</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Vallorcine</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">90.1 km · 1,260 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +5,411 / −5,373</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +808 / −852</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Sat 08:30</text>
+    </g>    <g transform="translate(368.0,1060.0)">
+      <rect width="328" height="194" rx="16" fill="#101E2E" stroke="#6B3A48"/>
+      <rect width="328" height="5" rx="2.5" fill="#FF9A8A"/>
+      <text x="18" y="32" fill="#FF9A8A" font-size="24" font-weight="700">10</text>
+      <text x="18" y="70" fill="#F4FFFC" font-size="27" font-weight="650">Chamonix</text>
+      <text x="18" y="102" fill="#91A8B8" font-size="22">107.8 km · 1,035 m</text>
+      <text x="18" y="130" fill="#F4FFFC" font-size="21">CUM +6,198 / −6,382</text>
+      <text x="18" y="156" fill="#91A8B8" font-size="19">SEG +787 / −1,009</text>
+      <text x="18" y="180" fill="#F4B860" font-size="21">Sat 13:30</text>
+    </g>
+  </g>
+  <text x="24" y="1298" fill="#6E8494" font-size="16">Data: official 2026 CCC timing table. Cards show order and point values only;</text>
+  <text x="24" y="1322" fill="#6E8494" font-size="16">not a map or GPX profile, not navigable. Cards are equal-width, not to scale.</text>
+</svg>

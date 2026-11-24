@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1380" viewBox="0 0 480 1380" role="img" aria-labelledby="title desc">
+  <title id="title">Hong Kong 100 2027: eleven rows in the official checkpoint table</title>
+  <desc id="desc">Eleven equal-width cards in the order of the 2027 official checkpoint table image, from SP-East Dam at 10 km to the Finish at 96 km. Each card gives the label used by the table, the CP number used in the course text, segment and cumulative distance, stage gain and loss, and the printed opening and closing clock times. The cards are not a map, not a distance-scaled profile and not navigable. The image uses SP for East Dam and numbers later checkpoints one lower than the course text; both labels are shown. The table ends at 96 km while the race card still says 100 km.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="1380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="1380" fill="url(#bg)"/>
+  <circle cx="430" cy="58" r="120" fill="#F4B860" opacity="0.06"/>
+  <circle cx="40" cy="1320" r="110" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="38" fill="#F4B860" font-size="16" font-weight="700" letter-spacing="2">HONG KONG 100 / 2027</text>
+    <text x="14" y="84" fill="#F4FFFC" font-size="40" font-weight="750">11 checkpoint rows</text>
+    <text x="14" y="124" fill="#F4FFFC" font-size="27" font-weight="700">96.0 km · 5,142 m · 30 h</text>
+    <text x="14" y="154" fill="#91A8B8" font-size="18">Official checkpoint table image · race card says 100 km</text>
+    <text x="14" y="182" fill="#FFB38A" font-size="16">Opening / closing clock times exactly as printed</text>
+    <text x="14" y="208" fill="#6E8494" font-size="16">Equal-width cards · not a map, profile or navigation aid</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(14,238)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="29" fill="#F4B860" font-size="21" font-weight="800">01</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">SP–East Dam</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">10.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP1 · SEG +10.0 · CUM 10.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +312 m · Loss −265 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">07:15 → 09:15</text>
+    </g>
+    <g transform="translate(14,334)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">02</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP1–Sai Wan Pavilion</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">17.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP2 · SEG +7.0 · CUM 17.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +456 m · Loss −383 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">07:45 → 11:00</text>
+    </g>
+    <g transform="translate(14,430)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">03</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP2–Pak Tam Au</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">28.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP3 · SEG +11.0 · CUM 28.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +495 m · Loss −479 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">08:30 → 13:45</text>
+    </g>
+    <g transform="translate(14,526)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">04</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP3–Pak Sha O</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">36.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP4 · SEG +8.0 · CUM 36.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +356 m · Loss −428 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">09:00 → 16:00</text>
+    </g>
+    <g transform="translate(14,622)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">05</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP4–Yung Shue O</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">44.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP5 · SEG +8.0 · CUM 44.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +172 m · Loss −238 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">09:30 → 18:30</text>
+    </g>
+    <g transform="translate(14,718)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">06</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP5–Kei Ling Ha</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">52.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP6 · SEG +8.0 · CUM 52.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +609 m · Loss −514 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">10:30 → 21:15</text>
+    </g>
+    <g transform="translate(14,814)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">07</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP6–Gilwell Camp</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">65.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP7 · SEG +13.0 · CUM 65.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +794 m · Loss −490 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">11:30 → 02:15</text>
+    </g>
+    <g transform="translate(14,910)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">08</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP7–Beacon Hill</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">74.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP8 · SEG +9.0 · CUM 74.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +479 m · Loss −547 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">12:30 → 05:00</text>
+    </g>
+    <g transform="translate(14,1006)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">09</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP8–Shing Mun</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">80.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP9 · SEG +6.0 · CUM 80.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +298 m · Loss −403 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">13:30 → 07:15</text>
+    </g>
+    <g transform="translate(14,1102)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#5FD3C4"/>
+      <text x="20" y="29" fill="#5FD3C4" font-size="21" font-weight="800">10</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">CP9–Leadmine Pass</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">87.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">正文 CP10 · SEG +7.0 · CUM 87.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +582 m · Loss −388 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">14:30 → 10:15</text>
+    </g>
+    <g transform="translate(14,1198)">
+      <rect width="452" height="88" rx="12" fill="#0E1C2B" stroke="#20374A"/>
+      <rect width="5" height="88" rx="2.5" fill="#F4B860"/>
+      <text x="20" y="29" fill="#F4B860" font-size="21" font-weight="800">11</text>
+      <text x="56" y="29" fill="#F4FFFC" font-size="18" font-weight="700">Finish</text>
+      <text x="430" y="29" fill="#F4FFFC" font-size="22" font-weight="750" text-anchor="end">96.0</text>
+      <text x="56" y="55" fill="#91A8B8" font-size="16">SEG +9.0 · CUM 96.0 km</text>
+      <text x="56" y="78" fill="#91A8B8" font-size="15">Gain +589 m · Loss −501 m</text>
+      <text x="430" y="78" fill="#FFB38A" font-size="15" text-anchor="end">15:30 → 13:00</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="1312" fill="#6E8494" font-size="13">Row 1 is “SP–East Dam”; course text calls it CP1. From Sai Wan</text>
+    <text x="14" y="1332" fill="#6E8494" font-size="13">Pavilion onward, table CP numbers are one lower than the text.</text>
+    <text x="14" y="1352" fill="#6E8494" font-size="13">No dates are printed. Table ends at 96 km; race card says 100 km.</text>
+    <text x="14" y="1372" fill="#6E8494" font-size="13">Both figures are reported; the 4 km gap is unexplained.</text>
+  </g>
+</svg>

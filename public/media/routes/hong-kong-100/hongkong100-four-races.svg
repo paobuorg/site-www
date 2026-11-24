@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="820" viewBox="0 0 480 820" role="img" aria-labelledby="title desc">
+  <title id="title">Hong Kong 100 2027: four race-week categories and the Grand Sam distance conflict</title>
+  <desc id="desc">Four equal-width rows for The Third, The Half, HK100 and The Grand Sam, with dates, distance, gain and time limit. Bars are scaled to 187 km, the sum of the three individual races. The organiser's Grand Sam card says 183 km, four kilometres less than the sum; the difference is not explained. A footer notes that the 2026 edition was recorded as 92.9 km / 5,073 m after typhoon shortening and is not comparable with the 2027 figures.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="820" fill="url(#bg)"/>
+  <circle cx="430" cy="58" r="120" fill="#F4B860" opacity="0.06"/>
+  <circle cx="40" cy="760" r="110" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="38" fill="#F4B860" font-size="16" font-weight="700" letter-spacing="2">HONG KONG 100 / 2027 WEEK</text>
+    <text x="14" y="84" fill="#F4FFFC" font-size="40" font-weight="750">Four categories</text>
+    <text x="14" y="124" fill="#F4FFFC" font-size="27" font-weight="700">34 / 53 / 100 / 183 km</text>
+    <text x="14" y="154" fill="#91A8B8" font-size="18">Dates, climb and time limits from the 2027 race cards</text>
+    <text x="14" y="182" fill="#FFB38A" font-size="16">Grand Sam card 183 km · sum of three races 187 km</text>
+    <text x="14" y="208" fill="#6E8494" font-size="15">Bars scaled to 187 km · not a map or elevation profile</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(14,235)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="19" font-weight="700">The Third</text>
+      <text x="0" y="42" fill="#91A8B8" font-size="15">21 Jan · 10 h limit</text>
+      <text x="0" y="67" fill="#91A8B8" font-size="15">1,558 m gain</text>
+      <rect x="142" y="4" width="300" height="18" rx="9" fill="#13263A"/>
+      <rect x="142" y="4" width="54.5" height="18" rx="9" fill="#5FD3C4"/>
+      <text x="430" y="20" fill="#F4FFFC" font-size="21" font-weight="750" text-anchor="end">34 km</text>
+      <text x="142" y="46" fill="#5FD3C4" font-size="15">bar scale: full width = 187 km</text>
+    </g>
+    <g transform="translate(14,335)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="19" font-weight="700">The Half</text>
+      <text x="0" y="42" fill="#91A8B8" font-size="15">22 Jan · 14 h limit</text>
+      <text x="0" y="67" fill="#91A8B8" font-size="15">2,263 m gain</text>
+      <rect x="142" y="4" width="300" height="18" rx="9" fill="#13263A"/>
+      <rect x="142" y="4" width="85.0" height="18" rx="9" fill="#F4B860"/>
+      <text x="430" y="20" fill="#F4FFFC" font-size="21" font-weight="750" text-anchor="end">53 km</text>
+      <text x="142" y="46" fill="#F4B860" font-size="15">bar scale: full width = 187 km</text>
+    </g>
+    <g transform="translate(14,435)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="19" font-weight="700">HK100</text>
+      <text x="0" y="42" fill="#91A8B8" font-size="15">23 Jan · 30 h limit</text>
+      <text x="0" y="67" fill="#91A8B8" font-size="15">5,142 m gain</text>
+      <rect x="142" y="4" width="300" height="18" rx="9" fill="#13263A"/>
+      <rect x="142" y="4" width="160.4" height="18" rx="9" fill="#FF8A5B"/>
+      <text x="430" y="20" fill="#F4FFFC" font-size="21" font-weight="750" text-anchor="end">100 km</text>
+      <text x="142" y="46" fill="#FF8A5B" font-size="15">bar scale: full width = 187 km</text>
+    </g>
+    <g transform="translate(14,535)">
+      <text x="0" y="18" fill="#F4FFFC" font-size="19" font-weight="700">The Grand Sam</text>
+      <text x="0" y="42" fill="#91A8B8" font-size="15">21–24 Jan · 54 h limit</text>
+      <text x="0" y="67" fill="#91A8B8" font-size="15">8,963 m gain</text>
+      <rect x="142" y="4" width="300" height="18" rx="9" fill="#13263A"/>
+      <rect x="142" y="4" width="293.6" height="18" rx="9" fill="#FF5E5E"/>
+      <text x="430" y="20" fill="#F4FFFC" font-size="21" font-weight="750" text-anchor="end">183 km</text>
+      <text x="142" y="46" fill="#FF5E5E" font-size="15">bar scale: full width = 187 km</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="690" fill="#F4B860" font-size="17" font-weight="700">The 4 km Grand Sam gap is official, not arithmetic error</text>
+    <text x="14" y="716" fill="#91A8B8" font-size="14">The card gives 183 km and 8,963 m; 34 + 53 + 100 = 187 km.</text>
+    <text x="14" y="736" fill="#91A8B8" font-size="14">The organiser does not explain the 4 km difference.</text>
+    <text x="14" y="762" fill="#6E8494" font-size="14">2026 as run: 92.9 km / 5,073 m after typhoon shortening;</text>
+    <text x="14" y="782" fill="#6E8494" font-size="14">not comparable with the 2027 figures.</text>
+    <text x="14" y="806" fill="#6E8494" font-size="13">Editorial graphic. Not an official map or race-day image.</text>
+  </g>
+</svg>

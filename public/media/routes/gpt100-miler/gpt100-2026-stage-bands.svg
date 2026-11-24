@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="924" viewBox="0 0 360 924" role="img" aria-label="GPT100 Miler 2026 four official stage race sections with distance, gain, loss, key terrain and cut-off times">
+<rect width="360" height="924" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">GPT100 2026 · 四大赛段</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">按官方 Stage Race 分段 · 爬升/下降由官方逐段值合计</text>
+<text x="20" y="64" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">四段合计 +7,700 / −7,700 m，与官方总量一致。</text>
+<line x1="20" y1="78" x2="340" y2="78" stroke="#d8d0c0" stroke-width="1"/>
+<rect x="20" y="92" width="320" height="190" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="114" r="11" fill="#345f46"/>
+<text x="39" y="118" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">1</text>
+<text x="58" y="117" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" fill="#1f2a24">Mt Zero → Halls Gap</text>
+<text x="328" y="117" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" font-weight="700" fill="#345f46">0 → 49.5 km</text>
+<text x="32" y="142" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#345f46">+2,000 / −2,040 m</text>
+<text x="32" y="164" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" fill="#4f5a52">Flat Rock 与 Taipan Wall · Mt Difficult 乱石</text>
+<text x="32" y="180" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" fill="#4f5a52">Wartook Lookout · Chatauqua Peak · 进镇</text>
+<line x1="32" y1="198" x2="328" y2="198" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="218" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#345f46">11-06 20:00 · #3 Halls Gap 关门</text>
+<text x="32" y="238" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">前 3 段合计 +2,000 / −2,040；开局即岩板与技术下降。</text>
+<text x="32" y="262" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#8a9189">赛段边界取自官方 Stage Race 分段，不是官方 Miler 计时分段。</text>
+<rect x="20" y="290" width="320" height="190" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="312" r="11" fill="#4f6f82"/>
+<text x="39" y="316" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">2</text>
+<text x="58" y="315" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" fill="#1f2a24">Halls Gap → Mt William</text>
+<text x="328" y="315" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" font-weight="700" fill="#4f6f82">49.5 → 86.6 km</text>
+<text x="32" y="340" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#4f6f82">+2,350 / −1,625 m</text>
+<text x="32" y="362" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" fill="#4f5a52">Pinnacles · Mt Rosea 崖边横切</text>
+<text x="32" y="378" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" fill="#4f5a52">Seven Dials · Redman's Bluff 岩板</text>
+<line x1="32" y1="396" x2="328" y2="396" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="416" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#4f6f82">11-07 08:15 · #6 Mt William 关门</text>
+<text x="32" y="436" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">四段中爬升最多；出站后唯一铺装路是上 Mt William 山顶。</text>
+<text x="32" y="460" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#8a9189">赛段边界取自官方 Stage Race 分段，不是官方 Miler 计时分段。</text>
+<rect x="20" y="488" width="320" height="190" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="510" r="11" fill="#8b5e52"/>
+<text x="39" y="514" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">3</text>
+<text x="58" y="513" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" fill="#1f2a24">Mt William → Griffin Fireline</text>
+<text x="328" y="513" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" font-weight="700" fill="#8b5e52">86.6 → 130.7 km</text>
+<text x="32" y="538" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#8b5e52">+1,795 / −2,450 m</text>
+<text x="32" y="560" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" fill="#4f5a52">Durd Durd 1,167 m 全程最高点</text>
+<text x="32" y="576" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" fill="#4f5a52">Jimmy Creek 巨石区 · Yarram Gap 应急站</text>
+<line x1="32" y1="594" x2="328" y2="594" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="614" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#8b5e52">14:30 / 18:30 / 22:15 三站关门</text>
+<text x="32" y="634" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">四段中下降最多；Durd Durd 台阶与 Jimmy Creek 后巨石区是主难点。</text>
+<text x="32" y="658" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#8a9189">赛段边界取自官方 Stage Race 分段，不是官方 Miler 计时分段。</text>
+<rect x="20" y="686" width="320" height="190" rx="9" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<circle cx="39" cy="708" r="11" fill="#6f6650"/>
+<text x="39" y="712" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#ffffff">4</text>
+<text x="58" y="711" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" fill="#1f2a24">Griffin Fireline → Dunkeld</text>
+<text x="328" y="711" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" font-weight="700" fill="#6f6650">130.7 → 163.0 km</text>
+<text x="32" y="736" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#6f6650">+1,555 / −1,585 m</text>
+<text x="32" y="758" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" fill="#4f5a52">Signal Peak · Mt Abrupt 两座台阶山</text>
+<text x="32" y="774" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.2" fill="#4f5a52">Bainggug · Mt Sturgeon · 进 Dunkeld</text>
+<line x1="32" y1="792" x2="328" y2="792" stroke="#eee8db" stroke-width="1"/>
+<text x="32" y="812" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#6f6650">02:00 / 06:30 / 10:00 三站关门</text>
+<text x="32" y="832" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">最后 10.2 km 仍有 Mt Sturgeon 爬升，终点在镇中心花园。</text>
+<text x="32" y="856" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#8a9189">赛段边界取自官方 Stage Race 分段，不是官方 Miler 计时分段。</text>
+<line x1="20" y1="876" x2="340" y2="876" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="892" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">爬升/下降为官方逐段值合计；官方总量写约 7,700 m，本图不作换算。</text>
+<text x="20" y="907" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.2" fill="#8a9189">横向长度不成比例；不画地图、轨迹或海拔剖面，GPX 只外链官方入口。</text>
+</svg>

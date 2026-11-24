@@ -21,6 +21,38 @@ export interface SourceVerification {
   note?: string;
 }
 
+export type ClaimStatus = 'supported' | 'partial' | 'unsupported' | 'unknown';
+
+export type CourseStatus = 'current' | 'latest-held' | 'superseded' | 'unsupported' | 'unknown';
+
+export type CourseChangeKind =
+  | 'new-course'
+  | 'edition-roll'
+  | 'edition-lag'
+  | 'page-offline'
+  | 'distance-revised'
+  | 'elevation-revised'
+  | 'timing-revised'
+  | 'route-refined';
+
+export interface CourseChange {
+  edition: string;
+  observedAt: string;
+  field: string;
+  change: CourseChangeKind;
+  from?: string | null;
+  to?: string | null;
+  sourceRef: string;
+  note: { 'zh-CN': string; en: string };
+}
+
+export interface ClaimVerification {
+  index: number;
+  status: ClaimStatus;
+  checkedAt: string;
+  note?: string;
+}
+
 export interface SourceRecord {
   sourceId: string;
   title: string;
@@ -31,6 +63,7 @@ export interface SourceRecord {
   claims: string[];
   license: string | null;
   verification?: SourceVerification;
+  claimVerification?: ClaimVerification[];
 }
 
 export interface ContributorRecord {
@@ -68,8 +101,21 @@ export interface Translation {
   translationStatus: TranslationStatus;
 }
 
+export interface RaceStage {
+  index: number;
+  date: string;
+  distanceMeters: number;
+  elevationGainMeters: number | null;
+  startName: string;
+  finishName: string;
+  cutoffHours: number | null;
+  cumulativeCutoffHours: number | null;
+  selfSupported: boolean;
+  isRestDay: boolean;
+}
+
 export interface RouteDetails {
-  raceType: 'road-marathon' | 'trail-ultra';
+  raceType: 'road-marathon' | 'road-ultra' | 'trail-ultra' | 'trail-mountain';
   countryCodes: string[];
   placeName: Record<Locale, string>;
   mapAnchor: {
@@ -79,6 +125,9 @@ export interface RouteDetails {
     sourceRef: string;
   };
   courseVersion: string;
+  courseEdition?: string;
+  courseStatus?: CourseStatus;
+  courseChanges?: CourseChange[];
   direction: string;
   distanceMeters: number;
   distanceMethod: string;
@@ -90,6 +139,7 @@ export interface RouteDetails {
   geometryLicense: string | null;
   officialGeometryUrl: string | null;
   attribution: string | null;
+  stages?: RaceStage[];
   surface?: string;
   technicality?: string;
 }

@@ -47,6 +47,8 @@
 
 .prose a {
   font-weight: 560;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .prose blockquote {
@@ -68,8 +70,21 @@
   border-radius: var(--radius-card);
 }
 
+.prose .table-scroll {
+  max-width: 100%;
+  margin-bottom: 1.15em;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose .table-scroll table {
+  width: 100%;
+  margin-bottom: 0;
+}
+
 .prose table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
 }
@@ -79,6 +94,7 @@
   padding: 9px 10px;
   border: 1px solid var(--border);
   text-align: left;
+  overflow-wrap: break-word;
 }
 
 .prose th {
@@ -92,11 +108,26 @@
   font-size: 0.76rem;
 }
 
+@media (max-width: 380px) {
+  .prose table {
+    font-size: 0.82rem;
+  }
+
+  .prose th,
+  .prose td {
+    padding: 6px 5px;
+  }
+}
+
 .article-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
   gap: 44px;
   align-items: start;
+}
+
+.article-layout > * {
+  min-width: 0;
 }
 
 .article-header {
@@ -200,6 +231,7 @@
 
 .source-list {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
   margin: 22px 0 0;
   padding: 0;
@@ -207,6 +239,7 @@
 }
 
 .source-item {
+  min-width: 0;
   padding: 16px 18px;
   border: 1px solid var(--border);
   border-radius: var(--radius-input);
@@ -215,12 +248,16 @@
 
 .source-item a {
   font-weight: 700;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .source-item p {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 0.8rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .source-item .source-meta {
@@ -424,11 +461,20 @@
 
 .route-footer-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   gap: 30px;
   margin-top: 48px;
   padding-top: 28px;
   border-top: 1px solid var(--border);
+}
+
+.route-sources,
+.route-related {
+  min-width: 0;
+}
+
+.source-list {
+  min-width: 0;
 }
 
 .route-sources h2,
@@ -579,7 +625,7 @@
 
 @media (max-width: 1000px) {
   .article-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
   }
 
@@ -635,7 +681,7 @@
   }
 
   .route-footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
   }
 }

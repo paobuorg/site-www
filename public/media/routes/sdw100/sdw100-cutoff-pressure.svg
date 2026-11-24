@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="920" viewBox="0 0 480 920" role="img" aria-labelledby="title desc">
+  <title id="title">South Downs Way 100 2027: implied average speed between consecutive cut-offs</title>
+  <desc id="desc">Thirteen horizontal bars showing the implied average speed if a runner used every minute between consecutive Wave 1 cut-offs, from the Start to the Finish. The overall 30 hour average is 5.37 km/h, shown as a dashed vertical reference. Cocking to Houghton Farm is 4.49 km/h and Houghton Farm to Washington is 7.43 km/h; the 2027 chart moved Houghton Farm to 47.3 miles and its Wave 1 cut-off to 20:20. Cut-offs are leave-by limits, not target paces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="920" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="920" fill="url(#bg)"/>
+  <circle cx="430" cy="40" r="100" fill="#F4B860" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="34" fill="#F4B860" font-size="16" font-weight="700" letter-spacing="2">SDW100 / 2027 · CUT-OFF PRESSURE</text>
+    <text x="14" y="76" fill="#F4FFFC" font-size="34" font-weight="750">13 segments, implied speed</text>
+    <text x="14" y="106" fill="#F4FFFC" font-size="20" font-weight="650">If every minute between cut-offs were used</text>
+    <text x="14" y="132" fill="#91A8B8" font-size="16">Wave 1 official leave-by times · overall 30 h = 5.37 km/h</text>
+    <text x="14" y="154" fill="#6E8494" font-size="14">Bars are not target paces; cut-offs are administrative limits.</text>
+    <line x1="100" y1="176" x2="100" y2="856" stroke="#20374A" stroke-width="1"/>
+    <line x1="318" y1="176" x2="318" y2="856" stroke="#F4B860" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.8"/>
+    <text x="318" y="194" fill="#F4B860" font-size="12" text-anchor="middle">5.37 overall</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(0,206)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">0→1</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">11.4 mi</text>
+      <rect x="100" y="1" width="211" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.24</text>
+    </g>
+    <g transform="translate(0,254)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">1→2</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">12.0 mi</text>
+      <rect x="100" y="1" width="223" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.52</text>
+    </g>
+    <g transform="translate(0,302)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">2→3</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">4.6 mi</text>
+      <rect x="100" y="1" width="211" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.22</text>
+    </g>
+    <g transform="translate(0,350)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">3→4</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">8.6 mi</text>
+      <rect x="100" y="1" width="216" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.36</text>
+    </g>
+    <g transform="translate(0,398)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">4→5</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">10.7 mi</text>
+      <rect x="100" y="1" width="181" height="16" rx="4" fill="#F4B860" opacity="0.95"/>
+      <text x="432" y="15" fill="#F4B860" font-size="17" font-weight="750" text-anchor="end">4.49</text>
+    </g>
+    <g transform="translate(0,446)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">5→6</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">7.7 mi</text>
+      <rect x="100" y="1" width="300" height="16" rx="4" fill="#FF7A6B" opacity="0.95"/>
+      <text x="432" y="15" fill="#FF7A6B" font-size="17" font-weight="750" text-anchor="end">7.43</text>
+    </g>
+    <g transform="translate(0,494)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">6→7</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">5.9 mi</text>
+      <rect x="100" y="1" width="209" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.18</text>
+    </g>
+    <g transform="translate(0,542)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">7→8</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">5.7 mi</text>
+      <rect x="100" y="1" width="222" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.50</text>
+    </g>
+    <g transform="translate(0,590)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">8→9</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">10.0 mi</text>
+      <rect x="100" y="1" width="223" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.52</text>
+    </g>
+    <g transform="translate(0,638)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">9→10</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">7.4 mi</text>
+      <rect x="100" y="1" width="214" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.29</text>
+    </g>
+    <g transform="translate(0,686)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">10→11</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">7.6 mi</text>
+      <rect x="100" y="1" width="211" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.24</text>
+    </g>
+    <g transform="translate(0,734)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">11→12</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">4.1 mi</text>
+      <rect x="100" y="1" width="213" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.28</text>
+    </g>
+    <g transform="translate(0,782)">
+      <text x="14" y="10" fill="#F4FFFC" font-size="16" font-weight="700">12→F</text>
+      <text x="14" y="26" fill="#6E8494" font-size="12">4.3 mi</text>
+      <rect x="100" y="1" width="224" height="16" rx="4" fill="#5FD3C4" opacity="0.9"/>
+      <text x="432" y="15" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">5.54</text>
+    </g>
+    <text x="14" y="866" fill="#F4B860" font-size="14">4.49 = Cocking→Houghton (10.7 mi / 3:50)</text>
+    <text x="14" y="886" fill="#FF7A6B" font-size="14">7.43 = Houghton→Washington (7.7 mi / 1:40)</text>
+    <text x="14" y="908" fill="#6E8494" font-size="13">2027 Houghton = 47.3 mi, Wave 1 cut-off 20:20; 2026 = 45.0 mi.</text>
+  </g>
+</svg>

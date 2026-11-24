@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1330" viewBox="0 0 480 1330" role="img" aria-labelledby="title desc">
+  <title id="title">Tarawera TMiler 2027: implied average speed between consecutive published cut-offs</title>
+  <desc id="desc">Twelve bars show distance divided by the time between consecutive published cut-offs, from Buried Village at 29.9 km to the finish at 163.0 km. Most intervals sit near 4.5 km/h. Okataina to Millar implies 3.83 km/h over 15.3 km and four hours, the slowest interval. Millar to Tikitapu implies 6.00 km/h over 12.0 km and two hours, the fastest. The two intervals together average 4.55 km/h over 27.3 km and six hours, close to the 36-hour overall 4.53 km/h; the issue is the uneven split, not the average. Cut-offs are leave-by limits, not target paces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="480" y2="1330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="1330" fill="url(#bg)"/>
+  <circle cx="430" cy="56" r="110" fill="#FF7A6B" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="14" y="38" fill="#FF9A8A" font-size="16" font-weight="700" letter-spacing="2">TARAWERA / CUT-OFF PRESSURE</text>
+    <text x="14" y="82" fill="#F4FFFC" font-size="37" font-weight="750">36-hour limit</text>
+    <text x="14" y="120" fill="#F4FFFC" font-size="26" font-weight="700">12 intervals, 12 implied speeds</text>
+    <text x="14" y="148" fill="#91A8B8" font-size="17">Distance ÷ time between consecutive cut-offs · km/h</text>
+    <text x="14" y="174" fill="#6E8494" font-size="16">Cut-offs are limits, not targets. Axis starts at 0 km/h.</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <line x1="14" y1="266" x2="14" y2="1098" stroke="#1E3547" stroke-width="1"/>
+    <text x="14" y="1120" fill="#6E8494" font-size="16" text-anchor="middle">0</text>
+    <line x1="134" y1="266" x2="134" y2="1098" stroke="#1E3547" stroke-width="1"/>
+    <text x="134" y="1120" fill="#6E8494" font-size="16" text-anchor="middle">2</text>
+    <line x1="254" y1="266" x2="254" y2="1098" stroke="#1E3547" stroke-width="1"/>
+    <text x="254" y="1120" fill="#6E8494" font-size="16" text-anchor="middle">4</text>
+    <line x1="374" y1="266" x2="374" y2="1098" stroke="#1E3547" stroke-width="1"/>
+    <text x="374" y="1120" fill="#6E8494" font-size="16" text-anchor="middle">6</text>
+    <text x="224" y="1142" fill="#6E8494" font-size="16" text-anchor="middle">implied km/h</text>
+    <text x="14" y="240" fill="#F4FFFC" font-size="18" font-weight="700">Buried Village → Te Ariki</text>
+    <text x="14" y="259" fill="#91A8B8" font-size="16">15.6 km · 3 h 25</text>
+    <rect x="14" y="268" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="268" width="274.0" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="296.0" y="281" fill="#F4FFFC" font-size="17" font-weight="750">4.57</text>
+    <text x="14" y="314" fill="#F4FFFC" font-size="18" font-weight="700">Te Ariki → Rerewhakaaitu</text>
+    <text x="14" y="333" fill="#91A8B8" font-size="16">10.5 km · 2 h 20</text>
+    <rect x="14" y="342" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="342" width="270.0" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="292.0" y="355" fill="#F4FFFC" font-size="17" font-weight="750">4.50</text>
+    <text x="14" y="388" fill="#F4FFFC" font-size="18" font-weight="700">Rerewhakaaitu → Okahu</text>
+    <text x="14" y="407" fill="#91A8B8" font-size="16">10.2 km · 2 h 15</text>
+    <rect x="14" y="416" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="416" width="272.0" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="294.0" y="429" fill="#F4FFFC" font-size="17" font-weight="750">4.53</text>
+    <text x="14" y="462" fill="#F4FFFC" font-size="18" font-weight="700">Okahu → Hawea</text>
+    <text x="14" y="481" fill="#91A8B8" font-size="16">10.5 km · 2 h 20</text>
+    <rect x="14" y="490" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="490" width="270.0" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="292.0" y="503" fill="#F4FFFC" font-size="17" font-weight="750">4.50</text>
+    <text x="14" y="536" fill="#F4FFFC" font-size="18" font-weight="700">Hawea → Outlet</text>
+    <text x="14" y="555" fill="#91A8B8" font-size="16">12.1 km · 2 h 40</text>
+    <rect x="14" y="564" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="564" width="272.3" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="294.3" y="577" fill="#F4FFFC" font-size="17" font-weight="750">4.54</text>
+    <text x="14" y="610" fill="#F4FFFC" font-size="18" font-weight="700">Outlet → Otamuri</text>
+    <text x="14" y="629" fill="#91A8B8" font-size="16">13.9 km · 3 h 05</text>
+    <rect x="14" y="638" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="638" width="270.5" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="292.5" y="651" fill="#F4FFFC" font-size="17" font-weight="750">4.51</text>
+    <text x="14" y="684" fill="#F4FFFC" font-size="18" font-weight="700">Otamuri → Rotoiti</text>
+    <text x="14" y="703" fill="#91A8B8" font-size="16">10.8 km · 2 h 25</text>
+    <rect x="14" y="712" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="712" width="268.1" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="290.1" y="725" fill="#F4FFFC" font-size="17" font-weight="750">4.47</text>
+    <text x="14" y="758" fill="#F4FFFC" font-size="18" font-weight="700">Rotoiti → Okataina</text>
+    <text x="14" y="777" fill="#91A8B8" font-size="16">5.1 km · 1 h 05</text>
+    <rect x="14" y="786" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="786" width="282.5" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="304.5" y="799" fill="#F4FFFC" font-size="17" font-weight="750">4.71</text>
+    <text x="14" y="832" fill="#F4FFFC" font-size="18" font-weight="700">Okataina → Millar</text>
+    <text x="14" y="851" fill="#91A8B8" font-size="16">15.3 km · 4 h 00</text>
+    <rect x="14" y="860" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="860" width="229.5" height="16" rx="6" fill="#FF7A6B" opacity="0.92"/>
+    <text x="251.5" y="873" fill="#FF9A8A" font-size="17" font-weight="750">3.83</text>
+    <text x="14" y="906" fill="#F4FFFC" font-size="18" font-weight="700">Millar → Tikitapu</text>
+    <text x="14" y="925" fill="#91A8B8" font-size="16">12.0 km · 2 h 00</text>
+    <rect x="14" y="934" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="934" width="360.0" height="16" rx="6" fill="#F4B860"/>
+    <text x="382.0" y="947" fill="#F4FFFC" font-size="17" font-weight="750">6.00</text>
+    <text x="14" y="980" fill="#F4FFFC" font-size="18" font-weight="700">Tikitapu → Redwoods</text>
+    <text x="14" y="999" fill="#91A8B8" font-size="16">9.8 km · 2 h 10</text>
+    <rect x="14" y="1008" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="1008" width="271.4" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="293.4" y="1021" fill="#F4FFFC" font-size="17" font-weight="750">4.52</text>
+    <text x="14" y="1054" fill="#F4FFFC" font-size="18" font-weight="700">Redwoods → Village Green</text>
+    <text x="14" y="1073" fill="#91A8B8" font-size="16">7.3 km · 1 h 37</text>
+    <rect x="14" y="1082" width="420" height="16" rx="6" fill="#0A1725"/>
+    <rect x="14" y="1082" width="270.9" height="16" rx="6" fill="#5FD3C4"/>
+    <text x="292.9" y="1095" fill="#F4FFFC" font-size="17" font-weight="750">4.52</text>
+
+    <rect x="14" y="1165" width="452" height="112" rx="10" fill="#2A1720" stroke="#FF7A6B"/>
+    <text x="28" y="1189" fill="#FF9A8A" font-size="16" font-weight="700">3.83 km/h is the hardest published interval.</text>
+    <text x="28" y="1212" fill="#F4FFFC" font-size="15">Next: 6.00 km/h. Pair average 4.55 km/h,</text>
+    <text x="28" y="1233" fill="#F4FFFC" font-size="15">near the 36-hour overall 4.53. Uneven split, not average.</text>
+    <text x="28" y="1256" fill="#91A8B8" font-size="15">Do not read 6.00 as free speed: it follows a 4 h segment.</text>
+  </g>
+  <text x="14" y="1306" fill="#6E8494" font-size="14">Data: official 2027 timing table; arithmetic only.</text>
+</svg>

@@ -10,9 +10,11 @@ const outRoot = process.env.PERF_OUT ?? path.join(repoRoot, 'evidence', date, 'p
 const channel = process.env.QA_CHANNEL || undefined;
 const runsPerScenario = Number(process.env.PERF_RUNS ?? 3);
 
+const host = process.env.QA_HOST ?? 'localhost';
+
 const urls = {
-  article: 'http://localhost:4422/articles/easy-run/',
-  home: 'http://localhost:4421/',
+  article: `http://${host}:4422/articles/easy-run/`,
+  home: `http://${host}:4421/`,
 };
 
 const scenarios = {
@@ -189,8 +191,8 @@ async function runScenario(browser, name, scenario, runIndex) {
     hasTouch: scenario.hasTouch ?? false,
   });
   await context.addCookies([
-    { name: 'paobu_theme', value: 'light', url: 'http://localhost:4421' },
-    { name: 'paobu_theme', value: 'light', url: 'http://localhost:4422' },
+    { name: 'paobu_theme', value: 'light', url: `http://${host}:4421` },
+    { name: 'paobu_theme', value: 'light', url: `http://${host}:4422` },
   ]);
   await context.addInitScript(perfInit);
   const page = await context.newPage();
@@ -320,7 +322,7 @@ async function homeSizes(homeRun) {
   const html = await readFile(path.join(siteRoot, 'dist', 'index.html'), 'utf8');
   const engineFiles = new Map();
   for (const request of homeRun.network) {
-    if (!request.url.startsWith('http://localhost:4421')) continue;
+    if (!request.url.startsWith(`http://${host}:4421`)) continue;
     const pathname = new URL(request.url).pathname;
     if (!pathname.endsWith('.js')) continue;
     if (!pathname.startsWith('/_astro/') && !pathname.startsWith('/cesium/')) continue;
@@ -352,6 +354,7 @@ function median(values) {
 }
 
 function summarize(runs) {
+  const readyValues = runs.map((run) => run.readyMs).filter((value) => typeof value === 'number');
   return {
     lcpMedianMs: median(runs.map((run) => run.perf.lcp)),
     lcpWorstMs: Math.max(...runs.map((run) => run.perf.lcp)),
@@ -359,8 +362,8 @@ function summarize(runs) {
     clsWorst: Math.max(...runs.map((run) => run.perf.cls)),
     domContentLoadedMedianMs: median(runs.map((run) => run.navigation?.domContentLoaded)),
     loadMedianMs: median(runs.map((run) => run.navigation?.load)),
-    readyMedianMs: median(runs.map((run) => run.readyMs)),
-    readyWorstMs: Math.max(...runs.map((run) => run.readyMs ?? 0)),
+    readyMedianMs: median(readyValues),
+    readyWorstMs: readyValues.length ? Math.max(...readyValues) : null,
     idleClearsPerSecond: runs.map((run) => run.idleClearsPerSecond),
     activeClearsPerSecond: runs.map((run) => run.activeClearsPerSecond),
     rafFps: runs.map((run) => run.rafFps),
@@ -402,10 +405,10 @@ async function main() {
       textureDesktopBytes: 1536 * 1024,
       engineGzipBytes: 2560 * 1024,
       mapIndexGzipBytes: 100 * 1024,
-      articleLcpMs: 2500,
-      articleCls: 0.1,
-      globeDesktopReadyMs: 4000,
-      globeMobileReadyMs: 6000,
+      'article.LCP': 2500,
+      'article.CLS': 0.1,
+      'homeDesktop.ready': 4000,
+      'homeMobile.ready': 6000,
     },
     runs: {},
   };
@@ -416,8 +419,9 @@ async function main() {
       for (let run = 1; run <= runsPerScenario; run += 1) {
         const result = await runScenario(browser, name, scenario, run);
         report.runs[name].push(result);
+        const readyText = typeof result.readyMs === 'number' ? `${Math.round(result.readyMs)}ms` : '-';
         console.log(
-          `${name} run ${run}: lcp=${Math.round(result.perf.lcp)}ms cls=${result.perf.cls.toFixed(4)} ready=${result.readyMs ?? '-'}ms rafFps=${result.rafFps ?? '-'} idle=${result.idleClearsPerSecond ?? '-'}`,
+          `${name}.LCP=${Math.round(result.perf.lcp)}ms ${name}.ready=${readyText} ${name}.CLS=${result.perf.cls.toFixed(4)} ${name}.rafFps=${result.rafFps ?? '-'} ${name}.idleClearsPerSec=${result.idleClearsPerSecond ?? '-'}`,
         );
       }
     }
@@ -436,12 +440,12 @@ async function main() {
       nonMapNoMapRequests: report.runs.article.every((run) =>
         run.network.every(
           (request) =>
-            !/^http:\/\/localhost:442[1-3]\/(cesium|textures|pagefind)\//.test(request.url) &&
+            !new RegExp(`^http://${host.replaceAll('.', '\\.')}:442[1-3]/(cesium|textures|pagefind)/`).test(request.url) &&
             !/\.gpx(\?|$)/.test(request.url),
         ),
       ),
       homeNoSearchIndex: report.runs.homeDesktop.every((run) =>
-        run.network.every((request) => !/^http:\/\/localhost:4421\/pagefind\//.test(request.url)),
+        run.network.every((request) => !new RegExp(`^http://${host.replaceAll('.', '\\.')}:4421/pagefind/`).test(request.url)),
       ),
       homeFallback: report.runs.homeDesktop.some((run) => run.fallback),
       renderer: report.runs.homeDesktop[0]?.renderer ?? null,
@@ -455,15 +459,32 @@ async function main() {
       textureDesktop: makeBudget(report.sizes.home.textureBytes, report.budgets.textureDesktopBytes),
       engineGzip: makeBudget(report.sizes.home.engineGzip, report.budgets.engineGzipBytes),
       mapIndexGzip: makeBudget(report.sizes.home.mapIndexGzip, report.budgets.mapIndexGzipBytes),
-      articleLcpMs: makeBudget(report.summary.article.lcpWorstMs, report.budgets.articleLcpMs),
-      articleCls: makeBudget(report.summary.article.clsWorst, report.budgets.articleCls),
-      globeDesktopReadyMs: makeBudget(report.summary.homeDesktop.readyWorstMs, report.budgets.globeDesktopReadyMs),
-      globeMobileReadyMs: makeBudget(report.summary.homeMobile.readyWorstMs, report.budgets.globeMobileReadyMs),
+      'article.LCP': makeBudget(report.summary.article.lcpWorstMs, report.budgets['article.LCP']),
+      'article.CLS': makeBudget(report.summary.article.clsWorst, report.budgets['article.CLS']),
+      'homeDesktop.ready': makeBudget(
+        report.summary.homeDesktop.readyWorstMs,
+        report.budgets['homeDesktop.ready'],
+      ),
+      'homeMobile.ready': makeBudget(
+        report.summary.homeMobile.readyWorstMs,
+        report.budgets['homeMobile.ready'],
+      ),
     };
     const failedBudgets = Object.entries(report.budgetResults).filter(([, result]) => !result.pass);
     if (failedBudgets.length) {
       console.error(`budget failures: ${failedBudgets.map(([name, result]) => `${name} ${result.value} > ${result.limit}`).join(', ')}`);
       process.exitCode = 1;
+    }
+
+    const fmtMs = (value) => (typeof value === 'number' ? `${Math.round(value)}ms` : '-');
+    console.log('summary: median (worst) over runs');
+    for (const name of ['article', 'homeDesktop', 'homeMobile', 'homeVisibleMobile']) {
+      const s = report.summary[name];
+      console.log(
+        `${name}.LCP=${fmtMs(s.lcpMedianMs)} (worst ${fmtMs(s.lcpWorstMs)}) ` +
+          `${name}.ready=${fmtMs(s.readyMedianMs)} (worst ${fmtMs(s.readyWorstMs)}) ` +
+          `${name}.CLS=${s.clsMedian ?? '-'} (worst ${s.clsWorst ?? '-'})`,
+      );
     }
   } finally {
     await browser.close();

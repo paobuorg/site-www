@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1428" viewBox="0 0 360 1428" role="img" aria-label="Kodiak 100M 2026 station chain">
+<rect width="360" height="1428" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">KODIAK 100M · 2026 站序</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">16 个节点 · 15 个区间 · 161.1 km · 数据为 2026 官方英制补给表</text>
+<line x1="20" y1="60" x2="340" y2="60" stroke="#d8d0c0" stroke-width="1"/>
+<line x1="26" y1="74" x2="26" y2="154" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="114" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="117" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#ffffff">1</text>
+<rect x="42" y="87" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="109" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Start · Rim Nordic</text>
+<text x="54" y="127" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">0.0 mi · 0.0 km</text>
+<text x="328" y="127" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">起跑 Fri 13:00</text>
+<line x1="26" y1="154" x2="26" y2="234" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="194" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="197" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">2</text>
+<rect x="42" y="167" width="298" height="54" rx="6" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="189" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Crab Flats</text>
+<text x="54" y="207" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">8.4 mi · 13.5 km</text>
+<text x="328" y="207" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#9a9385">未公布关门</text>
+<line x1="26" y1="234" x2="26" y2="314" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="274" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="277" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">3</text>
+<rect x="42" y="247" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="269" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Camp Whittle</text>
+<text x="54" y="287" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">19.4 mi · 31.2 km</text>
+<text x="328" y="287" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Fri 19:15</text>
+<line x1="26" y1="314" x2="26" y2="394" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="354" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="357" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">4</text>
+<rect x="42" y="327" width="298" height="54" rx="6" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="349" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Van Dusen</text>
+<text x="54" y="367" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">26.8 mi · 43.1 km</text>
+<text x="328" y="367" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#9a9385">未公布关门</text>
+<line x1="26" y1="394" x2="26" y2="474" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="434" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="437" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">5</text>
+<rect x="42" y="407" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="429" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Doble Camp 1</text>
+<text x="54" y="447" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">33.7 mi · 54.2 km</text>
+<text x="328" y="447" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Fri 23:30</text>
+<line x1="26" y1="474" x2="26" y2="554" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="514" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="517" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">6</text>
+<rect x="42" y="487" width="298" height="54" rx="6" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="509" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Burns Canyon 1</text>
+<text x="54" y="527" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">39.7 mi · 63.9 km</text>
+<text x="328" y="527" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#9a9385">未公布关门</text>
+<line x1="26" y1="554" x2="26" y2="634" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="594" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="597" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">7</text>
+<rect x="42" y="567" width="298" height="54" rx="6" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="589" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Smarts Ranch</text>
+<text x="54" y="607" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">47.5 mi · 76.4 km</text>
+<text x="328" y="607" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#9a9385">未公布关门</text>
+<line x1="26" y1="634" x2="26" y2="714" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="674" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="677" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">8</text>
+<rect x="42" y="647" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="669" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Cactus Flats</text>
+<text x="54" y="687" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">51.4 mi · 82.7 km</text>
+<text x="328" y="687" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Sat 05:30</text>
+<line x1="26" y1="714" x2="26" y2="794" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="754" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="757" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">9</text>
+<rect x="42" y="727" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="749" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Doble Camp 2</text>
+<text x="54" y="767" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">55.4 mi · 89.2 km</text>
+<text x="328" y="767" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Sat 07:30</text>
+<line x1="26" y1="794" x2="26" y2="874" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="834" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="837" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">10</text>
+<rect x="42" y="807" width="298" height="54" rx="6" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="829" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Burns Canyon 2</text>
+<text x="54" y="847" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">61.5 mi · 99.0 km</text>
+<text x="328" y="847" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#9a9385">未公布关门</text>
+<line x1="26" y1="874" x2="26" y2="954" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="914" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="917" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">11</text>
+<rect x="42" y="887" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="909" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Sugarloaf 1</text>
+<text x="54" y="927" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">69.3 mi · 111.5 km</text>
+<text x="328" y="927" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Sat 13:00</text>
+<line x1="26" y1="954" x2="26" y2="1034" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="994" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="997" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">12</text>
+<rect x="42" y="967" width="298" height="54" rx="6" fill="#ffffff" stroke="#ddd7ca" stroke-width="1"/>
+<text x="54" y="989" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Balky Horse</text>
+<text x="54" y="1007" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">78.1 mi · 125.7 km</text>
+<text x="328" y="1007" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#9a9385">未公布关门</text>
+<line x1="26" y1="1034" x2="26" y2="1114" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="1074" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="1077" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">13</text>
+<rect x="42" y="1047" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="1069" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Sugarloaf 2</text>
+<text x="54" y="1087" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">83.0 mi · 133.6 km</text>
+<text x="328" y="1087" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Sat 19:00</text>
+<line x1="26" y1="1114" x2="26" y2="1194" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="1154" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="1157" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">14</text>
+<rect x="42" y="1127" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="1149" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Bear Mountain</text>
+<text x="54" y="1167" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">89.2 mi · 143.6 km</text>
+<text x="328" y="1167" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Sat 21:00</text>
+<line x1="26" y1="1194" x2="26" y2="1274" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="1234" r="7" fill="#fcfbf7" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="1237" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#345f46">15</text>
+<rect x="42" y="1207" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="1229" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Snow Summit</text>
+<text x="54" y="1247" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">95.5 mi · 153.7 km</text>
+<text x="328" y="1247" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Sat 23:30</text>
+<line x1="26" y1="1274" x2="26" y2="1354" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="26" cy="1314" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="26" y="1317" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#ffffff">16</text>
+<rect x="42" y="1287" width="298" height="54" rx="6" fill="#fbf4ef" stroke="#dcb9a9" stroke-width="1"/>
+<text x="54" y="1309" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">Finish · The Village</text>
+<text x="54" y="1327" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#647067">100.1 mi · 161.1 km</text>
+<text x="328" y="1327" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#a33f31">关门 Sun 01:00</text>
+<line x1="20" y1="1380" x2="340" y2="1380" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="1398" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">Start Fri 13:00 → Finish Sun 01:00 · 36 h limit · cut-offs only where published.</text>
+<text x="20" y="1412" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">本站自制结构图，不是官方地图或赛道剖面；累计 km 按官方英里换算，保留 1 位小数。</text>
+</svg>

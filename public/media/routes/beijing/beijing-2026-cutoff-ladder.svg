@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1138" viewBox="0 0 360 1138" role="img" aria-label="Beijing Marathon 2026 nine cut-off points and reverse-engineered segment pace">
+<rect width="360" height="1138" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">北京马拉松 2026 · 关门阶梯</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">07:30 起跑 · 6 小时 · 9 个官方关门点 · 42.195 km</text>
+<text x="20" y="64" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">红色 = 按关门时刻反算最紧的两段；每段分钟/配速均为算术结果</text>
+<line x1="20" y1="78" x2="340" y2="78" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="27" cy="142" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="27" y="145" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#ffffff">1</text>
+<rect x="43" y="106" width="297" height="78" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="55" y="126" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">起点 · 天安门广场</text>
+<text x="328" y="126" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#345f46">07:30</text>
+<text x="55" y="146" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">0 km</text>
+<text x="55" y="163" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#345f46">起跑</text>
+<line x1="27" y1="180" x2="27" y2="238" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="238" r="7" fill="#fcfbf7" stroke="#8aa58f" stroke-width="1.6"/>
+<text x="27" y="241" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#8aa58f">2</text>
+<rect x="43" y="202" width="297" height="78" rx="7" fill="#f6f8f3" stroke="#d8e0d4" stroke-width="1"/>
+<text x="55" y="222" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">5 km</text>
+<text x="328" y="222" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#5f7764">08:25</text>
+<text x="55" y="242" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">5 km</text>
+<text x="55" y="259" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#5f7764">55 分钟 · 11:00/km</text>
+<line x1="27" y1="276" x2="27" y2="334" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="334" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="337" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#a33f31">3</text>
+<rect x="43" y="298" width="297" height="78" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="318" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">10 km</text>
+<text x="328" y="318" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#a33f31">09:00</text>
+<text x="55" y="338" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">10 km</text>
+<text x="55" y="355" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#a33f31">35 分钟 · 7:00/km</text>
+<line x1="27" y1="372" x2="27" y2="430" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="430" r="7" fill="#fcfbf7" stroke="#4f6f82" stroke-width="1.6"/>
+<text x="27" y="433" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#4f6f82">4</text>
+<rect x="43" y="394" width="297" height="78" rx="7" fill="#f3f6f8" stroke="#cdd9df" stroke-width="1"/>
+<text x="55" y="414" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">15 km</text>
+<text x="328" y="414" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#4f6f82">09:40</text>
+<text x="55" y="434" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">15 km</text>
+<text x="55" y="451" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#4f6f82">40 分钟 · 8:00/km</text>
+<line x1="27" y1="468" x2="27" y2="526" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="526" r="7" fill="#fcfbf7" stroke="#4f6f82" stroke-width="1.6"/>
+<text x="27" y="529" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#4f6f82">5</text>
+<rect x="43" y="490" width="297" height="78" rx="7" fill="#f3f6f8" stroke="#cdd9df" stroke-width="1"/>
+<text x="55" y="510" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">20 km</text>
+<text x="328" y="510" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#4f6f82">10:20</text>
+<text x="55" y="530" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">20 km</text>
+<text x="55" y="547" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#4f6f82">40 分钟 · 8:00/km</text>
+<line x1="27" y1="564" x2="27" y2="622" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="622" r="7" fill="#fcfbf7" stroke="#4f6f82" stroke-width="1.6"/>
+<text x="27" y="625" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#4f6f82">6</text>
+<rect x="43" y="586" width="297" height="78" rx="7" fill="#f3f6f8" stroke="#cdd9df" stroke-width="1"/>
+<text x="55" y="606" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">半程</text>
+<text x="328" y="606" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#4f6f82">10:30</text>
+<text x="55" y="626" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">21.0975 km</text>
+<text x="55" y="643" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#4f6f82">10 分钟 · 9:07/km</text>
+<line x1="27" y1="660" x2="27" y2="718" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="718" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="721" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#a33f31">7</text>
+<rect x="43" y="682" width="297" height="78" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="702" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">25 km</text>
+<text x="328" y="702" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#a33f31">11:00</text>
+<text x="55" y="722" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">25 km</text>
+<text x="55" y="739" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#a33f31">30 分钟 · 7:41/km</text>
+<line x1="27" y1="756" x2="27" y2="814" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="814" r="7" fill="#fcfbf7" stroke="#4f6f82" stroke-width="1.6"/>
+<text x="27" y="817" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#4f6f82">8</text>
+<rect x="43" y="778" width="297" height="78" rx="7" fill="#f3f6f8" stroke="#cdd9df" stroke-width="1"/>
+<text x="55" y="798" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">30 km</text>
+<text x="328" y="798" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#4f6f82">11:45</text>
+<text x="55" y="818" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">30 km</text>
+<text x="55" y="835" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#4f6f82">45 分钟 · 9:00/km</text>
+<line x1="27" y1="852" x2="27" y2="910" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="910" r="7" fill="#fcfbf7" stroke="#4f6f82" stroke-width="1.6"/>
+<text x="27" y="913" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#4f6f82">9</text>
+<rect x="43" y="874" width="297" height="78" rx="7" fill="#f3f6f8" stroke="#cdd9df" stroke-width="1"/>
+<text x="55" y="894" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">35 km</text>
+<text x="328" y="894" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#4f6f82">12:30</text>
+<text x="55" y="914" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">35 km</text>
+<text x="55" y="931" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#4f6f82">45 分钟 · 9:00/km</text>
+<line x1="27" y1="948" x2="27" y2="1006" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="1006" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="27" y="1009" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.5" font-weight="700" fill="#ffffff">10</text>
+<rect x="43" y="970" width="297" height="78" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="55" y="990" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12.5" font-weight="700" fill="#1f2a24">终点 · 景观大道</text>
+<text x="328" y="990" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700" fill="#345f46">13:30</text>
+<text x="55" y="1010" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" fill="#5d675f">42.195 km</text>
+<text x="55" y="1027" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.2" font-weight="600" fill="#345f46">60 分钟 · 8:20/km</text>
+<line x1="20" y1="1084" x2="340" y2="1084" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="1102" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">最紧：5→10 km 7:00/km；半程→25 km 7:41/km。最松：起点→5 km 11:00/km。</text>
+<text x="20" y="1116" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">分钟/配速由官方关门时刻 ÷ 官方公里差算出，不是官方配速建议或赛道实测。</text>
+<text x="20" y="1128" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.4" fill="#8a9189">官方未公布累计爬升/下降；本图不推算坡度，也不代表海拔剖面。</text>
+</svg>

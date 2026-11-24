@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1438" viewBox="0 0 360 1438" role="img" aria-label="Val d'Aran by UTMB 2027 VDA seventeen segment chain with cumulative distance, elevation and published cut-off times">
+<rect width="360" height="1438" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">Val d'Aran 2027 · VDA 17 段</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">163.0 km · 16 个中间计时点 · 14 个中途关门</text>
+<text x="20" y="64" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" fill="#5d675f">红色 = 官方显示文本有关门；灰色 = 无，不按配速反推</text>
+<line x1="20" y1="78" x2="340" y2="78" stroke="#d8d0c0" stroke-width="1"/>
+<circle cx="27" cy="132" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="135" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">1</text>
+<rect x="43" y="107" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="120" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Vielha</text>
+<text x="55" y="133" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Bassa d'Oles</text>
+<text x="55" y="150" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+1,252 / −634 m · 1,600 m</text>
+<text x="328" y="120" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">10.5 km</text>
+<text x="328" y="137" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周五 19:15</text>
+<line x1="27" y1="160" x2="27" y2="206" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="206" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="209" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">2</text>
+<rect x="43" y="181" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="194" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Bassa d'Oles</text>
+<text x="55" y="207" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Artiga de Lin</text>
+<text x="55" y="224" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+429 / −843 m · 1,185 m</text>
+<text x="328" y="194" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">21.0 km</text>
+<text x="328" y="211" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周五 21:15</text>
+<line x1="27" y1="234" x2="27" y2="280" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="280" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="283" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#7d8a90">3</text>
+<rect x="43" y="255" width="297" height="66" rx="7" fill="#f7f8f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="268" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Artiga de Lin</text>
+<text x="55" y="281" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Poilaner</text>
+<text x="55" y="298" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+1,356 / −547 m · 2,000 m</text>
+<text x="328" y="268" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#5f6d73">32.8 km</text>
+<text x="328" y="285" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#5f6d73">无</text>
+<line x1="27" y1="308" x2="27" y2="354" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="354" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="357" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">4</text>
+<rect x="43" y="329" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="342" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Poilaner</text>
+<text x="55" y="355" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Portilhon</text>
+<text x="55" y="372" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+597 / −1,302 m · 1,292 m</text>
+<text x="328" y="342" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">42.6 km</text>
+<text x="328" y="359" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周六 04:00</text>
+<line x1="27" y1="382" x2="27" y2="428" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="428" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="431" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">5</text>
+<rect x="43" y="403" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="416" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Portilhon</text>
+<text x="55" y="429" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Bossòst</text>
+<text x="55" y="446" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+146 / −725 m · 710 m</text>
+<text x="328" y="416" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">49.2 km</text>
+<text x="328" y="433" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周六 05:30</text>
+<line x1="27" y1="456" x2="27" y2="502" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="502" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="505" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">6</text>
+<rect x="43" y="477" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="490" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Bossòst</text>
+<text x="55" y="503" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Canejan</text>
+<text x="55" y="520" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+472 / −287 m · 891 m</text>
+<text x="328" y="490" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">58.2 km</text>
+<text x="328" y="507" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周六 08:00</text>
+<line x1="27" y1="530" x2="27" y2="576" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="576" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="579" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">7</text>
+<rect x="43" y="551" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="564" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Canejan</text>
+<text x="55" y="577" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Refugi Honeria</text>
+<text x="55" y="594" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+650 / −529 m · 1,017 m</text>
+<text x="328" y="564" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">65.8 km</text>
+<text x="328" y="581" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周六 09:15</text>
+<line x1="27" y1="604" x2="27" y2="650" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="650" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="653" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">8</text>
+<rect x="43" y="625" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="638" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Refugi Honeria</text>
+<text x="55" y="651" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Còth de Varradòs</text>
+<text x="55" y="668" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+1,521 / −485 m · 2,048 m</text>
+<text x="328" y="638" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">81.8 km</text>
+<text x="328" y="655" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周六 16:00</text>
+<line x1="27" y1="678" x2="27" y2="724" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="724" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="727" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">9</text>
+<rect x="43" y="699" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="712" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Còth de Varradòs</text>
+<text x="55" y="725" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Montgarri</text>
+<text x="55" y="742" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+782 / −1,166 m · 1,659 m</text>
+<text x="328" y="712" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">99.7 km</text>
+<text x="328" y="729" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周六 20:45</text>
+<line x1="27" y1="752" x2="27" y2="798" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="798" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="801" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">10</text>
+<rect x="43" y="773" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="786" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Montgarri</text>
+<text x="55" y="799" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Beret</text>
+<text x="55" y="816" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+211 / −20 m · 1,850 m</text>
+<text x="328" y="786" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">104.8 km</text>
+<text x="328" y="803" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周六 22:15</text>
+<line x1="27" y1="826" x2="27" y2="872" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="872" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="875" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">11</text>
+<rect x="43" y="847" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="860" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Beret</text>
+<text x="55" y="873" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Salardú</text>
+<text x="55" y="890" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+63 / −654 m · 1,260 m</text>
+<text x="328" y="860" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">113.7 km</text>
+<text x="328" y="877" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周日 00:00</text>
+<line x1="27" y1="900" x2="27" y2="946" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="946" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="949" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">12</text>
+<rect x="43" y="921" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="934" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Salardú</text>
+<text x="55" y="947" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Banhs de Tredòs</text>
+<text x="55" y="964" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+540 / −46 m · 1,759 m</text>
+<text x="328" y="934" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">122.6 km</text>
+<text x="328" y="951" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周日 02:45</text>
+<line x1="27" y1="974" x2="27" y2="1020" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="1020" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="1023" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">13</text>
+<rect x="43" y="995" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="1008" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Banhs de Tredòs</text>
+<text x="55" y="1021" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Colomèrs</text>
+<text x="55" y="1038" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+665 / −439 m · 1,980 m</text>
+<text x="328" y="1008" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">134.2 km</text>
+<text x="328" y="1025" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周日 07:00</text>
+<line x1="27" y1="1048" x2="27" y2="1094" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="1094" r="7" fill="#fcfbf7" stroke="#7d8a90" stroke-width="1.6"/>
+<text x="27" y="1097" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#7d8a90">14</text>
+<rect x="43" y="1069" width="297" height="66" rx="7" fill="#f7f8f8" stroke="#d8dee0" stroke-width="1"/>
+<text x="55" y="1082" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Colomèrs</text>
+<text x="55" y="1095" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Mont-Romies</text>
+<text x="55" y="1112" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+258 / −473 m · 1,765 m</text>
+<text x="328" y="1082" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#5f6d73">144.5 km</text>
+<text x="328" y="1099" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#5f6d73">无</text>
+<line x1="27" y1="1122" x2="27" y2="1168" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="1168" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="1171" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">15</text>
+<rect x="43" y="1143" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="1156" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Mont-Romies</text>
+<text x="55" y="1169" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Arties</text>
+<text x="55" y="1186" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+10 / −634 m · 1,139 m</text>
+<text x="328" y="1156" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">149.0 km</text>
+<text x="328" y="1173" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周日 10:45</text>
+<line x1="27" y1="1196" x2="27" y2="1242" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="1242" r="7" fill="#fcfbf7" stroke="#a33f31" stroke-width="1.6"/>
+<text x="27" y="1245" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#a33f31">16</text>
+<rect x="43" y="1217" width="297" height="66" rx="7" fill="#fbf2ef" stroke="#e4c7bf" stroke-width="1"/>
+<text x="55" y="1230" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Arties</text>
+<text x="55" y="1243" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Stet Escunhau</text>
+<text x="55" y="1260" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+677 / −36 m · 1,780 m</text>
+<text x="328" y="1230" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#a33f31">154.9 km</text>
+<text x="328" y="1247" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#a33f31">周日 13:15</text>
+<line x1="27" y1="1270" x2="27" y2="1316" stroke="#b9c5bb" stroke-width="1.5"/>
+<circle cx="27" cy="1316" r="7" fill="#345f46" stroke="#345f46" stroke-width="1.6"/>
+<text x="27" y="1319" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" font-weight="700" fill="#ffffff">17</text>
+<rect x="43" y="1291" width="297" height="66" rx="7" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="55" y="1304" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.3" font-weight="700" fill="#1f2a24">Stet Escunhau</text>
+<text x="55" y="1317" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.4" fill="#5d675f">→ Vielha</text>
+<text x="55" y="1334" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">+435 / −1,238 m · 982 m</text>
+<text x="328" y="1304" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5" font-weight="700" fill="#345f46">163.0 km</text>
+<text x="328" y="1321" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="600" fill="#345f46">周日 16:00</text>
+<line x1="20" y1="1380" x2="340" y2="1380" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="1398" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.6" fill="#4f5a52">163.0 km 为官方内嵌 track；赛事卡写 163 km，两个口径并列。</text>
+<text x="20" y="1413" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">补给只分 food / hotFood / drink / none 四级；本图不写具体食品。</text>
+<text x="20" y="1428" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#8a9189">顺序示意，横向位置与长度不成比例；不画赛道几何，也不替代官方 GPX。</text>
+</svg>

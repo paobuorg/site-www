@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">QMT135 起点、关键节点与终点顺序示意</title>
+  <desc id="desc">QMT135 从 Baie-Saint-Paul 出发，经 Le Massif、Saint-Tite-des-Caps、MSA、两个 Sommet 与 Auberge du Fondeur，最后到 Mont-Sainte-Anne。节点按行进顺序排列，不是比例地图，也不代表 2027 已确认轨迹。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#08131A"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1040" cy="120" r="240" fill="#08B89D" opacity="0.07"/>
+  <circle cx="110" cy="730" r="220" fill="#1761A8" opacity="0.08"/>
+
+  <text x="54" y="64" fill="#45E0BF" font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="19" font-weight="700" letter-spacing="4">QMT135 / COURSE CORRIDOR</text>
+  <text x="54" y="118" fill="#F4FFFC" font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="42" font-weight="750">从 Baie-Saint-Paul 到 Mont-Sainte-Anne</text>
+  <text x="54" y="156" fill="#91A8B8" font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="19">Charlevoix 北岸 · 关键节点按行进顺序排列 · 非比例地图</text>
+  <text x="54" y="192" fill="#45E0BF" font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="18" font-weight="600">134 km · +6,000 m · −5,859 m · 37 h · 20:00 起跑</text>
+
+  <!-- land panel -->
+  <path d="M0 292 C210 270 360 300 520 286 C700 270 860 300 1030 286 C1100 280 1150 274 1200 270 L1200 760 L0 760 Z" fill="#0E2629" opacity="0.75"/>
+  <path d="M0 292 C210 270 360 300 520 286 C700 270 860 300 1030 286 C1100 280 1150 274 1200 270" fill="none" stroke="#24506A" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- route line -->
+  <g transform="translate(-200,0)">
+  <path d="M600 250 C626 274 636 294 620 320 C604 346 584 382 580 410 C576 438 634 470 620 500 C606 530 574 540 580 560 C586 580 638 602 620 630 C602 658 596 676 600 700" fill="none" stroke="#45E0BF" stroke-width="5" stroke-dasharray="11 9"/>
+  <path d="M600 250 C626 274 636 294 620 320 C604 346 584 382 580 410 C576 438 634 470 620 500 C606 530 574 540 580 560 C586 580 638 602 620 630 C602 658 596 676 600 700" fill="none" stroke="#45E0BF" stroke-width="18" opacity="0.12"/>
+
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <!-- start -->
+    <circle cx="600" cy="250" r="12" fill="#F56765" stroke="#F4FFFC" stroke-width="3"/>
+    <text x="632" y="240" fill="#F4FFFC" font-size="23" font-weight="700">Baie-Saint-Paul</text>
+    <text x="632" y="266" fill="#91A8B8" font-size="16">KM 0 · 20:00 起跑</text>
+    <text x="632" y="288" fill="#45E0BF" font-size="15">起点：Hôtel Le Germain</text>
+
+    <!-- Le Massif -->
+    <circle cx="620" cy="320" r="9" fill="#45E0BF" stroke="#F4FFFC" stroke-width="2"/>
+    <text x="590" y="310" fill="#F4FFFC" font-size="20" font-weight="650" text-anchor="end">Le Massif / Mont à Liguori</text>
+    <text x="590" y="334" fill="#91A8B8" font-size="15" text-anchor="end">KM 39.1 · 存包 #1 · crew 可进</text>
+
+    <!-- St-Tite -->
+    <circle cx="580" cy="410" r="9" fill="#45E0BF" stroke="#F4FFFC" stroke-width="2"/>
+    <text x="612" y="400" fill="#F4FFFC" font-size="20" font-weight="650">Saint-Tite-des-Caps</text>
+    <text x="612" y="424" fill="#91A8B8" font-size="15">KM 79.5 · 存包 #2 · crew 可进</text>
+
+    <!-- MSA -->
+    <circle cx="620" cy="500" r="9" fill="#45E0BF" stroke="#F4FFFC" stroke-width="2"/>
+    <text x="590" y="490" fill="#F4FFFC" font-size="20" font-weight="650" text-anchor="end">MSA</text>
+    <text x="590" y="514" fill="#91A8B8" font-size="15" text-anchor="end">KM 101.5 · 存包 #3 · crew 可进</text>
+
+    <!-- summits -->
+    <circle cx="580" cy="560" r="9" fill="#F5C451" stroke="#F4FFFC" stroke-width="2"/>
+    <text x="612" y="550" fill="#F5C451" font-size="20" font-weight="650">Sommet 1–2</text>
+    <text x="612" y="574" fill="#91A8B8" font-size="15">KM 105.7–110.3 · 无车行</text>
+
+    <!-- Fondeur -->
+    <circle cx="620" cy="630" r="9" fill="#45E0BF" stroke="#F4FFFC" stroke-width="2"/>
+    <text x="590" y="620" fill="#F4FFFC" font-size="20" font-weight="650" text-anchor="end">Auberge du Fondeur</text>
+    <text x="590" y="644" fill="#91A8B8" font-size="15" text-anchor="end">KM 124.9 · crew 可进</text>
+
+    <!-- finish -->
+    <circle cx="600" cy="700" r="12" fill="#F56765" stroke="#F4FFFC" stroke-width="3"/>
+    <text x="632" y="692" fill="#F4FFFC" font-size="23" font-weight="700">Mont-Sainte-Anne</text>
+    <text x="632" y="718" fill="#91A8B8" font-size="16">KM 134 · 37 h 关门</text>
+  </g>
+  </g>
+
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <rect x="900" y="300" width="240" height="130" rx="16" fill="#10283A" stroke="#24506A" opacity="0.94"/>
+    <text x="922" y="334" fill="#91A8B8" font-size="15">主要赛段</text>
+    <text x="922" y="366" fill="#F4FFFC" font-size="23" font-weight="700">11 段 · 10 个补给站</text>
+    <text x="922" y="398" fill="#45E0BF" font-size="15">技术等级 5/5</text>
+    <text x="922" y="420" fill="#45E0BF" font-size="15">平均完赛 26:00:00</text>
+  </g>
+
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <line x1="54" y1="738" x2="1146" y2="738" stroke="#24506A" stroke-width="1"/>
+    <text x="54" y="766" fill="#F56765" font-size="15" font-weight="600">顺序示意，不画真实折返线，不能导航；请用官方 2026 GPX / 交互地图核对。</text>
+    <text x="54" y="790" fill="#5F7A8A" font-size="14">Data: QMT135 official course page · Design: RUNUP editorial · CC BY 4.0</text>
+  </g>
+</svg>

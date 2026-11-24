@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="620" viewBox="0 0 360 620" role="img" aria-label="Buenos Aires Marathon 2026 ten start corrals from 06:57 to 07:11 and the time available before the hard 13:00 finish close; bars are scaled only within the 5:45 to 6:05 window">
+<rect width="360" height="620" fill="#fcfbf7"/>
+<text x="20" y="28" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="13.0" font-weight="700" fill="#1f2a24">10 corrals · hard close 13:00</text>
+<text x="20" y="45" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#5d675f">Start window 06:57–07:11 · 14 min · official total limit 6:00:00</text>
+<text x="20" y="60" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">The later the corral, the less time before the same 13:00 closure.</text>
+<text x="20" y="73" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">后批次起跑越晚，离同一个 13:00 关门越近；不是从个人跨线另算。</text>
+<line x1="20" y1="82" x2="340" y2="82" stroke="#d8d0c0" stroke-width="1"/>
+<rect x="20" y="92" width="320" height="34" rx="6" fill="#edf4ee" stroke="#b7cbbd" stroke-width="1"/>
+<text x="31" y="108" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#2f6b57">06:57 first wave 第一批</text>
+<text x="181" y="108" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.0" fill="#46534b">14 min spread 起跑跨度</text>
+<text x="329" y="108" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" font-weight="700" fill="#8c4227">13:00 close 关门</text>
+<text x="20" y="136" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.4" fill="#78827b">Corral 批次 · start 起跑 · available before close 距关门可用时间</text>
+<line x1="20" y1="174" x2="340" y2="174" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="146" width="320" height="27" rx="5" fill="#ffffff" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="163.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">P</text>
+<text x="67" y="163.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">06:57</text>
+<text x="118" y="163.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="155" width="95.8" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="163.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">6:03</text>
+<line x1="20" y1="212" x2="340" y2="212" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="184" width="320" height="27" rx="5" fill="#f8faf9" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="201.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">Elite</text>
+<text x="67" y="201.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:00</text>
+<text x="118" y="201.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="193" width="80.5" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="201.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">6:00</text>
+<line x1="20" y1="250" x2="340" y2="250" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="222" width="320" height="27" rx="5" fill="#ffffff" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="239.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">1</text>
+<text x="67" y="239.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:02</text>
+<text x="118" y="239.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="231" width="70.3" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="239.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">5:58</text>
+<line x1="20" y1="288" x2="340" y2="288" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="260" width="320" height="27" rx="5" fill="#f8faf9" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="277.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">2</text>
+<text x="67" y="277.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:03</text>
+<text x="118" y="277.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="269" width="65.19999999999999" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="277.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">5:57</text>
+<line x1="20" y1="326" x2="340" y2="326" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="298" width="320" height="27" rx="5" fill="#ffffff" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="315.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">3</text>
+<text x="67" y="315.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:04</text>
+<text x="118" y="315.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="307" width="60.099999999999994" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="315.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">5:56</text>
+<line x1="20" y1="364" x2="340" y2="364" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="336" width="320" height="27" rx="5" fill="#f8faf9" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="353.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">4</text>
+<text x="67" y="353.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:06</text>
+<text x="118" y="353.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="345" width="49.9" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="353.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">5:54</text>
+<line x1="20" y1="402" x2="340" y2="402" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="374" width="320" height="27" rx="5" fill="#ffffff" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="391.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">5</text>
+<text x="67" y="391.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:08</text>
+<text x="118" y="391.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="383" width="39.699999999999996" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="391.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">5:52</text>
+<line x1="20" y1="440" x2="340" y2="440" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="412" width="320" height="27" rx="5" fill="#f8faf9" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="429.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">6</text>
+<text x="67" y="429.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:09</text>
+<text x="118" y="429.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="421" width="34.599999999999994" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="429.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">5:51</text>
+<line x1="20" y1="478" x2="340" y2="478" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="450" width="320" height="27" rx="5" fill="#ffffff" stroke="#e7e1d6" stroke-width="1"/>
+<text x="31" y="467.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#2f6b57">7</text>
+<text x="67" y="467.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:10</text>
+<text x="118" y="467.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="459" width="29.5" height="9" rx="3" fill="#5b8a73"/>
+<text x="331" y="467.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#2f6b57">5:50</text>
+<line x1="20" y1="516" x2="340" y2="516" stroke="#ece6da" stroke-width="0.8"/>
+<rect x="20" y="488" width="320" height="27" rx="5" fill="#fbf0e8" stroke="#dfb59e" stroke-width="1"/>
+<text x="31" y="505.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" font-weight="700" fill="#8c4227">8</text>
+<text x="67" y="505.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#46534b">07:11</text>
+<text x="118" y="505.5" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.6" fill="#78827b">to 13:00</text>
+<rect x="216" y="497" width="24.4" height="9" rx="3" fill="#b35c35"/>
+<text x="331" y="505.5" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.0" font-weight="700" fill="#8c4227">5:49</text>
+<text x="20" y="548" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#7b857e">Bars compare only the 5:45–6:05 window; they are not a full-race scale. 条形只在这一 20 分钟区间内缩放。</text>
+<text x="20" y="562" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#7b857e">Official rules do not state gun time or chip time for the cut-off. 规程未写按枪声或净计时。</text>
+<text x="20" y="576" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#7b857e">Data: official 2026 regulations. 数据：官方 2026 规程。Not a race map. 非赛道地图。</text>
+<text x="20" y="600" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="7.2" fill="#7b857e">Editorial diagram, CC BY 4.0. 编辑部示意图。</text>
+</svg>

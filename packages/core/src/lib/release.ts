@@ -230,6 +230,7 @@ self.addEventListener('fetch', (event) => {
   if (request.mode === 'navigate') {
     event.respondWith((async () => {
       try {
+        if (self.navigator.onLine === false) throw new Error('offline');
         const response = await fetch(request);
         if (response.ok) {
           const copy = response.clone();

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="760" viewBox="0 0 360 760" role="img" aria-labelledby="title desc">
+  <title id="title">Mt.FUJI 100 2026: four official or file-derived distance readings</title>
+  <desc id="desc">Four bars use a 162 to 168 km scale, not a zero baseline. The official 2026 edition record is 165.300 km with 6,461 m of gain; the 2026 racer-information aid table ends at 167.000 km and does not give gain; the official GPX measures 163.482 km in two dimensions with 8,122 m raw positive gain; the same GPX measures 165.364 km in three dimensions with 7,777 m after a 3 m threshold. Deviations from 165.300 km are 0 m, +1,700 m, -1,818 m and +64 m. A dashed line marks 165.300 km. The 2027 race information gives the same 165.3 km with 6,463 m of gain, 2 m more than the 2026 record, and is not drawn as a fifth distance. The bars are schematic and are not a course profile, map, navigation aid or pacing plan.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="360" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07121A"/>
+      <stop offset="0.55" stop-color="#0D1926"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="760" fill="url(#bg)"/>
+  <circle cx="326" cy="46" r="98" fill="#F4B860" opacity="0.06"/>
+  <circle cx="30" cy="720" r="92" fill="#5FD3C4" opacity="0.05"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <text x="12" y="30" fill="#F4B860" font-size="14" font-weight="700" letter-spacing="1.6">MT.FUJI 100 / 2026 FUJI100mi</text>
+    <text x="12" y="70" fill="#F4FFFC" font-size="26" font-weight="750">四套距离 / Four distances</text>
+    <text x="12" y="100" fill="#F4FFFC" font-size="15" font-weight="700">165.3 · 167.0 · 163.482 · 165.364 km</text>
+    <text x="12" y="124" fill="#91A8B8" font-size="12">刻度不是零基线：162–168 km；条形只表达相对差</text>
+    <text x="12" y="146" fill="#6E8494" font-size="11.5">2026 届官方纪录 / 手册 / 同一 GPX 的二维与三维读数</text>
+    <text x="196.8" y="176" fill="#F4B860" font-size="11" text-anchor="middle">165.300 基准</text>
+  </g>
+  <line x1="196.8" y1="186" x2="196.8" y2="574" stroke="#F4B860" stroke-width="1" stroke-dasharray="4 5" opacity="0.6"/>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <g transform="translate(12,214)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="13" font-weight="700">官方届次纪录 / Edition record</text>
+      <text x="336" y="0" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">165.300 km</text>
+      <rect x="0" y="12" width="336" height="15" rx="7.5" fill="#13263A"/>
+      <rect x="0" y="12" width="184.8" height="15" rx="7.5" fill="#F4B860"/>
+      <text x="0" y="44" fill="#FFB38A" font-size="12.5">距 165.300 km：基准 0 m · 爬升 6,461 m</text>
+      <text x="0" y="62" fill="#6E8494" font-size="11.5">历史页 2026 行</text>
+    </g>
+    <g transform="translate(12,314)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="13" font-weight="700">官方手册补给表 / Race info table</text>
+      <text x="336" y="0" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">167.000 km</text>
+      <rect x="0" y="12" width="336" height="15" rx="7.5" fill="#13263A"/>
+      <rect x="0" y="12" width="280.0" height="15" rx="7.5" fill="#5FD3C4"/>
+      <text x="0" y="44" fill="#FFB38A" font-size="12.5">距 165.300 km：+1,700 m · 爬升 未给 / not given</text>
+      <text x="0" y="62" fill="#6E8494" font-size="11.5">第 18 页逐站相加</text>
+    </g>
+    <g transform="translate(12,414)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="13" font-weight="700">官方 GPX 二维 / 2D</text>
+      <text x="336" y="0" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">163.482 km</text>
+      <rect x="0" y="12" width="336" height="15" rx="7.5" fill="#13263A"/>
+      <rect x="0" y="12" width="83.0" height="15" rx="7.5" fill="#8FD3FF"/>
+      <text x="0" y="44" fill="#FFB38A" font-size="12.5">距 165.300 km：−1,818 m · 爬升 8,122 m 原始</text>
+      <text x="0" y="62" fill="#6E8494" font-size="11.5">4,311 trkpt · Haversine</text>
+    </g>
+    <g transform="translate(12,514)">
+      <text x="0" y="0" fill="#F4FFFC" font-size="13" font-weight="700">官方 GPX 三维 / 3D</text>
+      <text x="336" y="0" fill="#F4FFFC" font-size="17" font-weight="750" text-anchor="end">165.364 km</text>
+      <rect x="0" y="12" width="336" height="15" rx="7.5" fill="#13263A"/>
+      <rect x="0" y="12" width="188.4" height="15" rx="7.5" fill="#FF8A5B"/>
+      <text x="0" y="44" fill="#FFB38A" font-size="12.5">距 165.300 km：+64 m · 爬升 7,777 m · 3 m</text>
+      <text x="0" y="62" fill="#6E8494" font-size="11.5">同文件加入高程</text>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <line x1="12" y1="600" x2="348" y2="600" stroke="#20374A" stroke-width="1"/>
+    <text x="12" y="626" fill="#F4B860" font-size="13" font-weight="700">2027 要项：165.3 km / 6,463 m</text>
+    <text x="12" y="646" fill="#91A8B8" font-size="12">同距离、爬升差 +2 m；不另画第五条“距离”。</text>
+    <text x="12" y="668" fill="#6E8494" font-size="11.5">四组数字均出自官方或同一官方文件；不平均、不替官方选值。</text>
+    <text x="12" y="690" fill="#6E8494" font-size="11.5">GPX 只外链；图形不是赛道剖面或配速计划。</text>
+    <text x="12" y="718" fill="#6E8494" font-size="10.5">Editorial graphic · CC BY 4.0 · not an official map</text>
+  </g>
+</svg>

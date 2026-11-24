@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="760" viewBox="0 0 360 760" role="img" aria-label="Black Canyon 100K and 50K comparison">
+<rect width="360" height="760" fill="#fcfbf7"/>
+<text x="20" y="30" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700" fill="#1f2a24">两个距离 · 一个周末</text>
+<text x="20" y="48" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" fill="#5d675f">100K / 50K 距离、升降、时限与波次 · 2027 官方 Key Stats</text>
+<line x1="20" y1="60" x2="340" y2="60" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="82" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9" font-weight="700" fill="#1f2a24">距离（0–110 km 非零刻度）</text>
+<text x="20" y="108" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">100K</text>
+<rect x="64" y="96" width="236.6" height="22" rx="4" fill="#345f46"/>
+<text x="296.6" y="111" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">100.1 km</text>
+<text x="304.6" y="111" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#5d675f">62.2 mi</text>
+<text x="20" y="156" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#1f2a24">50K</text>
+<rect x="64" y="144" width="122.43636363636364" height="22" rx="4" fill="#758f7c"/>
+<text x="182.43636363636364" y="159" text-anchor="end" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">51.8 km</text>
+<text x="190.43636363636364" y="159" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.5" fill="#5d675f">32.2 mi</text>
+<rect x="20" y="212" width="160" height="330" rx="9" fill="#f1f7f2" stroke="#b7cbbd" stroke-width="1"/>
+<text x="32" y="238" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">100K</text>
+<text x="32" y="264" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">累计爬升 +1,591 m</text>
+<line x1="32" y1="275" x2="168" y2="275" stroke="#e5dfd2" stroke-width="1"/>
+<text x="32" y="309" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">累计下降 −2,237 m</text>
+<line x1="32" y1="320" x2="168" y2="320" stroke="#e5dfd2" stroke-width="1"/>
+<text x="32" y="354" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">时限 20 小时</text>
+<line x1="32" y1="365" x2="168" y2="365" stroke="#e5dfd2" stroke-width="1"/>
+<text x="32" y="399" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">三波 07:00 / 07:30 / 08:00</text>
+<line x1="32" y1="410" x2="168" y2="410" stroke="#e5dfd2" stroke-width="1"/>
+<text x="32" y="444" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">WSER 资格 17 小时</text>
+<line x1="32" y1="455" x2="168" y2="455" stroke="#e5dfd2" stroke-width="1"/>
+<text x="32" y="489" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">2027 金票 top 3</text>
+<rect x="192" y="212" width="160" height="330" rx="9" fill="#f5f5f0" stroke="#ddd7ca" stroke-width="1"/>
+<text x="204" y="238" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700" fill="#1f2a24">50K</text>
+<text x="204" y="264" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">累计爬升 +611 m</text>
+<line x1="204" y1="275" x2="340" y2="275" stroke="#e5dfd2" stroke-width="1"/>
+<text x="204" y="309" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">累计下降 −1,221 m</text>
+<line x1="204" y1="320" x2="340" y2="320" stroke="#e5dfd2" stroke-width="1"/>
+<text x="204" y="354" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">时限 11 小时</text>
+<line x1="204" y1="365" x2="340" y2="365" stroke="#e5dfd2" stroke-width="1"/>
+<text x="204" y="399" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">三波 07:00 / 07:30 / 08:00</text>
+<line x1="204" y1="410" x2="340" y2="410" stroke="#e5dfd2" stroke-width="1"/>
+<text x="204" y="444" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">无 WSER 资格</text>
+<line x1="204" y1="455" x2="340" y2="455" stroke="#e5dfd2" stroke-width="1"/>
+<text x="204" y="489" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.4" fill="#5d675f">无金票</text>
+<line x1="20" y1="570" x2="340" y2="570" stroke="#d8d0c0" stroke-width="1"/>
+<text x="20" y="590" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">2026-11-24 官方页：50K 也已列出三波 07:00/07:30/08:00；11-20 抓取只见两波。</text>
+<text x="20" y="606" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">100K 距离：Key Stats 62.2 mi / 100.1 km；Strava 卡 62.7 mi。</text>
+<text x="20" y="622" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8.8" fill="#4f5a52">50K 爬升：Key Stats +2,004 ft（611 m）；Strava 卡 +1,994 ft。</text>
+<text x="20" y="646" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">本站自制对比图，不是官方路线图、海拔剖面或导航图；条形只比较距离量级。</text>
+<text x="20" y="662" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">100K 关门 20 小时；50K 关门 11 小时；WSER 17 小时资格线与 20 小时关门分开。</text>
+<text x="20" y="678" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="8" fill="#7a8178">100K/50K 均有爬升与下降的官方 estimated 值，不是实测。</text>
+</svg>
