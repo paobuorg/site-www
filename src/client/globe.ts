@@ -106,6 +106,8 @@ function createViewer(Cesium: CesiumModule, container: HTMLElement, highResoluti
     scene3DOnly: true,
     skyBox: false,
   });
+  viewer.scene.renderError.addEventListener(() => showFailure(container));
+  viewer.scene.canvas.addEventListener('webglcontextlost', () => showFailure(container));
   if (highResolution) {
     const detailLayer = viewer.imageryLayers.addImageryProvider(
       new Cesium.UrlTemplateImageryProvider({
@@ -235,6 +237,9 @@ function showFailure(container: HTMLElement): void {
       control.style.display = 'none';
     });
   document.querySelectorAll('.cesium-widget-errorPanel').forEach((panel) => panel.remove());
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.cesium-widget-errorPanel').forEach((panel) => panel.remove());
+  });
   container.querySelector<HTMLElement>('.globe-poster')?.classList.remove('is-hidden');
 }
 
