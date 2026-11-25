@@ -131,7 +131,9 @@ function createViewer(Cesium: CesiumModule, container: HTMLElement, highResoluti
   // On wide screens, atmosphere and FXAA add shader compilation to the first
   // render and are enabled right after the globe is revealed. Narrow screens
   // keep them on from the start to avoid repeated re-render work.
-  const deferPolish = window.matchMedia('(min-width: 1024px)').matches;
+  // Route maps skip atmosphere entirely: it adds shader compilation to a
+  // utilitarian map and can leave the canvas black for seconds after reveal.
+  const deferPolish = highResolution || window.matchMedia('(min-width: 1024px)').matches;
   scene.globe.showGroundAtmosphere = !deferPolish;
   scene.skyAtmosphere.show = !deferPolish;
   if (deferPolish && scene.postProcessStages?.fxaa) scene.postProcessStages.fxaa.enabled = false;
@@ -197,27 +199,42 @@ function enablePolish(viewer: any): void {
   });
 }
 
-function revealWhenReady(viewer: any, container: HTMLElement): void {
+function revealWhenReady(viewer: any, container: HTMLElement, polish = true): void {
   let finished = false;
+  let released = false;
   let listener: ((remaining: number) => void) | undefined;
-  const finish = () => {
+  const releaseLoader = () => {
+    if (released) return;
+    released = true;
+    const loading = container.querySelector<HTMLElement>('.globe-loading');
+    if (loading) loading.hidden = true;
+  };
+  const finish = (ready: boolean) => {
     if (finished) return;
+    if (!ready) {
+      // Deadline reached while tiles are still streaming: drop the spinner but
+      // keep the static globe, so the card never flashes an empty black box.
+      releaseLoader();
+      return;
+    }
     finished = true;
     if (listener) viewer.scene.globe.tileLoadProgressEvent.removeEventListener(listener);
+    releaseLoader();
     revealPoster(container);
-    enablePolish(viewer);
+    if (polish) enablePolish(viewer);
   };
   listener = (remaining: number) => {
-    if (remaining === 0) finish();
+    if (remaining === 0) finish(true);
   };
   viewer.scene.globe.tileLoadProgressEvent.addEventListener(listener);
   const deadline = performance.now() + 6_000;
   const poll = () => {
     if (finished) return;
-    if (viewer.scene.globe.tilesLoaded || performance.now() >= deadline) {
-      finish();
+    if (viewer.scene.globe.tilesLoaded) {
+      finish(true);
       return;
     }
+    if (performance.now() >= deadline) releaseLoader();
     requestAnimationFrame(poll);
   };
   requestAnimationFrame(poll);
@@ -451,7 +468,7 @@ export async function initRouteGlobe(): Promise<void> {
       viewer.scene.requestRender();
     };
     reset();
-    revealWhenReady(viewer, container);
+    revealWhenReady(viewer, container, false);
     installControls(viewer, container, reset, () => {});
     viewer.scene.requestRender();
   } catch (error) {

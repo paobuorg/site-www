@@ -207,27 +207,5 @@ const description = locale === 'zh-CN'
 </script>
 
 <style>
-  .poster-sphere {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    width: min(78vh, 68vw);
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-image: url('/textures/earth-blue-marble-2048.jpg');
-    background-size: 200% 100%;
-    background-position: 30% 46%;
-    box-shadow:
-      inset -50px -30px 110px rgba(2, 8, 20, 0.9),
-      inset 18px 10px 70px rgba(120, 210, 255, 0.14),
-      0 0 110px rgba(50, 180, 210, 0.16);
-    transform: translate(-50%, -50%);
-  }
-
-  @media (max-width: 767px) {
-    .poster-sphere {
-      left: 58%;
-      width: min(44dvh, 92vw);
-    }
-  }
+  /* .poster-sphere base styles live in @paobu/core components.css. */
 </style>
