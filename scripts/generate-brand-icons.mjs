@@ -34,14 +34,12 @@ const defs = `
 </defs>`;
 
 const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="跑起来 RUNUP">
-${defs}
-<circle cx="48" cy="48" r="44" fill="#E8FAF4"/>${bean}
+${defs}${bean}
 </svg>
 `;
 
 const anyIcon = (size) => `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 96 96">
-${defs}
-<circle cx="48" cy="48" r="44" fill="#E8FAF4"/>${bean}
+${defs}${bean}
 </svg>
 `;
 

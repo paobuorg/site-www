@@ -76,6 +76,7 @@ test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
   assert.match(logo, /跑起来/);
   assert.match(logo, /RUNUP/);
   assert.match(logo, /Bean/);
+  assert.match(logo, /backdrop=\{false\}/);
   assert.doesNotMatch(logo, /跑地图|RunMap/);
 
   const bean = fs.readFileSync(
@@ -99,9 +100,12 @@ test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
   ]) {
     assert.match(bean, new RegExp(`expression === '${expression}'`), expression);
   }
+  assert.match(bean, /backdrop\s*=\s*false/);
+  assert.match(bean, /\{backdrop && <circle cx="48" cy="48" r="44"/);
 
   const favicon = fs.readFileSync(path.join(siteRoot, 'public', 'favicon.svg'), 'utf8');
   assert.match(favicon, /aria-label="跑起来 RUNUP"/);
+  assert.doesNotMatch(favicon, /<circle cx="48" cy="48" r="44"/);
 
   const manifest = JSON.parse(
     fs.readFileSync(path.join(siteRoot, 'public', 'manifest.webmanifest'), 'utf8'),
