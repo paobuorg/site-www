@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
+import { loadContent, defaultContentRoots } from '@paobu/core/content';
 
 type Case = {
   locale: 'zh-CN' | 'en';

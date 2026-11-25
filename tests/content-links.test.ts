@@ -5,9 +5,7 @@ process.env.PUBLIC_ROUTES_ORIGIN = 'https://routes.test';
 process.env.PUBLIC_KNOWLEDGE_ORIGIN = 'https://learn.test';
 process.env.PUBLIC_TOOLS_ORIGIN = 'https://tools.test';
 
-const { loadContent, defaultContentRoots, renderMarkdown } = await import(
-  '../packages/core/src/content/load.ts'
-);
+const { loadContent, defaultContentRoots, renderMarkdown } = await import('@paobu/core/content');
 const content = loadContent({ roots: defaultContentRoots(), allowUnreviewed: true });
 const boston = content.bySlug('route', 'boston');
 const easyRun = content.bySlug('knowledge', 'easy-run');

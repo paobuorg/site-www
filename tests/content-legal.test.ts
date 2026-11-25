@@ -2,9 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
+import { loadContent, defaultContentRoots } from '@paobu/core/content';
 
 const siteRoot = path.join(import.meta.dirname, '..');
+const coreRoot = path.join(siteRoot, 'node_modules', '@paobu', 'core');
 const roots = defaultContentRoots();
 const content = loadContent({ roots, allowUnreviewed: true });
 
@@ -54,12 +55,12 @@ test('content repositories state CC BY 4.0 and the site code states MIT', () => 
 
 test('shared footer and legal page link to the licence page', () => {
   const footer = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'Footer.astro'),
+    path.join(coreRoot, 'src', 'components', 'Footer.astro'),
     'utf8',
   );
   assert.match(footer, /legal\//);
   const legalPage = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'LegalPage.astro'),
+    path.join(coreRoot, 'src', 'components', 'LegalPage.astro'),
     'utf8',
   );
   assert.match(legalPage, /CC BY 4\.0/);
@@ -69,7 +70,7 @@ test('shared footer and legal page link to the licence page', () => {
 
 test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
   const logo = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'Logo.astro'),
+    path.join(coreRoot, 'src', 'components', 'Logo.astro'),
     'utf8',
   );
   assert.match(logo, /跑起来/);
@@ -78,7 +79,7 @@ test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
   assert.doesNotMatch(logo, /跑地图|RunMap/);
 
   const bean = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'Bean.astro'),
+    path.join(coreRoot, 'src', 'components', 'Bean.astro'),
     'utf8',
   );
   for (const expression of [
@@ -123,13 +124,13 @@ test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
   }
 
   const footer = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'Footer.astro'),
+    path.join(coreRoot, 'src', 'components', 'Footer.astro'),
     'utf8',
   );
   assert.match(footer, /跑起来 RUNUP/);
 
   const layout = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'layouts', 'BaseLayout.astro'),
+    path.join(coreRoot, 'src', 'layouts', 'BaseLayout.astro'),
     'utf8',
   );
   assert.match(layout, /og:site_name" content="RUNUP"/);
@@ -142,7 +143,7 @@ test('the public brand is 跑起来 / RUNUP with the Douke bean mark', () => {
 
 test('AdSense is optional, production-only and limited to content detail pages', () => {
   const layout = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'layouts', 'BaseLayout.astro'),
+    path.join(coreRoot, 'src', 'layouts', 'BaseLayout.astro'),
     'utf8',
   );
   assert.match(layout, /PUBLIC_ADSENSE_CLIENT/);
@@ -151,7 +152,7 @@ test('AdSense is optional, production-only and limited to content detail pages',
   assert.match(layout, /!preview/);
 
   const footerAd = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'FooterAd.astro'),
+    path.join(coreRoot, 'src', 'components', 'FooterAd.astro'),
     'utf8',
   );
   assert.match(footerAd, /PUBLIC_ADSENSE_SLOT/);
@@ -166,14 +167,14 @@ test('AdSense is optional, production-only and limited to content detail pages',
   }
 
   const release = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'lib', 'release.ts'),
+    path.join(coreRoot, 'src', 'lib', 'release.ts'),
     'utf8',
   );
   assert.match(release, /ads\.txt/);
   assert.match(release, /google\.com, \$\{publisherId\}/);
 
   const legal = fs.readFileSync(
-    path.join(siteRoot, 'packages', 'core', 'src', 'components', 'LegalPage.astro'),
+    path.join(coreRoot, 'src', 'components', 'LegalPage.astro'),
     'utf8',
   );
   assert.match(legal, /adsenseEnabled/);

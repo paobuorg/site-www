@@ -1,10 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
-import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
-import { computeContentDigest } from '../packages/core/src/content/digest.ts';
+import { loadContent, defaultContentRoots } from '@paobu/core/content';
+import { computeContentDigest } from '@paobu/core/content';
+import { projectRoot } from './load-env.mjs';
 
-const requireFromCore = createRequire(new URL('../packages/core/package.json', import.meta.url));
+const requireFromCore = createRequire(path.join(projectRoot, 'package.json'));
 const matter = requireFromCore('gray-matter');
 
 const roots = defaultContentRoots();

@@ -6,7 +6,7 @@ import {
   normalizeNumberSeparators,
   pinyinSearchAliases,
   expandSearchAliases,
-} from '../packages/core/src/content/search.ts';
+} from '@paobu/core/content';
 
 test('CJK search grams cover runs up to four characters', () => {
   assert.equal(

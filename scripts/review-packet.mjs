@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
-import { computeContentDigest } from '../packages/core/src/content/digest.ts';
+import { loadContent, defaultContentRoots } from '@paobu/core/content';
+import { computeContentDigest } from '@paobu/core/content';
 import { projectRoot } from './load-env.mjs';
 
 const outRoot =

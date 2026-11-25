@@ -1,4 +1,4 @@
-import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
+import { loadContent, defaultContentRoots } from '@paobu/core/content';
 
 const content = loadContent({ roots: defaultContentRoots(), allowUnreviewed: false });
 const routes = content.visible('route');

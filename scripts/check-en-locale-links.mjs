@@ -14,7 +14,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const scriptRoot = path.resolve(import.meta.dirname, '../../..');
-const repos = ['running-knowledge', 'running-routes', 'running-tools'];
+const repos = [
+  'marathon-trail-running-races',
+  'running-handbook/knowledge',
+  'running-handbook/tools',
+];
 const internals = [
   'https://learn.paobu.org',
   'https://tools.paobu.org',

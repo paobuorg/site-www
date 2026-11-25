@@ -5,15 +5,11 @@ import { loadLocalEnv, projectRoot } from './load-env.mjs';
 
 loadLocalEnv();
 
-const { loadContent, defaultContentRoots, articleSection } = await import(
-  '../packages/core/src/content/load.ts'
-);
-const { enrichSearchContent, expandSearchAliases } = await import(
-  '../packages/core/src/content/search.ts'
-);
-const { absoluteEntityUrl } = await import('../packages/core/src/lib/routing.ts');
-const { TOPIC_META } = await import('../packages/core/src/lib/i18n.ts');
-const { writeHostingFiles, writeReleaseManifest } = await import('../packages/core/src/lib/release.ts');
+const { loadContent, defaultContentRoots, articleSection } = await import('@paobu/core/content');
+const { enrichSearchContent, expandSearchAliases } = await import('@paobu/core/content');
+const { absoluteEntityUrl } = await import('@paobu/core/lib/routing');
+const { TOPIC_META } = await import('@paobu/core/lib/i18n');
+const { writeHostingFiles, writeReleaseManifest } = await import('@paobu/core/lib/release');
 const { createIndex, close } = await import('pagefind');
 
 const distDir = path.join(projectRoot, 'dist');
@@ -151,7 +147,7 @@ writeReleaseManifest({
   preview: allowUnreviewed,
   site: 'routes',
   projectRoot,
-  coreLockPath: path.join(projectRoot, 'core-dist', 'core.lock.json'),
+  coreLockPath: path.join(projectRoot, 'core.lock.json'),
   contentLockPath: path.join(projectRoot, 'content.lock.json'),
   searchRecords: added,
   hosting,

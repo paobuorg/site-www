@@ -1,5 +1,5 @@
 import path from 'node:path';
-import { loadContent, defaultContentRoots } from '../packages/core/src/content/load.ts';
+import { loadContent, defaultContentRoots } from '@paobu/core/content';
 import { collectEnLocaleLinkProblems } from './check-en-locale-links.mjs';
 
 const roots = defaultContentRoots();

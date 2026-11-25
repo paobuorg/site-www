@@ -23,6 +23,8 @@ env:
   PNPM_VERSION: '10.18.3'
   PAOBU_REPOS_DIR: ${{ github.workspace }}/content-repos
   PREVIEW_UNREVIEWED: '0'
+  PAOBU_CORE_ARTIFACT_URL: ${{ vars.PAOBU_CORE_ARTIFACT_URL }}
+  PAOBU_CORE_SHA256: ${{ vars.PAOBU_CORE_SHA256 }}
   PUBLIC_ADSENSE_CLIENT: ${{ vars.PUBLIC_ADSENSE_CLIENT }}
   PUBLIC_ADSENSE_SLOT: ${{ vars.PUBLIC_ADSENSE_SLOT }}
 
@@ -33,25 +35,18 @@ jobs:
       - name: Checkout site-www
         uses: actions/checkout@v4
 
-      - name: Checkout running-routes
+      - name: Checkout marathon-trail-running-races
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/running-routes
-          path: content-repos/running-routes
+          repository: ${{ github.repository_owner }}/marathon-trail-running-races
+          path: content-repos/marathon-trail-running-races
           token: ${{ secrets.PAOBU_CONTENT_TOKEN || github.token }}
 
-      - name: Checkout running-knowledge
+      - name: Checkout running-handbook
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/running-knowledge
-          path: content-repos/running-knowledge
-          token: ${{ secrets.PAOBU_CONTENT_TOKEN || github.token }}
-
-      - name: Checkout running-tools
-        uses: actions/checkout@v4
-        with:
-          repository: ${{ github.repository_owner }}/running-tools
-          path: content-repos/running-tools
+          repository: ${{ github.repository_owner }}/running-handbook
+          path: content-repos/running-handbook
           token: ${{ secrets.PAOBU_CONTENT_TOKEN || github.token }}
 
       - name: Set up pnpm
@@ -64,6 +59,18 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
+
+      - name: Download locked core artifact
+        shell: bash
+        run: |
+          if [ -z "$PAOBU_CORE_ARTIFACT_URL" ] || [ -z "$PAOBU_CORE_SHA256" ]; then
+            echo "Set repository variables PAOBU_CORE_ARTIFACT_URL and PAOBU_CORE_SHA256 from the paobu-core release."
+            exit 1
+          fi
+          mkdir -p vendor
+          curl --fail --silent --show-error --location "$PAOBU_CORE_ARTIFACT_URL" --output vendor/paobu-core.tgz
+          echo "$PAOBU_CORE_SHA256  vendor/paobu-core.tgz" | sha256sum --check -
+          node -e "const fs=require('node:fs');const lock=JSON.parse(fs.readFileSync('core.lock.json','utf8'));if(lock.sha256!==process.env.PAOBU_CORE_SHA256){console.error('core.lock.json sha256 mismatch');process.exit(1)}"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -79,20 +86,6 @@ jobs:
 
       - name: Require published content
         run: pnpm check:production
-
-      - name: Fetch published core artifact
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          VERSION=$(node -p "require('./packages/core/package.json').version")
-          mkdir -p core-dist
-          gh release download "core-v$VERSION" \
-            --pattern "paobu-core-$VERSION.tgz" \
-            --pattern "paobu-core-$VERSION.tgz.sha256" \
-            --pattern "core.lock.json" \
-            --dir core-dist
-          cd core-dist
-          sha256sum -c "paobu-core-$VERSION.tgz.sha256"
 
       - name: Build static site
         run: pnpm build

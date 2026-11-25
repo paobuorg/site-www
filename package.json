@@ -15,7 +15,7 @@
     "test": "tsx --test tests/*.test.ts",
     "test:content": "tsx scripts/validate-content.mjs",
     "prepare-content": "node scripts/prepare-content.mjs",
-    "core:pack": "node scripts/pack-core.mjs",
+    "core:sync": "node scripts/sync-core.mjs",
     "qa:ui": "node tests/ui/capture.mjs",
     "qa:perf": "node tests/perf/measure.mjs",
     "qa:faults": "node tests/perf/faults.mjs",
@@ -27,7 +27,7 @@
     "qa:crawl": "node tests/release/local-crawl.mjs"
   },
   "dependencies": {
-    "@paobu/core": "workspace:*",
+    "@paobu/core": "file:vendor/paobu-core.tgz",
     "astro": "7.4.2",
     "cesium": "1.146.0",
     "pagefind": "1.5.2"
