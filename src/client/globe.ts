@@ -108,23 +108,6 @@ function createViewer(Cesium: CesiumModule, container: HTMLElement, highResoluti
   });
   viewer.scene.renderError.addEventListener(() => showFailure(container));
   viewer.scene.canvas.addEventListener('webglcontextlost', () => showFailure(container));
-  if (highResolution) {
-    const detailLayer = viewer.imageryLayers.addImageryProvider(
-      new Cesium.UrlTemplateImageryProvider({
-        url: new Cesium.Resource({
-          url: HIGH_RESOLUTION_IMAGERY,
-          retryAttempts: 3,
-          retryCallback: () => true,
-        }),
-        maximumLevel: 17,
-        credit: HIGH_RESOLUTION_CREDIT,
-      }),
-    );
-    detailLayer.errorEvent.addEventListener(() => {
-      viewer.imageryLayers.remove(detailLayer, false);
-      viewer.scene.requestRender();
-    });
-  }
   const scene = viewer.scene;
   scene.globe.baseColor = Cesium.Color.fromCssColorString('#0a1a2a');
   scene.globe.enableLighting = false;
@@ -141,6 +124,25 @@ function createViewer(Cesium: CesiumModule, container: HTMLElement, highResoluti
   scene.screenSpaceCameraController.minimumZoomDistance = 1_500_000;
   scene.screenSpaceCameraController.maximumZoomDistance = 40_000_000;
   return viewer;
+}
+
+function addHighResolutionLayer(Cesium: CesiumModule, viewer: any): void {
+  const detailLayer = viewer.imageryLayers.addImageryProvider(
+    new Cesium.UrlTemplateImageryProvider({
+      url: new Cesium.Resource({
+        url: HIGH_RESOLUTION_IMAGERY,
+        retryAttempts: 3,
+        retryCallback: () => true,
+      }),
+      maximumLevel: 17,
+      credit: HIGH_RESOLUTION_CREDIT,
+    }),
+  );
+  detailLayer.errorEvent.addEventListener(() => {
+    viewer.imageryLayers.remove(detailLayer, false);
+    viewer.scene.requestRender();
+  });
+  viewer.scene.requestRender();
 }
 
 function routePoint(Cesium: CesiumModule, route: GlobeRoute, selected = false): any {
@@ -199,7 +201,12 @@ function enablePolish(viewer: any): void {
   });
 }
 
-function revealWhenReady(viewer: any, container: HTMLElement, polish = true): void {
+function revealWhenReady(
+  viewer: any,
+  container: HTMLElement,
+  polish = true,
+  onReady?: () => void,
+): void {
   let finished = false;
   let released = false;
   let listener: ((remaining: number) => void) | undefined;
@@ -222,6 +229,7 @@ function revealWhenReady(viewer: any, container: HTMLElement, polish = true): vo
     releaseLoader();
     revealPoster(container);
     if (polish) enablePolish(viewer);
+    onReady?.();
   };
   listener = (remaining: number) => {
     if (remaining === 0) finish(true);
@@ -468,7 +476,7 @@ export async function initRouteGlobe(): Promise<void> {
       viewer.scene.requestRender();
     };
     reset();
-    revealWhenReady(viewer, container, false);
+    revealWhenReady(viewer, container, false, () => addHighResolutionLayer(Cesium, viewer));
     installControls(viewer, container, reset, () => {});
     viewer.scene.requestRender();
   } catch (error) {
