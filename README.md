@@ -10,7 +10,7 @@
 - 本仓内容门禁通过：实体 **160**（路线 52、知识 90、工具 18），来源 **959**，claim **5,389**，工具算例 **43**。
 - 本地生产构建：静态 HTML **115**，发布清单 **112** 页，Pagefind **320** 条，sitemap **112** 个 URL；`check:production` 通过（route=52 / knowledge=90 / tool=18）。
 - 本地 QA 通过：360 页整站抓取、Chromium 48 张 UI 矩阵与 axe 0 违规、性能预算、8 项故障、11 项轨迹、11 项跨站、18 项 PWA。
-- **线上 `https://paobu.org/` 仍是 2026-10-29 旧版**（旧核心 0.2.18 / 79 实体时期），`/routes/utnh/` 仍为 404。本轮没有推送；Pages 与线上验收未完成。
+- **线上 `https://paobu.org/` 已发布 2026-11-25 新版**：由本仓 `main` 的 `75c7496` 构建并部署，`/routes/utnh/` 返回 200；三站 sitemap 共 **360** 个 URL 线上全部返回 200。
 - 生产发布前三站必须使用同一 `@paobu/core` 版本与 SHA-256，并显式设置三个站点来源与 `PREVIEW_UNREVIEWED=0`。
 
 ## 技术基线
@@ -149,7 +149,7 @@ AdSense 站点验证使用元标记：全站 `<head>` 静态输出 `google-adsen
 - 站点使用真实静态路径，不依赖服务端 SSR、运行时秘密或自定义响应头。
 - 跨子域链接由 `PUBLIC_ROUTES_ORIGIN`、`PUBLIC_KNOWLEDGE_ORIGIN`、`PUBLIC_TOOLS_ORIGIN` 控制；生产默认值已写入核心，本地 `.env` 指向三个本地端口。
 - 路线近景使用 EOX Sentinel-2 cloudless 公开瓦片，不读取任何地图 API 密钥；第三方瓦片服务的条款、可用性和额度需在上线前复核。
-- 新仓名尚未在 `paobuorg` 创建；本机 `speculcom` 凭据对 `paobuorg/*` 无 push 权限。线上三站仍是旧版，不能把本地构建通过写成线上已发布。
+- 六个仓库已在 `paobuorg` 建仓或改名并推送；三站 Pages 从各自 `main` 的 workflow 构建，共享核心从 `paobu-core` 的 `core-v0.3.0` Release 下载并校验 SHA-256。
 
 ## 许可
 

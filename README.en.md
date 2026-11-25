@@ -10,7 +10,7 @@ Website project for `paobu.org`: a photoreal satellite-Earth home, a catalogue o
 - The content gate passes: **160 entities** (52 routes, 90 knowledge, 18 tools), **959 sources**, **5,389 claims**, and **43 tool cases**.
 - Local production build: **115** static HTML pages, **112** hosting pages, **320** Pagefind records, and **112** sitemap URLs. `check:production` passes (route=52 / knowledge=90 / tool=18).
 - Local QA passes: 360-page crawl, Chromium 48-screenshot UI matrix with 0 axe violations, performance budgets, 8 fault checks, 11 track checks, 11 cross-site checks, and 18 PWA checks.
-- **The live `https://paobu.org/` is still the 2026-10-29 build** (core 0.2.18 / 79-entity era), and `/routes/utnh/` still returns 404. Nothing was pushed in this round; Pages deployment and live acceptance are not complete.
+- **The live `https://paobu.org/` now serves the 2026-11-25 build**: it was built and deployed from `main` at `75c7496`, and `/routes/utnh/` returns 200. All **360** sitemap URLs across the three sites returned 200 in the live crawl.
 - Before production release, all three sites must use the same `@paobu/core` version and SHA-256, with the three site origins and `PREVIEW_UNREVIEWED=0` set explicitly.
 
 ## Technical Baseline
@@ -149,7 +149,7 @@ AdSense site verification uses the meta tag: every page emits `google-adsense-ac
 - The site uses real static paths and does not depend on server-side SSR, runtime secrets, or custom response headers.
 - Cross-subdomain links are controlled by `PUBLIC_ROUTES_ORIGIN`, `PUBLIC_KNOWLEDGE_ORIGIN`, and `PUBLIC_TOOLS_ORIGIN`; production defaults live in the core, while the local `.env` points to the three local ports.
 - Route close-ups use EOX Sentinel-2 cloudless public tiles and require no map API key; third-party tile terms, availability, and quotas must be reviewed before release.
-- The new repository names have not yet been created under `paobuorg`; the local `speculcom` credential has no push permission to `paobuorg/*`. The live sites are still the old build, so local build success must not be described as a live release.
+- All six repositories have been created or renamed under `paobuorg` and pushed. Each site's Pages workflow builds from its own `main`; the shared core is downloaded from the `paobu-core` `core-v0.3.0` Release and verified against its SHA-256.
 
 ## License
 
