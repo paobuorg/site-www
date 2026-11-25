@@ -10,7 +10,7 @@
 - 本仓内容门禁通过：实体 **160**（路线 52、知识 90、工具 18），来源 **959**，claim **5,389**，工具算例 **43**。
 - 本地生产构建：静态 HTML **115**，发布清单 **112** 页，Pagefind **320** 条，sitemap **112** 个 URL；`check:production` 通过（route=52 / knowledge=90 / tool=18）。
 - 本地 QA 通过：360 页整站抓取、Chromium 48 张 UI 矩阵与 axe 0 违规、性能预算、8 项故障、11 项轨迹、11 项跨站、18 项 PWA。
-- **线上 `https://paobu.org/` 已发布 2026-11-25 新版**：由本仓 `main` 的 `75c7496` 构建并部署，`/routes/utnh/` 返回 200；三站 sitemap 共 **360** 个 URL 线上全部返回 200。
+- **线上 `https://paobu.org/` 已发布 2026-11-25 新版**：由本仓 `main` 的 `873085d` 构建并部署，`/routes/utnh/` 返回 200；三站 sitemap 共 **360** 个 URL 线上全部返回 200。
 - 生产发布前三站必须使用同一 `@paobu/core` 版本与 SHA-256，并显式设置三个站点来源与 `PREVIEW_UNREVIEWED=0`。
 
 ## 技术基线
@@ -21,7 +21,7 @@
 - 首页使用本地 NASA Blue Marble 基础纹理；路线详情叠加无需密钥的 EOX Sentinel-2 cloudless 公开瓦片，失败时回退到本地纹理。
 - Pagefind 1.5.2 在构建后生成三站汇总索引，按页面语言分别加载。
 - Playwright 1.64.1 与 axe-core 4.14.0 固定在 devDependencies；浏览器验收使用 Playwright 管理的浏览器，不写死本机 Chrome 路径。
-- `@paobu/core` **0.3.0**，来自 `vendor/paobu-core.tgz`；`core.lock.json` 记录 SHA-256 `e30e89f289ca7c4fab2a0941d6967c081af54b63741559651c2cdf6ec4a0d16e`。
+- `@paobu/core` **0.3.3**，来自 `vendor/paobu-core.tgz`；`core.lock.json` 记录 SHA-256 `8fdc28f59aab3bdabf908a4b83a405f2c39d7130df0afbc1eca5fd15e94968ae`。
 
 ## 目录
 
@@ -40,7 +40,7 @@ content.lock.json         两内容仓库的本地树摘要锁
 
 ## 本地运行
 
-六个工程位于同一父目录。先确保 `paobu-core` 已生成 `core-dist/paobu-core-0.3.0.tgz`，再同步核心并安装：
+六个工程位于同一父目录。先确保 `paobu-core` 已生成 `core-dist/paobu-core-0.3.3.tgz`，再同步核心并安装：
 
 ```bash
 cd paobu-core
@@ -149,7 +149,7 @@ AdSense 站点验证使用元标记：全站 `<head>` 静态输出 `google-adsen
 - 站点使用真实静态路径，不依赖服务端 SSR、运行时秘密或自定义响应头。
 - 跨子域链接由 `PUBLIC_ROUTES_ORIGIN`、`PUBLIC_KNOWLEDGE_ORIGIN`、`PUBLIC_TOOLS_ORIGIN` 控制；生产默认值已写入核心，本地 `.env` 指向三个本地端口。
 - 路线近景使用 EOX Sentinel-2 cloudless 公开瓦片，不读取任何地图 API 密钥；第三方瓦片服务的条款、可用性和额度需在上线前复核。
-- 六个仓库已在 `paobuorg` 建仓或改名并推送；三站 Pages 从各自 `main` 的 workflow 构建，共享核心从 `paobu-core` 的 `core-v0.3.0` Release 下载并校验 SHA-256。
+- 六个仓库已在 `paobuorg` 建仓或改名并推送；三站 Pages 从各自 `main` 的 workflow 构建，共享核心从 `paobu-core` 的 `core-v0.3.3` Release 下载并校验 SHA-256。
 
 ## 许可
 

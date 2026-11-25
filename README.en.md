@@ -10,7 +10,7 @@ Website project for `paobu.org`: a photoreal satellite-Earth home, a catalogue o
 - The content gate passes: **160 entities** (52 routes, 90 knowledge, 18 tools), **959 sources**, **5,389 claims**, and **43 tool cases**.
 - Local production build: **115** static HTML pages, **112** hosting pages, **320** Pagefind records, and **112** sitemap URLs. `check:production` passes (route=52 / knowledge=90 / tool=18).
 - Local QA passes: 360-page crawl, Chromium 48-screenshot UI matrix with 0 axe violations, performance budgets, 8 fault checks, 11 track checks, 11 cross-site checks, and 18 PWA checks.
-- **The live `https://paobu.org/` now serves the 2026-11-25 build**: it was built and deployed from `main` at `75c7496`, and `/routes/utnh/` returns 200. All **360** sitemap URLs across the three sites returned 200 in the live crawl.
+- **The live `https://paobu.org/` now serves the 2026-11-25 build**: it was built and deployed from `main` at `873085d`, and `/routes/utnh/` returns 200. All **360** sitemap URLs across the three sites returned 200 in the live crawl.
 - Before production release, all three sites must use the same `@paobu/core` version and SHA-256, with the three site origins and `PREVIEW_UNREVIEWED=0` set explicitly.
 
 ## Technical Baseline
@@ -21,7 +21,7 @@ Website project for `paobu.org`: a photoreal satellite-Earth home, a catalogue o
 - The home uses the local NASA Blue Marble base texture; route detail pages overlay the keyless EOX Sentinel-2 cloudless public tiles and fall back to the local texture on failure.
 - Pagefind 1.5.2 builds the cross-site index after the build, loaded per page language.
 - Playwright 1.64.1 and axe-core 4.14.0 are pinned in devDependencies; browser acceptance uses Playwright-managed browsers rather than a hard-coded local Chrome path.
-- `@paobu/core` **0.3.0** from `vendor/paobu-core.tgz`; `core.lock.json` records SHA-256 `e30e89f289ca7c4fab2a0941d6967c081af54b63741559651c2cdf6ec4a0d16e`.
+- `@paobu/core` **0.3.3** from `vendor/paobu-core.tgz`; `core.lock.json` records SHA-256 `8fdc28f59aab3bdabf908a4b83a405f2c39d7130df0afbc1eca5fd15e94968ae`.
 
 ## Layout
 
@@ -40,7 +40,7 @@ content.lock.json         Local tree lock for the two content repositories
 
 ## Local Run
 
-All six projects live under one parent directory. First ensure `paobu-core` has produced `core-dist/paobu-core-0.3.0.tgz`, then sync the core and install:
+All six projects live under one parent directory. First ensure `paobu-core` has produced `core-dist/paobu-core-0.3.3.tgz`, then sync the core and install:
 
 ```bash
 cd paobu-core
@@ -149,7 +149,7 @@ AdSense site verification uses the meta tag: every page emits `google-adsense-ac
 - The site uses real static paths and does not depend on server-side SSR, runtime secrets, or custom response headers.
 - Cross-subdomain links are controlled by `PUBLIC_ROUTES_ORIGIN`, `PUBLIC_KNOWLEDGE_ORIGIN`, and `PUBLIC_TOOLS_ORIGIN`; production defaults live in the core, while the local `.env` points to the three local ports.
 - Route close-ups use EOX Sentinel-2 cloudless public tiles and require no map API key; third-party tile terms, availability, and quotas must be reviewed before release.
-- All six repositories have been created or renamed under `paobuorg` and pushed. Each site's Pages workflow builds from its own `main`; the shared core is downloaded from the `paobu-core` `core-v0.3.0` Release and verified against its SHA-256.
+- All six repositories have been created or renamed under `paobuorg` and pushed. Each site's Pages workflow builds from its own `main`; the shared core is downloaded from the `paobu-core` `core-v0.3.3` Release and verified against its SHA-256.
 
 ## License
 
