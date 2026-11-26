@@ -26,6 +26,8 @@ const copy = locale === 'zh-CN'
       version: '版本',
       noGeometry: '无本站轨迹',
       empty: '目前没有可显示的路线。',
+      collections: '按主题浏览',
+      collectionsHint: '把赛道按训练或执行问题分组，而不是按洲际堆列表。',
     }
   : {
       title: 'All routes',
@@ -37,6 +39,8 @@ const copy = locale === 'zh-CN'
       version: 'Version',
       noGeometry: 'No bundled track',
       empty: 'No routes are available to show.',
+      collections: 'Browse by theme',
+      collectionsHint: 'Courses grouped by the training or execution question they share, not by continent.',
     };
 const title = `${copy.title} · RUNUP`;
 const sections = [
@@ -63,8 +67,17 @@ const description = locale === 'zh-CN'
         <span class="pill blue"><Icon name="route" size={14} />{t(locale, 'routeSubtitle')}</span>
         <h1>{copy.title}</h1>
         <p>{copy.intro}</p>
+      <div class="filter-row"><a class="button small ghost" href={`${prefix}/compare/`}>{locale === 'zh-CN' ? '对比全部路线' : 'Compare all routes'} →</a></div>
       </div>
       <Bean expression="map" size={126} className="intro-mascot" label={locale === 'zh-CN' ? '豆客在看路线' : 'Douke checking the route'} />
+    </div>
+
+    <div class="collection-strip">
+      <div>
+        <h2>{copy.collections}</h2>
+        <p class="field-hint">{copy.collectionsHint}</p>
+      </div>
+      <a class="button small" href={`${prefix}/collections/`}>{copy.collections} →</a>
     </div>
 
     {routes.length === 0 ? (
@@ -123,6 +136,27 @@ const description = locale === 'zh-CN'
 </BaseLayout>
 
 <style>
+  .collection-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 0 0 30px;
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    background: var(--surface-2);
+  }
+
+  .collection-strip h2 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+  }
+
+  .collection-strip .field-hint {
+    margin: 0;
+  }
+
   .intro-mascot {
     width: 126px;
     height: 126px;

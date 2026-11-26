@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Shanghai Marathon: official cut-off buffer per gate at a 5:45:00 target (2026)" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">Shanghai Marathon: official cut-off buffer per gate at a 5:45:00 target (2026)</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">minutes (positive = buffer, negative = outside cut-off)</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <rect x="84" y="572" width="1080" height="1.5" fill="#111827"/><line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">10</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">20</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">30</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">40</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">50</text><rect x="113" y="301.952" width="62" height="270.048" rx="3" fill="#1f6f5c"/>
+        <text x="144" y="293.952" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">29.1</text>
+        <text x="144" y="602" font-size="13" fill="#4b5563" text-anchor="middle">5 km 08:10</text><rect x="233" y="310.30400000000003" width="62" height="261.69599999999997" rx="3" fill="#1f6f5c"/>
+        <text x="264" y="302.30400000000003" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">28.2</text>
+        <text x="264" y="602" font-size="13" fill="#4b5563" text-anchor="middle">10 km 08:50</text><rect x="353" y="271.328" width="62" height="300.672" rx="3" fill="#1f6f5c"/>
+        <text x="384" y="263.328" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">32.4</text>
+        <text x="384" y="602" font-size="13" fill="#4b5563" text-anchor="middle">15 km 09:35</text><rect x="473" y="233.28" width="62" height="338.72" rx="3" fill="#1f6f5c"/>
+        <text x="504" y="225.28" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">36.5</text>
+        <text x="504" y="602" font-size="13" fill="#4b5563" text-anchor="middle">20 km 10:20</text><rect x="593" y="241.63199999999998" width="62" height="330.36800000000005" rx="3" fill="#1f6f5c"/>
+        <text x="624" y="233.63199999999998" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">35.6</text>
+        <text x="624" y="602" font-size="13" fill="#4b5563" text-anchor="middle">25 km 11:00</text><rect x="713" y="203.58399999999997" width="62" height="368.41600000000005" rx="3" fill="#1f6f5c"/>
+        <text x="744" y="195.58399999999997" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">39.7</text>
+        <text x="744" y="602" font-size="13" fill="#4b5563" text-anchor="middle">30 km 11:45</text><rect x="833" y="165.53600000000006" width="62" height="406.46399999999994" rx="3" fill="#1f6f5c"/>
+        <text x="864" y="157.53600000000006" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">43.8</text>
+        <text x="864" y="602" font-size="13" fill="#4b5563" text-anchor="middle">35 km 12:30</text><rect x="953" y="127.48800000000001" width="62" height="444.512" rx="3" fill="#1f6f5c"/>
+        <text x="984" y="119.48800000000001" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">47.9</text>
+        <text x="984" y="602" font-size="13" fill="#4b5563" text-anchor="middle">40 km 13:15</text><rect x="1073" y="154.39999999999998" width="62" height="417.6" rx="3" fill="#1f6f5c"/>
+        <text x="1104" y="146.39999999999998" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">45</text>
+        <text x="1104" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Finish 13:30</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">Computed from the 2026 official course-map cut-offs, the 07:00 first gun and an even pace to a 5:45:00 finish; buffer = cut-off minus predicted arrival. Gates use wall-clock time for later waves, so add the wave offset back when estimating. Self-made chart, not an official course profile.</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">RUNUP · Site-made chart, not an official course profile</text>
+</svg>

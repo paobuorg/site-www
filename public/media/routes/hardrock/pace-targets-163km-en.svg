@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Hardrock 100: average pace by target finish time" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">Hardrock 100: average pace by target finish time</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">min/km (even-pace arithmetic, no climb or stops)</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">4</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">8</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">12</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">16</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">20</text>
+    <polygon points="84,368.072 354,317.03200000000004 624,265.992 894,215.184 1164,164.14400000000006 1164,572 84,572" fill="#1f6f5c" opacity="0.10"/>
+    <polyline points="84,368.072 354,317.03200000000004 624,265.992 894,215.184 1164,164.14400000000006" fill="none" stroke="#1f6f5c" stroke-width="3"/><circle cx="84" cy="368.072" r="4" fill="#1f6f5c"/><circle cx="354" cy="317.03200000000004" r="4" fill="#1f6f5c"/><circle cx="624" cy="265.992" r="4" fill="#1f6f5c"/><circle cx="894" cy="215.184" r="4" fill="#1f6f5c"/><circle cx="1164" cy="164.14400000000006" r="4" fill="#1f6f5c"/><text x="84" y="602" font-size="13" fill="#4b5563" text-anchor="middle">24 h</text><text x="354" y="602" font-size="13" fill="#4b5563" text-anchor="middle">30 h</text><text x="624" y="602" font-size="13" fill="#4b5563" text-anchor="middle">36 h</text><text x="894" y="602" font-size="13" fill="#4b5563" text-anchor="middle">42 h</text><text x="1164" y="602" font-size="13" fill="#4b5563" text-anchor="middle">48 h cutoff</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">Even-pace arithmetic over the official 101.8 mi (163.8 km); climbs, technical descents, night sections and aid stops make real splits slower than this average, and 48 h is the cut-off ceiling, not a target. Self-made chart, not an official course profile.</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">RUNUP · Site-made chart, not an official course profile</text>
+</svg>

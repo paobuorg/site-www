@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Boston Marathon: qualifying cut-off margin by year" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">Boston Marathon: qualifying cut-off margin by year</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">seconds faster than the age/gender standard required</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <rect x="84" y="572" width="1080" height="1.5" fill="#111827"/><line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">100</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">200</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">300</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">400</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">500</text><rect x="101.1" y="514.4639999999999" width="55.8" height="57.53600000000006" rx="3" fill="#1f6f5c"/>
+        <text x="129" y="506.46399999999994" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">62</text>
+        <text x="129" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2015</text><rect x="191.1" y="434.656" width="55.8" height="137.344" rx="3" fill="#1f6f5c"/>
+        <text x="219" y="426.656" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">148</text>
+        <text x="219" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2016</text><rect x="281.1" y="452.288" width="55.8" height="119.71199999999999" rx="3" fill="#1f6f5c"/>
+        <text x="309" y="444.288" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">129</text>
+        <text x="309" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2017</text><rect x="371.1" y="383.616" width="55.8" height="188.38400000000001" rx="3" fill="#1f6f5c"/>
+        <text x="399" y="375.616" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">203</text>
+        <text x="399" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2018</text><rect x="461.1" y="301.024" width="55.8" height="270.976" rx="3" fill="#1f6f5c"/>
+        <text x="489" y="293.024" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">292</text>
+        <text x="489" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2019</text><rect x="551.1" y="480.12800000000004" width="55.8" height="91.87199999999996" rx="3" fill="#1f6f5c"/>
+        <text x="579" y="472.12800000000004" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">99</text>
+        <text x="579" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2020</text><rect x="641.1" y="138.62399999999997" width="55.8" height="433.37600000000003" rx="3" fill="#1f6f5c"/>
+        <text x="669" y="130.62399999999997" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">467</text>
+        <text x="669" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2021</text><rect x="731.1" y="572" width="55.8" height="2" rx="3" fill="#1f6f5c"/>
+        <text x="759" y="564" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">0</text>
+        <text x="759" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2023</text><rect x="821.1" y="266.688" width="55.8" height="305.312" rx="3" fill="#1f6f5c"/>
+        <text x="849" y="258.688" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">329</text>
+        <text x="849" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2024</text><rect x="911.1" y="190.59200000000004" width="55.8" height="381.40799999999996" rx="3" fill="#1f6f5c"/>
+        <text x="939" y="182.59200000000004" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">411</text>
+        <text x="939" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2025</text><rect x="1001.1" y="317.72799999999995" width="55.8" height="254.27200000000005" rx="3" fill="#1f6f5c"/>
+        <text x="1029" y="309.72799999999995" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">274</text>
+        <text x="1029" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2026</text><rect x="1091.1" y="277.82399999999996" width="55.8" height="294.17600000000004" rx="3" fill="#1f6f5c"/>
+        <text x="1119" y="269.82399999999996" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">317</text>
+        <text x="1119" y="602" font-size="13" fill="#4b5563" text-anchor="middle">2027</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">From the B.A.A. non-accepted qualifiers history: the cut-off is the amount faster than one's age/gender standard needed for acceptance, not a race finish limit. In 2023 the cut-off was 0:00, i.e. all qualifiers were accepted. Self-made chart, not an official course profile.</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">RUNUP · Site-made chart, not an official course profile</text>
+</svg>

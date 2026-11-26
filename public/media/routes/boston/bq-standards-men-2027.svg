@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="波士顿马拉松 2027/2028 男子资格标准（按年龄组）" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">波士顿马拉松 2027/2028 男子资格标准（按年龄组）</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">分钟（资格赛净成绩上限）</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <rect x="84" y="572" width="1080" height="1.5" fill="#111827"/><line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">60</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">120</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">180</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">240</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">300</text><rect x="102.65454545454546" y="301.3333333333333" width="60.872727272727275" height="270.6666666666667" rx="3" fill="#1f6f5c"/>
+        <text x="133.0909090909091" y="293.3333333333333" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">175</text>
+        <text x="133.0909090909091" y="602" font-size="13" fill="#4b5563" text-anchor="middle">18-34</text><rect x="200.83636363636364" y="293.6" width="60.872727272727275" height="278.4" rx="3" fill="#1f6f5c"/>
+        <text x="231.27272727272728" y="285.6" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">180</text>
+        <text x="231.27272727272728" y="602" font-size="13" fill="#4b5563" text-anchor="middle">35-39</text><rect x="299.0181818181818" y="285.8666666666667" width="60.872727272727275" height="286.1333333333333" rx="3" fill="#1f6f5c"/>
+        <text x="329.45454545454544" y="277.8666666666667" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">185</text>
+        <text x="329.4545454545455" y="602" font-size="13" fill="#4b5563" text-anchor="middle">40-44</text><rect x="397.20000000000005" y="270.4" width="60.872727272727275" height="301.6" rx="3" fill="#1f6f5c"/>
+        <text x="427.6363636363637" y="262.4" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">195</text>
+        <text x="427.6363636363636" y="602" font-size="13" fill="#4b5563" text-anchor="middle">45-49</text><rect x="495.3818181818182" y="262.6666666666667" width="60.872727272727275" height="309.3333333333333" rx="3" fill="#1f6f5c"/>
+        <text x="525.8181818181818" y="254.66666666666669" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">200</text>
+        <text x="525.8181818181819" y="602" font-size="13" fill="#4b5563" text-anchor="middle">50-54</text><rect x="593.5636363636364" y="247.20000000000002" width="60.872727272727275" height="324.79999999999995" rx="3" fill="#1f6f5c"/>
+        <text x="624" y="239.20000000000002" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">210</text>
+        <text x="624.0000000000001" y="602" font-size="13" fill="#4b5563" text-anchor="middle">55-59</text><rect x="691.7454545454545" y="216.26666666666665" width="60.872727272727275" height="355.73333333333335" rx="3" fill="#1f6f5c"/>
+        <text x="722.1818181818182" y="208.26666666666665" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">230</text>
+        <text x="722.1818181818182" y="602" font-size="13" fill="#4b5563" text-anchor="middle">60-64</text><rect x="789.9272727272727" y="193.06666666666666" width="60.872727272727275" height="378.93333333333334" rx="3" fill="#1f6f5c"/>
+        <text x="820.3636363636363" y="185.06666666666666" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">245</text>
+        <text x="820.3636363636364" y="602" font-size="13" fill="#4b5563" text-anchor="middle">65-69</text><rect x="888.1090909090909" y="169.86666666666665" width="60.872727272727275" height="402.1333333333333" rx="3" fill="#1f6f5c"/>
+        <text x="918.5454545454545" y="161.86666666666665" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">260</text>
+        <text x="918.5454545454546" y="602" font-size="13" fill="#4b5563" text-anchor="middle">70-74</text><rect x="986.2909090909092" y="146.66666666666669" width="60.872727272727275" height="425.3333333333333" rx="3" fill="#1f6f5c"/>
+        <text x="1016.7272727272727" y="138.66666666666669" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">275</text>
+        <text x="1016.7272727272729" y="602" font-size="13" fill="#4b5563" text-anchor="middle">75-79</text><rect x="1084.4727272727275" y="123.46666666666667" width="60.872727272727275" height="448.5333333333333" rx="3" fill="#1f6f5c"/>
+        <text x="1114.9090909090912" y="115.46666666666667" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">290</text>
+        <text x="1114.909090909091" y="602" font-size="13" fill="#4b5563" text-anchor="middle">80+</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">BAA 官方 2027/2028 标准；女子与非二元标准在每个年龄组均比男子慢 30 分钟（如 18-34 为 3:25:00）。达到标准只获得申请资格，录取还受名额与录取线限制。本站自制图，非官方赛道剖面。</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">跑起来 RUNUP · 自制图，非官方赛道剖面</text>
+</svg>

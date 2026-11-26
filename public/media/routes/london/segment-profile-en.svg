@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="London Marathon: cumulative distance by segment" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">London Marathon: cumulative distance by segment</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">km</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">10</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">20</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">30</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">40</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">50</text>
+    <polygon points="84,572 238.28571428571428,527.1776 392.57142857142856,482.35519999999997 546.8571428571429,467.4144 701.1428571428571,377.8624 855.4285714285713,258.336 1009.7142857142857,198.6656 1164,180.43040000000002 1164,572 84,572" fill="#1f6f5c" opacity="0.10"/>
+    <polyline points="84,572 238.28571428571428,527.1776 392.57142857142856,482.35519999999997 546.8571428571429,467.4144 701.1428571428571,377.8624 855.4285714285713,258.336 1009.7142857142857,198.6656 1164,180.43040000000002" fill="none" stroke="#1f6f5c" stroke-width="3"/><circle cx="84" cy="572" r="4" fill="#1f6f5c"/><circle cx="238.28571428571428" cy="527.1776" r="4" fill="#1f6f5c"/><circle cx="392.57142857142856" cy="482.35519999999997" r="4" fill="#1f6f5c"/><circle cx="546.8571428571429" cy="467.4144" r="4" fill="#1f6f5c"/><circle cx="701.1428571428571" cy="377.8624" r="4" fill="#1f6f5c"/><circle cx="855.4285714285713" cy="258.336" r="4" fill="#1f6f5c"/><circle cx="1009.7142857142857" cy="198.6656" r="4" fill="#1f6f5c"/><circle cx="1164" cy="180.43040000000002" r="4" fill="#1f6f5c"/><text x="84" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Start</text><text x="238.28571428571428" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Mile 3</text><text x="392.57142857142856" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Mile 6</text><text x="546.8571428571429" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Mile 7</text><text x="701.1428571428571" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Mile 13</text><text x="855.4285714285713" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Mile 21</text><text x="1009.7142857142857" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Mile 25</text><text x="1164" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Finish 26.2 mi</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">Cumulative distance follows the official 26.2-mile route and the course page's mile landmarks, converted at 1 mi = 1.609344 km; the organiser publishes no extractable elevation profile, so this chart reads no climb figure. Self-made chart, not an official course profile.</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">RUNUP · Site-made chart, not an official course profile</text>
+</svg>

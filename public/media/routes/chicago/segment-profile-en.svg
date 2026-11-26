@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Chicago Marathon: cumulative distance by segment" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">Chicago Marathon: cumulative distance by segment</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">km</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">10</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">20</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">30</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">40</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">50</text>
+    <polygon points="84,572 192,525.6 300,479.20000000000005 408,432.79999999999995 516,386.4 624,376.355328 732,340 840,293.6 948,247.20000000000002 1056,200.79999999999998 1164,180.43040000000002 1164,572 84,572" fill="#1f6f5c" opacity="0.10"/>
+    <polyline points="84,572 192,525.6 300,479.20000000000005 408,432.79999999999995 516,386.4 624,376.355328 732,340 840,293.6 948,247.20000000000002 1056,200.79999999999998 1164,180.43040000000002" fill="none" stroke="#1f6f5c" stroke-width="3"/><circle cx="84" cy="572" r="4" fill="#1f6f5c"/><circle cx="192" cy="525.6" r="4" fill="#1f6f5c"/><circle cx="300" cy="479.20000000000005" r="4" fill="#1f6f5c"/><circle cx="408" cy="432.79999999999995" r="4" fill="#1f6f5c"/><circle cx="516" cy="386.4" r="4" fill="#1f6f5c"/><circle cx="624" cy="376.355328" r="4" fill="#1f6f5c"/><circle cx="732" cy="340" r="4" fill="#1f6f5c"/><circle cx="840" cy="293.6" r="4" fill="#1f6f5c"/><circle cx="948" cy="247.20000000000002" r="4" fill="#1f6f5c"/><circle cx="1056" cy="200.79999999999998" r="4" fill="#1f6f5c"/><circle cx="1164" cy="180.43040000000002" r="4" fill="#1f6f5c"/><text x="84" y="602" font-size="13" fill="#4b5563" text-anchor="middle">0</text><text x="300" y="602" font-size="13" fill="#4b5563" text-anchor="middle">10K</text><text x="516" y="602" font-size="13" fill="#4b5563" text-anchor="middle">20K</text><text x="732" y="602" font-size="13" fill="#4b5563" text-anchor="middle">25K</text><text x="948" y="602" font-size="13" fill="#4b5563" text-anchor="middle">35K</text><text x="1164" y="602" font-size="13" fill="#4b5563" text-anchor="middle">42.195 km</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">Cumulative distance follows the official checkpoints (start, every 5K, halfway 13.1 miles, miles 20–25, mile 25.2 and finish); none of the five official artefacts publishes cumulative ascent or descent, so this chart reads no climb figure. Self-made chart, not an official course profile.</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">RUNUP · Site-made chart, not an official course profile</text>
+</svg>

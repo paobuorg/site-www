@@ -1,0 +1,38 @@
+---
+import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Icon from '@paobu/core/components/Icon.astro';
+import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
+import { siteContent } from '../../../lib/content';
+import { ROUTE_COLLECTIONS } from '../../../lib/collections';
+
+export function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale: localeStaticParam(locale) }, props: { locale } }));
+}
+
+const locale = Astro.props.locale as Locale;
+const prefix = localePrefix(locale);
+const content = siteContent();
+const copy = locale === 'zh-CN'
+  ? { home: '首页', title: '主题路线集合', intro: '按问题而不是按洲际分类：同一组里的赛道共享一种训练或执行难题。集合页只做导航与差异说明，不复制路线正文。', count: '个集合', routes: '条路线', open: '打开集合', all: '全部路线' }
+  : { home: 'Home', title: 'Route collections', intro: 'Grouped by problem, not by continent: courses in one collection share a training or execution question. Collection pages navigate and explain differences; they do not duplicate route pages.', count: 'collections', routes: 'routes', open: 'Open collection', all: 'All routes' };
+---
+<BaseLayout locale={locale} title={`${copy.title} · RUNUP`} description={copy.intro} active="routes" preview={content.preview} footerAd>
+  <div class="page-shell">
+    <div class="breadcrumbs"><ol><li><a href={`${prefix}/`}>{copy.home}</a></li><li><a href={`${prefix}/routes/`}>{copy.all}</a></li><li>{copy.title}</li></ol></div>
+    <div class="page-intro"><div><span class="pill mint"><Icon name="map" size={14} />{ROUTE_COLLECTIONS.length} {copy.count}</span><h1>{copy.title}</h1><p>{copy.intro}</p></div></div>
+    <div class="grid two">
+      {ROUTE_COLLECTIONS.map((collection) => {
+        const text = collection[locale === 'zh-CN' ? 'zh' : 'en'];
+        return (
+          <a class="card collection-card" href={`${prefix}/collections/${collection.slug}/`}>
+            <span class="pill"><Icon name={collection.icon} size={14} />{collection.routes.length} {copy.routes}</span>
+            <h2>{text.title}</h2>
+            <p>{text.summary}</p>
+            <span class="collection-open">{copy.open} <Icon name="arrow-right" size={16} /></span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</BaseLayout>

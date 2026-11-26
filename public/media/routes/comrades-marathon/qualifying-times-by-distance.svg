@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Comrades 2027 资格标准：不同距离资格赛事的完赛时限上限" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">Comrades 2027 资格标准：不同距离资格赛事的完赛时限上限</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">完赛时限（分钟，达到或快于该标准方可申请）</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <rect x="84" y="572" width="1080" height="1.5" fill="#111827"/><line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">180</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">360</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">540</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">720</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">900</text><rect x="107" y="417.33333333333337" width="62" height="154.66666666666663" rx="3" fill="#1f6f5c"/>
+        <text x="138" y="409.33333333333337" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">300</text>
+        <text x="138" y="602" font-size="13" fill="#4b5563" text-anchor="middle">42.2 km</text><rect x="215" y="386.4" width="62" height="185.60000000000002" rx="3" fill="#1f6f5c"/>
+        <text x="246" y="378.4" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">360</text>
+        <text x="246" y="602" font-size="13" fill="#4b5563" text-anchor="middle">48 km</text><rect x="323" y="381.24444444444447" width="62" height="190.75555555555553" rx="3" fill="#1f6f5c"/>
+        <text x="354" y="373.24444444444447" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">370</text>
+        <text x="354" y="602" font-size="13" fill="#4b5563" text-anchor="middle">50 km</text><rect x="431" y="370.93333333333334" width="62" height="201.06666666666666" rx="3" fill="#1f6f5c"/>
+        <text x="462" y="362.93333333333334" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">390</text>
+        <text x="462" y="602" font-size="13" fill="#4b5563" text-anchor="middle">52–54 km</text><rect x="539" y="355.4666666666667" width="62" height="216.5333333333333" rx="3" fill="#1f6f5c"/>
+        <text x="570" y="347.4666666666667" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">420</text>
+        <text x="570" y="602" font-size="13" fill="#4b5563" text-anchor="middle">56 km</text><rect x="647" y="334.84444444444443" width="62" height="237.15555555555557" rx="3" fill="#1f6f5c"/>
+        <text x="678" y="326.84444444444443" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">460</text>
+        <text x="678" y="602" font-size="13" fill="#4b5563" text-anchor="middle">60 km</text><rect x="755" y="316.79999999999995" width="62" height="255.20000000000005" rx="3" fill="#1f6f5c"/>
+        <text x="786" y="308.79999999999995" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">495</text>
+        <text x="786" y="602" font-size="13" fill="#4b5563" text-anchor="middle">64 km</text><rect x="863" y="244.6222222222222" width="62" height="327.3777777777778" rx="3" fill="#1f6f5c"/>
+        <text x="894" y="236.6222222222222" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">635</text>
+        <text x="894" y="602" font-size="13" fill="#4b5563" text-anchor="middle">80 km</text><rect x="971" y="200.79999999999998" width="62" height="371.20000000000005" rx="3" fill="#1f6f5c"/>
+        <text x="1002" y="192.79999999999998" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">720</text>
+        <text x="1002" y="602" font-size="13" fill="#4b5563" text-anchor="middle">90 km</text><rect x="1079" y="151.82222222222222" width="62" height="420.1777777777778" rx="3" fill="#1f6f5c"/>
+        <text x="1110" y="143.82222222222222" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">815</text>
+        <text x="1110" y="602" font-size="13" fill="#4b5563" text-anchor="middle">100 km</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">时限照录 CMA 官方 FAQ 资格表（42.2 km 4:59:59、48 km 5:59:59、50 km 6:09:59、52–54 km 6:29:59、56 km 6:59:59、60 km 7:39:59、64 km 8:14:59、80 km 10:34:59、90 km 11:59:59、100 km 13:34:59），图内按分钟取整显示；只认官方公布成绩，Garmin/Strava 个人设备记录不接受。本站自制图，非官方赛道剖面。</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">跑起来 RUNUP · 自制图，非官方赛道剖面</text>
+</svg>

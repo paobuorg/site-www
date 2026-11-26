@@ -15,6 +15,7 @@ import {
   routeDetails,
   routeTypeLabel,
 } from '../../../lib/view';
+import { ROUTE_COLLECTIONS } from '../../../lib/collections';
 
 export function getStaticPaths() {
   const content = siteContent();
@@ -32,6 +33,7 @@ const content = siteContent();
 const entity = content.byId(Astro.props.entityId);
 if (!entity) throw new Error(`Route ${Astro.props.entityId} is not visible`);
 const details = routeDetails(entity);
+const memberships = ROUTE_COLLECTIONS.filter((item) => item.routes.includes(entity.slug));
 const translation = content.translation(entity, locale);
 const mapLabel = (translation.title.split(/[：:]/)[0] ?? '').trim();
 const bodyHtml = translation.html
@@ -553,6 +555,15 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
         </div>
         <h1 id="route-title">{translation.title}</h1>
         <p class="route-place">{details.placeName[locale]}</p>
+        {memberships.length > 0 && (
+          <div class="route-collection-links">
+            {memberships.map((item) => (
+              <a class="pill" href={`${prefix}/collections/${item.slug}/`}>
+                <Icon name={item.icon} size={13} />{item[locale === 'zh-CN' ? 'zh' : 'en'].title}
+              </a>
+            ))}
+          </div>
+        )}
 
         <dl class="stat-grid">
           <div class="stat">
@@ -709,6 +720,8 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
 </script>
 
 <style>
+  .route-collection-links { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 4px; }
+  .route-collection-links a { text-decoration: none; }
   .route-poster-sphere {
     top: 54%;
     left: 56%;

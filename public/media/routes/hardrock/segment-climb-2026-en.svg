@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Hardrock 100: per-segment climb, 2026 clockwise" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">Hardrock 100: per-segment climb, 2026 clockwise</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">feet (segment climb, not cumulative)</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <rect x="84" y="572" width="1080" height="1.5" fill="#111827"/><line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">1000</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">2000</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">3000</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">4000</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">5000</text><rect x="98.65714285714286" y="194.3968" width="47.82857142857143" height="377.6032" rx="3" fill="#1f6f5c"/>
+        <text x="122.57142857142857" y="186.3968" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">4069</text>
+        <text x="122.57142857142857" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 122.57142857142857 602)" text-anchor="end">KT</text><rect x="175.79999999999998" y="344.64" width="47.82857142857143" height="227.36" rx="3" fill="#1f6f5c"/>
+        <text x="199.7142857142857" y="336.64" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">2450</text>
+        <text x="199.71428571428572" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 199.71428571428572 602)" text-anchor="end">Chapman</text><rect x="252.94285714285712" y="285.248" width="47.82857142857143" height="286.752" rx="3" fill="#1f6f5c"/>
+        <text x="276.85714285714283" y="277.248" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">3090</text>
+        <text x="276.85714285714283" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 276.85714285714283 602)" text-anchor="end">Telluride</text><rect x="330.0857142857143" y="164.608" width="47.82857142857143" height="407.392" rx="3" fill="#1f6f5c"/>
+        <text x="354" y="156.608" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">4390</text>
+        <text x="354" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 354 602)" text-anchor="end">Kroger's</text><rect x="407.2285714285714" y="572" width="47.82857142857143" height="2" rx="3" fill="#1f6f5c"/>
+        <text x="431.1428571428571" y="564" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">0</text>
+        <text x="431.1428571428571" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 431.1428571428571 602)" text-anchor="end">Governor</text><rect x="484.3714285714285" y="567.5455999999999" width="47.82857142857143" height="4.454400000000078" rx="3" fill="#1f6f5c"/>
+        <text x="508.2857142857142" y="559.5455999999999" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">48</text>
+        <text x="508.2857142857142" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 508.2857142857142 602)" text-anchor="end">Ouray</text><rect x="561.5142857142857" y="147.44" width="47.82857142857143" height="424.56" rx="3" fill="#1f6f5c"/>
+        <text x="585.4285714285714" y="139.44" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">4575</text>
+        <text x="585.4285714285714" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 585.4285714285714 602)" text-anchor="end">Engineer</text><rect x="638.6571428571428" y="458.784" width="47.82857142857143" height="113.21600000000001" rx="3" fill="#1f6f5c"/>
+        <text x="662.5714285714286" y="450.784" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">1220</text>
+        <text x="662.5714285714286" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 662.5714285714286 602)" text-anchor="end">Grouse Gulch</text><rect x="715.8" y="160.71040000000002" width="47.82857142857143" height="411.28959999999995" rx="3" fill="#1f6f5c"/>
+        <text x="739.7142857142857" y="152.71040000000002" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">4432</text>
+        <text x="739.7142857142857" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 739.7142857142857 602)" text-anchor="end">Burrows</text><rect x="792.9428571428571" y="572" width="47.82857142857143" height="2" rx="3" fill="#1f6f5c"/>
+        <text x="816.8571428571428" y="564" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">0</text>
+        <text x="816.8571428571428" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 816.8571428571428 602)" text-anchor="end">Sherman</text><rect x="870.0857142857142" y="285.9904" width="47.82857142857143" height="286.0096" rx="3" fill="#1f6f5c"/>
+        <text x="893.9999999999999" y="277.9904" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">3082</text>
+        <text x="893.9999999999999" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 893.9999999999999 602)" text-anchor="end">Pole Creek</text><rect x="947.2285714285714" y="422.12800000000004" width="47.82857142857143" height="149.87199999999996" rx="3" fill="#1f6f5c"/>
+        <text x="971.1428571428571" y="414.12800000000004" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">1615</text>
+        <text x="971.1428571428571" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 971.1428571428571 602)" text-anchor="end">Maggie</text><rect x="1024.3714285714286" y="414.23999999999995" width="47.82857142857143" height="157.76000000000005" rx="3" fill="#1f6f5c"/>
+        <text x="1048.2857142857144" y="406.23999999999995" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">1700</text>
+        <text x="1048.2857142857142" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 1048.2857142857142 602)" text-anchor="end">Cunningham</text><rect x="1101.5142857142855" y="314.94399999999996" width="47.82857142857143" height="257.05600000000004" rx="3" fill="#1f6f5c"/>
+        <text x="1125.4285714285713" y="306.94399999999996" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">2770</text>
+        <text x="1125.4285714285713" y="602" font-size="13" fill="#4b5563" transform="rotate(-40 1125.4285714285713 602)" text-anchor="end">Silverton</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">Per-segment +ft from the official 2026 clockwise aid table; the Governor and Sherman segments are recorded as 0 ft climb by the organiser. The 14 segments sum to 33,441 ft, matching the official total. Self-made chart, not an official course profile.</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">RUNUP · Site-made chart, not an official course profile</text>
+</svg>

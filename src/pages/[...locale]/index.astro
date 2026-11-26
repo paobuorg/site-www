@@ -21,6 +21,7 @@ const copy = locale === 'zh-CN'
       eyebrow: '真实卫星地球 · 核验赛道',
       all: '全部',
       count: `${routes.length} 条已收录路线`,
+      collections: '主题集合',
       selected: '已选择',
       open: '打开路线',
       imagery: '底图：NASA Blue Marble 卫星影像合成',
@@ -31,6 +32,7 @@ const copy = locale === 'zh-CN'
       eyebrow: 'Real satellite Earth · verified courses',
       all: 'All',
       count: `${routes.length} catalogued routes`,
+      collections: 'Collections',
       selected: 'Selected',
       open: 'Open route',
       imagery: 'Base imagery: NASA Blue Marble composite',
@@ -178,7 +180,7 @@ const description = locale === 'zh-CN'
 
       <div class="globe-panel-footer">
         <span>{copy.count}</span>
-        <a href={`${prefix}/routes/`}>{t(locale, 'allRoutes')} →</a>
+        <span class="footer-links"><a href={`${prefix}/routes/`}>{t(locale, 'allRoutes')} →</a><a href={`${prefix}/compare/`}>{locale === 'zh-CN' ? '对比' : 'Compare'} →</a><a href={`${prefix}/collections/`}>{copy.collections} →</a></span>
       </div>
     </aside>
   </section>

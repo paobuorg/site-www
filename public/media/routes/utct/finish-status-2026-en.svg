@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="UTCT 2026: official finishers vs withdrawals, UT100 and 100M" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">UTCT 2026: official finishers vs withdrawals, UT100 and 100M</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">runners (official Sportraxs leaderboard)</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <rect x="84" y="572" width="1080" height="1.5" fill="#111827"/><line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">80</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">160</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">240</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">320</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">400</text><rect x="188" y="155.56" width="62" height="416.44" rx="3" fill="#1f6f5c"/>
+        <text x="219" y="147.56" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">359</text>
+        <text x="219" y="602" font-size="13" fill="#4b5563" text-anchor="middle">UT100 finish</text><rect x="458" y="469.92" width="62" height="102.07999999999998" rx="3" fill="#1f6f5c"/>
+        <text x="489" y="461.92" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">88</text>
+        <text x="489" y="602" font-size="13" fill="#4b5563" text-anchor="middle">UT100 withdraw</text><rect x="728" y="466.44" width="62" height="105.56" rx="3" fill="#1f6f5c"/>
+        <text x="759" y="458.44" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">91</text>
+        <text x="759" y="602" font-size="13" fill="#4b5563" text-anchor="middle">100M finish</text><rect x="998" y="530.24" width="62" height="41.75999999999999" rx="3" fill="#1f6f5c"/>
+        <text x="1029" y="522.24" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">36</text>
+        <text x="1029" y="602" font-size="13" fill="#4b5563" text-anchor="middle">100M withdraw</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">Official 2026 settlement on 22 Nov: UT100 field 447 (359 finish / 88 withdraw / 0 on course); 100M field 127 (91 finish / 36 withdraw / 0 on course). Leaderboard entrants are not the same as registrations. Self-made chart, not an official course profile.</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">RUNUP · Site-made chart, not an official course profile</text>
+</svg>

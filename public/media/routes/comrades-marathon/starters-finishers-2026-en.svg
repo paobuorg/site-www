@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="2026 Comrades (Up Run): starters and finishers" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">2026 Comrades (Up Run): starters and finishers</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">runners</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <rect x="84" y="572" width="1080" height="1.5" fill="#111827"/><line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">6000</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">12000</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">18000</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">24000</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">30000</text><rect x="323" y="237.4096" width="62" height="334.5904" rx="3" fill="#1f6f5c"/>
+        <text x="354" y="229.4096" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">21633</text>
+        <text x="354" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Starters</text><rect x="863" y="285.51093333333336" width="62" height="286.48906666666664" rx="3" fill="#1f6f5c"/>
+        <text x="894" y="277.51093333333336" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">18523</text>
+        <text x="894" y="602" font-size="13" fill="#4b5563" text-anchor="middle">Finishers</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">Starters 21,633 from the CMA pre-race medical-safety blog; finishers 18,523 from the CMA official 2026 post-race blog; the two figures come from separate official releases and do not break down retirements or cut-offs. Site-made chart, not an official course profile.</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">RUNUP · Site-made chart, not an official course profile</text>
+</svg>

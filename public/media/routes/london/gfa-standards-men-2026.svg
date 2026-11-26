@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="伦敦马拉松 2026 Good For Age 男子资格标准（按年龄组）" font-family="Segoe UI, Microsoft YaHei, Hiragino Sans GB, system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fbfcfa"/>
+  
+    <text x="40" y="56" font-size="30" font-weight="700" fill="#111827">伦敦马拉松 2026 Good For Age 男子资格标准（按年龄组）</text>
+    <text x="40" y="84" font-size="15" fill="#4b5563">分钟（资格全马净成绩上限）</text>
+    <line x1="40" y1="102" x2="1160" y2="102" stroke="#d7ded9"/>
+  <rect x="84" y="572" width="1080" height="1.5" fill="#111827"/><line x1="84" x2="1164" y1="572" y2="572" stroke="#d7ded9"/>
+      <text x="72" y="577" font-size="13" fill="#4b5563" text-anchor="end">0</text><line x1="84" x2="1164" y1="479.20000000000005" y2="479.20000000000005" stroke="#d7ded9"/>
+      <text x="72" y="484.20000000000005" font-size="13" fill="#4b5563" text-anchor="end">100</text><line x1="84" x2="1164" y1="386.4" y2="386.4" stroke="#d7ded9"/>
+      <text x="72" y="391.4" font-size="13" fill="#4b5563" text-anchor="end">200</text><line x1="84" x2="1164" y1="293.6" y2="293.6" stroke="#d7ded9"/>
+      <text x="72" y="298.6" font-size="13" fill="#4b5563" text-anchor="end">300</text><line x1="84" x2="1164" y1="200.79999999999998" y2="200.79999999999998" stroke="#d7ded9"/>
+      <text x="72" y="205.79999999999998" font-size="13" fill="#4b5563" text-anchor="end">400</text><line x1="84" x2="1164" y1="108" y2="108" stroke="#d7ded9"/>
+      <text x="72" y="113" font-size="13" fill="#4b5563" text-anchor="end">500</text><rect x="101.1" y="412.384" width="55.8" height="159.61599999999999" rx="3" fill="#1f6f5c"/>
+        <text x="129" y="404.384" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">172</text>
+        <text x="129" y="602" font-size="13" fill="#4b5563" text-anchor="middle">18-39</text><rect x="191.1" y="407.744" width="55.8" height="164.25599999999997" rx="3" fill="#1f6f5c"/>
+        <text x="219" y="399.744" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">177</text>
+        <text x="219" y="602" font-size="13" fill="#4b5563" text-anchor="middle">40-44</text><rect x="281.1" y="403.104" width="55.8" height="168.89600000000002" rx="3" fill="#1f6f5c"/>
+        <text x="309" y="395.104" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">182</text>
+        <text x="309" y="602" font-size="13" fill="#4b5563" text-anchor="middle">45-49</text><rect x="371.1" y="398.464" width="55.8" height="173.536" rx="3" fill="#1f6f5c"/>
+        <text x="399" y="390.464" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">187</text>
+        <text x="399" y="602" font-size="13" fill="#4b5563" text-anchor="middle">50-54</text><rect x="461.1" y="393.824" width="55.8" height="178.176" rx="3" fill="#1f6f5c"/>
+        <text x="489" y="385.824" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">192</text>
+        <text x="489" y="602" font-size="13" fill="#4b5563" text-anchor="middle">55-59</text><rect x="551.1" y="373.408" width="55.8" height="198.59199999999998" rx="3" fill="#1f6f5c"/>
+        <text x="579" y="365.408" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">214</text>
+        <text x="579" y="602" font-size="13" fill="#4b5563" text-anchor="middle">60-64</text><rect x="641.1" y="356.704" width="55.8" height="215.296" rx="3" fill="#1f6f5c"/>
+        <text x="669" y="348.704" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">232</text>
+        <text x="669" y="602" font-size="13" fill="#4b5563" text-anchor="middle">65-69</text><rect x="731.1" y="301.024" width="55.8" height="270.976" rx="3" fill="#1f6f5c"/>
+        <text x="759" y="293.024" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">292</text>
+        <text x="759" y="602" font-size="13" fill="#4b5563" text-anchor="middle">70-74</text><rect x="821.1" y="287.10400000000004" width="55.8" height="284.89599999999996" rx="3" fill="#1f6f5c"/>
+        <text x="849" y="279.10400000000004" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">307</text>
+        <text x="849" y="602" font-size="13" fill="#4b5563" text-anchor="middle">75-79</text><rect x="911.1" y="268.544" width="55.8" height="303.456" rx="3" fill="#1f6f5c"/>
+        <text x="939" y="260.544" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">327</text>
+        <text x="939" y="602" font-size="13" fill="#4b5563" text-anchor="middle">80-84</text><rect x="1001.1" y="228.64" width="55.8" height="343.36" rx="3" fill="#1f6f5c"/>
+        <text x="1029" y="220.64" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">370</text>
+        <text x="1029" y="602" font-size="13" fill="#4b5563" text-anchor="middle">85-89</text><rect x="1091.1" y="163.68" width="55.8" height="408.32" rx="3" fill="#1f6f5c"/>
+        <text x="1119" y="155.68" font-size="12.5" font-weight="600" fill="#111827" text-anchor="middle">440</text>
+        <text x="1119" y="602" font-size="13" fill="#4b5563" text-anchor="middle">90+</text>
+  
+    <line x1="40" y1="626" x2="1160" y2="626" stroke="#d7ded9"/>
+    <text x="40" y="666" font-size="12.5" fill="#4b5563">伦敦马拉松官方 2026 GFA 男子标准（女子标准在每个年龄组均更慢，如 18-39 为 3:38:00）；GFA 仅英国居民可申请，上限 6,000 名，达标只获得申请机会，名额按成绩优先录取。成绩须来自 UKA/AIMS/主管机构认证的线下全马，资格期 2024-10-01 至 2025-09-30。本站自制图，非官方赛道剖面。</text>
+    <text x="1160" y="666" font-size="12.5" fill="#4b5563" text-anchor="end">跑起来 RUNUP · 自制图，非官方赛道剖面</text>
+</svg>
