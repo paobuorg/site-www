@@ -24,7 +24,8 @@
     "check:production": "tsx scripts/check-production-content.mjs",
     "qa:pwa": "node tests/ui/pwa.mjs",
     "review:packet": "tsx scripts/review-packet.mjs",
-    "qa:crawl": "node tests/release/local-crawl.mjs"
+    "qa:crawl": "node tests/release/local-crawl.mjs",
+    "qa:mobile": "node tests/release/mobile-overflow.mjs"
   },
   "dependencies": {
     "@paobu/core": "file:vendor/paobu-core.tgz",

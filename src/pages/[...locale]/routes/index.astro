@@ -67,7 +67,7 @@ const description = locale === 'zh-CN'
         <span class="pill blue"><Icon name="route" size={14} />{t(locale, 'routeSubtitle')}</span>
         <h1>{copy.title}</h1>
         <p>{copy.intro}</p>
-      <div class="filter-row"><a class="button small ghost" href={`${prefix}/compare/`}>{locale === 'zh-CN' ? '对比全部路线' : 'Compare all routes'} →</a></div>
+      <div class="filter-row"><a class="button small ghost" href={`${prefix}/compare/`}>{locale === 'zh-CN' ? '对比全部路线' : 'Compare all routes'} →</a><a class="button small" href={`${prefix}/calendar/`}>{locale === 'zh-CN' ? '看 2027 赛历' : '2027 calendar'} →</a></div>
       </div>
       <Bean expression="map" size={126} className="intro-mascot" label={locale === 'zh-CN' ? '豆客在看路线' : 'Douke checking the route'} />
     </div>

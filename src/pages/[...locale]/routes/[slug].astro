@@ -16,6 +16,7 @@ import {
   routeTypeLabel,
 } from '../../../lib/view';
 import { ROUTE_COLLECTIONS } from '../../../lib/collections';
+import { CALENDAR_2027 } from '../../../data/calendar-2027';
 
 export function getStaticPaths() {
   const content = siteContent();
@@ -394,6 +395,8 @@ const copy = locale === 'zh-CN'
       distanceMethod: '距离口径',
       elevationMethod: '高程口径',
       mapAnchor: '锚点来源',
+      startMap: '打开交互地图',
+      startMapHint: '先看静态路线球，点击后再加载卫星地图；赛道事实与来源不受影响。',
       authors: '撰写',
       noReview: '尚无核验记录',
       checked: '最近核验',
@@ -432,6 +435,8 @@ const copy = locale === 'zh-CN'
       distanceMethod: 'Distance method',
       elevationMethod: 'Elevation method',
       mapAnchor: 'Anchor source',
+      startMap: 'Open interactive map',
+      startMapHint: 'Static globe first; load the satellite map on click. Route facts and sources remain available.',
       authors: 'Written by',
       noReview: 'No check record yet',
       checked: 'Last checked',
@@ -457,9 +462,25 @@ const structuredData = [
     description,
     url: pageUrl,
     locale,
-    dateModified: entity.updatedAt,
+    dateModified: entity.reviewedAt ?? entity.updatedAt,
     authors,
   }),
+  ...(details.courseEdition === '2027' && CALENDAR_2027[entity.slug]?.date ? [{
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: translation.title,
+    startDate: CALENDAR_2027[entity.slug]!.date,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    url: pageUrl,
+    description,
+    location: {
+      '@type': 'Place',
+      name: details.placeName[locale],
+      address: { '@type': 'PostalAddress', addressCountry: details.countryCodes[0] },
+    },
+    organizer: official ? { '@type': 'Organization', name: official.publisher, url: official.url } : undefined,
+  }] : []),
 ];
 const anchorLabel = details.mapAnchor.kind === 'start' ? copy.anchorStart : copy.anchorOverview;
 const relatedKnowledge = related.filter((item) => item.kind === 'knowledge');
@@ -480,8 +501,6 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
   footerAd
 >
   <Fragment slot="head">
-    <link rel="stylesheet" href="/cesium/Widgets/widgets.css" />
-    <link rel="preload" as="image" href="/textures/earth-blue-marble-2048.jpg" />
   </Fragment>
 
   <div class="page-shell">
@@ -503,10 +522,14 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
           data-title={mapLabel}
           data-kind={details.raceType}
         >
-          <div class="globe-poster" aria-hidden="true">
+          <div class="globe-poster">
             <div class="poster-sphere route-poster-sphere"></div>
+            <button class="map-start" type="button" data-route-map-start aria-label={`${copy.startMap}，${copy.startMapHint}`}>
+              <Icon name="globe" size={16} />
+              <span>{copy.startMap}</span>
+            </button>
           </div>
-          <div class="globe-loading">
+          <div class="globe-loading" hidden>
             <span class="spinner" aria-hidden="true"></span>
             <span class="sr-only">{t(locale, 'noGlobeLoading')}</span>
           </div>
@@ -715,8 +738,21 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
 </BaseLayout>
 
 <script>
-  import { initRouteGlobe } from '../../../client/globe';
-  initRouteGlobe();
+  import { ensureCesiumStyles, initRouteGlobe } from '../../../client/globe';
+  let mapStarted = false;
+  const startMap = () => {
+    if (mapStarted) return;
+    mapStarted = true;
+    const button = document.querySelector<HTMLButtonElement>('[data-route-map-start]');
+    const loading = document.querySelector<HTMLElement>('.route-map-card .globe-loading');
+    const stage = document.querySelector<HTMLElement>('[data-route-globe]');
+    button?.setAttribute('hidden', '');
+    if (loading) loading.hidden = false;
+    stage?.classList.add('is-map-active');
+    ensureCesiumStyles();
+    void initRouteGlobe();
+  };
+  document.querySelector('[data-route-map-start]')?.addEventListener('click', startMap, { once: true });
 </script>
 
 <style>
@@ -4913,5 +4949,33 @@ const relatedRoutes = related.filter((item) => item.kind === 'route');
     :lang(en) .vmm-100-narrative .vmm-compare-table td:nth-child(3)::before {
       content: "Another version";
     }
+  }
+
+  .route-map-card .globe-controls { opacity: 0; pointer-events: none; }
+  .route-map-card.is-map-active .globe-controls { opacity: 1; pointer-events: auto; }
+  .map-start {
+    position: absolute;
+    left: 50%;
+    top: 76%;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, .28);
+    border-radius: 999px;
+    background: rgba(8, 20, 36, .72);
+    color: #fff;
+    font: inherit;
+    font-size: .8rem;
+    font-weight: 650;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transform: translate(-50%, -50%);
+  }
+  .map-start:hover { background: rgba(8, 184, 157, .82); }
+  .map-start[hidden] { display: none; }
+  .route-map-card .poster-sphere {
+    background-image: url('/textures/earth-blue-marble-1024.jpg');
   }
 </style>

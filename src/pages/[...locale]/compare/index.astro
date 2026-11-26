@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
 import Icon from '@paobu/core/components/Icon.astro';
-import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { type Locale, LOCALES } from '@paobu/core/lib/i18n';
 import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
 import { siteContent } from '../../../lib/content';
 import { formatDistance, formatElevation, routeDetails, routeTypeLabel } from '../../../lib/view';
+import { calendarEntries } from '../../../lib/calendar';
 
 export function getStaticPaths() {
   return LOCALES.map((locale) => ({ params: { locale: localeStaticParam(locale) }, props: { locale } }));
@@ -14,38 +15,33 @@ const locale = Astro.props.locale as Locale;
 const prefix = localePrefix(locale);
 const content = siteContent();
 const routes = content.visible('route');
+const calendar = new Map(calendarEntries(content, locale).map((entry) => [entry.slug, entry]));
 const copy = locale === 'zh-CN'
   ? {
-      eyebrow: '路线对比',
-      title: '把赛道放在同一张表里',
-      intro: '距离、爬升、类型、版本放在一起看。数字来自每条路线的固定版本；没有可信数字时写“未知”，不补估算。',
-      flagship: '15 条旗舰主线',
-      flagshipHint: '先看这 15 条，再决定要不要进入同一类型的其他赛道。',
-      all: '全部路线',
-      allHint: '按类型与距离排序，方便找同距离、同爬升或同地区的替代选项。',
-      route: '路线',
-      place: '地点',
-      type: '类型',
-      distance: '距离',
-      climb: '爬升',
-      version: '版本',
-      open: '打开',
+      eyebrow: '路线对比', title: '把赛道放在同一张表里',
+      intro: '距离、爬升、类型、2027 日期与报名状态放在一起看。数字来自每条路线的固定版本；没有可信数字时写“未知”，不补估算。',
+      flagship: '15 条旗舰主线', flagshipHint: '先看这 15 条，再决定要不要进入同一类型的其他赛道。',
+      all: '全部路线', allHint: '先筛选，再排序。手机端看卡片，桌面端看表格；筛选条件可以随链接分享。',
+      route: '路线', place: '地点', type: '类型', distance: '距离', climb: '爬升', version: '版本',
+      mobileNote: '手机端按路线卡片查看；桌面端可切回表格。',
+      filter: '筛选全部路线', search: '搜索名称或地点', region: '地区', date: '2027 日期', anyDate: '全部', regStatus: '报名状态', anyStatus: '全部',
+      dateKnown: '已公布', dateTbd: '待公布', distanceBand: '距离', anyDistance: '全部', short: '≤ 50 km', middle: '50–100 km', long: '≥ 100 km',
+      sort: '排序', sortType: '类型 + 距离', sortDistance: '距离', sortClimb: '爬升', sortDate: '2027 日期', sortName: '名称', sortDeadline: '报名截止',
+      count: '显示 {shown} / {total} 条', empty: '没有符合当前筛选的路线。', reset: '重置', share: '复制筛选链接',
+      dateCol: '2027', regCol: '报名', regOpen: '报名开放', regOfficial: '以官网为准', regTbd: '待公布', regClosed: '已结束',
     }
   : {
-      eyebrow: 'Route comparison',
-      title: 'Put the courses in one table',
-      intro: 'Distance, climb, type and version side by side. Numbers come from each route\'s fixed version; where there is no trustworthy number we write "unknown" rather than an estimate.',
-      flagship: 'Fifteen flagship spines',
-      flagshipHint: 'Start with these fifteen, then decide whether to enter another course of the same type.',
-      all: 'All routes',
-      allHint: 'Sorted by type and distance, to find alternatives at the same distance, climb or region.',
-      route: 'Route',
-      place: 'Place',
-      type: 'Type',
-      distance: 'Distance',
-      climb: 'Climb',
-      version: 'Version',
-      open: 'Open',
+      eyebrow: 'Route comparison', title: 'Put the courses in one table',
+      intro: 'Distance, climb, type, 2027 date and registration status side by side. Numbers come from each route\'s fixed version; where there is no trustworthy number we write "unknown" rather than an estimate.',
+      flagship: 'Fifteen flagship spines', flagshipHint: 'Start with these fifteen, then decide whether to enter another course of the same type.',
+      all: 'All routes', allHint: 'Filter first, then sort. Cards on phones, table on desktop; the filter state travels with the link.',
+      route: 'Route', place: 'Place', type: 'Type', distance: 'Distance', climb: 'Climb', version: 'Version',
+      mobileNote: 'On phones each route is a card; the table returns on desktop.',
+      filter: 'Filter all routes', search: 'Search name or place', region: 'Region', date: '2027 date', anyDate: 'All', regStatus: 'Registration', anyStatus: 'All',
+      dateKnown: 'Announced', dateTbd: 'TBA', distanceBand: 'Distance', anyDistance: 'All', short: '≤ 50 km', middle: '50–100 km', long: '≥ 100 km',
+      sort: 'Sort', sortType: 'Type + distance', sortDistance: 'Distance', sortClimb: 'Climb', sortDate: '2027 date', sortName: 'Name', sortDeadline: 'Entry deadline',
+      count: '{shown} of {total} shown', empty: 'No routes match these filters.', reset: 'Reset', share: 'Copy filtered link',
+      dateCol: '2027', regCol: 'Registration', regOpen: 'Registration open', regOfficial: 'See official page', regTbd: 'TBA', regClosed: 'Closed',
     };
 const flagship = ['boston', 'new-york', 'berlin', 'chicago', 'tokyo', 'london', 'shanghai', 'beijing', 'comrades-marathon', 'utmb', 'utnh', 'western-states', 'hardrock', 'hong-kong-100', 'utct'];
 const typeOrder = ['road-marathon', 'road-ultra', 'trail-ultra', 'trail-mountain'];
@@ -56,6 +52,24 @@ const rows = routes.slice().sort((a, b) => {
     || (da.distanceMeters ?? 0) - (db.distanceMeters ?? 0);
 });
 const flagshipRows = rows.filter((route) => flagship.includes(route.slug));
+const regionMap: Record<string, [string, string]> = {
+  CN: ['中国', 'China'], HK: ['中国香港', 'Hong Kong'], JP: ['日本', 'Japan'], KR: ['韩国', 'South Korea'],
+  US: ['美国', 'United States'], CA: ['加拿大', 'Canada'], GB: ['英国', 'United Kingdom'], DE: ['德国', 'Germany'],
+  FR: ['法国', 'France'], IT: ['意大利', 'Italy'], CH: ['瑞士', 'Switzerland'], ES: ['西班牙', 'Spain'],
+  PT: ['葡萄牙', 'Portugal'], GR: ['希腊', 'Greece'], ZA: ['南非', 'South Africa'], KE: ['肯尼亚', 'Kenya'],
+  MA: ['摩洛哥', 'Morocco'], BR: ['巴西', 'Brazil'], AR: ['阿根廷', 'Argentina'], CL: ['智利', 'Chile'],
+  AU: ['澳大利亚', 'Australia'], NZ: ['新西兰', 'New Zealand'], NP: ['尼泊尔', 'Nepal'], TH: ['泰国', 'Thailand'],
+  VN: ['越南', 'Vietnam'], RE: ['留尼汪', 'Réunion'], AQ: ['南极洲', 'Antarctica'],
+};
+const regionName = (code: string) => regionMap[code]?.[locale === 'zh-CN' ? 0 : 1] ?? code;
+const dateLabel = (entry: any) => entry?.date ? entry.dateLabel : (locale === 'zh-CN' ? '待公布' : 'TBA');
+const regLabel = (entry: any) => {
+  if (!entry) return locale === 'zh-CN' ? '以官网为准' : 'See official page';
+  if (entry.registrationStatus === 'open') return copy.regOpen;
+  if (entry.registrationStatus === 'closed') return copy.regClosed;
+  if (entry.registrationStatus === 'tbd') return copy.regTbd;
+  return copy.regOfficial;
+};
 const title = `${copy.title} · RUNUP`;
 const description = copy.intro;
 ---
@@ -77,12 +91,7 @@ const description = copy.intro;
     </header>
 
     <section class="section" aria-labelledby="flagship-title">
-      <div class="section-head">
-        <div>
-          <h2 id="flagship-title">{copy.flagship}</h2>
-          <p>{copy.flagshipHint}</p>
-        </div>
-      </div>
+      <div class="section-head"><div><h2 id="flagship-title">{copy.flagship}</h2><p>{copy.flagshipHint}</p></div></div>
       <div class="table-scroll compare-scroll">
         <table class="compare-table">
           <thead><tr><th>{copy.route}</th><th>{copy.place}</th><th>{copy.type}</th><th>{copy.distance}</th><th>{copy.climb}</th><th>{copy.version}</th></tr></thead>
@@ -104,29 +113,113 @@ const description = copy.intro;
           </tbody>
         </table>
       </div>
+      <p class="compare-mobile-note">{copy.mobileNote}</p>
+      <div class="compare-cards">
+        {flagshipRows.map((route) => {
+          const details = routeDetails(route);
+          const translation = content.translation(route, locale);
+          return (
+            <article class="compare-card">
+              <h3><a href={`${prefix}/routes/${route.slug}/`}>{translation.title}</a></h3>
+              <dl>
+                <div><dt>{copy.place}</dt><dd>{details.placeName[locale]}</dd></div>
+                <div><dt>{copy.type}</dt><dd>{routeTypeLabel(details.raceType, locale)}</dd></div>
+                <div><dt>{copy.distance}</dt><dd>{formatDistance(details.distanceMeters, locale)}</dd></div>
+                <div><dt>{copy.climb}</dt><dd>{formatElevation(details.elevationGainMeters, locale)}</dd></div>
+                <div><dt>{copy.version}</dt><dd>{details.courseVersion ?? '—'}</dd></div>
+              </dl>
+            </article>
+          );
+        })}
+      </div>
     </section>
 
     <section class="section" aria-labelledby="all-title">
-      <div class="section-head">
-        <div>
-          <h2 id="all-title">{copy.all}</h2>
-          <p>{copy.allHint}</p>
+      <div class="section-head"><div><h2 id="all-title">{copy.all}</h2><p>{copy.allHint}</p></div></div>
+
+      <form class="compare-filters" data-compare-form aria-label={copy.filter}>
+        <div class="compare-filter-title"><Icon name="filter" size={14} />{copy.filter}</div>
+        <div class="compare-search">
+          <label for="compare-q">{copy.search}</label>
+          <input id="compare-q" name="q" type="search" autocomplete="off" placeholder={copy.search} />
         </div>
-      </div>
+        <div>
+          <label for="compare-type">{copy.type}</label>
+          <select id="compare-type" name="type">
+            <option value="all">{copy.anyDate}</option>
+            {typeOrder.map((type) => <option value={type}>{routeTypeLabel(type as any, locale)}</option>)}
+          </select>
+        </div>
+        <div>
+          <label for="compare-region">{copy.region}</label>
+          <select id="compare-region" name="region">
+            <option value="all">{copy.anyDate}</option>
+            {[...new Set(calendar.values())].map((entry) => entry.region).filter((value, index, list) => list.indexOf(value) === index).sort().map((region) => <option value={region}>{region}</option>)}
+          </select>
+        </div>
+        <div>
+          <label for="compare-reg">{copy.regStatus}</label>
+          <select id="compare-reg" name="reg">
+            <option value="all">{copy.anyStatus}</option>
+            <option value="open">{copy.regOpen}</option>
+            <option value="closed">{copy.regClosed}</option>
+            <option value="tbd">{copy.regTbd}</option>
+            <option value="official">{copy.regOfficial}</option>
+          </select>
+        </div>
+        <div>
+          <label for="compare-date">{copy.date}</label>
+          <select id="compare-date" name="date">
+            <option value="all">{copy.anyDate}</option>
+            <option value="known">{copy.dateKnown}</option>
+            <option value="tbd">{copy.dateTbd}</option>
+          </select>
+        </div>
+        <div>
+          <label for="compare-distance">{copy.distanceBand}</label>
+          <select id="compare-distance" name="distance">
+            <option value="all">{copy.anyDistance}</option>
+            <option value="short">{copy.short}</option>
+            <option value="middle">{copy.middle}</option>
+            <option value="long">{copy.long}</option>
+          </select>
+        </div>
+        <div>
+          <label for="compare-sort">{copy.sort}</label>
+          <select id="compare-sort" name="sort">
+            <option value="type">{copy.sortType}</option>
+            <option value="distance">{copy.sortDistance}</option>
+            <option value="climb">{copy.sortClimb}</option>
+            <option value="date">{copy.sortDate}</option>
+            <option value="deadline">{copy.sortDeadline}</option>
+            <option value="name">{copy.sortName}</option>
+          </select>
+        </div>
+        <div class="compare-filter-actions">
+          <button class="button ghost small" type="button" data-compare-reset>{copy.reset}</button>
+          <button class="button small" type="button" data-compare-share>{copy.share}</button>
+        </div>
+      </form>
+
+      <div class="compare-toolbar"><p data-compare-count data-template={copy.count}>{copy.count.replace('{shown}', String(rows.length)).replace('{total}', String(rows.length))}</p></div>
+
       <div class="table-scroll compare-scroll">
         <table class="compare-table">
-          <thead><tr><th>{copy.route}</th><th>{copy.place}</th><th>{copy.type}</th><th>{copy.distance}</th><th>{copy.climb}</th><th>{copy.version}</th></tr></thead>
-          <tbody>
+          <thead><tr><th>{copy.route}</th><th>{copy.place}</th><th>{copy.type}</th><th>{copy.distance}</th><th>{copy.climb}</th><th>{copy.dateCol}</th><th>{copy.regCol}</th><th>{copy.version}</th></tr></thead>
+          <tbody data-compare-body>
             {rows.map((route) => {
               const details = routeDetails(route);
               const translation = content.translation(route, locale);
+              const entry = calendar.get(route.slug);
               return (
-                <tr>
+                <tr data-compare-item data-slug={route.slug} data-type={details.raceType} data-region={entry?.region ?? ''} data-date={entry?.date ?? ''} data-distance={details.distanceMeters ?? ''} data-climb={details.elevationGainMeters ?? ''} data-reg={entry?.registrationStatus ?? 'official'} data-close={entry?.registrationClose ?? ''} data-name={`${translation.title} ${details.placeName[locale]}`.toLowerCase()}>
                   <td><a href={`${prefix}/routes/${route.slug}/`}>{translation.title}</a></td>
                   <td>{details.placeName[locale]}</td>
                   <td>{routeTypeLabel(details.raceType, locale)}</td>
                   <td>{formatDistance(details.distanceMeters, locale)}</td>
                   <td>{formatElevation(details.elevationGainMeters, locale)}</td>
+                  <td>{dateLabel(entry)}</td>
+                  <td>{regLabel(entry)}</td>
                   <td>{details.courseVersion ?? '—'}</td>
                 </tr>
               );
@@ -134,15 +227,173 @@ const description = copy.intro;
           </tbody>
         </table>
       </div>
+      <p class="compare-mobile-note">{copy.mobileNote}</p>
+      <div class="compare-cards" data-compare-cards>
+        {rows.map((route) => {
+          const details = routeDetails(route);
+          const translation = content.translation(route, locale);
+          const entry = calendar.get(route.slug);
+          return (
+            <article class="compare-card" data-compare-item data-slug={route.slug} data-type={details.raceType} data-region={entry?.region ?? ''} data-date={entry?.date ?? ''} data-distance={details.distanceMeters ?? ''} data-climb={details.elevationGainMeters ?? ''} data-reg={entry?.registrationStatus ?? 'official'} data-close={entry?.registrationClose ?? ''} data-name={`${translation.title} ${details.placeName[locale]}`.toLowerCase()}>
+              <h3><a href={`${prefix}/routes/${route.slug}/`}>{translation.title}</a></h3>
+              <dl>
+                <div><dt>{copy.place}</dt><dd>{details.placeName[locale]} · {regionName(details.countryCodes[0] ?? '')}</dd></div>
+                <div><dt>{copy.type}</dt><dd>{routeTypeLabel(details.raceType, locale)}</dd></div>
+                <div><dt>{copy.distance}</dt><dd>{formatDistance(details.distanceMeters, locale)}</dd></div>
+                <div><dt>{copy.climb}</dt><dd>{formatElevation(details.elevationGainMeters, locale)}</dd></div>
+                <div><dt>{copy.dateCol}</dt><dd>{dateLabel(entry)}</dd></div>
+                <div><dt>{copy.regCol}</dt><dd>{regLabel(entry)}</dd></div>
+                <div><dt>{copy.version}</dt><dd>{details.courseVersion ?? '—'}</dd></div>
+              </dl>
+            </article>
+          );
+        })}
+      </div>
+      <div class="empty-state" data-compare-empty hidden><h2>{copy.empty}</h2></div>
     </section>
   </div>
 </BaseLayout>
 
+<script is:inline>
+  (function () {
+    const form = document.querySelector('[data-compare-form]');
+    const items = Array.from(document.querySelectorAll('[data-compare-item]'));
+    const tableBody = document.querySelector('[data-compare-body]');
+    const cards = document.querySelector('[data-compare-cards]');
+    const count = document.querySelector('[data-compare-count]');
+    const empty = document.querySelector('[data-compare-empty]');
+    const reset = document.querySelector('[data-compare-reset]');
+    const share = document.querySelector('[data-compare-share]');
+    if (!form || !items.length) return;
+    const fields = ['q', 'type', 'region', 'reg', 'date', 'distance', 'sort'];
+    const template = count?.dataset.template || (count ? count.textContent : '');
+    const total = items.filter((item) => item.tagName === 'TR').length;
+    const bySlug = new Map();
+    for (const item of items) {
+      const list = bySlug.get(item.dataset.slug) || [];
+      list.push(item);
+      bySlug.set(item.dataset.slug, list);
+    }
+
+    function read() {
+      const data = {};
+      for (const name of fields) {
+        const field = form.querySelector(`[name="${name}"]`);
+        data[name] = field ? field.value : 'all';
+      }
+      return data;
+    }
+
+    function matches(item, data) {
+      const name = (item.dataset.name || '').toLowerCase();
+      if (data.q && !name.includes(data.q.toLowerCase().trim())) return false;
+      if (data.type !== 'all' && item.dataset.type !== data.type) return false;
+      if (data.region !== 'all' && item.dataset.region !== data.region) return false;
+      if (data.reg !== 'all' && item.dataset.reg !== data.reg) return false;
+      if (data.date === 'known' && !item.dataset.date) return false;
+      if (data.date === 'tbd' && item.dataset.date) return false;
+      const distance = Number(item.dataset.distance || 0);
+      if (data.distance === 'short' && !(distance > 0 && distance <= 50000)) return false;
+      if (data.distance === 'middle' && !(distance > 50000 && distance <= 100000)) return false;
+      if (data.distance === 'long' && !(distance >= 100000)) return false;
+      return true;
+    }
+
+    function sortSlugs(data) {
+      const values = Array.from(bySlug.values());
+      let visible = values.filter((list) => matches(list[0], data));
+      visible.sort((a, b) => {
+        const x = a[0].dataset;
+        const y = b[0].dataset;
+        if (data.sort === 'distance') return Number(x.distance || 0) - Number(y.distance || 0);
+        if (data.sort === 'climb') return Number(x.climb || 0) - Number(y.climb || 0);
+        if (data.sort === 'deadline') {
+          if (x.close && y.close) return x.close.localeCompare(y.close);
+          if (x.close) return -1;
+          if (y.close) return 1;
+          return (x.date || '').localeCompare(y.date || '');
+        }
+        if (data.sort === 'date') {
+          if (x.date && y.date) return x.date.localeCompare(y.date);
+          if (x.date) return -1;
+          if (y.date) return 1;
+          return 0;
+        }
+        if (data.sort === 'name') return (x.name || '').localeCompare(y.name || '');
+        return 0;
+      });
+      return visible;
+    }
+
+    function apply() {
+      const data = read();
+      const visible = sortSlugs(data);
+      const visibleSlugs = new Set(visible.map((list) => list[0].dataset.slug));
+      for (const item of items) item.hidden = !visibleSlugs.has(item.dataset.slug);
+      if (tableBody) for (const list of visible) tableBody.appendChild(list.find((item) => item.tagName === 'TR'));
+      if (cards) for (const list of visible) {
+        const card = list.find((item) => item.tagName === 'ARTICLE');
+        if (card) cards.appendChild(card);
+      }
+      const shown = visible.length;
+      if (count) count.textContent = template.replace('{shown}', String(shown)).replace('{total}', String(total));
+      if (empty) empty.hidden = shown !== 0;
+      try {
+        const url = new URL(location.href);
+        for (const name of fields) {
+          if (data[name] && data[name] !== 'all') url.searchParams.set(name, data[name]);
+          else url.searchParams.delete(name);
+        }
+        history.replaceState(null, '', url.toString());
+      } catch (error) {}
+    }
+
+    const params = new URLSearchParams(location.search);
+    for (const name of fields) {
+      const field = form.querySelector(`[name="${name}"]`);
+      if (field && params.has(name)) field.value = params.get(name);
+    }
+    form.addEventListener('input', apply);
+    form.addEventListener('change', apply);
+    reset?.addEventListener('click', () => { form.reset(); apply(); });
+    share?.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(location.href); share.textContent = share.dataset.copied || (share.textContent?.includes('复制') ? '已复制' : 'Copied'); } catch (error) {}
+    });
+    apply();
+  })();
+</script>
+
 <style>
   .compare-scroll { margin-top: 1rem; }
-  .compare-table { width: 100%; min-width: 760px; border-collapse: collapse; }
+  .compare-table { width: 100%; min-width: 920px; border-collapse: collapse; }
   .compare-table th, .compare-table td { padding: .65rem .7rem; border-bottom: 1px solid var(--line, #d8ded2); text-align: left; vertical-align: top; }
-  .compare-table th { font-size: .82rem; letter-spacing: .02em; color: var(--muted, #6c7566); }
-  .compare-table td { font-size: .92rem; }
+  .compare-table th { font-size: .78rem; letter-spacing: .02em; color: var(--muted, #6c7566); }
+  .compare-table td { font-size: .88rem; }
   .compare-table tr:hover td { background: var(--surface-2, #f6f8f2); }
+  .compare-table tr[hidden] { display: none; }
+  .compare-filters { display: grid; grid-template-columns: minmax(190px, 1.4fr) repeat(5, minmax(110px, 1fr)) auto; gap: 10px; align-items: end; margin: 16px 0 8px; padding: 15px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+  .compare-filter-title { grid-column: 1 / -1; display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; }
+  .compare-filters label { display: block; margin-bottom: 5px; color: var(--muted); font-size: .72rem; }
+  .compare-filters input, .compare-filters select { width: 100%; min-width: 0; padding: 9px 10px; border: 1px solid var(--line); border-radius: 9px; background: var(--bg); color: var(--ink); font: inherit; font-size: .84rem; }
+  .compare-filter-actions { display: flex; gap: 8px; align-items: center; }
+  .compare-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; color: var(--muted); font-size: .8rem; }
+  .compare-mobile-note { display: none; }
+  .compare-cards { display: none; }
+  .compare-card { border: 1px solid var(--line, #d8ded2); border-radius: 18px; padding: 14px; background: var(--surface-1, #fff); }
+  .compare-card[hidden] { display: none; }
+  .compare-card h3 { margin: 0 0 10px; font-size: 1.02rem; line-height: 1.45; }
+  .compare-card h3 a { color: inherit; text-decoration: none; }
+  .compare-card dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; margin: 0; }
+  .compare-card dl > div { min-width: 0; }
+  .compare-card dt { color: var(--muted, #6c7566); font-size: .74rem; letter-spacing: .02em; }
+  .compare-card dd { margin: 2px 0 0; font-size: .88rem; overflow-wrap: anywhere; }
+  @media (max-width: 1100px) { .compare-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 760px) {
+    .compare-scroll { display: none; }
+    .compare-mobile-note { display: block; margin: .35rem 0 .8rem; color: var(--muted, #6c7566); font-size: .82rem; line-height: 1.55; }
+    .compare-cards { display: grid; gap: 12px; margin-top: .4rem; }
+    .compare-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .compare-filter-actions { grid-column: 1 / -1; }
+  }
+  @media (max-width: 420px) { .compare-filters { grid-template-columns: 1fr; } }
 </style>

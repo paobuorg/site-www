@@ -6,6 +6,7 @@ import SearchField from '@paobu/core/components/SearchField.astro';
 import { t, type Locale, LOCALES } from '@paobu/core/lib/i18n';
 import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
 import { siteContent } from '../../../lib/content';
+import { entityHref } from '../../../lib/view';
 
 export function getStaticPaths() {
   return LOCALES.map((locale) => ({ params: { locale: localeStaticParam(locale) }, props: { locale } }));
@@ -14,6 +15,16 @@ export function getStaticPaths() {
 const locale = Astro.props.locale as Locale;
 const prefix = localePrefix(locale);
 const content = siteContent();
+const suggest = content.entities.map((entity) => {
+  const translation = content.translation(entity, locale);
+  return {
+    title: translation.title,
+    aliases: translation.aliases,
+    kind: entity.kind,
+    href: entityHref(entity, locale),
+    summary: translation.summary,
+  };
+});
 const copy = locale === 'zh-CN'
   ? {
       title: '全站搜索',
@@ -128,11 +139,16 @@ const description = locale === 'zh-CN'
       <button class="button ghost" type="button" data-search-more hidden>{copy.loadMore}</button>
     </div>
 
+    <script type="application/json" data-search-suggest-data set:html={JSON.stringify(suggest).replace(/</g, '\\u003c')}></script>
     <div class="empty-state" data-search-empty hidden>
       <Bean expression="search" size={92} className="empty-mascot" />
       <h2>{copy.noResultsTitle}</h2>
       <p>{copy.noResultsBody}</p>
       <a class="button primary" href={`${prefix}/routes/`}>{copy.browseRoutes}</a>
+      <div class="search-suggest" data-search-suggest hidden>
+        <h2 data-search-suggest-title>{locale === 'zh-CN' ? '最接近的条目' : 'Closest entries'}</h2>
+        <div class="search-suggest-list" data-search-suggest-list></div>
+      </div>
     </div>
 
     <div class="notice tone-blue search-hint">
@@ -158,6 +174,46 @@ const description = locale === 'zh-CN'
     const emptyRoot = app.querySelector('[data-search-empty]');
     const moreButton = app.querySelector('[data-search-more]');
     const kindButtons = Array.from(app.querySelectorAll('[data-search-kind]'));
+    const suggestRoot = app.querySelector('[data-search-suggest]');
+    const suggestList = app.querySelector('[data-search-suggest-list]');
+    function suggestFor(query, fallback = false) {
+      const q = query.toLowerCase().trim();
+      if (!q || !suggestList) return;
+      let scored = suggestData.map((item) => {
+        const title = (item.title || '').toLowerCase();
+        const aliases = (item.aliases || []).map((alias) => alias.toLowerCase());
+        let score = 0;
+        if (aliases.some((alias) => alias === q)) score = 100;
+        else if (aliases.some((alias) => alias.includes(q) || q.includes(alias))) score = 80;
+        else if (title.includes(q)) score = 70;
+        else {
+          const chars = Array.from(new Set(q.replace(/\s+/g, '')));
+          const seen = chars.filter((char) => title.includes(char) || aliases.some((alias) => alias.includes(char)));
+          score = seen.length >= Math.max(2, Math.ceil(chars.length * 0.6)) ? 40 + seen.length : 0;
+        }
+        return { ...item, score };
+      }).filter((item) => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 6);
+      let usedFallback = false;
+      if (!scored.length && fallback) {
+        const routes = suggestData.filter((item) => item.kind === 'route').slice(0, 3);
+        const guides = suggestData.filter((item) => item.kind === 'knowledge').slice(0, 3);
+        scored = [...routes, ...guides];
+        usedFallback = scored.length > 0;
+      }
+      const titleNode = app.querySelector('[data-search-suggest-title]');
+      if (titleNode) {
+        titleNode.textContent = usedFallback
+          ? (document.documentElement.lang === 'zh-CN' ? '没有精确匹配，先看看这些' : 'No exact match — start here')
+          : (document.documentElement.lang === 'zh-CN' ? '最接近的条目' : 'Closest entries');
+      }
+      suggestList.innerHTML = scored.map((item) => `<a class="search-suggest-item" href="${item.href}"><span class="search-suggest-kind">${item.kind === 'route' ? (document.documentElement.lang === 'zh-CN' ? '路线' : 'Route') : item.kind === 'tool' ? (document.documentElement.lang === 'zh-CN' ? '工具' : 'Tool') : (document.documentElement.lang === 'zh-CN' ? '知识' : 'Guide')}</span><strong>${item.title}</strong><span>${item.summary || ''}</span></a>`).join('');
+      if (suggestRoot) suggestRoot.hidden = scored.length === 0;
+    }
+
+    const suggestData = (() => {
+      const node = document.querySelector('[data-search-suggest-data]');
+      try { return node ? JSON.parse(node.textContent || '[]') : []; } catch (error) { return []; }
+    })();
 
     let pagefind = null;
     let pagefindError = null;
@@ -273,6 +329,7 @@ const description = locale === 'zh-CN'
         results = [];
         if (resultsRoot) resultsRoot.textContent = '';
         if (emptyRoot) emptyRoot.hidden = true;
+        if (suggestRoot) suggestRoot.hidden = true;
         if (moreButton) moreButton.hidden = true;
         setStatus(strings.statusInitial || '');
         return;
@@ -302,12 +359,13 @@ const description = locale === 'zh-CN'
         if (loaded.length === 0) {
           setStatus(strings.statusEmpty || 'No matches.');
           if (resultsRoot) resultsRoot.textContent = '';
-          if (emptyRoot) emptyRoot.hidden = false;
+          if (emptyRoot) { emptyRoot.hidden = false; suggestFor(clean, true); }
           if (moreButton) moreButton.hidden = true;
           return;
         }
         setStatus((strings.statusResults || '').replace('{count}', String(loaded.length)));
         if (emptyRoot) emptyRoot.hidden = true;
+        if (suggestRoot) suggestRoot.hidden = true;
         renderResults(true);
       } catch (error) {
         if (token !== requestToken) return;
@@ -389,6 +447,14 @@ const description = locale === 'zh-CN'
     line-height: 1.64;
   }
 
+  .search-suggest { margin-top: 1rem; text-align: left; }
+  .search-suggest h2 { font-size: .95rem; margin-bottom: .55rem; }
+  .search-suggest-list { display: grid; gap: 8px; }
+  .search-suggest-item { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 2px 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: inherit; }
+  .search-suggest-item:hover { background: var(--surface-2); }
+  .search-suggest-kind { grid-row: span 2; align-self: center; color: var(--muted); font-size: .72rem; }
+  .search-suggest-item strong { font-size: .9rem; }
+  .search-suggest-item > span:last-child { color: var(--muted); font-size: .78rem; line-height: 1.45; }
   .empty-state[hidden] {
     display: none;
   }

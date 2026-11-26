@@ -27,6 +27,7 @@ const scenarios = {
   },
   homeDesktop: {
     url: urls.home,
+    waitForPoster: true,
     viewport: { width: 1440, height: 900 },
     deviceScaleFactor: 1,
     network: { latency: 80, downloadThroughput: 1250 * 1024, uploadThroughput: 500 * 1024 },
@@ -34,12 +35,21 @@ const scenarios = {
   },
   homeMobile: {
     url: urls.home,
+    waitForPoster: true,
     viewport: { width: 390, height: 844 },
     deviceScaleFactor: 2,
     isMobile: true,
     hasTouch: true,
     network: { latency: 80, downloadThroughput: 1250 * 1024, uploadThroughput: 500 * 1024 },
     cpuRate: 4,
+  },
+  homeGlobeDesktop: {
+    url: urls.home,
+    viewport: { width: 1440, height: 900 },
+    deviceScaleFactor: 1,
+    network: { latency: 80, downloadThroughput: 1250 * 1024, uploadThroughput: 500 * 1024 },
+    cpuRate: 1,
+    clickGlobe: true,
   },
   homeVisibleMobile: {
     url: urls.home,
@@ -50,6 +60,7 @@ const scenarios = {
     network: { latency: 150, downloadThroughput: 200 * 1024, uploadThroughput: 96 * 1024 },
     cpuRate: 4,
     waitForGlobe: false,
+    waitForPoster: true,
   },
 };
 
@@ -208,18 +219,31 @@ async function runScenario(browser, name, scenario, runIndex) {
   await page.goto(scenario.url, { waitUntil: 'load', timeout: 90_000 });
   let readyMs = null;
   let fallback = false;
-  if (scenario.waitForGlobe !== false) {
+  if (scenario.waitForPoster) {
+    try {
+      await page.waitForSelector('[data-globe-start]', { state: 'visible', timeout: 30_000 });
+      readyMs = await page.evaluate(() => Math.round(performance.now()));
+    } catch {}
+  }
+  if (scenario.clickGlobe) {
+    try {
+      await page.click('[data-globe-start]');
+    } catch {}
+  }
+  if (scenario.waitForGlobe !== false && !scenario.waitForPoster) {
     try {
       await page.waitForFunction(
         () => {
           const loading = document.querySelector('.globe-loading');
           const canvas = document.querySelector('.globe-stage canvas');
           const fallback = document.querySelector('.globe-fallback');
+          const poster = document.querySelector('.globe-poster');
           if (fallback && !fallback.hidden) return true;
           return Boolean(
             canvas &&
               loading &&
               getComputedStyle(loading).display === 'none' &&
+              poster?.classList.contains('is-hidden') &&
               canvas.getBoundingClientRect().width > 0,
           );
         },
@@ -235,7 +259,7 @@ async function runScenario(browser, name, scenario, runIndex) {
   let idleClearsPerSecond = null;
   let activeClearsPerSecond = null;
   let rafFps = null;
-  if (readyMs && !fallback) {
+  if (readyMs && !fallback && !scenario.waitForPoster && scenario.waitForGlobe !== false) {
     const idleStart = await page.evaluate(() => window.__qa.glClear);
     await page.waitForTimeout(2_000);
     const idleEnd = await page.evaluate(() => window.__qa.glClear);
@@ -407,8 +431,8 @@ async function main() {
       mapIndexGzipBytes: 100 * 1024,
       'article.LCP': 2500,
       'article.CLS': 0.1,
-      'homeDesktop.ready': 4000,
-      'homeMobile.ready': 6000,
+      'homeDesktop.ready': 1500,
+      'homeMobile.ready': 2500,
     },
     runs: {},
   };
@@ -430,6 +454,7 @@ async function main() {
       article: summarize(report.runs.article),
       homeDesktop: summarize(report.runs.homeDesktop),
       homeMobile: summarize(report.runs.homeMobile),
+      homeGlobeDesktop: summarize(report.runs.homeGlobeDesktop),
       homeVisibleMobile: summarize(report.runs.homeVisibleMobile),
     };
     report.sizes = {
@@ -448,7 +473,7 @@ async function main() {
         run.network.every((request) => !new RegExp(`^http://${host.replaceAll('.', '\\.')}:4421/pagefind/`).test(request.url)),
       ),
       homeFallback: report.runs.homeDesktop.some((run) => run.fallback),
-      renderer: report.runs.homeDesktop[0]?.renderer ?? null,
+      renderer: report.runs.homeGlobeDesktop?.[0]?.renderer ?? report.runs.homeDesktop[0]?.renderer ?? null,
     };
     const makeBudget = (value, limit) => ({ value, limit, pass: value <= limit });
     report.budgetResults = {
@@ -478,7 +503,7 @@ async function main() {
 
     const fmtMs = (value) => (typeof value === 'number' ? `${Math.round(value)}ms` : '-');
     console.log('summary: median (worst) over runs');
-    for (const name of ['article', 'homeDesktop', 'homeMobile', 'homeVisibleMobile']) {
+    for (const name of ['article', 'homeDesktop', 'homeMobile', 'homeVisibleMobile', 'homeGlobeDesktop']) {
       const s = report.summary[name];
       console.log(
         `${name}.LCP=${fmtMs(s.lcpMedianMs)} (worst ${fmtMs(s.lcpWorstMs)}) ` +

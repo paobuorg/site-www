@@ -27,6 +27,8 @@ const copy = locale === 'zh-CN'
       imagery: '底图：NASA Blue Marble 卫星影像合成',
       rotate: '自动旋转',
       rotateHint: '点击开始或暂停旋转',
+      startGlobe: '打开 3D 地球',
+      startGlobeHint: '先看静态地球，点击后再加载卫星影像与路线点',
     }
   : {
       eyebrow: 'Real satellite Earth · verified courses',
@@ -38,6 +40,8 @@ const copy = locale === 'zh-CN'
       imagery: 'Base imagery: NASA Blue Marble composite',
       rotate: 'Auto rotate',
       rotateHint: 'Start or pause rotation',
+      startGlobe: 'Open the 3D globe',
+      startGlobeHint: 'Static globe first; load imagery and route points only when you click',
     };
 const globeRoutes = routes.map((route) => {
   const details = routeDetails(route);
@@ -68,16 +72,18 @@ const description = locale === 'zh-CN'
   footerAd
 >
   <Fragment slot="head">
-    <link rel="stylesheet" href="/cesium/Widgets/widgets.css" />
-    <link rel="preload" as="image" href="/textures/earth-blue-marble-2048.jpg" />
   </Fragment>
 
   <section class="globe-home" aria-labelledby="globe-title">
     <div class="globe-stage" data-globe-stage>
-      <div class="globe-poster" aria-hidden="true">
+      <div class="globe-poster">
         <div class="poster-sphere"></div>
+        <button class="globe-start" type="button" data-globe-start aria-label={`${copy.startGlobe}，${copy.startGlobeHint}`}>
+          <Icon name="globe" size={18} />
+          <span>{copy.startGlobe}</span>
+        </button>
       </div>
-      <div class="globe-loading">
+      <div class="globe-loading" hidden>
         <span class="spinner" aria-hidden="true"></span>
         <span class="sr-only">{t(locale, 'noGlobeLoading')}</span>
       </div>
@@ -180,23 +186,42 @@ const description = locale === 'zh-CN'
 
       <div class="globe-panel-footer">
         <span>{copy.count}</span>
-        <span class="footer-links"><a href={`${prefix}/routes/`}>{t(locale, 'allRoutes')} →</a><a href={`${prefix}/compare/`}>{locale === 'zh-CN' ? '对比' : 'Compare'} →</a><a href={`${prefix}/collections/`}>{copy.collections} →</a></span>
+        <span class="footer-links"><a href={`${prefix}/routes/`}>{t(locale, 'allRoutes')} →</a><a href={`${prefix}/compare/`}>{locale === 'zh-CN' ? '对比' : 'Compare'} →</a><a href={`${prefix}/calendar/`}>{locale === 'zh-CN' ? '2027 赛历' : '2027 calendar'} →</a><a href={`${prefix}/collections/`}>{copy.collections} →</a></span>
       </div>
     </aside>
   </section>
 </BaseLayout>
 
 <script>
-  import { initHomeGlobe, preloadCesium } from '../../client/globe';
-  if (window.matchMedia('(min-width: 1024px)').matches) {
-    preloadCesium();
-    new Image().src = '/textures/earth-blue-marble-2048.jpg';
-    requestAnimationFrame(() => requestAnimationFrame(() => initHomeGlobe()));
-  } else {
-    const startGlobe = () => initHomeGlobe();
-    if (document.readyState === 'complete') startGlobe();
-    else window.addEventListener('load', startGlobe, { once: true });
-  }
+  import { ensureCesiumStyles, initHomeGlobe } from '../../client/globe';
+  let globeStarted = false;
+  const startGlobe = () => {
+    if (globeStarted) return;
+    globeStarted = true;
+    const button = document.querySelector<HTMLButtonElement>('[data-globe-start]');
+    const loading = document.querySelector<HTMLElement>('.globe-loading');
+    const stage = document.querySelector<HTMLElement>('[data-globe-stage]');
+    button?.setAttribute('hidden', '');
+    if (loading) loading.hidden = false;
+    stage?.classList.add('is-globe-active');
+    ensureCesiumStyles();
+    void initHomeGlobe();
+  };
+  document.querySelector('[data-globe-start]')?.addEventListener('click', startGlobe, { once: true });
+
+  const autoEligible = () => {
+    if (!window.matchMedia('(min-width: 900px)').matches) return false;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
+    const hints = navigator as Navigator & { connection?: { saveData?: boolean }; deviceMemory?: number };
+    if (hints.connection?.saveData) return false;
+    return !(typeof hints.deviceMemory === 'number' && hints.deviceMemory > 0 && hints.deviceMemory <= 2);
+  };
+  const scheduleGlobe = () => {
+    if (!autoEligible()) return;
+    window.setTimeout(() => { if (!globeStarted) startGlobe(); }, 3000);
+  };
+  if (document.readyState === 'complete') scheduleGlobe();
+  else window.addEventListener('load', scheduleGlobe, { once: true });
 
   const panel = document.querySelector('.globe-panel');
   document.querySelector('[data-sheet-toggle]')?.addEventListener('click', () => {
@@ -210,4 +235,37 @@ const description = locale === 'zh-CN'
 
 <style>
   /* .poster-sphere base styles live in @paobu/core components.css. */
+
+  .globe-poster .poster-sphere {
+    background-image: url('/textures/earth-blue-marble-1024.jpg');
+  }
+  .globe-poster::after { pointer-events: none; }
+  .poster-sphere { pointer-events: none; }
+  .globe-start {
+    position: absolute;
+    left: 55%;
+    top: 72%;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, .28);
+    border-radius: 999px;
+    background: rgba(8, 20, 36, .72);
+    color: #fff;
+    font: inherit;
+    font-size: .86rem;
+    font-weight: 650;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transform: translate(-50%, -50%);
+  }
+  .globe-start:hover { background: rgba(8, 184, 157, .82); }
+  .globe-start[hidden] { display: none; }
+  .globe-controls { opacity: 0; pointer-events: none; }
+  .globe-stage.is-globe-active .globe-controls { opacity: 1; pointer-events: auto; }
+  @media (max-width: 900px) {
+    .globe-start { left: 50%; top: 68%; }
+  }
 </style>

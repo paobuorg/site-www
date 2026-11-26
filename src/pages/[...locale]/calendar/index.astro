@@ -1,0 +1,382 @@
+---
+import BaseLayout from '@paobu/core/layouts/BaseLayout.astro';
+import Icon from '@paobu/core/components/Icon.astro';
+import { type Locale, LOCALES } from '@paobu/core/lib/i18n';
+import { localePrefix, localeStaticParam } from '@paobu/core/lib/routing';
+import { siteContent } from '../../../lib/content';
+import { calendarEntries } from '../../../lib/calendar';
+import { formatDistance, formatElevation } from '../../../lib/view';
+
+export function getStaticPaths() {
+  return LOCALES.map((locale) => ({ params: { locale: localeStaticParam(locale) }, props: { locale } }));
+}
+
+const locale = Astro.props.locale as Locale;
+const prefix = localePrefix(locale);
+const content = siteContent();
+const entries = calendarEntries(content, locale);
+const copy = locale === 'zh-CN'
+  ? {
+      eyebrow: '2027 赛历',
+      title: '把下一年的比赛排进日历',
+      intro: '',
+      note: '这不是报名提醒服务。报名窗口、抽签与资格以赛事官网为准；出发前请重新核对当届页面。',
+      dated: '已有日期',
+      tbd: '日期待公布',
+      open: '报名已开放',
+      total: '路线总数',
+      search: '搜索赛事或地点',
+      month: '月份',
+      region: '地区',
+      type: '类型',
+      status: '状态',
+      all: '全部',
+      tba: '待公布',
+      announced: '已公布',
+      openReg: '官方报名开放',
+      sort: '排序',
+      sortDate: '日期由近到远',
+      sortVerify: '最近核验',
+      sortDistance: '距离由短到长',
+      sortClose: '报名截止',
+      count: '显示 {shown} / {total} 条',
+      empty: '没有符合当前筛选的赛事。',
+      distance: '距离',
+      climb: '爬升',
+      verified: '最后核验',
+      route: '看路线',
+      plan: '排训练',
+      strategy: '报名策略',
+      official: '赛事官网',
+      regOpen: '报名开放',
+      regClosed: '报名已结束',
+      regTbd: '报名待公布',
+      regOfficial: '以官网为准',
+      monthNames: ['1 月', '2 月', '3 月', '4 月', '5 月', '6 月', '7 月', '8 月', '9 月', '10 月', '11 月', '12 月'],
+      regions: ['亚洲', '欧洲', '北美', '南美', '非洲', '大洋洲', '南极'],
+      types: ['公路马拉松', '公路超马', '越野超马', '山地竞速'],
+    }
+  : {
+      eyebrow: '2027 calendar',
+      title: 'Put next season on one calendar',
+      intro: '',
+      note: 'This is not a registration reminder service. Windows, ballots and qualification rules belong to the race organiser; re-check the current edition before booking.',
+      dated: 'Date announced',
+      tbd: 'Date TBA',
+      open: 'Registration open',
+      total: 'Routes',
+      search: 'Search race or place',
+      month: 'Month',
+      region: 'Region',
+      type: 'Type',
+      status: 'Status',
+      all: 'All',
+      tba: 'TBA',
+      announced: 'Announced',
+      openReg: 'Official registration open',
+      sort: 'Sort',
+      sortDate: 'Date, soonest first',
+      sortVerify: 'Recently verified',
+      sortDistance: 'Distance, shortest first',
+      sortClose: 'Entry deadline',
+      count: '{shown} of {total} shown',
+      empty: 'No races match these filters.',
+      distance: 'Distance',
+      climb: 'Climb',
+      verified: 'Last verified',
+      route: 'Route',
+      plan: 'Plan training',
+      strategy: 'Entry strategy',
+      official: 'Official site',
+      regOpen: 'Registration open',
+      regClosed: 'Registration closed',
+      regTbd: 'Registration TBA',
+      regOfficial: 'See official page',
+      monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      regions: ['Asia', 'Europe', 'North America', 'South America', 'Africa', 'Oceania', 'Antarctica'],
+      types: ['Road marathon', 'Road ultra', 'Trail ultra', 'Mountain race'],
+    };
+const stats = {
+  total: entries.length,
+  dated: entries.filter((entry) => entry.date).length,
+  tbd: entries.filter((entry) => !entry.date).length,
+  open: entries.filter((entry) => entry.registrationStatus === 'open').length,
+};
+copy.intro = locale === 'zh-CN'
+  ? `${stats.total} 条路线，${stats.dated} 条已有 2027 官方日期，其余 ${stats.tbd} 条明确标为待公布。日期、地点与距离来自每条路线已核验的版本；报名状态只写官方页面能支持的结论，不猜测开抢时间。`
+  : `${stats.total} routes: ${stats.dated} with an official 2027 date, the other ${stats.tbd} explicitly marked to be announced. Dates, places and distances come from each route's checked edition; registration status only states what the official page supports.`;
+const months = Array.from({ length: 12 }, (_, index) => index + 1);
+const regions = [...new Set(entries.map((entry) => entry.region))].sort((a, b) => copy.regions.indexOf(a) - copy.regions.indexOf(b));
+const types = [...new Set(entries.map((entry) => entry.typeLabel))].sort((a, b) => copy.types.indexOf(a) - copy.types.indexOf(b));
+const title = `${copy.eyebrow} · RUNUP`;
+const description = locale === 'zh-CN'
+  ? `跑起来 2027 赛历：${stats.total} 条路线按日期、地区、类型和报名状态筛选，日期未知的赛事明确标注待公布。`
+  : `RunUp 2027 calendar: filter ${stats.total} routes by date, region, type and registration status, with unknown dates marked explicitly.`;
+const regLabel = (status: string) => status === 'open' ? copy.regOpen : status === 'closed' ? copy.regClosed : status === 'tbd' ? copy.regTbd : copy.regOfficial;
+---
+
+<BaseLayout locale={locale} title={title} description={description} active="routes" preview={content.preview} footerAd>
+  <div class="page-shell">
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href={`${prefix}/`}>{locale === 'zh-CN' ? '首页' : 'Home'}</a></li>
+        <li><a href={`${prefix}/routes/`}>{locale === 'zh-CN' ? '路线' : 'Routes'}</a></li>
+        <li aria-current="page">{copy.eyebrow}</li>
+      </ol>
+    </div>
+
+    <header class="page-intro calendar-intro">
+      <span class="pill mint"><Icon name="clock" size={14} />{copy.eyebrow}</span>
+      <h1>{copy.title}</h1>
+      <p>{copy.intro}</p>
+      <p class="calendar-note">{copy.note}</p>
+    </header>
+
+    <div class="calendar-stats" aria-label={copy.eyebrow}>
+      <div><strong>{stats.total}</strong><span>{copy.total}</span></div>
+      <div><strong>{stats.dated}</strong><span>{copy.dated}</span></div>
+      <div><strong>{stats.tbd}</strong><span>{copy.tbd}</span></div>
+      <div><strong>{stats.open}</strong><span>{copy.open}</span></div>
+    </div>
+
+    <form class="calendar-filters" data-calendar-form>
+      <div class="calendar-search">
+        <label for="calendar-q">{copy.search}</label>
+        <input id="calendar-q" name="q" type="search" autocomplete="off" placeholder={copy.search} />
+      </div>
+      <div>
+        <label for="calendar-month">{copy.month}</label>
+        <select id="calendar-month" name="month">
+          <option value="all">{copy.all}</option>
+          {months.map((month) => <option value={String(month)}>{copy.monthNames[month - 1]}</option>)}
+          <option value="tbd">{copy.tba}</option>
+        </select>
+      </div>
+      <div>
+        <label for="calendar-region">{copy.region}</label>
+        <select id="calendar-region" name="region">
+          <option value="all">{copy.all}</option>
+          {regions.map((region) => <option value={region}>{region}</option>)}
+        </select>
+      </div>
+      <div>
+        <label for="calendar-type">{copy.type}</label>
+        <select id="calendar-type" name="type">
+          <option value="all">{copy.all}</option>
+          {types.map((type) => <option value={type}>{type}</option>)}
+        </select>
+      </div>
+      <div>
+        <label for="calendar-status">{copy.status}</label>
+        <select id="calendar-status" name="status">
+          <option value="all">{copy.all}</option>
+          <option value="announced">{copy.announced}</option>
+          <option value="tbd">{copy.tba}</option>
+          <option value="open">{copy.openReg}</option>
+          <option value="closed">{copy.regClosed}</option>
+          <option value="official">{copy.regOfficial}</option>
+        </select>
+      </div>
+      <div>
+        <label for="calendar-sort">{copy.sort}</label>
+        <select id="calendar-sort" name="sort">
+          <option value="date">{copy.sortDate}</option>
+          <option value="verify">{copy.sortVerify}</option>
+          <option value="distance">{copy.sortDistance}</option>
+          <option value="deadline">{copy.sortClose}</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="calendar-toolbar">
+      <p data-calendar-count data-template={copy.count}>{copy.count.replace('{shown}', String(entries.length)).replace('{total}', String(entries.length))}</p>
+      <button class="button ghost small" type="button" data-calendar-share>{locale === 'zh-CN' ? '复制筛选链接' : 'Copy filtered link'}</button>
+    </div>
+
+    <div class="calendar-grid" data-calendar-grid>
+      {entries.map((entry) => (
+        <article
+          class="calendar-card"
+          data-calendar-card
+          data-date={entry.date ?? ''}
+          data-month={entry.month ? String(entry.month) : 'tbd'}
+          data-region={entry.region}
+          data-type={entry.typeLabel}
+          data-status={entry.date ? 'announced' : 'tbd'}
+          data-registration={entry.registrationStatus}
+          data-verified={entry.lastVerified ?? ''}
+          data-close={entry.registrationClose ?? ''}
+          data-distance={entry.distanceMeters ?? ''}
+          data-name={`${entry.title} ${entry.place}`.toLowerCase()}
+        >
+          <div class="calendar-date">
+            <strong>{entry.dateLabel}</strong>
+            <span>2027</span>
+          </div>
+          <div class="calendar-body">
+            <div class="calendar-pills">
+              <span class={`pill ${entry.registrationStatus === 'open' ? 'mint' : 'lavender'}`}>{regLabel(entry.registrationStatus)}</span>
+              <span class="pill">{entry.region}</span>
+            </div>
+            <h2><a href={entry.href}>{entry.title}</a></h2>
+            <p class="calendar-place">{entry.place}</p>
+            <dl class="calendar-facts">
+              <div><dt>{copy.type}</dt><dd>{entry.typeLabel}</dd></div>
+              <div><dt>{copy.distance}</dt><dd>{entry.distanceMeters ? formatDistance(entry.distanceMeters, locale) : '—'}</dd></div>
+              <div><dt>{copy.climb}</dt><dd>{entry.elevationGainMeters === null ? (locale === 'zh-CN' ? '未知' : 'Unknown') : formatElevation(entry.elevationGainMeters, locale)}</dd></div>
+              {entry.registrationClose && <div><dt>{locale === 'zh-CN' ? '报名截止' : 'Entry deadline'}</dt><dd>{entry.registrationClose}</dd></div>}
+            </dl>
+            {entry.dateNote && <p class="calendar-date-note">{entry.dateNote}</p>}
+            <p class="calendar-verified">{copy.verified}: {entry.lastVerified ?? '—'}</p>
+            <div class="calendar-actions">
+              <a class="button ghost small" href={entry.href}>{copy.route} →</a>
+              <a class="text-link" href={`https://tools.paobu.org${prefix}/tools/race-calendar-planner/`}>{copy.plan} ↗</a>
+              <a class="text-link" href={`https://learn.paobu.org${prefix}/articles/race-calendar-entry-strategy/`}>{copy.strategy} ↗</a>
+              {entry.officialUrl && <a class="text-link" href={entry.officialUrl} target="_blank" rel="external noopener">{copy.official} ↗</a>}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="empty-state" data-calendar-empty hidden>
+      <h2>{copy.empty}</h2>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    const root = document.querySelector('[data-calendar-grid]');
+    if (!root) return;
+    const form = document.querySelector('[data-calendar-form]');
+    const cards = Array.from(root.querySelectorAll('[data-calendar-card]'));
+    const count = document.querySelector('[data-calendar-count]');
+    const empty = document.querySelector('[data-calendar-empty]');
+    const share = document.querySelector('[data-calendar-share]');
+    const fields = ['q', 'month', 'region', 'type', 'status', 'sort'];
+    const total = cards.length;
+    const template = count?.dataset.template || (count ? count.textContent : '');
+
+    function read() {
+      const data = {};
+      for (const name of fields) {
+        const field = form?.querySelector(`[name="${name}"]`);
+        data[name] = field ? field.value : 'all';
+      }
+      return data;
+    }
+
+    function matches(card, data) {
+      const name = (card.dataset.name || '').toLowerCase();
+      if (data.q && !name.includes(data.q.toLowerCase().trim())) return false;
+      if (data.month !== 'all' && card.dataset.month !== data.month) return false;
+      if (data.region !== 'all' && card.dataset.region !== data.region) return false;
+      if (data.type !== 'all' && card.dataset.type !== data.type) return false;
+      if (data.status === 'announced' && card.dataset.status !== 'announced') return false;
+      if (data.status === 'tbd' && card.dataset.status !== 'tbd') return false;
+      if (data.status === 'open' && card.dataset.registration !== 'open') return false;
+      if (data.status === 'closed' && card.dataset.registration !== 'closed') return false;
+      if (data.status === 'official' && card.dataset.registration !== 'official') return false;
+      return true;
+    }
+
+    function sortCards(data) {
+      const visible = cards.filter((card) => matches(card, data));
+      visible.sort((a, b) => {
+        if (data.sort === 'distance') {
+          return Number(a.dataset.distance || 999999) - Number(b.dataset.distance || 999999);
+        }
+        if (data.sort === 'verify') {
+          return (b.dataset.verified || '').localeCompare(a.dataset.verified || '');
+        }
+        if (data.sort === 'deadline') {
+          if (a.dataset.close && b.dataset.close) return a.dataset.close.localeCompare(b.dataset.close);
+          if (a.dataset.close) return -1;
+          if (b.dataset.close) return 1;
+          return (a.dataset.date || '').localeCompare(b.dataset.date || '');
+        }
+        if (a.dataset.date && b.dataset.date) return a.dataset.date.localeCompare(b.dataset.date);
+        if (a.dataset.date) return -1;
+        if (b.dataset.date) return 1;
+        return 0;
+      });
+      for (const card of visible) root.appendChild(card);
+      for (const card of cards) card.hidden = !visible.includes(card);
+    }
+
+    function updateUrl(data) {
+      try {
+        const url = new URL(location.href);
+        for (const name of fields) {
+          if (data[name] && data[name] !== 'all') url.searchParams.set(name, data[name]);
+          else url.searchParams.delete(name);
+        }
+        history.replaceState(null, '', url.toString());
+      } catch (error) {}
+    }
+
+    function apply() {
+      const data = read();
+      sortCards(data);
+      const shown = cards.filter((card) => !card.hidden).length;
+      if (count) count.textContent = template.replace('{shown}', String(shown)).replace('{total}', String(total));
+      if (empty) empty.hidden = shown !== 0;
+      updateUrl(data);
+    }
+
+    const params = new URLSearchParams(location.search);
+    for (const name of fields) {
+      const field = form?.querySelector(`[name="${name}"]`);
+      if (field && params.has(name)) field.value = params.get(name);
+    }
+
+    form?.addEventListener('input', apply);
+    form?.addEventListener('change', apply);
+    share?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(location.href);
+        share.textContent = share.dataset.copied || (share.textContent?.includes('复制') ? '已复制' : 'Copied');
+      } catch (error) {}
+    });
+    apply();
+  })();
+</script>
+
+<style>
+  .calendar-intro { max-width: 920px; }
+  .calendar-note { color: var(--muted); font-size: .84rem; }
+  .calendar-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 22px 0; }
+  .calendar-stats div { padding: 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+  .calendar-stats strong { display: block; font-size: 1.6rem; line-height: 1.1; }
+  .calendar-stats span { display: block; margin-top: 4px; color: var(--muted); font-size: .8rem; }
+  .calendar-filters { display: grid; grid-template-columns: minmax(220px, 1.6fr) repeat(5, minmax(130px, 1fr)); gap: 10px; align-items: end; margin: 20px 0 14px; padding: 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+  .calendar-filters label { display: block; margin-bottom: 5px; color: var(--muted); font-size: .74rem; }
+  .calendar-filters input, .calendar-filters select { width: 100%; min-width: 0; padding: 9px 10px; border: 1px solid var(--line); border-radius: 9px; background: var(--bg); color: var(--ink); font: inherit; font-size: .86rem; }
+  .calendar-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; color: var(--muted); font-size: .82rem; }
+  .calendar-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .calendar-card { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 14px; padding: 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+  .calendar-date { display: flex; flex-direction: column; align-items: center; justify-content: center; align-self: start; padding: 12px 6px; border-radius: 10px; background: color-mix(in srgb, var(--mint) 14%, var(--surface)); text-align: center; }
+  .calendar-date strong { font-size: 1.08rem; line-height: 1.15; }
+  .calendar-date span { margin-top: 4px; color: var(--muted); font-size: .72rem; letter-spacing: .08em; }
+  .calendar-body h2 { margin: 8px 0 4px; font-size: 1rem; line-height: 1.35; }
+  .calendar-body h2 a { text-decoration: none; }
+  .calendar-place { margin: 0 0 10px; color: var(--muted); font-size: .8rem; }
+  .calendar-pills { display: flex; flex-wrap: wrap; gap: 5px; }
+  .calendar-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 0 0 10px; }
+  .calendar-facts dt { color: var(--muted); font-size: .68rem; }
+  .calendar-facts dd { margin: 2px 0 0; font-size: .8rem; }
+  .calendar-verified { margin: 0 0 10px; color: var(--muted); font-size: .72rem; }
+  .calendar-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+  .calendar-actions .text-link { font-size: .8rem; }
+  .calendar-card[hidden] { display: none; }
+  @media (max-width: 1100px) { .calendar-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 760px) {
+    .calendar-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .calendar-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .calendar-grid { grid-template-columns: 1fr; }
+    .calendar-card { grid-template-columns: 74px minmax(0, 1fr); padding: 13px; }
+    .calendar-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 420px) { .calendar-filters { grid-template-columns: 1fr; } }
+</style>

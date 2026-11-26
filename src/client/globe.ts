@@ -301,6 +301,16 @@ function describeError(error: unknown): string {
   return error instanceof Error ? `${error.name}: ${error.message}\n${error.stack ?? ''}` : String(error);
 }
 
+
+export function ensureCesiumStyles(): void {
+  if (document.querySelector('link[data-cesium-styles]')) return;
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = '/cesium/Widgets/widgets.css';
+  link.dataset.cesiumStyles = 'true';
+  document.head.appendChild(link);
+}
+
 export async function initHomeGlobe(): Promise<void> {
   const container = document.querySelector<HTMLElement>('[data-globe-stage]');
   const data = document.querySelector<HTMLElement>('[data-globe-routes]');
